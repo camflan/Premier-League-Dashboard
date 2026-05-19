@@ -1,0 +1,5 @@
+node_modules/
+.claude/
+acronym-generator/
+*.local.json
+.DS_Store

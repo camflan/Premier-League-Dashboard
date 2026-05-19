@@ -1,0 +1,1748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premier League History Dashboard</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #22263a;
+    --border: #2e3347;
+    --text: #e8eaf0;
+    --text-muted: #7c8398;
+    --gold: #ffd700;
+    --cl-blue: #1a56db;
+    --el-green: #0e9f6e;
+    --rel-red: #e02424;
+    --mid: #374151;
+    --panel-width: 380px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; overflow-x: hidden; }
+
+  /* ── Header ── */
+  header {
+    background: linear-gradient(135deg, #1a1d27 0%, #0f1117 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 16px 24px;
+    display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
+    position: sticky; top: 0; z-index: 100;
+  }
+  header h1 { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.3px; }
+  header h1 span { color: #38bdf8; }
+  .controls { display: flex; gap: 8px; flex-wrap: wrap; margin-left: auto; align-items: center; }
+  .btn-group { display: flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+  .btn-group button {
+    background: var(--surface); border: none; color: var(--text-muted);
+    padding: 6px 12px; cursor: pointer; font-size: 12px; transition: all 0.15s;
+  }
+  .btn-group button:hover { background: var(--surface2); color: var(--text); }
+  .btn-group button.active { background: #38bdf8; color: #000; font-weight: 600; }
+  input[type="text"] {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+    color: var(--text); padding: 6px 12px; font-size: 12px; outline: none; width: 160px;
+  }
+  input[type="text"]:focus { border-color: #38bdf8; }
+
+  /* ── Legend ── */
+  .legend {
+    display: flex; gap: 12px; padding: 10px 24px; background: var(--surface);
+    border-bottom: 1px solid var(--border); flex-wrap: wrap; align-items: center;
+  }
+  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text-muted); }
+  .legend-swatch { width: 14px; height: 14px; border-radius: 3px; flex-shrink: 0; }
+
+  /* ── Main layout ── */
+  .app { display: flex; height: calc(100vh - var(--header-h, 97px)); }
+
+  /* ── Grid container ── */
+  .grid-wrap {
+    flex: 1; overflow: auto; position: relative;
+    transition: margin-right 0.3s ease;
+  }
+  .grid-wrap.panel-open { margin-right: var(--panel-width); }
+  table { border-collapse: collapse; min-width: max-content; }
+  /* Trailing spacer so the last season column is never clipped at the scroll edge */
+  table thead tr::after, table tbody tr::after {
+    content: ''; display: table-cell; min-width: 16px;
+  }
+
+  /* ── Sticky corners & headers ── */
+  thead th {
+    position: sticky; top: 0; z-index: 50;
+    background: var(--surface); border-bottom: 2px solid var(--border);
+    padding: 8px 4px; text-align: center; font-size: 11px; color: var(--text-muted);
+    white-space: nowrap;
+  }
+  thead th.team-col {
+    position: sticky; left: 0; z-index: 60; min-width: 160px; max-width: 160px; text-align: left;
+    padding: 8px 12px; border-right: 2px solid var(--border);
+  }
+  tbody td.team-name {
+    position: sticky; left: 0; z-index: 10;
+    background: var(--surface); border-right: 2px solid var(--border);
+    padding: 4px 12px; font-weight: 500;
+    min-width: 160px; max-width: 160px;
+  }
+  tbody td.team-name .team-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 7px; flex-shrink: 0; }
+  tbody td.team-name .team-label { display: flex; align-items: center; overflow: hidden; }
+  tbody td.team-name .team-label-text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  tbody td.team-name .team-meta { font-size: 10px; color: var(--text-muted); margin-top: 1px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  /* ── Cells ── */
+  td.cell {
+    width: 36px; min-width: 36px; height: 36px; text-align: center;
+    font-size: 11px; font-weight: 700; cursor: pointer;
+    border: 1px solid transparent; transition: transform 0.1s, box-shadow 0.1s;
+    position: relative; vertical-align: middle;
+  }
+  td.cell:hover { transform: scale(1.15); z-index: 20; box-shadow: 0 0 0 2px #fff4; border-radius: 4px; }
+  td.cell.selected { outline: 2px solid #fff; z-index: 21; border-radius: 2px; }
+  td.cell.empty { background: #1a1d27; cursor: default; }
+  td.cell.empty:hover { transform: none; box-shadow: none; }
+
+  /* ── Row ── */
+  tr:nth-child(even) td.team-name { background: #1c1f2e; }
+  tr:nth-child(even) td.cell.empty { background: #1c1f2e; }
+  tr:hover td.team-name { background: #252a3d !important; }
+
+  /* ── Stats panel ── */
+  .stats-panel {
+    position: fixed; right: -420px; top: var(--header-h, 97px);
+    width: var(--panel-width); height: calc(100vh - var(--header-h, 97px));
+    background: var(--surface); border-left: 1px solid var(--border);
+    transition: right 0.3s ease; z-index: 90;
+    display: flex; flex-direction: column;
+  }
+  #panelContent { overflow-y: auto; flex: 1; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .api-spinner { width:12px;height:12px;border:2px solid #38bdf8;border-top-color:transparent;border-radius:50%;animation:spin .7s linear infinite;display:inline-block; }
+  .stats-panel.open { right: 0; }
+  .panel-close {
+    position: absolute; top: 10px; right: 10px; z-index: 200;
+    background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted);
+    width: 28px; height: 28px; border-radius: 50%; cursor: pointer;
+    font-size: 14px; display: flex; align-items: center; justify-content: center;
+    transition: background 0.15s; flex-shrink: 0;
+  }
+  .panel-close:hover { background: #ef4444; border-color: #ef4444; color: #fff; }
+  .panel-header { padding: 16px 48px 16px 20px; border-bottom: 1px solid var(--border); }
+
+  .panel-header { position: relative; }
+  .panel-team-badge {
+    display: flex; align-items: center; gap: 12px; margin-bottom: 8px;
+  }
+  .panel-color-bar { width: 5px; height: 48px; border-radius: 3px; flex-shrink: 0; }
+  .panel-team-name { font-size: 1.2rem; font-weight: 700; }
+  .panel-season { font-size: 0.9rem; color: var(--text-muted); }
+  .pos-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem; font-weight: 900;
+    margin-left: auto;
+  }
+
+  .panel-body { padding: 16px 20px; flex: 1; }
+  .stat-grid {
+    display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 16px;
+  }
+  .stat-card {
+    background: var(--surface2); border-radius: 10px; padding: 12px 10px; text-align: center;
+  }
+  .stat-card .val { font-size: 1.5rem; font-weight: 800; }
+  .stat-card .lbl { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 3px; }
+
+  .stat-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); }
+  .stat-row:last-child { border-bottom: none; }
+  .stat-row .lbl { color: var(--text-muted); font-size: 12px; }
+  .stat-row .val { font-weight: 600; }
+
+  .section-title { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin: 16px 0 8px; }
+
+  .player-list { display: flex; flex-direction: column; gap: 6px; }
+  .player-row {
+    display: flex; justify-content: space-between; align-items: center;
+    background: var(--surface2); border-radius: 8px; padding: 8px 12px;
+  }
+  .player-row .pname { font-weight: 500; }
+  .player-row .pstat { color: #38bdf8; font-weight: 700; }
+
+  .note-box {
+    background: var(--surface2); border-left: 3px solid #38bdf8;
+    border-radius: 0 8px 8px 0; padding: 10px 14px;
+    font-size: 12px; line-height: 1.5; color: var(--text-muted);
+    margin-top: 12px;
+  }
+
+  .team-history { margin-top: 16px; }
+  .history-bar-wrap { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
+  .history-lbl { font-size: 11px; color: var(--text-muted); width: 70px; }
+  .history-bar-bg { flex: 1; height: 8px; background: var(--surface2); border-radius: 4px; overflow: hidden; }
+  .history-bar { height: 100%; border-radius: 4px; }
+
+  /* ── Match results grid ── */
+  .mr-header { display:flex; gap:8px; margin-bottom:8px; }
+  .mr-ha-card {
+    flex:1; background:var(--surface2); border-radius:8px; padding:8px 10px;
+  }
+  .mr-ha-card .hac-label { font-size:10px; text-transform:uppercase; letter-spacing:.6px; margin-bottom:3px; }
+  .mr-ha-card .hac-rec { font-size:1rem; font-weight:800; }
+  .mr-ha-card .hac-pts { font-size:10px; color:var(--text-muted); }
+  .mr-grid { display:flex; flex-wrap:wrap; gap:3px; }
+  .mr-cell {
+    width:28px; height:38px; border-radius:5px;
+    display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px;
+    cursor:default; transition:transform .1s, box-shadow .1s; position:relative;
+  }
+  .mr-cell:hover { transform:scale(1.2); z-index:10; box-shadow:0 2px 8px #0008; }
+  .mr-res { font-size:11px; font-weight:800; color:#fff; line-height:1; }
+  .mr-ha  { font-size:8px; font-weight:600; line-height:1; }
+  .mr-ha.H { color:#fbbf24; }
+  .mr-ha.A { color:#93c5fd; }
+  .mr-score { font-size:8px; color:rgba(255,255,255,.7); line-height:1; }
+  .mr-pts-strip { display:flex; align-items:flex-end; gap:1px; height:34px; margin-top:8px; }
+  .mr-pts-bar { flex:1; min-width:2px; border-radius:1px 1px 0 0; }
+  .mr-note { font-size:9px; color:#374151; text-align:right; margin-top:3px; }
+  .mr-cell { cursor:pointer; }
+
+  /* ── Game detail popup ── */
+  .game-popup {
+    position: fixed; z-index: 9999;
+    background: #1e2235; border: 1px solid #3a3f5c; border-radius: 12px;
+    width: 240px; padding: 12px 14px;
+    box-shadow: 0 12px 40px rgba(0,0,0,.7);
+    animation: gpIn .12s ease;
+  }
+  @keyframes gpIn { from { opacity:0; transform:scale(.95) translateY(-4px); } to { opacity:1; transform:scale(1); } }
+  .gp-topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
+  .gp-meta  { font-size:10px; color:#6b7280; }
+  .gp-xbtn  { background:none; border:none; color:#6b7280; cursor:pointer; font-size:15px; line-height:1; padding:0 2px; }
+  .gp-xbtn:hover { color:#fff; }
+  .gp-scoreline { text-align:center; margin-bottom:8px; }
+  .gp-score-big { font-size:1.6rem; font-weight:900; letter-spacing:-1px; }
+  .gp-teams-row { display:grid; grid-template-columns:1fr auto 1fr; font-size:10px; color:#9ca3af; gap:4px; margin-top:2px; }
+  .gp-teams-row .ht { text-align:left; } .gp-teams-row .at { text-align:right; }
+  .gp-divider { height:1px; background:#2e3347; margin:8px 0; }
+  .gp-goal-list { display:flex; flex-direction:column; gap:3px; max-height:180px; overflow-y:auto; }
+  .gp-goal { display:flex; align-items:center; gap:5px; font-size:11px; padding:2px 0; }
+  .gp-goal .gmin  { color:#6b7280; font-size:10px; min-width:26px; text-align:right; flex-shrink:0; }
+  .gp-goal .gname { flex:1; }
+  .gp-goal.opp    { flex-direction:row-reverse; color:#9ca3af; }
+  .gp-goal.opp .gname { text-align:right; }
+  .gp-empty { font-size:11px; color:#6b7280; text-align:center; padding:6px 0; }
+
+  /* ── Season comparison chart ── */
+  .sc-tabs { display:flex; gap:4px; margin-bottom:10px; }
+  .sc-tab {
+    background: var(--surface2); border: 1px solid var(--border); border-radius: 6px;
+    color: var(--text-muted); padding: 4px 10px; font-size: 11px; cursor: pointer; transition: all 0.15s;
+  }
+  .sc-tab:hover { border-color: #38bdf8; color: var(--text); }
+  .sc-tab.active { background: #38bdf8; border-color: #38bdf8; color: #000; font-weight: 700; }
+  .sc-row {
+    display: grid; grid-template-columns: 18px 1fr auto;
+    align-items: center; gap: 6px; margin-bottom: 3px;
+    padding: 3px 6px; border-radius: 5px; transition: background 0.1s;
+  }
+  .sc-row:hover { background: var(--surface2); }
+  .sc-row.sc-selected {
+    background: var(--surface2); outline: 1px solid #ffffff44; border-radius: 6px;
+  }
+  .sc-pos { font-size: 10px; color: var(--text-muted); text-align: right; }
+  .sc-bar-wrap { position: relative; height: 14px; }
+  .sc-bar-bg { position:absolute; inset:0; background: #1e2033; border-radius: 3px; overflow: hidden; }
+  .sc-bar { height: 100%; border-radius: 3px; transition: width 0.4s ease; }
+  .sc-name-val { display:flex; justify-content:space-between; align-items:center;
+    position:absolute; inset:0; padding: 0 5px; z-index:1; }
+  .sc-name { font-size: 10px; font-weight: 500; white-space: nowrap; overflow: hidden;
+    text-overflow: ellipsis; max-width: 120px; text-shadow: 0 1px 2px #000a; }
+  .sc-val { font-size: 10px; font-weight: 700; color: #fff; text-shadow: 0 1px 2px #000a; flex-shrink:0; }
+
+  /* ── Scrollbar ── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #4a5568; }
+
+  /* ── Color mode – Goals ── */
+  .color-mode-goals td.cell { color: #fff; }
+
+  /* ── Season column header ── */
+  .season-hdr { writing-mode: vertical-lr; transform: rotate(180deg); padding: 6px 2px; cursor: pointer; font-size: 10px; }
+  .season-hdr:hover { color: var(--text); }
+  .season-hdr.champion-col { color: var(--gold) !important; }
+
+  .champ-star { font-size: 9px; }
+
+  /* ── Responsive ── */
+
+  /* Tablet: panel overlays grid (no margin push), full height */
+  @media (max-width: 959px) {
+    :root { --panel-width: 360px; }
+    .grid-wrap.panel-open { margin-right: 0; }
+    .stats-panel {
+      top: 0 !important; height: 100vh !important; height: 100dvh !important;
+      z-index: 200;
+      box-shadow: -6px 0 32px #0009;
+    }
+  }
+
+  /* Mobile: full-screen panel, compact header, smaller cells */
+  @media (max-width: 599px) {
+    :root { --panel-width: 100vw; }
+
+    header { padding: 10px 14px; gap: 8px; }
+    header h1 { font-size: 1rem; white-space: nowrap; }
+    .controls { gap: 6px; }
+    .btn-group button { padding: 5px 8px; font-size: 11px; }
+    input[type="text"] { width: 120px; padding: 5px 10px; font-size: 11px; }
+
+    .legend { padding: 6px 14px; gap: 8px; }
+    .legend-item { font-size: 10px; }
+
+    td.cell { width: 28px; min-width: 28px; height: 28px; font-size: 10px; }
+    tbody td.team-name, thead th.team-col { min-width: 120px; max-width: 120px; padding: 4px 8px; font-size: 11px; }
+
+    /* Game popup: center on screen instead of anchoring to cell */
+    .game-popup {
+      position: fixed !important;
+      left: 50% !important; top: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      width: min(300px, calc(100vw - 24px)) !important;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Premier League <span>History</span> Dashboard</h1>
+  <div class="controls">
+    <input type="text" id="searchTeam" placeholder="Search team…" oninput="filterTeams(this.value)">
+    <div class="btn-group">
+      <button class="active" onclick="setSort('seasons')" id="sort-seasons">Most Seasons</button>
+      <button onclick="setSort('best')" id="sort-best">Best Finish</button>
+      <button onclick="setSort('alpha')" id="sort-alpha">A–Z</button>
+    </div>
+    <div class="btn-group">
+      <button class="active" onclick="setColorMode('position')" id="mode-position">Position</button>
+      <button onclick="setColorMode('goals')" id="mode-goals">Goals</button>
+      <button onclick="setColorMode('gd')" id="mode-gd">Goal Diff</button>
+      <button onclick="setColorMode('pts')" id="mode-pts">Points</button>
+    </div>
+  </div>
+</header>
+
+<div class="legend" id="legend">
+  <div class="legend-item"><div class="legend-swatch" style="background:#ffd700"></div>Champion</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#1e40af"></div>Top 4 (UCL)</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#065f46"></div>5–7 (Europa)</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#374151"></div>Mid-table</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#7f1d1d"></div>Relegated</div>
+  <div class="legend-item"><div class="legend-swatch" style="background:#1a1d27; border:1px solid #2e3347"></div>Not in PL</div>
+</div>
+
+<div class="app">
+  <div class="grid-wrap" id="gridWrap">
+    <table id="mainTable">
+      <thead id="thead"></thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+  <div class="stats-panel" id="statsPanel">
+    <button class="panel-close" onclick="closePanel()">✕</button>
+    <div id="panelContent"></div>
+  </div>
+</div>
+
+<script>
+// AbortController-based timeout compatible with all modern browsers
+function fetchTimeout(url, ms) {
+  const ctrl = new AbortController();
+  const id = setTimeout(() => ctrl.abort(), ms);
+  return fetch(url, { signal: ctrl.signal }).finally(() => clearTimeout(id));
+}
+
+// Short display names for the grid and charts
+const SHORT_NAMES = {
+  'Manchester United':   'Man Utd',
+  'Manchester City':     'Man City',
+  'Tottenham Hotspur':   'Spurs',
+  'Nottingham Forest':   "Nott'm F",
+  'Sheffield United':    'Sheff Utd',
+  'Sheffield Wednesday': 'Sheff Wed',
+  'Wolverhampton':       'Wolves',
+  'West Bromwich Albion':'WBA',
+  'Blackburn Rovers':    'Blackburn',
+  'Bolton Wanderers':    'Bolton',
+  'West Ham United':     'West Ham',
+  'Newcastle United':    'Newcastle',
+  'Leicester City':      'Leicester',
+  'Norwich City':        'Norwich',
+  'Hull City':           'Hull',
+  'Swansea City':        'Swansea',
+  'Stoke City':          'Stoke',
+  'Cardiff City':        'Cardiff',
+  'Bradford City':       'Bradford',
+  'Coventry City':       'Coventry',
+  'Birmingham City':     'Birmingham',
+  'Crystal Palace':      'C. Palace',
+  'Leeds United':        'Leeds',
+  'Charlton Athletic':   'Charlton',
+  'Oldham Athletic':     'Oldham',
+  'Wigan Athletic':      'Wigan',
+  'Huddersfield Town':   'Huddersfield',
+  'Ipswich Town':        'Ipswich',
+  'Swindon Town':        'Swindon',
+  'Luton Town':          'Luton',
+  'Derby County':        'Derby',
+  'Queens Park Rangers': 'QPR',
+};
+function shortTeamName(name) { return SHORT_NAMES[name] || name; }
+
+// ════════════════════════════════════════════════════════════════
+//  DATA
+// ════════════════════════════════════════════════════════════════
+
+const SEASONS = [
+  "1992-93","1993-94","1994-95","1995-96","1996-97","1997-98","1998-99","1999-00",
+  "2000-01","2001-02","2002-03","2003-04","2004-05","2005-06","2006-07","2007-08",
+  "2008-09","2009-10","2010-11","2011-12","2012-13","2013-14","2014-15","2015-16",
+  "2016-17","2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","2024-25"
+];
+
+const TEAM_COLORS = {
+  "Arsenal": "#EF0107", "Aston Villa": "#670E36", "Barnsley": "#EE2233",
+  "Birmingham City": "#0000FF", "Blackburn Rovers": "#009EE0", "Blackpool": "#F68712",
+  "Bolton Wanderers": "#263C7E", "Bournemouth": "#DA291C", "Bradford City": "#800000",
+  "Brentford": "#E30613", "Brighton": "#0057B8", "Burnley": "#6C1D45",
+  "Cardiff City": "#0070B5", "Charlton Athletic": "#CC2233", "Chelsea": "#034694",
+  "Coventry City": "#59CEFF", "Crystal Palace": "#1B458F", "Derby County": "#1A1A1A",
+  "Everton": "#003399", "Fulham": "#CC0000", "Huddersfield Town": "#0E63AD",
+  "Hull City": "#F5A12D", "Ipswich Town": "#0044A9", "Leeds United": "#FFCD00",
+  "Leicester City": "#003090", "Liverpool": "#C8102E", "Luton Town": "#F78F1E",
+  "Manchester City": "#6CABDD", "Manchester United": "#DA291C", "Middlesbrough": "#E00000",
+  "Newcastle United": "#241F20", "Norwich City": "#00A650", "Nottingham Forest": "#E53233",
+  "Oldham Athletic": "#0052A5", "Portsmouth": "#0052A5", "QPR": "#1D5BA4",
+  "Reading": "#004494", "Sheffield United": "#EE2523", "Sheffield Wednesday": "#1463A6",
+  "Southampton": "#D71920", "Stoke City": "#E03A3E", "Sunderland": "#EB172B",
+  "Swansea City": "#121212", "Swindon Town": "#EE2522", "Tottenham Hotspur": "#132257",
+  "Watford": "#FBEE23", "WBA": "#122F67", "West Ham United": "#7A263A",
+  "Wigan Athletic": "#1C2B5E", "Wimbledon": "#0063A6", "Wolverhampton": "#FDB913"
+};
+
+// Full standings data — each entry: [pos, team, P, W, D, L, GF, GA, Pts]
+const RAW = {
+"1992-93":[
+  [1,"Manchester United",42,24,12,6,67,31,84],[2,"Aston Villa",42,21,11,10,57,40,74],
+  [3,"Norwich City",42,21,9,12,61,65,72],[4,"Blackburn Rovers",42,20,11,11,68,46,71],
+  [5,"QPR",42,17,12,13,63,55,63],[6,"Liverpool",42,16,11,15,62,55,59],
+  [7,"Sheffield Wednesday",42,15,14,13,55,51,59],[8,"Tottenham Hotspur",42,16,11,15,60,66,59],
+  [9,"Manchester City",42,15,12,15,56,51,57],[10,"Arsenal",42,15,11,16,40,38,56],
+  [11,"Chelsea",42,14,14,14,51,54,56],[12,"Wimbledon",42,14,12,16,56,55,54],
+  [13,"Everton",42,15,8,19,53,55,53],[14,"Sheffield United",42,14,10,18,54,53,52],
+  [15,"Coventry City",42,13,13,16,52,57,52],[16,"Ipswich Town",42,12,16,14,50,55,52],
+  [17,"Leeds United",42,12,15,15,57,62,51],[18,"Southampton",42,13,11,18,54,61,50],
+  [19,"Oldham Athletic",42,13,10,19,63,74,49],[20,"Crystal Palace",42,11,16,15,48,61,49],
+  [21,"Middlesbrough",42,11,11,20,54,75,44],[22,"Nottingham Forest",42,10,10,22,41,62,40]
+],
+"1993-94":[
+  [1,"Manchester United",42,27,11,4,80,38,92],[2,"Blackburn Rovers",42,25,9,8,63,36,84],
+  [3,"Newcastle United",42,23,8,11,82,41,77],[4,"Arsenal",42,18,17,7,53,28,71],
+  [5,"Leeds United",42,18,16,8,65,39,70],[6,"Wimbledon",42,18,11,13,56,53,65],
+  [7,"Sheffield Wednesday",42,16,16,10,76,54,64],[8,"Liverpool",42,17,9,16,59,55,60],
+  [9,"QPR",42,16,12,14,62,61,60],[10,"Aston Villa",42,15,12,15,46,50,57],
+  [11,"Coventry City",42,14,14,14,43,45,56],[12,"Norwich City",42,12,17,13,65,61,53],
+  [13,"West Ham United",42,13,13,16,47,58,52],[14,"Chelsea",42,13,12,17,49,53,51],
+  [15,"Tottenham Hotspur",42,11,12,19,54,59,45],[16,"Manchester City",42,9,18,15,38,49,45],
+  [17,"Everton",42,12,8,22,42,63,44],[18,"Southampton",42,12,7,23,49,66,43],
+  [19,"Ipswich Town",42,9,16,17,35,58,43],[20,"Sheffield United",42,8,18,16,42,60,42],
+  [21,"Oldham Athletic",42,9,13,20,42,68,40],[22,"Swindon Town",42,5,15,22,47,100,30]
+],
+"1994-95":[
+  [1,"Blackburn Rovers",42,27,8,7,80,39,89],[2,"Manchester United",42,26,10,6,77,28,88],
+  [3,"Nottingham Forest",42,22,11,9,72,43,77],[4,"Liverpool",42,21,11,10,65,37,74],
+  [5,"Leeds United",42,20,13,9,59,38,73],[6,"Newcastle United",42,20,12,10,67,47,72],
+  [7,"Tottenham Hotspur",42,16,14,12,66,58,62],[8,"QPR",42,17,9,16,61,59,60],
+  [9,"Wimbledon",42,15,11,16,48,65,56],[10,"Southampton",42,12,18,12,61,63,54],
+  [11,"Chelsea",42,13,15,14,50,55,54],[12,"Arsenal",42,13,12,17,52,49,51],
+  [13,"Sheffield Wednesday",42,13,12,17,49,57,51],[14,"West Ham United",42,13,11,18,44,48,50],
+  [15,"Everton",42,11,17,14,44,51,50],[16,"Coventry City",42,12,14,16,44,62,50],
+  [17,"Manchester City",42,12,13,17,53,64,49],[18,"Aston Villa",42,11,15,16,51,56,48],
+  [19,"Crystal Palace",42,11,12,19,34,49,45],[20,"Norwich City",42,10,13,19,37,54,43],
+  [21,"Leicester City",42,6,11,25,45,80,29],[22,"Ipswich Town",42,7,6,29,36,93,27]
+],
+"1995-96":[
+  [1,"Manchester United",38,25,7,6,73,35,82],[2,"Newcastle United",38,24,6,8,66,37,78],
+  [3,"Liverpool",38,20,11,7,70,34,71],[4,"Aston Villa",38,18,9,11,52,35,63],
+  [5,"Arsenal",38,17,12,9,49,32,63],[6,"Everton",38,17,10,11,64,44,61],
+  [7,"Blackburn Rovers",38,18,7,13,61,47,61],[8,"Tottenham Hotspur",38,16,13,9,50,38,61],
+  [9,"Nottingham Forest",38,15,13,10,50,54,58],[10,"West Ham United",38,14,9,15,43,52,51],
+  [11,"Chelsea",38,12,14,12,46,44,50],[12,"Middlesbrough",38,11,10,17,35,50,43],
+  [13,"Leeds United",38,12,7,19,40,57,43],[14,"Wimbledon",38,10,11,17,55,70,41],
+  [15,"Sheffield Wednesday",38,10,10,18,48,61,40],[16,"Coventry City",38,8,14,16,42,60,38],
+  [17,"Southampton",38,9,11,18,34,52,38],[18,"Manchester City",38,9,11,18,33,58,38],
+  [19,"QPR",38,9,6,23,38,57,33],[20,"Bolton Wanderers",38,8,5,25,39,71,29]
+],
+"1996-97":[
+  [1,"Manchester United",38,21,12,5,76,44,75],[2,"Newcastle United",38,19,11,8,73,40,68],
+  [3,"Arsenal",38,19,11,8,62,32,68],[4,"Liverpool",38,19,11,8,62,37,68],
+  [5,"Aston Villa",38,17,10,11,47,34,61],[6,"Chelsea",38,16,11,11,58,55,59],
+  [7,"Sheffield Wednesday",38,14,15,9,50,51,57],[8,"Wimbledon",38,15,11,12,49,46,56],
+  [9,"Leicester City",38,12,11,15,46,54,47],[10,"Tottenham Hotspur",38,13,7,18,44,51,46],
+  [11,"Leeds United",38,11,13,14,28,38,46],[12,"Derby County",38,11,13,14,45,58,46],
+  [13,"Blackburn Rovers",38,9,15,14,42,43,42],[14,"West Ham United",38,10,12,16,39,48,42],
+  [15,"Everton",38,10,12,16,44,57,42],[16,"Southampton",38,10,11,17,50,56,41],
+  [17,"Coventry City",38,9,14,15,38,54,41],[18,"Sunderland",38,10,10,18,35,53,40],
+  [19,"Middlesbrough",38,10,12,16,51,60,39],[20,"Nottingham Forest",38,6,16,16,31,59,34]
+],
+"1997-98":[
+  [1,"Arsenal",38,23,9,6,68,33,78],[2,"Manchester United",38,23,8,7,73,26,77],
+  [3,"Liverpool",38,18,11,9,68,42,65],[4,"Chelsea",38,20,3,15,71,43,63],
+  [5,"Leeds United",38,17,8,13,57,46,59],[6,"Blackburn Rovers",38,16,10,12,57,52,58],
+  [7,"Aston Villa",38,17,6,15,49,48,57],[8,"West Ham United",38,16,8,14,56,57,56],
+  [9,"Derby County",38,16,7,15,52,49,55],[10,"Leicester City",38,13,14,11,51,41,53],
+  [11,"Coventry City",38,12,16,10,46,44,52],[12,"Southampton",38,14,6,18,50,55,48],
+  [13,"Newcastle United",38,11,11,16,35,44,44],[14,"Tottenham Hotspur",38,11,11,16,44,56,44],
+  [15,"Wimbledon",38,10,14,14,34,46,44],[16,"Sheffield Wednesday",38,12,8,18,52,67,44],
+  [17,"Everton",38,9,13,16,41,56,40],[18,"Bolton Wanderers",38,9,13,16,41,61,40],
+  [19,"Barnsley",38,10,5,23,37,82,35],[20,"Crystal Palace",38,8,9,21,37,71,33]
+],
+"1998-99":[
+  [1,"Manchester United",38,22,13,3,80,37,79],[2,"Arsenal",38,22,12,4,59,17,78],
+  [3,"Chelsea",38,20,15,3,57,30,75],[4,"Leeds United",38,18,13,7,62,34,67],
+  [5,"West Ham United",38,16,9,13,46,53,57],[6,"Aston Villa",38,15,10,13,51,46,55],
+  [7,"Liverpool",38,15,9,14,68,49,54],[8,"Derby County",38,13,13,12,40,45,52],
+  [9,"Middlesbrough",38,12,15,11,48,54,51],[10,"Leicester City",38,12,13,13,40,46,49],
+  [11,"Tottenham Hotspur",38,11,14,13,47,50,47],[12,"Sheffield Wednesday",38,13,7,18,41,42,46],
+  [13,"Newcastle United",38,11,13,14,48,54,46],[14,"Everton",38,11,10,17,42,47,43],
+  [15,"Coventry City",38,11,9,18,39,51,42],[16,"Wimbledon",38,10,12,16,40,63,42],
+  [17,"Southampton",38,11,8,19,37,64,41],[18,"Charlton Athletic",38,8,12,18,41,56,36],
+  [19,"Blackburn Rovers",38,7,14,17,38,52,35],[20,"Nottingham Forest",38,7,9,22,35,69,30]
+],
+"1999-00":[
+  [1,"Manchester United",38,28,7,3,97,45,91],[2,"Arsenal",38,22,7,9,73,43,73],
+  [3,"Leeds United",38,21,6,11,58,43,69],[4,"Liverpool",38,19,10,9,51,30,67],
+  [5,"Chelsea",38,18,11,9,53,34,65],[6,"Aston Villa",38,15,13,10,46,35,58],
+  [7,"Sunderland",38,16,10,12,57,56,58],[8,"Leicester City",38,16,7,15,55,55,55],
+  [9,"West Ham United",38,15,10,13,52,53,55],[10,"Tottenham Hotspur",38,15,8,15,57,49,53],
+  [11,"Newcastle United",38,14,10,14,63,54,52],[12,"Middlesbrough",38,14,10,14,46,52,52],
+  [13,"Everton",38,12,14,12,59,49,50],[14,"Coventry City",38,12,8,18,47,54,44],
+  [15,"Southampton",38,12,8,18,45,62,44],[16,"Derby County",38,9,11,18,44,57,38],
+  [17,"Bradford City",38,9,9,20,38,68,36],[18,"Wimbledon",38,7,12,19,46,74,33],
+  [19,"Sheffield Wednesday",38,8,7,23,38,70,31],[20,"Watford",38,6,6,26,35,77,24]
+],
+"2000-01":[
+  [1,"Manchester United",38,24,8,6,79,31,80],[2,"Arsenal",38,20,10,8,63,38,70],
+  [3,"Liverpool",38,20,9,9,71,39,69],[4,"Leeds United",38,20,8,10,64,43,68],
+  [5,"Ipswich Town",38,20,6,12,57,42,66],[6,"Chelsea",38,17,10,11,68,45,61],
+  [7,"Sunderland",38,15,12,11,46,41,57],[8,"Aston Villa",38,13,15,10,46,43,54],
+  [9,"Charlton Athletic",38,14,10,14,50,57,52],[10,"Southampton",38,14,10,14,40,48,52],
+  [11,"Newcastle United",38,14,9,15,44,50,51],[12,"Tottenham Hotspur",38,13,10,15,47,54,49],
+  [13,"Leicester City",38,14,6,18,39,51,48],[14,"Middlesbrough",38,9,15,14,44,44,42],
+  [15,"West Ham United",38,10,12,16,45,50,42],[16,"Everton",38,11,9,18,45,59,42],
+  [17,"Derby County",38,10,12,16,37,59,42],[18,"Manchester City",38,8,10,20,41,65,34],
+  [19,"Coventry City",38,8,10,20,36,63,34],[20,"Bradford City",38,5,11,22,30,70,26]
+],
+"2001-02":[
+  [1,"Arsenal",38,26,9,3,79,36,87],[2,"Liverpool",38,24,8,6,67,30,80],
+  [3,"Manchester United",38,24,5,9,87,45,77],[4,"Newcastle United",38,21,8,9,74,52,71],
+  [5,"Leeds United",38,18,12,8,53,37,66],[6,"Chelsea",38,17,13,8,66,38,64],
+  [7,"West Ham United",38,15,8,15,48,57,53],[8,"Aston Villa",38,12,14,12,46,47,50],
+  [9,"Tottenham Hotspur",38,14,8,16,49,53,50],[10,"Blackburn Rovers",38,12,10,16,55,51,46],
+  [11,"Southampton",38,12,9,17,46,54,45],[12,"Middlesbrough",38,12,9,17,35,47,45],
+  [13,"Fulham",38,10,14,14,36,44,44],[14,"Charlton Athletic",38,10,14,14,38,49,44],
+  [15,"Everton",38,11,10,17,45,57,43],[16,"Bolton Wanderers",38,9,13,16,44,62,40],
+  [17,"Sunderland",38,10,10,18,29,51,40],[18,"Ipswich Town",38,9,9,20,41,64,36],
+  [19,"Derby County",38,8,6,24,33,63,30],[20,"Leicester City",38,5,13,20,30,64,28]
+],
+"2002-03":[
+  [1,"Manchester United",38,25,8,5,74,34,83],[2,"Arsenal",38,23,9,6,85,42,78],
+  [3,"Newcastle United",38,21,6,11,63,48,69],[4,"Chelsea",38,19,10,9,68,38,67],
+  [5,"Liverpool",38,18,10,10,61,41,64],[6,"Blackburn Rovers",38,16,12,10,52,43,60],
+  [7,"Everton",38,17,8,13,48,49,59],[8,"Southampton",38,13,13,12,43,46,52],
+  [9,"Manchester City",38,15,6,17,47,54,51],[10,"Tottenham Hotspur",38,14,8,16,51,62,50],
+  [11,"Middlesbrough",38,13,10,15,48,44,49],[12,"Charlton Athletic",38,14,7,17,45,56,49],
+  [13,"Birmingham City",38,13,9,16,41,49,48],[14,"Fulham",38,13,9,16,41,50,48],
+  [15,"Leeds United",38,14,5,19,58,57,47],[16,"Aston Villa",38,12,9,17,42,47,45],
+  [17,"Bolton Wanderers",38,10,14,14,41,51,44],[18,"West Ham United",38,10,12,16,42,59,42],
+  [19,"WBA",38,6,8,24,29,65,26],[20,"Sunderland",38,4,7,27,21,65,19]
+],
+"2003-04":[
+  [1,"Arsenal",38,26,12,0,73,26,90],[2,"Chelsea",38,24,7,7,67,30,79],
+  [3,"Manchester United",38,23,6,9,64,35,75],[4,"Liverpool",38,16,12,10,55,37,60],
+  [5,"Newcastle United",38,13,17,8,52,40,56],[6,"Aston Villa",38,15,11,12,48,44,56],
+  [7,"Charlton Athletic",38,14,11,13,51,51,53],[8,"Bolton Wanderers",38,14,11,13,48,56,53],
+  [9,"Fulham",38,14,10,14,52,46,52],[10,"Birmingham City",38,12,14,12,43,48,50],
+  [11,"Middlesbrough",38,13,9,16,44,52,48],[12,"Southampton",38,12,11,15,44,45,47],
+  [13,"Portsmouth",38,12,9,17,47,54,45],[14,"Tottenham Hotspur",38,13,6,19,47,57,45],
+  [15,"Blackburn Rovers",38,12,8,18,51,59,44],[16,"Manchester City",38,9,14,15,55,54,41],
+  [17,"Everton",38,9,12,17,45,57,39],[18,"Leicester City",38,6,15,17,48,65,33],
+  [19,"Leeds United",38,8,9,21,40,79,33],[20,"Wolverhampton",38,7,12,19,38,77,33]
+],
+"2004-05":[
+  [1,"Chelsea",38,29,8,1,72,15,95],[2,"Arsenal",38,25,8,5,87,36,83],
+  [3,"Manchester United",38,22,11,5,58,26,77],[4,"Everton",38,18,7,13,45,46,61],
+  [5,"Liverpool",38,17,7,14,52,41,58],[6,"Bolton Wanderers",38,16,10,12,49,44,58],
+  [7,"Middlesbrough",38,14,13,11,53,46,55],[8,"Manchester City",38,13,13,12,47,39,52],
+  [9,"Tottenham Hotspur",38,14,10,14,47,41,52],[10,"Aston Villa",38,12,11,15,45,52,47],
+  [11,"Charlton Athletic",38,12,10,16,42,58,46],[12,"Birmingham City",38,11,12,15,40,46,45],
+  [13,"Fulham",38,12,8,18,52,60,44],[14,"Newcastle United",38,10,14,14,47,57,44],
+  [15,"Blackburn Rovers",38,9,15,14,32,43,42],[16,"Portsmouth",38,10,9,19,43,59,39],
+  [17,"WBA",38,8,12,18,36,61,36],[18,"Crystal Palace",38,7,12,19,41,62,33],
+  [19,"Norwich City",38,7,12,19,42,77,33],[20,"Southampton",38,6,14,18,45,66,32]
+],
+"2005-06":[
+  [1,"Chelsea",38,29,4,5,72,22,91],[2,"Manchester United",38,25,8,5,72,34,83],
+  [3,"Liverpool",38,25,7,6,57,25,82],[4,"Arsenal",38,20,7,11,68,31,67],
+  [5,"Tottenham Hotspur",38,18,11,9,53,38,65],[6,"Blackburn Rovers",38,19,6,13,51,42,63],
+  [7,"Newcastle United",38,17,7,14,47,42,58],[8,"Bolton Wanderers",38,15,11,12,49,41,56],
+  [9,"West Ham United",38,16,7,15,52,55,55],[10,"Wigan Athletic",38,15,6,17,45,52,51],
+  [11,"Everton",38,14,8,16,34,49,50],[12,"Fulham",38,14,6,18,48,58,48],
+  [13,"Charlton Athletic",38,13,8,17,41,55,47],[14,"Middlesbrough",38,12,9,17,48,58,45],
+  [15,"Manchester City",38,13,4,21,43,48,43],[16,"Aston Villa",38,10,12,16,42,55,42],
+  [17,"Portsmouth",38,10,8,20,37,62,38],[18,"Birmingham City",38,8,10,20,28,50,34],
+  [19,"WBA",38,7,9,22,31,58,30],[20,"Sunderland",38,3,6,29,26,69,15]
+],
+"2006-07":[
+  [1,"Manchester United",38,28,5,5,83,27,89],[2,"Chelsea",38,24,11,3,64,24,83],
+  [3,"Liverpool",38,20,8,10,57,27,68],[4,"Arsenal",38,19,11,8,63,35,68],
+  [5,"Tottenham Hotspur",38,17,9,12,57,54,60],[6,"Everton",38,15,13,10,52,36,58],
+  [7,"Bolton Wanderers",38,16,8,14,47,52,56],[8,"Reading",38,16,7,15,52,47,55],
+  [9,"Portsmouth",38,14,12,12,45,42,54],[10,"Blackburn Rovers",38,15,7,16,52,54,52],
+  [11,"Aston Villa",38,11,17,10,43,41,50],[12,"Middlesbrough",38,12,10,16,44,49,46],
+  [13,"Newcastle United",38,11,10,17,38,47,43],[14,"Manchester City",38,11,9,18,29,44,42],
+  [15,"West Ham United",38,12,5,21,35,59,41],[16,"Fulham",38,8,15,15,38,60,39],
+  [17,"Wigan Athletic",38,10,8,20,37,59,38],[18,"Sheffield United",38,10,8,20,32,55,38],
+  [19,"Charlton Athletic",38,8,10,20,34,60,34],[20,"Watford",38,5,13,20,29,59,28]
+],
+"2007-08":[
+  [1,"Manchester United",38,27,6,5,80,22,87],[2,"Chelsea",38,25,10,3,65,26,85],
+  [3,"Arsenal",38,24,11,3,74,31,83],[4,"Liverpool",38,21,13,4,67,28,76],
+  [5,"Everton",38,19,8,11,55,33,65],[6,"Aston Villa",38,16,12,10,71,51,60],
+  [7,"Blackburn Rovers",38,15,13,10,50,48,58],[8,"Portsmouth",38,16,9,13,48,40,57],
+  [9,"Manchester City",38,15,10,13,45,53,55],[10,"West Ham United",38,13,10,15,42,50,49],
+  [11,"Tottenham Hotspur",38,11,13,14,66,61,46],[12,"Newcastle United",38,11,10,17,45,65,43],
+  [13,"Middlesbrough",38,10,12,16,43,53,42],[14,"Wigan Athletic",38,10,10,18,34,51,40],
+  [15,"Sunderland",38,11,6,21,36,59,39],[16,"Bolton Wanderers",38,9,10,19,36,54,37],
+  [17,"Fulham",38,8,12,18,38,60,36],[18,"Reading",38,10,6,22,41,66,36],
+  [19,"Birmingham City",38,8,11,19,46,62,35],[20,"Derby County",38,1,8,29,20,89,11]
+],
+"2008-09":[
+  [1,"Manchester United",38,28,6,4,68,24,90],[2,"Liverpool",38,25,11,2,77,27,86],
+  [3,"Chelsea",38,25,8,5,68,24,83],[4,"Arsenal",38,20,12,6,68,37,72],
+  [5,"Everton",38,17,12,9,55,37,63],[6,"Aston Villa",38,17,11,10,54,48,62],
+  [7,"Fulham",38,14,11,13,39,34,53],[8,"Tottenham Hotspur",38,14,9,15,45,45,51],
+  [9,"West Ham United",38,14,9,15,42,45,51],[10,"Manchester City",38,15,5,18,58,50,50],
+  [11,"Wigan Athletic",38,12,9,17,34,45,45],[12,"Stoke City",38,12,9,17,38,55,45],
+  [13,"Bolton Wanderers",38,11,8,19,41,53,41],[14,"Portsmouth",38,10,11,17,38,57,41],
+  [15,"Blackburn Rovers",38,10,11,17,40,60,41],[16,"Sunderland",38,9,9,20,34,54,36],
+  [17,"Hull City",38,8,11,19,39,64,35],[18,"Newcastle United",38,7,13,18,40,59,34],
+  [19,"Middlesbrough",38,7,11,20,28,57,32],[20,"WBA",38,8,8,22,36,67,32]
+],
+"2009-10":[
+  [1,"Chelsea",38,27,5,6,103,32,86],[2,"Manchester United",38,27,4,7,86,28,85],
+  [3,"Arsenal",38,23,6,9,83,41,75],[4,"Tottenham Hotspur",38,21,7,10,67,41,70],
+  [5,"Manchester City",38,18,13,7,73,45,67],[6,"Aston Villa",38,17,13,8,52,39,64],
+  [7,"Liverpool",38,18,9,11,61,35,63],[8,"Everton",38,16,13,9,60,49,61],
+  [9,"Birmingham City",38,13,11,14,38,47,50],[10,"Blackburn Rovers",38,13,11,14,41,55,50],
+  [11,"Stoke City",38,11,14,13,34,48,47],[12,"Fulham",38,12,10,16,39,46,46],
+  [13,"Sunderland",38,11,11,16,48,56,44],[14,"Bolton Wanderers",38,10,9,19,42,67,39],
+  [15,"Wolverhampton",38,9,11,18,32,56,38],[16,"Wigan Athletic",38,9,9,20,37,79,36],
+  [17,"West Ham United",38,8,11,19,47,66,35],[18,"Burnley",38,8,6,24,42,82,30],
+  [19,"Hull City",38,6,12,20,34,75,30],[20,"Portsmouth",38,7,7,24,34,66,19]
+],
+"2010-11":[
+  [1,"Manchester United",38,23,11,4,78,37,80],[2,"Chelsea",38,21,8,9,69,33,71],
+  [3,"Manchester City",38,21,8,9,60,33,71],[4,"Arsenal",38,19,11,8,72,43,68],
+  [5,"Tottenham Hotspur",38,16,14,8,55,46,62],[6,"Liverpool",38,17,7,14,59,44,58],
+  [7,"Everton",38,13,15,10,51,45,54],[8,"Fulham",38,11,16,11,49,43,49],
+  [9,"Aston Villa",38,12,12,14,48,59,48],[10,"Sunderland",38,12,11,15,45,56,47],
+  [11,"WBA",38,12,11,15,56,71,47],[12,"Newcastle United",38,11,13,14,56,57,46],
+  [13,"Stoke City",38,13,7,18,46,48,46],[14,"Bolton Wanderers",38,12,10,16,52,56,46],
+  [15,"Blackburn Rovers",38,11,10,17,46,59,43],[16,"Wigan Athletic",38,9,15,14,40,61,42],
+  [17,"Wolverhampton",38,11,7,20,46,66,40],[18,"Birmingham City",38,8,15,15,37,58,39],
+  [19,"Blackpool",38,10,9,19,55,78,39],[20,"West Ham United",38,7,12,19,43,70,33]
+],
+"2011-12":[
+  [1,"Manchester City",38,28,5,5,93,29,89],[2,"Manchester United",38,28,5,5,89,33,89],
+  [3,"Arsenal",38,21,7,10,74,49,70],[4,"Tottenham Hotspur",38,20,9,9,66,41,69],
+  [5,"Newcastle United",38,19,8,11,56,51,65],[6,"Chelsea",38,18,10,10,65,46,64],
+  [7,"Everton",38,15,11,12,50,40,56],[8,"Liverpool",38,14,10,14,47,40,52],
+  [9,"Fulham",38,14,10,14,48,51,52],[10,"WBA",38,13,8,17,45,52,47],
+  [11,"Swansea City",38,12,11,15,44,51,47],[12,"Norwich City",38,12,11,15,52,66,47],
+  [13,"Sunderland",38,11,12,15,45,46,45],[14,"Stoke City",38,11,12,15,36,53,45],
+  [15,"Wigan Athletic",38,11,10,17,42,62,43],[16,"Aston Villa",38,7,17,14,37,53,38],
+  [17,"QPR",38,10,7,21,43,66,37],[18,"Bolton Wanderers",38,10,6,22,46,77,36],
+  [19,"Blackburn Rovers",38,8,7,23,48,78,31],[20,"Wolverhampton",38,5,10,23,40,82,25]
+],
+"2012-13":[
+  [1,"Manchester United",38,28,5,5,86,43,89],[2,"Manchester City",38,23,9,6,66,34,78],
+  [3,"Chelsea",38,22,9,7,75,39,75],[4,"Arsenal",38,21,10,7,72,37,73],
+  [5,"Tottenham Hotspur",38,21,9,8,66,46,72],[6,"Everton",38,16,15,7,55,40,63],
+  [7,"Liverpool",38,16,13,9,71,43,61],[8,"WBA",38,14,7,17,53,57,49],
+  [9,"Swansea City",38,11,13,14,47,51,46],[10,"West Ham United",38,12,10,16,45,53,46],
+  [11,"Norwich City",38,10,14,14,41,58,44],[12,"Fulham",38,11,10,17,50,60,43],
+  [13,"Stoke City",38,9,15,14,34,45,42],[14,"Southampton",38,9,14,15,49,60,41],
+  [15,"Aston Villa",38,10,11,17,47,69,41],[16,"Newcastle United",38,11,8,19,45,68,41],
+  [17,"Sunderland",38,9,12,17,41,54,39],[18,"Wigan Athletic",38,9,9,20,47,73,36],
+  [19,"Reading",38,6,10,22,43,73,28],[20,"QPR",38,4,13,21,30,60,25]
+],
+"2013-14":[
+  [1,"Manchester City",38,27,5,6,102,37,86],[2,"Liverpool",38,26,6,6,101,50,84],
+  [3,"Chelsea",38,25,7,6,71,27,82],[4,"Arsenal",38,24,7,7,68,41,79],
+  [5,"Everton",38,21,9,8,61,39,72],[6,"Tottenham Hotspur",38,21,6,11,55,51,69],
+  [7,"Manchester United",38,19,7,12,64,43,64],[8,"Southampton",38,15,11,12,54,46,56],
+  [9,"Stoke City",38,13,11,14,45,52,50],[10,"Newcastle United",38,15,4,19,43,59,49],
+  [11,"Crystal Palace",38,13,6,19,33,48,45],[12,"Swansea City",38,11,9,18,54,54,42],
+  [13,"West Ham United",38,11,7,20,40,51,40],[14,"Sunderland",38,10,8,20,41,60,38],
+  [15,"Aston Villa",38,10,8,20,39,61,38],[16,"Hull City",38,10,7,21,38,53,37],
+  [17,"WBA",38,7,15,16,43,59,36],[18,"Norwich City",38,8,9,21,28,62,33],
+  [19,"Fulham",38,9,5,24,40,85,32],[20,"Cardiff City",38,7,9,22,32,74,30]
+],
+"2014-15":[
+  [1,"Chelsea",38,26,9,3,73,32,87],[2,"Manchester City",38,24,7,7,83,38,79],
+  [3,"Arsenal",38,22,9,7,71,36,75],[4,"Manchester United",38,20,10,8,62,37,70],
+  [5,"Tottenham Hotspur",38,19,7,12,58,53,64],[6,"Liverpool",38,18,8,12,52,48,62],
+  [7,"Southampton",38,18,6,14,54,33,60],[8,"Swansea City",38,16,8,14,46,49,56],
+  [9,"Stoke City",38,15,9,14,48,55,54],[10,"Crystal Palace",38,13,9,16,47,51,48],
+  [11,"Everton",38,12,11,15,48,50,47],[12,"West Ham United",38,12,11,15,44,47,47],
+  [13,"WBA",38,11,11,16,38,51,44],[14,"Leicester City",38,11,8,19,46,55,41],
+  [15,"Newcastle United",38,10,9,19,40,63,39],[16,"Sunderland",38,7,17,14,31,53,38],
+  [17,"Aston Villa",38,10,8,20,31,57,38],[18,"Hull City",38,8,11,19,33,51,35],
+  [19,"Burnley",38,7,12,19,28,53,33],[20,"QPR",38,8,6,24,42,73,30]
+],
+"2015-16":[
+  [1,"Leicester City",38,23,12,3,68,36,81],[2,"Arsenal",38,20,11,7,65,36,71],
+  [3,"Tottenham Hotspur",38,19,13,6,69,35,70],[4,"Manchester City",38,19,9,10,71,41,66],
+  [5,"Manchester United",38,19,9,10,49,35,66],[6,"Southampton",38,18,9,11,59,41,63],
+  [7,"West Ham United",38,16,14,8,65,51,62],[8,"Liverpool",38,16,12,10,63,50,60],
+  [9,"Stoke City",38,14,9,15,41,55,51],[10,"Chelsea",38,12,14,12,59,53,50],
+  [11,"Everton",38,11,14,13,59,55,47],[12,"Swansea City",38,12,9,17,42,52,45],
+  [13,"Watford",38,12,9,17,40,50,45],[14,"WBA",38,10,13,15,34,48,43],
+  [15,"Crystal Palace",38,11,9,18,39,51,42],[16,"Bournemouth",38,11,9,18,45,67,42],
+  [17,"Sunderland",38,9,12,17,48,62,39],[18,"Newcastle United",38,9,10,19,44,65,37],
+  [19,"Norwich City",38,9,7,22,39,67,34],[20,"Aston Villa",38,3,8,27,27,76,17]
+],
+"2016-17":[
+  [1,"Chelsea",38,30,3,5,85,33,93],[2,"Tottenham Hotspur",38,26,8,4,86,26,86],
+  [3,"Manchester City",38,23,9,6,80,39,78],[4,"Liverpool",38,22,10,6,78,42,76],
+  [5,"Arsenal",38,23,6,9,77,44,75],[6,"Manchester United",38,18,15,5,54,29,69],
+  [7,"Everton",38,17,10,11,62,44,61],[8,"Southampton",38,12,10,16,41,48,46],
+  [9,"Bournemouth",38,12,10,16,55,67,46],[10,"WBA",38,12,9,17,43,51,45],
+  [11,"West Ham United",38,12,9,17,47,64,45],[12,"Leicester City",38,12,8,18,48,63,44],
+  [13,"Stoke City",38,11,11,16,41,56,44],[14,"Crystal Palace",38,12,5,21,50,63,41],
+  [15,"Swansea City",38,12,5,21,45,70,41],[16,"Burnley",38,11,7,20,39,55,40],
+  [17,"Watford",38,11,7,20,40,68,40],[18,"Hull City",38,9,7,22,37,80,34],
+  [19,"Middlesbrough",38,5,13,20,27,53,28],[20,"Sunderland",38,6,6,26,29,69,24]
+],
+"2017-18":[
+  [1,"Manchester City",38,32,4,2,106,27,100],[2,"Manchester United",38,25,6,7,68,28,81],
+  [3,"Tottenham Hotspur",38,23,8,7,74,36,77],[4,"Liverpool",38,21,12,5,84,38,75],
+  [5,"Chelsea",38,21,7,10,62,38,70],[6,"Arsenal",38,19,6,13,74,51,63],
+  [7,"Burnley",38,14,12,12,36,39,54],[8,"Everton",38,13,10,15,44,58,49],
+  [9,"Leicester City",38,12,11,15,56,60,47],[10,"Newcastle United",38,12,8,18,39,47,44],
+  [11,"Crystal Palace",38,11,11,16,45,55,44],[12,"Bournemouth",38,11,11,16,45,61,44],
+  [13,"West Ham United",38,10,12,16,48,68,42],[14,"Watford",38,11,8,19,44,64,41],
+  [15,"Brighton",38,9,13,16,34,54,40],[16,"Huddersfield Town",38,9,10,19,28,58,37],
+  [17,"Southampton",38,7,15,16,37,56,36],[18,"Swansea City",38,8,9,21,28,56,33],
+  [19,"Stoke City",38,7,12,19,35,68,33],[20,"WBA",38,6,13,19,31,56,31]
+],
+"2018-19":[
+  [1,"Manchester City",38,32,2,4,95,23,98],[2,"Liverpool",38,30,7,1,89,22,97],
+  [3,"Chelsea",38,21,9,8,63,39,72],[4,"Tottenham Hotspur",38,23,2,13,67,39,71],
+  [5,"Arsenal",38,21,7,10,73,51,70],[6,"Manchester United",38,19,9,10,65,54,66],
+  [7,"Wolverhampton",38,16,9,13,47,46,57],[8,"Everton",38,15,9,14,54,46,54],
+  [9,"Leicester City",38,15,7,16,51,48,52],[10,"West Ham United",38,15,7,16,52,55,52],
+  [11,"Watford",38,14,8,16,52,59,50],[12,"Crystal Palace",38,14,7,17,51,53,49],
+  [13,"Newcastle United",38,12,9,17,42,48,45],[14,"Bournemouth",38,13,6,19,56,70,45],
+  [15,"Burnley",38,11,7,20,45,68,40],[16,"Southampton",38,9,12,17,45,65,39],
+  [17,"Brighton",38,9,9,20,35,60,36],[18,"Cardiff City",38,10,4,24,34,69,34],
+  [19,"Fulham",38,7,5,26,34,81,26],[20,"Huddersfield Town",38,3,7,28,22,76,16]
+],
+"2019-20":[
+  [1,"Liverpool",38,32,3,3,85,33,99],[2,"Manchester City",38,26,3,9,102,35,81],
+  [3,"Manchester United",38,18,12,8,66,36,66],[4,"Chelsea",38,20,6,12,69,54,66],
+  [5,"Leicester City",38,18,8,12,67,41,62],[6,"Tottenham Hotspur",38,16,11,11,61,47,59],
+  [7,"Wolverhampton",38,15,14,9,51,40,59],[8,"Arsenal",38,14,14,10,56,48,56],
+  [9,"Sheffield United",38,14,12,12,39,39,54],[10,"Burnley",38,15,9,14,43,50,54],
+  [11,"Southampton",38,15,7,16,51,60,52],[12,"Everton",38,13,10,15,44,56,49],
+  [13,"Newcastle United",38,11,11,16,38,58,44],[14,"Crystal Palace",38,11,10,17,31,50,43],
+  [15,"Brighton",38,9,14,15,39,54,41],[16,"West Ham United",38,10,9,19,49,62,39],
+  [17,"Aston Villa",38,9,8,21,41,67,35],[18,"Bournemouth",38,9,7,22,40,65,34],
+  [19,"Watford",38,8,10,20,36,64,34],[20,"Norwich City",38,5,6,27,26,75,21]
+],
+"2020-21":[
+  [1,"Manchester City",38,27,5,6,83,32,86],[2,"Manchester United",38,21,11,6,73,44,74],
+  [3,"Liverpool",38,20,9,9,68,42,69],[4,"Chelsea",38,19,10,9,58,36,67],
+  [5,"Leicester City",38,20,6,12,68,50,66],[6,"West Ham United",38,19,8,11,62,47,65],
+  [7,"Tottenham Hotspur",38,18,8,12,68,45,62],[8,"Arsenal",38,18,7,13,55,39,61],
+  [9,"Leeds United",38,18,5,15,62,54,59],[10,"Everton",38,17,8,13,47,48,59],
+  [11,"Aston Villa",38,16,7,15,55,46,55],[12,"Newcastle United",38,12,9,17,46,62,45],
+  [13,"Wolverhampton",38,12,9,17,36,52,45],[14,"Crystal Palace",38,12,8,18,41,66,44],
+  [15,"Southampton",38,12,7,19,47,68,43],[16,"Brighton",38,9,14,15,40,46,41],
+  [17,"Burnley",38,10,9,19,33,55,39],[18,"Fulham",38,5,13,20,27,53,28],
+  [19,"WBA",38,5,11,22,35,76,26],[20,"Sheffield United",38,7,2,29,20,63,23]
+],
+"2021-22":[
+  [1,"Manchester City",38,29,6,3,99,26,93],[2,"Liverpool",38,28,8,2,94,26,92],
+  [3,"Chelsea",38,21,11,6,76,33,74],[4,"Tottenham Hotspur",38,22,5,11,69,40,71],
+  [5,"Arsenal",38,22,3,13,61,48,69],[6,"Manchester United",38,16,10,12,57,57,58],
+  [7,"West Ham United",38,16,8,14,60,51,56],[8,"Leicester City",38,14,10,14,62,59,52],
+  [9,"Brighton",38,12,15,11,42,44,51],[10,"Wolverhampton",38,15,6,17,38,43,51],
+  [11,"Newcastle United",38,13,10,15,44,62,49],[12,"Crystal Palace",38,11,15,12,50,46,48],
+  [13,"Brentford",38,13,7,18,48,56,46],[14,"Aston Villa",38,13,6,19,52,54,45],
+  [15,"Southampton",38,9,13,16,43,67,40],[16,"Everton",38,11,6,21,43,66,39],
+  [17,"Leeds United",38,9,11,18,42,79,38],[18,"Burnley",38,7,14,17,34,53,35],
+  [19,"Watford",38,6,5,27,34,77,23],[20,"Norwich City",38,5,7,26,23,84,22]
+],
+"2022-23":[
+  [1,"Manchester City",38,28,5,5,94,33,89],[2,"Arsenal",38,26,6,6,88,43,84],
+  [3,"Manchester United",38,23,6,9,58,43,75],[4,"Newcastle United",38,19,14,5,68,33,71],
+  [5,"Liverpool",38,19,10,9,75,47,67],[6,"Brighton",38,18,8,12,72,53,62],
+  [7,"Aston Villa",38,18,7,13,51,46,61],[8,"Tottenham Hotspur",38,18,6,14,70,63,60],
+  [9,"Brentford",38,15,14,9,58,46,59],[10,"Fulham",38,15,7,16,55,53,52],
+  [11,"Crystal Palace",38,11,12,15,40,49,45],[12,"Chelsea",38,11,11,16,38,47,44],
+  [13,"Wolverhampton",38,11,8,19,31,58,41],[14,"West Ham United",38,11,7,20,42,55,40],
+  [15,"Bournemouth",38,11,6,21,37,71,39],[16,"Nottingham Forest",38,9,11,18,38,68,38],
+  [17,"Everton",38,8,12,18,34,57,36],[18,"Leicester City",38,9,7,22,51,68,34],
+  [19,"Leeds United",38,7,10,21,48,78,31],[20,"Southampton",38,6,7,25,36,70,25]
+],
+"2023-24":[
+  [1,"Manchester City",38,28,7,3,96,34,91],[2,"Arsenal",38,28,5,5,91,29,89],
+  [3,"Liverpool",38,24,10,4,86,41,82],[4,"Aston Villa",38,20,8,10,76,61,68],
+  [5,"Tottenham Hotspur",38,20,6,12,74,61,66],[6,"Chelsea",38,18,9,11,77,63,63],
+  [7,"Newcastle United",38,18,6,14,85,62,60],[8,"Manchester United",38,18,6,14,57,58,60],
+  [9,"West Ham United",38,14,10,14,60,74,52],[10,"Brighton",38,12,12,14,55,62,48],
+  [11,"Bournemouth",38,13,9,16,54,65,48],[12,"Fulham",38,13,8,17,55,61,47],[13,"Wolves",38,13,7,18,50,74,46],
+  [14,"Crystal Palace",38,13,5,20,57,58,44],[15,"Everton",38,13,4,21,40,51,43],
+  [16,"Brentford",38,10,9,19,56,65,39],[17,"Nottingham Forest",38,9,9,20,49,67,36],
+  [18,"Luton Town",38,6,8,24,52,85,26],[19,"Burnley",38,5,9,24,41,78,24],
+  [20,"Sheffield United",38,3,7,28,35,104,16]
+],
+"2024-25":[
+  [1,"Liverpool",38,25,9,4,86,41,84],[2,"Arsenal",38,20,14,4,69,34,74],
+  [3,"Manchester City",38,21,8,9,72,44,71],[4,"Chelsea",38,20,9,9,64,43,69],
+  [5,"Newcastle United",38,20,6,12,68,47,66],[6,"Aston Villa",38,19,9,10,58,51,66],
+  [7,"Nottingham Forest",38,19,8,11,58,46,65],[8,"Brighton",38,16,13,9,66,59,61],
+  [9,"Bournemouth",38,15,11,12,58,46,56],[10,"Brentford",38,16,8,14,66,57,56],
+  [11,"Fulham",38,15,9,14,54,54,54],[12,"Crystal Palace",38,13,14,11,51,51,53],
+  [13,"Everton",38,11,15,12,42,44,48],[14,"West Ham United",38,11,10,17,46,62,43],
+  [15,"Manchester United",38,11,9,18,44,54,42],[16,"Wolverhampton",38,12,6,20,54,69,42],
+  [17,"Tottenham Hotspur",38,11,5,22,64,65,38],[18,"Leicester City",38,6,7,25,33,80,25],
+  [19,"Ipswich Town",38,4,10,24,36,82,22],[20,"Southampton",38,2,6,30,26,86,12]
+]
+};
+
+// Notable notes, top scorers
+const NOTES = {
+  "1992-93":{ champion:"Manchester United's first Premier League title — Cantona's influence after Jan transfer.", topScorer:{ name:"Les Ferdinand (QPR) / Teddy Sheringham (Spurs)", goals:22 } },
+  "1993-94":{ champion:"Utd dominant, Man United win the Double. 92pt record at the time.", topScorer:{ name:"Andy Cole (Newcastle)", goals:34 } },
+  "1994-95":{ champion:"Blackburn's only title, Alan Shearer's 34 goals, Dalglish's achievement.", topScorer:{ name:"Alan Shearer (Blackburn)", goals:34 } },
+  "1995-96":{ champion:"Cantona's chip goal vs Wimbledon. Newcastle's 12-point lead squandered.", topScorer:{ name:"Alan Shearer (Newcastle)", goals:31 } },
+  "1996-97":{ champion:"Man Utd 4th title in 5 years. Shearer joins Newcastle for £15m record fee.", topScorer:{ name:"Alan Shearer (Newcastle)", goals:25 } },
+  "1997-98":{ champion:"Arsenal's Double under Wenger. Bergkamp's wonder goal vs Leicester.", topScorer:{ name:"Chris Sutton / Michael Owen / Dion Dublin", goals:18 } },
+  "1998-99":{ champion:"Treble-winning Man Utd. Schmeichel's last season.", topScorer:{ name:"Michael Owen (Liverpool)", goals:18 } },
+  "1999-00":{ champion:"Man Utd's record 91pts — Yorke & Cole lethal partnership.", topScorer:{ name:"Kevin Phillips (Sunderland)", goals:30 } },
+  "2000-01":{ champion:"Utd three-in-a-row. Van Nistelrooy joins the following summer.", topScorer:{ name:"Jimmy Floyd Hasselbaink (Chelsea)", goals:23 } },
+  "2001-02":{ champion:"Arsenal's Invincibles dry run. Henry at his peak. Double again.", topScorer:{ name:"Thierry Henry (Arsenal)", goals:24 } },
+  "2002-03":{ champion:"Man Utd 8th PL title. van Nistelrooy 25 goals.", topScorer:{ name:"Ruud van Nistelrooy (Man Utd)", goals:25 } },
+  "2003-04":{ champion:"Arsenal Invincibles — 38 games unbeaten. Greatest PL season.", topScorer:{ name:"Thierry Henry (Arsenal)", goals:30 } },
+  "2004-05":{ champion:"Chelsea's 95pts record under Mourinho. Lampard 13 goals from midfield.", topScorer:{ name:"Thierry Henry (Arsenal)", goals:25 } },
+  "2005-06":{ champion:"Chelsea back-to-back. Lampard runner-up Ballon d'Or.", topScorer:{ name:"Thierry Henry (Arsenal)", goals:27 } },
+  "2006-07":{ champion:"Man Utd return — Ronaldo emerging. Rooney & Ronaldo up front.", topScorer:{ name:"Didier Drogba (Chelsea)", goals:20 } },
+  "2007-08":{ champion:"Man Utd champions & UCL. Ronaldo 31 PL goals, 42 total.", topScorer:{ name:"Cristiano Ronaldo (Man Utd)", goals:31 } },
+  "2008-09":{ champion:"Utd 3rd in a row. Liverpool 2nd — Gerrard & Torres brilliant.", topScorer:{ name:"Nicolas Anelka (Chelsea)", goals:19 } },
+  "2009-10":{ champion:"Chelsea 103 goals. Drogba golden boot. Ancelotti's first title.", topScorer:{ name:"Didier Drogba (Chelsea)", goals:29 } },
+  "2010-11":{ champion:"Utd 19th title — surpassed Liverpool's record.", topScorer:{ name:"Carlos Tevez (Man City)", goals:20 } },
+  "2011-12":{ champion:"Aguero's 93:20. City beat Utd on goal difference in final minutes.", topScorer:{ name:"Robin van Persie (Arsenal)", goals:30 } },
+  "2012-13":{ champion:"Van Persie joins Utd — 26 goals. Ferguson's final season.", topScorer:{ name:"Robin van Persie (Man Utd)", goals:26 } },
+  "2013-14":{ champion:"City win by 2pts from Liverpool. Suarez 31 goals. Gerrard slip.", topScorer:{ name:"Luis Suárez (Liverpool)", goals:31 } },
+  "2014-15":{ champion:"Chelsea under Mourinho. Costa/Hazard/Fabregas trio dominant.", topScorer:{ name:"Harry Kane (Tottenham)", goals:21 } },
+  "2015-16":{ champion:"Leicester's miracle — 5000-1 odds. Vardy & Mahrez inspirational.", topScorer:{ name:"Harry Kane (Tottenham)", goals:25 } },
+  "2016-17":{ champion:"Chelsea's 30W 93pts. Conte's first title.", topScorer:{ name:"Harry Kane (Tottenham)", goals:29 } },
+  "2017-18":{ champion:"Man City's 100pt season — all-time PL record. 19pt winning margin.", topScorer:{ name:"Mohamed Salah (Liverpool)", goals:32 } },
+  "2018-19":{ champion:"City 98pts pip Liverpool 97pts — closest title race ever.", topScorer:{ name:"Pierre-Emerick Aubameyang / Mohamed Salah / Sadio Mané", goals:22 } },
+  "2019-20":{ champion:"Liverpool's first league title in 30 years. 99pts, COVID-affected.", topScorer:{ name:"Jamie Vardy (Leicester)", goals:23 } },
+  "2020-21":{ champion:"Man City dominant second half of season. Gündoğan 13 goals.", topScorer:{ name:"Harry Kane (Tottenham)", goals:23 } },
+  "2021-22":{ champion:"City edge out Liverpool by 1pt. Salah / Son share golden boot.", topScorer:{ name:"Mohamed Salah / Son Heung-min", goals:23 } },
+  "2022-23":{ champion:"City's 5th title in 6 years. Haaland 36 goals — obliterated record.", topScorer:{ name:"Erling Haaland (Man City)", goals:36 } },
+  "2023-24":{ champion:"City 4-in-a-row. Arsenal agonisingly close. Haaland 27 goals.", topScorer:{ name:"Erling Haaland (Man City)", goals:27 } },
+  "2024-25":{ champion:"Liverpool's title under Arne Slot. Salah golden boot farewell season.", topScorer:{ name:"Mohamed Salah (Liverpool)", goals:29 } }
+};
+
+const TEAM_NOTES = {
+  "Arsenal":{ founded:1886, ground:"Emirates Stadium (60,704)", note:"Most PL runner-up finishes. Invincibles 2003-04." },
+  "Manchester United":{ founded:1878, ground:"Old Trafford (74,140)", note:"Record 13 PL titles. Ferguson era dominance." },
+  "Chelsea":{ founded:1905, ground:"Stamford Bridge (40,341)", note:"6 PL titles, all post-Abramovich takeover 2003." },
+  "Manchester City":{ founded:1880, ground:"Etihad Stadium (55,017)", note:"8 PL titles. Most dominant team since 2010s." },
+  "Liverpool":{ founded:1892, ground:"Anfield (61,276)", note:"First PL title in 2019-20, 30yr wait." },
+  "Tottenham Hotspur":{ founded:1882, ground:"Tottenham Hotspur Stadium (62,850)", note:"Never won PL. Second 2016-17 best finish." },
+  "Aston Villa":{ founded:1874, ground:"Villa Park (42,749)", note:"Runners-up 1992-93. Long-established PL member." },
+  "Everton":{ founded:1878, ground:"Goodison Park (39,571)", note:"Ever-present until 2023 relegation threat. Moved to new stadium." },
+  "Newcastle United":{ founded:1892, ground:"St James' Park (52,354)", note:"Runners-up 1995-96, 1996-97. Saudi takeover revival." },
+  "Blackburn Rovers":{ founded:1875, ground:"Ewood Park (31,367)", note:"Champions 1994-95 under Dalglish. Walker money." },
+  "Leeds United":{ founded:1919, ground:"Elland Road (37,890)", note:"Yo-yo club in modern era, briefly 4th 2000-01." },
+  "Leicester City":{ founded:1884, ground:"King Power Stadium (32,315)", note:"5000-1 miracle champions 2015-16 under Ranieri." },
+  "Nottingham Forest":{ founded:1865, ground:"City Ground (30,445)", note:"Relegated 1998-99, returned 2022-23." },
+  "Wolverhampton":{ founded:1877, ground:"Molineux (32,050)", note:"Back in PL 2018. Mou Nuno era revival." },
+  "Brighton":{ founded:1901, ground:"Amex Stadium (31,800)", note:"First promoted 2017. De Zerbi-era recognition." },
+  "Brentford":{ founded:1889, ground:"Gtech Community Stadium (17,250)", note:"Promoted 2021, first top-flight season in 74 years." }
+};
+
+// ════════════════════════════════════════════════════════════════
+//  STATE
+// ════════════════════════════════════════════════════════════════
+let colorMode = 'position';
+let sortMode = 'seasons';
+let searchFilter = '';
+let selectedCell = null;
+
+// ════════════════════════════════════════════════════════════════
+//  BUILD TEAM INDEX
+// ════════════════════════════════════════════════════════════════
+// Map team → season → row data
+const teamSeasonMap = {};
+for (const [season, rows] of Object.entries(RAW)) {
+  for (const row of rows) {
+    const [pos, team, p, w, d, l, gf, ga, pts] = row;
+    if (!teamSeasonMap[team]) teamSeasonMap[team] = {};
+    teamSeasonMap[team][season] = { pos, p, w, d, l, gf, ga, gd: gf - ga, pts };
+  }
+}
+
+const ALL_TEAMS = Object.keys(teamSeasonMap);
+
+function teamSeasons(t) { return Object.keys(teamSeasonMap[t]).length; }
+function teamBest(t) { return Math.min(...Object.values(teamSeasonMap[t]).map(s => s.pos)); }
+function teamWorst(t) { return Math.max(...Object.values(teamSeasonMap[t]).map(s => s.pos)); }
+function teamAvg(t) {
+  const vals = Object.values(teamSeasonMap[t]).map(s => s.pos);
+  return vals.reduce((a,b)=>a+b,0)/vals.length;
+}
+
+// ════════════════════════════════════════════════════════════════
+//  COLOR UTILITIES
+// ════════════════════════════════════════════════════════════════
+function lerp(a, b, t) { return a + (b-a)*t; }
+function lerpColor(c1, c2, t) {
+  const r1=parseInt(c1.slice(1,3),16), g1=parseInt(c1.slice(3,5),16), b1=parseInt(c1.slice(5,7),16);
+  const r2=parseInt(c2.slice(1,3),16), g2=parseInt(c2.slice(3,5),16), b2=parseInt(c2.slice(5,7),16);
+  const r=Math.round(lerp(r1,r2,t)), g=Math.round(lerp(g1,g2,t)), b=Math.round(lerp(b1,b2,t));
+  return `rgb(${r},${g},${b})`;
+}
+
+function positionColor(pos, maxPos) {
+  if (pos === 1) return '#c8a400';
+  if (pos <= 4) return lerpColor('#1e40af','#3b82f6',(pos-2)/2);
+  if (pos <= 7) return lerpColor('#065f46','#059669',(pos-5)/2);
+  if (pos <= 17) return lerpColor('#374151','#4b5563',(pos-8)/9);
+  return lerpColor('#7f1d1d','#dc2626',(pos-18)/2);
+}
+
+function goalsColor(gf) {
+  if (gf === null) return '#1a1d27';
+  const t = Math.min(1, gf / 100);
+  return lerpColor('#1e3a5f','#f59e0b', t);
+}
+
+function gdColor(gd) {
+  if (gd === null) return '#1a1d27';
+  if (gd > 0) { const t = Math.min(1, gd/70); return lerpColor('#1e3a2f','#10b981',t); }
+  if (gd < 0) { const t = Math.min(1, Math.abs(gd)/70); return lerpColor('#3f1e1e','#ef4444',t); }
+  return '#374151';
+}
+
+function ptsColor(pts) {
+  if (pts === null) return '#1a1d27';
+  const t = Math.min(1, (pts-20)/80);
+  return lerpColor('#1e1e3a','#6366f1',t);
+}
+
+function getCellColor(data) {
+  if (!data) return null;
+  if (colorMode === 'position') return positionColor(data.pos, 22);
+  if (colorMode === 'goals') return goalsColor(data.gf);
+  if (colorMode === 'gd') return gdColor(data.gd);
+  if (colorMode === 'pts') return ptsColor(data.pts);
+  return '#374151';
+}
+
+function textColor(bgColor) {
+  if (!bgColor) return '#888';
+  if (bgColor === '#c8a400') return '#000';
+  return '#fff';
+}
+
+// ════════════════════════════════════════════════════════════════
+//  SORT TEAMS
+// ════════════════════════════════════════════════════════════════
+function getSortedTeams() {
+  let teams = ALL_TEAMS.filter(t => t.toLowerCase().includes(searchFilter.toLowerCase()));
+  if (sortMode === 'seasons') teams.sort((a,b) => teamSeasons(b)-teamSeasons(a) || teamAvg(a)-teamAvg(b));
+  if (sortMode === 'best') teams.sort((a,b) => teamBest(a)-teamBest(b) || teamSeasons(b)-teamSeasons(a));
+  if (sortMode === 'alpha') teams.sort();
+  return teams;
+}
+
+// ════════════════════════════════════════════════════════════════
+//  BUILD TABLE
+// ════════════════════════════════════════════════════════════════
+function buildTable() {
+  const teams = getSortedTeams();
+  const thead = document.getElementById('thead');
+  const tbody = document.getElementById('tbody');
+
+  // Header
+  thead.innerHTML = '';
+  const hr = document.createElement('tr');
+  const th0 = document.createElement('th');
+  th0.className = 'team-col';
+  th0.textContent = `Teams (${teams.length})`;
+  hr.appendChild(th0);
+  for (const s of SEASONS) {
+    const th = document.createElement('th');
+    const note = NOTES[s];
+    const isChampion = note ? true : false;
+    const span = document.createElement('span');
+    span.className = 'season-hdr' + (isChampion ? ' champion-col':'');
+    span.textContent = s;
+    span.title = note ? `Champion: ${note.champion}` : s;
+    th.appendChild(span);
+    hr.appendChild(th);
+  }
+  thead.appendChild(hr);
+
+  // Body
+  tbody.innerHTML = '';
+  for (const team of teams) {
+    const tr = document.createElement('tr');
+    const tdName = document.createElement('td');
+    tdName.className = 'team-name';
+    const color = TEAM_COLORS[team] || '#888';
+    const best = teamBest(team);
+    const seasons = teamSeasons(team);
+    tdName.title = team;
+    tdName.innerHTML = `
+      <div class="team-label">
+        <span class="team-dot" style="background:${color}"></span>
+        <span class="team-label-text">${shortTeamName(team)}</span>
+      </div>
+      <div class="team-meta">Best: ${best===1?'🏆 Champion':`${best}${ord(best)}`} · ${seasons} seasons</div>
+    `;
+    tr.appendChild(tdName);
+
+    for (const s of SEASONS) {
+      const td = document.createElement('td');
+      const data = teamSeasonMap[team]?.[s];
+      if (data) {
+        td.className = 'cell';
+        const bg = getCellColor(data);
+        td.style.background = bg;
+        td.style.color = colorMode === 'position' ? textColor(bg) : '#fff';
+        td.textContent = colorMode === 'position' ? data.pos : (colorMode==='goals'?data.gf:colorMode==='gd'?data.gd:data.pts);
+        td.dataset.team = team;
+        td.dataset.season = s;
+        if (selectedCell && selectedCell.team===team && selectedCell.season===s) {
+          td.classList.add('selected');
+        }
+        td.addEventListener('click', () => openPanel(team, s));
+      } else {
+        td.className = 'cell empty';
+      }
+      tr.appendChild(td);
+    }
+    tbody.appendChild(tr);
+  }
+}
+
+function ord(n) {
+  if (n===1) return 'st'; if (n===2) return 'nd'; if (n===3) return 'rd'; return 'th';
+}
+
+// ════════════════════════════════════════════════════════════════
+//  STATS PANEL
+// ════════════════════════════════════════════════════════════════
+function openPanel(team, season) {
+  selectedCell = { team, season };
+  buildTable();
+
+  const data = teamSeasonMap[team][season];
+  const note = NOTES[season];
+  const teamInfo = TEAM_NOTES[team];
+  const color = TEAM_COLORS[team] || '#888';
+  const pos = data.pos;
+  const maxPos = RAW[season].length;
+
+  let posBadgeBg = positionColor(pos, maxPos);
+  let posBadgeText = pos <= 4 ? '#fff' : pos <= 7 ? '#fff' : pos >= maxPos-2 ? '#fff' : '#ccc';
+
+  const panel = document.getElementById('statsPanel');
+  const content = document.getElementById('panelContent');
+
+  let posLabel = '';
+  if (pos === 1) posLabel = '🏆 Champion';
+  else if (pos <= 4) posLabel = 'Champions League';
+  else if (pos <= 6) posLabel = 'Europa League';
+  else if (pos >= maxPos-2) posLabel = '⬇ Relegated';
+  else posLabel = `${pos}${ord(pos)} Place`;
+
+  // Historical context for the team
+  const allPositions = Object.values(teamSeasonMap[team]).map(s=>s.pos);
+  const best = Math.min(...allPositions);
+  const worst = Math.max(...allPositions);
+  const avgPos = (allPositions.reduce((a,b)=>a+b,0)/allPositions.length).toFixed(1);
+  const titles = allPositions.filter(p=>p===1).length;
+
+  // Goal contribution leaders (approximate / fun stats)
+  const winPct = ((data.w/data.p)*100).toFixed(0);
+  const cleanSheetEst = Math.round(data.w * 0.55 + data.d * 0.3);
+
+  content.innerHTML = `
+    <div class="panel-header">
+      <div class="panel-team-badge">
+        <div class="panel-color-bar" style="background:${color}"></div>
+        <div>
+          <div class="panel-team-name">${team}</div>
+          <div class="panel-season">${season} Season</div>
+        </div>
+        <div class="pos-badge" style="background:${posBadgeBg};color:${posBadgeText};margin-left:auto">${pos}</div>
+      </div>
+      <div style="font-size:12px;color:#9ca3af;padding-left:17px">${posLabel}</div>
+    </div>
+
+    <div class="panel-body">
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="val" style="color:#4ade80">${data.w}</div>
+          <div class="lbl">Wins</div>
+        </div>
+        <div class="stat-card">
+          <div class="val" style="color:#facc15">${data.d}</div>
+          <div class="lbl">Draws</div>
+        </div>
+        <div class="stat-card">
+          <div class="val" style="color:#f87171">${data.l}</div>
+          <div class="lbl">Losses</div>
+        </div>
+        <div class="stat-card">
+          <div class="val" style="color:#38bdf8">${data.gf}</div>
+          <div class="lbl">Goals For</div>
+        </div>
+        <div class="stat-card">
+          <div class="val" style="color:#fb923c">${data.ga}</div>
+          <div class="lbl">Goals Against</div>
+        </div>
+        <div class="stat-card">
+          <div class="val" style="color:${data.gd>=0?'#4ade80':'#f87171'}">${data.gd>0?'+':''}${data.gd}</div>
+          <div class="lbl">Goal Diff</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="stat-row">
+          <span class="lbl">Points</span>
+          <span class="val">${data.pts} pts</span>
+        </div>
+        <div class="stat-row">
+          <span class="lbl">Games Played</span>
+          <span class="val">${data.p}</span>
+        </div>
+        <div class="stat-row">
+          <span class="lbl">Win Rate</span>
+          <span class="val">${winPct}%</span>
+        </div>
+        <div class="stat-row">
+          <span class="lbl">Goals Per Game</span>
+          <span class="val">${(data.gf/data.p).toFixed(2)}</span>
+        </div>
+        <div class="stat-row">
+          <span class="lbl">Est. Clean Sheets</span>
+          <span class="val">~${cleanSheetEst}</span>
+        </div>
+        <div class="stat-row">
+          <span class="lbl">Conceded Per Game</span>
+          <span class="val">${(data.ga/data.p).toFixed(2)}</span>
+        </div>
+      </div>
+
+      <div class="section-title">Match Results — ${season}</div>
+      <div id="matchChart"></div>
+
+      ${note ? `
+      <div class="section-title">Season's Top Scorer (PL)</div>
+      <div class="player-list">
+        <div class="player-row">
+          <span class="pname">⚽ ${note.topScorer.name}</span>
+          <span class="pstat">${note.topScorer.goals} goals</span>
+        </div>
+      </div>` : ''}
+
+      ${note && pos === 1 ? `
+      <div class="note-box">🏆 <strong>Season champion</strong> — ${note.champion}</div>` : ''}
+
+      <div class="section-title">Team History in PL</div>
+      <div>
+        <div class="stat-row">
+          <span class="lbl">PL Seasons</span>
+          <span class="val">${teamSeasons(team)}</span>
+        </div>
+        <div class="stat-row">
+          <span class="lbl">Best Finish</span>
+          <span class="val">${best===1?'🏆 Champion':`${best}${ord(best)}`}</span>
+        </div>
+        <div class="stat-row">
+          <span class="lbl">Worst Finish</span>
+          <span class="val">${worst}${ord(worst)} (relegated)</span>
+        </div>
+        <div class="stat-row">
+          <span class="lbl">Avg Position</span>
+          <span class="val">${avgPos}</span>
+        </div>
+        ${titles > 0 ? `<div class="stat-row"><span class="lbl">PL Titles</span><span class="val" style="color:var(--gold)">🏆 ×${titles}</span></div>` : ''}
+      </div>
+
+      ${teamInfo ? `
+      <div class="section-title">Club Info</div>
+      <div>
+        <div class="stat-row"><span class="lbl">Founded</span><span class="val">${teamInfo.founded}</span></div>
+        <div class="stat-row"><span class="lbl">Ground</span><span class="val" style="font-size:11px">${teamInfo.ground}</span></div>
+      </div>
+      <div class="note-box">${teamInfo.note}</div>` : ''}
+
+      <div class="section-title">Performance Chart (All Seasons)</div>
+      <div id="miniChart" style="display:flex;align-items:flex-end;gap:2px;height:60px;margin-top:6px;"></div>
+
+      <div class="section-title" style="margin-top:20px">Season League Table — ${season}</div>
+      <div class="sc-tabs">
+        <button class="sc-tab active" id="sct-pts"  onclick="setSCMetric('pts','${team}','${season}')">Points</button>
+        <button class="sc-tab"        id="sct-gf"   onclick="setSCMetric('gf','${team}','${season}')">Goals For</button>
+        <button class="sc-tab"        id="sct-ga"   onclick="setSCMetric('ga','${team}','${season}')">Goals Against</button>
+        <button class="sc-tab"        id="sct-gd"   onclick="setSCMetric('gd','${team}','${season}')">GD</button>
+      </div>
+      <div id="seasonChart"></div>
+    </div>
+  `;
+
+  // Mini bar chart of team positions
+  const chart = document.getElementById('miniChart');
+  const teamSeasonsData = SEASONS.map(s => teamSeasonMap[team]?.[s] || null);
+  const maxP = 22;
+  for (const sd of teamSeasonsData) {
+    const bar = document.createElement('div');
+    if (sd) {
+      const h = Math.round((1 - (sd.pos-1)/(maxP-1)) * 52) + 4;
+      bar.style.cssText = `height:${h}px;flex:1;border-radius:2px 2px 0 0;background:${positionColor(sd.pos,maxP)};min-width:3px;transition:opacity 0.2s;cursor:default;`;
+      bar.title = `${SEASONS[teamSeasonsData.indexOf(sd)]}: ${sd.pos}${ord(sd.pos)} (${sd.pts}pts)`;
+    } else {
+      bar.style.cssText = 'height:4px;flex:1;border-radius:2px;background:#222;min-width:3px;';
+    }
+    chart.appendChild(bar);
+  }
+
+  buildMatchChart(team, season);
+  buildSeasonChart('pts', team, season);
+
+  panel.classList.add('open');
+  document.getElementById('gridWrap').classList.add('panel-open');
+}
+
+let scMetric = 'pts';
+
+function setSCMetric(metric, team, season) {
+  scMetric = metric;
+  document.querySelectorAll('.sc-tab').forEach(b => b.classList.remove('active'));
+  const el = document.getElementById('sct-' + metric);
+  if (el) el.classList.add('active');
+  buildSeasonChart(metric, team, season);
+}
+
+function buildSeasonChart(metric, team, season) {
+  const container = document.getElementById('seasonChart');
+  if (!container) return;
+  container.innerHTML = '';
+
+  const rows = RAW[season];
+  if (!rows) return;
+
+  // For GD, find the absolute max to scale bars
+  let maxVal, minVal;
+  if (metric === 'gd') {
+    const vals = rows.map(r => r[6] - r[7]);
+    maxVal = Math.max(...vals);
+    minVal = Math.min(...vals);
+  } else {
+    const key = { pts: 8, gf: 6, ga: 7 }[metric];
+    maxVal = Math.max(...rows.map(r => r[key]));
+    minVal = 0;
+  }
+  const range = maxVal - minVal || 1;
+
+  for (const row of rows) {
+    const [pos, tname, p, w, d, l, gf, ga, pts] = row;
+    const gd = gf - ga;
+    const val = metric === 'pts' ? pts : metric === 'gf' ? gf : metric === 'ga' ? ga : gd;
+    const isSelected = tname === team;
+    const tcolor = TEAM_COLORS[tname] || '#888';
+    const posBg = positionColor(pos, rows.length);
+
+    // Bar width: for GD, split around zero
+    let barPct, barOffset = 0;
+    if (metric === 'gd') {
+      const zeroAt = (-minVal / range) * 100;
+      if (val >= 0) {
+        barOffset = zeroAt;
+        barPct = (val / range) * 100;
+      } else {
+        barPct = (Math.abs(val) / range) * 100;
+        barOffset = zeroAt - barPct;
+      }
+    } else {
+      barPct = ((val - minVal) / range) * 100;
+    }
+
+    // Bar color: selected team uses team color, others use position color
+    const barColor = isSelected ? tcolor : posBg;
+
+    const scRow = document.createElement('div');
+    scRow.className = 'sc-row' + (isSelected ? ' sc-selected' : '');
+
+    const shortName = shortTeamName(tname);
+
+    scRow.innerHTML = `
+      <span class="sc-pos">${pos}</span>
+      <div class="sc-bar-wrap">
+        <div class="sc-bar-bg">
+          <div class="sc-bar" style="width:${barPct}%;margin-left:${barOffset}%;background:${barColor};opacity:${isSelected?1:0.55};"></div>
+        </div>
+        <div class="sc-name-val">
+          <span class="sc-name" style="color:${isSelected?'#fff':'#cbd5e1'};font-weight:${isSelected?700:400}">${isSelected ? '▶ ' : ''}${shortName}</span>
+          <span class="sc-val" style="color:${metric==='gd'&&val>0?'#4ade80':metric==='gd'&&val<0?'#f87171':'#e2e8f0'}">${val > 0 && metric === 'gd' ? '+' : ''}${val}</span>
+        </div>
+      </div>
+      <span></span>
+    `;
+    container.appendChild(scRow);
+  }
+}
+
+// ESPN overrides for teams whose names aren't a substring of the ESPN display name
+const ESPN_NAMES = {
+  'WBA': 'West Bromwich Albion',
+  'QPR': 'Queens Park Rangers',
+};
+
+function matchesESPNTeam(myTeam, espnDisplayName) {
+  const espn = espnDisplayName.toLowerCase();
+  const my = (ESPN_NAMES[myTeam] || myTeam).toLowerCase();
+  return espn === my || espn.includes(my);
+}
+
+function espnSeasonDates(season) {
+  // "2024-25" → { from:"20240801", to:"20250630" }
+  const [a, b] = season.split('-');
+  const endYear = parseInt(b) < 30 ? 2000 + parseInt(b) : 1900 + parseInt(b);
+  return { from: `${a}0801`, to: `${endYear}0630` };
+}
+
+async function fetchRealMatches(team, season) {
+  const { from, to } = espnSeasonDates(season);
+  try {
+    const r = await fetchTimeout(
+      `https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=${from}-${to}&limit=500`,
+      8000
+    );
+    if (!r.ok) return null;
+    const j = await r.json();
+    if (!j.events?.length) return null;
+
+    const games = j.events
+      .map(ev => {
+        const comp = ev.competitions?.[0];
+        const home = comp?.competitors?.find(c => c.homeAway === 'home');
+        const away = comp?.competitors?.find(c => c.homeAway === 'away');
+        if (!home || !away) return null;
+        const isHome = matchesESPNTeam(team, home.team?.displayName || '');
+        const isAway = !isHome && matchesESPNTeam(team, away.team?.displayName || '');
+        if (!isHome && !isAway) return null;
+        const myComp  = isHome ? home : away;
+        const oppComp = isHome ? away : home;
+        const gf = parseInt(myComp.score);
+        const ga = parseInt(oppComp.score);
+        if (isNaN(gf) || isNaN(ga)) return null;
+        const opp = (oppComp.team?.displayName || '').replace(/ FC$/, '');
+        return {
+          ha: isHome ? 'H' : 'A',
+          result: gf > ga ? 'W' : gf < ga ? 'L' : 'D',
+          gf, ga, opp,
+          date: ev.date?.split('T')[0] || '',
+          espnId: ev.id,
+          homeTeam: (home.team?.displayName || '').replace(/ FC$/, ''),
+          awayTeam: (away.team?.displayName || '').replace(/ FC$/, ''),
+          homeGoalStr: '', awayGoalStr: '',
+          isHome,
+        };
+      })
+      .filter(Boolean)
+      .sort((a, b) => new Date(a.date) - new Date(b.date));
+
+    return games.length >= 10 ? games : null;
+  } catch { return null; }
+}
+
+function parseGoalDetails(str) {
+  if (!str || !str.trim()) return [];
+  return str.split(';')
+    .map(p => p.trim()).filter(Boolean)
+    .map(p => {
+      // formats: "45':Name", "45'Name", "90+2':Name"
+      const m = p.match(/^(\d+)(?:\+\d+)?['\s:]+(.+)$/);
+      if (!m) return null;
+      let name = m[2].trim()
+        .replace(/\s*\(pen(?:alty)?\)\s*/i, ' ✦')
+        .replace(/\s*\(o\.?g\.?\)\s*/i, ' (OG)');
+      return { time: parseInt(m[1]), name };
+    })
+    .filter(Boolean)
+    .sort((a, b) => a.time - b.time);
+}
+
+function parseToGoals(homeStr, awayStr, isHome) {
+  const my  = parseGoalDetails(isHome ? homeStr : awayStr).map(g => ({ ...g, side: 'my'  }));
+  const opp = parseGoalDetails(isHome ? awayStr : homeStr).map(g => ({ ...g, side: 'opp' }));
+  const all = [...my, ...opp].sort((a, b) => a.time - b.time);
+  return all.length ? all : null;
+}
+
+async function fetchESPNGoals(match) {
+  try {
+    let espnId = match.espnId || null;
+
+    // If no stored ID, find it from the scoreboard on the match date
+    if (!espnId && match.date) {
+      const dateParam = match.date.replace(/-/g, '');
+      const sbRes = await fetchTimeout(
+        `https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard?dates=${dateParam}`,
+        6000
+      );
+      const sb = await sbRes.json();
+      const myWord  = ((match.isHome ? match.homeTeam : match.awayTeam) || '').split(' ')[0].toLowerCase();
+      const oppWord = (match.opp || '').split(' ')[0].toLowerCase();
+      for (const ev of (sb.events || [])) {
+        const names = (ev.competitions?.[0]?.competitors || [])
+          .map(c => (c.team?.displayName || '').toLowerCase());
+        const hasMe  = names.some(n => n.includes(myWord));
+        const hasOpp = oppWord.length < 2 || names.some(n => n.includes(oppWord));
+        if (hasMe && hasOpp) { espnId = ev.id; break; }
+      }
+    }
+    if (!espnId) return null;
+
+    const smRes = await fetchTimeout(
+      `https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/summary?event=${espnId}`,
+      6000
+    );
+    const sm = await smRes.json();
+
+    const myWord = ((match.isHome ? match.homeTeam : match.awayTeam) || '').split(' ')[0].toLowerCase();
+    const goals = [];
+    for (const ev of (sm.keyEvents || [])) {
+      const isGoal = ev.scoringPlay === true
+        || ev.type?.type === 'goal'
+        || ev.type?.id === '70' || ev.type?.id === '58'
+        || (ev.type?.text || '').toLowerCase() === 'goal';
+      if (!isGoal) continue;
+      const mins = parseInt(ev.clock?.displayValue) || Math.round((ev.clock?.value || 0) / 60);
+      const name = ev.participants?.[0]?.athlete?.displayName
+        || ev.participants?.[0]?.athlete?.shortName
+        || '?';
+      const teamName = (ev.team?.displayName || '').toLowerCase();
+      goals.push({ time: mins, name, side: teamName.includes(myWord) ? 'my' : 'opp' });
+    }
+    return goals.length ? goals.sort((a, b) => a.time - b.time) : [];
+  } catch { return null; }
+}
+
+async function handleGameClick(e, idx) {
+  e.stopPropagation();
+  document.querySelectorAll('.game-popup').forEach(el => el.remove());
+
+  const match = window._mrMatches?.[idx];
+  if (!match) return;
+
+  const popup = document.createElement('div');
+  popup.className = 'game-popup';
+
+  // Position near the cell, keep within viewport
+  const cr = e.currentTarget.getBoundingClientRect();
+  const pw = 240;
+  let left = cr.right + 8;
+  let top  = cr.top;
+  if (left + pw > window.innerWidth - 8) left = cr.left - pw - 8;
+  if (top + 260 > window.innerHeight - 8) top = Math.max(8, window.innerHeight - 268);
+  popup.style.left = left + 'px';
+  popup.style.top  = top  + 'px';
+
+  const venue    = match.ha === 'H' ? 'Home' : 'Away';
+  const resultTx = match.result === 'W' ? 'Win' : match.result === 'D' ? 'Draw' : 'Loss';
+  const resCol   = match.result === 'W' ? '#4ade80' : match.result === 'D' ? '#fbbf24' : '#f87171';
+  const myTeam   = match.isHome ? match.homeTeam : match.awayTeam;
+  const oppTeam  = match.opp || (match.isHome ? match.awayTeam : match.homeTeam) || '?';
+
+  popup.innerHTML = `
+    <div class="gp-topbar">
+      <span class="gp-meta">${match.date || ''}${match.date ? ' · ' : ''}${venue}</span>
+      <button class="gp-xbtn" onclick="this.closest('.game-popup').remove()">✕</button>
+    </div>
+    <div class="gp-scoreline">
+      <div class="gp-score-big">${match.gf}<span style="color:#4b5563;font-weight:300;padding:0 4px">–</span>${match.ga}</div>
+      <div class="gp-teams-row">
+        <span class="ht">${match.isHome ? (myTeam || '—') : (oppTeam || '—')}</span>
+        <span style="color:#6366f1;font-weight:700">${resultTx}</span>
+        <span class="at">${match.isHome ? (oppTeam || '—') : (myTeam || '—')}</span>
+      </div>
+    </div>
+    <div class="gp-divider"></div>
+    <div class="gp-goal-list" id="gpGoals">
+      <div class="gp-empty"><span class="api-spinner"></span></div>
+    </div>
+  `;
+
+  document.body.appendChild(popup);
+
+  const goalDiv = popup.querySelector('#gpGoals');
+  if (!goalDiv || !popup.isConnected) return;
+
+  let goals = null;
+
+  // 1. Use goal strings already stored from the season fetch
+  if (match.homeGoalStr || match.awayGoalStr) {
+    goals = parseToGoals(match.homeGoalStr, match.awayGoalStr, match.isHome);
+  }
+
+  // 2. ESPN — works for all seasons ESPN covers (use stored espnId for instant lookup)
+  if (!goals && (match.espnId || match.date)) {
+    goals = await fetchESPNGoals(match);
+  }
+
+  if (!popup.isConnected) return;
+
+  if (!goals || !goals.length) {
+    goalDiv.innerHTML = match.gf === 0 && match.ga === 0
+      ? '<div class="gp-empty">0 – 0</div>'
+      : !match.espnId && !match.date
+        ? '<div class="gp-empty">Simulated match — select a recent season for real scorer data</div>'
+        : '<div class="gp-empty">Scorer data not available for this match</div>';
+    return;
+  }
+
+  goalDiv.innerHTML = goals.map(g => `
+    <div class="gp-goal ${g.side === 'opp' ? 'opp' : ''}">
+      <span class="gmin">${g.time}'</span>
+      <span>⚽</span>
+      <span class="gname">${g.name}</span>
+    </div>`).join('');
+}
+
+// Dismiss popup when clicking outside
+document.addEventListener('click', () => {
+  document.querySelectorAll('.game-popup').forEach(el => el.remove());
+});
+
+function generateMatchData(team, season) {
+  const d = teamSeasonMap[team]?.[season];
+  if (!d) return [];
+  const { w, d: draws, l } = d;
+
+  // Seeded xorshift so the same team/season always produces the same sequence
+  let sv = 0;
+  for (const c of (team + season)) sv = (Math.imul(sv, 31) + c.charCodeAt(0)) | 0;
+  sv = sv || 1;
+  const rand = () => {
+    sv ^= sv << 13; sv ^= sv >> 17; sv ^= sv << 5;
+    return (sv >>> 0) / 4294967296;
+  };
+
+  // Realistic PL home/away split: ~60% of wins at home, ~50% draws, ~35% losses
+  const clamp = (v, lo, hi) => Math.min(hi, Math.max(lo, v));
+  const hw = clamp(Math.round(w     * (.55 + rand()*.1)), 0, w);
+  const hd = clamp(Math.round(draws * (.45 + rand()*.1)), 0, draws);
+  const hl = clamp(Math.round(l     * (.30 + rand()*.1)), 0, l);
+  const aw = w - hw, ad = draws - hd, al = l - hl;
+
+  // Score generator: produce a plausible scoreline for a given result
+  const winScore  = () => { const g=clamp(Math.floor(rand()*3)+1,1,5); return [g, clamp(Math.floor(rand()*g),0,g-1)]; };
+  const drawScore = () => { const g=Math.floor(rand()*3);              return [g, g]; };
+  const lossScore = () => { const g=clamp(Math.floor(rand()*3)+1,1,5); return [clamp(Math.floor(rand()*g),0,g-1), g]; };
+
+  const matches = [];
+  for (let i=0;i<hw;i++) { const [gf,ga]=winScore();  matches.push({ha:'H',result:'W',gf,ga}); }
+  for (let i=0;i<aw;i++) { const [gf,ga]=winScore();  matches.push({ha:'A',result:'W',gf,ga}); }
+  for (let i=0;i<hd;i++) { const [gf,ga]=drawScore(); matches.push({ha:'H',result:'D',gf,ga}); }
+  for (let i=0;i<ad;i++) { const [gf,ga]=drawScore(); matches.push({ha:'A',result:'D',gf,ga}); }
+  for (let i=0;i<hl;i++) { const [gf,ga]=lossScore(); matches.push({ha:'H',result:'L',gf,ga}); }
+  for (let i=0;i<al;i++) { const [gf,ga]=lossScore(); matches.push({ha:'A',result:'L',gf,ga}); }
+
+  // Fisher-Yates shuffle (seeded)
+  for (let i=matches.length-1;i>0;i--) {
+    const j=Math.floor(rand()*(i+1));
+    [matches[i],matches[j]]=[matches[j],matches[i]];
+  }
+  return matches;
+}
+
+async function buildMatchChart(team, season) {
+  const container = document.getElementById('matchChart');
+  if (!container) return;
+
+  container.innerHTML = `<div style="color:#6b7280;font-size:11px;padding:10px 0;display:flex;align-items:center;gap:8px">
+    <span class="api-spinner"></span>Loading match results…
+  </div>`;
+
+  let matches = await fetchRealMatches(team, season);
+  const isReal = !!matches;
+  if (!matches) matches = generateMatchData(team, season);
+
+  const d = teamSeasonMap[team]?.[season];
+  if (!d || !matches.length) { container.innerHTML = '<p style="color:#4b5563;font-size:11px">No data available</p>'; return; }
+
+  const hm = matches.filter(m=>m.ha==='H'), am = matches.filter(m=>m.ha==='A');
+  const hw=hm.filter(m=>m.result==='W').length, hd=hm.filter(m=>m.result==='D').length, hl=hm.filter(m=>m.result==='L').length;
+  const aw=am.filter(m=>m.result==='W').length, ad=am.filter(m=>m.result==='D').length, al=am.filter(m=>m.result==='L').length;
+  const hpts=hw*3+hd, apts=aw*3+ad;
+
+  const BG = {
+    'W-H':'#166534','W-A':'#14532d',
+    'D-H':'#92400e','D-A':'#78350f',
+    'L-H':'#991b1b','L-A':'#7f1d1d'
+  };
+
+  window._mrMatches = matches;
+
+  let cells = '', cum = 0;
+  const cumPts = [];
+  for (let i=0; i<matches.length; i++) {
+    const m = matches[i];
+    cum += m.result==='W' ? 3 : m.result==='D' ? 1 : 0;
+    cumPts.push(cum);
+    const bg = BG[`${m.result}-${m.ha}`];
+    const oppLine = m.opp ? ` vs ${m.opp}` : '';
+    const dateLine = m.date ? ` · ${m.date}` : '';
+    const tip = `Game ${i+1}${dateLine}${oppLine} · ${m.ha==='H'?'Home':'Away'} · ${m.result==='W'?'Win':m.result==='D'?'Draw':'Loss'} ${m.gf}–${m.ga} · ${cum}pts`;
+    cells += `<div class="mr-cell" style="background:${bg}" title="${tip}" onclick="handleGameClick(event,${i})">
+      <span class="mr-res">${m.result}</span>
+      <span class="mr-score">${m.gf}–${m.ga}</span>
+      <span class="mr-ha ${m.ha}">${m.ha}</span>
+    </div>`;
+  }
+
+  const maxPts = d.pts || 1;
+  let bars = '';
+  for (let i=0; i<cumPts.length; i++) {
+    const h = Math.round((cumPts[i]/maxPts)*30)+2;
+    const m = matches[i];
+    const c = m.result==='W'?'#4ade80':m.result==='D'?'#fbbf24':'#f87171';
+    bars += `<div class="mr-pts-bar" style="height:${h}px;background:${c};opacity:.75" title="After game ${i+1}: ${cumPts[i]}pts"></div>`;
+  }
+
+  const sourceNote = isReal
+    ? `<span style="color:#22c55e">● Live data · TheSportsDB</span>`
+    : `<span style="color:#6b7280">● Estimated from season record</span>`;
+
+  container.innerHTML = `
+    <div class="mr-header">
+      <div class="mr-ha-card">
+        <div class="hac-label" style="color:#fbbf24">🏠 Home</div>
+        <div class="hac-rec">${hw}W–${hd}D–${hl}L</div>
+        <div class="hac-pts">${hpts} pts · ${hm.length} games</div>
+      </div>
+      <div class="mr-ha-card">
+        <div class="hac-label" style="color:#93c5fd">✈ Away</div>
+        <div class="hac-rec">${aw}W–${ad}D–${al}L</div>
+        <div class="hac-pts">${apts} pts · ${am.length} games</div>
+      </div>
+    </div>
+    <div class="mr-grid">${cells}</div>
+    <div class="mr-pts-strip">${bars}</div>
+    <div class="mr-note">${sourceNote} · cumulative points</div>
+  `;
+}
+
+function closePanel() {
+  selectedCell = null;
+  buildTable();
+  document.getElementById('statsPanel').classList.remove('open');
+  document.getElementById('gridWrap').classList.remove('panel-open');
+}
+
+// ════════════════════════════════════════════════════════════════
+//  CONTROLS
+// ════════════════════════════════════════════════════════════════
+function setSort(mode) {
+  sortMode = mode;
+  document.querySelectorAll('[id^="sort-"]').forEach(b=>b.classList.remove('active'));
+  document.getElementById(`sort-${mode}`).classList.add('active');
+  buildTable();
+}
+
+function setColorMode(mode) {
+  colorMode = mode;
+  document.querySelectorAll('[id^="mode-"]').forEach(b=>b.classList.remove('active'));
+  document.getElementById(`mode-${mode}`).classList.add('active');
+  updateLegend();
+  buildTable();
+}
+
+function filterTeams(val) {
+  searchFilter = val;
+  buildTable();
+}
+
+function updateLegend() {
+  const leg = document.getElementById('legend');
+  if (colorMode === 'position') {
+    leg.innerHTML = `
+      <div class="legend-item"><div class="legend-swatch" style="background:#c8a400"></div>Champion</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#1e40af"></div>Top 4 (UCL)</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#065f46"></div>5–7 (Europa)</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#374151"></div>Mid-table</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#7f1d1d"></div>Relegated</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#1a1d27;border:1px solid #2e3347"></div>Not in PL</div>
+    `;
+  } else if (colorMode === 'goals') {
+    leg.innerHTML = `
+      <div class="legend-item"><div class="legend-swatch" style="background:#1e3a5f"></div>Low (≤30)</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#f59e0b"></div>High (100+)</div>
+      <div class="legend-item" style="color:#7c8398">Number = goals scored</div>
+    `;
+  } else if (colorMode === 'gd') {
+    leg.innerHTML = `
+      <div class="legend-item"><div class="legend-swatch" style="background:#10b981"></div>+70 GD</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#374151"></div>±0</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#ef4444"></div>−70 GD</div>
+      <div class="legend-item" style="color:#7c8398">Number = goal difference</div>
+    `;
+  } else if (colorMode === 'pts') {
+    leg.innerHTML = `
+      <div class="legend-item"><div class="legend-swatch" style="background:#1e1e3a"></div>Low (20pts)</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#6366f1"></div>High (100pts)</div>
+      <div class="legend-item" style="color:#7c8398">Number = points</div>
+    `;
+  }
+}
+
+// Set --header-h CSS variable from actual rendered heights
+function updateHeaderHeight() {
+  const hh = (document.querySelector('header')?.offsetHeight || 0)
+            + (document.querySelector('.legend')?.offsetHeight || 0);
+  document.documentElement.style.setProperty('--header-h', hh + 'px');
+}
+
+// Init
+buildTable();
+updateHeaderHeight();
+window.addEventListener('resize', updateHeaderHeight);
+</script>
+</body>
+</html>
