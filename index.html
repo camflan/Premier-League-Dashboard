@@ -6,53 +6,64 @@
 <title>Premier League History Dashboard</title>
 <style>
   :root {
-    --bg: #0f1117;
-    --surface: #1a1d27;
-    --surface2: #22263a;
-    --border: #2e3347;
-    --text: #e8eaf0;
-    --text-muted: #7c8398;
-    --gold: #ffd700;
-    --cl-blue: #1a56db;
-    --el-green: #0e9f6e;
-    --rel-red: #e02424;
-    --mid: #374151;
+    --bg: #08101a;
+    --surface: #111827;
+    --surface2: #1f2937;
+    --border: #374151;
+    --text: #f0f4f8;
+    --text-muted: #9ca3af;
+    --gold: #fbbf24;
+    --cl-blue: #3b82f6;
+    --el-green: #10b981;
+    --rel-red: #ef4444;
+    --mid: #4b5563;
+    --accent: #06b6d4;
     --panel-width: 380px;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px; overflow-x: hidden; }
+  body {
+    background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 13px;
+    overflow-x: hidden; transition: background 0.3s ease;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    * { scroll-behavior: smooth; }
+  }
 
   /* ── Header ── */
   header {
-    background: linear-gradient(135deg, #1a1d27 0%, #0f1117 100%);
-    border-bottom: 1px solid var(--border);
-    padding: 16px 24px;
+    background: linear-gradient(135deg, #111827 0%, #0f172a 100%);
+    border-bottom: 2px solid var(--accent);
+    padding: 18px 28px;
     display: flex; align-items: center; gap: 20px; flex-wrap: wrap;
     position: sticky; top: 0; z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
   }
-  header h1 { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.3px; }
-  header h1 span { color: #38bdf8; }
+  header h1 { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px; }
+  header h1 span { color: var(--accent); text-shadow: 0 0 20px rgba(6, 182, 212, 0.3); }
   .controls { display: flex; gap: 8px; flex-wrap: wrap; margin-left: auto; align-items: center; }
   .btn-group { display: flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
   .btn-group button {
     background: var(--surface); border: none; color: var(--text-muted);
-    padding: 6px 12px; cursor: pointer; font-size: 12px; transition: all 0.15s;
+    padding: 8px 14px; cursor: pointer; font-size: 12px; transition: all 0.2s ease;
+    font-weight: 500;
   }
-  .btn-group button:hover { background: var(--surface2); color: var(--text); }
-  .btn-group button.active { background: #38bdf8; color: #000; font-weight: 600; }
+  .btn-group button:hover { background: var(--surface2); color: var(--text); transform: translateY(-1px); }
+  .btn-group button.active { background: var(--accent); color: #000; font-weight: 700; box-shadow: 0 4px 12px rgba(6, 182, 212, 0.4); }
   input[type="text"] {
     background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
-    color: var(--text); padding: 6px 12px; font-size: 12px; outline: none; width: 160px;
+    color: var(--text); padding: 8px 14px; font-size: 12px; outline: none; width: 160px;
+    transition: all 0.2s ease; font-weight: 500;
   }
-  input[type="text"]:focus { border-color: #38bdf8; }
+  input[type="text"]:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.1); }
 
   /* ── Legend ── */
   .legend {
-    display: flex; gap: 12px; padding: 10px 24px; background: var(--surface);
+    display: flex; gap: 16px; padding: 14px 28px; background: linear-gradient(135deg, var(--surface) 0%, #1a2332 100%);
     border-bottom: 1px solid var(--border); flex-wrap: wrap; align-items: center;
   }
-  .legend-item { display: flex; align-items: center; gap: 5px; font-size: 11px; color: var(--text-muted); }
-  .legend-swatch { width: 14px; height: 14px; border-radius: 3px; flex-shrink: 0; }
+  .legend-item { display: flex; align-items: center; gap: 8px; font-size: 12px; color: var(--text-muted); transition: color 0.2s ease; }
+  .legend-item:hover { color: var(--text); }
+  .legend-swatch { width: 16px; height: 16px; border-radius: 4px; flex-shrink: 0; box-shadow: inset 0 0 1px rgba(0,0,0,0.5); }
 
   /* ── Main layout ── */
   .app { display: flex; height: calc(100vh - var(--header-h, 97px)); }
@@ -61,6 +72,7 @@
   .grid-wrap {
     flex: 1; overflow: auto; position: relative;
     transition: margin-right 0.3s ease;
+    scrollbar-gutter: stable;
   }
   .grid-wrap.panel-open { margin-right: var(--panel-width); }
   table { border-collapse: collapse; min-width: max-content; }
@@ -72,21 +84,25 @@
   /* ── Sticky corners & headers ── */
   thead th {
     position: sticky; top: 0; z-index: 50;
-    background: var(--surface); border-bottom: 2px solid var(--border);
-    padding: 8px 4px; text-align: center; font-size: 11px; color: var(--text-muted);
-    white-space: nowrap;
+    background: linear-gradient(135deg, var(--surface2) 0%, var(--surface) 100%);
+    border-bottom: 2px solid var(--accent);
+    padding: 10px 4px; text-align: center; font-size: 11px; color: var(--text-muted);
+    white-space: nowrap; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px;
   }
   thead th.team-col {
     position: sticky; left: 0; z-index: 60; min-width: 200px; max-width: 200px; text-align: left;
-    padding: 8px 12px; border-right: 2px solid var(--border);
+    padding: 10px 14px; border-right: 2px solid var(--accent);
+    background: linear-gradient(90deg, var(--surface2) 0%, transparent 80%);
   }
   tbody td.team-name {
     position: sticky; left: 0; z-index: 10;
-    background: var(--surface); border-right: 2px solid var(--border);
-    padding: 6px 12px; font-weight: 500;
+    background: linear-gradient(90deg, var(--surface) 0%, transparent 90%);
+    border-right: 2px solid var(--border);
+    padding: 8px 14px; font-weight: 600;
     min-width: 200px; max-width: 200px;
-    height: auto;
+    height: auto; transition: background 0.2s ease;
   }
+  tbody td.team-name:hover { background: linear-gradient(90deg, #1e2a3a 0%, transparent 90%); }
   tbody td.team-name .team-logo { width: 24px; height: 24px; object-fit: contain; flex-shrink: 0; margin-right: 6px; }
   tbody td.team-name .team-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 7px; flex-shrink: 0; }
   tbody td.team-name .team-label { display: flex; align-items: flex-start; gap: 4px; }
@@ -98,97 +114,121 @@
   td.cell {
     width: 36px; min-width: 36px; height: 36px; text-align: center;
     font-size: 11px; font-weight: 700; cursor: pointer;
-    border: 1px solid transparent; transition: transform 0.1s, box-shadow 0.1s;
-    position: relative; vertical-align: middle;
+    border: 1px solid transparent; transition: all 0.15s ease;
+    position: relative; vertical-align: middle; border-radius: 4px;
   }
-  td.cell:hover { transform: scale(1.15); z-index: 20; box-shadow: 0 0 0 2px #fff4; border-radius: 4px; }
-  td.cell.selected { outline: 2px solid #fff; z-index: 21; border-radius: 2px; }
-  td.cell.empty { background: #1a1d27; cursor: default; }
-  td.cell.empty:hover { transform: none; box-shadow: none; }
+  td.cell:hover { transform: scale(1.18); z-index: 20; box-shadow: 0 4px 12px rgba(0,0,0,0.4), inset 0 0 1px rgba(255,255,255,0.2); filter: brightness(1.15); }
+  td.cell.selected { outline: 2px solid var(--accent); z-index: 21; border-radius: 4px; box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.2); }
+  td.cell.empty { background: rgba(31, 41, 55, 0.4); cursor: default; }
+  td.cell.empty:hover { transform: none; box-shadow: none; filter: none; }
 
   /* ── Row ── */
-  tr:nth-child(even) td.team-name { background: #1c1f2e; }
-  tr:nth-child(even) td.cell.empty { background: #1c1f2e; }
-  tr:hover td.team-name { background: #252a3d !important; }
+  tbody tr:nth-child(even) td.team-name { background: linear-gradient(90deg, #1a2332 0%, transparent 90%); }
+  tbody tr:nth-child(even) td.cell.empty { background: rgba(26, 35, 50, 0.6); }
+  tbody tr:hover td.team-name { background: linear-gradient(90deg, #2a3a50 0%, transparent 90%) !important; }
+  tbody tr:hover { background: rgba(6, 182, 212, 0.05); }
 
   /* ── Stats panel ── */
   .stats-panel {
     position: fixed; right: -420px; top: var(--header-h, 97px);
     width: var(--panel-width); height: calc(100vh - var(--header-h, 97px));
-    background: var(--surface); border-left: 1px solid var(--border);
-    transition: right 0.3s ease; z-index: 90;
+    background: linear-gradient(180deg, var(--surface) 0%, #1a2332 100%); border-left: 2px solid var(--border);
+    transition: right 0.3s cubic-bezier(0.4, 0, 0.2, 1); z-index: 90;
     display: flex; flex-direction: column;
+    box-shadow: -8px 0 24px rgba(0,0,0,0.4);
   }
   #panelContent { overflow-y: auto; flex: 1; }
   @keyframes spin { to { transform: rotate(360deg); } }
   .api-spinner { width:12px;height:12px;border:2px solid #38bdf8;border-top-color:transparent;border-radius:50%;animation:spin .7s linear infinite;display:inline-block; }
   .stats-panel.open { right: 0; }
   .panel-close {
-    position: absolute; top: 10px; right: 10px; z-index: 200;
+    position: absolute; top: 12px; right: 12px; z-index: 200;
     background: var(--surface2); border: 1px solid var(--border); color: var(--text-muted);
-    width: 28px; height: 28px; border-radius: 50%; cursor: pointer;
-    font-size: 14px; display: flex; align-items: center; justify-content: center;
-    transition: background 0.15s; flex-shrink: 0;
+    width: 36px; height: 36px; border-radius: 8px; cursor: pointer;
+    font-size: 18px; display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s ease; flex-shrink: 0; font-weight: 600;
   }
-  .panel-close:hover { background: #ef4444; border-color: #ef4444; color: #fff; }
-  .panel-header { padding: 16px 48px 16px 20px; border-bottom: 1px solid var(--border); }
-
-  .panel-header { position: relative; }
+  .panel-close:hover {
+    background: linear-gradient(135deg, #ef4444, #dc2626); border-color: #ef4444; color: #fff;
+    transform: scale(1.1) rotate(90deg); box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+  }
+  .panel-header {
+    padding: 20px 48px 20px 24px;
+    border-bottom: 2px solid var(--border);
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.05) 0%, transparent 100%);
+    position: relative;
+  }
   .panel-team-badge {
     display: flex; align-items: center; gap: 12px; margin-bottom: 8px;
   }
-  .panel-color-bar { width: 5px; height: 48px; border-radius: 3px; flex-shrink: 0; }
+  .panel-color-bar { width: 6px; height: 56px; border-radius: 4px; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
   .panel-team-name { font-size: 1.2rem; font-weight: 700; }
   .panel-season { font-size: 0.9rem; color: var(--text-muted); }
   .pos-badge {
     display: inline-flex; align-items: center; justify-content: center;
-    width: 40px; height: 40px; border-radius: 50%; font-size: 1.1rem; font-weight: 900;
-    margin-left: auto;
+    width: 48px; height: 48px; border-radius: 50%; font-size: 1.3rem; font-weight: 900;
+    margin-left: auto; box-shadow: 0 4px 12px rgba(0,0,0,0.3), inset 0 0 1px rgba(255,255,255,0.3);
+    border: 2px solid rgba(255,255,255,0.1);
   }
 
-  .panel-body { padding: 16px 20px; flex: 1; }
+  .panel-body { padding: 20px 24px; flex: 1; overflow-y: auto; }
   .stat-grid {
     display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 16px;
   }
   .stat-card {
-    background: var(--surface2); border-radius: 10px; padding: 12px 10px; text-align: center;
+    background: linear-gradient(135deg, var(--surface2) 0%, rgba(31, 41, 55, 0.8) 100%); border-radius: 12px; padding: 16px 12px; text-align: center;
+    border: 1px solid var(--border); transition: all 0.3s ease; cursor: default;
   }
-  .stat-card .val { font-size: 1.5rem; font-weight: 800; }
-  .stat-card .lbl { font-size: 10px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 3px; }
+  .stat-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.3); border-color: var(--accent); }
+  .stat-card .val { font-size: 1.8rem; font-weight: 900; background: linear-gradient(135deg, #f0f4f8, #d1d5db); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .stat-card .lbl { font-size: 11px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.7px; margin-top: 6px; font-weight: 600; }
 
   .stat-row { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--border); }
   .stat-row:last-child { border-bottom: none; }
   .stat-row .lbl { color: var(--text-muted); font-size: 12px; }
   .stat-row .val { font-weight: 600; }
 
-  .section-title { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted); margin: 16px 0 8px; }
+  .section-title {
+    font-size: 11px; text-transform: uppercase; letter-spacing: 1.2px; color: var(--text-muted);
+    margin: 20px 0 12px; font-weight: 700; position: relative; padding-left: 8px;
+  }
+  .section-title::before { content: ''; position: absolute; left: 0; top: 50%; width: 3px; height: 3px;
+    background: var(--accent); border-radius: 50%; transform: translateY(-50%); }
 
   .player-list { display: flex; flex-direction: column; gap: 6px; }
   .player-row {
     display: flex; justify-content: space-between; align-items: center;
-    background: var(--surface2); border-radius: 8px; padding: 8px 12px;
+    background: linear-gradient(135deg, var(--surface2) 0%, rgba(31, 41, 55, 0.5) 100%);
+    border-radius: 8px; padding: 10px 14px; border: 1px solid var(--border);
+    transition: all 0.2s ease;
   }
-  .player-row .pname { font-weight: 500; }
-  .player-row .pstat { color: #38bdf8; font-weight: 700; }
+  .player-row:hover { background: linear-gradient(135deg, #2a3f51 0%, #1f2937 100%); transform: translateX(4px); }
+  .player-row .pname { font-weight: 600; }
+  .player-row .pstat { color: var(--accent); font-weight: 800; }
 
   .note-box {
-    background: var(--surface2); border-left: 3px solid #38bdf8;
-    border-radius: 0 8px 8px 0; padding: 10px 14px;
-    font-size: 12px; line-height: 1.5; color: var(--text-muted);
-    margin-top: 12px;
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px; padding: 12px 16px;
+    font-size: 12px; line-height: 1.6; color: var(--text-muted);
+    margin-top: 14px; border: 1px solid rgba(6, 182, 212, 0.2);
   }
 
-  .team-history { margin-top: 16px; }
-  .history-bar-wrap { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; }
-  .history-lbl { font-size: 11px; color: var(--text-muted); width: 70px; }
-  .history-bar-bg { flex: 1; height: 8px; background: var(--surface2); border-radius: 4px; overflow: hidden; }
-  .history-bar { height: 100%; border-radius: 4px; }
+  .team-history { margin-top: 20px; }
+  .history-bar-wrap { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+  .history-lbl { font-size: 11px; color: var(--text-muted); width: 75px; font-weight: 600; }
+  .history-bar-bg { flex: 1; height: 10px; background: linear-gradient(90deg, var(--surface2) 0%, rgba(31, 41, 55, 0.4) 100%);
+    border-radius: 5px; overflow: hidden; border: 1px solid var(--border); }
+  .history-bar { height: 100%; border-radius: 5px; box-shadow: inset 0 0 1px rgba(255,255,255,0.2); }
 
   /* ── Match results grid ── */
   .mr-header { display:flex; gap:8px; margin-bottom:8px; }
   .mr-ha-card {
-    flex:1; background:var(--surface2); border-radius:8px; padding:8px 10px;
+    flex:1; background: linear-gradient(135deg, var(--surface2) 0%, rgba(31, 41, 55, 0.6) 100%);
+    border-radius:8px; padding:10px 12px; border: 1px solid var(--border);
+    transition: all 0.2s ease;
   }
+  .mr-ha-card:hover { border-color: var(--accent); box-shadow: 0 4px 12px rgba(6, 182, 212, 0.15); }
   .mr-ha-card .hac-label { font-size:10px; text-transform:uppercase; letter-spacing:.6px; margin-bottom:3px; }
   .mr-ha-card .hac-rec { font-size:1rem; font-weight:800; }
   .mr-ha-card .hac-pts { font-size:10px; color:var(--text-muted); }
@@ -196,9 +236,9 @@
   .mr-cell {
     width:28px; height:38px; border-radius:5px;
     display:flex; flex-direction:column; align-items:center; justify-content:center; gap:1px;
-    cursor:default; transition:transform .1s, box-shadow .1s; position:relative;
+    cursor:pointer; transition:all .15s ease; position:relative; border: 1px solid rgba(255,255,255,0.1);
   }
-  .mr-cell:hover { transform:scale(1.2); z-index:10; box-shadow:0 2px 8px #0008; }
+  .mr-cell:hover { transform:scale(1.25); z-index:10; box-shadow:0 4px 12px rgba(6, 182, 212, 0.3); border-color: var(--accent); }
   .mr-res { font-size:11px; font-weight:800; color:#fff; line-height:1; }
   .mr-ha  { font-size:8px; font-weight:600; line-height:1; }
   .mr-ha.H { color:#fbbf24; }
@@ -212,25 +252,32 @@
   /* ── Game detail popup ── */
   .game-popup {
     position: fixed; z-index: 9999;
-    background: #1e2235; border: 1px solid #3a3f5c; border-radius: 12px;
-    width: 240px; padding: 12px 14px;
-    box-shadow: 0 12px 40px rgba(0,0,0,.7);
-    animation: gpIn .12s ease;
+    background: linear-gradient(135deg, #1e2235 0%, #1a2332 100%);
+    border: 1px solid var(--border); border-radius: 12px;
+    width: 240px; padding: 14px 16px;
+    box-shadow: 0 12px 40px rgba(0,0,0,.8), 0 0 20px rgba(6, 182, 212, 0.1);
+    animation: gpIn .15s cubic-bezier(0.4, 0, 0.2, 1);
   }
   @keyframes gpIn { from { opacity:0; transform:scale(.95) translateY(-4px); } to { opacity:1; transform:scale(1); } }
   .gp-topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:8px; }
   .gp-meta  { font-size:10px; color:#6b7280; }
   .gp-xbtn  { background:none; border:none; color:#6b7280; cursor:pointer; font-size:15px; line-height:1; padding:0 2px; }
   .gp-xbtn:hover { color:#fff; }
-  .gp-scoreline { text-align:center; margin-bottom:8px; }
-  .gp-score-big { font-size:1.6rem; font-weight:900; letter-spacing:-1px; }
-  .gp-teams-row { display:grid; grid-template-columns:1fr auto 1fr; font-size:10px; color:#9ca3af; gap:4px; margin-top:2px; }
+  .gp-scoreline { text-align:center; margin-bottom:8px; padding: 8px 0; border-bottom: 1px solid var(--border); }
+  .gp-score-big { font-size:2rem; font-weight:900; letter-spacing:-1px; background: linear-gradient(135deg, #f0f4f8, #fbbf24);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  .gp-teams-row {
+    display:grid; grid-template-columns:1fr auto 1fr; font-size:11px; color:var(--text-muted); gap:6px; margin-top:6px;
+    padding-top: 6px; border-top: 1px solid var(--border); font-weight: 500;
+  }
   .gp-teams-row .ht { text-align:left; } .gp-teams-row .at { text-align:right; }
   .gp-divider { height:1px; background:#2e3347; margin:8px 0; }
-  .gp-goal-list { display:flex; flex-direction:column; gap:3px; max-height:180px; overflow-y:auto; }
-  .gp-goal { display:flex; align-items:center; gap:5px; font-size:11px; padding:2px 0; }
-  .gp-goal .gmin  { color:#6b7280; font-size:10px; min-width:26px; text-align:right; flex-shrink:0; }
-  .gp-goal .gname { flex:1; }
+  .gp-goal-list { display:flex; flex-direction:column; gap:6px; max-height:180px; overflow-y:auto; padding: 4px 0; }
+  .gp-goal { display:flex; align-items:center; gap:6px; font-size:11px; padding:6px 8px;
+    background: rgba(31, 41, 55, 0.3); border-radius: 5px; transition: all 0.2s ease; }
+  .gp-goal:hover { background: rgba(6, 182, 212, 0.15); transform: translateX(2px); }
+  .gp-goal .gmin  { color:#9ca3af; font-size:10px; min-width:28px; text-align:right; flex-shrink:0; font-weight: 600; }
+  .gp-goal .gname { flex:1; font-weight: 500; }
   .gp-goal.opp    { flex-direction:row-reverse; color:#9ca3af; }
   .gp-goal.opp .gname { text-align:right; }
   .gp-empty { font-size:11px; color:#6b7280; text-align:center; padding:6px 0; }
@@ -239,10 +286,11 @@
   .sc-tabs { display:flex; gap:4px; margin-bottom:10px; }
   .sc-tab {
     background: var(--surface2); border: 1px solid var(--border); border-radius: 6px;
-    color: var(--text-muted); padding: 4px 10px; font-size: 11px; cursor: pointer; transition: all 0.15s;
+    color: var(--text-muted); padding: 6px 12px; font-size: 11px; cursor: pointer; transition: all 0.2s ease;
+    font-weight: 500;
   }
-  .sc-tab:hover { border-color: #38bdf8; color: var(--text); }
-  .sc-tab.active { background: #38bdf8; border-color: #38bdf8; color: #000; font-weight: 700; }
+  .sc-tab:hover { border-color: var(--accent); color: var(--text); background: rgba(6, 182, 212, 0.1); }
+  .sc-tab.active { background: var(--accent); border-color: var(--accent); color: #000; font-weight: 700; box-shadow: 0 2px 8px rgba(6, 182, 212, 0.3); }
   .sc-row {
     display: grid; grid-template-columns: 18px 1fr auto;
     align-items: center; gap: 6px; margin-bottom: 3px;
@@ -253,9 +301,9 @@
     background: var(--surface2); outline: 1px solid #ffffff44; border-radius: 6px;
   }
   .sc-pos { font-size: 10px; color: var(--text-muted); text-align: right; }
-  .sc-bar-wrap { position: relative; height: 14px; }
-  .sc-bar-bg { position:absolute; inset:0; background: #1e2033; border-radius: 3px; overflow: hidden; }
-  .sc-bar { height: 100%; border-radius: 3px; transition: width 0.4s ease; }
+  .sc-bar-wrap { position: relative; height: 16px; }
+  .sc-bar-bg { position:absolute; inset:0; background: rgba(31, 41, 55, 0.5); border-radius: 4px; overflow: hidden; border: 1px solid var(--border); }
+  .sc-bar { height: 100%; border-radius: 4px; transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: inset 0 0 1px rgba(255,255,255,0.2); }
   .sc-name-val { display:flex; justify-content:space-between; align-items:center;
     position:absolute; inset:0; padding: 0 5px; z-index:1; }
   .sc-name { font-size: 10px; font-weight: 500; white-space: nowrap; overflow: hidden;
@@ -263,10 +311,10 @@
   .sc-val { font-size: 10px; font-weight: 700; color: #fff; text-shadow: 0 1px 2px #000a; flex-shrink:0; }
 
   /* ── Scrollbar ── */
-  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar { width: 8px; height: 8px; }
   ::-webkit-scrollbar-track { background: var(--bg); }
-  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-  ::-webkit-scrollbar-thumb:hover { background: #4a5568; }
+  ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--accent), var(--border)); border-radius: 4px; transition: background 0.2s ease; }
+  ::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, #06d4e4, var(--accent)); }
 
   /* ── Color mode – Goals ── */
   .color-mode-goals td.cell { color: #fff; }
@@ -287,32 +335,48 @@
     .stats-panel {
       top: 0 !important; height: 100vh !important; height: 100dvh !important;
       z-index: 200;
-      box-shadow: -6px 0 32px #0009;
+      box-shadow: -8px 0 40px rgba(0,0,0,0.5);
     }
+
+    header { padding: 14px 20px; }
+    header h1 { font-size: 1.2rem; }
+    .controls { gap: 8px; }
+    .btn-group button { padding: 6px 11px; font-size: 11px; }
+    input[type="text"] { width: 140px; padding: 6px 12px; }
+
+    td.cell { width: 32px; min-width: 32px; height: 32px; font-size: 10px; }
+    tbody td.team-name, thead th.team-col { min-width: 160px; max-width: 160px; padding: 5px 10px; font-size: 12px; }
   }
 
   /* Mobile: full-screen panel, compact header, smaller cells */
   @media (max-width: 599px) {
     :root { --panel-width: 100vw; }
 
-    header { padding: 10px 14px; gap: 8px; }
-    header h1 { font-size: 1rem; white-space: nowrap; }
-    .controls { gap: 6px; }
-    .btn-group button { padding: 5px 8px; font-size: 11px; }
-    input[type="text"] { width: 120px; padding: 5px 10px; font-size: 11px; }
+    header { padding: 12px 16px; gap: 10px; }
+    header h1 { font-size: 1.1rem; white-space: nowrap; font-weight: 800; }
+    .controls { gap: 8px; }
+    .btn-group button { padding: 6px 10px; font-size: 11px; }
+    input[type="text"] { width: 130px; padding: 7px 12px; font-size: 11px; }
 
-    .legend { padding: 6px 14px; gap: 8px; }
-    .legend-item { font-size: 10px; }
+    .legend { padding: 8px 16px; gap: 10px; font-size: 11px; }
+    .legend-item { font-size: 11px; gap: 6px; }
+    .legend-swatch { width: 14px; height: 14px; }
 
-    td.cell { width: 28px; min-width: 28px; height: 28px; font-size: 10px; }
-    tbody td.team-name, thead th.team-col { min-width: 140px; max-width: 140px; padding: 4px 8px; font-size: 11px; }
+    td.cell { width: 30px; min-width: 30px; height: 30px; font-size: 10px; }
+    tbody td.team-name, thead th.team-col { min-width: 130px; max-width: 130px; padding: 6px 10px; font-size: 11px; }
+
+    tbody td.team-name .team-dot { width: 7px; height: 7px; margin-right: 6px; }
+    tbody td.team-name .team-meta { font-size: 9px; margin-top: 1px; }
+    tbody td.team-name .team-seasons { font-size: 9px; }
 
     /* Game popup: center on screen instead of anchoring to cell */
     .game-popup {
       position: fixed !important;
       left: 50% !important; top: 50% !important;
       transform: translate(-50%, -50%) !important;
-      width: min(300px, calc(100vw - 24px)) !important;
+      width: min(320px, calc(100vw - 20px)) !important;
+      max-height: 80vh !important;
+      overflow-y: auto !important;
     }
   }
 </style>
@@ -3171,6 +3235,760 @@ const HISTORICAL_MATCHES = {
     {d:'19/05/2024',h:'Luton',a:'Fulham',hg:2,ag:4},
     {d:'19/05/2024',h:'Manchester City',a:'West Ham United',hg:3,ag:1},
     {d:'19/05/2024',h:'Sheffield United',a:'Tottenham Hotspur',hg:0,ag:3}
+  ],
+  '2024-25': [
+    {d:'16/08/2024',h:'Manchester United',a:'Fulham',hg:1,ag:0},
+    {d:'17/08/2024',h:'Ipswich Town',a:'Liverpool',hg:0,ag:2},
+    {d:'17/08/2024',h:'Arsenal',a:'Wolverhampton',hg:2,ag:0},
+    {d:'17/08/2024',h:'Everton',a:'Brighton',hg:0,ag:3},
+    {d:'17/08/2024',h:'Newcastle United',a:'Southampton',hg:1,ag:0},
+    {d:'17/08/2024',h:'Nottingham Forest',a:'Bournemouth',hg:1,ag:1},
+    {d:'17/08/2024',h:'West Ham United',a:'Aston Villa',hg:1,ag:2},
+    {d:'18/08/2024',h:'Brentford',a:'Crystal Palace',hg:2,ag:1},
+    {d:'18/08/2024',h:'Chelsea',a:'Manchester City',hg:0,ag:2},
+    {d:'19/08/2024',h:'Leicester',a:'Tottenham Hotspur',hg:1,ag:1},
+    {d:'24/08/2024',h:'Brighton',a:'Manchester United',hg:2,ag:1},
+    {d:'24/08/2024',h:'Crystal Palace',a:'West Ham United',hg:0,ag:2},
+    {d:'24/08/2024',h:'Fulham',a:'Leicester',hg:2,ag:1},
+    {d:'24/08/2024',h:'Manchester City',a:'Ipswich Town',hg:4,ag:1},
+    {d:'24/08/2024',h:'Southampton',a:'Nottingham Forest',hg:0,ag:1},
+    {d:'24/08/2024',h:'Tottenham Hotspur',a:'Everton',hg:4,ag:0},
+    {d:'24/08/2024',h:'Aston Villa',a:'Arsenal',hg:0,ag:2},
+    {d:'25/08/2024',h:'Bournemouth',a:'Newcastle United',hg:1,ag:1},
+    {d:'25/08/2024',h:'Wolverhampton',a:'Chelsea',hg:2,ag:6},
+    {d:'25/08/2024',h:'Liverpool',a:'Brentford',hg:2,ag:0},
+    {d:'31/08/2024',h:'Arsenal',a:'Brighton',hg:1,ag:1},
+    {d:'31/08/2024',h:'Brentford',a:'Southampton',hg:3,ag:1},
+    {d:'31/08/2024',h:'Everton',a:'Bournemouth',hg:2,ag:3},
+    {d:'31/08/2024',h:'Ipswich Town',a:'Fulham',hg:1,ag:1},
+    {d:'31/08/2024',h:'Leicester',a:'Aston Villa',hg:1,ag:2},
+    {d:'31/08/2024',h:'Nottingham Forest',a:'Wolverhampton',hg:1,ag:1},
+    {d:'31/08/2024',h:'West Ham United',a:'Manchester City',hg:1,ag:3},
+    {d:'01/09/2024',h:'Chelsea',a:'Crystal Palace',hg:1,ag:1},
+    {d:'01/09/2024',h:'Newcastle United',a:'Tottenham Hotspur',hg:2,ag:1},
+    {d:'01/09/2024',h:'Manchester United',a:'Liverpool',hg:0,ag:3},
+    {d:'14/09/2024',h:'Southampton',a:'Manchester United',hg:0,ag:3},
+    {d:'14/09/2024',h:'Brighton',a:'Ipswich Town',hg:0,ag:0},
+    {d:'14/09/2024',h:'Crystal Palace',a:'Leicester',hg:2,ag:2},
+    {d:'14/09/2024',h:'Fulham',a:'West Ham United',hg:1,ag:1},
+    {d:'14/09/2024',h:'Liverpool',a:'Nottingham Forest',hg:0,ag:1},
+    {d:'14/09/2024',h:'Manchester City',a:'Brentford',hg:2,ag:1},
+    {d:'14/09/2024',h:'Aston Villa',a:'Everton',hg:3,ag:2},
+    {d:'14/09/2024',h:'Bournemouth',a:'Chelsea',hg:0,ag:1},
+    {d:'15/09/2024',h:'Tottenham Hotspur',a:'Arsenal',hg:0,ag:1},
+    {d:'15/09/2024',h:'Wolverhampton',a:'Newcastle United',hg:1,ag:2},
+    {d:'21/09/2024',h:'West Ham United',a:'Chelsea',hg:0,ag:3},
+    {d:'21/09/2024',h:'Aston Villa',a:'Wolverhampton',hg:3,ag:1},
+    {d:'21/09/2024',h:'Fulham',a:'Newcastle United',hg:3,ag:1},
+    {d:'21/09/2024',h:'Leicester',a:'Everton',hg:1,ag:1},
+    {d:'21/09/2024',h:'Liverpool',a:'Bournemouth',hg:3,ag:0},
+    {d:'21/09/2024',h:'Southampton',a:'Ipswich Town',hg:1,ag:1},
+    {d:'21/09/2024',h:'Tottenham Hotspur',a:'Brentford',hg:3,ag:1},
+    {d:'21/09/2024',h:'Crystal Palace',a:'Manchester United',hg:0,ag:0},
+    {d:'22/09/2024',h:'Brighton',a:'Nottingham Forest',hg:2,ag:2},
+    {d:'22/09/2024',h:'Manchester City',a:'Arsenal',hg:2,ag:2},
+    {d:'28/09/2024',h:'Newcastle United',a:'Manchester City',hg:1,ag:1},
+    {d:'28/09/2024',h:'Arsenal',a:'Leicester',hg:4,ag:2},
+    {d:'28/09/2024',h:'Brentford',a:'West Ham United',hg:1,ag:1},
+    {d:'28/09/2024',h:'Chelsea',a:'Brighton',hg:4,ag:2},
+    {d:'28/09/2024',h:'Everton',a:'Crystal Palace',hg:2,ag:1},
+    {d:'28/09/2024',h:'Nottingham Forest',a:'Fulham',hg:0,ag:1},
+    {d:'28/09/2024',h:'Wolverhampton',a:'Liverpool',hg:1,ag:2},
+    {d:'29/09/2024',h:'Ipswich Town',a:'Aston Villa',hg:2,ag:2},
+    {d:'29/09/2024',h:'Manchester United',a:'Tottenham Hotspur',hg:0,ag:3},
+    {d:'30/09/2024',h:'Bournemouth',a:'Southampton',hg:3,ag:1},
+    {d:'05/10/2024',h:'Crystal Palace',a:'Liverpool',hg:0,ag:1},
+    {d:'05/10/2024',h:'Arsenal',a:'Southampton',hg:3,ag:1},
+    {d:'05/10/2024',h:'Brentford',a:'Wolverhampton',hg:5,ag:3},
+    {d:'05/10/2024',h:'Leicester',a:'Bournemouth',hg:1,ag:0},
+    {d:'05/10/2024',h:'Manchester City',a:'Fulham',hg:3,ag:2},
+    {d:'05/10/2024',h:'West Ham United',a:'Ipswich Town',hg:4,ag:1},
+    {d:'05/10/2024',h:'Everton',a:'Newcastle United',hg:0,ag:0},
+    {d:'06/10/2024',h:'Aston Villa',a:'Manchester United',hg:0,ag:0},
+    {d:'06/10/2024',h:'Chelsea',a:'Nottingham Forest',hg:1,ag:1},
+    {d:'06/10/2024',h:'Brighton',a:'Tottenham Hotspur',hg:3,ag:2},
+    {d:'19/10/2024',h:'Tottenham Hotspur',a:'West Ham United',hg:4,ag:1},
+    {d:'19/10/2024',h:'Fulham',a:'Aston Villa',hg:1,ag:3},
+    {d:'19/10/2024',h:'Ipswich Town',a:'Everton',hg:0,ag:2},
+    {d:'19/10/2024',h:'Manchester United',a:'Brentford',hg:2,ag:1},
+    {d:'19/10/2024',h:'Newcastle United',a:'Brighton',hg:0,ag:1},
+    {d:'19/10/2024',h:'Southampton',a:'Leicester',hg:2,ag:3},
+    {d:'19/10/2024',h:'Bournemouth',a:'Arsenal',hg:2,ag:0},
+    {d:'20/10/2024',h:'Wolverhampton',a:'Manchester City',hg:1,ag:2},
+    {d:'20/10/2024',h:'Liverpool',a:'Chelsea',hg:2,ag:1},
+    {d:'21/10/2024',h:'Nottingham Forest',a:'Crystal Palace',hg:1,ag:0},
+    {d:'25/10/2024',h:'Leicester',a:'Nottingham Forest',hg:1,ag:3},
+    {d:'26/10/2024',h:'Aston Villa',a:'Bournemouth',hg:1,ag:1},
+    {d:'26/10/2024',h:'Brentford',a:'Ipswich Town',hg:4,ag:3},
+    {d:'26/10/2024',h:'Brighton',a:'Wolverhampton',hg:2,ag:2},
+    {d:'26/10/2024',h:'Manchester City',a:'Southampton',hg:1,ag:0},
+    {d:'26/10/2024',h:'Everton',a:'Fulham',hg:1,ag:1},
+    {d:'27/10/2024',h:'Chelsea',a:'Newcastle United',hg:2,ag:1},
+    {d:'27/10/2024',h:'Crystal Palace',a:'Tottenham Hotspur',hg:1,ag:0},
+    {d:'27/10/2024',h:'West Ham United',a:'Manchester United',hg:2,ag:1},
+    {d:'27/10/2024',h:'Arsenal',a:'Liverpool',hg:2,ag:2},
+    {d:'02/11/2024',h:'Newcastle United',a:'Arsenal',hg:1,ag:0},
+    {d:'02/11/2024',h:'Bournemouth',a:'Manchester City',hg:2,ag:1},
+    {d:'02/11/2024',h:'Ipswich Town',a:'Leicester',hg:1,ag:1},
+    {d:'02/11/2024',h:'Liverpool',a:'Brighton',hg:2,ag:1},
+    {d:'02/11/2024',h:'Nottingham Forest',a:'West Ham United',hg:3,ag:0},
+    {d:'02/11/2024',h:'Southampton',a:'Everton',hg:1,ag:0},
+    {d:'02/11/2024',h:'Wolverhampton',a:'Crystal Palace',hg:2,ag:2},
+    {d:'03/11/2024',h:'Tottenham Hotspur',a:'Aston Villa',hg:4,ag:1},
+    {d:'03/11/2024',h:'Manchester United',a:'Chelsea',hg:1,ag:1},
+    {d:'04/11/2024',h:'Fulham',a:'Brentford',hg:2,ag:1},
+    {d:'09/11/2024',h:'Brentford',a:'Bournemouth',hg:3,ag:2},
+    {d:'09/11/2024',h:'Crystal Palace',a:'Fulham',hg:0,ag:2},
+    {d:'09/11/2024',h:'West Ham United',a:'Everton',hg:0,ag:0},
+    {d:'09/11/2024',h:'Wolverhampton',a:'Southampton',hg:2,ag:0},
+    {d:'09/11/2024',h:'Brighton',a:'Manchester City',hg:2,ag:1},
+    {d:'09/11/2024',h:'Liverpool',a:'Aston Villa',hg:2,ag:0},
+    {d:'10/11/2024',h:'Manchester United',a:'Leicester',hg:3,ag:0},
+    {d:'10/11/2024',h:'Nottingham Forest',a:'Newcastle United',hg:1,ag:3},
+    {d:'10/11/2024',h:'Tottenham Hotspur',a:'Ipswich Town',hg:1,ag:2},
+    {d:'10/11/2024',h:'Chelsea',a:'Arsenal',hg:1,ag:1},
+    {d:'23/11/2024',h:'Leicester',a:'Chelsea',hg:1,ag:2},
+    {d:'23/11/2024',h:'Arsenal',a:'Nottingham Forest',hg:3,ag:0},
+    {d:'23/11/2024',h:'Aston Villa',a:'Crystal Palace',hg:2,ag:2},
+    {d:'23/11/2024',h:'Bournemouth',a:'Brighton',hg:1,ag:2},
+    {d:'23/11/2024',h:'Everton',a:'Brentford',hg:0,ag:0},
+    {d:'23/11/2024',h:'Fulham',a:'Wolverhampton',hg:1,ag:4},
+    {d:'23/11/2024',h:'Manchester City',a:'Tottenham Hotspur',hg:0,ag:4},
+    {d:'24/11/2024',h:'Southampton',a:'Liverpool',hg:2,ag:3},
+    {d:'24/11/2024',h:'Ipswich Town',a:'Manchester United',hg:1,ag:1},
+    {d:'25/11/2024',h:'Newcastle United',a:'West Ham United',hg:0,ag:2},
+    {d:'29/11/2024',h:'Brighton',a:'Southampton',hg:1,ag:1},
+    {d:'30/11/2024',h:'Brentford',a:'Leicester',hg:4,ag:1},
+    {d:'30/11/2024',h:'Crystal Palace',a:'Newcastle United',hg:1,ag:1},
+    {d:'30/11/2024',h:'Nottingham Forest',a:'Ipswich Town',hg:1,ag:0},
+    {d:'30/11/2024',h:'Wolverhampton',a:'Bournemouth',hg:2,ag:4},
+    {d:'30/11/2024',h:'West Ham United',a:'Arsenal',hg:2,ag:5},
+    {d:'01/12/2024',h:'Chelsea',a:'Aston Villa',hg:3,ag:0},
+    {d:'01/12/2024',h:'Manchester United',a:'Everton',hg:4,ag:0},
+    {d:'01/12/2024',h:'Tottenham Hotspur',a:'Fulham',hg:1,ag:1},
+    {d:'01/12/2024',h:'Liverpool',a:'Manchester City',hg:2,ag:0},
+    {d:'03/12/2024',h:'Ipswich Town',a:'Crystal Palace',hg:0,ag:1},
+    {d:'03/12/2024',h:'Leicester',a:'West Ham United',hg:3,ag:1},
+    {d:'04/12/2024',h:'Everton',a:'Wolverhampton',hg:4,ag:0},
+    {d:'04/12/2024',h:'Manchester City',a:'Nottingham Forest',hg:3,ag:0},
+    {d:'04/12/2024',h:'Newcastle United',a:'Liverpool',hg:3,ag:3},
+    {d:'04/12/2024',h:'Southampton',a:'Chelsea',hg:1,ag:5},
+    {d:'04/12/2024',h:'Arsenal',a:'Manchester United',hg:2,ag:0},
+    {d:'04/12/2024',h:'Aston Villa',a:'Brentford',hg:3,ag:1},
+    {d:'05/12/2024',h:'Fulham',a:'Brighton',hg:3,ag:1},
+    {d:'05/12/2024',h:'Bournemouth',a:'Tottenham Hotspur',hg:1,ag:0},
+    {d:'07/12/2024',h:'Aston Villa',a:'Southampton',hg:1,ag:0},
+    {d:'07/12/2024',h:'Brentford',a:'Newcastle United',hg:4,ag:2},
+    {d:'07/12/2024',h:'Crystal Palace',a:'Manchester City',hg:2,ag:2},
+    {d:'07/12/2024',h:'Manchester United',a:'Nottingham Forest',hg:2,ag:3},
+    {d:'08/12/2024',h:'Fulham',a:'Arsenal',hg:1,ag:1},
+    {d:'08/12/2024',h:'Ipswich Town',a:'Bournemouth',hg:1,ag:2},
+    {d:'08/12/2024',h:'Leicester',a:'Brighton',hg:2,ag:2},
+    {d:'08/12/2024',h:'Tottenham Hotspur',a:'Chelsea',hg:3,ag:4},
+    {d:'09/12/2024',h:'West Ham United',a:'Wolverhampton',hg:2,ag:1},
+    {d:'14/12/2024',h:'Arsenal',a:'Everton',hg:0,ag:0},
+    {d:'14/12/2024',h:'Liverpool',a:'Fulham',hg:2,ag:2},
+    {d:'14/12/2024',h:'Newcastle United',a:'Leicester',hg:4,ag:0},
+    {d:'14/12/2024',h:'Wolverhampton',a:'Ipswich Town',hg:1,ag:2},
+    {d:'14/12/2024',h:'Nottingham Forest',a:'Aston Villa',hg:2,ag:1},
+    {d:'15/12/2024',h:'Brighton',a:'Crystal Palace',hg:1,ag:3},
+    {d:'15/12/2024',h:'Manchester City',a:'Manchester United',hg:1,ag:2},
+    {d:'15/12/2024',h:'Chelsea',a:'Brentford',hg:2,ag:1},
+    {d:'15/12/2024',h:'Southampton',a:'Tottenham Hotspur',hg:0,ag:5},
+    {d:'16/12/2024',h:'Bournemouth',a:'West Ham United',hg:1,ag:1},
+    {d:'21/12/2024',h:'Aston Villa',a:'Manchester City',hg:2,ag:1},
+    {d:'21/12/2024',h:'Brentford',a:'Nottingham Forest',hg:0,ag:2},
+    {d:'21/12/2024',h:'Ipswich Town',a:'Newcastle United',hg:0,ag:4},
+    {d:'21/12/2024',h:'West Ham United',a:'Brighton',hg:1,ag:1},
+    {d:'21/12/2024',h:'Crystal Palace',a:'Arsenal',hg:1,ag:5},
+    {d:'22/12/2024',h:'Everton',a:'Chelsea',hg:0,ag:0},
+    {d:'22/12/2024',h:'Fulham',a:'Southampton',hg:0,ag:0},
+    {d:'22/12/2024',h:'Leicester',a:'Wolverhampton',hg:0,ag:3},
+    {d:'22/12/2024',h:'Manchester United',a:'Bournemouth',hg:0,ag:3},
+    {d:'22/12/2024',h:'Tottenham Hotspur',a:'Liverpool',hg:3,ag:6},
+    {d:'26/12/2024',h:'Manchester City',a:'Everton',hg:1,ag:1},
+    {d:'26/12/2024',h:'Bournemouth',a:'Crystal Palace',hg:0,ag:0},
+    {d:'26/12/2024',h:'Chelsea',a:'Fulham',hg:1,ag:2},
+    {d:'26/12/2024',h:'Newcastle United',a:'Aston Villa',hg:3,ag:0},
+    {d:'26/12/2024',h:'Nottingham Forest',a:'Tottenham Hotspur',hg:1,ag:0},
+    {d:'26/12/2024',h:'Southampton',a:'West Ham United',hg:0,ag:1},
+    {d:'26/12/2024',h:'Wolverhampton',a:'Manchester United',hg:2,ag:0},
+    {d:'26/12/2024',h:'Liverpool',a:'Leicester',hg:3,ag:1},
+    {d:'27/12/2024',h:'Brighton',a:'Brentford',hg:0,ag:0},
+    {d:'27/12/2024',h:'Arsenal',a:'Ipswich Town',hg:1,ag:0},
+    {d:'29/12/2024',h:'Leicester',a:'Manchester City',hg:0,ag:2},
+    {d:'29/12/2024',h:'Crystal Palace',a:'Southampton',hg:2,ag:1},
+    {d:'29/12/2024',h:'Everton',a:'Nottingham Forest',hg:0,ag:2},
+    {d:'29/12/2024',h:'Fulham',a:'Bournemouth',hg:2,ag:2},
+    {d:'29/12/2024',h:'Tottenham Hotspur',a:'Wolverhampton',hg:2,ag:2},
+    {d:'29/12/2024',h:'West Ham United',a:'Liverpool',hg:0,ag:5},
+    {d:'30/12/2024',h:'Aston Villa',a:'Brighton',hg:2,ag:2},
+    {d:'30/12/2024',h:'Ipswich Town',a:'Chelsea',hg:2,ag:0},
+    {d:'30/12/2024',h:'Manchester United',a:'Newcastle United',hg:0,ag:2},
+    {d:'01/01/2025',h:'Brentford',a:'Arsenal',hg:1,ag:3},
+    {d:'04/01/2025',h:'Tottenham Hotspur',a:'Newcastle United',hg:1,ag:2},
+    {d:'04/01/2025',h:'Aston Villa',a:'Leicester',hg:2,ag:1},
+    {d:'04/01/2025',h:'Bournemouth',a:'Everton',hg:1,ag:0},
+    {d:'04/01/2025',h:'Crystal Palace',a:'Chelsea',hg:1,ag:1},
+    {d:'04/01/2025',h:'Manchester City',a:'West Ham United',hg:4,ag:1},
+    {d:'04/01/2025',h:'Southampton',a:'Brentford',hg:0,ag:5},
+    {d:'04/01/2025',h:'Brighton',a:'Arsenal',hg:1,ag:1},
+    {d:'05/01/2025',h:'Fulham',a:'Ipswich Town',hg:2,ag:2},
+    {d:'05/01/2025',h:'Liverpool',a:'Manchester United',hg:2,ag:2},
+    {d:'06/01/2025',h:'Wolverhampton',a:'Nottingham Forest',hg:0,ag:3},
+    {d:'14/01/2025',h:'Brentford',a:'Manchester City',hg:2,ag:2},
+    {d:'14/01/2025',h:'Chelsea',a:'Bournemouth',hg:2,ag:2},
+    {d:'14/01/2025',h:'West Ham United',a:'Fulham',hg:3,ag:2},
+    {d:'14/01/2025',h:'Nottingham Forest',a:'Liverpool',hg:1,ag:1},
+    {d:'15/01/2025',h:'Everton',a:'Aston Villa',hg:0,ag:1},
+    {d:'15/01/2025',h:'Leicester',a:'Crystal Palace',hg:0,ag:2},
+    {d:'15/01/2025',h:'Newcastle United',a:'Wolverhampton',hg:3,ag:0},
+    {d:'15/01/2025',h:'Arsenal',a:'Tottenham Hotspur',hg:2,ag:1},
+    {d:'16/01/2025',h:'Ipswich Town',a:'Brighton',hg:0,ag:2},
+    {d:'16/01/2025',h:'Manchester United',a:'Southampton',hg:3,ag:1},
+    {d:'18/01/2025',h:'Newcastle United',a:'Bournemouth',hg:1,ag:4},
+    {d:'18/01/2025',h:'Brentford',a:'Liverpool',hg:0,ag:2},
+    {d:'18/01/2025',h:'Leicester',a:'Fulham',hg:0,ag:2},
+    {d:'18/01/2025',h:'West Ham United',a:'Crystal Palace',hg:0,ag:2},
+    {d:'18/01/2025',h:'Arsenal',a:'Aston Villa',hg:2,ag:2},
+    {d:'19/01/2025',h:'Everton',a:'Tottenham Hotspur',hg:3,ag:2},
+    {d:'19/01/2025',h:'Manchester United',a:'Brighton',hg:1,ag:3},
+    {d:'19/01/2025',h:'Nottingham Forest',a:'Southampton',hg:3,ag:2},
+    {d:'19/01/2025',h:'Ipswich Town',a:'Manchester City',hg:0,ag:6},
+    {d:'20/01/2025',h:'Chelsea',a:'Wolverhampton',hg:3,ag:1},
+    {d:'25/01/2025',h:'Bournemouth',a:'Nottingham Forest',hg:5,ag:0},
+    {d:'25/01/2025',h:'Brighton',a:'Everton',hg:0,ag:1},
+    {d:'25/01/2025',h:'Liverpool',a:'Ipswich Town',hg:4,ag:1},
+    {d:'25/01/2025',h:'Southampton',a:'Newcastle United',hg:1,ag:3},
+    {d:'25/01/2025',h:'Wolverhampton',a:'Arsenal',hg:0,ag:1},
+    {d:'25/01/2025',h:'Manchester City',a:'Chelsea',hg:3,ag:1},
+    {d:'26/01/2025',h:'Crystal Palace',a:'Brentford',hg:1,ag:2},
+    {d:'26/01/2025',h:'Tottenham Hotspur',a:'Leicester',hg:1,ag:2},
+    {d:'26/01/2025',h:'Aston Villa',a:'West Ham United',hg:1,ag:1},
+    {d:'26/01/2025',h:'Fulham',a:'Manchester United',hg:0,ag:1},
+    {d:'01/02/2025',h:'Nottingham Forest',a:'Brighton',hg:7,ag:0},
+    {d:'01/02/2025',h:'Bournemouth',a:'Liverpool',hg:0,ag:2},
+    {d:'01/02/2025',h:'Everton',a:'Leicester',hg:4,ag:0},
+    {d:'01/02/2025',h:'Ipswich Town',a:'Southampton',hg:1,ag:2},
+    {d:'01/02/2025',h:'Newcastle United',a:'Fulham',hg:1,ag:2},
+    {d:'01/02/2025',h:'Wolverhampton',a:'Aston Villa',hg:2,ag:0},
+    {d:'02/02/2025',h:'Brentford',a:'Tottenham Hotspur',hg:0,ag:2},
+    {d:'02/02/2025',h:'Manchester United',a:'Crystal Palace',hg:0,ag:2},
+    {d:'02/02/2025',h:'Arsenal',a:'Manchester City',hg:5,ag:1},
+    {d:'03/02/2025',h:'Chelsea',a:'West Ham United',hg:2,ag:1},
+    {d:'12/02/2025',h:'Everton',a:'Liverpool',hg:2,ag:2},
+    {d:'14/02/2025',h:'Brighton',a:'Chelsea',hg:3,ag:0},
+    {d:'15/02/2025',h:'Leicester',a:'Arsenal',hg:0,ag:2},
+    {d:'15/02/2025',h:'Aston Villa',a:'Ipswich Town',hg:1,ag:1},
+    {d:'15/02/2025',h:'Fulham',a:'Nottingham Forest',hg:2,ag:1},
+    {d:'15/02/2025',h:'Manchester City',a:'Newcastle United',hg:4,ag:0},
+    {d:'15/02/2025',h:'Southampton',a:'Bournemouth',hg:1,ag:3},
+    {d:'15/02/2025',h:'West Ham United',a:'Brentford',hg:0,ag:1},
+    {d:'15/02/2025',h:'Crystal Palace',a:'Everton',hg:1,ag:2},
+    {d:'16/02/2025',h:'Liverpool',a:'Wolverhampton',hg:2,ag:1},
+    {d:'16/02/2025',h:'Tottenham Hotspur',a:'Manchester United',hg:1,ag:0},
+    {d:'19/02/2025',h:'Aston Villa',a:'Liverpool',hg:2,ag:2},
+    {d:'21/02/2025',h:'Leicester',a:'Brentford',hg:0,ag:4},
+    {d:'22/02/2025',h:'Everton',a:'Manchester United',hg:2,ag:2},
+    {d:'22/02/2025',h:'Arsenal',a:'West Ham United',hg:0,ag:1},
+    {d:'22/02/2025',h:'Bournemouth',a:'Wolverhampton',hg:0,ag:1},
+    {d:'22/02/2025',h:'Fulham',a:'Crystal Palace',hg:0,ag:2},
+    {d:'22/02/2025',h:'Ipswich Town',a:'Tottenham Hotspur',hg:1,ag:4},
+    {d:'22/02/2025',h:'Southampton',a:'Brighton',hg:0,ag:4},
+    {d:'22/02/2025',h:'Aston Villa',a:'Chelsea',hg:2,ag:1},
+    {d:'23/02/2025',h:'Newcastle United',a:'Nottingham Forest',hg:4,ag:3},
+    {d:'23/02/2025',h:'Manchester City',a:'Liverpool',hg:0,ag:2},
+    {d:'25/02/2025',h:'Brighton',a:'Bournemouth',hg:2,ag:1},
+    {d:'25/02/2025',h:'Crystal Palace',a:'Aston Villa',hg:4,ag:1},
+    {d:'25/02/2025',h:'Wolverhampton',a:'Fulham',hg:1,ag:2},
+    {d:'25/02/2025',h:'Chelsea',a:'Southampton',hg:4,ag:0},
+    {d:'26/02/2025',h:'Brentford',a:'Everton',hg:1,ag:1},
+    {d:'26/02/2025',h:'Manchester United',a:'Ipswich Town',hg:3,ag:2},
+    {d:'26/02/2025',h:'Nottingham Forest',a:'Arsenal',hg:0,ag:0},
+    {d:'26/02/2025',h:'Tottenham Hotspur',a:'Manchester City',hg:0,ag:1},
+    {d:'26/02/2025',h:'Liverpool',a:'Newcastle United',hg:2,ag:0},
+    {d:'27/02/2025',h:'West Ham United',a:'Leicester',hg:2,ag:0},
+    {d:'08/03/2025',h:'Nottingham Forest',a:'Manchester City',hg:1,ag:0},
+    {d:'08/03/2025',h:'Brighton',a:'Fulham',hg:2,ag:1},
+    {d:'08/03/2025',h:'Crystal Palace',a:'Ipswich Town',hg:1,ag:0},
+    {d:'08/03/2025',h:'Liverpool',a:'Southampton',hg:3,ag:1},
+    {d:'08/03/2025',h:'Brentford',a:'Aston Villa',hg:0,ag:1},
+    {d:'08/03/2025',h:'Wolverhampton',a:'Everton',hg:1,ag:1},
+    {d:'09/03/2025',h:'Chelsea',a:'Leicester',hg:1,ag:0},
+    {d:'09/03/2025',h:'Tottenham Hotspur',a:'Bournemouth',hg:2,ag:2},
+    {d:'09/03/2025',h:'Manchester United',a:'Arsenal',hg:1,ag:1},
+    {d:'10/03/2025',h:'West Ham United',a:'Newcastle United',hg:0,ag:1},
+    {d:'15/03/2025',h:'Everton',a:'West Ham United',hg:1,ag:1},
+    {d:'15/03/2025',h:'Ipswich Town',a:'Nottingham Forest',hg:2,ag:4},
+    {d:'15/03/2025',h:'Manchester City',a:'Brighton',hg:2,ag:2},
+    {d:'15/03/2025',h:'Southampton',a:'Wolverhampton',hg:1,ag:2},
+    {d:'15/03/2025',h:'Bournemouth',a:'Brentford',hg:1,ag:2},
+    {d:'16/03/2025',h:'Arsenal',a:'Chelsea',hg:1,ag:0},
+    {d:'16/03/2025',h:'Fulham',a:'Tottenham Hotspur',hg:2,ag:0},
+    {d:'16/03/2025',h:'Leicester',a:'Manchester United',hg:0,ag:3},
+    {d:'01/04/2025',h:'Arsenal',a:'Fulham',hg:2,ag:1},
+    {d:'01/04/2025',h:'Wolverhampton',a:'West Ham United',hg:1,ag:0},
+    {d:'01/04/2025',h:'Nottingham Forest',a:'Manchester United',hg:1,ag:0},
+    {d:'02/04/2025',h:'Bournemouth',a:'Ipswich Town',hg:1,ag:2},
+    {d:'02/04/2025',h:'Brighton',a:'Aston Villa',hg:0,ag:3},
+    {d:'02/04/2025',h:'Manchester City',a:'Leicester',hg:2,ag:0},
+    {d:'02/04/2025',h:'Newcastle United',a:'Brentford',hg:2,ag:1},
+    {d:'02/04/2025',h:'Southampton',a:'Crystal Palace',hg:1,ag:1},
+    {d:'02/04/2025',h:'Liverpool',a:'Everton',hg:1,ag:0},
+    {d:'03/04/2025',h:'Chelsea',a:'Tottenham Hotspur',hg:1,ag:0},
+    {d:'05/04/2025',h:'Everton',a:'Arsenal',hg:1,ag:1},
+    {d:'05/04/2025',h:'Crystal Palace',a:'Brighton',hg:2,ag:1},
+    {d:'05/04/2025',h:'Ipswich Town',a:'Wolverhampton',hg:1,ag:2},
+    {d:'05/04/2025',h:'West Ham United',a:'Bournemouth',hg:2,ag:2},
+    {d:'05/04/2025',h:'Aston Villa',a:'Nottingham Forest',hg:2,ag:1},
+    {d:'06/04/2025',h:'Brentford',a:'Chelsea',hg:0,ag:0},
+    {d:'06/04/2025',h:'Fulham',a:'Liverpool',hg:3,ag:2},
+    {d:'06/04/2025',h:'Tottenham Hotspur',a:'Southampton',hg:3,ag:1},
+    {d:'06/04/2025',h:'Manchester United',a:'Manchester City',hg:0,ag:0},
+    {d:'07/04/2025',h:'Leicester',a:'Newcastle United',hg:0,ag:3},
+    {d:'12/04/2025',h:'Manchester City',a:'Crystal Palace',hg:5,ag:2},
+    {d:'12/04/2025',h:'Brighton',a:'Leicester',hg:2,ag:2},
+    {d:'12/04/2025',h:'Nottingham Forest',a:'Everton',hg:0,ag:1},
+    {d:'12/04/2025',h:'Southampton',a:'Aston Villa',hg:0,ag:3},
+    {d:'12/04/2025',h:'Arsenal',a:'Brentford',hg:1,ag:1},
+    {d:'13/04/2025',h:'Chelsea',a:'Ipswich Town',hg:2,ag:2},
+    {d:'13/04/2025',h:'Liverpool',a:'West Ham United',hg:2,ag:1},
+    {d:'13/04/2025',h:'Wolverhampton',a:'Tottenham Hotspur',hg:4,ag:2},
+    {d:'13/04/2025',h:'Newcastle United',a:'Manchester United',hg:4,ag:1},
+    {d:'14/04/2025',h:'Bournemouth',a:'Fulham',hg:1,ag:0},
+    {d:'16/04/2025',h:'Newcastle United',a:'Crystal Palace',hg:5,ag:0},
+    {d:'19/04/2025',h:'Brentford',a:'Brighton',hg:4,ag:2},
+    {d:'19/04/2025',h:'Crystal Palace',a:'Bournemouth',hg:0,ag:0},
+    {d:'19/04/2025',h:'Everton',a:'Manchester City',hg:0,ag:2},
+    {d:'19/04/2025',h:'West Ham United',a:'Southampton',hg:1,ag:1},
+    {d:'19/04/2025',h:'Aston Villa',a:'Newcastle United',hg:4,ag:1},
+    {d:'20/04/2025',h:'Fulham',a:'Chelsea',hg:1,ag:2},
+    {d:'20/04/2025',h:'Ipswich Town',a:'Arsenal',hg:0,ag:4},
+    {d:'20/04/2025',h:'Manchester United',a:'Wolverhampton',hg:0,ag:1},
+    {d:'20/04/2025',h:'Leicester',a:'Liverpool',hg:0,ag:1},
+    {d:'21/04/2025',h:'Tottenham Hotspur',a:'Nottingham Forest',hg:1,ag:2},
+    {d:'22/04/2025',h:'Manchester City',a:'Aston Villa',hg:2,ag:1},
+    {d:'23/04/2025',h:'Arsenal',a:'Crystal Palace',hg:2,ag:2},
+    {d:'26/04/2025',h:'Chelsea',a:'Everton',hg:1,ag:0},
+    {d:'26/04/2025',h:'Brighton',a:'West Ham United',hg:3,ag:2},
+    {d:'26/04/2025',h:'Newcastle United',a:'Ipswich Town',hg:3,ag:0},
+    {d:'26/04/2025',h:'Southampton',a:'Fulham',hg:1,ag:2},
+    {d:'26/04/2025',h:'Wolverhampton',a:'Leicester',hg:3,ag:0},
+    {d:'27/04/2025',h:'Bournemouth',a:'Manchester United',hg:1,ag:1},
+    {d:'27/04/2025',h:'Liverpool',a:'Tottenham Hotspur',hg:5,ag:1},
+    {d:'01/05/2025',h:'Nottingham Forest',a:'Brentford',hg:0,ag:2},
+    {d:'02/05/2025',h:'Manchester City',a:'Wolverhampton',hg:1,ag:0},
+    {d:'03/05/2025',h:'Aston Villa',a:'Fulham',hg:1,ag:0},
+    {d:'03/05/2025',h:'Everton',a:'Ipswich Town',hg:2,ag:2},
+    {d:'03/05/2025',h:'Leicester',a:'Southampton',hg:2,ag:0},
+    {d:'03/05/2025',h:'Arsenal',a:'Bournemouth',hg:1,ag:2},
+    {d:'04/05/2025',h:'Brentford',a:'Manchester United',hg:4,ag:3},
+    {d:'04/05/2025',h:'Brighton',a:'Newcastle United',hg:1,ag:1},
+    {d:'04/05/2025',h:'West Ham United',a:'Tottenham Hotspur',hg:1,ag:1},
+    {d:'04/05/2025',h:'Chelsea',a:'Liverpool',hg:3,ag:1},
+    {d:'05/05/2025',h:'Crystal Palace',a:'Nottingham Forest',hg:1,ag:1},
+    {d:'10/05/2025',h:'Fulham',a:'Everton',hg:1,ag:3},
+    {d:'10/05/2025',h:'Ipswich Town',a:'Brentford',hg:0,ag:1},
+    {d:'10/05/2025',h:'Southampton',a:'Manchester City',hg:0,ag:0},
+    {d:'10/05/2025',h:'Wolverhampton',a:'Brighton',hg:0,ag:2},
+    {d:'10/05/2025',h:'Bournemouth',a:'Aston Villa',hg:0,ag:1},
+    {d:'11/05/2025',h:'Newcastle United',a:'Chelsea',hg:2,ag:0},
+    {d:'11/05/2025',h:'Manchester United',a:'West Ham United',hg:0,ag:2},
+    {d:'11/05/2025',h:'Nottingham Forest',a:'Leicester',hg:2,ag:2},
+    {d:'11/05/2025',h:'Tottenham Hotspur',a:'Crystal Palace',hg:0,ag:2},
+    {d:'11/05/2025',h:'Liverpool',a:'Arsenal',hg:2,ag:2},
+    {d:'16/05/2025',h:'Aston Villa',a:'Tottenham Hotspur',hg:2,ag:0},
+    {d:'16/05/2025',h:'Chelsea',a:'Manchester United',hg:1,ag:0},
+    {d:'18/05/2025',h:'Everton',a:'Southampton',hg:2,ag:0},
+    {d:'18/05/2025',h:'West Ham United',a:'Nottingham Forest',hg:1,ag:2},
+    {d:'18/05/2025',h:'Brentford',a:'Fulham',hg:2,ag:3},
+    {d:'18/05/2025',h:'Leicester',a:'Ipswich Town',hg:2,ag:0},
+    {d:'18/05/2025',h:'Arsenal',a:'Newcastle United',hg:1,ag:0},
+    {d:'19/05/2025',h:'Brighton',a:'Liverpool',hg:3,ag:2},
+    {d:'20/05/2025',h:'Crystal Palace',a:'Wolverhampton',hg:4,ag:2},
+    {d:'20/05/2025',h:'Manchester City',a:'Bournemouth',hg:3,ag:1},
+    {d:'25/05/2025',h:'Bournemouth',a:'Leicester',hg:2,ag:0},
+    {d:'25/05/2025',h:'Fulham',a:'Manchester City',hg:0,ag:2},
+    {d:'25/05/2025',h:'Ipswich Town',a:'West Ham United',hg:1,ag:3},
+    {d:'25/05/2025',h:'Liverpool',a:'Crystal Palace',hg:1,ag:1},
+    {d:'25/05/2025',h:'Manchester United',a:'Aston Villa',hg:2,ag:0},
+    {d:'25/05/2025',h:'Newcastle United',a:'Everton',hg:0,ag:1},
+    {d:'25/05/2025',h:'Nottingham Forest',a:'Chelsea',hg:0,ag:1},
+    {d:'25/05/2025',h:'Southampton',a:'Arsenal',hg:1,ag:2},
+    {d:'25/05/2025',h:'Tottenham Hotspur',a:'Brighton',hg:1,ag:4},
+    {d:'25/05/2025',h:'Wolverhampton',a:'Brentford',hg:1,ag:1}
+  ],
+  '2025-26': [
+    {d:'15/08/2025',h:'Liverpool',a:'Bournemouth',hg:4,ag:2},
+    {d:'16/08/2025',h:'Aston Villa',a:'Newcastle United',hg:0,ag:0},
+    {d:'16/08/2025',h:'Brighton',a:'Fulham',hg:1,ag:1},
+    {d:'16/08/2025',h:'Sunderland',a:'West Ham United',hg:3,ag:0},
+    {d:'16/08/2025',h:'Tottenham Hotspur',a:'Burnley',hg:3,ag:0},
+    {d:'16/08/2025',h:'Wolverhampton',a:'Manchester City',hg:0,ag:4},
+    {d:'17/08/2025',h:'Chelsea',a:'Crystal Palace',hg:0,ag:0},
+    {d:'17/08/2025',h:'Nottingham Forest',a:'Brentford',hg:3,ag:1},
+    {d:'17/08/2025',h:'Manchester United',a:'Arsenal',hg:0,ag:1},
+    {d:'18/08/2025',h:'Leeds United',a:'Everton',hg:1,ag:0},
+    {d:'22/08/2025',h:'West Ham United',a:'Chelsea',hg:1,ag:5},
+    {d:'23/08/2025',h:'Manchester City',a:'Tottenham Hotspur',hg:0,ag:2},
+    {d:'23/08/2025',h:'Bournemouth',a:'Wolverhampton',hg:1,ag:0},
+    {d:'23/08/2025',h:'Brentford',a:'Aston Villa',hg:1,ag:0},
+    {d:'23/08/2025',h:'Burnley',a:'Sunderland',hg:2,ag:0},
+    {d:'23/08/2025',h:'Arsenal',a:'Leeds United',hg:5,ag:0},
+    {d:'24/08/2025',h:'Crystal Palace',a:'Nottingham Forest',hg:1,ag:1},
+    {d:'24/08/2025',h:'Everton',a:'Brighton',hg:2,ag:0},
+    {d:'24/08/2025',h:'Fulham',a:'Manchester United',hg:1,ag:1},
+    {d:'25/08/2025',h:'Newcastle United',a:'Liverpool',hg:2,ag:3},
+    {d:'30/08/2025',h:'Chelsea',a:'Fulham',hg:2,ag:0},
+    {d:'30/08/2025',h:'Manchester United',a:'Burnley',hg:3,ag:2},
+    {d:'30/08/2025',h:'Sunderland',a:'Brentford',hg:2,ag:1},
+    {d:'30/08/2025',h:'Tottenham Hotspur',a:'Bournemouth',hg:0,ag:1},
+    {d:'30/08/2025',h:'Wolverhampton',a:'Everton',hg:2,ag:3},
+    {d:'30/08/2025',h:'Leeds United',a:'Newcastle United',hg:0,ag:0},
+    {d:'31/08/2025',h:'Brighton',a:'Manchester City',hg:2,ag:1},
+    {d:'31/08/2025',h:'Nottingham Forest',a:'West Ham United',hg:0,ag:3},
+    {d:'31/08/2025',h:'Liverpool',a:'Arsenal',hg:1,ag:0},
+    {d:'31/08/2025',h:'Aston Villa',a:'Crystal Palace',hg:0,ag:3},
+    {d:'13/09/2025',h:'Arsenal',a:'Nottingham Forest',hg:3,ag:0},
+    {d:'13/09/2025',h:'Bournemouth',a:'Brighton',hg:2,ag:1},
+    {d:'13/09/2025',h:'Crystal Palace',a:'Sunderland',hg:0,ag:0},
+    {d:'13/09/2025',h:'Everton',a:'Aston Villa',hg:0,ag:0},
+    {d:'13/09/2025',h:'Fulham',a:'Leeds United',hg:1,ag:0},
+    {d:'13/09/2025',h:'Newcastle United',a:'Wolverhampton',hg:1,ag:0},
+    {d:'13/09/2025',h:'West Ham United',a:'Tottenham Hotspur',hg:0,ag:3},
+    {d:'13/09/2025',h:'Brentford',a:'Chelsea',hg:2,ag:2},
+    {d:'14/09/2025',h:'Burnley',a:'Liverpool',hg:0,ag:1},
+    {d:'14/09/2025',h:'Manchester City',a:'Manchester United',hg:3,ag:0},
+    {d:'20/09/2025',h:'Liverpool',a:'Everton',hg:2,ag:1},
+    {d:'20/09/2025',h:'Brighton',a:'Tottenham Hotspur',hg:2,ag:2},
+    {d:'20/09/2025',h:'Burnley',a:'Nottingham Forest',hg:1,ag:1},
+    {d:'20/09/2025',h:'West Ham United',a:'Crystal Palace',hg:1,ag:2},
+    {d:'20/09/2025',h:'Wolverhampton',a:'Leeds United',hg:1,ag:3},
+    {d:'20/09/2025',h:'Manchester United',a:'Chelsea',hg:2,ag:1},
+    {d:'20/09/2025',h:'Fulham',a:'Brentford',hg:3,ag:1},
+    {d:'21/09/2025',h:'Bournemouth',a:'Newcastle United',hg:0,ag:0},
+    {d:'21/09/2025',h:'Sunderland',a:'Aston Villa',hg:1,ag:1},
+    {d:'21/09/2025',h:'Arsenal',a:'Manchester City',hg:1,ag:1},
+    {d:'27/09/2025',h:'Brentford',a:'Manchester United',hg:3,ag:1},
+    {d:'27/09/2025',h:'Chelsea',a:'Brighton',hg:1,ag:3},
+    {d:'27/09/2025',h:'Crystal Palace',a:'Liverpool',hg:2,ag:1},
+    {d:'27/09/2025',h:'Leeds United',a:'Bournemouth',hg:2,ag:2},
+    {d:'27/09/2025',h:'Manchester City',a:'Burnley',hg:5,ag:1},
+    {d:'27/09/2025',h:'Nottingham Forest',a:'Sunderland',hg:0,ag:1},
+    {d:'27/09/2025',h:'Tottenham Hotspur',a:'Wolverhampton',hg:1,ag:1},
+    {d:'28/09/2025',h:'Aston Villa',a:'Fulham',hg:3,ag:1},
+    {d:'28/09/2025',h:'Newcastle United',a:'Arsenal',hg:1,ag:2},
+    {d:'29/09/2025',h:'Everton',a:'West Ham United',hg:1,ag:1},
+    {d:'03/10/2025',h:'Bournemouth',a:'Fulham',hg:3,ag:1},
+    {d:'04/10/2025',h:'Leeds United',a:'Tottenham Hotspur',hg:1,ag:2},
+    {d:'04/10/2025',h:'Arsenal',a:'West Ham United',hg:2,ag:0},
+    {d:'04/10/2025',h:'Manchester United',a:'Sunderland',hg:2,ag:0},
+    {d:'04/10/2025',h:'Chelsea',a:'Liverpool',hg:2,ag:1},
+    {d:'05/10/2025',h:'Aston Villa',a:'Burnley',hg:2,ag:1},
+    {d:'05/10/2025',h:'Everton',a:'Crystal Palace',hg:2,ag:1},
+    {d:'05/10/2025',h:'Newcastle United',a:'Nottingham Forest',hg:2,ag:0},
+    {d:'05/10/2025',h:'Wolverhampton',a:'Brighton',hg:1,ag:1},
+    {d:'05/10/2025',h:'Brentford',a:'Manchester City',hg:0,ag:1},
+    {d:'18/10/2025',h:'Nottingham Forest',a:'Chelsea',hg:0,ag:3},
+    {d:'18/10/2025',h:'Brighton',a:'Newcastle United',hg:2,ag:1},
+    {d:'18/10/2025',h:'Burnley',a:'Leeds United',hg:2,ag:0},
+    {d:'18/10/2025',h:'Crystal Palace',a:'Bournemouth',hg:3,ag:3},
+    {d:'18/10/2025',h:'Manchester City',a:'Everton',hg:2,ag:0},
+    {d:'18/10/2025',h:'Sunderland',a:'Wolverhampton',hg:2,ag:0},
+    {d:'18/10/2025',h:'Fulham',a:'Arsenal',hg:0,ag:1},
+    {d:'19/10/2025',h:'Tottenham Hotspur',a:'Aston Villa',hg:1,ag:2},
+    {d:'19/10/2025',h:'Liverpool',a:'Manchester United',hg:1,ag:2},
+    {d:'20/10/2025',h:'West Ham United',a:'Brentford',hg:0,ag:2},
+    {d:'24/10/2025',h:'Leeds United',a:'West Ham United',hg:2,ag:1},
+    {d:'25/10/2025',h:'Chelsea',a:'Sunderland',hg:1,ag:2},
+    {d:'25/10/2025',h:'Newcastle United',a:'Fulham',hg:2,ag:1},
+    {d:'25/10/2025',h:'Manchester United',a:'Brighton',hg:4,ag:2},
+    {d:'25/10/2025',h:'Brentford',a:'Liverpool',hg:3,ag:2},
+    {d:'26/10/2025',h:'Arsenal',a:'Crystal Palace',hg:1,ag:0},
+    {d:'26/10/2025',h:'Aston Villa',a:'Manchester City',hg:1,ag:0},
+    {d:'26/10/2025',h:'Bournemouth',a:'Nottingham Forest',hg:2,ag:0},
+    {d:'26/10/2025',h:'Wolverhampton',a:'Burnley',hg:2,ag:3},
+    {d:'26/10/2025',h:'Everton',a:'Tottenham Hotspur',hg:0,ag:3},
+    {d:'01/11/2025',h:'Brighton',a:'Leeds United',hg:3,ag:0},
+    {d:'01/11/2025',h:'Burnley',a:'Arsenal',hg:0,ag:2},
+    {d:'01/11/2025',h:'Crystal Palace',a:'Brentford',hg:2,ag:0},
+    {d:'01/11/2025',h:'Fulham',a:'Wolverhampton',hg:3,ag:0},
+    {d:'01/11/2025',h:'Nottingham Forest',a:'Manchester United',hg:2,ag:2},
+    {d:'01/11/2025',h:'Tottenham Hotspur',a:'Chelsea',hg:0,ag:1},
+    {d:'01/11/2025',h:'Liverpool',a:'Aston Villa',hg:2,ag:0},
+    {d:'02/11/2025',h:'West Ham United',a:'Newcastle United',hg:3,ag:1},
+    {d:'02/11/2025',h:'Manchester City',a:'Bournemouth',hg:3,ag:1},
+    {d:'03/11/2025',h:'Sunderland',a:'Everton',hg:1,ag:1},
+    {d:'08/11/2025',h:'Tottenham Hotspur',a:'Manchester United',hg:2,ag:2},
+    {d:'08/11/2025',h:'Everton',a:'Fulham',hg:2,ag:0},
+    {d:'08/11/2025',h:'West Ham United',a:'Burnley',hg:3,ag:2},
+    {d:'08/11/2025',h:'Sunderland',a:'Arsenal',hg:2,ag:2},
+    {d:'08/11/2025',h:'Chelsea',a:'Wolverhampton',hg:3,ag:0},
+    {d:'09/11/2025',h:'Aston Villa',a:'Bournemouth',hg:4,ag:0},
+    {d:'09/11/2025',h:'Brentford',a:'Newcastle United',hg:3,ag:1},
+    {d:'09/11/2025',h:'Crystal Palace',a:'Brighton',hg:0,ag:0},
+    {d:'09/11/2025',h:'Nottingham Forest',a:'Leeds United',hg:3,ag:1},
+    {d:'09/11/2025',h:'Manchester City',a:'Liverpool',hg:3,ag:0},
+    {d:'22/11/2025',h:'Burnley',a:'Chelsea',hg:0,ag:2},
+    {d:'22/11/2025',h:'Bournemouth',a:'West Ham United',hg:2,ag:2},
+    {d:'22/11/2025',h:'Brighton',a:'Brentford',hg:2,ag:1},
+    {d:'22/11/2025',h:'Fulham',a:'Sunderland',hg:1,ag:0},
+    {d:'22/11/2025',h:'Liverpool',a:'Nottingham Forest',hg:0,ag:3},
+    {d:'22/11/2025',h:'Wolverhampton',a:'Crystal Palace',hg:0,ag:2},
+    {d:'22/11/2025',h:'Newcastle United',a:'Manchester City',hg:2,ag:1},
+    {d:'23/11/2025',h:'Leeds United',a:'Aston Villa',hg:1,ag:2},
+    {d:'23/11/2025',h:'Arsenal',a:'Tottenham Hotspur',hg:4,ag:1},
+    {d:'24/11/2025',h:'Manchester United',a:'Everton',hg:0,ag:1},
+    {d:'29/11/2025',h:'Brentford',a:'Burnley',hg:3,ag:1},
+    {d:'29/11/2025',h:'Manchester City',a:'Leeds United',hg:3,ag:2},
+    {d:'29/11/2025',h:'Sunderland',a:'Bournemouth',hg:3,ag:2},
+    {d:'29/11/2025',h:'Everton',a:'Newcastle United',hg:1,ag:4},
+    {d:'29/11/2025',h:'Tottenham Hotspur',a:'Fulham',hg:1,ag:2},
+    {d:'30/11/2025',h:'Crystal Palace',a:'Manchester United',hg:1,ag:2},
+    {d:'30/11/2025',h:'Aston Villa',a:'Wolverhampton',hg:1,ag:0},
+    {d:'30/11/2025',h:'Nottingham Forest',a:'Brighton',hg:0,ag:2},
+    {d:'30/11/2025',h:'West Ham United',a:'Liverpool',hg:0,ag:2},
+    {d:'30/11/2025',h:'Chelsea',a:'Arsenal',hg:1,ag:1},
+    {d:'02/12/2025',h:'Bournemouth',a:'Everton',hg:0,ag:1},
+    {d:'02/12/2025',h:'Fulham',a:'Manchester City',hg:4,ag:5},
+    {d:'02/12/2025',h:'Newcastle United',a:'Tottenham Hotspur',hg:2,ag:2},
+    {d:'03/12/2025',h:'Arsenal',a:'Brentford',hg:2,ag:0},
+    {d:'03/12/2025',h:'Brighton',a:'Aston Villa',hg:3,ag:4},
+    {d:'03/12/2025',h:'Burnley',a:'Crystal Palace',hg:0,ag:1},
+    {d:'03/12/2025',h:'Wolverhampton',a:'Nottingham Forest',hg:0,ag:1},
+    {d:'03/12/2025',h:'Leeds United',a:'Chelsea',hg:3,ag:1},
+    {d:'03/12/2025',h:'Liverpool',a:'Sunderland',hg:1,ag:1},
+    {d:'04/12/2025',h:'Manchester United',a:'West Ham United',hg:1,ag:1},
+    {d:'06/12/2025',h:'Aston Villa',a:'Arsenal',hg:2,ag:1},
+    {d:'06/12/2025',h:'Bournemouth',a:'Chelsea',hg:0,ag:0},
+    {d:'06/12/2025',h:'Everton',a:'Nottingham Forest',hg:3,ag:0},
+    {d:'06/12/2025',h:'Manchester City',a:'Sunderland',hg:3,ag:0},
+    {d:'06/12/2025',h:'Newcastle United',a:'Burnley',hg:2,ag:1},
+    {d:'06/12/2025',h:'Tottenham Hotspur',a:'Brentford',hg:2,ag:0},
+    {d:'06/12/2025',h:'Leeds United',a:'Liverpool',hg:3,ag:3},
+    {d:'07/12/2025',h:'Brighton',a:'West Ham United',hg:1,ag:1},
+    {d:'07/12/2025',h:'Fulham',a:'Crystal Palace',hg:1,ag:2},
+    {d:'08/12/2025',h:'Wolverhampton',a:'Manchester United',hg:1,ag:4},
+    {d:'13/12/2025',h:'Chelsea',a:'Everton',hg:2,ag:0},
+    {d:'13/12/2025',h:'Liverpool',a:'Brighton',hg:2,ag:0},
+    {d:'13/12/2025',h:'Burnley',a:'Fulham',hg:2,ag:3},
+    {d:'13/12/2025',h:'Arsenal',a:'Wolverhampton',hg:2,ag:1},
+    {d:'14/12/2025',h:'Crystal Palace',a:'Manchester City',hg:0,ag:3},
+    {d:'14/12/2025',h:'Nottingham Forest',a:'Tottenham Hotspur',hg:3,ag:0},
+    {d:'14/12/2025',h:'Sunderland',a:'Newcastle United',hg:1,ag:0},
+    {d:'14/12/2025',h:'West Ham United',a:'Aston Villa',hg:2,ag:3},
+    {d:'14/12/2025',h:'Brentford',a:'Leeds United',hg:1,ag:1},
+    {d:'15/12/2025',h:'Manchester United',a:'Bournemouth',hg:4,ag:4},
+    {d:'20/12/2025',h:'Newcastle United',a:'Chelsea',hg:2,ag:2},
+    {d:'20/12/2025',h:'Bournemouth',a:'Burnley',hg:1,ag:1},
+    {d:'20/12/2025',h:'Brighton',a:'Sunderland',hg:0,ag:0},
+    {d:'20/12/2025',h:'Manchester City',a:'West Ham United',hg:3,ag:0},
+    {d:'20/12/2025',h:'Wolverhampton',a:'Brentford',hg:0,ag:2},
+    {d:'20/12/2025',h:'Tottenham Hotspur',a:'Liverpool',hg:1,ag:2},
+    {d:'20/12/2025',h:'Everton',a:'Arsenal',hg:0,ag:1},
+    {d:'20/12/2025',h:'Leeds United',a:'Crystal Palace',hg:4,ag:1},
+    {d:'21/12/2025',h:'Aston Villa',a:'Manchester United',hg:2,ag:1},
+    {d:'22/12/2025',h:'Fulham',a:'Nottingham Forest',hg:1,ag:0},
+    {d:'26/12/2025',h:'Manchester United',a:'Newcastle United',hg:1,ag:0},
+    {d:'27/12/2025',h:'Nottingham Forest',a:'Manchester City',hg:1,ag:2},
+    {d:'27/12/2025',h:'Arsenal',a:'Brighton',hg:2,ag:1},
+    {d:'27/12/2025',h:'Brentford',a:'Bournemouth',hg:4,ag:1},
+    {d:'27/12/2025',h:'Burnley',a:'Everton',hg:0,ag:0},
+    {d:'27/12/2025',h:'Liverpool',a:'Wolverhampton',hg:2,ag:1},
+    {d:'27/12/2025',h:'West Ham United',a:'Fulham',hg:0,ag:1},
+    {d:'27/12/2025',h:'Chelsea',a:'Aston Villa',hg:1,ag:2},
+    {d:'28/12/2025',h:'Sunderland',a:'Leeds United',hg:1,ag:1},
+    {d:'28/12/2025',h:'Crystal Palace',a:'Tottenham Hotspur',hg:0,ag:1},
+    {d:'30/12/2025',h:'Burnley',a:'Newcastle United',hg:1,ag:3},
+    {d:'30/12/2025',h:'Chelsea',a:'Bournemouth',hg:2,ag:2},
+    {d:'30/12/2025',h:'Nottingham Forest',a:'Everton',hg:0,ag:2},
+    {d:'30/12/2025',h:'West Ham United',a:'Brighton',hg:2,ag:2},
+    {d:'30/12/2025',h:'Arsenal',a:'Aston Villa',hg:4,ag:1},
+    {d:'30/12/2025',h:'Manchester United',a:'Wolverhampton',hg:1,ag:1},
+    {d:'01/01/2026',h:'Crystal Palace',a:'Fulham',hg:1,ag:1},
+    {d:'01/01/2026',h:'Liverpool',a:'Leeds United',hg:0,ag:0},
+    {d:'01/01/2026',h:'Brentford',a:'Tottenham Hotspur',hg:0,ag:0},
+    {d:'01/01/2026',h:'Sunderland',a:'Manchester City',hg:0,ag:0},
+    {d:'03/01/2026',h:'Aston Villa',a:'Nottingham Forest',hg:3,ag:1},
+    {d:'03/01/2026',h:'Brighton',a:'Burnley',hg:2,ag:0},
+    {d:'03/01/2026',h:'Wolverhampton',a:'West Ham United',hg:3,ag:0},
+    {d:'03/01/2026',h:'Bournemouth',a:'Arsenal',hg:2,ag:3},
+    {d:'04/01/2026',h:'Leeds United',a:'Manchester United',hg:1,ag:1},
+    {d:'04/01/2026',h:'Everton',a:'Brentford',hg:2,ag:4},
+    {d:'04/01/2026',h:'Newcastle United',a:'Crystal Palace',hg:2,ag:0},
+    {d:'04/01/2026',h:'Tottenham Hotspur',a:'Sunderland',hg:1,ag:1},
+    {d:'04/01/2026',h:'Fulham',a:'Liverpool',hg:2,ag:2},
+    {d:'04/01/2026',h:'Manchester City',a:'Chelsea',hg:1,ag:1},
+    {d:'06/01/2026',h:'West Ham United',a:'Nottingham Forest',hg:1,ag:2},
+    {d:'07/01/2026',h:'Bournemouth',a:'Tottenham Hotspur',hg:3,ag:2},
+    {d:'07/01/2026',h:'Brentford',a:'Sunderland',hg:3,ag:0},
+    {d:'07/01/2026',h:'Crystal Palace',a:'Aston Villa',hg:0,ag:0},
+    {d:'07/01/2026',h:'Everton',a:'Wolverhampton',hg:1,ag:1},
+    {d:'07/01/2026',h:'Fulham',a:'Chelsea',hg:2,ag:1},
+    {d:'07/01/2026',h:'Manchester City',a:'Brighton',hg:1,ag:1},
+    {d:'07/01/2026',h:'Burnley',a:'Manchester United',hg:2,ag:2},
+    {d:'07/01/2026',h:'Newcastle United',a:'Leeds United',hg:4,ag:3},
+    {d:'08/01/2026',h:'Arsenal',a:'Liverpool',hg:0,ag:0},
+    {d:'17/01/2026',h:'Manchester United',a:'Manchester City',hg:2,ag:0},
+    {d:'17/01/2026',h:'Chelsea',a:'Brentford',hg:2,ag:0},
+    {d:'17/01/2026',h:'Leeds United',a:'Fulham',hg:1,ag:0},
+    {d:'17/01/2026',h:'Liverpool',a:'Burnley',hg:1,ag:1},
+    {d:'17/01/2026',h:'Sunderland',a:'Crystal Palace',hg:2,ag:1},
+    {d:'17/01/2026',h:'Tottenham Hotspur',a:'West Ham United',hg:1,ag:2},
+    {d:'17/01/2026',h:'Nottingham Forest',a:'Arsenal',hg:0,ag:0},
+    {d:'18/01/2026',h:'Wolverhampton',a:'Newcastle United',hg:0,ag:0},
+    {d:'18/01/2026',h:'Aston Villa',a:'Everton',hg:0,ag:1},
+    {d:'19/01/2026',h:'Brighton',a:'Bournemouth',hg:1,ag:1},
+    {d:'24/01/2026',h:'West Ham United',a:'Sunderland',hg:3,ag:1},
+    {d:'24/01/2026',h:'Burnley',a:'Tottenham Hotspur',hg:2,ag:2},
+    {d:'24/01/2026',h:'Fulham',a:'Brighton',hg:2,ag:1},
+    {d:'24/01/2026',h:'Manchester City',a:'Wolverhampton',hg:2,ag:0},
+    {d:'24/01/2026',h:'Bournemouth',a:'Liverpool',hg:3,ag:2},
+    {d:'25/01/2026',h:'Brentford',a:'Nottingham Forest',hg:0,ag:2},
+    {d:'25/01/2026',h:'Crystal Palace',a:'Chelsea',hg:1,ag:3},
+    {d:'25/01/2026',h:'Newcastle United',a:'Aston Villa',hg:0,ag:2},
+    {d:'25/01/2026',h:'Arsenal',a:'Manchester United',hg:2,ag:3},
+    {d:'26/01/2026',h:'Everton',a:'Leeds United',hg:1,ag:1},
+    {d:'31/01/2026',h:'Brighton',a:'Everton',hg:1,ag:1},
+    {d:'31/01/2026',h:'Leeds United',a:'Arsenal',hg:0,ag:4},
+    {d:'31/01/2026',h:'Wolverhampton',a:'Bournemouth',hg:0,ag:2},
+    {d:'31/01/2026',h:'Chelsea',a:'West Ham United',hg:3,ag:2},
+    {d:'31/01/2026',h:'Liverpool',a:'Newcastle United',hg:4,ag:1},
+    {d:'01/02/2026',h:'Aston Villa',a:'Brentford',hg:0,ag:1},
+    {d:'01/02/2026',h:'Manchester United',a:'Fulham',hg:3,ag:2},
+    {d:'01/02/2026',h:'Nottingham Forest',a:'Crystal Palace',hg:1,ag:1},
+    {d:'01/02/2026',h:'Tottenham Hotspur',a:'Manchester City',hg:2,ag:2},
+    {d:'02/02/2026',h:'Sunderland',a:'Burnley',hg:3,ag:0},
+    {d:'06/02/2026',h:'Leeds United',a:'Nottingham Forest',hg:3,ag:1},
+    {d:'07/02/2026',h:'Manchester United',a:'Tottenham Hotspur',hg:2,ag:0},
+    {d:'07/02/2026',h:'Arsenal',a:'Sunderland',hg:3,ag:0},
+    {d:'07/02/2026',h:'Bournemouth',a:'Aston Villa',hg:1,ag:1},
+    {d:'07/02/2026',h:'Burnley',a:'West Ham United',hg:0,ag:2},
+    {d:'07/02/2026',h:'Fulham',a:'Everton',hg:1,ag:2},
+    {d:'07/02/2026',h:'Wolverhampton',a:'Chelsea',hg:1,ag:3},
+    {d:'07/02/2026',h:'Newcastle United',a:'Brentford',hg:2,ag:3},
+    {d:'08/02/2026',h:'Brighton',a:'Crystal Palace',hg:0,ag:1},
+    {d:'08/02/2026',h:'Liverpool',a:'Manchester City',hg:1,ag:2},
+    {d:'10/02/2026',h:'Chelsea',a:'Leeds United',hg:2,ag:2},
+    {d:'10/02/2026',h:'Everton',a:'Bournemouth',hg:1,ag:2},
+    {d:'10/02/2026',h:'Tottenham Hotspur',a:'Newcastle United',hg:1,ag:2},
+    {d:'10/02/2026',h:'West Ham United',a:'Manchester United',hg:1,ag:1},
+    {d:'11/02/2026',h:'Aston Villa',a:'Brighton',hg:1,ag:0},
+    {d:'11/02/2026',h:'Crystal Palace',a:'Burnley',hg:2,ag:3},
+    {d:'11/02/2026',h:'Manchester City',a:'Fulham',hg:3,ag:0},
+    {d:'11/02/2026',h:'Nottingham Forest',a:'Wolverhampton',hg:0,ag:0},
+    {d:'11/02/2026',h:'Sunderland',a:'Liverpool',hg:0,ag:1},
+    {d:'12/02/2026',h:'Brentford',a:'Arsenal',hg:1,ag:1},
+    {d:'18/02/2026',h:'Wolverhampton',a:'Arsenal',hg:2,ag:2},
+    {d:'21/02/2026',h:'Aston Villa',a:'Leeds United',hg:1,ag:1},
+    {d:'21/02/2026',h:'Brentford',a:'Brighton',hg:0,ag:2},
+    {d:'21/02/2026',h:'Chelsea',a:'Burnley',hg:1,ag:1},
+    {d:'21/02/2026',h:'West Ham United',a:'Bournemouth',hg:0,ag:0},
+    {d:'21/02/2026',h:'Manchester City',a:'Newcastle United',hg:2,ag:1},
+    {d:'22/02/2026',h:'Crystal Palace',a:'Wolverhampton',hg:1,ag:0},
+    {d:'22/02/2026',h:'Nottingham Forest',a:'Liverpool',hg:0,ag:1},
+    {d:'22/02/2026',h:'Sunderland',a:'Fulham',hg:1,ag:3},
+    {d:'22/02/2026',h:'Tottenham Hotspur',a:'Arsenal',hg:1,ag:4},
+    {d:'23/02/2026',h:'Everton',a:'Manchester United',hg:0,ag:1},
+    {d:'27/02/2026',h:'Wolverhampton',a:'Aston Villa',hg:2,ag:0},
+    {d:'28/02/2026',h:'Bournemouth',a:'Sunderland',hg:1,ag:1},
+    {d:'28/02/2026',h:'Burnley',a:'Brentford',hg:3,ag:4},
+    {d:'28/02/2026',h:'Liverpool',a:'West Ham United',hg:5,ag:2},
+    {d:'28/02/2026',h:'Newcastle United',a:'Everton',hg:2,ag:3},
+    {d:'28/02/2026',h:'Leeds United',a:'Manchester City',hg:0,ag:1},
+    {d:'01/03/2026',h:'Brighton',a:'Nottingham Forest',hg:2,ag:1},
+    {d:'01/03/2026',h:'Fulham',a:'Tottenham Hotspur',hg:2,ag:1},
+    {d:'01/03/2026',h:'Manchester United',a:'Crystal Palace',hg:2,ag:1},
+    {d:'01/03/2026',h:'Arsenal',a:'Chelsea',hg:2,ag:1},
+    {d:'03/03/2026',h:'Bournemouth',a:'Brentford',hg:0,ag:0},
+    {d:'03/03/2026',h:'Everton',a:'Burnley',hg:2,ag:0},
+    {d:'03/03/2026',h:'Leeds United',a:'Sunderland',hg:0,ag:1},
+    {d:'03/03/2026',h:'Wolverhampton',a:'Liverpool',hg:2,ag:1},
+    {d:'04/03/2026',h:'Aston Villa',a:'Chelsea',hg:1,ag:4},
+    {d:'04/03/2026',h:'Brighton',a:'Arsenal',hg:0,ag:1},
+    {d:'04/03/2026',h:'Fulham',a:'West Ham United',hg:0,ag:1},
+    {d:'04/03/2026',h:'Manchester City',a:'Nottingham Forest',hg:2,ag:2},
+    {d:'04/03/2026',h:'Newcastle United',a:'Manchester United',hg:2,ag:1},
+    {d:'05/03/2026',h:'Tottenham Hotspur',a:'Crystal Palace',hg:1,ag:3},
+    {d:'14/03/2026',h:'Burnley',a:'Bournemouth',hg:0,ag:0},
+    {d:'14/03/2026',h:'Sunderland',a:'Brighton',hg:0,ag:1},
+    {d:'14/03/2026',h:'Arsenal',a:'Everton',hg:2,ag:0},
+    {d:'14/03/2026',h:'Chelsea',a:'Newcastle United',hg:0,ag:1},
+    {d:'14/03/2026',h:'West Ham United',a:'Manchester City',hg:1,ag:1},
+    {d:'15/03/2026',h:'Crystal Palace',a:'Leeds United',hg:0,ag:0},
+    {d:'15/03/2026',h:'Manchester United',a:'Aston Villa',hg:3,ag:1},
+    {d:'15/03/2026',h:'Nottingham Forest',a:'Fulham',hg:0,ag:0},
+    {d:'15/03/2026',h:'Liverpool',a:'Tottenham Hotspur',hg:1,ag:1},
+    {d:'16/03/2026',h:'Brentford',a:'Wolverhampton',hg:2,ag:2},
+    {d:'20/03/2026',h:'Bournemouth',a:'Manchester United',hg:2,ag:2},
+    {d:'21/03/2026',h:'Brighton',a:'Liverpool',hg:2,ag:1},
+    {d:'21/03/2026',h:'Fulham',a:'Burnley',hg:3,ag:1},
+    {d:'21/03/2026',h:'Everton',a:'Chelsea',hg:3,ag:0},
+    {d:'21/03/2026',h:'Leeds United',a:'Brentford',hg:0,ag:0},
+    {d:'22/03/2026',h:'Newcastle United',a:'Sunderland',hg:1,ag:2},
+    {d:'22/03/2026',h:'Aston Villa',a:'West Ham United',hg:2,ag:0},
+    {d:'22/03/2026',h:'Tottenham Hotspur',a:'Nottingham Forest',hg:0,ag:3},
+    {d:'10/04/2026',h:'West Ham United',a:'Wolverhampton',hg:4,ag:0},
+    {d:'11/04/2026',h:'Arsenal',a:'Bournemouth',hg:1,ag:2},
+    {d:'11/04/2026',h:'Brentford',a:'Everton',hg:2,ag:2},
+    {d:'11/04/2026',h:'Burnley',a:'Brighton',hg:0,ag:2},
+    {d:'11/04/2026',h:'Liverpool',a:'Fulham',hg:2,ag:0},
+    {d:'12/04/2026',h:'Crystal Palace',a:'Newcastle United',hg:2,ag:1},
+    {d:'12/04/2026',h:'Nottingham Forest',a:'Aston Villa',hg:1,ag:1},
+    {d:'12/04/2026',h:'Sunderland',a:'Tottenham Hotspur',hg:1,ag:0},
+    {d:'12/04/2026',h:'Chelsea',a:'Manchester City',hg:0,ag:3},
+    {d:'13/04/2026',h:'Manchester United',a:'Leeds United',hg:1,ag:2},
+    {d:'18/04/2026',h:'Brentford',a:'Fulham',hg:0,ag:0},
+    {d:'18/04/2026',h:'Leeds United',a:'Wolverhampton',hg:3,ag:0},
+    {d:'18/04/2026',h:'Newcastle United',a:'Bournemouth',hg:1,ag:2},
+    {d:'18/04/2026',h:'Tottenham Hotspur',a:'Brighton',hg:2,ag:2},
+    {d:'18/04/2026',h:'Chelsea',a:'Manchester United',hg:0,ag:1},
+    {d:'19/04/2026',h:'Aston Villa',a:'Sunderland',hg:4,ag:3},
+    {d:'19/04/2026',h:'Everton',a:'Liverpool',hg:1,ag:2},
+    {d:'19/04/2026',h:'Nottingham Forest',a:'Burnley',hg:4,ag:1},
+    {d:'19/04/2026',h:'Manchester City',a:'Arsenal',hg:2,ag:1},
+    {d:'20/04/2026',h:'Crystal Palace',a:'West Ham United',hg:0,ag:0},
+    {d:'21/04/2026',h:'Brighton',a:'Chelsea',hg:3,ag:0},
+    {d:'22/04/2026',h:'Bournemouth',a:'Leeds United',hg:2,ag:2},
+    {d:'22/04/2026',h:'Burnley',a:'Manchester City',hg:0,ag:1},
+    {d:'24/04/2026',h:'Sunderland',a:'Nottingham Forest',hg:0,ag:5},
+    {d:'25/04/2026',h:'Fulham',a:'Aston Villa',hg:1,ag:0},
+    {d:'25/04/2026',h:'Liverpool',a:'Crystal Palace',hg:3,ag:1},
+    {d:'25/04/2026',h:'West Ham United',a:'Everton',hg:2,ag:1},
+    {d:'25/04/2026',h:'Wolverhampton',a:'Tottenham Hotspur',hg:0,ag:1},
+    {d:'25/04/2026',h:'Arsenal',a:'Newcastle United',hg:1,ag:0},
+    {d:'27/04/2026',h:'Manchester United',a:'Brentford',hg:2,ag:1},
+    {d:'01/05/2026',h:'Leeds United',a:'Burnley',hg:3,ag:1},
+    {d:'02/05/2026',h:'Brentford',a:'West Ham United',hg:3,ag:0},
+    {d:'02/05/2026',h:'Newcastle United',a:'Brighton',hg:3,ag:1},
+    {d:'02/05/2026',h:'Wolverhampton',a:'Sunderland',hg:1,ag:1},
+    {d:'02/05/2026',h:'Arsenal',a:'Fulham',hg:3,ag:0},
+    {d:'03/05/2026',h:'Bournemouth',a:'Crystal Palace',hg:3,ag:0},
+    {d:'03/05/2026',h:'Manchester United',a:'Liverpool',hg:3,ag:2},
+    {d:'03/05/2026',h:'Aston Villa',a:'Tottenham Hotspur',hg:1,ag:2},
+    {d:'04/05/2026',h:'Chelsea',a:'Nottingham Forest',hg:1,ag:3},
+    {d:'04/05/2026',h:'Everton',a:'Manchester City',hg:3,ag:3},
+    {d:'09/05/2026',h:'Liverpool',a:'Chelsea',hg:1,ag:1},
+    {d:'09/05/2026',h:'Brighton',a:'Wolverhampton',hg:3,ag:0},
+    {d:'09/05/2026',h:'Fulham',a:'Bournemouth',hg:0,ag:1},
+    {d:'09/05/2026',h:'Sunderland',a:'Manchester United',hg:0,ag:0},
+    {d:'09/05/2026',h:'Manchester City',a:'Brentford',hg:3,ag:0},
+    {d:'10/05/2026',h:'Burnley',a:'Aston Villa',hg:2,ag:2},
+    {d:'10/05/2026',h:'Crystal Palace',a:'Everton',hg:2,ag:2},
+    {d:'10/05/2026',h:'Nottingham Forest',a:'Newcastle United',hg:1,ag:1},
+    {d:'10/05/2026',h:'West Ham United',a:'Arsenal',hg:0,ag:1},
+    {d:'11/05/2026',h:'Tottenham Hotspur',a:'Leeds United',hg:1,ag:1},
+    {d:'13/05/2026',h:'Manchester City',a:'Crystal Palace',hg:3,ag:0},
+    {d:'15/05/2026',h:'Aston Villa',a:'Liverpool',hg:4,ag:2},
+    {d:'17/05/2026',h:'Manchester United',a:'Nottingham Forest',hg:3,ag:2},
+    {d:'17/05/2026',h:'Brentford',a:'Crystal Palace',hg:2,ag:2},
+    {d:'17/05/2026',h:'Everton',a:'Sunderland',hg:1,ag:3},
+    {d:'17/05/2026',h:'Leeds United',a:'Brighton',hg:1,ag:0},
+    {d:'17/05/2026',h:'Wolverhampton',a:'Fulham',hg:1,ag:1},
+    {d:'17/05/2026',h:'Newcastle United',a:'West Ham United',hg:3,ag:1},
+    {d:'18/05/2026',h:'Arsenal',a:'Burnley',hg:1,ag:0},
+    {d:'19/05/2026',h:'Bournemouth',a:'Manchester City',hg:1,ag:1},
+    {d:'19/05/2026',h:'Chelsea',a:'Tottenham Hotspur',hg:2,ag:1}
   ]
 };
 
@@ -3387,10 +4205,8 @@ function buildTable() {
       return `${a.slice(2)}/${b}`;
     };
     tdName.title = team;
-    const logo = getTeamLogo(team);
-    const logoHtml = logo
-      ? `<img class="team-logo" src="${logo}" alt="${team}" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';"><span class="team-dot" style="background:${color}; display:none;"></span>`
-      : `<span class="team-dot" style="background:${color}"></span>`;
+    // Always use colored dots for reliability - no logo loading issues
+    const logoHtml = `<span class="team-dot" style="background:${color}"></span>`;
     tdName.innerHTML = `
       <div class="team-label">
         ${logoHtml}
@@ -3918,8 +4734,6 @@ async function handleGameClick(e, idx) {
   const resCol   = match.result === 'W' ? '#4ade80' : match.result === 'D' ? '#fbbf24' : '#f87171';
   const myTeam   = match.isHome ? match.homeTeam : match.awayTeam;
   const oppTeam  = match.opp || (match.isHome ? match.awayTeam : match.homeTeam) || '?';
-  const myLogo   = getTeamLogo(myTeam);
-  const oppLogo  = getTeamLogo(oppTeam);
   const myColor  = TEAM_COLORS[myTeam] || '#888';
   const oppColor = TEAM_COLORS[oppTeam] || '#888';
 
@@ -3932,13 +4746,13 @@ async function handleGameClick(e, idx) {
       <div class="gp-score-big">${match.gf}<span style="color:#4b5563;font-weight:300;padding:0 4px">–</span>${match.ga}</div>
       <div class="gp-teams-row">
         <span class="ht" style="display:flex; align-items:center; gap:4px;">
-          ${match.isHome ? (myLogo ? `<img src="${myLogo}" style="width:20px; height:20px; object-fit:contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';"><span style="width:20px; height:20px; border-radius:50%; background:${myColor}; display:none;"></span>` : `<span style="width:20px; height:20px; border-radius:50%; background:${myColor}; display:inline-block;"></span>`) : (oppLogo ? `<img src="${oppLogo}" style="width:20px; height:20px; object-fit:contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';"><span style="width:20px; height:20px; border-radius:50%; background:${oppColor}; display:none;"></span>` : `<span style="width:20px; height:20px; border-radius:50%; background:${oppColor}; display:inline-block;"></span>`)}
+          <span style="width:20px; height:20px; border-radius:50%; background:${match.isHome ? myColor : oppColor}; display:inline-block;"></span>
           ${match.isHome ? (myTeam || '—') : (oppTeam || '—')}
         </span>
         <span style="color:#6366f1;font-weight:700">${resultTx}</span>
         <span class="at" style="display:flex; align-items:center; gap:4px; justify-content:flex-end;">
           ${match.isHome ? (oppTeam || '—') : (myTeam || '—')}
-          ${match.isHome ? (oppLogo ? `<img src="${oppLogo}" style="width:20px; height:20px; object-fit:contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';"><span style="width:20px; height:20px; border-radius:50%; background:${oppColor}; display:none;"></span>` : `<span style="width:20px; height:20px; border-radius:50%; background:${oppColor}; display:inline-block;"></span>`) : (myLogo ? `<img src="${myLogo}" style="width:20px; height:20px; object-fit:contain;" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';"><span style="width:20px; height:20px; border-radius:50%; background:${myColor}; display:none;"></span>` : `<span style="width:20px; height:20px; border-radius:50%; background:${myColor}; display:inline-block;"></span>`)}
+          <span style="width:20px; height:20px; border-radius:50%; background:${match.isHome ? oppColor : myColor}; display:inline-block;"></span>
         </span>
       </div>
     </div>
