@@ -5543,31 +5543,33 @@ async function buildMatchChart(team, season) {
   if (season === '2025-26') {
     const upcomingFixtures = FIXTURES_2025_26.filter(f => f.h === team || f.a === team);
 
-    if (!isReal && matches.length > 0) {
-      // Mark unplayed matches as upcoming and add fixture details
-      let unmarkedCount = 0;
-      matches = matches.map(m => {
-        if (!m.opp && m.result !== 'U' && unmarkedCount < upcomingFixtures.length) {
-          // Find matching fixture
-          const fixture = upcomingFixtures[unmarkedCount];
-          if (fixture) {
-            const isHome = fixture.h === team;
-            return {
-              ...m,
-              result: 'U',
-              opp: isHome ? fixture.a : fixture.h,
-              date: fixture.d,
-              time: fixture.time,
-              ha: isHome ? 'H' : 'A',
-              homeTeam: fixture.h,
-              awayTeam: fixture.a,
-              isHome: isHome
-            };
-          }
-          unmarkedCount++;
+    // Always check for and mark upcoming fixtures, not just when we have estimated data
+    if (upcomingFixtures.length > 0 && matches.length > 0) {
+      // Count how many matches we have total
+      const totalMatches = matches.length;
+      const totalExpectedMatches = 38; // Premier League season
+
+      // If we have fewer matches than expected, pad with upcoming fixtures
+      if (totalMatches < totalExpectedMatches) {
+        const matchesToAdd = Math.min(totalExpectedMatches - totalMatches, upcomingFixtures.length);
+
+        for (let i = 0; i < matchesToAdd && i < upcomingFixtures.length; i++) {
+          const fixture = upcomingFixtures[i];
+          const isHome = fixture.h === team;
+          matches.push({
+            ha: isHome ? 'H' : 'A',
+            result: 'U',
+            gf: 0,
+            ga: 0,
+            opp: isHome ? fixture.a : fixture.h,
+            date: fixture.d,
+            time: fixture.time,
+            homeTeam: fixture.h,
+            awayTeam: fixture.a,
+            isHome: isHome
+          });
         }
-        return m;
-      });
+      }
     }
   }
 
