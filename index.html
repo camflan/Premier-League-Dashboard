@@ -4557,7 +4557,7 @@ function openPanel(team, season) {
         </div>
         <div class="stat-row">
           <span class="lbl">Worst Finish</span>
-          <span class="val">${worst}${ord(worst)} (relegated)</span>
+          <span class="val">${worst}${ord(worst)}${worst >= 18 ? ' (relegated)' : ''}</span>
         </div>
         <div class="stat-row">
           <span class="lbl">Avg Position</span>
@@ -4680,7 +4680,7 @@ function buildSeasonChart(metric, team, season) {
           <div class="sc-bar" style="width:${barPct}%;margin-left:${barOffset}%;background:${barColor};opacity:${isSelected?1:0.55};"></div>
         </div>
         <div class="sc-name-val">
-          <span class="sc-name" style="color:${isSelected?'#fff':'#cbd5e1'};font-weight:${isSelected?700:400}">${isSelected ? '▶ ' : ''}${shortName}</span>
+          <span class="sc-name" style="color:${isSelected?'#fff':'#cbd5e1'};font-weight:${isSelected?700:400};cursor:pointer;" onclick="openPanel('${tname}', '${season}')">${isSelected ? '▶ ' : ''}${shortName}</span>
           <span class="sc-val" style="color:${metric==='gd'&&val>0?'#4ade80':metric==='gd'&&val<0?'#f87171':'#e2e8f0'}">${val > 0 && metric === 'gd' ? '+' : ''}${val}</span>
         </div>
       </div>
