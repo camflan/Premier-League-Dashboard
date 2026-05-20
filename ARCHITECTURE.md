@@ -60,7 +60,17 @@ premier-league-dashboard/
 │   └── logos.json
 ├── scripts/
 │   ├── extract-data.js             ← Extract from old HTML → JSON
-│   └── build-html.js               ← Generate index.html from template+data
+│   ├── build-html.js               ← Generate index.html from template+data
+│   ├── fetch-all.js                ← Master fetcher (runs all fetchers)
+│   ├── fetchers/
+│   │   ├── fetch-live-standings.js ← Fetch current standings
+│   │   ├── fetch-matches.js        ← Fetch recent match results
+│   │   └── fetch-fixtures.js       ← Fetch upcoming fixtures
+│   └── utils/
+│       └── espn-api.js             ← ESPN API client utilities
+├── .github/
+│   └── workflows/
+│       └── nightly-update.yml      ← GitHub Actions workflow
 └── package.json                     ← NPM scripts & config
 ```
 
@@ -101,27 +111,28 @@ npm run dev
 
 ## What's Remaining 🚀
 
-### Phase 3: Automated Data Fetchers (Not Yet Started)
+### Phase 3: Automated Data Fetchers ✅
 Fetch latest 2025-26 season data from APIs:
-- `scripts/fetchers/fetch-live-standings.js` - Get current standings
-- `scripts/fetchers/fetch-matches.js` - Get match results  
-- `scripts/fetchers/fetch-fixtures.js` - Get upcoming fixtures
-- `scripts/utils/espn-api.js` - ESPN API client
+- `scripts/fetchers/fetch-live-standings.js` - Get current standings ✅
+- `scripts/fetchers/fetch-matches.js` - Get match results ✅
+- `scripts/fetchers/fetch-fixtures.js` - Get upcoming fixtures ✅
+- `scripts/utils/espn-api.js` - ESPN API client ✅
+- `scripts/fetch-all.js` - Master fetcher script ✅
 
 **Data Sources:**
 - Primary: ESPN API (free, good coverage)
 - Secondary: Official Premier League API (authoritative but limited)
 - Notes: Fetch from Wikipedia/official sources
 
-### Phase 4: GitHub Actions CI/CD (Not Yet Started)
-`.github/workflows/nightly-update.yml` - Automated nightly updates:
+### Phase 4: GitHub Actions CI/CD ✅
+`.github/workflows/nightly-update.yml` - Automated nightly updates ✅:
 - Fetch latest data from APIs
 - Update JSON files if changed
 - Rebuild `index.html`
-- Commit and push changes
+- Commit and push changes (only if data changed)
 - **Frequency**: Every night at 2 AM UTC, skip commit if no changes
 
-### Phase 5: Documentation & Testing (Not Yet Started)
+### Phase 5: Documentation & Testing (In Progress)
 - Update README with new architecture
 - Create maintenance guide
 - Full end-to-end testing
@@ -243,4 +254,4 @@ For questions about the new architecture, refer to the plan file:
 
 **Last Updated**: May 20, 2026  
 **Architecture Version**: 2.0 (Data-Driven)  
-**Status**: Phases 1-2 Complete | Phases 3-5 Remaining
+**Status**: Phases 1-4 Complete | Phase 5 (Documentation) In Progress

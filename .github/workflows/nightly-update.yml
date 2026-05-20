@@ -1,0 +1,61 @@
+name: Nightly Data Update
+
+on:
+  schedule:
+    - cron: '0 2 * * *'  # 2 AM UTC every day
+  workflow_dispatch:     # Allow manual trigger from GitHub UI
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Allow pushing commits
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for git diff
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Fetch latest data from APIs
+        run: npm run fetch-data
+        continue-on-error: true  # Continue even if fetch fails
+
+      - name: Build HTML from template + data
+        run: npm run build
+
+      - name: Check for data changes
+        id: check_changes
+        run: |
+          if git diff --quiet data/ index.html; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No data changes detected"
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+            echo "Data changes detected"
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.has_changes == 'true'
+        run: |
+          git config user.name "Dashboard Bot"
+          git config user.email "bot@example.com"
+          git add data/ index.html
+          git commit -m "chore: nightly data update [skip ci]"
+          git push
+
+      - name: Log run summary
+        run: |
+          echo "✅ Nightly update completed"
+          echo "📅 $(date -u '+%Y-%m-%d %H:%M:%S UTC')"
+          echo "📊 Changes: ${{ steps.check_changes.outputs.has_changes }}"
