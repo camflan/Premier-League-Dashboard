@@ -8923,8 +8923,16 @@ function closePanel() {
 // ════════════════════════════════════════════════════════════════
 function setSort(mode) {
   sortMode = mode;
+  yearSortMode = null; // Clear year sorting when using regular sort
   document.querySelectorAll('[id^="sort-"]').forEach(b=>b.classList.remove('active'));
   document.getElementById(`sort-${mode}`).classList.add('active');
+  buildTable();
+}
+
+function sortByYearStandings(year) {
+  yearSortMode = year;
+  // Disable regular sort buttons when year sorting is active
+  document.querySelectorAll('[id^="sort-"]').forEach(b=>b.classList.remove('active'));
   buildTable();
 }
 
