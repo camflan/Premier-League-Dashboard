@@ -388,6 +388,10 @@
 <header>
   <h1>Premier League <span>Dashboard</span></h1>
   <div class="controls">
+    <div class="btn-group">
+      <button class="active" onclick="setViewMode('historical')" id="view-historical">Historical</button>
+      <button onclick="setViewMode('live')" id="view-live">🔴 Live Table 25/26</button>
+    </div>
     <input type="text" id="searchTeam" placeholder="Search team…" oninput="filterTeams(this.value)">
     <div class="btn-group">
       <button class="active" onclick="setSort('seasons')" id="sort-seasons">Most Seasons</button>
@@ -902,7 +906,7 @@ const SEASONS = [
   "1992-93","1993-94","1994-95","1995-96","1996-97","1997-98","1998-99","1999-00",
   "2000-01","2001-02","2002-03","2003-04","2004-05","2005-06","2006-07","2007-08",
   "2008-09","2009-10","2010-11","2011-12","2012-13","2013-14","2014-15","2015-16",
-  "2016-17","2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","2024-25"
+  "2016-17","2017-18","2018-19","2019-20","2020-21","2021-22","2022-23","2023-24","2024-25","2025-26"
 ];
 
 const TEAM_COLORS = {
@@ -4057,6 +4061,7 @@ let colorMode = 'position';
 let sortMode = 'seasons';
 let searchFilter = '';
 let selectedCell = null;
+let viewMode = 'historical';
 
 // ════════════════════════════════════════════════════════════════
 //  BUILD TEAM INDEX
@@ -4079,6 +4084,50 @@ function teamWorst(t) { return Math.max(...Object.values(teamSeasonMap[t]).map(s
 function teamAvg(t) {
   const vals = Object.values(teamSeasonMap[t]).map(s => s.pos);
   return vals.reduce((a,b)=>a+b,0)/vals.length;
+}
+
+// ════════════════════════════════════════════════════════════════
+//  LIVE STANDINGS CALCULATOR (2025-26)
+// ════════════════════════════════════════════════════════════════
+function calculateLiveStandings() {
+  const matches = HISTORICAL_MATCHES['2025-26'] || [];
+  const standings = {};
+
+  // Initialize all teams
+  for (const match of matches) {
+    if (!standings[match.h]) standings[match.h] = { p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 };
+    if (!standings[match.a]) standings[match.a] = { p: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, pts: 0 };
+  }
+
+  // Process all completed matches
+  for (const match of matches) {
+    const home = standings[match.h];
+    const away = standings[match.a];
+
+    home.p++; away.p++;
+    home.gf += match.hg; home.ga += match.ag;
+    away.gf += match.ag; away.ga += match.hg;
+
+    if (match.hg > match.ag) {
+      home.w++; home.pts += 3;
+      away.l++;
+    } else if (match.ag > match.hg) {
+      away.w++; away.pts += 3;
+      home.l++;
+    } else {
+      home.d++; home.pts++;
+      away.d++; away.pts++;
+    }
+  }
+
+  // Calculate goal difference and sort by points then goal difference
+  const table = Object.entries(standings).map(([team, data]) => ({
+    team,
+    ...data,
+    gd: data.gf - data.ga
+  })).sort((a, b) => b.pts - a.pts || b.gd - a.gd);
+
+  return table;
 }
 
 // ════════════════════════════════════════════════════════════════
@@ -4959,12 +5008,69 @@ function setColorMode(mode) {
   document.querySelectorAll('[id^="mode-"]').forEach(b=>b.classList.remove('active'));
   document.getElementById(`mode-${mode}`).classList.add('active');
   updateLegend();
-  buildTable();
+  if (viewMode === 'historical') buildTable();
+  else buildLiveTable();
+}
+
+function setViewMode(mode) {
+  viewMode = mode;
+  document.querySelectorAll('[id^="view-"]').forEach(b=>b.classList.remove('active'));
+  document.getElementById(`view-${mode}`).classList.add('active');
+  document.getElementById('searchTeam').style.display = mode === 'live' ? 'none' : 'block';
+  document.querySelectorAll('[id^="sort-"]').forEach(b=>b.parentElement.style.display = mode === 'live' ? 'none' : 'flex');
+  document.querySelectorAll('[id^="mode-"]').forEach(b=>b.parentElement.style.display = mode === 'live' ? 'none' : 'flex');
+  document.getElementById('legend').style.display = mode === 'live' ? 'none' : 'flex';
+  if (mode === 'live') buildLiveTable();
+  else buildTable();
+}
+
+function buildLiveTable() {
+  const table = calculateLiveStandings();
+  const tbody = document.getElementById('tbody');
+  const thead = document.getElementById('thead');
+
+  // Clear and rebuild header
+  thead.innerHTML = `
+    <tr>
+      <th class="team-col">Pos</th>
+      <th style="padding: 8px; text-align: left;">Team</th>
+      <th style="padding: 8px; text-align: center;">P</th>
+      <th style="padding: 8px; text-align: center;">W</th>
+      <th style="padding: 8px; text-align: center;">D</th>
+      <th style="padding: 8px; text-align: center;">L</th>
+      <th style="padding: 8px; text-align: center;">GF</th>
+      <th style="padding: 8px; text-align: center;">GA</th>
+      <th style="padding: 8px; text-align: center;">GD</th>
+      <th style="padding: 8px; text-align: center; font-weight: 900;">Pts</th>
+    </tr>
+  `;
+
+  // Build table rows
+  tbody.innerHTML = '';
+  table.forEach((row, idx) => {
+    const tr = document.createElement('tr');
+    const posColor = positionColor(idx + 1, 20);
+    const posText = idx + 1;
+
+    tr.innerHTML = `
+      <td class="team-name" style="background: ${posColor}; color: white; font-weight: 900; padding: 8px; text-align: center;">${posText}</td>
+      <td style="padding: 8px; font-weight: 600;">${row.team}</td>
+      <td style="padding: 8px; text-align: center;">${row.p}</td>
+      <td style="padding: 8px; text-align: center; color: #10b981;">${row.w}</td>
+      <td style="padding: 8px; text-align: center; color: #f59e0b;">${row.d}</td>
+      <td style="padding: 8px; text-align: center; color: #ef4444;">${row.l}</td>
+      <td style="padding: 8px; text-align: center;">${row.gf}</td>
+      <td style="padding: 8px; text-align: center;">${row.ga}</td>
+      <td style="padding: 8px; text-align: center; font-weight: 600; color: ${row.gd > 0 ? '#10b981' : row.gd < 0 ? '#ef4444' : '#9ca3af'};">${row.gd > 0 ? '+' : ''}${row.gd}</td>
+      <td style="padding: 8px; text-align: center; font-weight: 900; font-size: 1.1rem;">${row.pts}</td>
+    `;
+    tbody.appendChild(tr);
+  });
 }
 
 function filterTeams(val) {
   searchFilter = val;
-  buildTable();
+  if (viewMode === 'historical') buildTable();
 }
 
 function updateLegend() {
