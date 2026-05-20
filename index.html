@@ -5234,9 +5234,6 @@ async function handleGameClick(e, idx) {
   let match = window._mrMatches?.[idx];
   if (!match) return;
 
-  // Don't allow interaction with upcoming matches
-  if (match.result === 'U') return;
-
   // Try to enrich match data with historical scores if available
   const season = match.season || match.seasonKey;
   if (season && HISTORICAL_MATCHES?.[season]) {
@@ -5262,35 +5259,40 @@ async function handleGameClick(e, idx) {
   popup.style.top  = top  + 'px';
 
   const venue    = match.ha === 'H' ? 'Home' : 'Away';
-  const resultTx = match.result === 'W' ? 'Win' : match.result === 'D' ? 'Draw' : 'Loss';
-  const resCol   = match.result === 'W' ? '#4ade80' : match.result === 'D' ? '#fbbf24' : '#f87171';
+  const resultTx = match.result === 'W' ? 'Win' : match.result === 'D' ? 'Draw' : match.result === 'U' ? 'Upcoming' : 'Loss';
+  const resCol   = match.result === 'W' ? '#4ade80' : match.result === 'D' ? '#fbbf24' : match.result === 'U' ? '#6b7280' : '#f87171';
   const myTeam   = match.isHome ? match.homeTeam : match.awayTeam;
   const oppTeam  = match.opp || (match.isHome ? match.awayTeam : match.homeTeam) || '?';
   const myColor  = TEAM_COLORS[myTeam] || '#888';
   const oppColor = TEAM_COLORS[oppTeam] || '#888';
+  const isUpcoming = match.result === 'U';
 
   popup.innerHTML = `
     <div class="gp-topbar">
-      <span class="gp-meta">${match.date || ''}${match.date ? ' · ' : ''}${venue}</span>
+      <span class="gp-meta">${match.date ? match.date : 'TBD'}${match.date ? ' · ' : ' '}${venue}</span>
       <button class="gp-xbtn" onclick="this.closest('.game-popup').remove()">✕</button>
     </div>
     <div class="gp-scoreline">
-      <div class="gp-score-big">${match.gf}<span style="color:#4b5563;font-weight:300;padding:0 4px">–</span>${match.ga}</div>
+      ${isUpcoming ? `
+        <div style="color:#06b6d4; font-weight:600; padding: 8px 0; font-size: 14px;">⏰ Upcoming Match</div>
+      ` : `
+        <div class="gp-score-big">${match.gf}<span style="color:#4b5563;font-weight:300;padding:0 4px">–</span>${match.ga}</div>
+      `}
       <div class="gp-teams-row">
         <span class="ht" style="display:flex; align-items:center; gap:4px;">
           <span style="width:20px; height:20px; border-radius:50%; background:${match.isHome ? myColor : oppColor}; display:inline-block;"></span>
           ${match.isHome ? (myTeam || '—') : (oppTeam || '—')}
         </span>
-        <span style="color:#6366f1;font-weight:700">${resultTx}</span>
+        <span style="color:${resCol};font-weight:700">${resultTx}</span>
         <span class="at" style="display:flex; align-items:center; gap:4px; justify-content:flex-end;">
           ${match.isHome ? (oppTeam || '—') : (myTeam || '—')}
           <span style="width:20px; height:20px; border-radius:50%; background:${match.isHome ? oppColor : myColor}; display:inline-block;"></span>
         </span>
       </div>
     </div>
-    <div class="gp-divider"></div>
+    ${!isUpcoming ? `<div class="gp-divider"></div>` : ''}
     <div class="gp-goal-list" id="gpGoals">
-      <div class="gp-empty"><span class="api-spinner"></span></div>
+      ${isUpcoming ? `<div style="color:#9ca3af; font-size: 12px; text-align: center; padding: 8px;">Match details will be available after kickoff</div>` : `<div class="gp-empty"><span class="api-spinner"></span></div>`}
     </div>
   `;
 
@@ -5333,8 +5335,12 @@ async function handleGameClick(e, idx) {
 }
 
 // Dismiss popup when clicking outside
-document.addEventListener('click', () => {
-  document.querySelectorAll('.game-popup').forEach(el => el.remove());
+document.addEventListener('click', (e) => {
+  // Only remove popups if click is not on the popup itself
+  const popup = document.querySelector('.game-popup');
+  if (popup && !popup.contains(e.target)) {
+    popup.remove();
+  }
 });
 
 function generateMatchData(team, season) {
@@ -5487,11 +5493,22 @@ async function buildMatchChart(team, season) {
 
   // For 2025-26 season, mark upcoming fixtures as 'U' instead of treating them as unplayed
   if (season === '2025-26') {
-    const fixture = FIXTURES_2025_26.find(f => f.h === team || f.a === team);
-    if (fixture && matches.length > 0) {
-      // Mark all matches without a result as upcoming
+    // Get all upcoming fixtures for this team
+    const upcomingFixtures = FIXTURES_2025_26.filter(f => f.h === team || f.a === team);
+    if (upcomingFixtures.length > 0 && matches.length > 0) {
+      // Mark only matches that are in the fixtures list (actual upcoming games) as 'U'
       matches = matches.map(m => {
-        if (m.gf === 0 && m.ga === 0 && m.result === 'D') {
+        // Check if this match is in the fixtures list
+        const isUpcoming = upcomingFixtures.some(f => {
+          const mDate = m.date ? new Date(m.date) : null;
+          const fDate = f.date ? new Date(f.date) : null;
+          // Match by opponent and home/away status if available
+          const homeTeam = m.ha === 'H' ? team : m.opp;
+          const awayTeam = m.ha === 'A' ? team : m.opp;
+          return (f.h === homeTeam && f.a === awayTeam) || (f.h === awayTeam && f.a === homeTeam);
+        });
+
+        if (isUpcoming && m.gf === 0 && m.ga === 0 && m.result === 'D') {
           return { ...m, result: 'U' };
         }
         return m;
