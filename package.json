@@ -1,0 +1,29 @@
+{
+  "name": "premier-league-dashboard",
+  "version": "2.0.0",
+  "description": "A Premier League statistics dashboard with data-driven architecture",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "extract": "node scripts/extract-data.js",
+    "build": "node scripts/build-html.js",
+    "fetch-data": "node scripts/fetch-all.js",
+    "dev": "npm run build && npx http-server --port 8000",
+    "test": "node scripts/test.js",
+    "validate": "node scripts/validate-data.js"
+  },
+  "keywords": [
+    "premier-league",
+    "football",
+    "statistics",
+    "dashboard"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "teams": [
+    {
+      "name": "Arsenal",
+      "color": "#EF0107"
+    },
+    {
+      "name": "Aston Villa",
+      "color": "#670E36"
+    },
+    {
+      "name": "Barnsley",
+      "color": "#EE2233"
+    },
+    {
+      "name": "Birmingham City",
+      "color": "#0000FF"
+    },
+    {
+      "name": "Blackburn Rovers",
+      "color": "#009EE0"
+    },
+    {
+      "name": "Blackpool",
+      "color": "#F68712"
+    },
+    {
+      "name": "Bolton Wanderers",
+      "color": "#263C7E"
+    },
+    {
+      "name": "Bournemouth",
+      "color": "#DA291C"
+    },
+    {
+      "name": "Bradford City",
+      "color": "#800000"
+    },
+    {
+      "name": "Brentford",
+      "color": "#E30613"
+    },
+    {
+      "name": "Brighton",
+      "color": "#0057B8"
+    },
+    {
+      "name": "Burnley",
+      "color": "#6C1D45"
+    },
+    {
+      "name": "Cardiff City",
+      "color": "#0070B5"
+    },
+    {
+      "name": "Charlton Athletic",
+      "color": "#CC2233"
+    },
+    {
+      "name": "Chelsea",
+      "color": "#034694"
+    },
+    {
+      "name": "Coventry City",
+      "color": "#59CEFF"
+    },
+    {
+      "name": "Crystal Palace",
+      "color": "#1B458F"
+    },
+    {
+      "name": "Derby County",
+      "color": "#1A1A1A"
+    },
+    {
+      "name": "Everton",
+      "color": "#003399"
+    },
+    {
+      "name": "Fulham",
+      "color": "#CC0000"
+    },
+    {
+      "name": "Huddersfield Town",
+      "color": "#0E63AD"
+    },
+    {
+      "name": "Hull City",
+      "color": "#F5A12D"
+    },
+    {
+      "name": "Ipswich Town",
+      "color": "#0044A9"
+    },
+    {
+      "name": "Leeds United",
+      "color": "#FFCD00"
+    },
+    {
+      "name": "Leicester City",
+      "color": "#003090"
+    },
+    {
+      "name": "Liverpool",
+      "color": "#C8102E"
+    },
+    {
+      "name": "Luton Town",
+      "color": "#F78F1E"
+    },
+    {
+      "name": "Manchester City",
+      "color": "#6CABDD"
+    },
+    {
+      "name": "Manchester United",
+      "color": "#DA291C"
+    },
+    {
+      "name": "Middlesbrough",
+      "color": "#E00000"
+    },
+    {
+      "name": "Newcastle United",
+      "color": "#241F20"
+    },
+    {
+      "name": "Norwich City",
+      "color": "#00A650"
+    },
+    {
+      "name": "Nottingham Forest",
+      "color": "#E53233"
+    },
+    {
+      "name": "Oldham Athletic",
+      "color": "#0052A5"
+    },
+    {
+      "name": "Portsmouth",
+      "color": "#0052A5"
+    },
+    {
+      "name": "QPR",
+      "color": "#1D5BA4"
+    },
+    {
+      "name": "Reading",
+      "color": "#004494"
+    },
+    {
+      "name": "Sheffield United",
+      "color": "#EE2523"
+    },
+    {
+      "name": "Sheffield Wednesday",
+      "color": "#1463A6"
+    },
+    {
+      "name": "Southampton",
+      "color": "#D71920"
+    },
+    {
+      "name": "Stoke City",
+      "color": "#E03A3E"
+    },
+    {
+      "name": "Sunderland",
+      "color": "#EB172B"
+    },
+    {
+      "name": "Swansea City",
+      "color": "#121212"
+    },
+    {
+      "name": "Swindon Town",
+      "color": "#EE2522"
+    },
+    {
+      "name": "Tottenham Hotspur",
+      "color": "#132257"
+    },
+    {
+      "name": "Watford",
+      "color": "#FBEE23"
+    },
+    {
+      "name": "WBA",
+      "color": "#122F67"
+    },
+    {
+      "name": "West Ham United",
+      "color": "#7A263A"
+    },
+    {
+      "name": "Wigan Athletic",
+      "color": "#1C2B5E"
+    },
+    {
+      "name": "Wimbledon",
+      "color": "#0063A6"
+    },
+    {
+      "name": "Wolverhampton",
+      "color": "#FDB913"
+    }
+  ]
+}
