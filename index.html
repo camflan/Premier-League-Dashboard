@@ -523,8 +523,10 @@
       <button onclick="setSort('best')" id="sort-best">Best Finish</button>
       <button onclick="setSort('current')" id="sort-current">Current Standings</button>
       <button onclick="setSort('alpha')" id="sort-alpha">A–Z</button>
-      <button id="sort-year" style="display:none;background:var(--accent);color:#000;font-weight:700"></button>
     </div>
+    <select id="yearSelect" onchange="handleYearChange(this.value)" style="background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:8px 14px;font-size:12px;cursor:pointer;font-weight:500;">
+      <option value="">Select Year</option>
+    </select>
     <div class="btn-group">
       <button class="active" onclick="setColorMode('position')" id="mode-position">Position</button>
       <button onclick="setColorMode('goals')" id="mode-goals">Goals</button>
@@ -5624,6 +5626,9 @@ function setSort(mode) {
   const yearBtn = document.getElementById('sort-year');
   yearBtn.style.display = 'none';
   yearBtn.classList.remove('active');
+  // Reset year dropdown to "Select Year"
+  const yearSelect = document.getElementById('yearSelect');
+  if (yearSelect) yearSelect.value = '';
   // Clear year header highlights
   document.querySelectorAll('.season-hdr.active-year').forEach(s=>s.classList.remove('active-year'));
   buildTable();
@@ -5664,6 +5669,8 @@ function setViewMode(mode) {
   document.getElementById('searchTeam').style.display = mode === 'live' ? 'none' : 'block';
   document.querySelectorAll('[id^="sort-"]').forEach(b=>b.parentElement.style.display = mode === 'live' ? 'none' : 'flex');
   document.querySelectorAll('[id^="mode-"]').forEach(b=>b.parentElement.style.display = mode === 'live' ? 'none' : 'flex');
+  const yearSelect = document.getElementById('yearSelect');
+  if (yearSelect) yearSelect.style.display = mode === 'live' ? 'none' : 'block';
   document.getElementById('legend').style.display = mode === 'live' ? 'none' : 'flex';
   if (mode === 'live') buildLiveTable();
   else buildTable();
@@ -5827,6 +5834,20 @@ function updateLegend() {
   }
 }
 
+function handleYearChange(year) {
+  if (!year) {
+    // Empty selection - clear year sort
+    yearSortMode = null;
+    document.querySelectorAll('.season-hdr.active-year').forEach(s=>s.classList.remove('active-year'));
+    buildTable();
+  } else {
+    // Year selected - sort by that year
+    sortByYearStandings(year);
+    // Update dropdown to show selected year
+    document.getElementById('yearSelect').value = year;
+  }
+}
+
 // Set --header-h CSS variable from actual rendered heights
 function updateHeaderHeight() {
   const hh = (document.querySelector('header')?.offsetHeight || 0)
@@ -5844,10 +5865,23 @@ viewMode = preferredView;
 document.querySelectorAll('[id^="view-"]').forEach(b=>b.classList.remove('active'));
 document.getElementById(`view-${viewMode}`).classList.add('active');
 
+// Populate year dropdown with SEASONS
+const yearSelect = document.getElementById('yearSelect');
+if (yearSelect) {
+  yearSelect.innerHTML = '<option value="">Select Year</option>';
+  SEASONS.forEach(season => {
+    const option = document.createElement('option');
+    option.value = season;
+    option.textContent = season;
+    yearSelect.appendChild(option);
+  });
+}
+
 // Show/hide controls based on view mode
 document.getElementById('searchTeam').style.display = viewMode === 'live' ? 'none' : 'block';
 document.querySelectorAll('[id^="sort-"]').forEach(b=>b.parentElement.style.display = viewMode === 'live' ? 'none' : 'flex');
 document.querySelectorAll('[id^="mode-"]').forEach(b=>b.parentElement.style.display = viewMode === 'live' ? 'none' : 'flex');
+if (yearSelect) yearSelect.style.display = viewMode === 'live' ? 'none' : 'block';
 document.getElementById('legend').style.display = viewMode === 'live' ? 'none' : 'flex';
 
 // Build the appropriate table
