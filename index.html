@@ -5280,8 +5280,8 @@ async function handleGameClick(e, idx) {
   let match = window._mrMatches?.[idx];
   if (!match) return;
 
-  // Don't allow interaction with upcoming matches
-  if (match.result === 'U') return;
+  // For upcoming matches, just show fixture info (no goal details needed)
+  const isUpcoming = match.result === 'U';
 
   // Try to enrich match data with historical scores if available
   const season = match.season || match.seasonKey;
@@ -5308,8 +5308,8 @@ async function handleGameClick(e, idx) {
   popup.style.top  = top  + 'px';
 
   const venue    = match.ha === 'H' ? 'Home' : 'Away';
-  const resultTx = match.result === 'W' ? 'Win' : match.result === 'D' ? 'Draw' : 'Loss';
-  const resCol   = match.result === 'W' ? '#4ade80' : match.result === 'D' ? '#fbbf24' : '#f87171';
+  const resultTx = isUpcoming ? 'Upcoming' : match.result === 'W' ? 'Win' : match.result === 'D' ? 'Draw' : 'Loss';
+  const resCol   = isUpcoming ? '#6366f1' : match.result === 'W' ? '#4ade80' : match.result === 'D' ? '#fbbf24' : '#f87171';
   const myTeam   = match.isHome ? match.homeTeam : match.awayTeam;
   const oppTeam  = match.opp || (match.isHome ? match.awayTeam : match.homeTeam) || '?';
   const myColor  = TEAM_COLORS[myTeam] || '#888';
@@ -5321,13 +5321,13 @@ async function handleGameClick(e, idx) {
       <button class="gp-xbtn" onclick="this.closest('.game-popup').remove()">✕</button>
     </div>
     <div class="gp-scoreline">
-      <div class="gp-score-big">${match.gf}<span style="color:#4b5563;font-weight:300;padding:0 4px">–</span>${match.ga}</div>
+      <div class="gp-score-big">${isUpcoming ? '?' : match.gf}<span style="color:#4b5563;font-weight:300;padding:0 4px">–</span>${isUpcoming ? '?' : match.ga}</div>
       <div class="gp-teams-row">
         <span class="ht" style="display:flex; align-items:center; gap:4px;">
           <span style="width:20px; height:20px; border-radius:50%; background:${match.isHome ? myColor : oppColor}; display:inline-block;"></span>
           ${match.isHome ? (myTeam || '—') : (oppTeam || '—')}
         </span>
-        <span style="color:#6366f1;font-weight:700">${resultTx}</span>
+        <span style="color:${resCol};font-weight:700">${resultTx}</span>
         <span class="at" style="display:flex; align-items:center; gap:4px; justify-content:flex-end;">
           ${match.isHome ? (oppTeam || '—') : (myTeam || '—')}
           <span style="width:20px; height:20px; border-radius:50%; background:${match.isHome ? oppColor : myColor}; display:inline-block;"></span>
@@ -5344,6 +5344,14 @@ async function handleGameClick(e, idx) {
 
   const goalDiv = popup.querySelector('#gpGoals');
   if (!goalDiv || !popup.isConnected) return;
+
+  // For upcoming matches, show fixture info instead of goals
+  if (isUpcoming) {
+    const fixture = match;
+    const timeStr = fixture.time ? ` at ${fixture.time}` : '';
+    goalDiv.innerHTML = `<div class="gp-empty">⏱️ ${fixture.date || ''}${timeStr}</div>`;
+    return;
+  }
 
   let goals = null;
 
@@ -5531,19 +5539,36 @@ async function buildMatchChart(team, season) {
   const isReal = !!matches;
   if (!matches) matches = generateMatchData(team, season);
 
-  // For 2025-26 season, mark estimated matches without real data as 'U' (upcoming)
-  if (season === '2025-26' && !isReal) {
-    // Real matches from fetchRealMatches will have 'opp' and 'date' properties
-    // Generated matches from generateMatchData won't have these
-    // Only mark matches without opponent info as upcoming
-    matches = matches.map(m => {
-      // If this match has no opponent/date info, it's an estimated match
-      // Mark the last few (upcoming fixtures count) as 'U'
-      if (!m.opp) {
-        return { ...m, result: 'U' };
-      }
-      return m;
-    });
+  // For 2025-26 season, mark upcoming fixtures as 'U' (upcoming)
+  if (season === '2025-26') {
+    const upcomingFixtures = FIXTURES_2025_26.filter(f => f.h === team || f.a === team);
+
+    if (!isReal && matches.length > 0) {
+      // Mark unplayed matches as upcoming and add fixture details
+      let unmarkedCount = 0;
+      matches = matches.map(m => {
+        if (!m.opp && m.result !== 'U' && unmarkedCount < upcomingFixtures.length) {
+          // Find matching fixture
+          const fixture = upcomingFixtures[unmarkedCount];
+          if (fixture) {
+            const isHome = fixture.h === team;
+            return {
+              ...m,
+              result: 'U',
+              opp: isHome ? fixture.a : fixture.h,
+              date: fixture.d,
+              time: fixture.time,
+              ha: isHome ? 'H' : 'A',
+              homeTeam: fixture.h,
+              awayTeam: fixture.a,
+              isHome: isHome
+            };
+          }
+          unmarkedCount++;
+        }
+        return m;
+      });
+    }
   }
 
   const d = teamSeasonMap[team]?.[season];
