@@ -70,7 +70,7 @@
 
   /* ── Grid container ── */
   .grid-wrap {
-    flex: 1; overflow: auto; position: relative;
+    flex: 1; overflow-x: auto; overflow-y: auto; position: relative;
     transition: margin-right 0.3s ease;
     scrollbar-gutter: stable;
   }
@@ -101,8 +101,9 @@
     padding: 8px 14px; font-weight: 600;
     min-width: 200px; max-width: 200px;
     height: auto; transition: background 0.2s ease;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.5);
   }
-  tbody td.team-name:hover { background: rgba(31, 41, 55, 0.8); }
+  tbody td.team-name:hover { background: var(--surface2); }
   tbody td.team-name .team-logo { width: 24px; height: 24px; object-fit: contain; flex-shrink: 0; margin-right: 6px; }
   tbody td.team-name .team-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 7px; flex-shrink: 0; }
   tbody td.team-name .team-label { display: flex; align-items: flex-start; gap: 4px; }
@@ -123,9 +124,9 @@
   td.cell.empty:hover { transform: none; box-shadow: none; filter: none; }
 
   /* ── Row ── */
-  tbody tr:nth-child(even) td.team-name { background: linear-gradient(90deg, #1a2332 0%, transparent 90%); }
-  tbody tr:nth-child(even) td.cell.empty { background: rgba(26, 35, 50, 0.6); }
-  tbody tr:hover td.team-name { background: linear-gradient(90deg, #2a3a50 0%, transparent 90%) !important; }
+  tbody tr:nth-child(even) td.team-name { background: #1a2332; }
+  tbody tr:nth-child(even) td.cell.empty { background: #1a2332; }
+  tbody tr:hover td.team-name { background: #252d3d !important; }
   tbody tr:hover { background: rgba(6, 182, 212, 0.05); }
 
   /* ── Stats panel ── */
@@ -362,13 +363,13 @@
     .legend-item { font-size: 11px; gap: 6px; }
     .legend-swatch { width: 14px; height: 14px; }
 
-    td.cell { width: 26px; min-width: 26px; height: 28px; font-size: 9px; }
-    tbody td.team-name, thead th.team-col { min-width: 90px; max-width: 90px; padding: 5px 6px; font-size: 10px; }
+    td.cell { width: 28px; min-width: 28px; height: 28px; font-size: 10px; }
+    tbody td.team-name, thead th.team-col { min-width: 120px; max-width: 120px; padding: 4px 8px; font-size: 11px; }
 
-    tbody td.team-name .team-dot { width: 6px; height: 6px; margin-right: 4px; }
-    tbody td.team-name .team-label-text { font-size: 10px; }
-    tbody td.team-name .team-meta { display: none; }
-    tbody td.team-name .team-seasons { display: none; }
+    tbody td.team-name .team-dot { width: 7px; height: 7px; margin-right: 5px; }
+    tbody td.team-name .team-label-text { font-size: 11px; }
+    tbody td.team-name .team-meta { font-size: 9px; margin-top: 1px; }
+    tbody td.team-name .team-seasons { font-size: 9px; }
 
     /* Game popup: center on screen instead of anchoring to cell */
     .game-popup {
