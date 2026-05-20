@@ -4185,29 +4185,46 @@ const NOTES = {
 
 // European Cups data for teams that qualified
 const EUROPEAN_CUPS = {
-  '1999-00': {
-    'Manchester United': { competition: 'UEFA Cup', progression: 'Won', won: true, details: 'Won UEFA Cup defeating Galatasaray' },
-    'Arsenal': { competition: 'Champions League', progression: 'Group Stage', won: false }
+  '1998-99': {
+    'Manchester United': {
+      european: { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Bayern Munich 2-1 in final' },
+      domestic: { cups: ['Premier League', 'FA Cup'], details: 'Historic treble: PL, FA Cup, Champions League' }
+    }
   },
   '2008-09': {
-    'Manchester United': { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Chelsea' },
+    'Manchester United': {
+      european: { competition: 'Champions League', progression: 'Final', won: false, details: 'Lost to Barcelona 2-0 in final' },
+      domestic: { cups: ['Premier League', 'League Cup'], details: 'Won PL and League Cup but lost CL and FA Cup finals' }
+    },
     'Arsenal': { competition: 'Champions League', progression: 'Quarter-Final', won: false }
   },
   '2011-12': {
-    'Chelsea': { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League, beat Bayern Munich on penalties' },
+    'Chelsea': {
+      european: { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Bayern Munich on penalties' },
+      domestic: { cups: ['FA Cup'], details: 'Won CL and FA Cup' }
+    },
     'Manchester City': { competition: 'Europa League', progression: 'Group Stage', won: false },
     'Arsenal': { competition: 'Champions League', progression: 'Round of 16', won: false }
   },
   '2018-19': {
     'Manchester City': { competition: 'Champions League', progression: 'Quarter-Final', won: false },
     'Tottenham': { competition: 'Champions League', progression: 'Final', won: false, details: 'Lost to Liverpool in final' },
-    'Liverpool': { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Tottenham' },
+    'Liverpool': {
+      european: { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Tottenham 2-0' },
+      domestic: { cups: [], details: 'Won CL but no domestic cups (exited FA Cup & League Cup early)' }
+    },
     'Arsenal': { competition: 'Europa League', progression: 'Final', won: false, details: 'Lost to Chelsea in final' },
-    'Chelsea': { competition: 'Europa League', progression: 'Won', won: true, details: 'Won Europa League defeating Arsenal' }
+    'Chelsea': {
+      european: { competition: 'Europa League', progression: 'Won', won: true, details: 'Won Europa League defeating Arsenal 4-1' },
+      domestic: { cups: [], details: 'Won Europa League but no domestic cups' }
+    }
   },
   '2020-21': {
     'Manchester City': { competition: 'Champions League', progression: 'Final', won: false, details: 'Lost to Chelsea in final' },
-    'Chelsea': { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Manchester City' },
+    'Chelsea': {
+      european: { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Manchester City 1-0' },
+      domestic: { cups: [], details: 'Won Champions League but no domestic cups' }
+    },
     'Manchester United': { competition: 'Champions League', progression: 'Semi-Final', won: false }
   },
   '2021-22': {
@@ -4215,7 +4232,10 @@ const EUROPEAN_CUPS = {
     'Liverpool': { competition: 'Champions League', progression: 'Final', won: false, details: 'Lost to Real Madrid in final' }
   },
   '2022-23': {
-    'Manchester City': { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Inter Milan' },
+    'Manchester City': {
+      european: { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Inter Milan 1-0' },
+      domestic: { cups: ['Premier League', 'FA Cup'], details: 'Historic treble: PL, FA Cup, Champions League' }
+    },
     'Newcastle': { competition: 'Champions League', progression: 'Group Stage', won: false }
   }
 };
@@ -5219,16 +5239,34 @@ function buildEuropeanCupsAndFacts(team, season) {
 
   // Add European Cup info if exists
   if (europeanData) {
-    sectionHtml += `
-      <div class="european-cup-info">
-        <div style="font-weight:600;color:var(--accent);margin-bottom:6px">🏆 ${europeanData.competition}</div>
-        <div style="font-size:12px;line-height:1.5">
-          <div><strong>Progress:</strong> ${europeanData.progression}</div>
-          <div><strong>Result:</strong> ${europeanData.won ? '✅ Won' : '❌ Not Won'}</div>
-          ${europeanData.details ? `<div style="margin-top:4px;color:#bbb"><em>${europeanData.details}</em></div>` : ''}
+    // Handle new structure with 'european' property or legacy structure
+    const eu = europeanData.european || europeanData;
+
+    if (eu.competition) {
+      sectionHtml += `
+        <div class="european-cup-info">
+          <div style="font-weight:600;color:var(--accent);margin-bottom:6px">🏆 ${eu.competition}</div>
+          <div style="font-size:12px;line-height:1.5">
+            <div><strong>Progress:</strong> ${eu.progression}</div>
+            <div><strong>Result:</strong> ${eu.won ? '✅ Won' : '❌ Not Won'}</div>
+            ${eu.details ? `<div style="margin-top:4px;color:#bbb"><em>${eu.details}</em></div>` : ''}
+          </div>
         </div>
-      </div>
-    `;
+      `;
+    }
+
+    // Add domestic cups if exists
+    if (europeanData.domestic && europeanData.domestic.cups && europeanData.domestic.cups.length > 0) {
+      sectionHtml += `
+        <div class="domestic-cups-info" style="margin-top:12px;background:rgba(34,212,102,0.1);border-left:3px solid #22d464;padding:8px 12px">
+          <div style="font-weight:600;color:#22d464;margin-bottom:6px">🏅 Domestic Trophies</div>
+          <div style="font-size:12px;line-height:1.5">
+            <div><strong>Won:</strong> ${europeanData.domestic.cups.join(', ')}</div>
+            ${europeanData.domestic.details ? `<div style="margin-top:4px;color:#bbb"><em>${europeanData.domestic.details}</em></div>` : ''}
+          </div>
+        </div>
+      `;
+    }
   }
 
   // Add Fun Facts if exists
