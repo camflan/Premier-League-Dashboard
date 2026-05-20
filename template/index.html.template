@@ -4499,6 +4499,7 @@ const TEAM_NOTES = {
 // ════════════════════════════════════════════════════════════════
 let colorMode = 'position';
 let sortMode = 'seasons';
+let yearSortMode = null;
 let searchFilter = '';
 let selectedCell = null;
 
@@ -4655,6 +4656,16 @@ function teamCleanSheets(team) {
 
 function getSortedTeams() {
   let teams = ALL_TEAMS.filter(t => t.toLowerCase().includes(searchFilter.toLowerCase()));
+
+  if (yearSortMode) {
+    teams.sort((a, b) => {
+      const posA = teamSeasonMap[a]?.[yearSortMode]?.pos || 999;
+      const posB = teamSeasonMap[b]?.[yearSortMode]?.pos || 999;
+      return posA - posB;
+    });
+    return teams;
+  }
+
   if (sortMode === 'seasons') teams.sort((a,b) => teamSeasons(b)-teamSeasons(a) || teamAvg(a)-teamAvg(b));
   if (sortMode === 'best') teams.sort((a,b) => teamBest(a)-teamBest(b) || teamSeasons(b)-teamSeasons(a));
   if (sortMode === 'current') {
@@ -4692,6 +4703,8 @@ function buildTable() {
     span.className = 'season-hdr' + (isChampion ? ' champion-col':'');
     span.textContent = s;
     span.title = note ? `Champion: ${note.champion}` : s;
+    span.style.cursor = 'pointer';
+    span.onclick = function() { sortByYearStandings(s); };
     th.appendChild(span);
     hr.appendChild(th);
   }
@@ -5618,8 +5631,15 @@ function closePanel() {
 // ════════════════════════════════════════════════════════════════
 function setSort(mode) {
   sortMode = mode;
+  yearSortMode = null;
   document.querySelectorAll('[id^="sort-"]').forEach(b=>b.classList.remove('active'));
   document.getElementById(`sort-${mode}`).classList.add('active');
+  buildTable();
+}
+
+function sortByYearStandings(year) {
+  yearSortMode = year;
+  document.querySelectorAll('[id^="sort-"]').forEach(b=>b.classList.remove('active'));
   buildTable();
 }
 
