@@ -394,6 +394,7 @@
   .season-hdr { writing-mode: vertical-lr; transform: rotate(180deg); padding: 6px 2px; cursor: pointer; font-size: 10px; }
   .season-hdr:hover { color: var(--text); }
   .season-hdr.champion-col { color: var(--gold) !important; }
+  .season-hdr.active-year { background: var(--accent); color: #000 !important; font-weight: 700; box-shadow: 0 0 8px rgba(6, 182, 212, 0.4); }
 
   .champ-star { font-size: 9px; }
 
@@ -5617,12 +5618,22 @@ function setSort(mode) {
   yearSortMode = null;
   document.querySelectorAll('[id^="sort-"]').forEach(b=>b.classList.remove('active'));
   document.getElementById(`sort-${mode}`).classList.add('active');
+  // Clear year header highlights
+  document.querySelectorAll('.season-hdr.active-year').forEach(s=>s.classList.remove('active-year'));
   buildTable();
 }
 
 function sortByYearStandings(year) {
   yearSortMode = year;
   document.querySelectorAll('[id^="sort-"]').forEach(b=>b.classList.remove('active'));
+  // Clear all year header highlights
+  document.querySelectorAll('.season-hdr.active-year').forEach(s=>s.classList.remove('active-year'));
+  // Highlight the clicked year header
+  document.querySelectorAll('.season-hdr').forEach(s => {
+    if (s.textContent === year) {
+      s.classList.add('active-year');
+    }
+  });
   buildTable();
 }
 
