@@ -490,14 +490,14 @@
     .legend-item { font-size: 11px; gap: 6px; }
     .legend-swatch { width: 14px; height: 14px; }
 
-    td.cell { width: 22px; min-width: 22px; height: 28px; font-size: 10px; }
-    tbody td.team-name, thead th.team-col { min-width: 210px; max-width: 210px; padding: 2px 4px; font-size: 9px; }
+    td.cell { width: 26px; min-width: 26px; height: 28px; font-size: 10px; }
+    tbody td.team-name, thead th.team-col { min-width: 110px; max-width: 110px; padding: 2px 4px; font-size: 9px; }
 
     tbody td.team-name .team-dot { width: 6px; height: 6px; margin-right: 3px; }
     tbody td.team-name .team-label { overflow: hidden; white-space: nowrap; line-height: 1.2; }
     tbody td.team-name .team-label-text { font-size: 9px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; word-break: normal; }
-    tbody td.team-name .team-meta { font-size: 7px; margin-top: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; word-break: normal; line-height: 1.2; }
-    tbody td.team-name .team-seasons { font-size: 7px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; word-break: normal; line-height: 1.1; }
+    tbody td.team-name .team-meta { font-size: 7px; margin-top: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; word-break: normal; line-height: 1.2; display: none; }
+    tbody td.team-name .team-seasons { font-size: 7px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; word-break: normal; line-height: 1.1; display: none; }
 
     /* Hide scrollbar on mobile but keep scrolling functional */
     .grid-wrap { scrollbar-width: none; }
