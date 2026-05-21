@@ -28,7 +28,7 @@ jobs:
         run: npm install
 
       - name: Fetch latest data from APIs
-        run: npm run fetch-data
+        run: npm run fetch
         continue-on-error: true  # Continue even if fetch fails
 
       - name: Build HTML from template + data

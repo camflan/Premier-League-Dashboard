@@ -1,52 +1,62 @@
 [
   {
     "d": "24/05/2026",
-    "h": "Brighton",
-    "a": "Manchester United"
+    "h": "Brighton & Hove Albion",
+    "a": "Manchester United",
+    "time": "10:00"
   },
   {
     "d": "24/05/2026",
     "h": "Burnley",
-    "a": "Wolverhampton"
+    "a": "Wolverhampton Wanderers",
+    "time": "10:00"
   },
   {
     "d": "24/05/2026",
     "h": "Crystal Palace",
-    "a": "Arsenal"
+    "a": "Arsenal",
+    "time": "10:00"
   },
   {
     "d": "24/05/2026",
     "h": "Fulham",
-    "a": "Newcastle United"
+    "a": "Newcastle United",
+    "time": "10:00"
   },
   {
     "d": "24/05/2026",
     "h": "Liverpool",
-    "a": "Brentford"
+    "a": "Brentford",
+    "time": "10:00"
   },
   {
     "d": "24/05/2026",
     "h": "Manchester City",
-    "a": "Aston Villa"
+    "a": "Aston Villa",
+    "time": "10:00"
   },
   {
     "d": "24/05/2026",
     "h": "Nottingham Forest",
-    "a": "Bournemouth"
+    "a": "AFC Bournemouth",
+    "time": "10:00"
   },
   {
     "d": "24/05/2026",
     "h": "Sunderland",
-    "a": "Chelsea"
+    "a": "Chelsea",
+    "time": "10:00"
   },
   {
     "d": "24/05/2026",
     "h": "Tottenham Hotspur",
-    "a": "Everton"
+    "a": "Everton",
+    "time": "10:00"
   },
   {
     "d": "24/05/2026",
     "h": "West Ham United",
-    "a": "Leeds United"
+    "a": "Leeds United",
+    "time": "10:00"
   }
 ]

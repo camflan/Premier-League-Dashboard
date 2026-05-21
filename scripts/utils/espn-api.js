@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+// `fetch` is a Node 18+ global, so no import needed.
 
 // ESPN API URLs for football/soccer
 const ESPN_BASE = 'https://site.api.espn.com/apis/site/v2';
@@ -66,56 +66,62 @@ export async function getLeagueStandings(season = '2025-26') {
   }
 }
 
-// Get recent match results
-export async function getMatchResults(team = null, limit = 10) {
+// Pull (home, away) out of an ESPN event. The competitors live on
+// event.competitions[0].competitors (not event.competitors); each entry
+// has a .homeAway field to identify which side it is.
+function parseEvent(event) {
+  const c = event.competitions?.[0]?.competitors;
+  if (!Array.isArray(c) || c.length < 2) return null;
+  const home = c.find(x => x.homeAway === 'home');
+  const away = c.find(x => x.homeAway === 'away');
+  if (!home || !away) return null;
+  return { home, away };
+}
+
+// Get recent match results (only events with a final/in-progress status).
+export async function getMatchResults(team = null, limit = 100) {
   try {
     console.log(`  🔄 Fetching recent match results${team ? ` for ${team}` : ''}...`);
 
     const endpoints = [
       'https://site.api.espn.com/apis/site/v2/sports/soccer/eng.1/scoreboard',
-      'https://www.espn.com/soccer/api/site/v2/competitions/eng/events'
+      'https://www.espn.com/soccer/api/site/v2/competitions/eng/events',
     ];
 
     for (const endpoint of endpoints) {
       try {
         const response = await fetch(endpoint);
         if (!response.ok) continue;
-
         const data = await response.json();
+        const events = data.events ?? [];
+        const matches = [];
 
-        if (data.events && data.events.length > 0) {
-          const matches = [];
-
-          data.events.slice(0, limit).forEach(event => {
-            const competitors = event.competitors || [];
-            const home = competitors[1];
-            const away = competitors[0];
-
-            if (home && away) {
-              matches.push({
-                d: new Date(event.date).toLocaleDateString('en-GB'), // DD/MM/YYYY
-                h: home.name,
-                a: away.name,
-                hg: parseInt(home.score) || 0,
-                ag: parseInt(away.score) || 0,
-                status: event.status.type // 'STATUS_SCHEDULED', 'STATUS_IN_PROGRESS', 'STATUS_FINAL'
-              });
-            }
+        for (const event of events.slice(0, limit)) {
+          const status = event.status?.type?.name; // e.g. STATUS_FINAL
+          if (status === 'STATUS_SCHEDULED') continue; // belongs in fixtures, not matches
+          const sides = parseEvent(event);
+          if (!sides) continue;
+          matches.push({
+            d: new Date(event.date).toLocaleDateString('en-GB'), // DD/MM/YYYY
+            h: sides.home.team?.displayName || sides.home.team?.name,
+            a: sides.away.team?.displayName || sides.away.team?.name,
+            hg: parseInt(sides.home.score) || 0,
+            ag: parseInt(sides.away.score) || 0,
+            status,
           });
-
-          if (matches.length > 0) {
-            console.log(`     ✓ Got ${matches.length} recent matches`);
-            return matches;
-          }
         }
-      } catch (e) {
+
+        if (matches.length > 0) {
+          console.log(`     ✓ Got ${matches.length} recent matches`);
+          return matches;
+        }
+      } catch {
         continue;
       }
     }
 
     console.log('     ⚠️  Could not fetch match results');
     return null;
-
   } catch (error) {
     console.error('     ❌ Error fetching matches:', error.message);
     return null;
@@ -144,31 +150,25 @@ export async function getFixtures(daysAhead = 30) {
           const now = new Date();
           const future = new Date(now.getTime() + daysAhead * 24 * 60 * 60 * 1000);
 
-          data.events.forEach(event => {
+          for (const event of data.events) {
             const eventDate = new Date(event.date);
-
-            // Only include scheduled (future) matches
-            if (event.status.type === 'STATUS_SCHEDULED' && eventDate >= now && eventDate <= future) {
-              const competitors = event.competitors || [];
-              const home = competitors[1];
-              const away = competitors[0];
-
-              if (home && away) {
-                const time = new Date(event.date).toLocaleTimeString('en-GB', {
-                  hour: '2-digit',
-                  minute: '2-digit',
-                  hour12: false
-                });
-
-                fixtures.push({
-                  d: new Date(event.date).toLocaleDateString('en-GB'),
-                  h: home.name,
-                  a: away.name,
-                  time: time
-                });
-              }
-            }
-          });
+            const status = event.status?.type?.name;
+            if (status !== 'STATUS_SCHEDULED') continue;
+            if (eventDate < now || eventDate > future) continue;
+            const sides = parseEvent(event);
+            if (!sides) continue;
+            const time = eventDate.toLocaleTimeString('en-GB', {
+              hour: '2-digit',
+              minute: '2-digit',
+              hour12: false,
+            });
+            fixtures.push({
+              d: eventDate.toLocaleDateString('en-GB'),
+              h: sides.home.team?.displayName || sides.home.team?.name,
+              a: sides.away.team?.displayName || sides.away.team?.name,
+              time,
+            });
+          }
 
           if (fixtures.length > 0) {
             console.log(`     ✓ Got ${fixtures.length} upcoming fixtures`);

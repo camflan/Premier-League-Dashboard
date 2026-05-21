@@ -3,3 +3,7 @@ node_modules/
 acronym-generator/
 *.local.json
 .DS_Store
+
+# Fetcher cache (per-(season,type) hash + timestamp sidecars).
+# Not committed — TTL gating is a local-dev convenience; CI re-evaluates from scratch.
+data/.cache/

@@ -7,9 +7,8 @@
   "scripts": {
     "extract": "node scripts/extract-data.js",
     "build": "node scripts/build-html.js",
-    "fetch-data": "node scripts/fetch-all.js",
+    "fetch": "node scripts/fetcher.js",
     "fetch-logos": "node scripts/fetchers/fetch-logos.js",
-    "backfill": "node scripts/backfill.js",
     "dev": "npm run build && npx http-server --port 8000",
     "test": "node scripts/test.js",
     "validate": "node scripts/validate-data.js"

@@ -1,18 +1,18 @@
-// The "active" season is the last entry in static/seasons.json — the one CI
-// is allowed to overwrite on a nightly basis. Past seasons are immutable on
-// disk; if you need to backfill one, use scripts/backfill.js.
+// Compute the active Premier League season from the current date. No hardcoded
+// season anywhere — when a new PL season starts in August, this rolls forward
+// automatically.
+//
+// Premier League seasons run August → May. Format is "YYYY-YY" where YYYY is
+// the starting calendar year (e.g. 2025-26 covers Aug 2025 → May 2026).
 
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const seasonsPath = path.join(__dirname, '..', '..', 'static', 'seasons.json');
+export function seasonFromDate(d = new Date()) {
+  const y = d.getUTCFullYear();
+  const m = d.getUTCMonth() + 1; // 1..12
+  const startYear = m >= 8 ? y : y - 1;
+  const endYY = String((startYear + 1) % 100).padStart(2, '0');
+  return `${startYear}-${endYY}`;
+}
 
 export function activeSeason() {
-  const { seasons } = JSON.parse(fs.readFileSync(seasonsPath, 'utf8'));
-  if (!Array.isArray(seasons) || seasons.length === 0) {
-    throw new Error('static/seasons.json is empty or malformed');
-  }
-  return seasons[seasons.length - 1];
+  return seasonFromDate(new Date());
 }

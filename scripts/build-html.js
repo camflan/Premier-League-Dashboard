@@ -3,6 +3,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { activeSeason } from './utils/active-season.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.join(__dirname, '..');
@@ -36,7 +37,6 @@ console.log('🔨 Building index.html from template + data…\n');
 const teams        = readJSON(path.join(staticDir, 'teams.json')).teams;
 const shortNames   = readJSON(path.join(staticDir, 'short-names.json')).shortNames;
 const logos        = readJSON(path.join(staticDir, 'logos.json')).logos;
-const seasons      = readJSON(path.join(staticDir, 'seasons.json')).seasons;
 const notes        = readJSON(path.join(staticDir, 'notes.json'));
 
 // Fetched data (per-season files under data/<type>/<season>.json)
@@ -44,7 +44,21 @@ const standings = readSeasonDir('standings');
 const matches   = readSeasonDir('matches');
 const fixtures  = readSeasonDir('fixtures');
 
-const data = { teams, shortNames, logos, seasons, notes, standings, matches, fixtures };
+// The seasons list is derived from whatever data we have on disk. "YYYY-YY"
+// labels sort correctly as plain strings.
+const seasons = [
+  ...new Set([...Object.keys(standings), ...Object.keys(matches), ...Object.keys(fixtures)]),
+].sort();
+
+const active = activeSeason(); // e.g., "2025-26" — recomputed from current date each build
+const activeShort = active.slice(2); // "25-26" → display as "25/26"
+const activeShortSlash = activeShort.replace('-', '/');
+
+const data = {
+  teams, shortNames, logos, seasons, notes,
+  activeSeason: active,
+  standings, matches, fixtures,
+};
 
 const template = fs.readFileSync(templatePath, 'utf8');
 
@@ -54,7 +68,9 @@ if (!template.includes(INJECTION_MARKER)) {
 }
 
 const injection = `window.__DATA = ${JSON.stringify(data, null, 2)};`;
-const html = template.replace(INJECTION_MARKER, injection);
+const html = template
+  .replace(INJECTION_MARKER, injection)
+  .replaceAll('{{ACTIVE_SEASON_SHORT}}', activeShortSlash);
 
 fs.writeFileSync(outputPath, html, 'utf8');
 

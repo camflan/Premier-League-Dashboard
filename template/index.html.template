@@ -521,7 +521,7 @@
   <h1><span style="color: var(--cl-blue);">Premier League</span> <span>Dashboard</span></h1>
   <div class="btn-group" id="viewButtonGroup">
     <button onclick="setViewMode('historical')" id="view-historical">Historical</button>
-    <button class="active" onclick="setViewMode('live')" id="view-live">🔴 Live Table 25/26</button>
+    <button class="active" onclick="setViewMode('live')" id="view-live">🔴 Live Table {{ACTIVE_SEASON_SHORT}}</button>
   </div>
   <button class="settings-btn" onclick="toggleSettingsModal()" title="View Preferences">⚙️</button>
   <div class="controls">
@@ -556,7 +556,7 @@
       </label>
       <label>
         <input type="radio" name="default-view" value="live" id="pref-live" checked>
-        Live Table 25/26
+        Live Table {{ACTIVE_SEASON_SHORT}}
       </label>
     </div>
     <div class="button-group">
@@ -599,7 +599,8 @@ const TEAM_COLORS         = Object.fromEntries(window.__DATA.teams.map(t => [t.n
 const RAW                 = window.__DATA.standings;
 const HISTORICAL_MATCHES  = window.__DATA.matches;
 const HISTORICAL_MATCHES_PRE2003 = window.__DATA.matches;
-const FIXTURES_2025_26    = window.__DATA.fixtures['2025-26'] || [];
+const ACTIVE_SEASON       = window.__DATA.activeSeason;
+const FIXTURES_2025_26    = window.__DATA.fixtures[ACTIVE_SEASON] || [];
 const NOTES               = window.__DATA.notes;
 
 // AbortController-based timeout compatible with all modern browsers
@@ -913,7 +914,7 @@ function teamAvg(t) {
 //  LIVE STANDINGS CALCULATOR (2025-26)
 // ════════════════════════════════════════════════════════════════
 function calculateLiveStandings() {
-  const matches = HISTORICAL_MATCHES['2025-26'] || [];
+  const matches = HISTORICAL_MATCHES[ACTIVE_SEASON] || [];
   const standings = {};
 
   // Initialize all teams
@@ -1031,8 +1032,8 @@ function getSortedTeams() {
   if (sortMode === 'current') {
     // Sort by 2025-26 current standings position
     teams.sort((a,b) => {
-      const posA = teamSeasonMap[a]?.['2025-26']?.pos || 999;
-      const posB = teamSeasonMap[b]?.['2025-26']?.pos || 999;
+      const posA = teamSeasonMap[a]?.[ACTIVE_SEASON]?.pos || 999;
+      const posB = teamSeasonMap[b]?.[ACTIVE_SEASON]?.pos || 999;
       return posA - posB;
     });
   }
@@ -1113,7 +1114,7 @@ function buildTable() {
     // Make team name clickable to open current season stats
     tdName.style.cursor = 'pointer';
     tdName.addEventListener('click', () => {
-      const currentSeason = '2025-26';
+      const currentSeason = ACTIVE_SEASON;
       if (teamSeasonMap[team]?.[currentSeason]) {
         openPanel(team, currentSeason);
       }
@@ -1128,7 +1129,7 @@ function buildTable() {
         // Check if this is 2025-26 and there's a remaining fixture
         let cellText = data.pos;
         let isFixture = false;
-        if (s === '2025-26') {
+        if (s === ACTIVE_SEASON) {
           const fixture = FIXTURES_2025_26.find(f => f.h === team || f.a === team);
           if (fixture) {
             const opponent = fixture.h === team ? fixture.a : fixture.h;
@@ -1885,9 +1886,9 @@ async function buildMatchChart(team, season) {
   if (!matches) matches = generateMatchData(team, season);
 
   // For 2025-26 season, mark upcoming fixtures as 'U' instead of treating them as unplayed
-  if (season === '2025-26' && matches.length > 0) {
+  if (season === ACTIVE_SEASON && matches.length > 0) {
     // Get actual played matches from HISTORICAL_MATCHES
-    const historicalMatches = HISTORICAL_MATCHES['2025-26'] || [];
+    const historicalMatches = HISTORICAL_MATCHES[ACTIVE_SEASON] || [];
     const playedCount = historicalMatches.length;
 
     // Count actual played matches for this team
@@ -2137,7 +2138,7 @@ function buildLiveTable() {
   const table = calculateLiveStandings();
   const tbody = document.getElementById('tbody');
   const thead = document.getElementById('thead');
-  const matches = HISTORICAL_MATCHES['2025-26'] || [];
+  const matches = HISTORICAL_MATCHES[ACTIVE_SEASON] || [];
 
   // Clear and rebuild header
   thead.innerHTML = `

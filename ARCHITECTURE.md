@@ -61,20 +61,33 @@ premier-league-dashboard/
 │   ├── logos.json                   ← maps team → local logo path
 │   ├── logos/                       ← downloaded PNGs (committed)
 │   │   └── manchester-united.png
-│   ├── seasons.json                 ← season list; last entry = "active"
+│   ├── seasons.json                 ← fetcher config (fetchFrom)
 │   └── notes.json
 ├── scripts/
 │   ├── build-html.js               ← Generate index.html from template + data + static
-│   ├── fetch-all.js                ← Master fetcher (active season only)
-│   ├── backfill.js                 ← Explicitly refetch a past season
+│   ├── fetcher.js                  ← Unified fetcher (one CLI, all sources, all seasons)
 │   ├── fetchers/
-│   │   ├── fetch-matches.js        ← Match results + derived standings
-│   │   ├── fetch-fixtures.js       ← Upcoming fixtures
+│   │   ├── fetch-matches.js        ← Per-season matches module
+│   │   ├── fetch-fixtures.js       ← Per-season fixtures module
 │   │   └── fetch-logos.js          ← One-shot logo downloader
 │   └── utils/
-│       ├── active-season.js        ← Resolves the active season
+│       ├── active-season.js        ← Derives the active season from current date
 │       ├── derive-standings.js     ← Computes standings from matches
 │       └── espn-api.js             ← ESPN API client
+
+The fetcher's CLI:
+  npm run fetch                        # active season (default)
+  npm run fetch -- --all               # iterate fetchFrom → active
+  npm run fetch -- --season=2024-25    # one season
+  npm run fetch -- --type=matches      # one type
+  npm run fetch -- --no-cache          # bypass TTL gate
+
+Cache: TTL gates the API call; SHA-256 of merged data gates the file
+write. Cache sidecars live in data/.cache/ (gitignored). Existing data
+is never lost — empty/null fetches preserve what's on disk.
+
+Active season is computed from the current date (Aug → May rollover);
+nothing in the repo hardcodes a specific season.
 ├── .github/
 │   └── workflows/
 │       └── nightly-update.yml      ← GitHub Actions workflow
