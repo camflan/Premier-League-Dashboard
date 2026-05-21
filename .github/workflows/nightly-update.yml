@@ -31,13 +31,10 @@ jobs:
         run: npm run fetch
         continue-on-error: true  # Continue even if fetch fails
 
-      - name: Build HTML from template + data
-        run: npm run build
-
       - name: Check for data changes
         id: check_changes
         run: |
-          if git diff --quiet data/ index.html; then
+          if git diff --quiet data/; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "No data changes detected"
           else
@@ -45,13 +42,13 @@ jobs:
             echo "Data changes detected"
           fi
 
-      - name: Commit and push changes
+      - name: Commit and push data changes
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           git config user.name "Dashboard Bot"
           git config user.email "bot@example.com"
-          git add data/ index.html
-          git commit -m "chore: nightly data update [skip ci]"
+          git add data/
+          git commit -m "chore: nightly data update"
           git push
 
       - name: Log run summary

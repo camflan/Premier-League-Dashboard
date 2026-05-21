@@ -1,0 +1,357 @@
+{
+  "1998-99": {
+    "Manchester United": {
+      "european": {
+        "competition": "Champions League",
+        "progression": "Won",
+        "won": true,
+        "details": "Won Champions League defeating Bayern Munich 2-1 (May 26, 1999)"
+      },
+      "domestic": {
+        "cups": [
+          "Premier League",
+          "FA Cup"
+        ],
+        "details": "Historic treble: PL, FA Cup, Champions League"
+      }
+    }
+  },
+  "2003-04": {
+    "Manchester United": {
+      "domestic": {
+        "cups": [
+          "FA Cup"
+        ],
+        "details": "FA Cup: Defeated Millwall 3-0 (May 22, 2004). Goals: Cristiano Ronaldo, Ruud van Nistelrooy x2 (1 pen)"
+      }
+    }
+  },
+  "2008-09": {
+    "Manchester United": {
+      "european": {
+        "competition": "Champions League",
+        "progression": "Final",
+        "won": false,
+        "details": "Lost to Barcelona 2-0 (May 27, 2009)"
+      },
+      "domestic": {
+        "cups": [
+          "Premier League",
+          "League Cup"
+        ],
+        "details": "Won PL and League Cup. Lost CL Final and FA Cup final"
+      }
+    },
+    "Arsenal": {
+      "competition": "Champions League",
+      "progression": "Quarter-Final",
+      "won": false
+    }
+  },
+  "2009-10": {
+    "Chelsea": {
+      "domestic": {
+        "cups": [
+          "FA Cup"
+        ],
+        "details": "FA Cup: Defeated Portsmouth 1-0 (May 15, 2010). Goal: Didier Drogba (59')"
+      }
+    }
+  },
+  "2010-11": {
+    "Manchester City": {
+      "domestic": {
+        "cups": [
+          "FA Cup"
+        ],
+        "details": "FA Cup: Defeated Stoke City 1-0 AET (May 14, 2011). Goal: Yaya Toure"
+      }
+    }
+  },
+  "2011-12": {
+    "Chelsea": {
+      "european": {
+        "competition": "Champions League",
+        "progression": "Won",
+        "won": true,
+        "details": "Won Champions League defeating Bayern Munich on penalties (May 19, 2012)"
+      },
+      "domestic": {
+        "cups": [
+          "FA Cup",
+          "League Cup"
+        ],
+        "details": "FA Cup: Defeated Liverpool 2-1 (May 5, 2012). Goals: Ramires (11'), Drogba (52')"
+      }
+    },
+    "Manchester City": {
+      "competition": "Europa League",
+      "progression": "Group Stage",
+      "won": false
+    },
+    "Arsenal": {
+      "competition": "Champions League",
+      "progression": "Round of 16",
+      "won": false
+    }
+  },
+  "2013-14": {
+    "Arsenal": {
+      "domestic": {
+        "cups": [
+          "FA Cup"
+        ],
+        "details": "FA Cup: Defeated Hull City 3-2 AET (May 17, 2014). Goals: Cazorla (free-kick), Koscielny, Aaron Ramsey (AET)"
+      }
+    },
+    "Manchester City": {
+      "domestic": {
+        "cups": [
+          "League Cup"
+        ],
+        "details": "League Cup: Defeated Sunderland 3-1 (March 2, 2014)"
+      }
+    }
+  },
+  "2014-15": {
+    "Arsenal": {
+      "domestic": {
+        "cups": [
+          "FA Cup"
+        ],
+        "details": "FA Cup: Defeated Aston Villa 4-0 (May 30, 2015). Goals: Walcott, Sanchez, Mertesacker, Giroud"
+      }
+    },
+    "Chelsea": {
+      "domestic": {
+        "cups": [
+          "League Cup"
+        ],
+        "details": "League Cup: Defeated Tottenham 2-0 AET (March 1, 2015). Goals: John Terry, Demba Ba"
+      }
+    }
+  },
+  "2015-16": {
+    "Manchester United": {
+      "domestic": {
+        "cups": [
+          "FA Cup"
+        ],
+        "details": "FA Cup: Defeated Crystal Palace 2-1 AET (May 21, 2016). Goals: Juan Mata (87'), Jesse Lingard (AET)"
+      }
+    },
+    "Manchester City": {
+      "domestic": {
+        "cups": [
+          "League Cup"
+        ],
+        "details": "League Cup: Defeated Liverpool 1-1, won 3-1 on pens (Feb 28, 2016)"
+      }
+    }
+  },
+  "2016-17": {
+    "Manchester United": {
+      "european": {
+        "competition": "Europa League",
+        "progression": "Won",
+        "won": true,
+        "details": "Won Europa League defeating Ajax 2-0 (May 24, 2017). Goals: Paul Pogba (18'), Henrikh Mkhitaryan (48')"
+      }
+    },
+    "Arsenal": {
+      "domestic": {
+        "cups": [
+          "FA Cup"
+        ],
+        "details": "FA Cup: Defeated Chelsea 2-1 (May 27, 2017). Goals: Alexis Sanchez, Aaron Ramsey"
+      }
+    },
+    "Manchester City": {
+      "domestic": {
+        "cups": [
+          "League Cup"
+        ],
+        "details": "League Cup: Defeated Arsenal 3-0 (March 25, 2018)"
+      }
+    }
+  },
+  "2017-18": {
+    "Chelsea": {
+      "domestic": {
+        "cups": [
+          "FA Cup"
+        ],
+        "details": "FA Cup: Defeated Manchester United 1-0 (May 19, 2018). Goal: Eden Hazard (22', pen)"
+      }
+    },
+    "Manchester City": {
+      "domestic": {
+        "cups": [
+          "League Cup"
+        ],
+        "details": "League Cup: Defeated Arsenal 3-0 (March 25, 2018)"
+      }
+    }
+  },
+  "2018-19": {
+    "Manchester City": {
+      "domestic": {
+        "cups": [
+          "League Cup"
+        ],
+        "details": "League Cup: Defeated Chelsea 0-0, won 4-3 on pens (Feb 24, 2019)"
+      }
+    },
+    "Tottenham": {
+      "competition": "Champions League",
+      "progression": "Final",
+      "won": false,
+      "details": "Lost to Liverpool 2-0"
+    },
+    "Liverpool": {
+      "european": {
+        "competition": "Champions League",
+        "progression": "Won",
+        "won": true,
+        "details": "Won Champions League defeating Tottenham 2-0 (June 1, 2019)"
+      },
+      "domestic": {
+        "cups": [],
+        "details": "Won CL but no domestic cups"
+      }
+    },
+    "Arsenal": {
+      "competition": "Europa League",
+      "progression": "Final",
+      "won": false,
+      "details": "Lost to Chelsea 4-1"
+    },
+    "Chelsea": {
+      "european": {
+        "competition": "Europa League",
+        "progression": "Won",
+        "won": true,
+        "details": "Won Europa League defeating Arsenal 4-1 (May 29, 2019)"
+      },
+      "domestic": {
+        "cups": [],
+        "details": "Won Europa League but no domestic cups"
+      }
+    }
+  },
+  "2019-20": {
+    "Manchester City": {
+      "domestic": {
+        "cups": [
+          "League Cup"
+        ],
+        "details": "League Cup: Defeated Aston Villa 2-1 (March 1, 2020)"
+      }
+    },
+    "Arsenal": {
+      "domestic": {
+        "cups": [
+          "FA Cup"
+        ],
+        "details": "FA Cup: Defeated Chelsea 2-1 AET (Aug 1, 2020). Goals: Pierre-Emerick Aubameyang x2"
+      }
+    }
+  },
+  "2020-21": {
+    "Manchester City": {
+      "domestic": {
+        "cups": [
+          "League Cup"
+        ],
+        "details": "League Cup: Defeated Tottenham 1-0 (April 25, 2021)"
+      }
+    },
+    "Chelsea": {
+      "european": {
+        "competition": "Champions League",
+        "progression": "Won",
+        "won": true,
+        "details": "Won Champions League defeating Manchester City 1-0 (May 29, 2021)"
+      },
+      "domestic": {
+        "cups": [],
+        "details": "Won Champions League but no domestic cups"
+      }
+    },
+    "Manchester United": {
+      "european": {
+        "competition": "Europa League",
+        "progression": "Final",
+        "won": false,
+        "details": "Lost to Villarreal 1-1 AET, 11-10 pens (May 26, 2021). Goal: Edinson Cavani (55')"
+      }
+    }
+  },
+  "2021-22": {
+    "Manchester City": {
+      "domestic": {
+        "cups": [
+          "League Cup"
+        ],
+        "details": "League Cup: Defeated Chelsea 3-2 AET (Feb 27, 2022)"
+      }
+    },
+    "Liverpool": {
+      "domestic": {
+        "cups": [
+          "FA Cup",
+          "League Cup"
+        ],
+        "details": "FA Cup: Defeated Chelsea 0-0, won 6-5 on pens (May 14, 2022). League Cup: Defeated Chelsea 11-10 pens (Feb 27, 2022)"
+      }
+    }
+  },
+  "2022-23": {
+    "Manchester City": {
+      "european": {
+        "competition": "Champions League",
+        "progression": "Won",
+        "won": true,
+        "details": "Won Champions League defeating Inter Milan 1-0 (June 10, 2023)"
+      },
+      "domestic": {
+        "cups": [
+          "Premier League",
+          "FA Cup"
+        ],
+        "details": "Historic treble: PL, FA Cup, Champions League"
+      }
+    },
+    "Manchester United": {
+      "domestic": {
+        "cups": [
+          "League Cup"
+        ],
+        "details": "League Cup: Defeated Newcastle 2-0 (Feb 26, 2023). Goals: Casemiro, Marcus Rashford"
+      }
+    },
+    "Newcastle": {
+      "competition": "Champions League",
+      "progression": "Group Stage",
+      "won": false
+    }
+  },
+  "2023-24": {
+    "Manchester United": {
+      "domestic": {
+        "cups": [
+          "FA Cup"
+        ],
+        "details": "FA Cup: Defeated Manchester City 2-1 (May 25, 2024). Goals: Alejandro Garnacho (30'), Kobbie Mainoo (39')"
+      }
+    },
+    "Liverpool": {
+      "domestic": {
+        "cups": [
+          "League Cup"
+        ],
+        "details": "League Cup: Defeated Chelsea 1-0 AET (Feb 25, 2024)"
+      }
+    }
+  }
+}

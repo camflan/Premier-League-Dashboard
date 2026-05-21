@@ -45,8 +45,8 @@ npm run build     # Compose window.__DATA and inject into index.html
 ### File Structure
 ```
 premier-league-dashboard/
-├── index.html                        ← Generated (DO NOT EDIT)
-│   └── Auto-generated from template + data + static
+├── index.html                        ← Generated (DO NOT EDIT, gitignored)
+│   └── Built in CI from template + data + static, deployed to GitHub Pages
 ├── template/
 │   └── index.html.template          ← Edit this for HTML/CSS/JS changes
 ├── data/                            ← FETCHED data, one file per season
