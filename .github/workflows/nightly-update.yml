@@ -21,8 +21,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
-          cache: 'npm'
+          node-version: '22'
+          # No `cache: 'npm'` — that requires a committed lockfile and the
+          # project's single devDep isn't worth the maintenance overhead.
 
       - name: Install dependencies
         run: npm install
