@@ -525,22 +525,31 @@
   </div>
   <button class="settings-btn" onclick="toggleSettingsModal()" title="View Preferences">⚙️</button>
   <div class="controls">
+    <div style="display:flex; align-items:center; gap:6px; font-size:11px; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">🔍</div>
     <input type="text" id="searchTeam" placeholder="Search team…" oninput="filterTeams(this.value)">
+
+    <div style="width:1px; height:24px; background:var(--border); margin:0 4px;"></div>
+
+    <div style="display:flex; align-items:center; gap:6px; font-size:11px; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Sort</div>
     <div class="btn-group">
-      <button class="active" onclick="setSort('seasons')" id="sort-seasons">Most Seasons</button>
-      <button onclick="setSort('best')" id="sort-best">Best Finish</button>
-      <button onclick="setSort('current')" id="sort-current">Current Standings</button>
-      <button onclick="setSort('alpha')" id="sort-alpha">A–Z</button>
-      <select id="yearSelect" onchange="handleYearChange(this.value)" style="background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:8px 14px;font-size:12px;cursor:pointer;font-weight:500;">
-        <option value="">Sort by Year</option>
+      <button class="active" onclick="setSort('seasons')" id="sort-seasons" title="Most Seasons">Most Seasons</button>
+      <button onclick="setSort('best')" id="sort-best" title="Best Finish">Best Finish</button>
+      <button onclick="setSort('current')" id="sort-current" title="Current Standings">Current Standings</button>
+      <button onclick="setSort('alpha')" id="sort-alpha" title="Alphabetical">A–Z</button>
+      <select id="yearSelect" onchange="handleYearChange(this.value)" title="Filter by Season" style="background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:8px 14px;font-size:12px;cursor:pointer;font-weight:500;">
+        <option value="">By Year</option>
       </select>
     </div>
+
+    <div style="width:1px; height:24px; background:var(--border); margin:0 4px;"></div>
+
+    <div style="display:flex; align-items:center; gap:6px; font-size:11px; color:var(--text-muted); font-weight:600; text-transform:uppercase; letter-spacing:0.5px;">Display</div>
     <div class="btn-group">
-      <button class="active" onclick="setColorMode('position')" id="mode-position">Position</button>
-      <button onclick="setColorMode('goals')" id="mode-goals">Goals</button>
-      <button onclick="setColorMode('gd')" id="mode-gd">Goal Diff</button>
-      <button onclick="setColorMode('pts')" id="mode-pts">Points</button>
-      <button onclick="setColorMode('cleansheets')" id="mode-cleansheets">Clean Sheets</button>
+      <button class="active" onclick="setColorMode('position')" id="mode-position" title="Color by Position">Position</button>
+      <button onclick="setColorMode('goals')" id="mode-goals" title="Color by Goals Scored">Goals</button>
+      <button onclick="setColorMode('gd')" id="mode-gd" title="Color by Goal Difference">Goal Diff</button>
+      <button onclick="setColorMode('pts')" id="mode-pts" title="Color by Points">Points</button>
+      <button onclick="setColorMode('cleansheets')" id="mode-cleansheets" title="Color by Clean Sheets">Clean Sheets</button>
     </div>
   </div>
 </header>
