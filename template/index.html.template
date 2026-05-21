@@ -605,6 +605,7 @@
 // Data bindings — populated by build-html.js via window.__DATA
 const SHORT_NAMES         = window.__DATA.shortNames;
 const THESPORTSDB_LOGOS   = window.__DATA.logos;
+const LOGOS               = THESPORTSDB_LOGOS; // Alias for convenience
 const SEASONS             = window.__DATA.seasons;
 const TEAM_COLORS         = Object.fromEntries(window.__DATA.teams.map(t => [t.name, t.color]));
 const RAW                 = window.__DATA.standings;
