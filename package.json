@@ -11,7 +11,10 @@
     "fetch-logos": "node scripts/fetchers/fetch-logos.js",
     "dev": "npm run build && npx http-server --port 8000",
     "test": "node scripts/test.js",
-    "validate": "node scripts/validate-data.js"
+    "validate": "node scripts/validate-data.js",
+    "lint": "biome check",
+    "format": "biome format --write",
+    "fix": "biome check --write"
   },
   "keywords": [
     "premier-league",
@@ -25,6 +28,7 @@
     "node-fetch": "^2.7.0"
   },
   "devDependencies": {
+    "@biomejs/biome": "2.4.15",
     "http-server": "^14.1.1"
   }
 }
