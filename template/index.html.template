@@ -5314,14 +5314,14 @@ async function handleGameClick(e, idx) {
         <div class="gp-score-big">${match.gf}<span style="color:#4b5563;font-weight:300;padding:0 4px">–</span>${match.ga}</div>
       `}
       <div class="gp-teams-row">
-        <span class="ht" style="display:flex; align-items:center; gap:4px;">
-          <span style="width:20px; height:20px; border-radius:50%; background:${match.isHome ? myColor : oppColor}; display:inline-block;"></span>
+        <span class="ht" style="display:flex; flex-direction:column; align-items:center; gap:4px;">
+          <img src="${LOGOS[match.isHome ? myTeam : oppTeam]}" style="width:20px; height:20px; object-fit:contain;" alt="${match.isHome ? myTeam : oppTeam}"/>
           ${match.isHome ? (myTeam || '—') : (oppTeam || '—')}
         </span>
         <span style="color:${resCol};font-weight:700">${resultTx}</span>
-        <span class="at" style="display:flex; align-items:center; gap:4px; justify-content:flex-end;">
+        <span class="at" style="display:flex; flex-direction:column; align-items:center; gap:4px; justify-content:center;">
+          <img src="${LOGOS[match.isHome ? oppTeam : myTeam]}" style="width:20px; height:20px; object-fit:contain;" alt="${match.isHome ? oppTeam : myTeam}"/>
           ${match.isHome ? (oppTeam || '—') : (myTeam || '—')}
-          <span style="width:20px; height:20px; border-radius:50%; background:${match.isHome ? oppColor : myColor}; display:inline-block;"></span>
         </span>
       </div>
     </div>

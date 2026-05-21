@@ -179,6 +179,13 @@ if (data.NOTES) {
   }
 }
 
+// Add LOGOS alias for convenience
+if (data.THESPORTSDB_LOGOS) {
+  const aliasInsertion = '\nconst LOGOS = THESPORTSDB_LOGOS;';
+  html = html.replace(/const THESPORTSDB_LOGOS = \{[\s\S]*?\};/,
+    (match) => match + aliasInsertion);
+}
+
 // Write output
 console.log(`\n💾 Writing ${replaced} data constants to index.html...\n`);
 fs.writeFileSync(outputPath, html, 'utf-8');
