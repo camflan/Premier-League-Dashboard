@@ -62,6 +62,13 @@
   }
   .btn-group button:hover { background: var(--surface2); color: var(--text); transform: translateY(-1px); }
   .btn-group button.active { background: var(--accent); color: #000; font-weight: 700; box-shadow: 0 4px 12px rgba(6, 182, 212, 0.4); }
+  .btn-group select {
+    background: var(--surface); border: none; color: var(--text-muted);
+    padding: 8px 14px; cursor: pointer; font-size: 12px; transition: all 0.2s ease;
+    font-weight: 500; border-radius: 0;
+  }
+  .btn-group select:hover { background: var(--surface2); color: var(--text); }
+  .btn-group select.active { background: var(--accent); color: #000; font-weight: 700; box-shadow: 0 4px 12px rgba(6, 182, 212, 0.4); }
   input[type="text"] {
     background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
     color: var(--text); padding: 8px 14px; font-size: 12px; outline: none; width: 160px;
@@ -523,11 +530,10 @@
       <button onclick="setSort('best')" id="sort-best">Best Finish</button>
       <button onclick="setSort('current')" id="sort-current">Current Standings</button>
       <button onclick="setSort('alpha')" id="sort-alpha">A–Z</button>
-      <button onclick="setSort('year')" id="sort-year">Sort by Year</button>
+      <select id="yearSelect" onchange="handleYearChange(this.value)" style="background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:8px 14px;font-size:12px;cursor:pointer;font-weight:500;">
+        <option value="">Sort by Year</option>
+      </select>
     </div>
-    <select id="yearSelect" onchange="handleYearChange(this.value)" style="display:none;background:var(--surface);border:1px solid var(--border);border-radius:8px;color:var(--text);padding:8px 14px;font-size:12px;cursor:pointer;font-weight:500;margin-left:8px;">
-      <option value="">Select Year</option>
-    </select>
     <div class="btn-group">
       <button class="active" onclick="setColorMode('position')" id="mode-position">Position</button>
       <button onclick="setColorMode('goals')" id="mode-goals">Goals</button>
@@ -5636,16 +5642,22 @@ function setSort(mode) {
   sortMode = mode;
   document.querySelectorAll('[id^="sort-"]').forEach(b=>b.classList.remove('active'));
   document.getElementById(`sort-${mode}`).classList.add('active');
-  document.getElementById('yearSelect').style.display = mode === 'year' ? 'block' : 'none';
-  if (mode !== 'year') selectedYear = '';
+  selectedYear = '';
+  const yearSelect = document.getElementById('yearSelect');
+  yearSelect.value = '';
+  yearSelect.classList.remove('active');
   buildTable();
 }
 
 function handleYearChange(year) {
   selectedYear = year;
+  const yearSelect = document.getElementById('yearSelect');
   if (year) {
     sortMode = 'year';
     document.querySelectorAll('[id^="sort-"]').forEach(b=>b.classList.remove('active'));
+    yearSelect.classList.add('active');
+  } else {
+    yearSelect.classList.remove('active');
   }
   buildTable();
 }
