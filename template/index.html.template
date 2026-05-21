@@ -658,6 +658,18 @@ function saveViewPreference(mode) {
 let viewMode = loadViewPreference();
 
 // ════════════════════════════════════════════════════════════════
+//  UTILITY FUNCTIONS
+// ════════════════════════════════════════════════════════════════
+// Normalize team names for matching (handle "AFC Bournemouth" vs "Bournemouth", etc.)
+function normalizeTeamName(name) {
+  return name.replace(/^AFC\s+/, '').replace(/\s+Wanderers$/, '').replace(/\s*&\s*Hove\s+Albion$/, '').trim();
+}
+
+function teamNamesMatch(t1, t2) {
+  return normalizeTeamName(t1) === normalizeTeamName(t2);
+}
+
+// ════════════════════════════════════════════════════════════════
 //  BUILD TEAM INDEX
 // ════════════════════════════════════════════════════════════════
 // Map team → season → row data
@@ -901,9 +913,9 @@ function buildTable() {
         let cellText = data.pos;
         let isFixture = false;
         if (s === ACTIVE_SEASON) {
-          const fixture = FIXTURES_2025_26.find(f => f.h === team || f.a === team);
+          const fixture = FIXTURES_2025_26.find(f => teamNamesMatch(f.h, team) || teamNamesMatch(f.a, team));
           if (fixture) {
-            const opponent = fixture.h === team ? fixture.a : fixture.h;
+            const opponent = teamNamesMatch(fixture.h, team) ? fixture.a : fixture.h;
             cellText = opponent;
             isFixture = true;
           }
@@ -1425,11 +1437,12 @@ async function handleGameClick(e, idx) {
 
   const homeTeam = match.homeTeam || match.h;
   const awayTeam = match.awayTeam || match.a;
+  const isHome = match.isHome !== undefined ? match.isHome : (match.ha === 'H');
   const venue    = match.ha === 'H' ? 'Home' : 'Away';
   const resultTx = match.result === 'W' ? 'Win' : match.result === 'D' ? 'Draw' : match.result === 'U' ? 'Upcoming' : 'Loss';
   const resCol   = match.result === 'W' ? '#4ade80' : match.result === 'D' ? '#fbbf24' : match.result === 'U' ? '#6b7280' : '#f87171';
-  const myTeam   = match.isHome ? homeTeam : awayTeam;
-  const oppTeam  = match.opp || (match.isHome ? awayTeam : homeTeam) || '?';
+  const myTeam   = isHome ? homeTeam : awayTeam;
+  const oppTeam  = match.opp || (isHome ? awayTeam : homeTeam) || '?';
   const myColor  = TEAM_COLORS[myTeam] || '#888';
   const oppColor = TEAM_COLORS[oppTeam] || '#888';
   const isUpcoming = match.result === 'U';
@@ -1537,12 +1550,12 @@ function generateMatchData(team, season) {
   const lossScore = () => { const g=clamp(Math.floor(rand()*3)+1,1,5); return [clamp(Math.floor(rand()*g),0,g-1), g]; };
 
   const matches = [];
-  for (let i=0;i<hw;i++) { const [gf,ga]=winScore();  matches.push({ha:'H',result:'W',gf,ga}); }
-  for (let i=0;i<aw;i++) { const [gf,ga]=winScore();  matches.push({ha:'A',result:'W',gf,ga}); }
-  for (let i=0;i<hd;i++) { const [gf,ga]=drawScore(); matches.push({ha:'H',result:'D',gf,ga}); }
-  for (let i=0;i<ad;i++) { const [gf,ga]=drawScore(); matches.push({ha:'A',result:'D',gf,ga}); }
-  for (let i=0;i<hl;i++) { const [gf,ga]=lossScore(); matches.push({ha:'H',result:'L',gf,ga}); }
-  for (let i=0;i<al;i++) { const [gf,ga]=lossScore(); matches.push({ha:'A',result:'L',gf,ga}); }
+  for (let i=0;i<hw;i++) { const [gf,ga]=winScore();  matches.push({ha:'H',result:'W',gf,ga,homeTeam:team,awayTeam:'TBD',isHome:true}); }
+  for (let i=0;i<aw;i++) { const [gf,ga]=winScore();  matches.push({ha:'A',result:'W',gf,ga,homeTeam:'TBD',awayTeam:team,isHome:false}); }
+  for (let i=0;i<hd;i++) { const [gf,ga]=drawScore(); matches.push({ha:'H',result:'D',gf,ga,homeTeam:team,awayTeam:'TBD',isHome:true}); }
+  for (let i=0;i<ad;i++) { const [gf,ga]=drawScore(); matches.push({ha:'A',result:'D',gf,ga,homeTeam:'TBD',awayTeam:team,isHome:false}); }
+  for (let i=0;i<hl;i++) { const [gf,ga]=lossScore(); matches.push({ha:'H',result:'L',gf,ga,homeTeam:team,awayTeam:'TBD',isHome:true}); }
+  for (let i=0;i<al;i++) { const [gf,ga]=lossScore(); matches.push({ha:'A',result:'L',gf,ga,homeTeam:'TBD',awayTeam:team,isHome:false}); }
 
   // Fisher-Yates shuffle (seeded)
   for (let i=matches.length-1;i>0;i--) {
@@ -1682,12 +1695,12 @@ async function buildMatchChart(team, season) {
     });
 
     // Also check fixtures list to enrich upcoming match data with opponent info
-    const upcomingFixtures = FIXTURES_2025_26.filter(f => f.h === team || f.a === team);
+    const upcomingFixtures = FIXTURES_2025_26.filter(f => teamNamesMatch(f.h, team) || teamNamesMatch(f.a, team));
     matches = matches.map((m, idx) => {
       if (m.result === 'U' && idx >= teamPlayedCount) {
         // Find matching fixture
         for (const f of upcomingFixtures) {
-          const isHome = f.h === team;
+          const isHome = teamNamesMatch(f.h, team);
           const opponent = isHome ? f.a : f.h;
           if (m.ha === (isHome ? 'H' : 'A')) {
             return { ...m, opp: opponent, date: f.d };
