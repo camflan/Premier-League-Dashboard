@@ -823,6 +823,7 @@ function getSortedTeams() {
 //  BUILD TABLE
 // ════════════════════════════════════════════════════════════════
 function buildTable() {
+  try {
   const teams = getSortedTeams();
   const thead = document.getElementById('thead');
   const tbody = document.getElementById('tbody');
@@ -932,6 +933,10 @@ function buildTable() {
       tr.appendChild(td);
     }
     tbody.appendChild(tr);
+  }
+  } catch (e) {
+    console.error('Error in buildTable:', e);
+    document.getElementById('tbody').innerHTML = '<tr><td colspan="100" style="padding:20px;">Error loading historical data</td></tr>';
   }
 }
 
