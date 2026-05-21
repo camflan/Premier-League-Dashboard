@@ -634,31 +634,32 @@ function shortTeamName(name) { return SHORT_NAMES[name] || name; }
 
 // Real team logos from TheSportsDB via CORS proxy with SVG fallback
 const THESPORTSDB_LOGOS = {
-  "Manchester United": "https://www.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png",
-  "Manchester City": "https://www.thesportsdb.com/images/media/team/badge/1fqk161611069382.png",
-  "Arsenal": "https://www.thesportsdb.com/images/media/team/badge/xzqy9h1512583071.png",
-  "Liverpool": "https://www.thesportsdb.com/images/media/team/badge/9tyxtp1512583046.png",
-  "Chelsea": "https://www.thesportsdb.com/images/media/team/badge/psywql1512583002.png",
-  "Tottenham Hotspur": "https://www.thesportsdb.com/images/media/team/badge/utwwup1512583097.png",
-  "Newcastle United": "https://www.thesportsdb.com/images/media/team/badge/hd5iq51513087779.png",
-  "Brighton": "https://www.thesportsdb.com/images/media/team/badge/xuxpx01512583114.png",
-  "Aston Villa": "https://www.thesportsdb.com/images/media/team/badge/uvtsxs1512583181.png",
-  "Wolverhampton": "https://www.thesportsdb.com/images/media/team/badge/ptcgzw1512583177.png",
-  "Everton": "https://www.thesportsdb.com/images/media/team/badge/vpkuxq1512583070.png",
-  "West Ham United": "https://www.thesportsdb.com/images/media/team/badge/ryyxyy1512583149.png",
-  "Brentford": "https://www.thesportsdb.com/images/media/team/badge/9y7oxa1602145130.png",
-  "Crystal Palace": "https://www.thesportsdb.com/images/media/team/badge/xzjyvx1512583116.png",
-  "Fulham": "https://www.thesportsdb.com/images/media/team/badge/rxtvbq1512583051.png",
+  "Manchester United": "https://r2.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png",
+  "Manchester City": "https://r2.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png",
+  "Arsenal": "https://r2.thesportsdb.com/images/media/team/badge/uyhbfe1612467038.png",
+  "Liverpool": "https://r2.thesportsdb.com/images/media/team/badge/kfaher1737969724.png",
+  "Chelsea": "https://r2.thesportsdb.com/images/media/team/badge/yvwvtu1448813215.png",
+  "Tottenham Hotspur": "https://r2.thesportsdb.com/images/media/team/badge/dfyfhl1604094109.png",
+  "Newcastle United": "https://r2.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
+  "Brighton": "https://r2.thesportsdb.com/images/media/team/badge/ywypts1448810904.png",
+  "Aston Villa": "https://r2.thesportsdb.com/images/media/team/badge/jykrpv1717309891.png",
+  "Wolverhampton": "https://r2.thesportsdb.com/images/media/team/badge/u9qr031621593327.png",
+  "Everton": "https://r2.thesportsdb.com/images/media/team/badge/eqayrf1523184794.png",
+  "West Ham United": "https://r2.thesportsdb.com/images/media/team/badge/yutyxs1467459956.png",
+  "Brentford": "https://r2.thesportsdb.com/images/media/team/badge/grv1aw1546453779.png",
+  "Crystal Palace": "https://r2.thesportsdb.com/images/media/team/badge/ia6i3m1656014992.png",
+  "Fulham": "https://r2.thesportsdb.com/images/media/team/badge/xwwvyt1448811086.png",
   "Ipswich Town": "https://www.thesportsdb.com/images/media/team/badge/ywwwyx1573058819.png",
   "Leicester City": "https://www.thesportsdb.com/images/media/team/badge/sqzp7o1512583074.png",
-  "Nottingham Forest": "https://www.thesportsdb.com/images/media/team/badge/wrrvyp1512583078.png",
-  "Bournemouth": "https://www.thesportsdb.com/images/media/team/badge/pstwks1512583148.png",
+  "Nottingham Forest": "https://r2.thesportsdb.com/images/media/team/badge/bk4qjs1546440351.png",
+  "Bournemouth": "https://r2.thesportsdb.com/images/media/team/badge/y08nak1534071116.png",
   "Southampton": "https://www.thesportsdb.com/images/media/team/badge/xwwvyt1512583143.png",
   "Blackburn Rovers": "https://www.thesportsdb.com/images/media/team/badge/7wxwus1537868610.png",
-  "Leeds United": "https://www.thesportsdb.com/images/media/team/badge/xvvu0j1512583160.png",
+  "Leeds United": "https://r2.thesportsdb.com/images/media/team/badge/jcgrml1756649030.png",
   "West Bromwich Albion": "https://www.thesportsdb.com/images/media/team/badge/nqqo791512583145.png",
   "Birmingham City": "https://www.thesportsdb.com/images/media/team/badge/6cw8n01512583089.png",
-  "Sunderland": "https://www.thesportsdb.com/images/media/team/badge/kkc6p41512583163.png"
+  "Sunderland": "https://r2.thesportsdb.com/images/media/team/badge/tprtus1448813498.png",
+  "Burnley": "https://r2.thesportsdb.com/images/media/team/badge/ql7nl31686893820.png"
 };
 
 const HISTORICAL_MATCHES_PRE2003 = {
@@ -30565,8 +30566,11 @@ function buildTable() {
       return `${a.slice(2)}/${b}`;
     };
     tdName.title = team;
-    // Always use colored dots for reliability - no logo loading issues
-    const logoHtml = `<span class="team-dot" style="background:${color}"></span>`;
+    // Try to load logo, fall back to colored dot if it fails
+    const logoUrl = THESPORTSDB_LOGOS[team];
+    const logoHtml = logoUrl
+      ? `<img class="team-logo" src="${logoUrl}" alt="${team}" onerror="this.replaceWith(Object.assign(document.createElement('span'), {className: 'team-dot', style: 'background:${color}'}))" style="width:20px;height:20px;object-fit:contain;flex-shrink:0">`
+      : `<span class="team-dot" style="background:${color}"></span>`;
     tdName.innerHTML = `
       <div class="team-label">
         ${logoHtml}
@@ -30668,6 +30672,7 @@ function openPanel(team, season) {
     <div class="panel-header">
       <div class="panel-team-badge">
         <div class="panel-color-bar" style="background:${color}"></div>
+        ${THESPORTSDB_LOGOS[team] ? `<img class="panel-logo" src="${THESPORTSDB_LOGOS[team]}" alt="${team}" style="width:24px;height:24px;object-fit:contain;margin:0 8px;flex-shrink:0" onerror="this.style.display='none'">` : ''}
         <div>
           <div class="panel-team-name">${team}</div>
           <div class="panel-season">${season} Season</div>

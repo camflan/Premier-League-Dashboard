@@ -4738,8 +4738,11 @@ function buildTable() {
       return `${a.slice(2)}/${b}`;
     };
     tdName.title = team;
-    // Always use colored dots for reliability - no logo loading issues
-    const logoHtml = `<span class="team-dot" style="background:${color}"></span>`;
+    // Try to load logo, fall back to colored dot if it fails
+    const logoUrl = THESPORTSDB_LOGOS[team];
+    const logoHtml = logoUrl
+      ? `<img class="team-logo" src="${logoUrl}" alt="${team}" onerror="this.replaceWith(Object.assign(document.createElement('span'), {className: 'team-dot', style: 'background:${color}'}))" style="width:20px;height:20px;object-fit:contain;flex-shrink:0">`
+      : `<span class="team-dot" style="background:${color}"></span>`;
     tdName.innerHTML = `
       <div class="team-label">
         ${logoHtml}
@@ -4841,6 +4844,7 @@ function openPanel(team, season) {
     <div class="panel-header">
       <div class="panel-team-badge">
         <div class="panel-color-bar" style="background:${color}"></div>
+        ${THESPORTSDB_LOGOS[team] ? `<img class="panel-logo" src="${THESPORTSDB_LOGOS[team]}" alt="${team}" style="width:24px;height:24px;object-fit:contain;margin:0 8px;flex-shrink:0" onerror="this.style.display='none'">` : ''}
         <div>
           <div class="panel-team-name">${team}</div>
           <div class="panel-season">${season} Season</div>
