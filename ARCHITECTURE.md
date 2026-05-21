@@ -24,21 +24,21 @@ All hardcoded data has been extracted from `index.html` into clean JSON files:
 ### Phase 2: Template & Build System ✅
 
 #### Template-Based Architecture
-- `template/index.html.template` - HTML template with data injection points
-- `scripts/build-html.js` - Builds final `index.html` from template + JSON data
-- All CSS and JavaScript logic preserved, only data is templated
+- `template/index.html.template` - HTML template with a single `/* __DATA_INJECTION_POINT__ */` marker
+- `scripts/build-html.js` - Composes `window.__DATA` from `data/` + `static/`, injects into template
+- All CSS and JavaScript logic preserved; the template reads data from `window.__DATA`
 
 #### Build Process
 ```bash
-npm run extract   # Extract data from old HTML → JSON
-npm run build     # Generate index.html from template + JSON data
+npm run build     # Compose window.__DATA and inject into index.html
 ```
 
 #### How It Works
-1. **Template Creation**: Current `index.html` → `template/index.html.template`
-2. **Data Loading**: Build script reads all JSON files from `data/`
-3. **Injection**: Data formatted as JavaScript constants and injected into template
-4. **Generation**: Complete `index.html` written with all data embedded
+1. **Read curated data** from `static/*.json` (hand-edited; teams, logos, short names, season list, season notes)
+2. **Read fetched data** from `data/*.json` (written by CI; standings, matches, fixtures)
+3. **Compose** one `{ teams, shortNames, logos, seasons, notes, standings, matches, fixtures }` object
+4. **Inject** at the template marker as `<script>window.__DATA = {…};</script>`
+5. **Template aliases** like `const RAW = window.__DATA.standings;` give the rest of the JS its familiar names
 
 ## Current Status
 
@@ -46,21 +46,21 @@ npm run build     # Generate index.html from template + JSON data
 ```
 premier-league-dashboard/
 ├── index.html                        ← Generated (DO NOT EDIT)
-│   └── Auto-generated from template + data
+│   └── Auto-generated from template + data + static
 ├── template/
 │   └── index.html.template          ← Edit this for HTML/CSS/JS changes
-├── data/                            ← Data files (source of truth)
-│   ├── teams.json
+├── data/                            ← FETCHED data (written by CI)
 │   ├── standings.json
 │   ├── matches.json
-│   ├── fixtures.json
-│   ├── notes.json
-│   ├── seasons.json
+│   └── fixtures.json
+├── static/                          ← CURATED data (hand-edited)
+│   ├── teams.json
 │   ├── short-names.json
-│   └── logos.json
+│   ├── logos.json
+│   ├── seasons.json
+│   └── notes.json
 ├── scripts/
-│   ├── extract-data.js             ← Extract from old HTML → JSON
-│   ├── build-html.js               ← Generate index.html from template+data
+│   ├── build-html.js               ← Generate index.html from template + data + static
 │   ├── fetch-all.js                ← Master fetcher (runs all fetchers)
 │   ├── fetchers/
 │   │   ├── fetch-live-standings.js ← Fetch current standings
@@ -89,9 +89,12 @@ npm run build
 
 #### 2. To update data manually
 ```bash
-# Edit JSON files directly
+# Fetched data (rare — CI does this)
 vim data/standings.json
-vim data/notes.json
+
+# Curated data
+vim static/notes.json
+vim static/teams.json
 
 # Rebuild HTML with new data
 npm run build
