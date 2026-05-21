@@ -81,10 +81,9 @@
     background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
     color: var(--text-muted); padding: 8px 12px; cursor: pointer; font-size: 14px;
     transition: all 0.2s ease; display: flex; align-items: center; gap: 4px;
-    opacity: 0; pointer-events: none;
+    opacity: 0.3;
   }
-  header:hover .settings-btn { opacity: 1; pointer-events: auto; }
-  .settings-btn:hover { background: var(--surface2); color: var(--text); transform: translateY(-1px); }
+  .settings-btn:hover { opacity: 1; background: var(--surface2); color: var(--text); transform: translateY(-1px); }
 
   /* ── Settings Modal ── */
   .settings-modal {
@@ -839,7 +838,7 @@ function buildTable() {
   th0.className = 'team-col';
   th0.textContent = `Teams (${teams.length})`;
   hr.appendChild(th0);
-  for (const s of SEASONS) {
+  for (const s of [...SEASONS].reverse()) {
     const th = document.createElement('th');
     const note = NOTES[s];
     const isChampion = note ? true : false;
@@ -896,7 +895,7 @@ function buildTable() {
     });
     tr.appendChild(tdName);
 
-    for (const s of SEASONS) {
+    for (const s of [...SEASONS].reverse()) {
       const td = document.createElement('td');
       const data = teamSeasonMap[team]?.[s];
       if (data) {
