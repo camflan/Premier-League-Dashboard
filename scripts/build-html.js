@@ -20,18 +20,26 @@ function readJSON(p) {
 console.log('🔨 Building index.html from template + data…\n');
 
 // Curated data (hand-edited)
-const teams      = readJSON(path.join(staticDir, 'teams.json')).teams;
-const shortNames = readJSON(path.join(staticDir, 'short-names.json')).shortNames;
-const logos      = readJSON(path.join(staticDir, 'logos.json')).logos;
-const seasons    = readJSON(path.join(staticDir, 'seasons.json')).seasons;
-const notes      = readJSON(path.join(staticDir, 'notes.json'));
+const teams         = readJSON(path.join(staticDir, 'teams.json')).teams;
+const shortNames    = readJSON(path.join(staticDir, 'short-names.json')).shortNames;
+const logos         = readJSON(path.join(staticDir, 'logos.json')).logos;
+const seasons       = readJSON(path.join(staticDir, 'seasons.json')).seasons;
+const notes         = readJSON(path.join(staticDir, 'notes.json'));
+const europeanCups  = readJSON(path.join(staticDir, 'european-cups.json'));
+const funFacts      = readJSON(path.join(staticDir, 'fun-facts.json'));
+const teamNotes     = readJSON(path.join(staticDir, 'team-notes.json'));
+const espnNames     = readJSON(path.join(staticDir, 'espn-names.json'));
 
 // Fetched data (written by CI)
 const standings  = readJSON(path.join(dataDir, 'standings.json'));
 const matches    = readJSON(path.join(dataDir, 'matches.json'));
 const fixtures   = readJSON(path.join(dataDir, 'fixtures.json'));
 
-const data = { teams, shortNames, logos, seasons, notes, standings, matches, fixtures };
+const data = {
+  teams, shortNames, logos, seasons, notes,
+  europeanCups, funFacts, teamNotes, espnNames,
+  standings, matches, fixtures,
+};
 
 const template = fs.readFileSync(templatePath, 'utf8');
 

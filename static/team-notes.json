@@ -1,0 +1,82 @@
+{
+  "Arsenal": {
+    "founded": 1886,
+    "ground": "Emirates Stadium (60,704)",
+    "note": "Most PL runner-up finishes. Invincibles 2003-04."
+  },
+  "Manchester United": {
+    "founded": 1878,
+    "ground": "Old Trafford (74,140)",
+    "note": "Record 13 PL titles. Ferguson era dominance."
+  },
+  "Chelsea": {
+    "founded": 1905,
+    "ground": "Stamford Bridge (40,341)",
+    "note": "6 PL titles, all post-Abramovich takeover 2003."
+  },
+  "Manchester City": {
+    "founded": 1880,
+    "ground": "Etihad Stadium (55,017)",
+    "note": "8 PL titles. Most dominant team since 2010s."
+  },
+  "Liverpool": {
+    "founded": 1892,
+    "ground": "Anfield (61,276)",
+    "note": "First PL title in 2019-20, 30yr wait."
+  },
+  "Tottenham Hotspur": {
+    "founded": 1882,
+    "ground": "Tottenham Hotspur Stadium (62,850)",
+    "note": "Never won PL. Second 2016-17 best finish."
+  },
+  "Aston Villa": {
+    "founded": 1874,
+    "ground": "Villa Park (42,749)",
+    "note": "Runners-up 1992-93. Long-established PL member."
+  },
+  "Everton": {
+    "founded": 1878,
+    "ground": "Goodison Park (39,571)",
+    "note": "Ever-present until 2023 relegation threat. Moved to new stadium."
+  },
+  "Newcastle United": {
+    "founded": 1892,
+    "ground": "St James' Park (52,354)",
+    "note": "Runners-up 1995-96, 1996-97. Saudi takeover revival."
+  },
+  "Blackburn Rovers": {
+    "founded": 1875,
+    "ground": "Ewood Park (31,367)",
+    "note": "Champions 1994-95 under Dalglish. Walker money."
+  },
+  "Leeds United": {
+    "founded": 1919,
+    "ground": "Elland Road (37,890)",
+    "note": "Yo-yo club in modern era, briefly 4th 2000-01."
+  },
+  "Leicester City": {
+    "founded": 1884,
+    "ground": "King Power Stadium (32,315)",
+    "note": "5000-1 miracle champions 2015-16 under Ranieri."
+  },
+  "Nottingham Forest": {
+    "founded": 1865,
+    "ground": "City Ground (30,445)",
+    "note": "Relegated 1998-99, returned 2022-23."
+  },
+  "Wolverhampton": {
+    "founded": 1877,
+    "ground": "Molineux (32,050)",
+    "note": "Back in PL 2018. Mou Nuno era revival."
+  },
+  "Brighton": {
+    "founded": 1901,
+    "ground": "Amex Stadium (31,800)",
+    "note": "First promoted 2017. De Zerbi-era recognition."
+  },
+  "Brentford": {
+    "founded": 1889,
+    "ground": "Gtech Community Stadium (17,250)",
+    "note": "Promoted 2021, first top-flight season in 74 years."
+  }
+}

@@ -601,6 +601,10 @@ const HISTORICAL_MATCHES  = window.__DATA.matches;
 const HISTORICAL_MATCHES_PRE2003 = window.__DATA.matches;
 const FIXTURES_2025_26    = window.__DATA.fixtures['2025-26'] || [];
 const NOTES               = window.__DATA.notes;
+const EUROPEAN_CUPS       = window.__DATA.europeanCups;
+const FUN_FACTS           = window.__DATA.funFacts;
+const TEAM_NOTES          = window.__DATA.teamNotes;
+const ESPN_NAMES          = window.__DATA.espnNames;
 
 // AbortController-based timeout compatible with all modern browsers
 function fetchTimeout(url, ms) {
@@ -673,250 +677,9 @@ function getTeamLogo(team) {
 })();
 
 // European Cups data for teams that qualified
-const EUROPEAN_CUPS = {
-  '1998-99': {
-    'Manchester United': {
-      european: { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Bayern Munich 2-1 (May 26, 1999)' },
-      domestic: { cups: ['Premier League', 'FA Cup'], details: 'Historic treble: PL, FA Cup, Champions League' }
-    }
-  },
-  '2003-04': {
-    'Manchester United': {
-      domestic: { cups: ['FA Cup'], details: 'FA Cup: Defeated Millwall 3-0 (May 22, 2004). Goals: Cristiano Ronaldo, Ruud van Nistelrooy x2 (1 pen)' }
-    }
-  },
-  '2008-09': {
-    'Manchester United': {
-      european: { competition: 'Champions League', progression: 'Final', won: false, details: 'Lost to Barcelona 2-0 (May 27, 2009)' },
-      domestic: { cups: ['Premier League', 'League Cup'], details: 'Won PL and League Cup. Lost CL Final and FA Cup final' }
-    },
-    'Arsenal': { competition: 'Champions League', progression: 'Quarter-Final', won: false }
-  },
-  '2009-10': {
-    'Chelsea': {
-      domestic: { cups: ['FA Cup'], details: 'FA Cup: Defeated Portsmouth 1-0 (May 15, 2010). Goal: Didier Drogba (59\')' }
-    }
-  },
-  '2010-11': {
-    'Manchester City': {
-      domestic: { cups: ['FA Cup'], details: 'FA Cup: Defeated Stoke City 1-0 AET (May 14, 2011). Goal: Yaya Toure' }
-    }
-  },
-  '2011-12': {
-    'Chelsea': {
-      european: { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Bayern Munich on penalties (May 19, 2012)' },
-      domestic: { cups: ['FA Cup', 'League Cup'], details: 'FA Cup: Defeated Liverpool 2-1 (May 5, 2012). Goals: Ramires (11\'), Drogba (52\')' }
-    },
-    'Manchester City': { competition: 'Europa League', progression: 'Group Stage', won: false },
-    'Arsenal': { competition: 'Champions League', progression: 'Round of 16', won: false }
-  },
-  '2013-14': {
-    'Arsenal': {
-      domestic: { cups: ['FA Cup'], details: 'FA Cup: Defeated Hull City 3-2 AET (May 17, 2014). Goals: Cazorla (free-kick), Koscielny, Aaron Ramsey (AET)' }
-    },
-    'Manchester City': {
-      domestic: { cups: ['League Cup'], details: 'League Cup: Defeated Sunderland 3-1 (March 2, 2014)' }
-    }
-  },
-  '2014-15': {
-    'Arsenal': {
-      domestic: { cups: ['FA Cup'], details: 'FA Cup: Defeated Aston Villa 4-0 (May 30, 2015). Goals: Walcott, Sanchez, Mertesacker, Giroud' }
-    },
-    'Chelsea': {
-      domestic: { cups: ['League Cup'], details: 'League Cup: Defeated Tottenham 2-0 AET (March 1, 2015). Goals: John Terry, Demba Ba' }
-    }
-  },
-  '2015-16': {
-    'Manchester United': {
-      domestic: { cups: ['FA Cup'], details: 'FA Cup: Defeated Crystal Palace 2-1 AET (May 21, 2016). Goals: Juan Mata (87\'), Jesse Lingard (AET)' }
-    },
-    'Manchester City': {
-      domestic: { cups: ['League Cup'], details: 'League Cup: Defeated Liverpool 1-1, won 3-1 on pens (Feb 28, 2016)' }
-    }
-  },
-  '2016-17': {
-    'Manchester United': {
-      european: { competition: 'Europa League', progression: 'Won', won: true, details: 'Won Europa League defeating Ajax 2-0 (May 24, 2017). Goals: Paul Pogba (18\'), Henrikh Mkhitaryan (48\')' }
-    },
-    'Arsenal': {
-      domestic: { cups: ['FA Cup'], details: 'FA Cup: Defeated Chelsea 2-1 (May 27, 2017). Goals: Alexis Sanchez, Aaron Ramsey' }
-    },
-    'Manchester City': {
-      domestic: { cups: ['League Cup'], details: 'League Cup: Defeated Arsenal 3-0 (March 25, 2018)' }
-    }
-  },
-  '2017-18': {
-    'Chelsea': {
-      domestic: { cups: ['FA Cup'], details: 'FA Cup: Defeated Manchester United 1-0 (May 19, 2018). Goal: Eden Hazard (22\', pen)' }
-    },
-    'Manchester City': {
-      domestic: { cups: ['League Cup'], details: 'League Cup: Defeated Arsenal 3-0 (March 25, 2018)' }
-    }
-  },
-  '2018-19': {
-    'Manchester City': { competition: 'Champions League', progression: 'Quarter-Final', won: false },
-    'Tottenham': { competition: 'Champions League', progression: 'Final', won: false, details: 'Lost to Liverpool 2-0' },
-    'Liverpool': {
-      european: { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Tottenham 2-0 (June 1, 2019)' },
-      domestic: { cups: [], details: 'Won CL but no domestic cups' }
-    },
-    'Arsenal': { competition: 'Europa League', progression: 'Final', won: false, details: 'Lost to Chelsea 4-1' },
-    'Chelsea': {
-      european: { competition: 'Europa League', progression: 'Won', won: true, details: 'Won Europa League defeating Arsenal 4-1 (May 29, 2019)' },
-      domestic: { cups: [], details: 'Won Europa League but no domestic cups' }
-    },
-    'Manchester City': {
-      domestic: { cups: ['League Cup'], details: 'League Cup: Defeated Chelsea 0-0, won 4-3 on pens (Feb 24, 2019)' }
-    }
-  },
-  '2019-20': {
-    'Manchester City': {
-      domestic: { cups: ['League Cup'], details: 'League Cup: Defeated Aston Villa 2-1 (March 1, 2020)' }
-    },
-    'Arsenal': {
-      domestic: { cups: ['FA Cup'], details: 'FA Cup: Defeated Chelsea 2-1 AET (Aug 1, 2020). Goals: Pierre-Emerick Aubameyang x2' }
-    }
-  },
-  '2020-21': {
-    'Manchester City': { competition: 'Champions League', progression: 'Final', won: false, details: 'Lost to Chelsea 1-0' },
-    'Chelsea': {
-      european: { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Manchester City 1-0 (May 29, 2021)' },
-      domestic: { cups: [], details: 'Won Champions League but no domestic cups' }
-    },
-    'Manchester United': {
-      european: { competition: 'Europa League', progression: 'Final', won: false, details: 'Lost to Villarreal 1-1 AET, 11-10 pens (May 26, 2021). Goal: Edinson Cavani (55\')' }
-    },
-    'Manchester City': {
-      domestic: { cups: ['League Cup'], details: 'League Cup: Defeated Tottenham 1-0 (April 25, 2021)' }
-    }
-  },
-  '2021-22': {
-    'Manchester City': { competition: 'Champions League', progression: 'Final', won: false, details: 'Lost to Real Madrid 1-0' },
-    'Liverpool': { competition: 'Champions League', progression: 'Final', won: false, details: 'Lost to Real Madrid 1-0' },
-    'Manchester City': {
-      domestic: { cups: ['League Cup'], details: 'League Cup: Defeated Chelsea 3-2 AET (Feb 27, 2022)' }
-    },
-    'Liverpool': {
-      domestic: { cups: ['FA Cup', 'League Cup'], details: 'FA Cup: Defeated Chelsea 0-0, won 6-5 on pens (May 14, 2022). League Cup: Defeated Chelsea 11-10 pens (Feb 27, 2022)' }
-    }
-  },
-  '2022-23': {
-    'Manchester City': {
-      european: { competition: 'Champions League', progression: 'Won', won: true, details: 'Won Champions League defeating Inter Milan 1-0 (June 10, 2023)' },
-      domestic: { cups: ['Premier League', 'FA Cup'], details: 'Historic treble: PL, FA Cup, Champions League' }
-    },
-    'Manchester United': {
-      domestic: { cups: ['League Cup'], details: 'League Cup: Defeated Newcastle 2-0 (Feb 26, 2023). Goals: Casemiro, Marcus Rashford' }
-    },
-    'Newcastle': { competition: 'Champions League', progression: 'Group Stage', won: false }
-  },
-  '2023-24': {
-    'Manchester United': {
-      domestic: { cups: ['FA Cup'], details: 'FA Cup: Defeated Manchester City 2-1 (May 25, 2024). Goals: Alejandro Garnacho (30\'), Kobbie Mainoo (39\')' }
-    },
-    'Liverpool': {
-      domestic: { cups: ['League Cup'], details: 'League Cup: Defeated Chelsea 1-0 AET (Feb 25, 2024)' }
-    }
-  }
-};
 
 // Fun facts for notable seasons
-const FUN_FACTS = {
-  '2003-04': {
-    'Arsenal': [
-      '🏅 The Invincibles: Unbeaten all season (38 games)',
-      '⚽ Thierry Henry scored 30 goals in the league',
-      '🎖️ First English team to win league unbeaten',
-      '🛡️ Record 2,295 minutes without conceding at home',
-      '📊 Only lost 2 matches all season (domestic)'
-    ]
-  },
-  '2007-08': {
-    'Manchester United': [
-      '👑 Won Premier League and Champions League Double',
-      '⚽ Cristiano Ronaldo: 42 goals in all competitions',
-      '🥅 Premier League title by 2 points ahead of Chelsea',
-      '🏆 Sir Alex Ferguson\'s third Champions League title'
-    ],
-    'Chelsea': [
-      '🏃 59-point season finished 2nd',
-      '⚽ Frank Lampard and Didier Drogba partnership at peak'
-    ]
-  },
-  '2011-12': {
-    'Manchester City': [
-      '🎯 Premier League title by 1 goal on final day',
-      '⚽ Sergio Agüero: 35-yard goal in final minute of final match',
-      '📈 Second highest points total ever (89 points)',
-      '🔥 Won 5 consecutive league titles start to finish'
-    ],
-    'Manchester United': [
-      '🥈 Second place but 8 points clear of third',
-      '🛡️ Strongest defensive record of the season'
-    ]
-  },
-  '2017-18': {
-    'Manchester City': [
-      '🏆 Record 100 points in Premier League',
-      '⚽ 106 goals scored - most in a single season',
-      '🎯 Won title by 19 points - largest margin ever',
-      '📊 Won 32 of 38 matches'
-    ]
-  },
-  '2019-20': {
-    'Liverpool': [
-      '👑 First Premier League title in 30 years',
-      '🏅 99 points - second highest ever',
-      '⚽ Mohamed Salah and Sadio Mané partnership peak',
-      '🛡️ 44-game unbeaten run at Anfield',
-      '📈 Clinched title with 7 games remaining'
-    ]
-  },
-  '2022-23': {
-    'Manchester City': [
-      '🔥 3rd consecutive title (treble bid)',
-      '⚽ Erling Haaland: 36 goals - broke Premier League record',
-      '📊 Most goals scored in Premier League history (117)',
-      '🎯 Won by 5 points from Arsenal (who also broke records)'
-    ],
-    'Arsenal': [
-      '🚀 Second place with 84 points - second best in history',
-      '⚽ Harry Saka breakthrough season',
-      '📊 Only 2 points fewer than 2017-18 City but finished 2nd'
-    ]
-  },
-  '2023-24': {
-    'Manchester City': [
-      '👑 4th consecutive title (an English football first)',
-      '⚽ Erling Haaland: 27 goals in league',
-      '🏆 Premier League + FA Cup + League Cup + Champions League treble potential'
-    ],
-    'Arsenal': [
-      '🚀 89 points but finished 2nd again',
-      '📈 Bukayo Saka and Gabriel Martinelli matured into stars',
-      '🎯 One of strongest runner-up campaigns ever'
-    ]
-  }
-};
 
-const TEAM_NOTES = {
-  "Arsenal":{ founded:1886, ground:"Emirates Stadium (60,704)", note:"Most PL runner-up finishes. Invincibles 2003-04." },
-  "Manchester United":{ founded:1878, ground:"Old Trafford (74,140)", note:"Record 13 PL titles. Ferguson era dominance." },
-  "Chelsea":{ founded:1905, ground:"Stamford Bridge (40,341)", note:"6 PL titles, all post-Abramovich takeover 2003." },
-  "Manchester City":{ founded:1880, ground:"Etihad Stadium (55,017)", note:"8 PL titles. Most dominant team since 2010s." },
-  "Liverpool":{ founded:1892, ground:"Anfield (61,276)", note:"First PL title in 2019-20, 30yr wait." },
-  "Tottenham Hotspur":{ founded:1882, ground:"Tottenham Hotspur Stadium (62,850)", note:"Never won PL. Second 2016-17 best finish." },
-  "Aston Villa":{ founded:1874, ground:"Villa Park (42,749)", note:"Runners-up 1992-93. Long-established PL member." },
-  "Everton":{ founded:1878, ground:"Goodison Park (39,571)", note:"Ever-present until 2023 relegation threat. Moved to new stadium." },
-  "Newcastle United":{ founded:1892, ground:"St James' Park (52,354)", note:"Runners-up 1995-96, 1996-97. Saudi takeover revival." },
-  "Blackburn Rovers":{ founded:1875, ground:"Ewood Park (31,367)", note:"Champions 1994-95 under Dalglish. Walker money." },
-  "Leeds United":{ founded:1919, ground:"Elland Road (37,890)", note:"Yo-yo club in modern era, briefly 4th 2000-01." },
-  "Leicester City":{ founded:1884, ground:"King Power Stadium (32,315)", note:"5000-1 miracle champions 2015-16 under Ranieri." },
-  "Nottingham Forest":{ founded:1865, ground:"City Ground (30,445)", note:"Relegated 1998-99, returned 2022-23." },
-  "Wolverhampton":{ founded:1877, ground:"Molineux (32,050)", note:"Back in PL 2018. Mou Nuno era revival." },
-  "Brighton":{ founded:1901, ground:"Amex Stadium (31,800)", note:"First promoted 2017. De Zerbi-era recognition." },
-  "Brentford":{ founded:1889, ground:"Gtech Community Stadium (17,250)", note:"Promoted 2021, first top-flight season in 74 years." }
-};
 
 // ════════════════════════════════════════════════════════════════
 //  STATE
@@ -1494,10 +1257,6 @@ function buildSeasonChart(metric, team, season) {
 }
 
 // ESPN overrides for teams whose names aren't a substring of the ESPN display name
-const ESPN_NAMES = {
-  'WBA': 'West Bromwich Albion',
-  'QPR': 'Queens Park Rangers',
-};
 
 function matchesESPNTeam(myTeam, espnDisplayName) {
   const espn = espnDisplayName.toLowerCase();
