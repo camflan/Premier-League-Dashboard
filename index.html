@@ -60874,8 +60874,8 @@ async function buildMatchChart(team, season) {
 
   // For 2025-26 season, mark upcoming fixtures as 'U' instead of treating them as unplayed
   if (season === ACTIVE_SEASON && matches.length > 0) {
-    // Get actual played matches from HISTORICAL_MATCHES
-    const historicalMatches = HISTORICAL_MATCHES[season] || [];
+    // Get actual played matches from HISTORICAL_MATCHES for the selected league
+    const historicalMatches = getHistoricalMatches()[season] || [];
     const playedCount = historicalMatches.length;
 
     // Count actual played matches for this team
