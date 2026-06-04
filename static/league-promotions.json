@@ -2,7 +2,7 @@
   "_comment": "Tracks which teams were promoted/relegated each season. Structure: { season: { promoted: [teams], relegated: [teams], playoffWinner: 'team' } }",
   "2025-26": {
     "source": "standings_analysis",
-    "fetchedAt": "2026-06-04T19:51:04.898Z",
+    "fetchedAt": "2026-06-04T19:58:09.002Z",
     "promoted_to_pl": [
       "Coventry City",
       "Ipswich Town",

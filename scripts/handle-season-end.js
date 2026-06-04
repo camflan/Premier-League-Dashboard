@@ -195,20 +195,18 @@ async function main() {
     const teamsLeaving = promotions[league]?.leaving || [];
     const teamsJoining = promotions[league]?.joining || [];
 
-    // Remaining teams: from current season, excluding those leaving
-    const remainingTeams = [];
-    for (const team of currentStandings) {
-      const teamName = team[1];
+    // Step 1: Keep remaining teams from current season with their previous records
+    const remainingTeamsData = [];
+    for (const teamData of currentStandings) {
+      const teamName = teamData[1];
       if (!teamsLeaving.includes(teamName)) {
-        remainingTeams.push(teamName);
+        remainingTeamsData.push(teamData);
       }
     }
 
-    // Create new standings: joining teams at top (new promotions), then remaining teams
-    const allTeamsForNextSeason = [...teamsJoining, ...remainingTeams];
-
-    nextSeasonStandings = allTeamsForNextSeason.map((teamName, idx) => [
-      idx + 1, // Position (1-indexed)
+    // Step 2: Add joining teams at the BOTTOM with empty records (0,0,0,0,0,0,0)
+    const joiningTeamsData = teamsJoining.map((teamName) => [
+      0, // Position (will be recalculated)
       teamName, // Team name
       0, // Played
       0, // Wins
@@ -219,14 +217,33 @@ async function main() {
       0, // Points
     ]);
 
+    // Step 3: Combine: remaining teams first (with their records), then joining teams at bottom
+    const allTeamsForNextSeason = [...remainingTeamsData, ...joiningTeamsData];
+
+    // Step 4: Re-position all teams from 1 to N
+    nextSeasonStandings = allTeamsForNextSeason.map((teamData, idx) => [
+      idx + 1, // Position (1-indexed)
+      teamData[1], // Team name
+      teamData[2], // Played (kept from previous, or 0 for new teams)
+      teamData[3], // Wins
+      teamData[4], // Draws
+      teamData[5], // Losses
+      teamData[6], // Goals for
+      teamData[7], // Goals against
+      teamData[8], // Points
+    ]);
+
     if (nextSeasonStandings.length !== info.teams) {
       console.log(
-        `     ⚠️  Expected ${info.teams} teams, got ${nextSeasonStandings.length}. Joining: ${teamsJoining.length}, Remaining: ${remainingTeams.length}`
+        `     ⚠️  Expected ${info.teams} teams, got ${nextSeasonStandings.length}`
       );
+      console.log(`        Remaining from prev season: ${remainingTeamsData.length}, Newly promoted: ${joiningTeamsData.length}`);
+      console.log(`        ⚠️  MANUAL ADJUSTMENT NEEDED: Missing ${info.teams - nextSeasonStandings.length} team(s) (likely playoff winner)`);
+    } else {
+      console.log(`     ✓ Complete standings with all ${nextSeasonStandings.length} teams (remaining + promoted)`);
     }
 
     writeJSON(standingsPath, nextSeasonStandings);
-    console.log(`     ✓ Created standings template with ${nextSeasonStandings.length} teams`);
   }
 
   // Step 4: Update league-promotions.json
