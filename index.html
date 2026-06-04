@@ -50022,6 +50022,9 @@ function espnSeasonDates(season) {
 async function fetchRealMatches(team, season) {
   // Try to get matches from local HISTORICAL_MATCHES data first (faster, multi-league support)
   const localMatches = HISTORICAL_MATCHES?.[season];
+  console.log(`[fetchRealMatches] Team: ${team}, Season: ${season}, League: ${selectedLeague}`);
+  console.log(`[fetchRealMatches] localMatches:`, localMatches ? `${localMatches.length} total matches` : 'UNDEFINED');
+
   if (localMatches && Array.isArray(localMatches)) {
     const teamMatches = localMatches
       .filter(m => m.h === team || m.a === team)
@@ -50050,7 +50053,15 @@ async function fetchRealMatches(team, season) {
         return aDate - bDate;
       });
 
-    if (teamMatches.length >= 5) return teamMatches;
+    console.log(`[fetchRealMatches] Found ${teamMatches.length} matches for ${team}`);
+    if (teamMatches.length >= 5) {
+      console.log(`[fetchRealMatches] Returning real match data (${teamMatches.length} matches)`);
+      return teamMatches;
+    } else {
+      console.log(`[fetchRealMatches] Not enough matches (${teamMatches.length} < 5), will try ESPN`);
+    }
+  } else {
+    console.log(`[fetchRealMatches] localMatches is not a valid array, will try ESPN`);
   }
 
   // Fallback: ESPN data (only for 2003 onwards and Premier League)
