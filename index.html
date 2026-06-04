@@ -50473,13 +50473,17 @@ async function buildMatchChart(team, season) {
   const container = document.getElementById('matchChart');
   if (!container) return;
 
+  console.log(`[buildMatchChart] Starting for ${team} in ${season}, selectedLeague=${selectedLeague}`);
+
   container.innerHTML = `<div style="color:#6b7280;font-size:11px;padding:10px 0;display:flex;align-items:center;gap:8px">
     <span class="api-spinner"></span>Loading match results…
   </div>`;
 
   let matches = await fetchRealMatches(team, season);
   const isReal = !!matches;
+  console.log(`[buildMatchChart] fetchRealMatches returned:`, isReal ? 'real data' : 'null, will generate');
   if (!matches) matches = generateMatchData(team, season);
+  console.log(`[buildMatchChart] Generated ${matches.length} matches for ${team}/${season}`);
 
   // For 2025-26 season, mark upcoming fixtures as 'U' instead of treating them as unplayed
   if (season === ACTIVE_SEASON && matches.length > 0) {
@@ -50522,7 +50526,13 @@ async function buildMatchChart(team, season) {
   }
 
   const d = teamSeasonMap[team]?.[season];
-  if (!d || !matches.length) { container.innerHTML = '<p style="color:#4b5563;font-size:11px">No data available</p>'; return; }
+  console.log(`[buildMatchChart] teamSeasonMap[${team}][${season}]:`, d ? 'FOUND' : 'MISSING');
+  console.log(`[buildMatchChart] matches.length:`, matches.length);
+  if (!d || !matches.length) {
+    console.error(`[buildMatchChart] NO DATA: d=${!!d}, matches=${matches.length}`);
+    container.innerHTML = '<p style="color:#4b5563;font-size:11px">No data available</p>';
+    return;
+  }
 
   const hm = matches.filter(m=>m.ha==='H'), am = matches.filter(m=>m.ha==='A');
   const hw=hm.filter(m=>m.result==='W').length, hd=hm.filter(m=>m.result==='D').length, hl=hm.filter(m=>m.result==='L').length;
