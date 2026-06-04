@@ -205,6 +205,7 @@ async function main() {
     }
 
     // Step 2: Add joining teams at the BOTTOM with empty records (0,0,0,0,0,0,0)
+    // Note: playoff winners should be added via league-promotions.json if available
     const joiningTeamsData = teamsJoining.map((teamName) => [
       0, // Position (will be recalculated)
       teamName, // Team name

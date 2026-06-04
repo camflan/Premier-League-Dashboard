@@ -1157,7 +1157,9 @@ window.__DATA = {
         "Ipswich Town",
         "Leicester City",
         "Sheffield Wednesday"
-      ]
+      ],
+      "playoff_winner_to_pl": "Hull City",
+      "playoff_winner_to_championship": "Bolton Wanderers"
     },
     "2024-25": {
       "promoted_to_pl": [
@@ -40476,7 +40478,7 @@ window.__DATA = {
         ],
         [
           20,
-          "Championship Playoff Winner",
+          "Hull City",
           0,
           0,
           0,
@@ -59741,8 +59743,8 @@ function selectLeague(leagueId) {
   // Rebuild year dropdown to show seasons for this league
   populateYearDropdown();
 
-  // Reset selected year to the active season for the new league
-  selectedYear = null;
+  // Reset selected year to clear any prior selection and remove blur effect
+  handleYearChange(null);
 
   // Rebuild tables
   if (viewMode === 'live') buildLiveTable();

@@ -774,8 +774,8 @@ function selectLeague(leagueId) {
   // Rebuild year dropdown to show seasons for this league
   populateYearDropdown();
 
-  // Reset selected year to the active season for the new league
-  selectedYear = null;
+  // Reset selected year to clear any prior selection and remove blur effect
+  handleYearChange(null);
 
   // Rebuild tables
   if (viewMode === 'live') buildLiveTable();
