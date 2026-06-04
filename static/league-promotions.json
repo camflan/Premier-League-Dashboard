@@ -1,36 +1,92 @@
 {
   "_comment": "Tracks which teams were promoted/relegated each season. Structure: { season: { promoted: [teams], relegated: [teams], playoffWinner: 'team' } }",
   "2025-26": {
-    "promoted_to_pl": ["Burnley", "Sheffield United"],
-    "playoff_winner_to_pl": "Leeds United",
-    "relegated_from_pl": ["Wolverhampton", "Burnley", "Sheffield United"],
-    "promoted_to_championship": ["Stockport County", "Mansfield Town"],
-    "playoff_winner_to_championship": "Wrexham",
-    "relegated_from_championship": ["Luton Town", "Reading"],
-    "promoted_to_league_one": ["Bristol Rovers", "Salford City"],
-    "playoff_winner_to_league_one": "Port Vale",
-    "relegated_from_league_one": ["Wigan Athletic", "Stevenage", "Tranmere Rovers", "Sunderland"]
+    "source": "standings_analysis",
+    "fetchedAt": "2026-06-04T19:51:04.898Z",
+    "promoted_to_pl": [
+      "Coventry City",
+      "Ipswich Town",
+      "Leicester City",
+      "Sheffield Wednesday"
+    ],
+    "promoted_to_championship": [
+      "Lincoln City",
+      "Cardiff City"
+    ],
+    "relegated_from_pl": [
+      "West Ham United",
+      "Burnley",
+      "Wolverhampton"
+    ],
+    "relegated_from_championship": [
+      "Coventry City",
+      "Ipswich Town",
+      "Leicester City",
+      "Sheffield Wednesday"
+    ]
   },
   "2024-25": {
-    "promoted_to_pl": ["Burnley", "Sheffield United"],
+    "promoted_to_pl": [
+      "Burnley",
+      "Sheffield United"
+    ],
     "playoff_winner_to_pl": "Leeds United",
-    "relegated_from_pl": ["Luton Town", "Burnley", "Sheffield United"],
-    "promoted_to_championship": ["Derby County", "Middlesbrough"],
+    "relegated_from_pl": [
+      "Luton Town",
+      "Burnley",
+      "Sheffield United"
+    ],
+    "promoted_to_championship": [
+      "Derby County",
+      "Middlesbrough"
+    ],
     "playoff_winner_to_championship": "Norwich City",
-    "relegated_from_championship": ["Ipswich Town", "Leicester City"],
-    "promoted_to_league_one": ["Wrexham", "Stockport County"],
+    "relegated_from_championship": [
+      "Ipswich Town",
+      "Leicester City"
+    ],
+    "promoted_to_league_one": [
+      "Wrexham",
+      "Stockport County"
+    ],
     "playoff_winner_to_league_one": "Coventry City",
-    "relegated_from_league_one": ["Bristol Rovers", "Charlton Athletic", "Accrington Stanley", "Lincoln City"]
+    "relegated_from_league_one": [
+      "Bristol Rovers",
+      "Charlton Athletic",
+      "Accrington Stanley",
+      "Lincoln City"
+    ]
   },
   "2023-24": {
-    "promoted_to_pl": ["Burnley", "Sheffield United"],
+    "promoted_to_pl": [
+      "Burnley",
+      "Sheffield United"
+    ],
     "playoff_winner_to_pl": "Leeds United",
-    "relegated_from_pl": ["Luton Town", "Sheffield United", "Burnley"],
-    "promoted_to_championship": ["Leicester City", "Ipswich Town"],
+    "relegated_from_pl": [
+      "Luton Town",
+      "Sheffield United",
+      "Burnley"
+    ],
+    "promoted_to_championship": [
+      "Leicester City",
+      "Ipswich Town"
+    ],
     "playoff_winner_to_championship": "Leeds United",
-    "relegated_from_championship": ["Hull City", "Middlesbrough"],
-    "promoted_to_league_one": ["Wrexham", "Stockport County"],
+    "relegated_from_championship": [
+      "Hull City",
+      "Middlesbrough"
+    ],
+    "promoted_to_league_one": [
+      "Wrexham",
+      "Stockport County"
+    ],
     "playoff_winner_to_league_one": "Bolton Wanderers",
-    "relegated_from_league_one": ["Salford City", "Stevenage", "Bristol Rovers", "Leyton Orient"]
+    "relegated_from_league_one": [
+      "Salford City",
+      "Stevenage",
+      "Bristol Rovers",
+      "Leyton Orient"
+    ]
   }
 }

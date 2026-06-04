@@ -1,0 +1,802 @@
+[
+  {
+    "a": "Exeter City",
+    "ag": 4,
+    "d": "24/09/2022",
+    "h": "Forest Green Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "24/09/2022",
+    "h": "Barnsley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "24/09/2022",
+    "h": "Bristol Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cambridge United",
+    "ag": 2,
+    "d": "24/09/2022",
+    "h": "Morecambe",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "17/09/2022",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 0,
+    "d": "17/09/2022",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 6,
+    "d": "17/09/2022",
+    "h": "Bristol Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 3,
+    "d": "17/09/2022",
+    "h": "Cambridge United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "17/09/2022",
+    "h": "Derby County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 2,
+    "d": "17/09/2022",
+    "h": "Exeter City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "17/09/2022",
+    "h": "Fleetwood Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 2,
+    "d": "17/09/2022",
+    "h": "Forest Green Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "17/09/2022",
+    "h": "Oxford United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "17/09/2022",
+    "h": "Port Vale",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Plymouth Argyle",
+    "ag": 2,
+    "d": "17/09/2022",
+    "h": "Portsmouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "17/09/2022",
+    "h": "Sheffield Wednesday",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "13/09/2022",
+    "h": "Barnsley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 2,
+    "d": "13/09/2022",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Forest Green Rovers",
+    "ag": 1,
+    "d": "13/09/2022",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cambridge United",
+    "ag": 1,
+    "d": "13/09/2022",
+    "h": "Cheltenham Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "13/09/2022",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 0,
+    "d": "13/09/2022",
+    "h": "Lincoln City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 2,
+    "d": "13/09/2022",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 3,
+    "d": "13/09/2022",
+    "h": "Morecambe",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 1,
+    "d": "13/09/2022",
+    "h": "Peterborough United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 0,
+    "d": "13/09/2022",
+    "h": "Plymouth Argyle",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 2,
+    "d": "13/09/2022",
+    "h": "Shrewsbury Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "13/09/2022",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "06/09/2022",
+    "h": "Forest Green Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "03/09/2022",
+    "h": "Accrington Stanley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "03/09/2022",
+    "h": "Bolton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 2,
+    "d": "03/09/2022",
+    "h": "Bristol Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 0,
+    "d": "03/09/2022",
+    "h": "Cambridge United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Plymouth Argyle",
+    "ag": 3,
+    "d": "03/09/2022",
+    "h": "Derby County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "03/09/2022",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "03/09/2022",
+    "h": "Fleetwood Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 2,
+    "d": "03/09/2022",
+    "h": "Forest Green Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 1,
+    "d": "03/09/2022",
+    "h": "Oxford United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 2,
+    "d": "03/09/2022",
+    "h": "Port Vale",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "03/09/2022",
+    "h": "Portsmouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 2,
+    "d": "03/09/2022",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 0,
+    "d": "27/08/2022",
+    "h": "Accrington Stanley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "27/08/2022",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 3,
+    "d": "27/08/2022",
+    "h": "Cambridge United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 2,
+    "d": "27/08/2022",
+    "h": "Cheltenham Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "27/08/2022",
+    "h": "Derby County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 2,
+    "d": "27/08/2022",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 2,
+    "d": "27/08/2022",
+    "h": "Lincoln City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 4,
+    "d": "27/08/2022",
+    "h": "Morecambe",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "27/08/2022",
+    "h": "Plymouth Argyle",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 1,
+    "d": "27/08/2022",
+    "h": "Port Vale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Forest Green Rovers",
+    "ag": 0,
+    "d": "27/08/2022",
+    "h": "Sheffield Wednesday",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "27/08/2022",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 3,
+    "d": "20/08/2022",
+    "h": "Barnsley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 2,
+    "d": "20/08/2022",
+    "h": "Bolton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 2,
+    "d": "20/08/2022",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cambridge United",
+    "ag": 1,
+    "d": "20/08/2022",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 1,
+    "d": "20/08/2022",
+    "h": "Exeter City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 0,
+    "d": "20/08/2022",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Plymouth Argyle",
+    "ag": 3,
+    "d": "20/08/2022",
+    "h": "Forest Green Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "20/08/2022",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 1,
+    "d": "20/08/2022",
+    "h": "Oxford United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 0,
+    "d": "20/08/2022",
+    "h": "Peterborough United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "20/08/2022",
+    "h": "Portsmouth",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 3,
+    "d": "20/08/2022",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "16/08/2022",
+    "h": "Barnsley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "16/08/2022",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "16/08/2022",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Plymouth Argyle",
+    "ag": 1,
+    "d": "16/08/2022",
+    "h": "Charlton Athletic",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "16/08/2022",
+    "h": "Exeter City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "16/08/2022",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "16/08/2022",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 2,
+    "d": "16/08/2022",
+    "h": "Oxford United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "16/08/2022",
+    "h": "Peterborough United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cambridge United",
+    "ag": 1,
+    "d": "16/08/2022",
+    "h": "Portsmouth",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 0,
+    "d": "16/08/2022",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 0,
+    "d": "13/08/2022",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 4,
+    "d": "13/08/2022",
+    "h": "Accrington Stanley",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 1,
+    "d": "13/08/2022",
+    "h": "Cambridge United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 2,
+    "d": "13/08/2022",
+    "h": "Cheltenham Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "13/08/2022",
+    "h": "Derby County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "13/08/2022",
+    "h": "Ipswich Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Forest Green Rovers",
+    "ag": 1,
+    "d": "13/08/2022",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 1,
+    "d": "13/08/2022",
+    "h": "Morecambe",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 0,
+    "d": "13/08/2022",
+    "h": "Plymouth Argyle",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "13/08/2022",
+    "h": "Port Vale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "13/08/2022",
+    "h": "Sheffield Wednesday",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 2,
+    "d": "13/08/2022",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "06/08/2022",
+    "h": "Barnsley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "06/08/2022",
+    "h": "Bolton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 4,
+    "d": "06/08/2022",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 0,
+    "d": "06/08/2022",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 0,
+    "d": "06/08/2022",
+    "h": "Exeter City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Plymouth Argyle",
+    "ag": 1,
+    "d": "06/08/2022",
+    "h": "Fleetwood Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "06/08/2022",
+    "h": "Forest Green Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 1,
+    "d": "06/08/2022",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cambridge United",
+    "ag": 0,
+    "d": "06/08/2022",
+    "h": "Oxford United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "06/08/2022",
+    "h": "Peterborough United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 0,
+    "d": "06/08/2022",
+    "h": "Portsmouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "06/08/2022",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  }
+]

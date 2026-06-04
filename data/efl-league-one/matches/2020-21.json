@@ -1,0 +1,802 @@
+[
+  {
+    "a": "Blackpool",
+    "ag": 0,
+    "d": "27/10/2020",
+    "h": "AFC Wimbledon",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 3,
+    "d": "27/10/2020",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 0,
+    "d": "27/10/2020",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 1,
+    "d": "27/10/2020",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "27/10/2020",
+    "h": "Ipswich Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wigan Athletic",
+    "ag": 0,
+    "d": "27/10/2020",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 2,
+    "d": "27/10/2020",
+    "h": "Peterborough United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "27/10/2020",
+    "h": "Fleetwood Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "27/10/2020",
+    "h": "Plymouth Argyle",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 2,
+    "d": "24/10/2020",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "24/10/2020",
+    "h": "Blackpool",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 1,
+    "d": "24/10/2020",
+    "h": "Burton Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 2,
+    "d": "24/10/2020",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 2,
+    "d": "24/10/2020",
+    "h": "Hull City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 0,
+    "d": "24/10/2020",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 2,
+    "d": "24/10/2020",
+    "h": "Northampton Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 2,
+    "d": "24/10/2020",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 3,
+    "d": "24/10/2020",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Plymouth Argyle",
+    "ag": 1,
+    "d": "24/10/2020",
+    "h": "Wigan Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "20/10/2020",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 2,
+    "d": "20/10/2020",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 0,
+    "d": "20/10/2020",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "20/10/2020",
+    "h": "Blackpool",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "20/10/2020",
+    "h": "Doncaster Rovers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 0,
+    "d": "20/10/2020",
+    "h": "Hull City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Plymouth Argyle",
+    "ag": 0,
+    "d": "20/10/2020",
+    "h": "Lincoln City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "20/10/2020",
+    "h": "Oxford United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "20/10/2020",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "20/10/2020",
+    "h": "Wigan Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 1,
+    "d": "20/10/2020",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "20/10/2020",
+    "h": "Northampton Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "17/10/2020",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "17/10/2020",
+    "h": "AFC Wimbledon",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 1,
+    "d": "17/10/2020",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wigan Athletic",
+    "ag": 0,
+    "d": "17/10/2020",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackpool",
+    "ag": 1,
+    "d": "17/10/2020",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 0,
+    "d": "17/10/2020",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "17/10/2020",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 0,
+    "d": "17/10/2020",
+    "h": "Peterborough United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Northampton Town",
+    "ag": 1,
+    "d": "17/10/2020",
+    "h": "Plymouth Argyle",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "17/10/2020",
+    "h": "Portsmouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 3,
+    "d": "17/10/2020",
+    "h": "Rochdale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 2,
+    "d": "17/10/2020",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 1,
+    "d": "10/10/2020",
+    "h": "Gillingham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 1,
+    "d": "10/10/2020",
+    "h": "Accrington Stanley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 4,
+    "d": "10/10/2020",
+    "h": "Blackpool",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wigan Athletic",
+    "ag": 0,
+    "d": "10/10/2020",
+    "h": "Crewe Alexandra",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 2,
+    "d": "10/10/2020",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 2,
+    "d": "10/10/2020",
+    "h": "Northampton Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "10/10/2020",
+    "h": "Plymouth Argyle",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "10/10/2020",
+    "h": "Portsmouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 1,
+    "d": "10/10/2020",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "09/10/2020",
+    "h": "Fleetwood Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 2,
+    "d": "03/10/2020",
+    "h": "AFC Wimbledon",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 3,
+    "d": "03/10/2020",
+    "h": "Blackpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Northampton Town",
+    "ag": 0,
+    "d": "03/10/2020",
+    "h": "Bristol Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 4,
+    "d": "03/10/2020",
+    "h": "Burton Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "03/10/2020",
+    "h": "Charlton Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Plymouth Argyle",
+    "ag": 0,
+    "d": "03/10/2020",
+    "h": "Hull City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "03/10/2020",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "03/10/2020",
+    "h": "Peterborough United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 1,
+    "d": "03/10/2020",
+    "h": "Rochdale",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "03/10/2020",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 0,
+    "d": "03/10/2020",
+    "h": "Wigan Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "27/09/2020",
+    "h": "Lincoln City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 4,
+    "d": "26/09/2020",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "26/09/2020",
+    "h": "Crewe Alexandra",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "26/09/2020",
+    "h": "Doncaster Rovers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 1,
+    "d": "26/09/2020",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackpool",
+    "ag": 0,
+    "d": "26/09/2020",
+    "h": "Gillingham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 0,
+    "d": "26/09/2020",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 2,
+    "d": "26/09/2020",
+    "h": "Northampton Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "26/09/2020",
+    "h": "Plymouth Argyle",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wigan Athletic",
+    "ag": 2,
+    "d": "26/09/2020",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 0,
+    "d": "26/09/2020",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 2,
+    "d": "26/09/2020",
+    "h": "Swindon Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 0,
+    "d": "20/09/2020",
+    "h": "Rochdale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Plymouth Argyle",
+    "ag": 4,
+    "d": "19/09/2020",
+    "h": "AFC Wimbledon",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "19/09/2020",
+    "h": "Blackpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "19/09/2020",
+    "h": "Bristol Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "19/09/2020",
+    "h": "Burton Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 3,
+    "d": "19/09/2020",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "19/09/2020",
+    "h": "Hull City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 2,
+    "d": "19/09/2020",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 2,
+    "d": "19/09/2020",
+    "h": "Oxford United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 1,
+    "d": "19/09/2020",
+    "h": "Peterborough United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Northampton Town",
+    "ag": 2,
+    "d": "19/09/2020",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 3,
+    "d": "19/09/2020",
+    "h": "Wigan Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wigan Athletic",
+    "ag": 0,
+    "d": "13/09/2020",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 0,
+    "d": "12/09/2020",
+    "h": "Accrington Stanley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 2,
+    "d": "12/09/2020",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "12/09/2020",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 1,
+    "d": "12/09/2020",
+    "h": "Fleetwood Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 2,
+    "d": "12/09/2020",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 0,
+    "d": "12/09/2020",
+    "h": "Lincoln City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 2,
+    "d": "12/09/2020",
+    "h": "Northampton Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackpool",
+    "ag": 0,
+    "d": "12/09/2020",
+    "h": "Plymouth Argyle",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "12/09/2020",
+    "h": "Portsmouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "12/09/2020",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 1,
+    "d": "12/09/2020",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  }
+]

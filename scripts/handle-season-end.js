@@ -96,50 +96,69 @@ async function main() {
     }
   }
 
-  // Step 2: Detect promotions and relegations
+  // Step 2: Apply promotion/relegation rules
   console.log(`\n🔄 Detecting promotions/relegations...\n`);
 
   const promotions = {};
 
-  // Helper to get league below (where teams are relegated to)
-  function getLeagueBelow(leagueId) {
-    if (leagueId === 'premier-league') return 'championship';
-    if (leagueId === 'championship') return 'efl-league-one';
-    return null;
+  // Promotion/relegation rules
+  const promotionRules = {
+    'premier-league': { relegated: 3, promoted: 3 },
+    'championship': { relegated: 2, promoted: 2 },
+    'efl-league-one': { relegated: 4, promoted: 2 },
+  };
+
+  // Apply promotion/relegation rules
+  // Key insight: promoted/relegated teams must be tracked as:
+  // - Teams LEAVING a league (promoted up or relegated down)
+  // - Teams JOINING a league (promoted down from above or relegated up from below)
+
+  if (standings['premier-league'] && standings['championship']) {
+    // PL: Bottom 3 are relegated DOWN
+    const plStandings = standings['premier-league'];
+    const plRelegated = plStandings.slice(-3).map((s) => s[1]);
+
+    // Championship: Top 2 are promoted UP
+    const chStandings = standings['championship'];
+    const chPromoted = chStandings.slice(0, 2).map((s) => s[1]);
+
+    // Track teams leaving/entering each league
+    promotions['premier-league'] = promotions['premier-league'] || {};
+    promotions['premier-league'].leaving = plRelegated; // Teams leaving PL → Championship
+    promotions['premier-league'].joining = chPromoted; // Teams joining PL ← Championship
+
+    promotions['championship'] = promotions['championship'] || {};
+    promotions['championship'].leaving = chPromoted; // Teams leaving Championship → PL
+    promotions['championship'].joining = promotions['championship'].joining || [];
+    promotions['championship'].joining = promotions['championship'].joining.concat(plRelegated); // Teams joining Championship ← PL
+
+    console.log(`  Premier League:`);
+    console.log(`     ↓ Relegated to Championship: ${plRelegated.join(', ')}`);
+    console.log(`  Championship:`);
+    console.log(`     ↑ Promoted to Premier League: ${chPromoted.join(', ')}`);
   }
 
-  // Helper to get league above (where teams are promoted to)
-  function getLeagueAbove(leagueId) {
-    if (leagueId === 'efl-league-one') return 'championship';
-    if (leagueId === 'championship') return 'premier-league';
-    return null;
-  }
+  if (standings['championship'] && standings['efl-league-one']) {
+    // Championship: Bottom 2 are relegated DOWN
+    const chStandings = standings['championship'];
+    const chRelegated = chStandings.slice(-2).map((s) => s[1]);
 
-  for (const league of leagues) {
-    const aboveLeague = getLeagueAbove(league);
-    const belowLeague = getLeagueBelow(league);
-    const leagueName =
-      league === 'premier-league' ? 'Premier League' : league === 'championship' ? 'Championship' : 'EFL League One';
+    // League One: Top 2 are promoted UP
+    const leagueOneStandings = standings['efl-league-one'];
+    const leagueOnePromoted = leagueOneStandings.slice(0, 2).map((s) => s[1]);
 
-    console.log(`  ${leagueName}:`);
+    promotions['championship'] = promotions['championship'] || {};
+    promotions['championship'].leaving = (promotions['championship'].leaving || []).concat(chRelegated);
+    promotions['championship'].joining = (promotions['championship'].joining || []).concat(leagueOnePromoted);
 
-    if (aboveLeague && standings[aboveLeague]) {
-      // Teams relegated from league above come to this league
-      const relDetection = detectPromotions(standings[aboveLeague], standings[league], league);
-      promotions[league] = promotions[league] || {};
-      promotions[league].relegatedFrom = aboveLeague;
-      promotions[league].teamsMovingDown = relDetection.promoted;
-      console.log(`     ↓ Teams from ${aboveLeague}: ${relDetection.promoted.join(', ')}`);
-    }
+    promotions['efl-league-one'] = promotions['efl-league-one'] || {};
+    promotions['efl-league-one'].leaving = leagueOnePromoted; // Teams leaving League One → Championship
+    promotions['efl-league-one'].joining = chRelegated; // Teams joining League One ← Championship
 
-    if (belowLeague && standings[belowLeague]) {
-      // Teams promoted to league above come from this league
-      const promDetection = detectPromotions(standings[league], standings[belowLeague], league);
-      promotions[league] = promotions[league] || {};
-      promotions[league].promotedTo = belowLeague;
-      promotions[league].teamsMovingUp = promDetection.relegated;
-      console.log(`     ↑ Teams to ${belowLeague}: ${promDetection.relegated.join(', ')}`);
-    }
+    console.log(`  Championship:`);
+    console.log(`     ↓ Relegated to League One: ${chRelegated.join(', ')}`);
+    console.log(`  EFL League One:`);
+    console.log(`     ↑ Promoted to Championship: ${leagueOnePromoted.join(', ')}`);
   }
 
   // Step 3: Create next season structure
@@ -166,45 +185,43 @@ async function main() {
     writeJSON(fixturesPath, []);
     console.log(`     ✓ Created empty fixtures file`);
 
-    // Create standings template with promoted teams at the top and relegated teams removed
+    // Create standings template for next season
     let nextSeasonStandings = [];
 
     const currentStandings = standings[league] || [];
-    const teamMovingDown = promotions[league]?.teamsMovingDown || [];
-    const teamMovingUp = promotions[league]?.teamsMovingUp || [];
+    const info = LEAGUE_INFO[league];
 
-    // Start with teams from current season, except those relegated
-    for (const [idx, team] of currentStandings.entries()) {
+    // Get teams leaving this league and teams joining this league
+    const teamsLeaving = promotions[league]?.leaving || [];
+    const teamsJoining = promotions[league]?.joining || [];
+
+    // Remaining teams: from current season, excluding those leaving
+    const remainingTeams = [];
+    for (const team of currentStandings) {
       const teamName = team[1];
-      // Skip teams that are moving up (relegated to lower league)
-      if (!teamMovingUp.includes(teamName)) {
-        nextSeasonStandings.push(team); // Will re-position below
+      if (!teamsLeaving.includes(teamName)) {
+        remainingTeams.push(teamName);
       }
     }
 
-    // Add teams moving down (promoted from league above)
-    for (const teamName of teamMovingDown) {
-      // Add as placeholder with minimal data
-      nextSeasonStandings.unshift([0, teamName, 0, 0, 0, 0, 0, 0, 0]);
-    }
+    // Create new standings: joining teams at top (new promotions), then remaining teams
+    const allTeamsForNextSeason = [...teamsJoining, ...remainingTeams];
 
-    // Re-position all teams from 1 to N
-    nextSeasonStandings = nextSeasonStandings.map((team, idx) => [
-      idx + 1, // Re-position
-      team[1], // Team name
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
+    nextSeasonStandings = allTeamsForNextSeason.map((teamName, idx) => [
+      idx + 1, // Position (1-indexed)
+      teamName, // Team name
+      0, // Played
+      0, // Wins
+      0, // Draws
+      0, // Losses
+      0, // Goals for
+      0, // Goals against
+      0, // Points
     ]);
 
-    const info = LEAGUE_INFO[league];
     if (nextSeasonStandings.length !== info.teams) {
       console.log(
-        `     ⚠️  Expected ${info.teams} teams, got ${nextSeasonStandings.length}. Manual adjustment needed.`
+        `     ⚠️  Expected ${info.teams} teams, got ${nextSeasonStandings.length}. Joining: ${teamsJoining.length}, Remaining: ${remainingTeams.length}`
       );
     }
 
@@ -219,16 +236,24 @@ async function main() {
   const leaguePromotions = readJSON(leaguePromotionsPath, {});
 
   leaguePromotions[active] = {
-    source: 'espn_api',
+    source: 'standings_analysis',
     fetchedAt: new Date().toISOString(),
-    promoted_to_pl: promotions['championship']?.teamsMovingUp || [],
-    promoted_to_championship: promotions['efl-league-one']?.teamsMovingUp || [],
-    relegated_from_pl: promotions['championship']?.teamsMovingDown || [],
-    relegated_from_championship: promotions['efl-league-one']?.teamsMovingDown || [],
+    promoted_to_pl: promotions['championship']?.leaving || [],
+    promoted_to_championship: promotions['efl-league-one']?.leaving || [],
+    relegated_from_pl: promotions['premier-league']?.leaving || [],
+    relegated_from_championship: promotions['championship']?.leaving?.filter(
+      (t) => !(promotions['championship']?.joining || []).includes(t)
+    ) || [],
   };
 
   writeJSON(leaguePromotionsPath, leaguePromotions);
-  console.log(`  ✓ Updated league-promotions.json with ${active} season results\n`);
+  console.log(`  ✓ Updated league-promotions.json with ${active} season results`);
+  console.log(`    - Promoted to PL: ${(promotions['championship']?.leaving || []).join(', ') || 'None'}`);
+  console.log(`    - Relegated from PL: ${(promotions['premier-league']?.leaving || []).join(', ') || 'None'}`);
+  console.log(`    - Promoted to Championship: ${(promotions['efl-league-one']?.leaving || []).join(', ') || 'None'}`);
+
+  const chRelegated = (promotions['championship']?.leaving || []).filter((t) => !(promotions['championship']?.joining || []).includes(t));
+  console.log(`    - Relegated from Championship: ${chRelegated.join(', ') || 'None'}\n`);
 
   console.log(`✅ Season-end automation complete!`);
   console.log(`\n📝 Next steps:`);

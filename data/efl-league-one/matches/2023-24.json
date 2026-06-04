@@ -1,0 +1,802 @@
+[
+  {
+    "a": "Reading",
+    "ag": 1,
+    "d": "23/09/2023",
+    "h": "Blackpool",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "23/09/2023",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wigan Athletic",
+    "ag": 1,
+    "d": "23/09/2023",
+    "h": "Bristol Rovers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 1,
+    "d": "23/09/2023",
+    "h": "Burton Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "23/09/2023",
+    "h": "Cambridge United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 2,
+    "d": "23/09/2023",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "23/09/2023",
+    "h": "Charlton Athletic",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 3,
+    "d": "23/09/2023",
+    "h": "Cheltenham Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "23/09/2023",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 2,
+    "d": "23/09/2023",
+    "h": "Northampton Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 0,
+    "d": "23/09/2023",
+    "h": "Oxford United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 3,
+    "d": "19/09/2023",
+    "h": "Barnsley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "19/09/2023",
+    "h": "Peterborough United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 3,
+    "d": "19/09/2023",
+    "h": "Port Vale",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "16/09/2023",
+    "h": "Barnsley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 1,
+    "d": "16/09/2023",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "16/09/2023",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 3,
+    "d": "16/09/2023",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "16/09/2023",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "16/09/2023",
+    "h": "Peterborough United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Northampton Town",
+    "ag": 0,
+    "d": "16/09/2023",
+    "h": "Port Vale",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "16/09/2023",
+    "h": "Reading",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 2,
+    "d": "16/09/2023",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "16/09/2023",
+    "h": "Stevenage",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cambridge United",
+    "ag": 1,
+    "d": "16/09/2023",
+    "h": "Wigan Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackpool",
+    "ag": 0,
+    "d": "16/09/2023",
+    "h": "Wycombe Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 2,
+    "d": "09/09/2023",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "09/09/2023",
+    "h": "Stevenage",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 0,
+    "d": "04/09/2023",
+    "h": "Cambridge United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wigan Athletic",
+    "ag": 1,
+    "d": "02/09/2023",
+    "h": "Blackpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "02/09/2023",
+    "h": "Bolton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 1,
+    "d": "02/09/2023",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 1,
+    "d": "02/09/2023",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "02/09/2023",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 1,
+    "d": "02/09/2023",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 2,
+    "d": "02/09/2023",
+    "h": "Cheltenham Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 3,
+    "d": "02/09/2023",
+    "h": "Leyton Orient",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "02/09/2023",
+    "h": "Northampton Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 2,
+    "d": "02/09/2023",
+    "h": "Oxford United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "02/09/2023",
+    "h": "Portsmouth",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "26/08/2023",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "26/08/2023",
+    "h": "Burton Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Northampton Town",
+    "ag": 1,
+    "d": "26/08/2023",
+    "h": "Cheltenham Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 1,
+    "d": "26/08/2023",
+    "h": "Exeter City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "26/08/2023",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cambridge United",
+    "ag": 0,
+    "d": "26/08/2023",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackpool",
+    "ag": 0,
+    "d": "26/08/2023",
+    "h": "Lincoln City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "26/08/2023",
+    "h": "Oxford United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 4,
+    "d": "26/08/2023",
+    "h": "Peterborough United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "26/08/2023",
+    "h": "Port Vale",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 0,
+    "d": "26/08/2023",
+    "h": "Stevenage",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 2,
+    "d": "26/08/2023",
+    "h": "Wigan Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wigan Athletic",
+    "ag": 4,
+    "d": "19/08/2023",
+    "h": "Bolton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 3,
+    "d": "19/08/2023",
+    "h": "Barnsley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "19/08/2023",
+    "h": "Blackpool",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "19/08/2023",
+    "h": "Cambridge United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 2,
+    "d": "19/08/2023",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 3,
+    "d": "19/08/2023",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 0,
+    "d": "19/08/2023",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 0,
+    "d": "19/08/2023",
+    "h": "Northampton Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "19/08/2023",
+    "h": "Portsmouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 0,
+    "d": "19/08/2023",
+    "h": "Reading",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 1,
+    "d": "19/08/2023",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "19/08/2023",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 3,
+    "d": "15/08/2023",
+    "h": "Barnsley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 0,
+    "d": "15/08/2023",
+    "h": "Blackpool",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 1,
+    "d": "15/08/2023",
+    "h": "Bolton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 2,
+    "d": "15/08/2023",
+    "h": "Cambridge United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wigan Athletic",
+    "ag": 1,
+    "d": "15/08/2023",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 2,
+    "d": "15/08/2023",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 2,
+    "d": "15/08/2023",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 2,
+    "d": "15/08/2023",
+    "h": "Northampton Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 1,
+    "d": "15/08/2023",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 2,
+    "d": "15/08/2023",
+    "h": "Wycombe Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 0,
+    "d": "15/08/2023",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "15/08/2023",
+    "h": "Reading",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "12/08/2023",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 3,
+    "d": "12/08/2023",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 3,
+    "d": "12/08/2023",
+    "h": "Cheltenham Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackpool",
+    "ag": 0,
+    "d": "12/08/2023",
+    "h": "Exeter City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cambridge United",
+    "ag": 2,
+    "d": "12/08/2023",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 4,
+    "d": "12/08/2023",
+    "h": "Leyton Orient",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "12/08/2023",
+    "h": "Lincoln City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "12/08/2023",
+    "h": "Oxford United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "12/08/2023",
+    "h": "Peterborough United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 0,
+    "d": "12/08/2023",
+    "h": "Port Vale",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "12/08/2023",
+    "h": "Stevenage",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Northampton Town",
+    "ag": 1,
+    "d": "12/08/2023",
+    "h": "Wigan Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 0,
+    "d": "05/08/2023",
+    "h": "Barnsley",
+    "hg": 7,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "05/08/2023",
+    "h": "Blackpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 0,
+    "d": "05/08/2023",
+    "h": "Bolton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 0,
+    "d": "05/08/2023",
+    "h": "Cambridge United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 1,
+    "d": "05/08/2023",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "05/08/2023",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wigan Athletic",
+    "ag": 2,
+    "d": "05/08/2023",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 1,
+    "d": "05/08/2023",
+    "h": "Northampton Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "05/08/2023",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "05/08/2023",
+    "h": "Reading",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "05/08/2023",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 3,
+    "d": "05/08/2023",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  }
+]

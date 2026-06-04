@@ -1,0 +1,802 @@
+[
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "30/09/2023",
+    "h": "Southampton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stoke City",
+    "ag": 3,
+    "d": "30/09/2023",
+    "h": "Bristol City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rotherham United",
+    "ag": 0,
+    "d": "30/09/2023",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 3,
+    "d": "29/09/2023",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "25/09/2023",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 3,
+    "d": "24/09/2023",
+    "h": "Stoke City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "24/09/2023",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 3,
+    "d": "23/09/2023",
+    "h": "Ipswich Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 0,
+    "d": "23/09/2023",
+    "h": "Leeds United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 0,
+    "d": "23/09/2023",
+    "h": "Leicester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "23/09/2023",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 2,
+    "d": "23/09/2023",
+    "h": "Plymouth Argyle",
+    "hg": 6,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "23/09/2023",
+    "h": "Rotherham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "23/09/2023",
+    "h": "Swansea City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "23/09/2023",
+    "h": "West Bromwich Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "22/09/2023",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 3,
+    "d": "20/09/2023",
+    "h": "Blackburn Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stoke City",
+    "ag": 2,
+    "d": "20/09/2023",
+    "h": "Huddersfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "20/09/2023",
+    "h": "Hull City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rotherham United",
+    "ag": 0,
+    "d": "20/09/2023",
+    "h": "Millwall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 2,
+    "d": "20/09/2023",
+    "h": "Watford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 2,
+    "d": "20/09/2023",
+    "h": "Norwich City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Plymouth Argyle",
+    "ag": 1,
+    "d": "19/09/2023",
+    "h": "Bristol City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 2,
+    "d": "19/09/2023",
+    "h": "Cardiff City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "19/09/2023",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swansea City",
+    "ag": 1,
+    "d": "19/09/2023",
+    "h": "Queens Park Rangers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "19/09/2023",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "19/09/2023",
+    "h": "Sheffield Wednesday",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 3,
+    "d": "17/09/2023",
+    "h": "Millwall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "16/09/2023",
+    "h": "Blackburn Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 0,
+    "d": "16/09/2023",
+    "h": "Bristol City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rotherham United",
+    "ag": 0,
+    "d": "16/09/2023",
+    "h": "Huddersfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stoke City",
+    "ag": 0,
+    "d": "16/09/2023",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Plymouth Argyle",
+    "ag": 1,
+    "d": "16/09/2023",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 3,
+    "d": "16/09/2023",
+    "h": "Queens Park Rangers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "16/09/2023",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "16/09/2023",
+    "h": "Watford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swansea City",
+    "ag": 0,
+    "d": "16/09/2023",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 1,
+    "d": "15/09/2023",
+    "h": "Hull City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 4,
+    "d": "15/09/2023",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "02/09/2023",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "02/09/2023",
+    "h": "Sunderland",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 2,
+    "d": "02/09/2023",
+    "h": "Swansea City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 3,
+    "d": "02/09/2023",
+    "h": "Coventry City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 2,
+    "d": "02/09/2023",
+    "h": "Ipswich Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "02/09/2023",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "02/09/2023",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 2,
+    "d": "02/09/2023",
+    "h": "Middlesbrough",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 0,
+    "d": "02/09/2023",
+    "h": "Plymouth Argyle",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "02/09/2023",
+    "h": "Rotherham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 2,
+    "d": "02/09/2023",
+    "h": "Stoke City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 2,
+    "d": "02/09/2023",
+    "h": "West Bromwich Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 1,
+    "d": "27/08/2023",
+    "h": "Watford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Plymouth Argyle",
+    "ag": 1,
+    "d": "26/08/2023",
+    "h": "Birmingham City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 1,
+    "d": "26/08/2023",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "26/08/2023",
+    "h": "Coventry City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 4,
+    "d": "26/08/2023",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 4,
+    "d": "26/08/2023",
+    "h": "Ipswich Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stoke City",
+    "ag": 0,
+    "d": "26/08/2023",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swansea City",
+    "ag": 1,
+    "d": "26/08/2023",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 2,
+    "d": "26/08/2023",
+    "h": "Rotherham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 1,
+    "d": "26/08/2023",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 2,
+    "d": "26/08/2023",
+    "h": "West Bromwich Albion",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 1,
+    "d": "25/08/2023",
+    "h": "Hull City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "20/08/2023",
+    "h": "Norwich City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 2,
+    "d": "19/08/2023",
+    "h": "Plymouth Argyle",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 2,
+    "d": "19/08/2023",
+    "h": "Blackburn Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 2,
+    "d": "19/08/2023",
+    "h": "Bristol City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "19/08/2023",
+    "h": "Leicester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "19/08/2023",
+    "h": "Middlesbrough",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "19/08/2023",
+    "h": "Queens Park Rangers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "19/08/2023",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 0,
+    "d": "19/08/2023",
+    "h": "Stoke City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rotherham United",
+    "ag": 1,
+    "d": "19/08/2023",
+    "h": "Sunderland",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 1,
+    "d": "19/08/2023",
+    "h": "Swansea City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 1,
+    "d": "18/08/2023",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "12/08/2023",
+    "h": "Coventry City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "12/08/2023",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 2,
+    "d": "12/08/2023",
+    "h": "Cardiff City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "12/08/2023",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 2,
+    "d": "12/08/2023",
+    "h": "Hull City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stoke City",
+    "ag": 0,
+    "d": "12/08/2023",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 1,
+    "d": "12/08/2023",
+    "h": "Millwall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "12/08/2023",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 2,
+    "d": "12/08/2023",
+    "h": "Rotherham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 4,
+    "d": "12/08/2023",
+    "h": "Southampton",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Plymouth Argyle",
+    "ag": 0,
+    "d": "12/08/2023",
+    "h": "Watford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swansea City",
+    "ag": 2,
+    "d": "12/08/2023",
+    "h": "West Bromwich Albion",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 1,
+    "d": "06/08/2023",
+    "h": "Leicester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 2,
+    "d": "06/08/2023",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "06/08/2023",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 1,
+    "d": "05/08/2023",
+    "h": "Blackburn Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "05/08/2023",
+    "h": "Bristol City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "05/08/2023",
+    "h": "Middlesbrough",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "05/08/2023",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "05/08/2023",
+    "h": "Plymouth Argyle",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rotherham United",
+    "ag": 1,
+    "d": "05/08/2023",
+    "h": "Stoke City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "05/08/2023",
+    "h": "Swansea City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "05/08/2023",
+    "h": "Watford",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 2,
+    "d": "04/08/2023",
+    "h": "Sheffield Wednesday",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  }
+]

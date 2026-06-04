@@ -1,0 +1,802 @@
+[
+  {
+    "a": "Norwich City",
+    "ag": 3,
+    "d": "31/10/2020",
+    "h": "Bristol City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "31/10/2020",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 2,
+    "d": "30/10/2020",
+    "h": "Coventry City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "28/10/2020",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 0,
+    "d": "28/10/2020",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "28/10/2020",
+    "h": "Birmingham City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "28/10/2020",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "28/10/2020",
+    "h": "Luton Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "28/10/2020",
+    "h": "Rotherham United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "27/10/2020",
+    "h": "Barnsley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 4,
+    "d": "27/10/2020",
+    "h": "Blackburn Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "27/10/2020",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 0,
+    "d": "27/10/2020",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stoke City",
+    "ag": 0,
+    "d": "27/10/2020",
+    "h": "Swansea City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 1,
+    "d": "27/10/2020",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "24/10/2020",
+    "h": "Watford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swansea City",
+    "ag": 1,
+    "d": "24/10/2020",
+    "h": "Bristol City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "24/10/2020",
+    "h": "Cardiff City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 4,
+    "d": "24/10/2020",
+    "h": "Coventry City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 2,
+    "d": "24/10/2020",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "24/10/2020",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "24/10/2020",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "24/10/2020",
+    "h": "Queens Park Rangers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rotherham United",
+    "ag": 0,
+    "d": "24/10/2020",
+    "h": "Reading",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Luton Town",
+    "ag": 1,
+    "d": "24/10/2020",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "24/10/2020",
+    "h": "Stoke City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "23/10/2020",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "21/10/2020",
+    "h": "Cardiff City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 2,
+    "d": "21/10/2020",
+    "h": "Queens Park Rangers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "21/10/2020",
+    "h": "Sheffield Wednesday",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 2,
+    "d": "21/10/2020",
+    "h": "Stoke City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 1,
+    "d": "21/10/2020",
+    "h": "Watford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "20/10/2020",
+    "h": "Bristol City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swansea City",
+    "ag": 1,
+    "d": "20/10/2020",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 0,
+    "d": "20/10/2020",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Luton Town",
+    "ag": 0,
+    "d": "20/10/2020",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "20/10/2020",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rotherham United",
+    "ag": 1,
+    "d": "20/10/2020",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "20/10/2020",
+    "h": "Reading",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "18/10/2020",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "17/10/2020",
+    "h": "AFC Bournemouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 2,
+    "d": "17/10/2020",
+    "h": "Barnsley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 1,
+    "d": "17/10/2020",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "17/10/2020",
+    "h": "Blackburn Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 0,
+    "d": "17/10/2020",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stoke City",
+    "ag": 2,
+    "d": "17/10/2020",
+    "h": "Luton Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 0,
+    "d": "17/10/2020",
+    "h": "Middlesbrough",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 2,
+    "d": "17/10/2020",
+    "h": "Rotherham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 2,
+    "d": "17/10/2020",
+    "h": "Swansea City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "17/10/2020",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 1,
+    "d": "16/10/2020",
+    "h": "Derby County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 4,
+    "d": "04/10/2020",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "04/10/2020",
+    "h": "Stoke City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "03/10/2020",
+    "h": "Norwich City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "03/10/2020",
+    "h": "Blackburn Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "03/10/2020",
+    "h": "Luton Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "03/10/2020",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 2,
+    "d": "03/10/2020",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 0,
+    "d": "03/10/2020",
+    "h": "Reading",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "03/10/2020",
+    "h": "Rotherham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 1,
+    "d": "03/10/2020",
+    "h": "Sheffield Wednesday",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "03/10/2020",
+    "h": "Swansea City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 3,
+    "d": "02/10/2020",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "27/09/2020",
+    "h": "Bristol City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 0,
+    "d": "27/09/2020",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Luton Town",
+    "ag": 0,
+    "d": "26/09/2020",
+    "h": "Watford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swansea City",
+    "ag": 2,
+    "d": "26/09/2020",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 0,
+    "d": "26/09/2020",
+    "h": "Barnsley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rotherham United",
+    "ag": 1,
+    "d": "26/09/2020",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 2,
+    "d": "26/09/2020",
+    "h": "Cardiff City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 4,
+    "d": "26/09/2020",
+    "h": "Derby County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "26/09/2020",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stoke City",
+    "ag": 1,
+    "d": "26/09/2020",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "26/09/2020",
+    "h": "Queens Park Rangers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "25/09/2020",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 2,
+    "d": "20/09/2020",
+    "h": "Stoke City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 2,
+    "d": "19/09/2020",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "19/09/2020",
+    "h": "Blackburn Rovers",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "19/09/2020",
+    "h": "Brentford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "19/09/2020",
+    "h": "Luton Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "19/09/2020",
+    "h": "Middlesbrough",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 2,
+    "d": "19/09/2020",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 0,
+    "d": "19/09/2020",
+    "h": "Reading",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "19/09/2020",
+    "h": "Rotherham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 0,
+    "d": "19/09/2020",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "19/09/2020",
+    "h": "Swansea City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 2,
+    "d": "18/09/2020",
+    "h": "Coventry City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "12/09/2020",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rotherham United",
+    "ag": 1,
+    "d": "12/09/2020",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 2,
+    "d": "12/09/2020",
+    "h": "AFC Bournemouth",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Luton Town",
+    "ag": 1,
+    "d": "12/09/2020",
+    "h": "Barnsley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 1,
+    "d": "12/09/2020",
+    "h": "Bristol City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 2,
+    "d": "12/09/2020",
+    "h": "Cardiff City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 2,
+    "d": "12/09/2020",
+    "h": "Derby County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "12/09/2020",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stoke City",
+    "ag": 0,
+    "d": "12/09/2020",
+    "h": "Millwall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swansea City",
+    "ag": 1,
+    "d": "12/09/2020",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "12/09/2020",
+    "h": "Queens Park Rangers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "11/09/2020",
+    "h": "Watford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "04/08/2020",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FINAL_AET"
+  }
+]

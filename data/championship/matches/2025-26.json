@@ -1,9 +1,801 @@
 [
   {
-    "a": "Middlesbrough",
+    "a": "Stoke City",
+    "ag": 1,
+    "d": "04/10/2025",
+    "h": "Blackburn Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
     "ag": 0,
-    "d": "23/05/2026",
+    "d": "04/10/2025",
     "h": "Hull City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 5,
+    "d": "04/10/2025",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 2,
+    "d": "04/10/2025",
+    "h": "Bristol City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "03/10/2025",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 4,
+    "d": "01/10/2025",
+    "h": "Millwall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 1,
+    "d": "01/10/2025",
+    "h": "Norwich City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 2,
+    "d": "01/10/2025",
+    "h": "Portsmouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 0,
+    "d": "01/10/2025",
+    "h": "Queens Park Rangers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 2,
+    "d": "30/09/2025",
+    "h": "Birmingham City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swansea City",
+    "ag": 2,
+    "d": "30/09/2025",
+    "h": "Blackburn Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "30/09/2025",
+    "h": "Bristol City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 2,
+    "d": "30/09/2025",
+    "h": "Hull City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 1,
+    "d": "30/09/2025",
+    "h": "Leicester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stoke City",
+    "ag": 0,
+    "d": "30/09/2025",
+    "h": "Middlesbrough",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 2,
+    "d": "30/09/2025",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "30/09/2025",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "27/09/2025",
+    "h": "Coventry City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "27/09/2025",
+    "h": "Swansea City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "27/09/2025",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 0,
+    "d": "27/09/2025",
+    "h": "Charlton Athletic",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 1,
+    "d": "27/09/2025",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "27/09/2025",
+    "h": "Oxford United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 0,
+    "d": "27/09/2025",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 1,
+    "d": "27/09/2025",
+    "h": "Sheffield Wednesday",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "27/09/2025",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "27/09/2025",
+    "h": "Stoke City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "27/09/2025",
+    "h": "Watford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "26/09/2025",
+    "h": "West Bromwich Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 0,
+    "d": "22/09/2025",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 3,
+    "d": "21/09/2025",
+    "h": "Bristol City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swansea City",
+    "ag": 0,
+    "d": "20/09/2025",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 0,
+    "d": "20/09/2025",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stoke City",
+    "ag": 0,
+    "d": "20/09/2025",
+    "h": "Queens Park Rangers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "20/09/2025",
+    "h": "Derby County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "20/09/2025",
+    "h": "Hull City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 3,
+    "d": "20/09/2025",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 2,
+    "d": "20/09/2025",
+    "h": "Portsmouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "20/09/2025",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 1,
+    "d": "19/09/2025",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 0,
+    "d": "14/09/2025",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "13/09/2025",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 2,
+    "d": "13/09/2025",
+    "h": "Oxford United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 2,
+    "d": "13/09/2025",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "13/09/2025",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 3,
+    "d": "13/09/2025",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "13/09/2025",
+    "h": "Stoke City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 2,
+    "d": "13/09/2025",
+    "h": "Swansea City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 1,
+    "d": "13/09/2025",
+    "h": "Watford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "13/09/2025",
+    "h": "West Bromwich Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 3,
+    "d": "13/09/2025",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "12/09/2025",
+    "h": "Ipswich Town",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "30/08/2025",
+    "h": "Middlesbrough",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "30/08/2025",
+    "h": "Queens Park Rangers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 1,
+    "d": "30/08/2025",
+    "h": "Stoke City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 2,
+    "d": "30/08/2025",
+    "h": "Blackburn Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 2,
+    "d": "30/08/2025",
+    "h": "Bristol City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 2,
+    "d": "30/08/2025",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 2,
+    "d": "30/08/2025",
+    "h": "Millwall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 2,
+    "d": "30/08/2025",
+    "h": "Oxford United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "30/08/2025",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swansea City",
+    "ag": 2,
+    "d": "30/08/2025",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 2,
+    "d": "30/08/2025",
+    "h": "Watford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "29/08/2025",
+    "h": "Leicester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "23/08/2025",
+    "h": "Charlton Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 3,
+    "d": "23/08/2025",
+    "h": "Hull City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 1,
+    "d": "23/08/2025",
+    "h": "Swansea City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 0,
+    "d": "23/08/2025",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 1,
+    "d": "23/08/2025",
+    "h": "Coventry City",
+    "hg": 7,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 2,
+    "d": "23/08/2025",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 0,
+    "d": "23/08/2025",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "23/08/2025",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stoke City",
+    "ag": 2,
+    "d": "23/08/2025",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 1,
+    "d": "23/08/2025",
+    "h": "West Bromwich Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 2,
+    "d": "23/08/2025",
+    "h": "Wrexham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 1,
+    "d": "22/08/2025",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "17/08/2025",
+    "h": "Ipswich Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oxford United",
+    "ag": 2,
+    "d": "17/08/2025",
+    "h": "Hull City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 5,
+    "d": "16/08/2025",
+    "h": "Derby County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 2,
+    "d": "16/08/2025",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 3,
+    "d": "16/08/2025",
+    "h": "Wrexham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 2,
+    "d": "16/08/2025",
+    "h": "Blackburn Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "16/08/2025",
+    "h": "Bristol City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 3,
+    "d": "16/08/2025",
+    "h": "Millwall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "16/08/2025",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stoke City",
+    "ag": 3,
+    "d": "16/08/2025",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "16/08/2025",
+    "h": "Swansea City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 1,
+    "d": "16/08/2025",
+    "h": "Watford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 1,
+    "d": "10/08/2025",
+    "h": "Leicester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 0,
+    "d": "09/08/2025",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 0,
+    "d": "09/08/2025",
+    "h": "Coventry City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 1,
+    "d": "09/08/2025",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swansea City",
+    "ag": 0,
+    "d": "09/08/2025",
+    "h": "Middlesbrough",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "09/08/2025",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 1,
+    "d": "09/08/2025",
+    "h": "Oxford United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "09/08/2025",
+    "h": "Queens Park Rangers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "09/08/2025",
+    "h": "Stoke City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 0,
+    "d": "09/08/2025",
+    "h": "West Bromwich Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 4,
+    "d": "09/08/2025",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "08/08/2025",
+    "h": "Birmingham City",
     "hg": 1,
     "status": "STATUS_FULL_TIME"
   }
