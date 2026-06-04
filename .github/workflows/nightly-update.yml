@@ -28,14 +28,34 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Check if today is season end (May 31)
+        id: check_season_end
+        run: |
+          today=$(date -u '+%m-%d')
+          if [ "$today" = "05-31" ]; then
+            echo "is_season_end=true" >> $GITHUB_OUTPUT
+            echo "📅 Today is May 31 - running season-end automation"
+          else
+            echo "is_season_end=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run season-end handler
+        if: steps.check_season_end.outputs.is_season_end == 'true'
+        run: node scripts/handle-season-end.js
+        continue-on-error: true
+
       - name: Fetch latest data from APIs
+        if: steps.check_season_end.outputs.is_season_end != 'true'
         run: npm run fetch
         continue-on-error: true  # Continue even if fetch fails
+
+      - name: Build HTML artifact
+        run: npm run build
 
       - name: Check for data changes
         id: check_changes
         run: |
-          if git diff --quiet data/; then
+          if git diff --quiet data/ static/; then
             echo "has_changes=false" >> $GITHUB_OUTPUT
             echo "No data changes detected"
           else
@@ -43,13 +63,18 @@ jobs:
             echo "Data changes detected"
           fi
 
-      - name: Commit and push data changes
+      - name: Commit and push changes
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           git config user.name "Dashboard Bot"
           git config user.email "bot@example.com"
-          git add data/
-          git commit -m "chore: nightly data update"
+          if [ "${{ steps.check_season_end.outputs.is_season_end }}" = "true" ]; then
+            git add data/ static/league-promotions.json index.html
+            git commit -m "chore: season-end update - new season structure + promotions"
+          else
+            git add data/ index.html
+            git commit -m "chore: nightly data update"
+          fi
           git push
 
       - name: Log run summary

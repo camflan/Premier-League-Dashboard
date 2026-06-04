@@ -1,0 +1,105 @@
+name: Season End Update
+
+# Triggered on May 31st at 4 AM UTC (end of Premier League season)
+# Also can be manually triggered via workflow_dispatch
+on:
+  schedule:
+    - cron: '0 4 31 5 *'  # 4 AM UTC on May 31
+  workflow_dispatch:
+    inputs:
+      dryRun:
+        description: 'Dry run (no commit)'
+        required: false
+        default: 'false'
+
+jobs:
+  season_end:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run season-end handler
+        run: node scripts/handle-season-end.js
+
+      - name: Build HTML artifact
+        run: npm run build
+
+      - name: Validate data integrity
+        run: |
+          # Basic validation: check that all season files exist and are valid JSON
+          node -e "
+            const fs = require('fs');
+            const path = require('path');
+            const dataDir = 'data';
+            let validCount = 0;
+            let errorCount = 0;
+
+            const checkDir = (dir) => {
+              if (!fs.existsSync(dir)) return;
+              for (const file of fs.readdirSync(dir)) {
+                const filePath = path.join(dir, file);
+                if (fs.statSync(filePath).isDirectory()) {
+                  checkDir(filePath);
+                } else if (file.endsWith('.json')) {
+                  try {
+                    JSON.parse(fs.readFileSync(filePath, 'utf8'));
+                    validCount++;
+                  } catch (e) {
+                    console.error('Invalid JSON:', filePath, e.message);
+                    errorCount++;
+                  }
+                }
+              }
+            };
+
+            checkDir(dataDir);
+            console.log(\`Validated \${validCount} JSON files, \${errorCount} errors\`);
+            process.exit(errorCount > 0 ? 1 : 0);
+          "
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit changes
+        if: steps.check_changes.outputs.changed == 'true' && github.event.inputs.dryRun != 'true'
+        run: |
+          git config user.name "Dashboard Bot"
+          git config user.email "bot@anthropic.com"
+          git add data/ static/league-promotions.json index.html
+          git commit -m "chore: season-end update - new season structure + promotions"
+
+      - name: Push changes
+        if: steps.check_changes.outputs.changed == 'true' && github.event.inputs.dryRun != 'true'
+        run: |
+          git push
+
+      - name: Create summary
+        if: always()
+        run: |
+          echo "## Season End Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Status" >> $GITHUB_STEP_SUMMARY
+          echo "- Changes detected: ${{ steps.check_changes.outputs.changed }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Dry run: ${{ github.event.inputs.dryRun }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Files Generated" >> $GITHUB_STEP_SUMMARY
+          echo "- New season standings (all leagues)" >> $GITHUB_STEP_SUMMARY
+          echo "- Empty matches/fixtures files" >> $GITHUB_STEP_SUMMARY
+          echo "- Updated promotion/relegation info" >> $GITHUB_STEP_SUMMARY
+          echo "- Rebuilt index.html" >> $GITHUB_STEP_SUMMARY

@@ -145,8 +145,11 @@ function expandSeasons({ from, to }) {
 function seasonsToFetch(args, active) {
   if (args.season) return [args.season];
   if (!args.all) return [active];
+
+  // For --all flag: fetch from fetchFrom (or earliest available) to active season
   const cfg = readJSON(path.join(staticDir, 'seasons.json'), {});
-  const from = cfg.fetchFrom || active;
+  const from = cfg.fetchFrom || '2003-04'; // Default to 2003-04 for historical data
+
   return expandSeasons({ from, to: active });
 }
 

@@ -1,0 +1,108 @@
+name: Fetch Historical Data
+
+# Manual trigger for bulk historical data fetching
+# Useful for fetching Championship/League One matches from past seasons
+on:
+  workflow_dispatch:
+    inputs:
+      league:
+        description: 'League (championship, efl-league-one)'
+        required: true
+        default: 'championship'
+        type: choice
+        options:
+          - championship
+          - efl-league-one
+      from_year:
+        description: 'Start year (e.g., 2003)'
+        required: true
+        type: string
+      to_year:
+        description: 'End year (e.g., 2015)'
+        required: true
+        type: string
+
+jobs:
+  historical_fetch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Fetch historical data
+        run: node scripts/fetch-historical.js --league=${{ github.event.inputs.league }} --from-year=${{ github.event.inputs.from_year }} --to-year=${{ github.event.inputs.to_year }}
+
+      - name: Build HTML artifact
+        run: npm run build
+
+      - name: Validate data
+        run: |
+          node -e "
+            const fs = require('fs');
+            const path = require('path');
+            const dataDir = 'data/${{ github.event.inputs.league }}/matches';
+
+            if (!fs.existsSync(dataDir)) {
+              console.log('No matches directory created');
+              process.exit(0);
+            }
+
+            const files = fs.readdirSync(dataDir);
+            console.log(\`Found \${files.length} match files\`);
+
+            let totalMatches = 0;
+            for (const file of files) {
+              try {
+                const data = JSON.parse(fs.readFileSync(path.join(dataDir, file), 'utf8'));
+                totalMatches += data.length;
+                console.log(\`  \${file}: \${data.length} matches\`);
+              } catch (e) {
+                console.error(\`  ERROR in \${file}: \${e.message}\`);
+              }
+            }
+
+            console.log(\`Total matches fetched: \${totalMatches}\`);
+          "
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet data/; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config user.name "Dashboard Bot"
+          git config user.email "bot@anthropic.com"
+          git add data/ index.html
+          git commit -m "chore: historical fetch - ${{ github.event.inputs.league }} (${{ github.event.inputs.from_year }}-${{ github.event.inputs.to_year }})"
+
+      - name: Push changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: git push
+
+      - name: Create summary
+        if: always()
+        run: |
+          echo "## Historical Data Fetch Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Parameters" >> $GITHUB_STEP_SUMMARY
+          echo "- League: ${{ github.event.inputs.league }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Years: ${{ github.event.inputs.from_year }}-${{ github.event.inputs.to_year }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Status" >> $GITHUB_STEP_SUMMARY
+          echo "- Data changes: ${{ steps.check_changes.outputs.changed }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Changes committed: ${{ steps.check_changes.outputs.changed == 'true' }}" >> $GITHUB_STEP_SUMMARY

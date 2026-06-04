@@ -132,6 +132,89 @@ export async function getMatchResults(team = null, limit = 100, leagueEspnId = '
   }
 }
 
+// Get historical match results for a specific date range.
+// Fetches completed matches between startDate and endDate (ISO format: YYYY-MM-DD).
+// Returns matches in canonical format or null/empty array on failure.
+export async function getMatchResultsForDateRange(startDate, endDate, leagueEspnId = 'eng.1') {
+  try {
+    const leagueName = leagueEspnId === 'eng.1' ? 'Premier League' : leagueEspnId === 'eng.2' ? 'Championship' : 'EFL League One';
+    console.log(`     🔄 Fetching ${leagueName} matches from ${startDate} to ${endDate}...`);
+
+    // ESPN scoreboard endpoint with date range (format: YYYYMMDDYYYYMMDD)
+    const startDateFormatted = startDate.replace(/-/g, '');
+    const endDateFormatted = endDate.replace(/-/g, '');
+    const dateRange = `${startDateFormatted}-${endDateFormatted}`;
+
+    const endpoints = [
+      `https://site.api.espn.com/apis/site/v2/sports/soccer/${leagueEspnId}/scoreboard?dates=${dateRange}`,
+      `https://www.espn.com/soccer/api/site/v2/competitions/${leagueEspnId.split('.')[0]}/events?dates=${dateRange}`,
+    ];
+
+    for (const endpoint of endpoints) {
+      try {
+        const response = await fetch(endpoint);
+        if (!response.ok) {
+          continue;
+        }
+
+        const data = await response.json();
+        const events = data.events ?? [];
+
+        if (events.length === 0) {
+          continue;
+        }
+
+        const matches = [];
+        const [startYear, startMonth, startDay] = startDate.split('-').map(Number);
+        const [endYear, endMonth, endDay] = endDate.split('-').map(Number);
+        const rangeStart = new Date(startYear, startMonth - 1, startDay);
+        const rangeEnd = new Date(endYear, endMonth - 1, endDay);
+
+        for (const event of events) {
+          const status = event.status?.type?.name;
+          // Include only finished matches (not scheduled)
+          if (!status || status === 'STATUS_SCHEDULED') continue;
+
+          const sides = parseEvent(event);
+          if (!sides) continue;
+
+          const eventDate = new Date(event.date);
+          // Double-check date is in range
+          if (eventDate < rangeStart || eventDate > rangeEnd) continue;
+
+          matches.push({
+            a: sides.away.team?.displayName || sides.away.team?.name,
+            ag: parseInt(sides.away.score, 10) || 0,
+            d: eventDate.toLocaleDateString('en-GB'), // DD/MM/YYYY
+            h: sides.home.team?.displayName || sides.home.team?.name,
+            hg: parseInt(sides.home.score, 10) || 0,
+            status,
+          });
+        }
+
+        if (matches.length > 0) {
+          // Sort by date descending (most recent first)
+          matches.sort((a, b) => {
+            const da = new Date(a.d.split('/').reverse().join('-'));
+            const db = new Date(b.d.split('/').reverse().join('-'));
+            return db - da;
+          });
+          console.log(`       ✓ Got ${matches.length} matches`);
+          return matches;
+        }
+      } catch (e) {
+        // Try next endpoint
+      }
+    }
+
+    console.log(`       ℹ️  No matches found in date range`);
+    return [];
+  } catch (error) {
+    console.error(`     ❌ Error fetching historical matches: ${error.message}`);
+    return null;
+  }
+}
+
 // Get upcoming fixtures
 export async function getFixtures(daysAhead = 30, leagueEspnId = 'eng.1') {
   try {
@@ -216,5 +299,6 @@ export default {
   getFixtures,
   getLeagueStandings,
   getMatchResults,
+  getMatchResultsForDateRange,
   healthCheck,
 };

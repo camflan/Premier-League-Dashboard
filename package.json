@@ -8,10 +8,12 @@
     "extract": "node scripts/extract-data.js",
     "build": "node scripts/build-html.js",
     "fetch": "node scripts/fetcher.js",
+    "fetch-historical": "node scripts/fetch-historical.js",
     "fetch-logos": "node scripts/fetchers/fetch-logos.js",
     "dev": "npm run build && npx http-server --port 8000",
     "test": "node scripts/test.js",
     "validate": "node scripts/validate-data.js",
+    "season-end": "node scripts/handle-season-end.js",
     "lint": "biome check",
     "format": "biome format --write",
     "fix": "biome check --write"
