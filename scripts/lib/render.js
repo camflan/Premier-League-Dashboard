@@ -9,7 +9,8 @@ export function renderHTML(data, template) {
   const activeShort = data.activeSeason.slice(2); // "2025-26" → "25-26"
   const activeShortSlash = activeShort.replace('-', '/'); // → "25/26"
 
-  const injection = `window.__DATA = ${JSON.stringify(data, null, 2)};`;
+  // Compact stringify — pretty-printing the embedded data roughly doubles page size
+  const injection = `window.__DATA = ${JSON.stringify(data)};`;
   return template
     .replace(INJECTION_MARKER, injection)
     .replaceAll('{{ACTIVE_SEASON_SHORT}}', activeShortSlash);
