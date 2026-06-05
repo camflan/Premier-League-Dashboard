@@ -2390,6 +2390,13 @@ function updateHeaderHeight() {
 }
 
 // Init
+// Initialize league display to match selectedLeague (from localStorage or default)
+const initialLeague = LEAGUES.find(l => l.id === selectedLeague);
+if (initialLeague) {
+  document.getElementById('leagueNameSpan').textContent = initialLeague.name;
+  document.getElementById('leagueNameSpan').style.color = initialLeague.color;
+}
+
 // Populate league selector dropdown
 populateLeagueSelector();
 
@@ -2442,6 +2449,13 @@ function populateYearDropdown() {
 }
 
 populateYearDropdown();
+
+// Default to latest season (first in the list since getSeasons() returns newest first)
+const latestSeason = getSeasons()[0];
+if (latestSeason && !selectedYear) {
+  selectedYear = latestSeason;
+  document.getElementById('yearSelect').value = latestSeason;
+}
 
 // Build the appropriate table
 if (viewMode === 'live') buildLiveTable();
