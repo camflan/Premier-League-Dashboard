@@ -47,14 +47,20 @@ function checkActiveSeasonData() {
   } catch {
     // missing or unparsable → warn below
   }
-  console.warn(`⚠️  No ${activeSeason()} standings data for ${PRIMARY_LEAGUE} — run \`npm run sync\``);
+  console.warn(
+    `⚠️  No ${activeSeason()} standings data for ${PRIMARY_LEAGUE} — run \`npm run sync\``,
+  );
 }
 
 function serveStatic(res, urlPath) {
   // Resolve under static/ only; reject traversal out of it.
   const rel = urlPath.replace(/^\/static\//, '');
   const filePath = path.join(staticDir, rel);
-  if (!filePath.startsWith(staticDir + path.sep) || !fs.existsSync(filePath) || !fs.statSync(filePath).isFile()) {
+  if (
+    !filePath.startsWith(staticDir + path.sep) ||
+    !fs.existsSync(filePath) ||
+    !fs.statSync(filePath).isFile()
+  ) {
     res.writeHead(404).end('Not found');
     return;
   }

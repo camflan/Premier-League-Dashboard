@@ -13,7 +13,7 @@ function seasonToDateRange(season) {
   // "2025-26" season runs Aug 1, 2025 - May 31, 2026
   const [startYearStr] = season.split('-');
   const startYear = parseInt(startYearStr, 10);
-  return { startDate: `${startYear}-08-01`, endDate: `${startYear + 1}-05-31` };
+  return { endDate: `${startYear + 1}-05-31`, startDate: `${startYear}-08-01` };
 }
 
 function seasonIsBeforeAvailable(season, availableSince) {

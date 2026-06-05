@@ -58,7 +58,7 @@ const FETCHERS = {
 // ---- args ------------------------------------------------------------------
 
 function parseArgs(argv) {
-  const out = { all: false, force: false, from: null, season: null, type: null, league: null };
+  const out = { all: false, force: false, from: null, league: null, season: null, type: null };
   for (const a of argv) {
     if (a === '--force') out.force = true;
     else if (a === '--all') out.all = true;
@@ -176,7 +176,12 @@ async function processOne(league, season, type, args, active, availableFrom) {
 
   // Skip seasons before this league's ESPN availability — no network call,
   // existing (manually sourced) data untouched.
-  if (!isActive && type === 'matches' && availableFrom && seasonStartYear(season) < seasonStartYear(availableFrom)) {
+  if (
+    !isActive &&
+    type === 'matches' &&
+    availableFrom &&
+    seasonStartYear(season) < seasonStartYear(availableFrom)
+  ) {
     console.log(`  ➖ ${label}: before ${league.id} availability (${availableFrom}), skipping`);
     return { skipped: true };
   }
@@ -226,7 +231,9 @@ async function processOne(league, season, type, args, active, availableFrom) {
 function rederiveStandings(season, matchesData, leagueId, active) {
   // For active/current season, never override standings with incomplete match data
   if (season === active) {
-    console.log(`  ➖ standings/${season}: skipped (active season - preserving official standings)`);
+    console.log(
+      `  ➖ standings/${season}: skipped (active season - preserving official standings)`,
+    );
     return;
   }
 
@@ -235,8 +242,15 @@ function rederiveStandings(season, matchesData, leagueId, active) {
   const existing = readJSON(p);
 
   // If derived standings has fewer teams than existing, skip to preserve completeness
-  if (existing && Array.isArray(existing) && Array.isArray(standings) && standings.length < existing.length) {
-    console.log(`  ➖ standings/${season}: skipped (derived ${standings.length} < existing ${existing.length} teams)`);
+  if (
+    existing &&
+    Array.isArray(existing) &&
+    Array.isArray(standings) &&
+    standings.length < existing.length
+  ) {
+    console.log(
+      `  ➖ standings/${season}: skipped (derived ${standings.length} < existing ${existing.length} teams)`,
+    );
     return;
   }
 
@@ -256,7 +270,8 @@ async function main() {
   const active = activeSeason();
 
   const allLeagues = readJSON(path.join(staticDir, 'leagues.json')).leagues;
-  const availability = readJSON(path.join(staticDir, 'seasons-config.json'), {}).dataAvailability ?? {};
+  const availability =
+    readJSON(path.join(staticDir, 'seasons-config.json'), {}).dataAvailability ?? {};
 
   // Logos are league-independent and rarely change — only synced on request.
   if (args.type === 'logos') {
