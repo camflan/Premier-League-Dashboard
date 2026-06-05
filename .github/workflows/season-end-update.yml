@@ -31,9 +31,6 @@ jobs:
       - name: Run season-end handler
         run: node scripts/handle-season-end.js
 
-      - name: Build HTML artifact
-        run: npm run build
-
       - name: Validate data integrity
         run: |
           # Basic validation: check that all season files exist and are valid JSON
@@ -81,7 +78,7 @@ jobs:
         run: |
           git config user.name "Dashboard Bot"
           git config user.email "bot@anthropic.com"
-          git add data/ static/league-promotions.json index.html
+          git add data/ static/league-promotions.json
           git commit -m "chore: season-end update - new season structure + promotions"
 
       - name: Push changes
@@ -102,4 +99,3 @@ jobs:
           echo "- New season standings (all leagues)" >> $GITHUB_STEP_SUMMARY
           echo "- Empty matches/fixtures files" >> $GITHUB_STEP_SUMMARY
           echo "- Updated promotion/relegation info" >> $GITHUB_STEP_SUMMARY
-          echo "- Rebuilt index.html" >> $GITHUB_STEP_SUMMARY
