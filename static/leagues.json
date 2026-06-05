@@ -23,6 +23,14 @@
       "espnId": "eng.3",
       "teams": 24,
       "description": "English third division"
+    },
+    {
+      "id": "league-two",
+      "name": "League Two",
+      "color": "#8b5cf6",
+      "espnId": "eng.4",
+      "teams": 24,
+      "description": "English fourth division"
     }
   ]
 }
