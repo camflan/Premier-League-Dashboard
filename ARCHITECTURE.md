@@ -1,280 +1,83 @@
-# Data-Driven Dashboard Architecture
+# Architecture — Premier League Dashboard
 
 ## Overview
 
-The Premier League Dashboard has been transformed from a 332 KB monolithic HTML file with hardcoded data into a scalable, data-driven system using a template-based build architecture.
+A single-page football statistics dashboard rendered from JSON data and one HTML template. The rendered page is a build artifact that never lives in the repo: dev serves it from memory, CI renders it at deploy time.
 
-## What's Complete ✅
-
-### Phase 1: Data Extraction ✅
-All hardcoded data has been extracted from `index.html` into clean JSON files:
-
-| File | Contents | Size |
-|------|----------|------|
-| `data/teams.json` | 51 teams with colors | 3.4 KB |
-| `data/short-names.json` | 32 team abbreviations | 1.1 KB |
-| `data/logos.json` | 25 team logo URLs | 2.4 KB |
-| `data/seasons.json` | 34 seasons (1992-93 to 2025-26) | 531 B |
-| `data/standings.json` | League tables: 666 records | 74 KB |
-| `data/matches.json` | Match results: 3,030 records | 355 KB |
-| `data/fixtures.json` | 2025-26 upcoming fixtures | 919 B |
-| `data/notes.json` | Season achievements & top scorers | 6.2 KB |
-| **Total** | **All data extracted** | **457 KB** |
-
-### Phase 2: Template & Build System ✅
-
-#### Template-Based Architecture
-- `template/index.html.template` - HTML template with a single `/* __DATA_INJECTION_POINT__ */` marker
-- `scripts/build-html.js` - Composes `window.__DATA` from `data/` + `static/`, injects into template
-- All CSS and JavaScript logic preserved; the template reads data from `window.__DATA`
-
-#### Build Process
-```bash
-npm run build     # Compose window.__DATA and inject into index.html
+```
+ SOURCES                          REPO (committed)                 OUTPUT (never committed)
+ ───────                          ────────────────                 ────────────────────────
+ ESPN API ──── npm run sync ───▶  data/<league>/<type>/<season>.json
+ logo URLs                        static/*.json  (curated)
+                                  template/index.html.template
+                                          │
+                                          │  composeData() + renderHTML()
+                                          │  (scripts/lib/ — pure functions)
+                                          ▼
+                              ┌── npm run dev ──▶ in-memory HTTP response (:8000)
+                              └── npm run render ▶ _site/index.html ──▶ GitHub Pages
 ```
 
-#### How It Works
-1. **Read curated data** from `static/*.json` (hand-edited; teams, logos, short names, season list, season notes)
-2. **Read fetched data** from `data/*.json` (written by CI; standings, matches, fixtures)
-3. **Compose** one `{ teams, shortNames, logos, seasons, notes, standings, matches, fixtures }` object
-4. **Inject** at the template marker as `<script>window.__DATA = {…};</script>`
-5. **Template aliases** like `const RAW = window.__DATA.standings;` give the rest of the JS its familiar names
+## Principles
 
-## Current Status
+1. **One writer per direction.** `sync` is the only thing that writes `data/`. `render` is the only thing that produces HTML, and only into `_site/` (gitignored). Nothing writes HTML at the repo root, ever.
+2. **Pure rendering.** `composeData()` reads JSON into the `window.__DATA` object; `renderHTML(data, template)` is a string transform. Dev and CI call the same functions, so dev output cannot drift from deploys.
+3. **Data is real or absent.** No fabricated match results or synthetic standings. The only generated data:
+   - *Derived standings* — computed from real fetched matches (`scripts/utils/derive-standings.js`), never for the active season (official standings are preserved).
+   - *Season scaffolding* — `scripts/handle-season-end.js` creates next-season standings with zeroed records and promotion/relegation movements at rollover (May 31). Structural, not results.
+   A fake-data generator (`generate-matches.js`) existed once and was deliberately removed.
+4. **Fetches are safe by construction.**
+   - TTL cache gates API calls (`data/.cache/`, gitignored; active season 1 h, past seasons 7 d).
+   - SHA-256 content hash gates file writes — unchanged data writes nothing, so commits stay quiet.
+   - Empty/null fetches never clobber existing files.
+   - Seasons before a league's ESPN availability (`static/seasons-config.json`) are skipped without a network call.
 
-### File Structure
+## Repo layout
+
 ```
 premier-league-dashboard/
-├── index.html                        ← Generated (DO NOT EDIT, gitignored)
-│   └── Built in CI from template + data + static, deployed to GitHub Pages
-├── template/
-│   └── index.html.template          ← Edit this for HTML/CSS/JS changes
-├── data/                            ← FETCHED data, one file per season
-│   ├── standings/
-│   │   ├── 1992-93.json            ← immutable past seasons
-│   │   └── 2025-26.json            ← active season, written nightly
-│   ├── matches/<season>.json
-│   └── fixtures/<season>.json
-├── static/                          ← CURATED data (hand-edited)
-│   ├── teams.json
-│   ├── short-names.json
-│   ├── logos.json                   ← maps team → local logo path
-│   ├── logos/                       ← downloaded PNGs (committed)
-│   │   └── manchester-united.png
-│   ├── seasons.json                 ← fetcher config (fetchFrom)
-│   └── notes.json
+├── template/index.html.template    ← all HTML/CSS/client JS; reads window.__DATA
+├── static/                         ← CURATED (hand-edited)
+│   ├── leagues.json                ← league list: id, name, espnId, team count
+│   ├── teams.json, short-names.json, logos.json, logos/
+│   ├── notes.json, fun-facts.json, team-notes.json, …
+│   ├── seasons.json                ← sync config (fetchFrom for --all)
+│   └── seasons-config.json         ← per-league data availability
+├── data/<league>/<type>/<season>.json   ← FETCHED (sync/CI); league ∈ leagues.json,
+│                                          type ∈ standings|matches|fixtures
 ├── scripts/
-│   ├── build-html.js               ← Generate index.html from template + data + static
-│   ├── fetcher.js                  ← Unified fetcher (one CLI, all sources, all seasons)
-│   ├── fetchers/
-│   │   ├── fetch-matches.js        ← Per-season matches module
-│   │   ├── fetch-fixtures.js       ← Per-season fixtures module
-│   │   └── fetch-logos.js          ← One-shot logo downloader
-│   └── utils/
-│       ├── active-season.js        ← Derives the active season from current date
-│       ├── derive-standings.js     ← Computes standings from matches
-│       └── espn-api.js             ← ESPN API client
-
-The fetcher's CLI:
-  npm run fetch                        # active season (default)
-  npm run fetch -- --all               # iterate fetchFrom → active
-  npm run fetch -- --season=2024-25    # one season
-  npm run fetch -- --type=matches      # one type
-  npm run fetch -- --no-cache          # bypass TTL gate
-
-Cache: TTL gates the API call; SHA-256 of merged data gates the file
-write. Cache sidecars live in data/.cache/ (gitignored). Existing data
-is never lost — empty/null fetches preserve what's on disk.
-
-Active season is computed from the current date (Aug → May rollover);
-nothing in the repo hardcodes a specific season.
-├── .github/
-│   └── workflows/
-│       └── nightly-update.yml      ← GitHub Actions workflow
-└── package.json                     ← NPM scripts & config
+│   ├── sync.js                     ← THE fetch entry point (all leagues × types)
+│   ├── render.js                   ← CI entry: → _site/index.html
+│   ├── dev.js                      ← node:http server, per-request in-memory render
+│   ├── lib/
+│   │   ├── compose-data.js         ← composeData(): JSON → window.__DATA object
+│   │   └── render.js               ← renderHTML(data, template): pure string transform
+│   ├── fetchers/                   ← per-type modules (matches, fixtures, logos)
+│   ├── utils/                      ← active-season, derive-standings, espn-api, …
+│   ├── validate-data.js
+│   └── handle-season-end.js        ← season rollover scaffolding
+└── .github/workflows/              ← see CI below
 ```
 
-## Usage Guide
+## Rendering
 
-### Development Workflow
+`composeData()` merges `static/*.json` (curated) with every `data/<league>/<type>/<season>.json` (fetched) into one object; `renderHTML()` injects it at the template's `/* __DATA_INJECTION_POINT__ */` marker and substitutes `{{ACTIVE_SEASON_SHORT}}`. Template compilation (not runtime fetch) avoids CORS issues on GitHub Pages; the page is self-contained except for team logos (`static/logos/`) and optional live-score calls the client makes directly to ESPN.
 
-#### 1. To modify HTML/CSS/JavaScript
-```bash
-# Edit template (not index.html!)
-vim template/index.html.template
+The dev server re-renders on every request (~30 ms), so freshness is structural — there is no cached artifact to go stale. It also strips the `/Premier-League-Dashboard` Pages base path so the same markup works locally.
 
-# Rebuild HTML with your changes
-npm run build
-```
+The active season is computed from the current date (August → May rollover, `scripts/utils/active-season.js`); nothing in the repo hardcodes a season.
 
-#### 2. To update data manually
-```bash
-# Fetched data (rare — CI does this)
-vim data/standings.json
+## CI
 
-# Curated data
-vim static/notes.json
-vim static/teams.json
+| Workflow | Trigger | Does | Commits |
+|---|---|---|---|
+| `nightly-update.yml` | 2 AM UTC daily | `npm run sync` (season-end handler on May 31) | `data/` only |
+| `season-end-update.yml` | May 31, manual | rollover scaffolding + validation | `data/`, `static/league-promotions.json` |
+| `historical-fetch.yml` | manual | `sync --league=… --from=…` backfill | `data/` only |
+| `deploy-pages.yml` | push to main, `workflow_run` after data workflows, manual | `npm run render` → `_site/` + `static/` → Pages | nothing |
 
-# Rebuild HTML with new data
-npm run build
-```
+Data workflows never build or commit HTML. Deploy renders fresh from the commit it ships. The `workflow_run` chaining exists because pushes made with the default `GITHUB_TOKEN` don't fire `on: push` workflows.
 
-#### 3. To extract from old HTML
-```bash
-# If you have an older version with different data
-npm run extract
-```
+## History
 
-### Testing Locally
-```bash
-npm run dev
-# Opens http://localhost:8000 with dashboard
-```
-
-## What's Remaining 🚀
-
-### Phase 3: Automated Data Fetchers ✅
-Fetch latest 2025-26 season data from APIs:
-- `scripts/fetchers/fetch-live-standings.js` - Get current standings ✅
-- `scripts/fetchers/fetch-matches.js` - Get match results ✅
-- `scripts/fetchers/fetch-fixtures.js` - Get upcoming fixtures ✅
-- `scripts/utils/espn-api.js` - ESPN API client ✅
-- `scripts/fetch-all.js` - Master fetcher script ✅
-
-**Data Sources:**
-- Primary: ESPN API (free, good coverage)
-- Secondary: Official Premier League API (authoritative but limited)
-- Notes: Fetch from Wikipedia/official sources
-
-### Phase 4: GitHub Actions CI/CD ✅
-`.github/workflows/nightly-update.yml` - Automated nightly updates ✅:
-- Fetch latest data from APIs
-- Update JSON files if changed
-- Rebuild `index.html`
-- Commit and push changes (only if data changed)
-- **Frequency**: Every night at 2 AM UTC, skip commit if no changes
-
-### Phase 5: Documentation & Testing (In Progress)
-- Update README with new architecture
-- Create maintenance guide
-- Full end-to-end testing
-- Monitor first automated runs
-
-## Benefits of New Architecture
-
-✅ **Maintainability**: Easy to find and update data (JSON files)
-✅ **Scalability**: Add features without modifying monolithic file  
-✅ **Automation**: Can update data nightly via CI/CD
-✅ **Separation**: Code and data clearly separated
-✅ **Version Control**: Track data changes in git history
-✅ **Flexibility**: Can easily switch data sources or format
-
-## Data Size Improvements
-
-| Metric | Before | After | Change |
-|--------|--------|-------|--------|
-| Main file | 332 KB | 160 KB | ↓ 52% |
-| Data files | Embedded | 457 KB total | Organized |
-| Template | N/A | 332 KB | Source of truth |
-
-## Implementation Decisions Made
-
-- **JSON Loading**: Template compilation (not runtime fetch) → No CORS issues on GitHub Pages
-- **Data Sources**: Mix of ESPN + PL APIs → Reliable, free, good coverage
-- **Notes Management**: Scrape from external sources → Automated, reduces errors
-- **Update Frequency**: Year-round, skip commits if no changes → Consistent, low noise
-- **Failure Handling**: Keep previous data, continue workflow → Graceful degradation
-
-## Next Steps
-
-1. **Review**: Examine the extracted data in `data/` directory
-2. **Test**: Run `npm run build` to verify HTML generation works
-3. **Phase 3**: Implement API fetchers for automated data updates
-4. **Phase 4**: Set up GitHub Actions workflow for nightly CI/CD
-5. **Phase 5**: Document the new system and train on workflows
-
-## Key Commands
-
-```bash
-# Setup
-npm install
-
-# Development
-npm run build      # Generate index.html from template + data
-npm run extract    # Extract data from old HTML (if needed)
-npm run dev        # Build and start local dev server
-
-# (Future) Automation
-npm run fetch-data # Fetch latest data from APIs
-npm run validate   # Validate data structure
-npm run test       # Run tests
-
-# Git workflow
-git add data/                           # Track data changes
-git commit -m "chore: update season data"
-```
-
-## Data Format Reference
-
-### teams.json
-```json
-{
-  "teams": [
-    {"name": "Arsenal", "color": "#EF0107"},
-    ...
-  ]
-}
-```
-
-### standings.json
-```json
-{
-  "1992-93": [
-    [1, "Manchester United", 42, 24, 12, 6, 80, 47, 84],
-    ...
-  ],
-  "1993-94": [...]
-}
-```
-
-### matches.json
-```json
-{
-  "2025-26": [
-    {"d": "15/08/2025", "h": "Man Utd", "a": "Fulham", "hg": 1, "ag": 0},
-    ...
-  ]
-}
-```
-
-### fixtures.json
-```json
-{
-  "2025-26": [
-    {"d": "24/05/2026", "h": "Brighton", "a": "Man Utd", "time": "15:00"},
-    ...
-  ]
-}
-```
-
-### notes.json
-```json
-{
-  "1992-93": {
-    "champion": "Manchester United",
-    "topScorer": {"name": "Alan Shearer", "team": "Blackburn Rovers", "goals": 34}
-  }
-}
-```
-
-## Questions & Support
-
-For questions about the new architecture, refer to the plan file:
-`C:\Users\colin\.claude\plans\fuzzy-growing-sifakis.md`
-
----
-
-**Last Updated**: May 20, 2026  
-**Architecture Version**: 2.0 (Data-Driven)  
-**Status**: Phases 1-4 Complete | Phase 5 (Documentation) In Progress
+v1 was a 332 KB monolithic HTML file with hardcoded data. v2 split data from presentation (template + JSON + build-to-root-index.html). v3 (current) removed the committed artifact entirely: unified sync, pure render library, in-memory dev, render-at-deploy.
