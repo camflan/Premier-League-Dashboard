@@ -32,24 +32,25 @@ To fetch historical match data for Championship or EFL League One:
 
 #### Via CLI (Local)
 ```bash
-npm run fetch-historical -- --league=championship --from-year=2010 --to-year=2018
-npm run fetch-historical -- --league=efl-league-one --from-year=2005 --to-year=2015
+npm run sync -- --league=championship --from=2010-11
+npm run sync -- --league=efl-league-one --from=2005-06
 ```
+
+Backfills run from the given season through the active season; the TTL cache
+and availability gating make already-fetched seasons cheap to re-run.
 
 #### Via GitHub Actions (Recommended for large ranges)
 1. Go to GitHub > Actions > "Fetch Historical Data"
 2. Click "Run workflow"
 3. Select:
-   - **League**: `championship` or `efl-league-one`
-   - **From Year**: Start year (e.g., `2003`)
-   - **To Year**: End year (e.g., `2015`)
+   - **League**: any league in `static/leagues.json`
+   - **From season**: start season (e.g., `2003-04`)
 4. Click "Run workflow"
 
 The workflow will:
-- Fetch all seasons in the range (with 500ms delays between requests to respect API rate limits)
-- Build the HTML artifact
+- Fetch all seasons from the start season to the active season (with 500ms delays between requests to respect API rate limits)
 - Validate the data
-- Commit and push changes if successful
+- Commit and push `data/` changes if successful (the deploy workflow renders the site)
 
 **Tip:** Breaking large ranges into smaller batches (e.g., 2003-2010, 2011-2018) can help if network timeouts occur.
 
@@ -67,15 +68,13 @@ On May 31st each year, the dashboard automatically:
 - Creates standings template with promoted teams at correct positions
 - Removes relegated teams from standings
 
-### 3. Rebuilds Index
-
 The `nightly-update.yml` workflow handles this automatically, or you can manually trigger:
 
 ```bash
 npm run season-end
-npm run build
-git add . && git commit -m "chore: season-end update"
-git push
+git add data/ static/league-promotions.json
+git commit -m "chore: season-end update"
+git push    # deploy-pages.yml renders and publishes
 ```
 
 ## Promotion/Relegation Rules
@@ -226,7 +225,7 @@ When manually entering data:
 1. Save as JSON in the correct directory: `data/<league>/matches/<season>.json`
 2. Follow the matches format above
 3. Run `npm run validate` to check integrity
-4. Run `npm run build` to rebuild
+4. Verify in the dashboard with `npm run dev`
 5. Commit with: `git commit -m "chore: manual historical data entry - <league> <seasons>"`
 
 ## CI/CD Integration
@@ -255,30 +254,29 @@ To change data sources or fetching strategy:
 
 1. **ESPN API calls**: Edit `scripts/utils/espn-api.js`
 2. **Historical season logic**: Edit `scripts/fetchers/fetch-matches.js`
-3. **Season iteration**: Edit `scripts/fetcher.js` (seasonsToFetch function)
+3. **Season iteration**: Edit `scripts/sync.js` (seasonsToSync function)
 4. **Promotion detection**: Edit `scripts/utils/detect-promotions.js`
 
 After changes:
 ```bash
-npm run build
 npm run validate
-# Test locally before pushing
+npm run dev    # test locally before pushing
 ```
 
 ## Quick Reference
 
 ```bash
-# Fetch active season only
-npm run fetch
+# Sync active season (all leagues)
+npm run sync
 
-# Fetch all seasons (from configured fetchFrom to active)
-npm run fetch -- --all --league=championship
+# Sync all seasons (from configured fetchFrom to active)
+npm run sync -- --all --league=championship
 
-# Fetch specific season
-npm run fetch -- --season=2015-16 --league=championship
+# Sync specific season
+npm run sync -- --season=2015-16 --league=championship
 
-# Bulk historical fetch
-npm run fetch-historical -- --league=championship --from-year=2003 --to-year=2018
+# Bulk historical backfill
+npm run sync -- --league=championship --from=2003-04
 
 # Manual season-end automation
 npm run season-end
@@ -286,9 +284,8 @@ npm run season-end
 # Validate all data
 npm run validate
 
-# Build and deploy
-npm run build
-git add .
-git commit -m "chore: data/code updates"
+# Deploy: just push — deploy-pages.yml renders the site
+git add data/ static/
+git commit -m "chore: data updates"
 git push
 ```
