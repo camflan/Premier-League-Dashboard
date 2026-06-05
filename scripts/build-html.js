@@ -57,6 +57,7 @@ const teamNotes = readJSON(path.join(staticDir, 'team-notes.json'));
 const espnNames = readJSON(path.join(staticDir, 'espn-names.json'));
 const leagues = readJSON(path.join(staticDir, 'leagues.json')).leagues;
 const leaguePromotions = readJSON(path.join(staticDir, 'league-promotions.json'));
+const tournamentQualifications = readJSON(path.join(staticDir, 'tournament-qualifications.json'));
 
 // Read season-based data organized by league
 const standings = {};
@@ -92,6 +93,7 @@ const data = {
   standings,
   teamNotes,
   teams,
+  tournamentQualifications,
 };
 
 const template = fs.readFileSync(templatePath, 'utf8');

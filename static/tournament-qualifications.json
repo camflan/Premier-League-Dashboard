@@ -1,0 +1,178 @@
+{
+  "_comment": "Premier League tournament qualification spots vary by season based on English teams' European performance. Structure: { season: { ucl: N, europa: N, conference: N } }",
+  "1992-93": {
+    "ucl": 1,
+    "europa": 3,
+    "conference": 0
+  },
+  "1993-94": {
+    "ucl": 1,
+    "europa": 3,
+    "conference": 0
+  },
+  "1994-95": {
+    "ucl": 1,
+    "europa": 3,
+    "conference": 0
+  },
+  "1995-96": {
+    "ucl": 1,
+    "europa": 3,
+    "conference": 0
+  },
+  "1996-97": {
+    "ucl": 1,
+    "europa": 3,
+    "conference": 0
+  },
+  "1997-98": {
+    "ucl": 1,
+    "europa": 3,
+    "conference": 0
+  },
+  "1998-99": {
+    "ucl": 1,
+    "europa": 3,
+    "conference": 0
+  },
+  "1999-00": {
+    "ucl": 1,
+    "europa": 3,
+    "conference": 0
+  },
+  "2000-01": {
+    "ucl": 1,
+    "europa": 3,
+    "conference": 0
+  },
+  "2001-02": {
+    "ucl": 1,
+    "europa": 3,
+    "conference": 0
+  },
+  "2002-03": {
+    "ucl": 1,
+    "europa": 3,
+    "conference": 0
+  },
+  "2003-04": {
+    "ucl": 2,
+    "europa": 2,
+    "conference": 0
+  },
+  "2004-05": {
+    "ucl": 4,
+    "europa": 0,
+    "conference": 0
+  },
+  "2005-06": {
+    "ucl": 4,
+    "europa": 2,
+    "conference": 0
+  },
+  "2006-07": {
+    "ucl": 4,
+    "europa": 2,
+    "conference": 0
+  },
+  "2007-08": {
+    "ucl": 4,
+    "europa": 2,
+    "conference": 0
+  },
+  "2008-09": {
+    "ucl": 4,
+    "europa": 2,
+    "conference": 0
+  },
+  "2009-10": {
+    "ucl": 4,
+    "europa": 2,
+    "conference": 0
+  },
+  "2010-11": {
+    "ucl": 4,
+    "europa": 2,
+    "conference": 0
+  },
+  "2011-12": {
+    "ucl": 4,
+    "europa": 2,
+    "conference": 0
+  },
+  "2012-13": {
+    "ucl": 4,
+    "europa": 2,
+    "conference": 0
+  },
+  "2013-14": {
+    "ucl": 4,
+    "europa": 2,
+    "conference": 0
+  },
+  "2014-15": {
+    "ucl": 4,
+    "europa": 2,
+    "conference": 0
+  },
+  "2015-16": {
+    "ucl": 4,
+    "europa": 2,
+    "conference": 0
+  },
+  "2016-17": {
+    "ucl": 4,
+    "europa": 2,
+    "conference": 0
+  },
+  "2017-18": {
+    "ucl": 4,
+    "europa": 2,
+    "conference": 0
+  },
+  "2018-19": {
+    "ucl": 4,
+    "europa": 3,
+    "conference": 1
+  },
+  "2019-20": {
+    "ucl": 4,
+    "europa": 3,
+    "conference": 1
+  },
+  "2020-21": {
+    "ucl": 4,
+    "europa": 3,
+    "conference": 1
+  },
+  "2021-22": {
+    "ucl": 4,
+    "europa": 3,
+    "conference": 1
+  },
+  "2022-23": {
+    "ucl": 4,
+    "europa": 3,
+    "conference": 1
+  },
+  "2023-24": {
+    "ucl": 4,
+    "europa": 3,
+    "conference": 1
+  },
+  "2024-25": {
+    "ucl": 4,
+    "europa": 3,
+    "conference": 1
+  },
+  "2025-26": {
+    "ucl": 4,
+    "europa": 3,
+    "conference": 1
+  },
+  "2026-27": {
+    "ucl": 5,
+    "europa": 2,
+    "conference": 1
+  }
+}
