@@ -19,7 +19,12 @@ const NON_PLAYED_STATUSES = new Set([
 // Get league standings for current season
 export async function getLeagueStandings(season = '2025-26', leagueEspnId = 'eng.1') {
   try {
-    const leagueName = leagueEspnId === 'eng.1' ? 'Premier League' : leagueEspnId === 'eng.2' ? 'Championship' : 'EFL League One';
+    const leagueName =
+      leagueEspnId === 'eng.1'
+        ? 'Premier League'
+        : leagueEspnId === 'eng.2'
+          ? 'Championship'
+          : 'EFL League One';
     console.log(`  🔄 Fetching ${leagueName} standings for ${season}...`);
 
     // Try multiple endpoints
@@ -85,7 +90,12 @@ function parseEvent(event) {
 // Get recent match results (only events with a final/in-progress status).
 export async function getMatchResults(team = null, limit = 100, leagueEspnId = 'eng.1') {
   try {
-    const leagueName = leagueEspnId === 'eng.1' ? 'Premier League' : leagueEspnId === 'eng.2' ? 'Championship' : 'EFL League One';
+    const leagueName =
+      leagueEspnId === 'eng.1'
+        ? 'Premier League'
+        : leagueEspnId === 'eng.2'
+          ? 'Championship'
+          : 'EFL League One';
     console.log(`  🔄 Fetching recent ${leagueName} match results${team ? ` for ${team}` : ''}...`);
 
     const endpoints = [
@@ -260,7 +270,12 @@ export async function getMatchResultsForDateRange(startDate, endDate, leagueEspn
 // Get upcoming fixtures
 export async function getFixtures(daysAhead = 30, leagueEspnId = 'eng.1') {
   try {
-    const leagueName = leagueEspnId === 'eng.1' ? 'Premier League' : leagueEspnId === 'eng.2' ? 'Championship' : 'EFL League One';
+    const leagueName =
+      leagueEspnId === 'eng.1'
+        ? 'Premier League'
+        : leagueEspnId === 'eng.2'
+          ? 'Championship'
+          : 'EFL League One';
     console.log(`  🔄 Fetching upcoming ${leagueName} fixtures (next ${daysAhead} days)...`);
 
     const endpoints = [

@@ -1,178 +1,178 @@
 {
   "_comment": "Premier League tournament qualification spots vary by season based on English teams' European performance. Structure: { season: { ucl: N, europa: N, conference: N } }",
   "1992-93": {
-    "ucl": 1,
+    "conference": 0,
     "europa": 3,
-    "conference": 0
+    "ucl": 1
   },
   "1993-94": {
-    "ucl": 1,
+    "conference": 0,
     "europa": 3,
-    "conference": 0
+    "ucl": 1
   },
   "1994-95": {
-    "ucl": 1,
+    "conference": 0,
     "europa": 3,
-    "conference": 0
+    "ucl": 1
   },
   "1995-96": {
-    "ucl": 1,
+    "conference": 0,
     "europa": 3,
-    "conference": 0
+    "ucl": 1
   },
   "1996-97": {
-    "ucl": 1,
+    "conference": 0,
     "europa": 3,
-    "conference": 0
+    "ucl": 1
   },
   "1997-98": {
-    "ucl": 1,
+    "conference": 0,
     "europa": 3,
-    "conference": 0
+    "ucl": 1
   },
   "1998-99": {
-    "ucl": 1,
+    "conference": 0,
     "europa": 3,
-    "conference": 0
+    "ucl": 1
   },
   "1999-00": {
-    "ucl": 1,
+    "conference": 0,
     "europa": 3,
-    "conference": 0
+    "ucl": 1
   },
   "2000-01": {
-    "ucl": 1,
+    "conference": 0,
     "europa": 3,
-    "conference": 0
+    "ucl": 1
   },
   "2001-02": {
-    "ucl": 1,
+    "conference": 0,
     "europa": 3,
-    "conference": 0
+    "ucl": 1
   },
   "2002-03": {
-    "ucl": 1,
+    "conference": 0,
     "europa": 3,
-    "conference": 0
+    "ucl": 1
   },
   "2003-04": {
-    "ucl": 2,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 2
   },
   "2004-05": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 0,
-    "conference": 0
+    "ucl": 4
   },
   "2005-06": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 4
   },
   "2006-07": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 4
   },
   "2007-08": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 4
   },
   "2008-09": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 4
   },
   "2009-10": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 4
   },
   "2010-11": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 4
   },
   "2011-12": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 4
   },
   "2012-13": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 4
   },
   "2013-14": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 4
   },
   "2014-15": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 4
   },
   "2015-16": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 4
   },
   "2016-17": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 4
   },
   "2017-18": {
-    "ucl": 4,
+    "conference": 0,
     "europa": 2,
-    "conference": 0
+    "ucl": 4
   },
   "2018-19": {
-    "ucl": 4,
+    "conference": 1,
     "europa": 3,
-    "conference": 1
+    "ucl": 4
   },
   "2019-20": {
-    "ucl": 4,
+    "conference": 1,
     "europa": 3,
-    "conference": 1
+    "ucl": 4
   },
   "2020-21": {
-    "ucl": 4,
+    "conference": 1,
     "europa": 3,
-    "conference": 1
+    "ucl": 4
   },
   "2021-22": {
-    "ucl": 4,
+    "conference": 1,
     "europa": 3,
-    "conference": 1
+    "ucl": 4
   },
   "2022-23": {
-    "ucl": 4,
+    "conference": 1,
     "europa": 3,
-    "conference": 1
+    "ucl": 4
   },
   "2023-24": {
-    "ucl": 4,
+    "conference": 1,
     "europa": 3,
-    "conference": 1
+    "ucl": 4
   },
   "2024-25": {
-    "ucl": 4,
+    "conference": 1,
     "europa": 3,
-    "conference": 1
+    "ucl": 4
   },
   "2025-26": {
-    "ucl": 4,
+    "conference": 1,
     "europa": 3,
-    "conference": 1
+    "ucl": 4
   },
   "2026-27": {
-    "ucl": 5,
+    "conference": 1,
     "europa": 2,
-    "conference": 1
+    "ucl": 5
   }
 }

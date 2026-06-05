@@ -14,18 +14,18 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.join(__dirname, '..');
 const dataDir = path.join(rootDir, 'data');
-const staticDir = path.join(rootDir, 'static');
+const _staticDir = path.join(rootDir, 'static');
 
 const LEAGUE_INFO = {
-  'premier-league': { teams: 20 },
-  'championship': { teams: 24 },
+  championship: { teams: 24 },
   'efl-league-one': { teams: 24 },
+  'premier-league': { teams: 20 },
 };
 
 const WARNINGS = [];
 const ERRORS = [];
 
-function readJSON(filePath, fallback = null) {
+function _readJSON(filePath, fallback = null) {
   if (!fs.existsSync(filePath)) return fallback;
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
 }
@@ -53,7 +53,9 @@ function validateStandings(standings, leagueId, season) {
 
   const expected = LEAGUE_INFO[leagueId].teams;
   if (standings.length !== expected) {
-    WARNINGS.push(`${leagueId}/${season}/standings: expected ${expected} teams, got ${standings.length}`);
+    WARNINGS.push(
+      `${leagueId}/${season}/standings: expected ${expected} teams, got ${standings.length}`,
+    );
   }
 
   // Check each entry has required fields: [pos, name, p, w, d, l, gf, ga, pts]
@@ -61,14 +63,14 @@ function validateStandings(standings, leagueId, season) {
     const entry = standings[i];
     if (!Array.isArray(entry) || entry.length < 9) {
       ERRORS.push(
-        `${leagueId}/${season}/standings[${i}]: invalid format (expected [pos, name, p, w, d, l, gf, ga, pts])`
+        `${leagueId}/${season}/standings[${i}]: invalid format (expected [pos, name, p, w, d, l, gf, ga, pts])`,
       );
       continue;
     }
 
     if (entry[0] !== i + 1) {
       WARNINGS.push(
-        `${leagueId}/${season}/standings[${i}]: position ${entry[0]} != expected ${i + 1}`
+        `${leagueId}/${season}/standings[${i}]: position ${entry[0]} != expected ${i + 1}`,
       );
     }
   }
@@ -90,7 +92,13 @@ function validateMatches(matches, leagueId, season) {
   const seen = new Set();
   for (let i = 0; i < matches.length; i++) {
     const match = matches[i];
-    if (!match.d || !match.h || !match.a || typeof match.hg === 'undefined' || typeof match.ag === 'undefined') {
+    if (
+      !match.d ||
+      !match.h ||
+      !match.a ||
+      typeof match.hg === 'undefined' ||
+      typeof match.ag === 'undefined'
+    ) {
       ERRORS.push(`${leagueId}/${season}/matches[${i}]: missing required field (d, h, a, hg, ag)`);
       continue;
     }
@@ -195,7 +203,7 @@ function main() {
 
   if (WARNINGS.length > 0) {
     console.log(`\n⚠️  Warnings (${WARNINGS.length}):`);
-    WARNINGS.slice(0, 10).forEach((w) => console.log(`    - ${w}`));
+    for (const w of WARNINGS.slice(0, 10)) console.log(`    - ${w}`);
     if (WARNINGS.length > 10) {
       console.log(`    ... and ${WARNINGS.length - 10} more`);
     }
@@ -203,7 +211,7 @@ function main() {
 
   if (ERRORS.length > 0) {
     console.log(`\n❌ Errors (${ERRORS.length}):`);
-    ERRORS.slice(0, 10).forEach((e) => console.log(`    - ${e}`));
+    for (const e of ERRORS.slice(0, 10)) console.log(`    - ${e}`);
     if (ERRORS.length > 10) {
       console.log(`    ... and ${ERRORS.length - 10} more`);
     }

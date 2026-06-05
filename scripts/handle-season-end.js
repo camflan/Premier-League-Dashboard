@@ -13,7 +13,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { activeSeason } from './utils/active-season.js';
-import { detectPromotions, verifyPromotions } from './utils/detect-promotions.js';
 import espnApi from './utils/espn-api.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -23,15 +22,15 @@ const staticDir = path.join(rootDir, 'static');
 
 // Map league IDs to ESPN league IDs
 const LEAGUE_ESPN_ID = {
-  'premier-league': 'eng.1',
-  'championship': 'eng.2',
+  championship: 'eng.2',
   'efl-league-one': 'eng.3',
+  'premier-league': 'eng.1',
 };
 
 const LEAGUE_INFO = {
-  'premier-league': { teams: 20, promoted: 3, relegated: 3 },
-  'championship': { teams: 24, promoted: 2, relegated: 2, playoff: true },
-  'efl-league-one': { teams: 24, promoted: 2, relegated: 2, playoff: true },
+  championship: { playoff: true, promoted: 2, relegated: 2, teams: 24 },
+  'efl-league-one': { playoff: true, promoted: 2, relegated: 2, teams: 24 },
+  'premier-league': { promoted: 3, relegated: 3, teams: 20 },
 };
 
 function readJSON(filePath, fallback = null) {
@@ -54,7 +53,7 @@ function ensureDirExists(dirPath) {
 
 // Compute the next season string
 function getNextSeason(season) {
-  const [startYearStr, endYearStr] = season.split('-');
+  const [startYearStr, _endYearStr] = season.split('-');
   const nextStartYear = parseInt(startYearStr, 10) + 1;
   const nextEndYY = String((nextStartYear + 1) % 100).padStart(2, '0');
   return `${nextStartYear}-${nextEndYY}`;
@@ -77,7 +76,11 @@ async function main() {
   for (const league of leagues) {
     const espnLeagueId = LEAGUE_ESPN_ID[league];
     const leagueName =
-      league === 'premier-league' ? 'Premier League' : league === 'championship' ? 'Championship' : 'EFL League One';
+      league === 'premier-league'
+        ? 'Premier League'
+        : league === 'championship'
+          ? 'Championship'
+          : 'EFL League One';
 
     console.log(`  📋 ${leagueName}...`);
     const fetchedStandings = await espnApi.getLeagueStandings(active, espnLeagueId);
@@ -102,10 +105,10 @@ async function main() {
   const promotions = {};
 
   // Promotion/relegation rules
-  const promotionRules = {
-    'premier-league': { relegated: 3, promoted: 3 },
-    'championship': { relegated: 2, promoted: 2 },
-    'efl-league-one': { relegated: 4, promoted: 2 },
+  const _promotionRules = {
+    championship: { promoted: 2, relegated: 2 },
+    'efl-league-one': { promoted: 2, relegated: 4 },
+    'premier-league': { promoted: 3, relegated: 3 },
   };
 
   // Apply promotion/relegation rules
@@ -113,13 +116,13 @@ async function main() {
   // - Teams LEAVING a league (promoted up or relegated down)
   // - Teams JOINING a league (promoted down from above or relegated up from below)
 
-  if (standings['premier-league'] && standings['championship']) {
+  if (standings['premier-league'] && standings.championship) {
     // PL: Bottom 3 are relegated DOWN
     const plStandings = standings['premier-league'];
     const plRelegated = plStandings.slice(-3).map((s) => s[1]);
 
     // Championship: Top 2 are promoted UP
-    const chStandings = standings['championship'];
+    const chStandings = standings.championship;
     const chPromoted = chStandings.slice(0, 2).map((s) => s[1]);
 
     // Track teams leaving/entering each league
@@ -127,10 +130,10 @@ async function main() {
     promotions['premier-league'].leaving = plRelegated; // Teams leaving PL → Championship
     promotions['premier-league'].joining = chPromoted; // Teams joining PL ← Championship
 
-    promotions['championship'] = promotions['championship'] || {};
-    promotions['championship'].leaving = chPromoted; // Teams leaving Championship → PL
-    promotions['championship'].joining = promotions['championship'].joining || [];
-    promotions['championship'].joining = promotions['championship'].joining.concat(plRelegated); // Teams joining Championship ← PL
+    promotions.championship = promotions.championship || {};
+    promotions.championship.leaving = chPromoted; // Teams leaving Championship → PL
+    promotions.championship.joining = promotions.championship.joining || [];
+    promotions.championship.joining = promotions.championship.joining.concat(plRelegated); // Teams joining Championship ← PL
 
     console.log(`  Premier League:`);
     console.log(`     ↓ Relegated to Championship: ${plRelegated.join(', ')}`);
@@ -138,18 +141,20 @@ async function main() {
     console.log(`     ↑ Promoted to Premier League: ${chPromoted.join(', ')}`);
   }
 
-  if (standings['championship'] && standings['efl-league-one']) {
+  if (standings.championship && standings['efl-league-one']) {
     // Championship: Bottom 2 are relegated DOWN
-    const chStandings = standings['championship'];
+    const chStandings = standings.championship;
     const chRelegated = chStandings.slice(-2).map((s) => s[1]);
 
     // League One: Top 2 are promoted UP
     const leagueOneStandings = standings['efl-league-one'];
     const leagueOnePromoted = leagueOneStandings.slice(0, 2).map((s) => s[1]);
 
-    promotions['championship'] = promotions['championship'] || {};
-    promotions['championship'].leaving = (promotions['championship'].leaving || []).concat(chRelegated);
-    promotions['championship'].joining = (promotions['championship'].joining || []).concat(leagueOnePromoted);
+    promotions.championship = promotions.championship || {};
+    promotions.championship.leaving = (promotions.championship.leaving || []).concat(chRelegated);
+    promotions.championship.joining = (promotions.championship.joining || []).concat(
+      leagueOnePromoted,
+    );
 
     promotions['efl-league-one'] = promotions['efl-league-one'] || {};
     promotions['efl-league-one'].leaving = leagueOnePromoted; // Teams leaving League One → Championship
@@ -166,7 +171,11 @@ async function main() {
 
   for (const league of leagues) {
     const leagueName =
-      league === 'premier-league' ? 'Premier League' : league === 'championship' ? 'Championship' : 'EFL League One';
+      league === 'premier-league'
+        ? 'Premier League'
+        : league === 'championship'
+          ? 'Championship'
+          : 'EFL League One';
 
     console.log(`  ${leagueName}:`);
 
@@ -235,13 +244,17 @@ async function main() {
     ]);
 
     if (nextSeasonStandings.length !== info.teams) {
+      console.log(`     ⚠️  Expected ${info.teams} teams, got ${nextSeasonStandings.length}`);
       console.log(
-        `     ⚠️  Expected ${info.teams} teams, got ${nextSeasonStandings.length}`
+        `        Remaining from prev season: ${remainingTeamsData.length}, Newly promoted: ${joiningTeamsData.length}`,
       );
-      console.log(`        Remaining from prev season: ${remainingTeamsData.length}, Newly promoted: ${joiningTeamsData.length}`);
-      console.log(`        ⚠️  MANUAL ADJUSTMENT NEEDED: Missing ${info.teams - nextSeasonStandings.length} team(s) (likely playoff winner)`);
+      console.log(
+        `        ⚠️  MANUAL ADJUSTMENT NEEDED: Missing ${info.teams - nextSeasonStandings.length} team(s) (likely playoff winner)`,
+      );
     } else {
-      console.log(`     ✓ Complete standings with all ${nextSeasonStandings.length} teams (remaining + promoted)`);
+      console.log(
+        `     ✓ Complete standings with all ${nextSeasonStandings.length} teams (remaining + promoted)`,
+      );
     }
 
     writeJSON(standingsPath, nextSeasonStandings);
@@ -254,31 +267,44 @@ async function main() {
   const leaguePromotions = readJSON(leaguePromotionsPath, {});
 
   leaguePromotions[active] = {
-    source: 'standings_analysis',
     fetchedAt: new Date().toISOString(),
-    promoted_to_pl: promotions['championship']?.leaving || [],
     promoted_to_championship: promotions['efl-league-one']?.leaving || [],
+    promoted_to_pl: promotions.championship?.leaving || [],
+    relegated_from_championship:
+      promotions.championship?.leaving?.filter(
+        (t) => !(promotions.championship?.joining || []).includes(t),
+      ) || [],
     relegated_from_pl: promotions['premier-league']?.leaving || [],
-    relegated_from_championship: promotions['championship']?.leaving?.filter(
-      (t) => !(promotions['championship']?.joining || []).includes(t)
-    ) || [],
+    source: 'standings_analysis',
   };
 
   writeJSON(leaguePromotionsPath, leaguePromotions);
   console.log(`  ✓ Updated league-promotions.json with ${active} season results`);
-  console.log(`    - Promoted to PL: ${(promotions['championship']?.leaving || []).join(', ') || 'None'}`);
-  console.log(`    - Relegated from PL: ${(promotions['premier-league']?.leaving || []).join(', ') || 'None'}`);
-  console.log(`    - Promoted to Championship: ${(promotions['efl-league-one']?.leaving || []).join(', ') || 'None'}`);
+  console.log(
+    `    - Promoted to PL: ${(promotions.championship?.leaving || []).join(', ') || 'None'}`,
+  );
+  console.log(
+    `    - Relegated from PL: ${(promotions['premier-league']?.leaving || []).join(', ') || 'None'}`,
+  );
+  console.log(
+    `    - Promoted to Championship: ${(promotions['efl-league-one']?.leaving || []).join(', ') || 'None'}`,
+  );
 
-  const chRelegated = (promotions['championship']?.leaving || []).filter((t) => !(promotions['championship']?.joining || []).includes(t));
+  const chRelegated = (promotions.championship?.leaving || []).filter(
+    (t) => !(promotions.championship?.joining || []).includes(t),
+  );
   console.log(`    - Relegated from Championship: ${chRelegated.join(', ') || 'None'}\n`);
 
   console.log(`✅ Season-end automation complete!`);
   console.log(`\n📝 Next steps:`);
   console.log(`   1. Review data in data/*/standings/${next}.json`);
   console.log(`   2. Run: npm run build`);
-  console.log(`   3. Commit changes with: git add . && git commit -m "chore: season-end update for ${active}-${next}"`);
-  console.log(`   4. Optional: Manually fetch historical data with: npm run fetch -- --all --league=championship`);
+  console.log(
+    `   3. Commit changes with: git add . && git commit -m "chore: season-end update for ${active}-${next}"`,
+  );
+  console.log(
+    `   4. Optional: Manually fetch historical data with: npm run fetch -- --all --league=championship`,
+  );
 }
 
 main().catch((e) => {

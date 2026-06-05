@@ -1,36 +1,36 @@
 {
   "leagues": [
     {
+      "color": "#3b82f6",
+      "description": "English top division",
+      "espnId": "eng.1",
       "id": "premier-league",
       "name": "Premier League",
-      "color": "#3b82f6",
-      "espnId": "eng.1",
-      "teams": 20,
-      "description": "English top division"
+      "teams": 20
     },
     {
+      "color": "#ef4444",
+      "description": "English second division",
+      "espnId": "eng.2",
       "id": "championship",
       "name": "Championship",
-      "color": "#ef4444",
-      "espnId": "eng.2",
-      "teams": 24,
-      "description": "English second division"
+      "teams": 24
     },
     {
+      "color": "#fbbf24",
+      "description": "English third division",
+      "espnId": "eng.3",
       "id": "efl-league-one",
       "name": "EFL League One",
-      "color": "#fbbf24",
-      "espnId": "eng.3",
-      "teams": 24,
-      "description": "English third division"
+      "teams": 24
     },
     {
+      "color": "#8b5cf6",
+      "description": "English fourth division",
+      "espnId": "eng.4",
       "id": "league-two",
       "name": "League Two",
-      "color": "#8b5cf6",
-      "espnId": "eng.4",
-      "teams": 24,
-      "description": "English fourth division"
+      "teams": 24
     }
   ]
 }

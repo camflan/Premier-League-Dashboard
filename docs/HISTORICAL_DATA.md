@@ -255,7 +255,7 @@ To change data sources or fetching strategy:
 1. **ESPN API calls**: Edit `scripts/utils/espn-api.js`
 2. **Historical season logic**: Edit `scripts/fetchers/fetch-matches.js`
 3. **Season iteration**: Edit `scripts/sync.js` (seasonsToSync function)
-4. **Promotion detection**: Edit `scripts/utils/detect-promotions.js`
+4. **Promotion detection**: Edit `scripts/handle-season-end.js` (inline logic)
 
 After changes:
 ```bash
