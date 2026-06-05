@@ -22,11 +22,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          # No `cache: 'npm'` — that requires a committed lockfile and the
-          # project's single devDep isn't worth the maintenance overhead.
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Check if today is season end (May 31)
         id: check_season_end
@@ -44,13 +43,10 @@ jobs:
         run: node scripts/handle-season-end.js
         continue-on-error: true
 
-      - name: Fetch latest data from APIs
+      - name: Sync latest data from APIs
         if: steps.check_season_end.outputs.is_season_end != 'true'
-        run: npm run fetch
-        continue-on-error: true  # Continue even if fetch fails
-
-      - name: Build HTML artifact
-        run: npm run build
+        run: npm run sync
+        continue-on-error: true  # Continue even if sync fails
 
       - name: Check for data changes
         id: check_changes
@@ -63,16 +59,17 @@ jobs:
             echo "Data changes detected"
           fi
 
+      # Data only — the site is rendered fresh at deploy time by deploy-pages.yml
       - name: Commit and push changes
         if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           git config user.name "Dashboard Bot"
           git config user.email "bot@example.com"
           if [ "${{ steps.check_season_end.outputs.is_season_end }}" = "true" ]; then
-            git add data/ static/league-promotions.json index.html
+            git add data/ static/league-promotions.json
             git commit -m "chore: season-end update - new season structure + promotions"
           else
-            git add data/ index.html
+            git add data/
             git commit -m "chore: nightly data update"
           fi
           git push

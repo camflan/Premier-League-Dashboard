@@ -3,6 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [main]
+  # Bot pushes made with the default GITHUB_TOKEN don't fire `on: push`,
+  # so chain off the data workflows explicitly.
+  workflow_run:
+    workflows: ['Nightly Data Update', 'Season End Update', 'Fetch Historical Data']
+    types: [completed]
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -17,35 +23,36 @@ concurrency:
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    # For workflow_run triggers, only deploy after a successful data run
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: main  # workflow_run checks out the default branch as of the triggering run
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
-          # No `cache: 'npm'` — that requires a committed lockfile and the
-          # project's single devDep isn't worth the maintenance overhead.
+          cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Build HTML from template + data
-        run: npm run build
+      - name: Render site
+        run: npm run render
 
-      - name: Stage site directory
-        run: |
-          mkdir -p _site
-          cp index.html _site/
-          cp -r static _site/
-          cp -r data _site/
+      - name: Stage static assets
+        run: cp -r static _site/
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true  # self-enable Pages (build_type: workflow) on first run
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

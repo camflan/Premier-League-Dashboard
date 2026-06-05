@@ -70,7 +70,10 @@ function serveStatic(res, urlPath) {
 }
 
 const server = http.createServer((req, res) => {
-  const urlPath = decodeURIComponent(new URL(req.url, `http://localhost:${port}`).pathname);
+  let urlPath = decodeURIComponent(new URL(req.url, `http://localhost:${port}`).pathname);
+  // The template prefixes asset paths with the GitHub Pages project base —
+  // strip it so the same markup works locally.
+  urlPath = urlPath.replace(/^\/Premier-League-Dashboard/, '') || '/';
 
   if (urlPath === '/' || urlPath === '/index.html') {
     try {

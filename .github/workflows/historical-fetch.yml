@@ -6,19 +6,17 @@ on:
   workflow_dispatch:
     inputs:
       league:
-        description: 'League (championship, efl-league-one)'
+        description: 'League to backfill'
         required: true
         default: 'championship'
         type: choice
         options:
+          - premier-league
           - championship
           - efl-league-one
-      from_year:
-        description: 'Start year (e.g., 2003)'
-        required: true
-        type: string
-      to_year:
-        description: 'End year (e.g., 2015)'
+          - league-two
+      from_season:
+        description: 'Start season (e.g., 2003-04); backfills through the active season'
         required: true
         type: string
 
@@ -39,10 +37,7 @@ jobs:
         run: npm install
 
       - name: Fetch historical data
-        run: node scripts/fetch-historical.js --league=${{ github.event.inputs.league }} --from-year=${{ github.event.inputs.from_year }} --to-year=${{ github.event.inputs.to_year }}
-
-      - name: Build HTML artifact
-        run: npm run build
+        run: npm run sync -- --league=${{ github.event.inputs.league }} --from=${{ github.event.inputs.from_season }}
 
       - name: Validate data
         run: |
@@ -87,8 +82,8 @@ jobs:
         run: |
           git config user.name "Dashboard Bot"
           git config user.email "bot@anthropic.com"
-          git add data/ index.html
-          git commit -m "chore: historical fetch - ${{ github.event.inputs.league }} (${{ github.event.inputs.from_year }}-${{ github.event.inputs.to_year }})"
+          git add data/
+          git commit -m "chore: historical fetch - ${{ github.event.inputs.league }} (from ${{ github.event.inputs.from_season }})"
 
       - name: Push changes
         if: steps.check_changes.outputs.changed == 'true'
@@ -101,7 +96,7 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Parameters" >> $GITHUB_STEP_SUMMARY
           echo "- League: ${{ github.event.inputs.league }}" >> $GITHUB_STEP_SUMMARY
-          echo "- Years: ${{ github.event.inputs.from_year }}-${{ github.event.inputs.to_year }}" >> $GITHUB_STEP_SUMMARY
+          echo "- From season: ${{ github.event.inputs.from_season }}" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "### Status" >> $GITHUB_STEP_SUMMARY
           echo "- Data changes: ${{ steps.check_changes.outputs.changed }}" >> $GITHUB_STEP_SUMMARY
