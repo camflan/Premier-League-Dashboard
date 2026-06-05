@@ -6,10 +6,11 @@
 import { activeSeason } from '../utils/active-season.js';
 import espnApi from '../utils/espn-api.js';
 
-export async function fetchFixturesForSeason(season) {
+// league: { id, espnId } from static/leagues.json
+export async function fetchFixturesForSeason(season, league) {
   if (season !== activeSeason()) return null;
 
-  const fetched = await espnApi.getFixtures(30);
+  const fetched = await espnApi.getFixtures(30, league.espnId);
   if (!fetched || fetched.length === 0) return null;
   return fetched;
 }
