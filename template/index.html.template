@@ -2255,6 +2255,10 @@ function buildLiveTable() {
   const thead = document.getElementById('thead');
   const matches = getHistoricalMatches()[ACTIVE_SEASON] || [];
 
+  // Filter table to only include teams for the selected league
+  const maxTeams = selectedLeague === 'premier-league' ? 20 : 24;
+  const filteredTable = table.slice(0, maxTeams);
+
   // Clear and rebuild header
   thead.innerHTML = `
     <tr>
@@ -2275,9 +2279,9 @@ function buildLiveTable() {
 
   // Build table rows
   tbody.innerHTML = '';
-  table.forEach((row, idx) => {
+  filteredTable.forEach((row, idx) => {
     const tr = document.createElement('tr');
-    const posColor = positionColor(idx + 1, 20);
+    const posColor = positionColor(idx + 1, maxTeams);
     const posText = idx + 1;
     const last5Html = getTeamLast5(row.team, matches);
 
