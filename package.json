@@ -2,16 +2,11 @@
   "name": "premier-league-dashboard",
   "version": "2.0.0",
   "description": "A Premier League statistics dashboard with data-driven architecture",
-  "main": "index.html",
   "type": "module",
   "scripts": {
-    "extract": "node scripts/extract-data.js",
-    "build": "node scripts/build-html.js",
-    "fetch": "node scripts/fetcher.js",
-    "fetch-historical": "node scripts/fetch-historical.js",
-    "fetch-logos": "node scripts/fetchers/fetch-logos.js",
-    "dev": "npm run build && npx http-server --port 8000",
-    "test": "node scripts/test.js",
+    "sync": "node scripts/sync.js",
+    "render": "node scripts/render.js",
+    "dev": "node scripts/dev.js",
     "validate": "node scripts/validate-data.js",
     "season-end": "node scripts/handle-season-end.js",
     "lint": "biome check",
@@ -26,11 +21,7 @@
   ],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "node-fetch": "^2.7.0"
-  },
   "devDependencies": {
-    "@biomejs/biome": "2.4.15",
-    "http-server": "^14.1.1"
+    "@biomejs/biome": "2.4.15"
   }
 }
