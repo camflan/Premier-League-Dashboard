@@ -62140,15 +62140,18 @@ function populateYearDropdown() {
 populateYearDropdown();
 
 // Default to latest season (first in the list since getSeasons() returns newest first)
+// Sort by latest season WITHOUT blur effect (just sort, don't "select" year)
 const latestSeason = getSeasons()[0];
 if (latestSeason && !selectedYear) {
-  // Use handleYearChange to properly set sortMode and styles
-  handleYearChange(latestSeason);
-} else {
-  // Build the appropriate table
-  if (viewMode === 'live') buildLiveTable();
-  else buildTable();
+  selectedYear = latestSeason;
+  sortMode = 'year';
+  document.getElementById('yearSelect').value = latestSeason;
+  // Don't add 'year-selected' class to avoid blur effect - this is just default sorting
 }
+
+// Build the appropriate table
+if (viewMode === 'live') buildLiveTable();
+else buildTable();
 
 updateHeaderHeight();
 window.addEventListener('resize', updateHeaderHeight);
