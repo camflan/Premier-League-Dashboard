@@ -51,7 +51,9 @@ export function composeData(rootDir) {
   }
 
   // Derive seasons from Premier League standings (primary source)
-  const seasons = Object.keys(standings['premier-league'] || {}).sort().reverse();
+  const seasons = Object.keys(standings['premier-league'] || {})
+    .sort()
+    .reverse();
 
   return {
     activeSeason: activeSeason(), // recomputed from current date each render
