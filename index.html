@@ -62142,13 +62142,13 @@ populateYearDropdown();
 // Default to latest season (first in the list since getSeasons() returns newest first)
 const latestSeason = getSeasons()[0];
 if (latestSeason && !selectedYear) {
-  selectedYear = latestSeason;
-  document.getElementById('yearSelect').value = latestSeason;
+  // Use handleYearChange to properly set sortMode and styles
+  handleYearChange(latestSeason);
+} else {
+  // Build the appropriate table
+  if (viewMode === 'live') buildLiveTable();
+  else buildTable();
 }
-
-// Build the appropriate table
-if (viewMode === 'live') buildLiveTable();
-else buildTable();
 
 updateHeaderHeight();
 window.addEventListener('resize', updateHeaderHeight);
