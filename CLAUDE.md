@@ -8,7 +8,8 @@
 2. **Never create standalone HTML pages.** If the site needs new HTML, edit the template.
 3. **Never embed data (standings, matches, fixtures, team metadata) directly into the template or any JS.** Data goes in `data/` or `static/` as JSON; rendering injects it as `window.__DATA`.
 4. **Don't bypass the sync.** Use `npm run sync` (and its flags) to refresh `data/`. Don't hand-write fetched season files unless patching a specific bug.
-5. **Never fabricate data.** No generated match results, no synthetic standings. Derived standings (computed from real matches) and season-rollover scaffolding (`handle-season-end.js`, zeroed records) are the only permitted generated data.
+5. **Never fabricate data.** No generated match results, no synthetic standings. Season-rollover scaffolding (`handle-season-end.js`, zeroed records) is the only permitted generated file.
+6. **Source data files are immutable — derivation happens at render time.** Never write computed data into `data/`. `composeData()` derives standings in memory for seasons that have matches but no standings file; an existing standings file (official tables, incl. points deductions) always wins. If you're about to write a script that "fixes" or "fills in" data files from other data files, put that logic in `compose-data.js` instead.
 
 ## Pipeline in one screen
 
@@ -24,6 +25,7 @@
         └──────────────┬──────────────┘
                        ▼
         scripts/lib/compose-data.js → composeData()
+          (derives missing standings from matches, in memory)
         scripts/lib/render.js       → renderHTML(data, template)   (pure)
                        │
         ┌──────────────┴──────────────┐
@@ -44,7 +46,8 @@ Leagues: `premier-league`, `championship`, `efl-league-one`, `league-two` (see `
 | Season notes, fun facts, team notes | `static/notes.json`, `static/fun-facts.json`, `static/team-notes.json` | refresh browser |
 | League list / ESPN IDs | `static/leagues.json` | refresh browser |
 | Fetch scope / data availability | `static/seasons.json`, `static/seasons-config.json` | re-sync if needed |
-| Standings / matches / fixtures | **Don't hand-edit.** `npm run sync` | — |
+| Matches / fixtures | **Don't hand-edit.** `npm run sync` | — |
+| Standings | Official tables only (hand-patch for deductions etc.); missing seasons derive from matches at render time | — |
 | Data composition logic | `scripts/lib/compose-data.js` | — |
 | Render logic | `scripts/lib/render.js` | — |
 | Fetching logic | `scripts/sync.js`, `scripts/fetchers/*` | — |
@@ -100,6 +103,14 @@ Data workflows commit **data only**. Deploy is the only place HTML is produced, 
 - **"Just write a quick standalone HTML page to test something"** → don't. Use `npm run dev` — it re-renders on every refresh.
 - **"Inline a small bit of data so I don't have to rebuild"** → don't. There is no rebuild; put it in the right JSON and refresh.
 - **"Generate plausible match data to fill a gap"** → don't. A fake-data generator was deliberately removed; gaps stay visible until real data is sourced.
+- **"Write a script that fills/fixes one data file from another"** → don't. Derivation belongs in `compose-data.js`, at render time, in memory.
+
+## Repo & contribution workflow
+
+- This repo (`camflan/Premier-League-Dashboard`) is a **fork of `customsnow/Premier-League-Dashboard`**. PRs target the **upstream** repo, not the fork. Remotes: `origin` (fork, SSH), `upstream` (parent).
+- Branch from `main` as `camron/<topic>`; rebase onto `upstream/main` before opening a PR (prefer rebase to merge).
+- CI bots commit data to `main` directly (nightly sync, season-end); expect `main` to move on its own. Fetch upstream before assuming your base is current.
+- ESPN API gotchas learned the hard way: whole-season date-range queries silently truncate to ~100 events (fetch month-by-month — `getMatchResultsForDateRange` already does); always pass the league's `espnId` from `static/leagues.json` (hardcoded fallbacks once sent Premier League data into league-two's files).
 
 ## Further reading
 

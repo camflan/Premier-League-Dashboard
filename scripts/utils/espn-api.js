@@ -129,83 +129,119 @@ export async function getMatchResults(team = null, limit = 100, leagueEspnId = '
   }
 }
 
+// Fetch one date-range chunk (format: YYYY-MM-DD). The scoreboard endpoint
+// silently caps responses (~100 events), so callers must keep chunks small.
+async function fetchDateRangeChunk(startDate, endDate, leagueEspnId) {
+  const dateRange = `${startDate.replace(/-/g, '')}-${endDate.replace(/-/g, '')}`;
+
+  const endpoints = [
+    `https://site.api.espn.com/apis/site/v2/sports/soccer/${leagueEspnId}/scoreboard?dates=${dateRange}`,
+    `https://www.espn.com/soccer/api/site/v2/competitions/${leagueEspnId.split('.')[0]}/events?dates=${dateRange}`,
+  ];
+
+  for (const endpoint of endpoints) {
+    try {
+      const response = await fetch(endpoint);
+      if (!response.ok) {
+        continue;
+      }
+
+      const data = await response.json();
+      const events = data.events ?? [];
+
+      if (events.length === 0) {
+        continue;
+      }
+
+      const matches = [];
+      const [startYear, startMonth, startDay] = startDate.split('-').map(Number);
+      const [endYear, endMonth, endDay] = endDate.split('-').map(Number);
+      const rangeStart = new Date(startYear, startMonth - 1, startDay);
+      const rangeEnd = new Date(endYear, endMonth - 1, endDay);
+
+      for (const event of events) {
+        const status = event.status?.type?.name;
+        // Include only finished matches (not scheduled)
+        if (!status || status === 'STATUS_SCHEDULED') continue;
+
+        const sides = parseEvent(event);
+        if (!sides) continue;
+
+        const eventDate = new Date(event.date);
+        // Double-check date is in range
+        if (eventDate < rangeStart || eventDate > rangeEnd) continue;
+
+        matches.push({
+          a: sides.away.team?.displayName || sides.away.team?.name,
+          ag: parseInt(sides.away.score, 10) || 0,
+          d: eventDate.toLocaleDateString('en-GB'), // DD/MM/YYYY
+          h: sides.home.team?.displayName || sides.home.team?.name,
+          hg: parseInt(sides.home.score, 10) || 0,
+          status,
+        });
+      }
+
+      if (matches.length > 0) return matches;
+    } catch (_e) {
+      // Try next endpoint
+    }
+  }
+
+  return [];
+}
+
+// Split an ISO date range into calendar-month chunks (inclusive).
+function monthChunks(startDate, endDate) {
+  const chunks = [];
+  const [sy, sm] = startDate.split('-').map(Number);
+  const [ey, em] = endDate.split('-').map(Number);
+  let y = sy;
+  let m = sm;
+  while (y < ey || (y === ey && m <= em)) {
+    const first = `${y}-${String(m).padStart(2, '0')}-01`;
+    const lastDay = new Date(y, m, 0).getDate(); // day 0 of next month
+    const last = `${y}-${String(m).padStart(2, '0')}-${String(lastDay).padStart(2, '0')}`;
+    chunks.push([first < startDate ? startDate : first, last > endDate ? endDate : last]);
+    m++;
+    if (m > 12) {
+      m = 1;
+      y++;
+    }
+  }
+  return chunks;
+}
+
 // Get historical match results for a specific date range.
-// Fetches completed matches between startDate and endDate (ISO format: YYYY-MM-DD).
+// Fetches completed matches between startDate and endDate (ISO format: YYYY-MM-DD),
+// month by month — a whole-season request gets silently truncated to ~100 events.
 // Returns matches in canonical format or null/empty array on failure.
 export async function getMatchResultsForDateRange(startDate, endDate, leagueEspnId = 'eng.1') {
   try {
-    const leagueName = leagueEspnId === 'eng.1' ? 'Premier League' : leagueEspnId === 'eng.2' ? 'Championship' : 'EFL League One';
-    console.log(`     🔄 Fetching ${leagueName} matches from ${startDate} to ${endDate}...`);
+    console.log(`     🔄 Fetching ${leagueEspnId} matches from ${startDate} to ${endDate}…`);
 
-    // ESPN scoreboard endpoint with date range (format: YYYYMMDDYYYYMMDD)
-    const startDateFormatted = startDate.replace(/-/g, '');
-    const endDateFormatted = endDate.replace(/-/g, '');
-    const dateRange = `${startDateFormatted}-${endDateFormatted}`;
-
-    const endpoints = [
-      `https://site.api.espn.com/apis/site/v2/sports/soccer/${leagueEspnId}/scoreboard?dates=${dateRange}`,
-      `https://www.espn.com/soccer/api/site/v2/competitions/${leagueEspnId.split('.')[0]}/events?dates=${dateRange}`,
-    ];
-
-    for (const endpoint of endpoints) {
-      try {
-        const response = await fetch(endpoint);
-        if (!response.ok) {
-          continue;
-        }
-
-        const data = await response.json();
-        const events = data.events ?? [];
-
-        if (events.length === 0) {
-          continue;
-        }
-
-        const matches = [];
-        const [startYear, startMonth, startDay] = startDate.split('-').map(Number);
-        const [endYear, endMonth, endDay] = endDate.split('-').map(Number);
-        const rangeStart = new Date(startYear, startMonth - 1, startDay);
-        const rangeEnd = new Date(endYear, endMonth - 1, endDay);
-
-        for (const event of events) {
-          const status = event.status?.type?.name;
-          // Include only finished matches (not scheduled)
-          if (!status || status === 'STATUS_SCHEDULED') continue;
-
-          const sides = parseEvent(event);
-          if (!sides) continue;
-
-          const eventDate = new Date(event.date);
-          // Double-check date is in range
-          if (eventDate < rangeStart || eventDate > rangeEnd) continue;
-
-          matches.push({
-            a: sides.away.team?.displayName || sides.away.team?.name,
-            ag: parseInt(sides.away.score, 10) || 0,
-            d: eventDate.toLocaleDateString('en-GB'), // DD/MM/YYYY
-            h: sides.home.team?.displayName || sides.home.team?.name,
-            hg: parseInt(sides.home.score, 10) || 0,
-            status,
-          });
-        }
-
-        if (matches.length > 0) {
-          // Sort by date descending (most recent first)
-          matches.sort((a, b) => {
-            const da = new Date(a.d.split('/').reverse().join('-'));
-            const db = new Date(b.d.split('/').reverse().join('-'));
-            return db - da;
-          });
-          console.log(`       ✓ Got ${matches.length} matches`);
-          return matches;
-        }
-      } catch (e) {
-        // Try next endpoint
+    const seen = new Map();
+    for (const [from, to] of monthChunks(startDate, endDate)) {
+      const chunk = await fetchDateRangeChunk(from, to, leagueEspnId);
+      for (const match of chunk) {
+        seen.set(`${match.d}|${match.h}|${match.a}`, match);
       }
+      await delay(300); // rate-limit between month requests
     }
 
-    console.log(`       ℹ️  No matches found in date range`);
-    return [];
+    const matches = [...seen.values()];
+    if (matches.length === 0) {
+      console.log(`       ℹ️  No matches found in date range`);
+      return [];
+    }
+
+    // Sort by date descending (most recent first)
+    matches.sort((a, b) => {
+      const da = new Date(a.d.split('/').reverse().join('-'));
+      const db = new Date(b.d.split('/').reverse().join('-'));
+      return db - da;
+    });
+    console.log(`       ✓ Got ${matches.length} matches`);
+    return matches;
   } catch (error) {
     console.error(`     ❌ Error fetching historical matches: ${error.message}`);
     return null;

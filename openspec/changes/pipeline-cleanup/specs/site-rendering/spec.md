@@ -26,3 +26,14 @@ No `index*.html` file SHALL be tracked by git or written to the repo root by any
 #### Scenario: Build artifacts are ignored
 - **WHEN** an `index.html` or iCloud-duplicate `index N.html` appears in the repo root
 - **THEN** `git status` shows it as ignored, not untracked or modified
+
+### Requirement: Render-time derivation
+Derived data SHALL be computed in memory during composition, never written to `data/`. For any (league, season) that has played matches but no standings file (or an empty one), `composeData()` SHALL derive standings from those matches. An existing non-empty standings file (official tables, including points deductions) always wins over derivation.
+
+#### Scenario: Missing standings derived from matches
+- **WHEN** a season has a matches file with played results and no standings file
+- **THEN** the rendered `window.__DATA` contains standings derived from those matches, and no standings file is written to disk
+
+#### Scenario: Official standings never overridden
+- **WHEN** a season has both a standings file and a matches file
+- **THEN** the rendered standings come verbatim from the standings file

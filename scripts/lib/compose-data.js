@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { activeSeason } from '../utils/active-season.js';
+import { deriveStandings } from '../utils/derive-standings.js';
 
 function readJSON(p) {
   return JSON.parse(fs.readFileSync(p, 'utf8'));
@@ -48,6 +49,20 @@ export function composeData(rootDir) {
     standings[league.id] = readLeagueSeasonDir(dataDir, league.id, 'standings');
     matches[league.id] = readLeagueSeasonDir(dataDir, league.id, 'matches');
     fixtures[league.id] = readLeagueSeasonDir(dataDir, league.id, 'fixtures');
+  }
+
+  // Data files are immutable source data — derivation happens here, in memory.
+  // A standings file on disk (official tables, incl. points deductions) always
+  // wins; derivation only fills seasons that have matches but no standings.
+  for (const league of leagues) {
+    for (const [season, seasonMatches] of Object.entries(matches[league.id])) {
+      const existing = standings[league.id][season];
+      if (existing && existing.length > 0) continue;
+      const played = seasonMatches.filter((m) => Number.isFinite(m.hg) && Number.isFinite(m.ag));
+      if (played.length > 0) {
+        standings[league.id][season] = deriveStandings(played);
+      }
+    }
   }
 
   // Derive seasons from Premier League standings (primary source)

@@ -20,13 +20,11 @@ A single-page football statistics dashboard rendered from JSON data and one HTML
 
 ## Principles
 
-1. **One writer per direction.** `sync` is the only thing that writes `data/`. `render` is the only thing that produces HTML, and only into `_site/` (gitignored). Nothing writes HTML at the repo root, ever.
+1. **One writer per direction.** `sync` is the only thing that writes `data/`, and it writes *fetched* data only. `render` is the only thing that produces HTML, and only into `_site/` (gitignored). Nothing writes HTML at the repo root, ever.
 2. **Pure rendering.** `composeData()` reads JSON into the `window.__DATA` object; `renderHTML(data, template)` is a string transform. Dev and CI call the same functions, so dev output cannot drift from deploys.
-3. **Data is real or absent.** No fabricated match results or synthetic standings. The only generated data:
-   - *Derived standings* — computed from real fetched matches (`scripts/utils/derive-standings.js`), never for the active season (official standings are preserved).
-   - *Season scaffolding* — `scripts/handle-season-end.js` creates next-season standings with zeroed records and promotion/relegation movements at rollover (May 31). Structural, not results.
-   A fake-data generator (`generate-matches.js`) existed once and was deliberately removed.
-4. **Fetches are safe by construction.**
+3. **Source data is immutable; derivation happens at render time.** Nothing writes computed data into `data/`. `composeData()` derives standings in memory (`scripts/utils/derive-standings.js`) for any (league, season) that has played matches but no standings file. An existing standings file always wins — official tables encode things derivation can't know (points deductions). Known limitation: ESPN date ranges include playoff finals, so derived gap-filler tables can slightly overcount games for playoff participants.
+4. **Data is real or absent.** No fabricated match results or synthetic standings. The only generated *files* are season scaffolding — `scripts/handle-season-end.js` creates next-season standings with zeroed records and promotion/relegation movements at rollover (May 31). Structural, not results. A fake-data generator (`generate-matches.js`) existed once and was deliberately removed.
+5. **Fetches are safe by construction.**
    - TTL cache gates API calls (`data/.cache/`, gitignored; active season 1 h, past seasons 7 d).
    - SHA-256 content hash gates file writes — unchanged data writes nothing, so commits stay quiet.
    - Empty/null fetches never clobber existing files.

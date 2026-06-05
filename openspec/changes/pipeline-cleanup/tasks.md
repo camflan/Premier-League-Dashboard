@@ -58,3 +58,11 @@
 
 - [ ] 8.1 Manually dispatch `deploy-pages.yml`; confirm Pages serves the freshly rendered site
 - [ ] 8.2 After first nightly run: confirm data-only commit and that it triggered a deploy
+
+## 9. Immutable source data (added during apply)
+
+- [x] 9.1 Remove `rederiveStandings()` from sync — sync writes fetched data only
+- [x] 9.2 `composeData()` derives standings in memory for seasons with matches but no standings file; official files always win
+- [x] 9.3 Month-chunk `getMatchResultsForDateRange()` (whole-season queries truncate at ~100 events)
+- [x] 9.4 Add `league-two` to `static/seasons-config.json` (eng.4, ESPN from 2003-04)
+- [x] 9.5 Update specs/design/docs for the immutability principle

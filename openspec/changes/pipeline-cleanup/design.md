@@ -126,3 +126,14 @@ Rollback: revert commits; `index.html` regenerable at any commit via the render 
 
 - Does GitHub Pages deploy currently rely on the *committed* `index.html` anywhere besides `deploy-pages.yml` (e.g. Pages configured to serve from branch root rather than Actions)? Verify Pages source is "GitHub Actions" before untracking.
 - Should `validate-data.js` run as a gate inside sync (post-fetch) and/or render (pre-render)? Lean: post-fetch in sync, fail loud in CI.
+
+### 7. Source data is immutable; derivation at render time (added during apply)
+
+Sync originally re-derived past-season standings files from fetched matches (carried over from `fetcher.js`). That writes *computed* data into `data/` and can silently clobber official tables — derived standings can't know about points deductions (e.g. Portsmouth −9, 2009-10). Decision: **nothing ever writes derived data to `data/`**. `composeData()` derives standings in memory for any (league, season) with played matches but no standings file; an existing non-empty standings file always wins. `rederiveStandings()` removed from sync.
+
+Consequences:
+- `data/<league>/standings/` files are official/curated tables only (plus season-rollover scaffolding).
+- league-two history needs no standings backfill — fetching its matches is enough; tables derive at render.
+- Known limitation: ESPN date-range results include playoff finals, so derived tables can slightly overcount games for playoff participants. Acceptable for gap-filling; official files are unaffected.
+
+Related fix: ESPN's scoreboard endpoint silently truncates whole-season date-range queries to ~100 events; `getMatchResultsForDateRange()` now fetches month-by-month chunks with rate-limit delays and dedupes.

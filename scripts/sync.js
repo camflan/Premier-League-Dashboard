@@ -32,7 +32,6 @@ import { fetchFixturesForSeason } from './fetchers/fetch-fixtures.js';
 import { syncLogos } from './fetchers/fetch-logos.js';
 import { fetchMatchesForSeason } from './fetchers/fetch-matches.js';
 import { activeSeason } from './utils/active-season.js';
-import { deriveStandings } from './utils/derive-standings.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const rootDir = path.join(__dirname, '..');
@@ -225,44 +224,6 @@ async function processOne(league, season, type, args, active, availableFrom) {
   return { data: next, written: true };
 }
 
-// Re-derive standings/<season>.json from matches/<season>.json whenever matches change.
-// For the active season, skip derivation entirely to preserve official final standings.
-// For past seasons, only derive if we have more teams than before (avoid losing data).
-function rederiveStandings(season, matchesData, leagueId, active) {
-  // For active/current season, never override standings with incomplete match data
-  if (season === active) {
-    console.log(
-      `  ➖ standings/${season}: skipped (active season - preserving official standings)`,
-    );
-    return;
-  }
-
-  const standings = deriveStandings(matchesData);
-  const p = dataPath('standings', season, leagueId);
-  const existing = readJSON(p);
-
-  // If derived standings has fewer teams than existing, skip to preserve completeness
-  if (
-    existing &&
-    Array.isArray(existing) &&
-    Array.isArray(standings) &&
-    standings.length < existing.length
-  ) {
-    console.log(
-      `  ➖ standings/${season}: skipped (derived ${standings.length} < existing ${existing.length} teams)`,
-    );
-    return;
-  }
-
-  const newHash = sha(standings);
-  if (existing && sha(existing) === newHash) {
-    console.log(`  =  standings/${season}: unchanged`);
-    return;
-  }
-  writeJSON(p, standings);
-  console.log(`  ✓  standings/${season}: ${standings.length} teams (derived from matches)`);
-}
-
 // ---- main ------------------------------------------------------------------
 
 async function main() {
@@ -303,23 +264,12 @@ async function main() {
 
     for (const season of seasons) {
       console.log(`📅 ${season}`);
-      let matchesChanged = false;
-      let matchesData = null;
-
       for (const type of types) {
         try {
-          const result = await processOne(league, season, type, args, active, availableFrom);
-          if (type === 'matches' && result.written) {
-            matchesChanged = true;
-            matchesData = result.data;
-          }
+          await processOne(league, season, type, args, active, availableFrom);
         } catch (e) {
           console.error(`  ❌ ${type}/${season}: ${e.message}`);
         }
-      }
-
-      if (matchesChanged && matchesData) {
-        rederiveStandings(season, matchesData, league.id, active);
       }
     }
     console.log('');

@@ -14,12 +14,18 @@
       "standingsFrom": "2003-04",
       "matchesFrom": "2003-04",
       "espnMatchesFrom": "2003-04"
+    },
+    "league-two": {
+      "standingsFrom": "2025-26",
+      "matchesFrom": "2003-04",
+      "espnMatchesFrom": "2003-04"
     }
   },
   "notes": {
     "premier-league": "PL has some historical matches from 2002-03 onwards. Earlier seasons before 2002-03 require manual data entry or alternative sources.",
     "championship": "Championship data available from ESPN back to 2003-04. Earlier seasons would require alternative data sources.",
-    "efl-league-one": "EFL League 1 data available from ESPN back to 2003-04. Earlier seasons would require alternative data sources."
+    "efl-league-one": "EFL League 1 data available from ESPN back to 2003-04. Earlier seasons would require alternative data sources.",
+    "league-two": "League Two (eng.4) data available from ESPN back to 2003-04, same as League One. Standings files only exist from 2025-26; earlier seasons are derived from matches at render time."
   },
   "gaps": {
     "premierLeague": "Pre-2002-03: no automated fetch; requires Transfermarkt or manual entry",

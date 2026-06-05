@@ -40,8 +40,15 @@ Sync MUST NOT delete or overwrite existing data with empty or null fetch results
 - **THEN** the file is not rewritten (cache timestamp only is refreshed) so commits stay quiet
 
 ### Requirement: No fabricated data
-The repository SHALL NOT contain tooling that generates synthetic match results or standings. Derived standings (computed from real fetched matches) and structural season scaffolding (zeroed records at season rollover) are permitted.
+The repository SHALL NOT contain tooling that generates synthetic match results or standings. Structural season scaffolding (zeroed records at season rollover) is permitted.
 
 #### Scenario: Fake-data generator removed
 - **WHEN** the scripts directory is inspected
 - **THEN** `generate-matches.js` does not exist and no script fabricates match results
+
+### Requirement: Source data files are immutable
+Sync SHALL write only data fetched from sources. It MUST NOT write derived data (e.g. standings computed from matches) — derivation happens in memory at render time (see `site-rendering`).
+
+#### Scenario: Matches fetch does not touch standings
+- **WHEN** sync fetches matches for a season
+- **THEN** no standings file is created or modified
