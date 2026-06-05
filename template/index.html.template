@@ -1946,6 +1946,13 @@ async function buildMatchChart(team, season) {
   if (!matches) matches = generateMatchData(team, season);
   console.log(`[buildMatchChart] Generated ${matches.length} matches for ${team}/${season}`);
 
+  // For future seasons (not yet played), mark all matches as 'U' (upcoming)
+  const seasons = getSeasons();
+  const isUpcomingSeason = season !== ACTIVE_SEASON && seasons.indexOf(season) < seasons.indexOf(ACTIVE_SEASON);
+  if (isUpcomingSeason && matches.length > 0) {
+    matches = matches.map(m => ({ ...m, result: 'U', gf: 0, ga: 0 }));
+  }
+
   // For 2025-26 season, mark upcoming fixtures as 'U' instead of treating them as unplayed
   if (season === ACTIVE_SEASON && matches.length > 0) {
     // Get actual played matches from HISTORICAL_MATCHES for the selected league
@@ -2228,8 +2235,19 @@ function saveDefaultViewPreference() {
   console.log(`Default view preference saved: ${selectedMode}`);
 }
 
-function getTeamLast5(teamName, matches) {
+function getTeamLast5(teamName, matches, season) {
+  // For upcoming seasons with no match data, show TBD
+  if (!matches || matches.length === 0) {
+    return '<div style="display: inline-flex; align-items: center; justify-content: center; padding: 4px 8px; background: #374151; border-radius: 4px; font-weight: 600; font-size: 11px; color: white;">TBD</div>';
+  }
+
   const teamMatches = matches.filter(m => m.h === teamName || m.a === teamName).slice(-5);
+
+  // If team has no matches in this season, show TBD
+  if (teamMatches.length === 0) {
+    return '<div style="display: inline-flex; align-items: center; justify-content: center; padding: 4px 8px; background: #374151; border-radius: 4px; font-weight: 600; font-size: 11px; color: white;">TBD</div>';
+  }
+
   let html = '';
   teamMatches.forEach(m => {
     let result = '';
@@ -2253,7 +2271,11 @@ function buildLiveTable() {
   const table = calculateLiveStandings();
   const tbody = document.getElementById('tbody');
   const thead = document.getElementById('thead');
-  const matches = getHistoricalMatches()[ACTIVE_SEASON] || [];
+
+  // Use the next upcoming season (most recent in seasons array) for Live Table display
+  const seasons = getSeasons();
+  const liveTableSeason = seasons[0]; // Most recent season
+  const matches = getHistoricalMatches()[liveTableSeason] || [];
 
   // Filter table to only include teams for the selected league
   const maxTeams = selectedLeague === 'premier-league' ? 20 : 24;
@@ -2283,7 +2305,7 @@ function buildLiveTable() {
     const tr = document.createElement('tr');
     const posColor = positionColor(idx + 1, maxTeams);
     const posText = idx + 1;
-    const last5Html = getTeamLast5(row.team, matches);
+    const last5Html = getTeamLast5(row.team, matches, liveTableSeason);
 
     // Check for promotion/relegation status
     const isPromoted = isPromotedTeam(row.team, ACTIVE_SEASON);
