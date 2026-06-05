@@ -1,0 +1,4378 @@
+[
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "29/05/2010",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "18/05/2010",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "17/05/2010",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FINAL_PEN"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "15/05/2010",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "14/05/2010",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "08/05/2010",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "08/05/2010",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "08/05/2010",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "08/05/2010",
+    "h": "Exeter City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "08/05/2010",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "08/05/2010",
+    "h": "Millwall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "08/05/2010",
+    "h": "Norwich City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 2,
+    "d": "08/05/2010",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 1,
+    "d": "08/05/2010",
+    "h": "Southampton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 3,
+    "d": "08/05/2010",
+    "h": "Stockport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "08/05/2010",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "08/05/2010",
+    "h": "Wycombe Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 3,
+    "d": "01/05/2010",
+    "h": "Bristol Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "01/05/2010",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "01/05/2010",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "01/05/2010",
+    "h": "Gillingham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 1,
+    "d": "01/05/2010",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "01/05/2010",
+    "h": "Huddersfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "01/05/2010",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 0,
+    "d": "01/05/2010",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "01/05/2010",
+    "h": "Southend United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "01/05/2010",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "01/05/2010",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "01/05/2010",
+    "h": "Yeovil Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "24/04/2010",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "24/04/2010",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "24/04/2010",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "24/04/2010",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "24/04/2010",
+    "h": "Leeds United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "24/04/2010",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "24/04/2010",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 2,
+    "d": "24/04/2010",
+    "h": "Oldham Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "24/04/2010",
+    "h": "Southampton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 6,
+    "d": "24/04/2010",
+    "h": "Stockport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "24/04/2010",
+    "h": "Walsall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "24/04/2010",
+    "h": "Wycombe Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "20/04/2010",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "20/04/2010",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "17/04/2010",
+    "h": "Bristol Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 2,
+    "d": "17/04/2010",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "17/04/2010",
+    "h": "Charlton Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "17/04/2010",
+    "h": "Gillingham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "17/04/2010",
+    "h": "Hartlepool United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "17/04/2010",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 3,
+    "d": "17/04/2010",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "17/04/2010",
+    "h": "Southend United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "17/04/2010",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 1,
+    "d": "17/04/2010",
+    "h": "Tranmere Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "17/04/2010",
+    "h": "Yeovil Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "16/04/2010",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 5,
+    "d": "13/04/2010",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 3,
+    "d": "13/04/2010",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "13/04/2010",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "13/04/2010",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "13/04/2010",
+    "h": "Hartlepool United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 3,
+    "d": "13/04/2010",
+    "h": "Huddersfield Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "13/04/2010",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "13/04/2010",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "13/04/2010",
+    "h": "Southend United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 3,
+    "d": "13/04/2010",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "13/04/2010",
+    "h": "Yeovil Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 1,
+    "d": "12/04/2010",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "10/04/2010",
+    "h": "Brentford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "10/04/2010",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "10/04/2010",
+    "h": "Colchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "10/04/2010",
+    "h": "Exeter City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 0,
+    "d": "10/04/2010",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "10/04/2010",
+    "h": "Millwall",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "10/04/2010",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "10/04/2010",
+    "h": "Oldham Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "10/04/2010",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 3,
+    "d": "10/04/2010",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "10/04/2010",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "10/04/2010",
+    "h": "Wycombe Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "06/04/2010",
+    "h": "Huddersfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "05/04/2010",
+    "h": "Yeovil Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "05/04/2010",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 0,
+    "d": "05/04/2010",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "05/04/2010",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "05/04/2010",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 0,
+    "d": "05/04/2010",
+    "h": "Gillingham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 0,
+    "d": "05/04/2010",
+    "h": "Hartlepool United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "05/04/2010",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "05/04/2010",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "05/04/2010",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "05/04/2010",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 3,
+    "d": "03/04/2010",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 3,
+    "d": "03/04/2010",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "03/04/2010",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "03/04/2010",
+    "h": "Oldham Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "03/04/2010",
+    "h": "Southend United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "03/04/2010",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 2,
+    "d": "03/04/2010",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "02/04/2010",
+    "h": "Carlisle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "02/04/2010",
+    "h": "Exeter City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "02/04/2010",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "02/04/2010",
+    "h": "Tranmere Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 2,
+    "d": "01/04/2010",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 3,
+    "d": "30/03/2010",
+    "h": "Oldham Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "27/03/2010",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "27/03/2010",
+    "h": "Brighton & Hove Albion",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 3,
+    "d": "27/03/2010",
+    "h": "Bristol Rovers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "27/03/2010",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "27/03/2010",
+    "h": "Exeter City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "27/03/2010",
+    "h": "Gillingham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "27/03/2010",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "27/03/2010",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "27/03/2010",
+    "h": "Millwall",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "27/03/2010",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 3,
+    "d": "23/03/2010",
+    "h": "Colchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 2,
+    "d": "23/03/2010",
+    "h": "Southampton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "23/03/2010",
+    "h": "Southend United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "22/03/2010",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 2,
+    "d": "20/03/2010",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 2,
+    "d": "20/03/2010",
+    "h": "Leyton Orient",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 3,
+    "d": "20/03/2010",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "20/03/2010",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "20/03/2010",
+    "h": "Southend United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "20/03/2010",
+    "h": "Stockport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "20/03/2010",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "20/03/2010",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 2,
+    "d": "20/03/2010",
+    "h": "Wycombe Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 3,
+    "d": "20/03/2010",
+    "h": "Yeovil Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "19/03/2010",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "17/03/2010",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "16/03/2010",
+    "h": "Brighton & Hove Albion",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "16/03/2010",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "16/03/2010",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "16/03/2010",
+    "h": "Stockport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 3,
+    "d": "13/03/2010",
+    "h": "Brentford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "13/03/2010",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "13/03/2010",
+    "h": "Bristol Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "13/03/2010",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 3,
+    "d": "13/03/2010",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "13/03/2010",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "13/03/2010",
+    "h": "Millwall",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "13/03/2010",
+    "h": "Oldham Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "13/03/2010",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 0,
+    "d": "13/03/2010",
+    "h": "Southend United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "13/03/2010",
+    "h": "Stockport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "13/03/2010",
+    "h": "Yeovil Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 3,
+    "d": "09/03/2010",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "09/03/2010",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "09/03/2010",
+    "h": "Oldham Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 4,
+    "d": "09/03/2010",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 0,
+    "d": "08/03/2010",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 4,
+    "d": "06/03/2010",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "06/03/2010",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "06/03/2010",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "06/03/2010",
+    "h": "Gillingham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 0,
+    "d": "06/03/2010",
+    "h": "Hartlepool United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "06/03/2010",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "06/03/2010",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "06/03/2010",
+    "h": "Norwich City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "06/03/2010",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "06/03/2010",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "06/03/2010",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "02/03/2010",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "02/03/2010",
+    "h": "Southampton",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "27/02/2010",
+    "h": "Huddersfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 0,
+    "d": "27/02/2010",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "27/02/2010",
+    "h": "Bristol Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "27/02/2010",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "27/02/2010",
+    "h": "Leyton Orient",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "27/02/2010",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "27/02/2010",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "27/02/2010",
+    "h": "Southampton",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 3,
+    "d": "27/02/2010",
+    "h": "Stockport County",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "27/02/2010",
+    "h": "Yeovil Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 2,
+    "d": "26/02/2010",
+    "h": "Southend United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "23/02/2010",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "23/02/2010",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "23/02/2010",
+    "h": "Hartlepool United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "23/02/2010",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 3,
+    "d": "23/02/2010",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 1,
+    "d": "23/02/2010",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "23/02/2010",
+    "h": "Swindon Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 2,
+    "d": "23/02/2010",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "23/02/2010",
+    "h": "Walsall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "23/02/2010",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "20/02/2010",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "20/02/2010",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "20/02/2010",
+    "h": "Exeter City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "20/02/2010",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 2,
+    "d": "20/02/2010",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "20/02/2010",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 1,
+    "d": "20/02/2010",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 2,
+    "d": "20/02/2010",
+    "h": "Norwich City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "20/02/2010",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "20/02/2010",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "20/02/2010",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "20/02/2010",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 2,
+    "d": "16/02/2010",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "16/02/2010",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "16/02/2010",
+    "h": "Yeovil Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "15/02/2010",
+    "h": "Bristol Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "13/02/2010",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 2,
+    "d": "13/02/2010",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "13/02/2010",
+    "h": "Carlisle United",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "13/02/2010",
+    "h": "Huddersfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "13/02/2010",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 0,
+    "d": "13/02/2010",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "13/02/2010",
+    "h": "Oldham Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "13/02/2010",
+    "h": "Southend United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "13/02/2010",
+    "h": "Stockport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "13/02/2010",
+    "h": "Yeovil Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "09/02/2010",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "09/02/2010",
+    "h": "Bristol Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "09/02/2010",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 2,
+    "d": "09/02/2010",
+    "h": "Swindon Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 0,
+    "d": "08/02/2010",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "06/02/2010",
+    "h": "Brentford",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "06/02/2010",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "06/02/2010",
+    "h": "Hartlepool United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "06/02/2010",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "06/02/2010",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "06/02/2010",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 3,
+    "d": "06/02/2010",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "06/02/2010",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "06/02/2010",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "06/02/2010",
+    "h": "Walsall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 4,
+    "d": "06/02/2010",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "02/02/2010",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "02/02/2010",
+    "h": "Leyton Orient",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "02/02/2010",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "30/01/2010",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 3,
+    "d": "30/01/2010",
+    "h": "Bristol Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 2,
+    "d": "30/01/2010",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "30/01/2010",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "30/01/2010",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "30/01/2010",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 1,
+    "d": "30/01/2010",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "30/01/2010",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "30/01/2010",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "30/01/2010",
+    "h": "Southend United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "30/01/2010",
+    "h": "Yeovil Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "26/01/2010",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "26/01/2010",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 3,
+    "d": "26/01/2010",
+    "h": "Exeter City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "26/01/2010",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 0,
+    "d": "26/01/2010",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "26/01/2010",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "26/01/2010",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "26/01/2010",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 2,
+    "d": "26/01/2010",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "25/01/2010",
+    "h": "Charlton Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "23/01/2010",
+    "h": "Bristol Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "23/01/2010",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "23/01/2010",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "23/01/2010",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "23/01/2010",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "23/01/2010",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "23/01/2010",
+    "h": "Southend United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 1,
+    "d": "23/01/2010",
+    "h": "Yeovil Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "20/01/2010",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "19/01/2010",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "19/01/2010",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "19/01/2010",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "19/01/2010",
+    "h": "Stockport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "16/01/2010",
+    "h": "Brentford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 5,
+    "d": "16/01/2010",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "16/01/2010",
+    "h": "Exeter City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 5,
+    "d": "16/01/2010",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 1,
+    "d": "16/01/2010",
+    "h": "Huddersfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "16/01/2010",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "16/01/2010",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "16/01/2010",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 2,
+    "d": "16/01/2010",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "09/01/2010",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 1,
+    "d": "09/01/2010",
+    "h": "Norwich City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "02/01/2010",
+    "h": "Hartlepool United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "02/01/2010",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 4,
+    "d": "28/12/2009",
+    "h": "Stockport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "28/12/2009",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "28/12/2009",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "28/12/2009",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "28/12/2009",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 2,
+    "d": "28/12/2009",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "28/12/2009",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "28/12/2009",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "28/12/2009",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 5,
+    "d": "28/12/2009",
+    "h": "Wycombe Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "26/12/2009",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "26/12/2009",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "26/12/2009",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "26/12/2009",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "26/12/2009",
+    "h": "Southend United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "26/12/2009",
+    "h": "Leeds United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "26/12/2009",
+    "h": "Milton Keynes Dons",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 1,
+    "d": "26/12/2009",
+    "h": "Southampton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "26/12/2009",
+    "h": "Yeovil Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 4,
+    "d": "19/12/2009",
+    "h": "Charlton Athletic",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 0,
+    "d": "19/12/2009",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "19/12/2009",
+    "h": "Gillingham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "19/12/2009",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "19/12/2009",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "19/12/2009",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "19/12/2009",
+    "h": "Norwich City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "19/12/2009",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "19/12/2009",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 2,
+    "d": "19/12/2009",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 2,
+    "d": "19/12/2009",
+    "h": "Wycombe Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "12/12/2009",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "12/12/2009",
+    "h": "Bristol Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "12/12/2009",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "12/12/2009",
+    "h": "Huddersfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "12/12/2009",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "12/12/2009",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 0,
+    "d": "12/12/2009",
+    "h": "Oldham Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "12/12/2009",
+    "h": "Southampton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 2,
+    "d": "12/12/2009",
+    "h": "Southend United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 2,
+    "d": "12/12/2009",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 3,
+    "d": "12/12/2009",
+    "h": "Yeovil Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "11/12/2009",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 2,
+    "d": "05/12/2009",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 0,
+    "d": "05/12/2009",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "05/12/2009",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "05/12/2009",
+    "h": "Exeter City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "05/12/2009",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "05/12/2009",
+    "h": "Hartlepool United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 2,
+    "d": "05/12/2009",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "05/12/2009",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 2,
+    "d": "05/12/2009",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "05/12/2009",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 3,
+    "d": "05/12/2009",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "05/12/2009",
+    "h": "Wycombe Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "01/12/2009",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 2,
+    "d": "01/12/2009",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 0,
+    "d": "01/12/2009",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 2,
+    "d": "01/12/2009",
+    "h": "Carlisle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 3,
+    "d": "01/12/2009",
+    "h": "Huddersfield Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "01/12/2009",
+    "h": "Leyton Orient",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "01/12/2009",
+    "h": "Millwall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "01/12/2009",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "01/12/2009",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 3,
+    "d": "01/12/2009",
+    "h": "Southend United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 3,
+    "d": "01/12/2009",
+    "h": "Yeovil Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 2,
+    "d": "24/11/2009",
+    "h": "Charlton Athletic",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "24/11/2009",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "24/11/2009",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "24/11/2009",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 3,
+    "d": "24/11/2009",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "24/11/2009",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 4,
+    "d": "24/11/2009",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "24/11/2009",
+    "h": "Norwich City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "24/11/2009",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 0,
+    "d": "24/11/2009",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "24/11/2009",
+    "h": "Walsall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "24/11/2009",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "21/11/2009",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 3,
+    "d": "21/11/2009",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "21/11/2009",
+    "h": "Bristol Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "21/11/2009",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "21/11/2009",
+    "h": "Huddersfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "21/11/2009",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "21/11/2009",
+    "h": "Millwall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "21/11/2009",
+    "h": "Oldham Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 2,
+    "d": "21/11/2009",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 3,
+    "d": "21/11/2009",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "21/11/2009",
+    "h": "Yeovil Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "20/11/2009",
+    "h": "Southend United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 3,
+    "d": "15/11/2009",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "14/11/2009",
+    "h": "Huddersfield Town",
+    "hg": 6,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "14/11/2009",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "14/11/2009",
+    "h": "Bristol Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "14/11/2009",
+    "h": "Charlton Athletic",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 2,
+    "d": "14/11/2009",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "14/11/2009",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "14/11/2009",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "14/11/2009",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "14/11/2009",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 0,
+    "d": "14/11/2009",
+    "h": "Yeovil Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "01/11/2009",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "30/10/2009",
+    "h": "Southend United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 4,
+    "d": "27/10/2009",
+    "h": "Bristol Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "24/10/2009",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 2,
+    "d": "24/10/2009",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 2,
+    "d": "24/10/2009",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 1,
+    "d": "24/10/2009",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "24/10/2009",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "24/10/2009",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "24/10/2009",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "24/10/2009",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "24/10/2009",
+    "h": "Huddersfield Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "24/10/2009",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "24/10/2009",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "24/10/2009",
+    "h": "Southampton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "19/10/2009",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "17/10/2009",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "17/10/2009",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "17/10/2009",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 3,
+    "d": "17/10/2009",
+    "h": "Oldham Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "17/10/2009",
+    "h": "Southend United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 4,
+    "d": "17/10/2009",
+    "h": "Stockport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 2,
+    "d": "17/10/2009",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "17/10/2009",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 0,
+    "d": "17/10/2009",
+    "h": "Walsall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "17/10/2009",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "17/10/2009",
+    "h": "Yeovil Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "13/10/2009",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "12/10/2009",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "10/10/2009",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "10/10/2009",
+    "h": "Charlton Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "10/10/2009",
+    "h": "Gillingham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 0,
+    "d": "10/10/2009",
+    "h": "Huddersfield Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "10/10/2009",
+    "h": "Leyton Orient",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "10/10/2009",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "10/10/2009",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "10/10/2009",
+    "h": "Yeovil Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "09/10/2009",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 3,
+    "d": "09/10/2009",
+    "h": "Southend United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 3,
+    "d": "03/10/2009",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "03/10/2009",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "03/10/2009",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "03/10/2009",
+    "h": "Exeter City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "03/10/2009",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "03/10/2009",
+    "h": "Millwall",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "03/10/2009",
+    "h": "Norwich City",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "03/10/2009",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "03/10/2009",
+    "h": "Southampton",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 2,
+    "d": "03/10/2009",
+    "h": "Stockport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "03/10/2009",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "03/10/2009",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 1,
+    "d": "29/09/2009",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "29/09/2009",
+    "h": "Colchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "29/09/2009",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "29/09/2009",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "29/09/2009",
+    "h": "Millwall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "29/09/2009",
+    "h": "Norwich City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "29/09/2009",
+    "h": "Oldham Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 3,
+    "d": "29/09/2009",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 2,
+    "d": "29/09/2009",
+    "h": "Stockport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "29/09/2009",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "29/09/2009",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "26/09/2009",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "26/09/2009",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 1,
+    "d": "26/09/2009",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "26/09/2009",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "26/09/2009",
+    "h": "Hartlepool United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "26/09/2009",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "26/09/2009",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "26/09/2009",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "26/09/2009",
+    "h": "Southend United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "26/09/2009",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "26/09/2009",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "26/09/2009",
+    "h": "Yeovil Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 3,
+    "d": "19/09/2009",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 3,
+    "d": "19/09/2009",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "19/09/2009",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "19/09/2009",
+    "h": "Exeter City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "19/09/2009",
+    "h": "Leeds United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "19/09/2009",
+    "h": "Millwall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 2,
+    "d": "19/09/2009",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "19/09/2009",
+    "h": "Oldham Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "19/09/2009",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "19/09/2009",
+    "h": "Stockport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "19/09/2009",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "19/09/2009",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "14/09/2009",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "12/09/2009",
+    "h": "Gillingham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "12/09/2009",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "12/09/2009",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "12/09/2009",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "12/09/2009",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "12/09/2009",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 1,
+    "d": "12/09/2009",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "12/09/2009",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 3,
+    "d": "12/09/2009",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 2,
+    "d": "12/09/2009",
+    "h": "Yeovil Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "11/09/2009",
+    "h": "Southend United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "05/09/2009",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "05/09/2009",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "05/09/2009",
+    "h": "Bristol Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "05/09/2009",
+    "h": "Carlisle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 0,
+    "d": "05/09/2009",
+    "h": "Gillingham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "05/09/2009",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 3,
+    "d": "05/09/2009",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "05/09/2009",
+    "h": "Norwich City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "05/09/2009",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "05/09/2009",
+    "h": "Yeovil Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 3,
+    "d": "04/09/2009",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "04/09/2009",
+    "h": "Southend United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "29/08/2009",
+    "h": "Huddersfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "29/08/2009",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "29/08/2009",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "29/08/2009",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 2,
+    "d": "29/08/2009",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "29/08/2009",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "29/08/2009",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 1,
+    "d": "29/08/2009",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 4,
+    "d": "29/08/2009",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "29/08/2009",
+    "h": "Walsall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "29/08/2009",
+    "h": "Wycombe Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "28/08/2009",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 4,
+    "d": "22/08/2009",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "22/08/2009",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 1,
+    "d": "22/08/2009",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "22/08/2009",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "22/08/2009",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "22/08/2009",
+    "h": "Leeds United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "22/08/2009",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "22/08/2009",
+    "h": "Norwich City",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "22/08/2009",
+    "h": "Oldham Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "22/08/2009",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 3,
+    "d": "22/08/2009",
+    "h": "Yeovil Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "21/08/2009",
+    "h": "Southend United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "18/08/2009",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "18/08/2009",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "18/08/2009",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 2,
+    "d": "18/08/2009",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "18/08/2009",
+    "h": "Huddersfield Town",
+    "hg": 7,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 2,
+    "d": "18/08/2009",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "18/08/2009",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "18/08/2009",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "18/08/2009",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "18/08/2009",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "18/08/2009",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 1,
+    "d": "18/08/2009",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 0,
+    "d": "15/08/2009",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "15/08/2009",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "15/08/2009",
+    "h": "Exeter City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 2,
+    "d": "15/08/2009",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "15/08/2009",
+    "h": "Huddersfield Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 2,
+    "d": "15/08/2009",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "15/08/2009",
+    "h": "Millwall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 2,
+    "d": "15/08/2009",
+    "h": "Stockport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "15/08/2009",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 2,
+    "d": "15/08/2009",
+    "h": "Tranmere Rovers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southend United",
+    "ag": 2,
+    "d": "15/08/2009",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "15/08/2009",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "08/08/2009",
+    "h": "Gillingham",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "08/08/2009",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "08/08/2009",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 2,
+    "d": "08/08/2009",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 3,
+    "d": "08/08/2009",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "08/08/2009",
+    "h": "Charlton Athletic",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Exeter City",
+    "ag": 1,
+    "d": "08/08/2009",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "08/08/2009",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 7,
+    "d": "08/08/2009",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "08/08/2009",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 2,
+    "d": "08/08/2009",
+    "h": "Southend United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "08/08/2009",
+    "h": "Yeovil Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  }
+]

@@ -1,0 +1,4282 @@
+[
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "26/05/2018",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "15/05/2018",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 0,
+    "d": "14/05/2018",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "12/05/2018",
+    "h": "Middlesbrough",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "11/05/2018",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "06/05/2018",
+    "h": "Birmingham City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 2,
+    "d": "06/05/2018",
+    "h": "Bolton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "06/05/2018",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 3,
+    "d": "06/05/2018",
+    "h": "Bristol City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 0,
+    "d": "06/05/2018",
+    "h": "Cardiff City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "06/05/2018",
+    "h": "Derby County",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 2,
+    "d": "06/05/2018",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "06/05/2018",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "06/05/2018",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 1,
+    "d": "06/05/2018",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "06/05/2018",
+    "h": "Sheffield Wednesday",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "06/05/2018",
+    "h": "Sunderland",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "28/04/2018",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "28/04/2018",
+    "h": "Barnsley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "28/04/2018",
+    "h": "Burton Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 2,
+    "d": "28/04/2018",
+    "h": "Hull City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "28/04/2018",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 0,
+    "d": "28/04/2018",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "28/04/2018",
+    "h": "Queens Park Rangers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 4,
+    "d": "28/04/2018",
+    "h": "Reading",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "28/04/2018",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "28/04/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "28/04/2018",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "27/04/2018",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "24/04/2018",
+    "h": "Derby County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 0,
+    "d": "24/04/2018",
+    "h": "Nottingham Forest",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "21/04/2018",
+    "h": "Birmingham City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 4,
+    "d": "21/04/2018",
+    "h": "Bolton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 1,
+    "d": "21/04/2018",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 5,
+    "d": "21/04/2018",
+    "h": "Bristol City",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 2,
+    "d": "21/04/2018",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 4,
+    "d": "21/04/2018",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "21/04/2018",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 0,
+    "d": "21/04/2018",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 0,
+    "d": "21/04/2018",
+    "h": "Sheffield Wednesday",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 2,
+    "d": "21/04/2018",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "21/04/2018",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 3,
+    "d": "20/04/2018",
+    "h": "Millwall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "15/04/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "14/04/2018",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 2,
+    "d": "14/04/2018",
+    "h": "Barnsley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "14/04/2018",
+    "h": "Burton Albion",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 1,
+    "d": "14/04/2018",
+    "h": "Hull City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 1,
+    "d": "14/04/2018",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 2,
+    "d": "14/04/2018",
+    "h": "Norwich City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "14/04/2018",
+    "h": "Nottingham Forest",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 2,
+    "d": "14/04/2018",
+    "h": "Queens Park Rangers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 2,
+    "d": "14/04/2018",
+    "h": "Reading",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "14/04/2018",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "13/04/2018",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 0,
+    "d": "11/04/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "10/04/2018",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "10/04/2018",
+    "h": "Bristol City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 5,
+    "d": "10/04/2018",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 0,
+    "d": "10/04/2018",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 0,
+    "d": "10/04/2018",
+    "h": "Ipswich Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "10/04/2018",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "10/04/2018",
+    "h": "Preston North End",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 2,
+    "d": "10/04/2018",
+    "h": "Queens Park Rangers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "10/04/2018",
+    "h": "Sheffield United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "10/04/2018",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "10/04/2018",
+    "h": "Bolton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 2,
+    "d": "07/04/2018",
+    "h": "Barnsley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "07/04/2018",
+    "h": "Norwich City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 1,
+    "d": "07/04/2018",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 0,
+    "d": "07/04/2018",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "07/04/2018",
+    "h": "Derby County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "07/04/2018",
+    "h": "Hull City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "07/04/2018",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "07/04/2018",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 0,
+    "d": "07/04/2018",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "07/04/2018",
+    "h": "Reading",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "07/04/2018",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "06/04/2018",
+    "h": "Cardiff City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 0,
+    "d": "03/04/2018",
+    "h": "Aston Villa",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "03/04/2018",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 2,
+    "d": "03/04/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "03/04/2018",
+    "h": "Bolton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "02/04/2018",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "02/04/2018",
+    "h": "Bristol City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "02/04/2018",
+    "h": "Burton Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "02/04/2018",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "02/04/2018",
+    "h": "Queens Park Rangers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 3,
+    "d": "02/04/2018",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "02/04/2018",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "30/03/2018",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 2,
+    "d": "30/03/2018",
+    "h": "Barnsley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "30/03/2018",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 1,
+    "d": "30/03/2018",
+    "h": "Cardiff City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "30/03/2018",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "30/03/2018",
+    "h": "Norwich City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "30/03/2018",
+    "h": "Sheffield Wednesday",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 2,
+    "d": "30/03/2018",
+    "h": "Middlesbrough",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "30/03/2018",
+    "h": "Reading",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 4,
+    "d": "30/03/2018",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 2,
+    "d": "17/03/2018",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "17/03/2018",
+    "h": "Barnsley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 0,
+    "d": "17/03/2018",
+    "h": "Birmingham City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "17/03/2018",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 0,
+    "d": "17/03/2018",
+    "h": "Bristol City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 2,
+    "d": "17/03/2018",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 2,
+    "d": "17/03/2018",
+    "h": "Norwich City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "17/03/2018",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 2,
+    "d": "17/03/2018",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 1,
+    "d": "17/03/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "17/03/2018",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 3,
+    "d": "13/03/2018",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "13/03/2018",
+    "h": "Barnsley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 3,
+    "d": "13/03/2018",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 3,
+    "d": "13/03/2018",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "13/03/2018",
+    "h": "Sheffield United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 0,
+    "d": "13/03/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 0,
+    "d": "11/03/2018",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 0,
+    "d": "10/03/2018",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 2,
+    "d": "10/03/2018",
+    "h": "Cardiff City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 3,
+    "d": "10/03/2018",
+    "h": "Hull City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "10/03/2018",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "10/03/2018",
+    "h": "Middlesbrough",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "10/03/2018",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "10/03/2018",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "10/03/2018",
+    "h": "Queens Park Rangers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "10/03/2018",
+    "h": "Reading",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "10/03/2018",
+    "h": "Sheffield Wednesday",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "10/03/2018",
+    "h": "Aston Villa",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 3,
+    "d": "07/03/2018",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "06/03/2018",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "06/03/2018",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "06/03/2018",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "06/03/2018",
+    "h": "Fulham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "06/03/2018",
+    "h": "Hull City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "06/03/2018",
+    "h": "Norwich City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 1,
+    "d": "06/03/2018",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "06/03/2018",
+    "h": "Queens Park Rangers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "06/03/2018",
+    "h": "Sheffield Wednesday",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 3,
+    "d": "06/03/2018",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "06/03/2018",
+    "h": "Reading",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 3,
+    "d": "03/03/2018",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "03/03/2018",
+    "h": "Bristol City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "03/03/2018",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "03/03/2018",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "03/03/2018",
+    "h": "Nottingham Forest",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "02/03/2018",
+    "h": "Middlesbrough",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "27/02/2018",
+    "h": "Hull City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 3,
+    "d": "27/02/2018",
+    "h": "Reading",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 0,
+    "d": "25/02/2018",
+    "h": "Cardiff City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 2,
+    "d": "24/02/2018",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "24/02/2018",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "24/02/2018",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "24/02/2018",
+    "h": "Norwich City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "24/02/2018",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 5,
+    "d": "24/02/2018",
+    "h": "Queens Park Rangers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 3,
+    "d": "24/02/2018",
+    "h": "Reading",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 4,
+    "d": "24/02/2018",
+    "h": "Sheffield Wednesday",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 3,
+    "d": "24/02/2018",
+    "h": "Sunderland",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "24/02/2018",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "23/02/2018",
+    "h": "Hull City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "21/02/2018",
+    "h": "Bristol City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "21/02/2018",
+    "h": "Derby County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "21/02/2018",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 2,
+    "d": "21/02/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "20/02/2018",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 2,
+    "d": "20/02/2018",
+    "h": "Barnsley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "20/02/2018",
+    "h": "Brentford",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "20/02/2018",
+    "h": "Middlesbrough",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 1,
+    "d": "20/02/2018",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 1,
+    "d": "20/02/2018",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 1,
+    "d": "20/02/2018",
+    "h": "Sheffield United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "20/02/2018",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "18/02/2018",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 2,
+    "d": "18/02/2018",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "17/02/2018",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "17/02/2018",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "17/02/2018",
+    "h": "Cardiff City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "17/02/2018",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "17/02/2018",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "17/02/2018",
+    "h": "Queens Park Rangers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "17/02/2018",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "13/02/2018",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 0,
+    "d": "13/02/2018",
+    "h": "Sheffield Wednesday",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "11/02/2018",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 1,
+    "d": "10/02/2018",
+    "h": "Barnsley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "10/02/2018",
+    "h": "Sheffield United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "10/02/2018",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "10/02/2018",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 3,
+    "d": "10/02/2018",
+    "h": "Bristol City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "10/02/2018",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "10/02/2018",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 1,
+    "d": "10/02/2018",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 2,
+    "d": "10/02/2018",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 1,
+    "d": "10/02/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "09/02/2018",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 2,
+    "d": "03/02/2018",
+    "h": "Aston Villa",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "03/02/2018",
+    "h": "Derby County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "03/02/2018",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 4,
+    "d": "03/02/2018",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "03/02/2018",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "03/02/2018",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 0,
+    "d": "03/02/2018",
+    "h": "Queens Park Rangers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "03/02/2018",
+    "h": "Reading",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 3,
+    "d": "03/02/2018",
+    "h": "Sheffield Wednesday",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "03/02/2018",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "03/02/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 0,
+    "d": "02/02/2018",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "30/01/2018",
+    "h": "Birmingham City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 3,
+    "d": "30/01/2018",
+    "h": "Burton Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "30/01/2018",
+    "h": "Hull City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "30/01/2018",
+    "h": "Middlesbrough",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 0,
+    "d": "30/01/2018",
+    "h": "Millwall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 3,
+    "d": "30/01/2018",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "30/01/2018",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 3,
+    "d": "27/01/2018",
+    "h": "Barnsley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "27/01/2018",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "27/01/2018",
+    "h": "Bristol City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "27/01/2018",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "20/01/2018",
+    "h": "Aston Villa",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "20/01/2018",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "20/01/2018",
+    "h": "Fulham",
+    "hg": 6,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 4,
+    "d": "20/01/2018",
+    "h": "Leeds United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 2,
+    "d": "20/01/2018",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "20/01/2018",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 3,
+    "d": "20/01/2018",
+    "h": "Queens Park Rangers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "20/01/2018",
+    "h": "Reading",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 0,
+    "d": "20/01/2018",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 2,
+    "d": "20/01/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "20/01/2018",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 0,
+    "d": "19/01/2018",
+    "h": "Derby County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "13/01/2018",
+    "h": "Cardiff City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "13/01/2018",
+    "h": "Barnsley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 3,
+    "d": "13/01/2018",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "13/01/2018",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "13/01/2018",
+    "h": "Bristol City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 3,
+    "d": "13/01/2018",
+    "h": "Burton Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 0,
+    "d": "13/01/2018",
+    "h": "Hull City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "13/01/2018",
+    "h": "Ipswich Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "13/01/2018",
+    "h": "Middlesbrough",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "13/01/2018",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "13/01/2018",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "12/01/2018",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "02/01/2018",
+    "h": "Fulham",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "02/01/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 2,
+    "d": "02/01/2018",
+    "h": "Reading",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 0,
+    "d": "01/01/2018",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "01/01/2018",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "01/01/2018",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 1,
+    "d": "01/01/2018",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 3,
+    "d": "01/01/2018",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "01/01/2018",
+    "h": "Queens Park Rangers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 3,
+    "d": "01/01/2018",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "01/01/2018",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 0,
+    "d": "01/01/2018",
+    "h": "Aston Villa",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 1,
+    "d": "30/12/2017",
+    "h": "Barnsley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "30/12/2017",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "30/12/2017",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 0,
+    "d": "30/12/2017",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "30/12/2017",
+    "h": "Hull City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 2,
+    "d": "30/12/2017",
+    "h": "Ipswich Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "30/12/2017",
+    "h": "Middlesbrough",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "30/12/2017",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "30/12/2017",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 2,
+    "d": "30/12/2017",
+    "h": "Bristol City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "29/12/2017",
+    "h": "Cardiff City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "29/12/2017",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 2,
+    "d": "26/12/2017",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "26/12/2017",
+    "h": "Barnsley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 2,
+    "d": "26/12/2017",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 0,
+    "d": "26/12/2017",
+    "h": "Bristol City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "26/12/2017",
+    "h": "Burton Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 4,
+    "d": "26/12/2017",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 0,
+    "d": "26/12/2017",
+    "h": "Hull City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "26/12/2017",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "26/12/2017",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 3,
+    "d": "26/12/2017",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "26/12/2017",
+    "h": "Sheffield United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "26/12/2017",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "23/12/2017",
+    "h": "Bolton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "23/12/2017",
+    "h": "Derby County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "23/12/2017",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 0,
+    "d": "23/12/2017",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "23/12/2017",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 1,
+    "d": "23/12/2017",
+    "h": "Queens Park Rangers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 2,
+    "d": "23/12/2017",
+    "h": "Reading",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 2,
+    "d": "23/12/2017",
+    "h": "Sheffield Wednesday",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "23/12/2017",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 0,
+    "d": "23/12/2017",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 2,
+    "d": "23/12/2017",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "22/12/2017",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 2,
+    "d": "16/12/2017",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 1,
+    "d": "16/12/2017",
+    "h": "Bolton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 0,
+    "d": "16/12/2017",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "16/12/2017",
+    "h": "Bristol City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "16/12/2017",
+    "h": "Derby County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 0,
+    "d": "16/12/2017",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 0,
+    "d": "16/12/2017",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "16/12/2017",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "16/12/2017",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "16/12/2017",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 0,
+    "d": "16/12/2017",
+    "h": "Cardiff City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "15/12/2017",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 2,
+    "d": "11/12/2017",
+    "h": "Reading",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "09/12/2017",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 3,
+    "d": "09/12/2017",
+    "h": "Barnsley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 2,
+    "d": "09/12/2017",
+    "h": "Burton Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "09/12/2017",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "09/12/2017",
+    "h": "Hull City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 0,
+    "d": "09/12/2017",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 2,
+    "d": "09/12/2017",
+    "h": "Nottingham Forest",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 3,
+    "d": "09/12/2017",
+    "h": "Queens Park Rangers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "09/12/2017",
+    "h": "Wolverhampton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 1,
+    "d": "09/12/2017",
+    "h": "Norwich City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 2,
+    "d": "08/12/2017",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "04/12/2017",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "02/12/2017",
+    "h": "Bolton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "02/12/2017",
+    "h": "Brentford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "02/12/2017",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 2,
+    "d": "02/12/2017",
+    "h": "Ipswich Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "02/12/2017",
+    "h": "Millwall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "02/12/2017",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 2,
+    "d": "02/12/2017",
+    "h": "Sheffield Wednesday",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 3,
+    "d": "02/12/2017",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "02/12/2017",
+    "h": "Bristol City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "01/12/2017",
+    "h": "Cardiff City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "01/12/2017",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "28/11/2017",
+    "h": "Derby County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 0,
+    "d": "28/11/2017",
+    "h": "Reading",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "27/11/2017",
+    "h": "Queens Park Rangers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 2,
+    "d": "26/11/2017",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "25/11/2017",
+    "h": "Barnsley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 0,
+    "d": "25/11/2017",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 2,
+    "d": "25/11/2017",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "25/11/2017",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 3,
+    "d": "25/11/2017",
+    "h": "Hull City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 3,
+    "d": "25/11/2017",
+    "h": "Middlesbrough",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "25/11/2017",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "25/11/2017",
+    "h": "Reading",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "25/11/2017",
+    "h": "Wolverhampton Wanderers",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "25/11/2017",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 2,
+    "d": "22/11/2017",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "22/11/2017",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "22/11/2017",
+    "h": "Wolverhampton Wanderers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "21/11/2017",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "21/11/2017",
+    "h": "Barnsley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 1,
+    "d": "21/11/2017",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 2,
+    "d": "21/11/2017",
+    "h": "Bristol City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "21/11/2017",
+    "h": "Derby County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 0,
+    "d": "21/11/2017",
+    "h": "Millwall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 0,
+    "d": "21/11/2017",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 5,
+    "d": "21/11/2017",
+    "h": "Sheffield United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 2,
+    "d": "21/11/2017",
+    "h": "Bolton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "19/11/2017",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "18/11/2017",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "18/11/2017",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "18/11/2017",
+    "h": "Hull City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "18/11/2017",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 2,
+    "d": "18/11/2017",
+    "h": "Queens Park Rangers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 2,
+    "d": "18/11/2017",
+    "h": "Reading",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 0,
+    "d": "18/11/2017",
+    "h": "Sheffield Wednesday",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "18/11/2017",
+    "h": "Sunderland",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "18/11/2017",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 3,
+    "d": "17/11/2017",
+    "h": "Burton Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "17/11/2017",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "05/11/2017",
+    "h": "Middlesbrough",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "04/11/2017",
+    "h": "Bristol City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 2,
+    "d": "04/11/2017",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "04/11/2017",
+    "h": "Barnsley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "04/11/2017",
+    "h": "Bolton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 4,
+    "d": "04/11/2017",
+    "h": "Derby County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "04/11/2017",
+    "h": "Ipswich Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 1,
+    "d": "04/11/2017",
+    "h": "Millwall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "04/11/2017",
+    "h": "Nottingham Forest",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "04/11/2017",
+    "h": "Sheffield United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "04/11/2017",
+    "h": "Brentford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "03/11/2017",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "01/11/2017",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 2,
+    "d": "01/11/2017",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "29/10/2017",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "28/10/2017",
+    "h": "Sheffield Wednesday",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "28/10/2017",
+    "h": "Burton Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "28/10/2017",
+    "h": "Cardiff City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "28/10/2017",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 2,
+    "d": "28/10/2017",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 3,
+    "d": "28/10/2017",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "28/10/2017",
+    "h": "Queens Park Rangers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 2,
+    "d": "28/10/2017",
+    "h": "Reading",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 2,
+    "d": "28/10/2017",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 3,
+    "d": "28/10/2017",
+    "h": "Hull City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 2,
+    "d": "27/10/2017",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "22/10/2017",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "21/10/2017",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "21/10/2017",
+    "h": "Barnsley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 1,
+    "d": "21/10/2017",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 3,
+    "d": "21/10/2017",
+    "h": "Brentford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 3,
+    "d": "21/10/2017",
+    "h": "Bristol City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "21/10/2017",
+    "h": "Derby County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "21/10/2017",
+    "h": "Middlesbrough",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "21/10/2017",
+    "h": "Nottingham Forest",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 1,
+    "d": "21/10/2017",
+    "h": "Sheffield United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 2,
+    "d": "21/10/2017",
+    "h": "Wolverhampton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "21/10/2017",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "15/10/2017",
+    "h": "Derby County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 2,
+    "d": "14/10/2017",
+    "h": "Barnsley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 1,
+    "d": "14/10/2017",
+    "h": "Bolton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "14/10/2017",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 2,
+    "d": "14/10/2017",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 1,
+    "d": "14/10/2017",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "14/10/2017",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 0,
+    "d": "14/10/2017",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 1,
+    "d": "14/10/2017",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "14/10/2017",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "13/10/2017",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "13/10/2017",
+    "h": "Bristol City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "01/10/2017",
+    "h": "Sheffield Wednesday",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "29/09/2017",
+    "h": "Queens Park Rangers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "27/09/2017",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "27/09/2017",
+    "h": "Sheffield United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 1,
+    "d": "26/09/2017",
+    "h": "Barnsley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "26/09/2017",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "26/09/2017",
+    "h": "Bristol City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 4,
+    "d": "26/09/2017",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "26/09/2017",
+    "h": "Cardiff City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 2,
+    "d": "26/09/2017",
+    "h": "Hull City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 2,
+    "d": "26/09/2017",
+    "h": "Ipswich Town",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "26/09/2017",
+    "h": "Middlesbrough",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 1,
+    "d": "26/09/2017",
+    "h": "Millwall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 3,
+    "d": "26/09/2017",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 4,
+    "d": "24/09/2017",
+    "h": "Sheffield Wednesday",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 3,
+    "d": "23/09/2017",
+    "h": "Bolton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "23/09/2017",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "23/09/2017",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "23/09/2017",
+    "h": "Leeds United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 0,
+    "d": "23/09/2017",
+    "h": "Norwich City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "23/09/2017",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "23/09/2017",
+    "h": "Queens Park Rangers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "23/09/2017",
+    "h": "Reading",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 2,
+    "d": "23/09/2017",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "23/09/2017",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "23/09/2017",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 3,
+    "d": "16/09/2017",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 1,
+    "d": "16/09/2017",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "16/09/2017",
+    "h": "Bristol City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "16/09/2017",
+    "h": "Burton Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 1,
+    "d": "16/09/2017",
+    "h": "Cardiff City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "16/09/2017",
+    "h": "Hull City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "16/09/2017",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 2,
+    "d": "16/09/2017",
+    "h": "Middlesbrough",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "16/09/2017",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 2,
+    "d": "16/09/2017",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "16/09/2017",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 3,
+    "d": "16/09/2017",
+    "h": "Barnsley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "13/09/2017",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "12/09/2017",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "12/09/2017",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "12/09/2017",
+    "h": "Norwich City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "12/09/2017",
+    "h": "Preston North End",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 2,
+    "d": "12/09/2017",
+    "h": "Queens Park Rangers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "12/09/2017",
+    "h": "Sheffield Wednesday",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "12/09/2017",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 3,
+    "d": "12/09/2017",
+    "h": "Wolverhampton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "12/09/2017",
+    "h": "Bolton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "09/09/2017",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 3,
+    "d": "09/09/2017",
+    "h": "Bolton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "09/09/2017",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "09/09/2017",
+    "h": "Leeds United",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "09/09/2017",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "09/09/2017",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "09/09/2017",
+    "h": "Queens Park Rangers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 1,
+    "d": "09/09/2017",
+    "h": "Reading",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 2,
+    "d": "09/09/2017",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "09/09/2017",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "09/09/2017",
+    "h": "Sheffield Wednesday",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 0,
+    "d": "08/09/2017",
+    "h": "Derby County",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "26/08/2017",
+    "h": "Barnsley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 2,
+    "d": "26/08/2017",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "26/08/2017",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 1,
+    "d": "26/08/2017",
+    "h": "Burton Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 1,
+    "d": "26/08/2017",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "26/08/2017",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "26/08/2017",
+    "h": "Middlesbrough",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 0,
+    "d": "26/08/2017",
+    "h": "Millwall",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "26/08/2017",
+    "h": "Sheffield United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "26/08/2017",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "25/08/2017",
+    "h": "Bristol City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "25/08/2017",
+    "h": "Hull City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 0,
+    "d": "19/08/2017",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 2,
+    "d": "19/08/2017",
+    "h": "Aston Villa",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 2,
+    "d": "19/08/2017",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "19/08/2017",
+    "h": "Bristol City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 1,
+    "d": "19/08/2017",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "19/08/2017",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "19/08/2017",
+    "h": "Nottingham Forest",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 0,
+    "d": "19/08/2017",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "19/08/2017",
+    "h": "Queens Park Rangers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 2,
+    "d": "19/08/2017",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "19/08/2017",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "18/08/2017",
+    "h": "Burton Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 0,
+    "d": "16/08/2017",
+    "h": "Norwich City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "16/08/2017",
+    "h": "Sheffield Wednesday",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "15/08/2017",
+    "h": "Barnsley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "15/08/2017",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 2,
+    "d": "15/08/2017",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "15/08/2017",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "15/08/2017",
+    "h": "Derby County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 3,
+    "d": "15/08/2017",
+    "h": "Hull City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "15/08/2017",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 0,
+    "d": "15/08/2017",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 4,
+    "d": "15/08/2017",
+    "h": "Millwall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "15/08/2017",
+    "h": "Reading",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 3,
+    "d": "13/08/2017",
+    "h": "Norwich City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "12/08/2017",
+    "h": "Barnsley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol City",
+    "ag": 1,
+    "d": "12/08/2017",
+    "h": "Birmingham City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 4,
+    "d": "12/08/2017",
+    "h": "Brentford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "12/08/2017",
+    "h": "Cardiff City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 2,
+    "d": "12/08/2017",
+    "h": "Derby County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burton Albion",
+    "ag": 1,
+    "d": "12/08/2017",
+    "h": "Hull City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "12/08/2017",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "12/08/2017",
+    "h": "Millwall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "12/08/2017",
+    "h": "Reading",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Queens Park Rangers",
+    "ag": 1,
+    "d": "12/08/2017",
+    "h": "Sheffield Wednesday",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "12/08/2017",
+    "h": "Middlesbrough",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 3,
+    "d": "06/08/2017",
+    "h": "Bolton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnsley",
+    "ag": 1,
+    "d": "05/08/2017",
+    "h": "Bristol City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "05/08/2017",
+    "h": "Burton Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Norwich City",
+    "ag": 1,
+    "d": "05/08/2017",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "05/08/2017",
+    "h": "Ipswich Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield Wednesday",
+    "ag": 0,
+    "d": "05/08/2017",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Reading",
+    "ag": 0,
+    "d": "05/08/2017",
+    "h": "Queens Park Rangers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "05/08/2017",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "05/08/2017",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hull City",
+    "ag": 1,
+    "d": "05/08/2017",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Millwall",
+    "ag": 0,
+    "d": "04/08/2017",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Derby County",
+    "ag": 1,
+    "d": "04/08/2017",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  }
+]

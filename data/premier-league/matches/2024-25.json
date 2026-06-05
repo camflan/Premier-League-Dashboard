@@ -1,1606 +1,1513 @@
 [
   {
-    "d": "16/08/2024",
-    "h": "Manchester United",
-    "a": "Fulham",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "17/08/2024",
-    "h": "Ipswich Town",
-    "a": "Liverpool",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "17/08/2024",
-    "h": "Arsenal",
-    "a": "Wolverhampton",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "17/08/2024",
-    "h": "Everton",
-    "a": "Brighton",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "17/08/2024",
-    "h": "Newcastle United",
-    "a": "Southampton",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "17/08/2024",
-    "h": "Nottingham Forest",
-    "a": "Bournemouth",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "17/08/2024",
-    "h": "West Ham United",
-    "a": "Aston Villa",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "18/08/2024",
-    "h": "Brentford",
-    "a": "Crystal Palace",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "18/08/2024",
-    "h": "Chelsea",
-    "a": "Manchester City",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "19/08/2024",
-    "h": "Leicester",
-    "a": "Tottenham Hotspur",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "24/08/2024",
-    "h": "Brighton",
-    "a": "Manchester United",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "24/08/2024",
-    "h": "Crystal Palace",
-    "a": "West Ham United",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "24/08/2024",
-    "h": "Fulham",
+    "d": "25/05/2025",
+    "h": "Bournemouth",
     "a": "Leicester",
     "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "24/08/2024",
-    "h": "Manchester City",
-    "a": "Ipswich Town",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "24/08/2024",
-    "h": "Southampton",
-    "a": "Nottingham Forest",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "24/08/2024",
-    "h": "Tottenham Hotspur",
-    "a": "Everton",
-    "hg": 4,
     "ag": 0
   },
   {
-    "d": "24/08/2024",
-    "h": "Aston Villa",
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "25/05/2025",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 3,
+    "d": "25/05/2025",
+    "h": "Ipswich Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 1,
+    "d": "25/05/2025",
+    "h": "Liverpool",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "25/05/2025",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "25/05/2025",
+    "h": "Newcastle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "25/05/2025",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
     "a": "Arsenal",
+    "ag": 2,
+    "d": "25/05/2025",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "25/05/2025",
+    "h": "Tottenham Hotspur",
+    "a": "Brighton",
+    "hg": 1,
+    "ag": 4
+  },
+  {
+    "d": "25/05/2025",
+    "h": "Wolverhampton",
+    "a": "Brentford",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Leicester City",
+    "ag": 0,
+    "d": "25/05/2025",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 4,
+    "d": "25/05/2025",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "25/05/2025",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "20/05/2025",
+    "h": "Crystal Palace",
+    "a": "Wolverhampton",
+    "hg": 4,
+    "ag": 2
+  },
+  {
+    "d": "20/05/2025",
+    "h": "Manchester City",
+    "a": "Bournemouth",
+    "hg": 3,
+    "ag": 1
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 2,
+    "d": "20/05/2025",
+    "h": "Crystal Palace",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "20/05/2025",
+    "h": "Manchester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "19/05/2025",
+    "h": "Brighton",
+    "a": "Liverpool",
+    "hg": 3,
+    "ag": 2
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "19/05/2025",
+    "h": "Brighton & Hove Albion",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "18/05/2025",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 2,
+    "d": "18/05/2025",
+    "h": "West Ham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 3,
+    "d": "18/05/2025",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "18/05/2025",
+    "h": "Leicester",
+    "a": "Ipswich Town",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "18/05/2025",
+    "h": "Arsenal",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 0,
+    "d": "18/05/2025",
+    "h": "Leicester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "16/05/2025",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 0,
+    "d": "16/05/2025",
+    "h": "Chelsea",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "11/05/2025",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 2,
+    "d": "11/05/2025",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "11/05/2025",
+    "h": "Nottingham Forest",
+    "a": "Leicester",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 2,
+    "d": "11/05/2025",
+    "h": "Tottenham Hotspur",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "11/05/2025",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 2,
+    "d": "11/05/2025",
+    "h": "Nottingham Forest",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 3,
+    "d": "10/05/2025",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "10/05/2025",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 0,
+    "d": "10/05/2025",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "10/05/2025",
+    "h": "Wolverhampton",
+    "a": "Brighton",
     "hg": 0,
     "ag": 2
   },
   {
-    "d": "25/08/2024",
+    "d": "10/05/2025",
     "h": "Bournemouth",
+    "a": "Aston Villa",
+    "hg": 0,
+    "ag": 1
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "10/05/2025",
+    "h": "Wolverhampton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "10/05/2025",
+    "h": "AFC Bournemouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "05/05/2025",
+    "h": "Crystal Palace",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 3,
+    "d": "04/05/2025",
+    "h": "Brentford",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "04/05/2025",
+    "h": "Brighton",
     "a": "Newcastle United",
     "hg": 1,
     "ag": 1
   },
   {
-    "d": "25/08/2024",
-    "h": "Wolverhampton",
-    "a": "Chelsea",
-    "hg": 2,
-    "ag": 6
-  },
-  {
-    "d": "25/08/2024",
-    "h": "Liverpool",
-    "a": "Brentford",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "31/08/2024",
-    "h": "Arsenal",
-    "a": "Brighton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "31/08/2024",
-    "h": "Brentford",
-    "a": "Southampton",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "31/08/2024",
-    "h": "Everton",
-    "a": "Bournemouth",
-    "hg": 2,
-    "ag": 3
-  },
-  {
-    "d": "31/08/2024",
-    "h": "Ipswich Town",
-    "a": "Fulham",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "31/08/2024",
-    "h": "Leicester",
-    "a": "Aston Villa",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "31/08/2024",
-    "h": "Nottingham Forest",
-    "a": "Wolverhampton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "31/08/2024",
-    "h": "West Ham United",
-    "a": "Manchester City",
-    "hg": 1,
-    "ag": 3
-  },
-  {
-    "d": "01/09/2024",
-    "h": "Chelsea",
-    "a": "Crystal Palace",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "01/09/2024",
-    "h": "Newcastle United",
     "a": "Tottenham Hotspur",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "01/09/2024",
-    "h": "Manchester United",
-    "a": "Liverpool",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "14/09/2024",
-    "h": "Southampton",
-    "a": "Manchester United",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "14/09/2024",
-    "h": "Brighton",
-    "a": "Ipswich Town",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "14/09/2024",
-    "h": "Crystal Palace",
-    "a": "Leicester",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "14/09/2024",
-    "h": "Fulham",
-    "a": "West Ham United",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "14/09/2024",
-    "h": "Liverpool",
-    "a": "Nottingham Forest",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "14/09/2024",
-    "h": "Manchester City",
-    "a": "Brentford",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "14/09/2024",
-    "h": "Aston Villa",
-    "a": "Everton",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "14/09/2024",
-    "h": "Bournemouth",
-    "a": "Chelsea",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "15/09/2024",
-    "h": "Tottenham Hotspur",
-    "a": "Arsenal",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "15/09/2024",
-    "h": "Wolverhampton",
-    "a": "Newcastle United",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "21/09/2024",
+    "ag": 1,
+    "d": "04/05/2025",
     "h": "West Ham United",
-    "a": "Chelsea",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "21/09/2024",
-    "h": "Aston Villa",
-    "a": "Wolverhampton",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "21/09/2024",
-    "h": "Fulham",
-    "a": "Newcastle United",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "21/09/2024",
-    "h": "Leicester",
-    "a": "Everton",
     "hg": 1,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "21/09/2024",
-    "h": "Liverpool",
-    "a": "Bournemouth",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "21/09/2024",
-    "h": "Southampton",
-    "a": "Ipswich Town",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "21/09/2024",
-    "h": "Tottenham Hotspur",
-    "a": "Brentford",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "21/09/2024",
-    "h": "Crystal Palace",
-    "a": "Manchester United",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "22/09/2024",
-    "h": "Brighton",
-    "a": "Nottingham Forest",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "22/09/2024",
-    "h": "Manchester City",
-    "a": "Arsenal",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "28/09/2024",
-    "h": "Newcastle United",
-    "a": "Manchester City",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "28/09/2024",
-    "h": "Arsenal",
-    "a": "Leicester",
-    "hg": 4,
-    "ag": 2
-  },
-  {
-    "d": "28/09/2024",
-    "h": "Brentford",
-    "a": "West Ham United",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "28/09/2024",
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "04/05/2025",
     "h": "Chelsea",
-    "a": "Brighton",
-    "hg": 4,
-    "ag": 2
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "28/09/2024",
-    "h": "Everton",
-    "a": "Crystal Palace",
-    "hg": 2,
-    "ag": 1
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "04/05/2025",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "28/09/2024",
-    "h": "Nottingham Forest",
     "a": "Fulham",
-    "hg": 0,
-    "ag": 1
+    "ag": 0,
+    "d": "03/05/2025",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "28/09/2024",
-    "h": "Wolverhampton",
-    "a": "Liverpool",
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "03/05/2025",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "03/05/2025",
+    "h": "Leicester",
+    "a": "Southampton",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "d": "03/05/2025",
+    "h": "Arsenal",
+    "a": "Bournemouth",
     "hg": 1,
     "ag": 2
   },
   {
-    "d": "29/09/2024",
-    "h": "Ipswich Town",
-    "a": "Aston Villa",
+    "a": "Southampton",
+    "ag": 0,
+    "d": "03/05/2025",
+    "h": "Leicester City",
     "hg": 2,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "29/09/2024",
-    "h": "Manchester United",
-    "a": "Tottenham Hotspur",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "30/09/2024",
-    "h": "Bournemouth",
-    "a": "Southampton",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "05/10/2024",
-    "h": "Crystal Palace",
-    "a": "Liverpool",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "05/10/2024",
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "03/05/2025",
     "h": "Arsenal",
-    "a": "Southampton",
-    "hg": 3,
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "02/05/2025",
+    "h": "Manchester City",
+    "a": "Wolverhampton",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "02/05/2025",
+    "h": "Manchester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "01/05/2025",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "27/04/2025",
+    "h": "Bournemouth",
+    "a": "Manchester United",
+    "hg": 1,
     "ag": 1
   },
   {
-    "d": "05/10/2024",
-    "h": "Brentford",
-    "a": "Wolverhampton",
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "27/04/2025",
+    "h": "Liverpool",
     "hg": 5,
-    "ag": 3
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "05/10/2024",
-    "h": "Leicester",
-    "a": "Bournemouth",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "05/10/2024",
-    "h": "Manchester City",
-    "a": "Fulham",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "05/10/2024",
-    "h": "West Ham United",
-    "a": "Ipswich Town",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "05/10/2024",
-    "h": "Everton",
-    "a": "Newcastle United",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "06/10/2024",
-    "h": "Aston Villa",
     "a": "Manchester United",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "06/10/2024",
-    "h": "Chelsea",
-    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "27/04/2025",
+    "h": "AFC Bournemouth",
     "hg": 1,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "06/10/2024",
-    "h": "Brighton",
-    "a": "Tottenham Hotspur",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "19/10/2024",
-    "h": "Tottenham Hotspur",
-    "a": "West Ham United",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "19/10/2024",
-    "h": "Fulham",
-    "a": "Aston Villa",
-    "hg": 1,
-    "ag": 3
-  },
-  {
-    "d": "19/10/2024",
-    "h": "Ipswich Town",
     "a": "Everton",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "19/10/2024",
-    "h": "Manchester United",
-    "a": "Brentford",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "19/10/2024",
-    "h": "Newcastle United",
-    "a": "Brighton",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "19/10/2024",
-    "h": "Southampton",
-    "a": "Leicester",
-    "hg": 2,
-    "ag": 3
-  },
-  {
-    "d": "19/10/2024",
-    "h": "Bournemouth",
-    "a": "Arsenal",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "20/10/2024",
-    "h": "Wolverhampton",
-    "a": "Manchester City",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "20/10/2024",
-    "h": "Liverpool",
-    "a": "Chelsea",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "21/10/2024",
-    "h": "Nottingham Forest",
-    "a": "Crystal Palace",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "25/10/2024",
-    "h": "Leicester",
-    "a": "Nottingham Forest",
-    "hg": 1,
-    "ag": 3
-  },
-  {
-    "d": "26/10/2024",
-    "h": "Aston Villa",
-    "a": "Bournemouth",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "26/10/2024",
-    "h": "Brentford",
-    "a": "Ipswich Town",
-    "hg": 4,
-    "ag": 3
-  },
-  {
-    "d": "26/10/2024",
-    "h": "Brighton",
-    "a": "Wolverhampton",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "26/10/2024",
-    "h": "Manchester City",
-    "a": "Southampton",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "26/10/2024",
-    "h": "Everton",
-    "a": "Fulham",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "27/10/2024",
+    "ag": 0,
+    "d": "26/04/2025",
     "h": "Chelsea",
-    "a": "Newcastle United",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "27/10/2024",
-    "h": "Crystal Palace",
-    "a": "Tottenham Hotspur",
     "hg": 1,
-    "ag": 0
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "27/10/2024",
-    "h": "West Ham United",
-    "a": "Manchester United",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "27/10/2024",
-    "h": "Arsenal",
-    "a": "Liverpool",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "02/11/2024",
-    "h": "Newcastle United",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "02/11/2024",
-    "h": "Bournemouth",
-    "a": "Manchester City",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "02/11/2024",
-    "h": "Ipswich Town",
-    "a": "Leicester",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "02/11/2024",
-    "h": "Liverpool",
-    "a": "Brighton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "02/11/2024",
-    "h": "Nottingham Forest",
+    "d": "26/04/2025",
+    "h": "Brighton",
     "a": "West Ham United",
     "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "02/11/2024",
-    "h": "Southampton",
-    "a": "Everton",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "02/11/2024",
-    "h": "Wolverhampton",
-    "a": "Crystal Palace",
-    "hg": 2,
     "ag": 2
   },
   {
-    "d": "03/11/2024",
-    "h": "Tottenham Hotspur",
-    "a": "Aston Villa",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "03/11/2024",
-    "h": "Manchester United",
-    "a": "Chelsea",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "04/11/2024",
-    "h": "Fulham",
-    "a": "Brentford",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "09/11/2024",
-    "h": "Brentford",
-    "a": "Bournemouth",
+    "a": "Ipswich Town",
+    "ag": 0,
+    "d": "26/04/2025",
+    "h": "Newcastle United",
     "hg": 3,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "09/11/2024",
-    "h": "Crystal Palace",
     "a": "Fulham",
-    "hg": 0,
-    "ag": 2
+    "ag": 2,
+    "d": "26/04/2025",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "09/11/2024",
-    "h": "West Ham United",
-    "a": "Everton",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "09/11/2024",
+    "d": "26/04/2025",
     "h": "Wolverhampton",
-    "a": "Southampton",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "09/11/2024",
-    "h": "Brighton",
-    "a": "Manchester City",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "09/11/2024",
-    "h": "Liverpool",
-    "a": "Aston Villa",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "10/11/2024",
-    "h": "Manchester United",
     "a": "Leicester",
     "hg": 3,
     "ag": 0
   },
   {
-    "d": "10/11/2024",
-    "h": "Nottingham Forest",
-    "a": "Newcastle United",
-    "hg": 1,
-    "ag": 3
-  },
-  {
-    "d": "10/11/2024",
-    "h": "Tottenham Hotspur",
-    "a": "Ipswich Town",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "10/11/2024",
-    "h": "Chelsea",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "23/11/2024",
-    "h": "Leicester",
-    "a": "Chelsea",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "23/11/2024",
-    "h": "Arsenal",
-    "a": "Nottingham Forest",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "23/11/2024",
-    "h": "Aston Villa",
-    "a": "Crystal Palace",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "23/11/2024",
-    "h": "Bournemouth",
-    "a": "Brighton",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "23/11/2024",
-    "h": "Everton",
-    "a": "Brentford",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "23/11/2024",
-    "h": "Fulham",
-    "a": "Wolverhampton",
-    "hg": 1,
-    "ag": 4
-  },
-  {
-    "d": "23/11/2024",
-    "h": "Manchester City",
-    "a": "Tottenham Hotspur",
-    "hg": 0,
-    "ag": 4
-  },
-  {
-    "d": "24/11/2024",
-    "h": "Southampton",
-    "a": "Liverpool",
-    "hg": 2,
-    "ag": 3
-  },
-  {
-    "d": "24/11/2024",
-    "h": "Ipswich Town",
-    "a": "Manchester United",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "25/11/2024",
-    "h": "Newcastle United",
     "a": "West Ham United",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "29/11/2024",
-    "h": "Brighton",
-    "a": "Southampton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "30/11/2024",
-    "h": "Brentford",
-    "a": "Leicester",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "30/11/2024",
-    "h": "Crystal Palace",
-    "a": "Newcastle United",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "30/11/2024",
-    "h": "Nottingham Forest",
-    "a": "Ipswich Town",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "30/11/2024",
-    "h": "Wolverhampton",
-    "a": "Bournemouth",
-    "hg": 2,
-    "ag": 4
-  },
-  {
-    "d": "30/11/2024",
-    "h": "West Ham United",
-    "a": "Arsenal",
-    "hg": 2,
-    "ag": 5
-  },
-  {
-    "d": "01/12/2024",
-    "h": "Chelsea",
-    "a": "Aston Villa",
+    "ag": 2,
+    "d": "26/04/2025",
+    "h": "Brighton & Hove Albion",
     "hg": 3,
-    "ag": 0
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "01/12/2024",
-    "h": "Manchester United",
-    "a": "Everton",
-    "hg": 4,
-    "ag": 0
+    "a": "Leicester City",
+    "ag": 0,
+    "d": "26/04/2025",
+    "h": "Wolverhampton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "01/12/2024",
-    "h": "Tottenham Hotspur",
-    "a": "Fulham",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "01/12/2024",
-    "h": "Liverpool",
-    "a": "Manchester City",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "03/12/2024",
-    "h": "Ipswich Town",
     "a": "Crystal Palace",
-    "hg": 0,
-    "ag": 1
+    "ag": 2,
+    "d": "23/04/2025",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "03/12/2024",
-    "h": "Leicester",
-    "a": "West Ham United",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "04/12/2024",
-    "h": "Everton",
-    "a": "Wolverhampton",
-    "hg": 4,
-    "ag": 0
-  },
-  {
-    "d": "04/12/2024",
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "22/04/2025",
     "h": "Manchester City",
-    "a": "Nottingham Forest",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "04/12/2024",
-    "h": "Newcastle United",
-    "a": "Liverpool",
-    "hg": 3,
-    "ag": 3
-  },
-  {
-    "d": "04/12/2024",
-    "h": "Southampton",
-    "a": "Chelsea",
-    "hg": 1,
-    "ag": 5
-  },
-  {
-    "d": "04/12/2024",
-    "h": "Arsenal",
-    "a": "Manchester United",
     "hg": 2,
-    "ag": 0
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "04/12/2024",
-    "h": "Aston Villa",
-    "a": "Brentford",
-    "hg": 3,
-    "ag": 1
+    "a": "Nottingham Forest",
+    "ag": 2,
+    "d": "21/04/2025",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "05/12/2024",
+    "a": "Chelsea",
+    "ag": 2,
+    "d": "20/04/2025",
     "h": "Fulham",
-    "a": "Brighton",
-    "hg": 3,
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 4,
+    "d": "20/04/2025",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "20/04/2025",
+    "h": "Manchester United",
+    "a": "Wolverhampton",
+    "hg": 0,
     "ag": 1
   },
   {
-    "d": "05/12/2024",
-    "h": "Bournemouth",
-    "a": "Tottenham Hotspur",
-    "hg": 1,
-    "ag": 0
+    "d": "20/04/2025",
+    "h": "Leicester",
+    "a": "Liverpool",
+    "hg": 0,
+    "ag": 1
   },
   {
-    "d": "07/12/2024",
-    "h": "Aston Villa",
-    "a": "Southampton",
-    "hg": 1,
-    "ag": 0
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "20/04/2025",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "07/12/2024",
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "20/04/2025",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "19/04/2025",
     "h": "Brentford",
-    "a": "Newcastle United",
+    "a": "Brighton",
     "hg": 4,
     "ag": 2
   },
   {
-    "d": "07/12/2024",
+    "d": "19/04/2025",
     "h": "Crystal Palace",
-    "a": "Manchester City",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "07/12/2024",
-    "h": "Manchester United",
-    "a": "Nottingham Forest",
-    "hg": 2,
-    "ag": 3
-  },
-  {
-    "d": "08/12/2024",
-    "h": "Fulham",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "08/12/2024",
-    "h": "Ipswich Town",
     "a": "Bournemouth",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "08/12/2024",
-    "h": "Leicester",
-    "a": "Brighton",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "08/12/2024",
-    "h": "Tottenham Hotspur",
-    "a": "Chelsea",
-    "hg": 3,
-    "ag": 4
-  },
-  {
-    "d": "09/12/2024",
-    "h": "West Ham United",
-    "a": "Wolverhampton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "14/12/2024",
-    "h": "Arsenal",
-    "a": "Everton",
     "hg": 0,
     "ag": 0
   },
   {
-    "d": "14/12/2024",
-    "h": "Liverpool",
-    "a": "Fulham",
-    "hg": 2,
-    "ag": 2
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "19/04/2025",
+    "h": "Everton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "14/12/2024",
-    "h": "Newcastle United",
-    "a": "Leicester",
+    "a": "Southampton",
+    "ag": 1,
+    "d": "19/04/2025",
+    "h": "West Ham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "19/04/2025",
+    "h": "Aston Villa",
     "hg": 4,
-    "ag": 0
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "14/12/2024",
-    "h": "Wolverhampton",
-    "a": "Ipswich Town",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "14/12/2024",
-    "h": "Nottingham Forest",
-    "a": "Aston Villa",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "15/12/2024",
-    "h": "Brighton",
-    "a": "Crystal Palace",
-    "hg": 1,
-    "ag": 3
-  },
-  {
-    "d": "15/12/2024",
-    "h": "Manchester City",
-    "a": "Manchester United",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "15/12/2024",
-    "h": "Chelsea",
-    "a": "Brentford",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "15/12/2024",
-    "h": "Southampton",
-    "a": "Tottenham Hotspur",
-    "hg": 0,
-    "ag": 5
-  },
-  {
-    "d": "16/12/2024",
-    "h": "Bournemouth",
-    "a": "West Ham United",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "21/12/2024",
-    "h": "Aston Villa",
-    "a": "Manchester City",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "21/12/2024",
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "19/04/2025",
     "h": "Brentford",
-    "a": "Nottingham Forest",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "21/12/2024",
-    "h": "Ipswich Town",
-    "a": "Newcastle United",
-    "hg": 0,
-    "ag": 4
-  },
-  {
-    "d": "21/12/2024",
-    "h": "West Ham United",
-    "a": "Brighton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "21/12/2024",
-    "h": "Crystal Palace",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 5
-  },
-  {
-    "d": "22/12/2024",
-    "h": "Everton",
-    "a": "Chelsea",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "22/12/2024",
-    "h": "Fulham",
-    "a": "Southampton",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "22/12/2024",
-    "h": "Leicester",
-    "a": "Wolverhampton",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "22/12/2024",
-    "h": "Manchester United",
-    "a": "Bournemouth",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "22/12/2024",
-    "h": "Tottenham Hotspur",
-    "a": "Liverpool",
-    "hg": 3,
-    "ag": 6
-  },
-  {
-    "d": "26/12/2024",
-    "h": "Manchester City",
-    "a": "Everton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "26/12/2024",
-    "h": "Bournemouth",
-    "a": "Crystal Palace",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "26/12/2024",
-    "h": "Chelsea",
-    "a": "Fulham",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "26/12/2024",
-    "h": "Newcastle United",
-    "a": "Aston Villa",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "26/12/2024",
-    "h": "Nottingham Forest",
-    "a": "Tottenham Hotspur",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "26/12/2024",
-    "h": "Southampton",
-    "a": "West Ham United",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "26/12/2024",
-    "h": "Wolverhampton",
-    "a": "Manchester United",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "26/12/2024",
-    "h": "Liverpool",
-    "a": "Leicester",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "27/12/2024",
-    "h": "Brighton",
-    "a": "Brentford",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "27/12/2024",
-    "h": "Arsenal",
-    "a": "Ipswich Town",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "29/12/2024",
-    "h": "Leicester",
-    "a": "Manchester City",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "29/12/2024",
-    "h": "Crystal Palace",
-    "a": "Southampton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "29/12/2024",
-    "h": "Everton",
-    "a": "Nottingham Forest",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "29/12/2024",
-    "h": "Fulham",
-    "a": "Bournemouth",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "29/12/2024",
-    "h": "Tottenham Hotspur",
-    "a": "Wolverhampton",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "29/12/2024",
-    "h": "West Ham United",
-    "a": "Liverpool",
-    "hg": 0,
-    "ag": 5
-  },
-  {
-    "d": "30/12/2024",
-    "h": "Aston Villa",
-    "a": "Brighton",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "30/12/2024",
-    "h": "Ipswich Town",
-    "a": "Chelsea",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "30/12/2024",
-    "h": "Manchester United",
-    "a": "Newcastle United",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "01/01/2025",
-    "h": "Brentford",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 3
-  },
-  {
-    "d": "04/01/2025",
-    "h": "Tottenham Hotspur",
-    "a": "Newcastle United",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "04/01/2025",
-    "h": "Aston Villa",
-    "a": "Leicester",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "04/01/2025",
-    "h": "Bournemouth",
-    "a": "Everton",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "04/01/2025",
-    "h": "Crystal Palace",
-    "a": "Chelsea",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "04/01/2025",
-    "h": "Manchester City",
-    "a": "West Ham United",
     "hg": 4,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "04/01/2025",
-    "h": "Southampton",
-    "a": "Brentford",
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "19/04/2025",
+    "h": "Crystal Palace",
     "hg": 0,
-    "ag": 5
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "04/01/2025",
-    "h": "Brighton",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "05/01/2025",
-    "h": "Fulham",
-    "a": "Ipswich Town",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "05/01/2025",
-    "h": "Liverpool",
-    "a": "Manchester United",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "06/01/2025",
-    "h": "Wolverhampton",
-    "a": "Nottingham Forest",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "14/01/2025",
-    "h": "Brentford",
-    "a": "Manchester City",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "14/01/2025",
-    "h": "Chelsea",
-    "a": "Bournemouth",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "14/01/2025",
-    "h": "West Ham United",
-    "a": "Fulham",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "14/01/2025",
-    "h": "Nottingham Forest",
-    "a": "Liverpool",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "15/01/2025",
-    "h": "Everton",
-    "a": "Aston Villa",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "15/01/2025",
-    "h": "Leicester",
     "a": "Crystal Palace",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "15/01/2025",
+    "ag": 0,
+    "d": "16/04/2025",
     "h": "Newcastle United",
-    "a": "Wolverhampton",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "15/01/2025",
-    "h": "Arsenal",
-    "a": "Tottenham Hotspur",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "16/01/2025",
-    "h": "Ipswich Town",
-    "a": "Brighton",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "16/01/2025",
-    "h": "Manchester United",
-    "a": "Southampton",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "18/01/2025",
-    "h": "Newcastle United",
-    "a": "Bournemouth",
-    "hg": 1,
-    "ag": 4
-  },
-  {
-    "d": "18/01/2025",
-    "h": "Brentford",
-    "a": "Liverpool",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "18/01/2025",
-    "h": "Leicester",
-    "a": "Fulham",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "18/01/2025",
-    "h": "West Ham United",
-    "a": "Crystal Palace",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "18/01/2025",
-    "h": "Arsenal",
-    "a": "Aston Villa",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "19/01/2025",
-    "h": "Everton",
-    "a": "Tottenham Hotspur",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "19/01/2025",
-    "h": "Manchester United",
-    "a": "Brighton",
-    "hg": 1,
-    "ag": 3
-  },
-  {
-    "d": "19/01/2025",
-    "h": "Nottingham Forest",
-    "a": "Southampton",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "19/01/2025",
-    "h": "Ipswich Town",
-    "a": "Manchester City",
-    "hg": 0,
-    "ag": 6
-  },
-  {
-    "d": "20/01/2025",
-    "h": "Chelsea",
-    "a": "Wolverhampton",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "25/01/2025",
-    "h": "Bournemouth",
-    "a": "Nottingham Forest",
     "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "14/04/2025",
+    "h": "Bournemouth",
+    "a": "Fulham",
+    "hg": 1,
     "ag": 0
   },
   {
-    "d": "25/01/2025",
-    "h": "Brighton",
-    "a": "Everton",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "25/01/2025",
-    "h": "Liverpool",
-    "a": "Ipswich Town",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "25/01/2025",
-    "h": "Southampton",
-    "a": "Newcastle United",
+    "a": "Fulham",
+    "ag": 0,
+    "d": "14/04/2025",
+    "h": "AFC Bournemouth",
     "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "13/04/2025",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "13/04/2025",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "13/04/2025",
+    "h": "Wolverhampton",
+    "a": "Tottenham Hotspur",
+    "hg": 4,
+    "ag": 2
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "13/04/2025",
+    "h": "Newcastle United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 2,
+    "d": "13/04/2025",
+    "h": "Wolverhampton Wanderers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 2,
+    "d": "12/04/2025",
+    "h": "Manchester City",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "12/04/2025",
+    "h": "Brighton",
+    "a": "Leicester",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "12/04/2025",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 3,
+    "d": "12/04/2025",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "12/04/2025",
+    "h": "Arsenal",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 2,
+    "d": "12/04/2025",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "07/04/2025",
+    "h": "Leicester",
+    "a": "Newcastle United",
+    "hg": 0,
     "ag": 3
   },
   {
-    "d": "25/01/2025",
-    "h": "Wolverhampton",
-    "a": "Arsenal",
+    "a": "Newcastle United",
+    "ag": 3,
+    "d": "07/04/2025",
+    "h": "Leicester City",
     "hg": 0,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "25/01/2025",
-    "h": "Manchester City",
     "a": "Chelsea",
+    "ag": 0,
+    "d": "06/04/2025",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "06/04/2025",
+    "h": "Fulham",
     "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "06/04/2025",
+    "h": "Tottenham Hotspur",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 0,
+    "d": "06/04/2025",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "05/04/2025",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "05/04/2025",
+    "h": "Crystal Palace",
+    "a": "Brighton",
+    "hg": 2,
     "ag": 1
   },
   {
-    "d": "26/01/2025",
+    "d": "05/04/2025",
+    "h": "Ipswich Town",
+    "a": "Wolverhampton",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "d": "05/04/2025",
+    "h": "West Ham United",
+    "a": "Bournemouth",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "05/04/2025",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "05/04/2025",
     "h": "Crystal Palace",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 2,
+    "d": "05/04/2025",
+    "h": "Ipswich Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "05/04/2025",
+    "h": "West Ham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "03/04/2025",
+    "h": "Chelsea",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "02/04/2025",
+    "h": "Bournemouth",
+    "a": "Ipswich Town",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "d": "02/04/2025",
+    "h": "Brighton",
+    "a": "Aston Villa",
+    "hg": 0,
+    "ag": 3
+  },
+  {
+    "d": "02/04/2025",
+    "h": "Manchester City",
+    "a": "Leicester",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "02/04/2025",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 1,
+    "d": "02/04/2025",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "02/04/2025",
+    "h": "Liverpool",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "02/04/2025",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 3,
+    "d": "02/04/2025",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 0,
+    "d": "02/04/2025",
+    "h": "Manchester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "01/04/2025",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "01/04/2025",
+    "h": "Wolverhampton",
+    "a": "West Ham United",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "a": "Manchester United",
+    "ag": 0,
+    "d": "01/04/2025",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "01/04/2025",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "16/03/2025",
+    "h": "Arsenal",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "16/03/2025",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "16/03/2025",
+    "h": "Leicester",
+    "a": "Manchester United",
+    "hg": 0,
+    "ag": 3
+  },
+  {
+    "a": "Manchester United",
+    "ag": 3,
+    "d": "16/03/2025",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "15/03/2025",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 4,
+    "d": "15/03/2025",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "15/03/2025",
+    "h": "Manchester City",
+    "a": "Brighton",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "d": "15/03/2025",
+    "h": "Southampton",
+    "a": "Wolverhampton",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "d": "15/03/2025",
+    "h": "Bournemouth",
     "a": "Brentford",
     "hg": 1,
     "ag": 2
   },
   {
-    "d": "26/01/2025",
-    "h": "Tottenham Hotspur",
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "15/03/2025",
+    "h": "Manchester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 2,
+    "d": "15/03/2025",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "15/03/2025",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "10/03/2025",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "09/03/2025",
+    "h": "Chelsea",
     "a": "Leicester",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "d": "09/03/2025",
+    "h": "Tottenham Hotspur",
+    "a": "Bournemouth",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "09/03/2025",
+    "h": "Manchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 0,
+    "d": "09/03/2025",
+    "h": "Chelsea",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "09/03/2025",
+    "h": "Tottenham Hotspur",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 0,
+    "d": "08/03/2025",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "08/03/2025",
+    "h": "Brighton",
+    "a": "Fulham",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 0,
+    "d": "08/03/2025",
+    "h": "Crystal Palace",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "08/03/2025",
+    "h": "Liverpool",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "08/03/2025",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "08/03/2025",
+    "h": "Wolverhampton",
+    "a": "Everton",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "08/03/2025",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "08/03/2025",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "27/02/2025",
+    "h": "West Ham United",
+    "a": "Leicester",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "a": "Leicester City",
+    "ag": 0,
+    "d": "27/02/2025",
+    "h": "West Ham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "26/02/2025",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "26/02/2025",
+    "h": "Manchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 0,
+    "d": "26/02/2025",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "26/02/2025",
+    "h": "Tottenham Hotspur",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "26/02/2025",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "25/02/2025",
+    "h": "Brighton",
+    "a": "Bournemouth",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "25/02/2025",
+    "h": "Crystal Palace",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "25/02/2025",
+    "h": "Wolverhampton",
+    "a": "Fulham",
     "hg": 1,
     "ag": 2
   },
   {
-    "d": "26/01/2025",
-    "h": "Aston Villa",
-    "a": "West Ham United",
+    "a": "Southampton",
+    "ag": 0,
+    "d": "25/02/2025",
+    "h": "Chelsea",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "25/02/2025",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "25/02/2025",
+    "h": "Wolverhampton Wanderers",
     "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 3,
+    "d": "23/02/2025",
+    "h": "Newcastle United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "23/02/2025",
+    "h": "Manchester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "22/02/2025",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "22/02/2025",
+    "h": "Arsenal",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "22/02/2025",
+    "h": "Bournemouth",
+    "a": "Wolverhampton",
+    "hg": 0,
     "ag": 1
   },
   {
-    "d": "26/01/2025",
+    "a": "Crystal Palace",
+    "ag": 2,
+    "d": "22/02/2025",
     "h": "Fulham",
-    "a": "Manchester United",
     "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 4,
+    "d": "22/02/2025",
+    "h": "Ipswich Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "22/02/2025",
+    "h": "Southampton",
+    "a": "Brighton",
+    "hg": 0,
+    "ag": 4
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "22/02/2025",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "22/02/2025",
+    "h": "AFC Bournemouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 4,
+    "d": "22/02/2025",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "21/02/2025",
+    "h": "Leicester",
+    "a": "Brentford",
+    "hg": 0,
+    "ag": 4
+  },
+  {
+    "a": "Brentford",
+    "ag": 4,
+    "d": "21/02/2025",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "19/02/2025",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "16/02/2025",
+    "h": "Liverpool",
+    "a": "Wolverhampton",
+    "hg": 2,
     "ag": 1
+  },
+  {
+    "a": "Manchester United",
+    "ag": 0,
+    "d": "16/02/2025",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "16/02/2025",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "15/02/2025",
+    "h": "Leicester",
+    "a": "Arsenal",
+    "hg": 0,
+    "ag": 2
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "15/02/2025",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "15/02/2025",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "15/02/2025",
+    "h": "Manchester City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "15/02/2025",
+    "h": "Southampton",
+    "a": "Bournemouth",
+    "hg": 1,
+    "ag": 3
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "15/02/2025",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 2,
+    "d": "15/02/2025",
+    "h": "Crystal Palace",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "15/02/2025",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 3,
+    "d": "15/02/2025",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "14/02/2025",
+    "h": "Brighton",
+    "a": "Chelsea",
+    "hg": 3,
+    "ag": 0
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "14/02/2025",
+    "h": "Brighton & Hove Albion",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "12/02/2025",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "03/02/2025",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 2,
+    "d": "02/02/2025",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 2,
+    "d": "02/02/2025",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "02/02/2025",
+    "h": "Arsenal",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
   },
   {
     "d": "01/02/2025",
@@ -1624,1039 +1531,2430 @@
     "ag": 0
   },
   {
+    "a": "Southampton",
+    "ag": 2,
     "d": "01/02/2025",
     "h": "Ipswich Town",
-    "a": "Southampton",
     "hg": 1,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "01/02/2025",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
   },
   {
     "d": "01/02/2025",
-    "h": "Newcastle United",
-    "a": "Fulham",
-    "hg": 1,
-    "ag": 2
+    "h": "Wolverhampton",
+    "a": "Aston Villa",
+    "hg": 2,
+    "ag": 0
   },
   {
+    "a": "Brighton & Hove Albion",
+    "ag": 0,
     "d": "01/02/2025",
-    "h": "Wolverhampton",
-    "a": "Aston Villa",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "02/02/2025",
-    "h": "Brentford",
-    "a": "Tottenham Hotspur",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "02/02/2025",
-    "h": "Manchester United",
-    "a": "Crystal Palace",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "02/02/2025",
-    "h": "Arsenal",
-    "a": "Manchester City",
-    "hg": 5,
-    "ag": 1
-  },
-  {
-    "d": "03/02/2025",
-    "h": "Chelsea",
-    "a": "West Ham United",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "12/02/2025",
-    "h": "Everton",
-    "a": "Liverpool",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "14/02/2025",
-    "h": "Brighton",
-    "a": "Chelsea",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "15/02/2025",
-    "h": "Leicester",
-    "a": "Arsenal",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "15/02/2025",
-    "h": "Aston Villa",
-    "a": "Ipswich Town",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "15/02/2025",
-    "h": "Fulham",
-    "a": "Nottingham Forest",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "15/02/2025",
-    "h": "Manchester City",
-    "a": "Newcastle United",
-    "hg": 4,
-    "ag": 0
-  },
-  {
-    "d": "15/02/2025",
-    "h": "Southampton",
-    "a": "Bournemouth",
-    "hg": 1,
-    "ag": 3
-  },
-  {
-    "d": "15/02/2025",
-    "h": "West Ham United",
-    "a": "Brentford",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "15/02/2025",
-    "h": "Crystal Palace",
-    "a": "Everton",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "16/02/2025",
-    "h": "Liverpool",
-    "a": "Wolverhampton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "16/02/2025",
-    "h": "Tottenham Hotspur",
-    "a": "Manchester United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "19/02/2025",
-    "h": "Aston Villa",
-    "a": "Liverpool",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "21/02/2025",
-    "h": "Leicester",
-    "a": "Brentford",
-    "hg": 0,
-    "ag": 4
-  },
-  {
-    "d": "22/02/2025",
-    "h": "Everton",
-    "a": "Manchester United",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "22/02/2025",
-    "h": "Arsenal",
-    "a": "West Ham United",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "22/02/2025",
-    "h": "Bournemouth",
-    "a": "Wolverhampton",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "22/02/2025",
-    "h": "Fulham",
-    "a": "Crystal Palace",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "22/02/2025",
-    "h": "Ipswich Town",
-    "a": "Tottenham Hotspur",
-    "hg": 1,
-    "ag": 4
-  },
-  {
-    "d": "22/02/2025",
-    "h": "Southampton",
-    "a": "Brighton",
-    "hg": 0,
-    "ag": 4
-  },
-  {
-    "d": "22/02/2025",
-    "h": "Aston Villa",
-    "a": "Chelsea",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "23/02/2025",
-    "h": "Newcastle United",
-    "a": "Nottingham Forest",
-    "hg": 4,
-    "ag": 3
-  },
-  {
-    "d": "23/02/2025",
-    "h": "Manchester City",
-    "a": "Liverpool",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "25/02/2025",
-    "h": "Brighton",
-    "a": "Bournemouth",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "25/02/2025",
-    "h": "Crystal Palace",
-    "a": "Aston Villa",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "25/02/2025",
-    "h": "Wolverhampton",
-    "a": "Fulham",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "25/02/2025",
-    "h": "Chelsea",
-    "a": "Southampton",
-    "hg": 4,
-    "ag": 0
-  },
-  {
-    "d": "26/02/2025",
-    "h": "Brentford",
-    "a": "Everton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "26/02/2025",
-    "h": "Manchester United",
-    "a": "Ipswich Town",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "26/02/2025",
     "h": "Nottingham Forest",
-    "a": "Arsenal",
+    "hg": 7,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "01/02/2025",
+    "h": "AFC Bournemouth",
     "hg": 0,
-    "ag": 0
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "26/02/2025",
-    "h": "Tottenham Hotspur",
-    "a": "Manchester City",
-    "hg": 0,
-    "ag": 1
+    "a": "Leicester City",
+    "ag": 0,
+    "d": "01/02/2025",
+    "h": "Everton",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "26/02/2025",
-    "h": "Liverpool",
-    "a": "Newcastle United",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "27/02/2025",
-    "h": "West Ham United",
-    "a": "Leicester",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "08/03/2025",
-    "h": "Nottingham Forest",
-    "a": "Manchester City",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "08/03/2025",
-    "h": "Brighton",
-    "a": "Fulham",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "08/03/2025",
-    "h": "Crystal Palace",
-    "a": "Ipswich Town",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "08/03/2025",
-    "h": "Liverpool",
-    "a": "Southampton",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "08/03/2025",
-    "h": "Brentford",
     "a": "Aston Villa",
-    "hg": 0,
-    "ag": 1
+    "ag": 0,
+    "d": "01/02/2025",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "08/03/2025",
-    "h": "Wolverhampton",
-    "a": "Everton",
+    "a": "Brentford",
+    "ag": 2,
+    "d": "26/01/2025",
+    "h": "Crystal Palace",
     "hg": 1,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "09/03/2025",
-    "h": "Chelsea",
+    "d": "26/01/2025",
+    "h": "Tottenham Hotspur",
     "a": "Leicester",
     "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "09/03/2025",
-    "h": "Tottenham Hotspur",
-    "a": "Bournemouth",
-    "hg": 2,
     "ag": 2
   },
   {
-    "d": "09/03/2025",
-    "h": "Manchester United",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "10/03/2025",
-    "h": "West Ham United",
-    "a": "Newcastle United",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "15/03/2025",
-    "h": "Everton",
     "a": "West Ham United",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "15/03/2025",
-    "h": "Ipswich Town",
-    "a": "Nottingham Forest",
-    "hg": 2,
-    "ag": 4
-  },
-  {
-    "d": "15/03/2025",
-    "h": "Manchester City",
-    "a": "Brighton",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "15/03/2025",
-    "h": "Southampton",
-    "a": "Wolverhampton",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "15/03/2025",
-    "h": "Bournemouth",
-    "a": "Brentford",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "16/03/2025",
-    "h": "Arsenal",
-    "a": "Chelsea",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "16/03/2025",
-    "h": "Fulham",
-    "a": "Tottenham Hotspur",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "16/03/2025",
-    "h": "Leicester",
-    "a": "Manchester United",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "01/04/2025",
-    "h": "Arsenal",
-    "a": "Fulham",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "01/04/2025",
-    "h": "Wolverhampton",
-    "a": "West Ham United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "01/04/2025",
-    "h": "Nottingham Forest",
-    "a": "Manchester United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "02/04/2025",
-    "h": "Bournemouth",
-    "a": "Ipswich Town",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "02/04/2025",
-    "h": "Brighton",
-    "a": "Aston Villa",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "02/04/2025",
-    "h": "Manchester City",
-    "a": "Leicester",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "02/04/2025",
-    "h": "Newcastle United",
-    "a": "Brentford",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "02/04/2025",
-    "h": "Southampton",
-    "a": "Crystal Palace",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "02/04/2025",
-    "h": "Liverpool",
-    "a": "Everton",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "03/04/2025",
-    "h": "Chelsea",
-    "a": "Tottenham Hotspur",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "05/04/2025",
-    "h": "Everton",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "05/04/2025",
-    "h": "Crystal Palace",
-    "a": "Brighton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "05/04/2025",
-    "h": "Ipswich Town",
-    "a": "Wolverhampton",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "05/04/2025",
-    "h": "West Ham United",
-    "a": "Bournemouth",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "05/04/2025",
+    "ag": 1,
+    "d": "26/01/2025",
     "h": "Aston Villa",
-    "a": "Nottingham Forest",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "06/04/2025",
-    "h": "Brentford",
-    "a": "Chelsea",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "06/04/2025",
-    "h": "Fulham",
-    "a": "Liverpool",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "06/04/2025",
-    "h": "Tottenham Hotspur",
-    "a": "Southampton",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "06/04/2025",
-    "h": "Manchester United",
-    "a": "Manchester City",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "07/04/2025",
-    "h": "Leicester",
-    "a": "Newcastle United",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "12/04/2025",
-    "h": "Manchester City",
-    "a": "Crystal Palace",
-    "hg": 5,
-    "ag": 2
-  },
-  {
-    "d": "12/04/2025",
-    "h": "Brighton",
-    "a": "Leicester",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "12/04/2025",
-    "h": "Nottingham Forest",
-    "a": "Everton",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "12/04/2025",
-    "h": "Southampton",
-    "a": "Aston Villa",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "12/04/2025",
-    "h": "Arsenal",
-    "a": "Brentford",
     "hg": 1,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "13/04/2025",
-    "h": "Chelsea",
-    "a": "Ipswich Town",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "13/04/2025",
-    "h": "Liverpool",
-    "a": "West Ham United",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "13/04/2025",
-    "h": "Wolverhampton",
-    "a": "Tottenham Hotspur",
-    "hg": 4,
-    "ag": 2
-  },
-  {
-    "d": "13/04/2025",
-    "h": "Newcastle United",
     "a": "Manchester United",
-    "hg": 4,
-    "ag": 1
+    "ag": 1,
+    "d": "26/01/2025",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "14/04/2025",
-    "h": "Bournemouth",
-    "a": "Fulham",
+    "a": "Leicester City",
+    "ag": 2,
+    "d": "26/01/2025",
+    "h": "Tottenham Hotspur",
     "hg": 1,
-    "ag": 0
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "16/04/2025",
-    "h": "Newcastle United",
-    "a": "Crystal Palace",
+    "d": "25/01/2025",
+    "h": "Bournemouth",
+    "a": "Nottingham Forest",
     "hg": 5,
     "ag": 0
   },
   {
-    "d": "19/04/2025",
-    "h": "Brentford",
-    "a": "Brighton",
-    "hg": 4,
-    "ag": 2
-  },
-  {
-    "d": "19/04/2025",
-    "h": "Crystal Palace",
-    "a": "Bournemouth",
+    "d": "25/01/2025",
+    "h": "Brighton",
+    "a": "Everton",
     "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "19/04/2025",
-    "h": "Everton",
-    "a": "Manchester City",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "19/04/2025",
-    "h": "West Ham United",
-    "a": "Southampton",
-    "hg": 1,
     "ag": 1
   },
   {
-    "d": "19/04/2025",
-    "h": "Aston Villa",
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "25/01/2025",
+    "h": "Liverpool",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
     "a": "Newcastle United",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "20/04/2025",
-    "h": "Fulham",
-    "a": "Chelsea",
+    "ag": 3,
+    "d": "25/01/2025",
+    "h": "Southampton",
     "hg": 1,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "20/04/2025",
-    "h": "Ipswich Town",
+    "d": "25/01/2025",
+    "h": "Wolverhampton",
     "a": "Arsenal",
     "hg": 0,
-    "ag": 4
-  },
-  {
-    "d": "20/04/2025",
-    "h": "Manchester United",
-    "a": "Wolverhampton",
-    "hg": 0,
     "ag": 1
   },
   {
-    "d": "20/04/2025",
-    "h": "Leicester",
-    "a": "Liverpool",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "21/04/2025",
-    "h": "Tottenham Hotspur",
-    "a": "Nottingham Forest",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "22/04/2025",
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "25/01/2025",
     "h": "Manchester City",
-    "a": "Aston Villa",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "23/04/2025",
-    "h": "Arsenal",
-    "a": "Crystal Palace",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "26/04/2025",
-    "h": "Chelsea",
-    "a": "Everton",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "26/04/2025",
-    "h": "Brighton",
-    "a": "West Ham United",
     "hg": 3,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "26/04/2025",
-    "h": "Newcastle United",
-    "a": "Ipswich Town",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "26/04/2025",
-    "h": "Southampton",
-    "a": "Fulham",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "26/04/2025",
-    "h": "Wolverhampton",
-    "a": "Leicester",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "27/04/2025",
-    "h": "Bournemouth",
-    "a": "Manchester United",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "27/04/2025",
-    "h": "Liverpool",
-    "a": "Tottenham Hotspur",
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "25/01/2025",
+    "h": "AFC Bournemouth",
     "hg": 5,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "01/05/2025",
-    "h": "Nottingham Forest",
-    "a": "Brentford",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "02/05/2025",
-    "h": "Manchester City",
-    "a": "Wolverhampton",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "03/05/2025",
-    "h": "Aston Villa",
-    "a": "Fulham",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "03/05/2025",
-    "h": "Everton",
-    "a": "Ipswich Town",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "03/05/2025",
-    "h": "Leicester",
-    "a": "Southampton",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "03/05/2025",
-    "h": "Arsenal",
-    "a": "Bournemouth",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "04/05/2025",
-    "h": "Brentford",
-    "a": "Manchester United",
-    "hg": 4,
-    "ag": 3
-  },
-  {
-    "d": "04/05/2025",
-    "h": "Brighton",
-    "a": "Newcastle United",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "04/05/2025",
-    "h": "West Ham United",
-    "a": "Tottenham Hotspur",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "04/05/2025",
-    "h": "Chelsea",
-    "a": "Liverpool",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "05/05/2025",
-    "h": "Crystal Palace",
-    "a": "Nottingham Forest",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "10/05/2025",
-    "h": "Fulham",
     "a": "Everton",
-    "hg": 1,
-    "ag": 3
-  },
-  {
-    "d": "10/05/2025",
-    "h": "Ipswich Town",
-    "a": "Brentford",
+    "ag": 1,
+    "d": "25/01/2025",
+    "h": "Brighton & Hove Albion",
     "hg": 0,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "10/05/2025",
-    "h": "Southampton",
-    "a": "Manchester City",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "10/05/2025",
-    "h": "Wolverhampton",
-    "a": "Brighton",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "10/05/2025",
-    "h": "Bournemouth",
-    "a": "Aston Villa",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "11/05/2025",
-    "h": "Newcastle United",
-    "a": "Chelsea",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "11/05/2025",
-    "h": "Manchester United",
-    "a": "West Ham United",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "11/05/2025",
-    "h": "Nottingham Forest",
-    "a": "Leicester",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "11/05/2025",
-    "h": "Tottenham Hotspur",
-    "a": "Crystal Palace",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "11/05/2025",
-    "h": "Liverpool",
     "a": "Arsenal",
-    "hg": 2,
-    "ag": 2
+    "ag": 1,
+    "d": "25/01/2025",
+    "h": "Wolverhampton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "16/05/2025",
-    "h": "Aston Villa",
-    "a": "Tottenham Hotspur",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "16/05/2025",
+    "d": "20/01/2025",
     "h": "Chelsea",
-    "a": "Manchester United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "18/05/2025",
-    "h": "Everton",
-    "a": "Southampton",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "18/05/2025",
-    "h": "West Ham United",
-    "a": "Nottingham Forest",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "18/05/2025",
-    "h": "Brentford",
-    "a": "Fulham",
-    "hg": 2,
-    "ag": 3
-  },
-  {
-    "d": "18/05/2025",
-    "h": "Leicester",
-    "a": "Ipswich Town",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "18/05/2025",
-    "h": "Arsenal",
-    "a": "Newcastle United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "19/05/2025",
-    "h": "Brighton",
-    "a": "Liverpool",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "20/05/2025",
-    "h": "Crystal Palace",
     "a": "Wolverhampton",
-    "hg": 4,
-    "ag": 2
-  },
-  {
-    "d": "20/05/2025",
-    "h": "Manchester City",
-    "a": "Bournemouth",
     "hg": 3,
     "ag": 1
   },
   {
-    "d": "25/05/2025",
-    "h": "Bournemouth",
-    "a": "Leicester",
-    "hg": 2,
-    "ag": 0
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "20/01/2025",
+    "h": "Chelsea",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "25/05/2025",
-    "h": "Fulham",
-    "a": "Manchester City",
-    "hg": 0,
-    "ag": 2
+    "a": "Tottenham Hotspur",
+    "ag": 2,
+    "d": "19/01/2025",
+    "h": "Everton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "25/05/2025",
-    "h": "Ipswich Town",
-    "a": "West Ham United",
+    "d": "19/01/2025",
+    "h": "Manchester United",
+    "a": "Brighton",
     "hg": 1,
     "ag": 3
   },
   {
-    "d": "25/05/2025",
-    "h": "Liverpool",
-    "a": "Crystal Palace",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "25/05/2025",
-    "h": "Manchester United",
-    "a": "Aston Villa",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "25/05/2025",
-    "h": "Newcastle United",
-    "a": "Everton",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "25/05/2025",
+    "a": "Southampton",
+    "ag": 2,
+    "d": "19/01/2025",
     "h": "Nottingham Forest",
-    "a": "Chelsea",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 6,
+    "d": "19/01/2025",
+    "h": "Ipswich Town",
     "hg": 0,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "25/05/2025",
-    "h": "Southampton",
-    "a": "Arsenal",
+    "a": "Brighton & Hove Albion",
+    "ag": 3,
+    "d": "19/01/2025",
+    "h": "Manchester United",
     "hg": 1,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "25/05/2025",
-    "h": "Tottenham Hotspur",
-    "a": "Brighton",
+    "d": "18/01/2025",
+    "h": "Newcastle United",
+    "a": "Bournemouth",
     "hg": 1,
     "ag": 4
   },
   {
-    "d": "25/05/2025",
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "18/01/2025",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "18/01/2025",
+    "h": "Leicester",
+    "a": "Fulham",
+    "hg": 0,
+    "ag": 2
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 2,
+    "d": "18/01/2025",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 2,
+    "d": "18/01/2025",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 4,
+    "d": "18/01/2025",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "18/01/2025",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "16/01/2025",
+    "h": "Ipswich Town",
+    "a": "Brighton",
+    "hg": 0,
+    "ag": 2
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "16/01/2025",
+    "h": "Manchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "16/01/2025",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "15/01/2025",
+    "h": "Everton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "15/01/2025",
+    "h": "Leicester",
+    "a": "Crystal Palace",
+    "hg": 0,
+    "ag": 2
+  },
+  {
+    "d": "15/01/2025",
+    "h": "Newcastle United",
+    "a": "Wolverhampton",
+    "hg": 3,
+    "ag": 0
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "15/01/2025",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 2,
+    "d": "15/01/2025",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "15/01/2025",
+    "h": "Newcastle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "14/01/2025",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "14/01/2025",
+    "h": "Chelsea",
+    "a": "Bournemouth",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "14/01/2025",
+    "h": "West Ham United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "14/01/2025",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "14/01/2025",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "06/01/2025",
     "h": "Wolverhampton",
+    "a": "Nottingham Forest",
+    "hg": 0,
+    "ag": 3
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 3,
+    "d": "06/01/2025",
+    "h": "Wolverhampton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "05/01/2025",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "05/01/2025",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 2,
+    "d": "04/01/2025",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "04/01/2025",
+    "h": "Aston Villa",
+    "a": "Leicester",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "d": "04/01/2025",
+    "h": "Bournemouth",
+    "a": "Everton",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "04/01/2025",
+    "h": "Crystal Palace",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "04/01/2025",
+    "h": "Manchester City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
     "a": "Brentford",
+    "ag": 5,
+    "d": "04/01/2025",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "04/01/2025",
+    "h": "Brighton",
+    "a": "Arsenal",
     "hg": 1,
     "ag": 1
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "04/01/2025",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "04/01/2025",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "04/01/2025",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 3,
+    "d": "01/01/2025",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "30/12/2024",
+    "h": "Aston Villa",
+    "a": "Brighton",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "30/12/2024",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 2,
+    "d": "30/12/2024",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "30/12/2024",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "29/12/2024",
+    "h": "Leicester",
+    "a": "Manchester City",
+    "hg": 0,
+    "ag": 2
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "29/12/2024",
+    "h": "Crystal Palace",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 2,
+    "d": "29/12/2024",
+    "h": "Everton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "29/12/2024",
+    "h": "Fulham",
+    "a": "Bournemouth",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "d": "29/12/2024",
+    "h": "Tottenham Hotspur",
+    "a": "Wolverhampton",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "a": "Liverpool",
+    "ag": 5,
+    "d": "29/12/2024",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "29/12/2024",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "29/12/2024",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 2,
+    "d": "29/12/2024",
+    "h": "Tottenham Hotspur",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "27/12/2024",
+    "h": "Brighton",
+    "a": "Brentford",
+    "hg": 0,
+    "ag": 0
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 0,
+    "d": "27/12/2024",
+    "h": "Arsenal",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "27/12/2024",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "26/12/2024",
+    "h": "Manchester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "26/12/2024",
+    "h": "Bournemouth",
+    "a": "Crystal Palace",
+    "hg": 0,
+    "ag": 0
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "26/12/2024",
+    "h": "Chelsea",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "26/12/2024",
+    "h": "Newcastle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "26/12/2024",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "26/12/2024",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "26/12/2024",
+    "h": "Wolverhampton",
+    "a": "Manchester United",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "d": "26/12/2024",
+    "h": "Liverpool",
+    "a": "Leicester",
+    "hg": 3,
+    "ag": 1
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 0,
+    "d": "26/12/2024",
+    "h": "AFC Bournemouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 0,
+    "d": "26/12/2024",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "26/12/2024",
+    "h": "Liverpool",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "22/12/2024",
+    "h": "Everton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "22/12/2024",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "22/12/2024",
+    "h": "Leicester",
+    "a": "Wolverhampton",
+    "hg": 0,
+    "ag": 3
+  },
+  {
+    "d": "22/12/2024",
+    "h": "Manchester United",
+    "a": "Bournemouth",
+    "hg": 0,
+    "ag": 3
+  },
+  {
+    "a": "Liverpool",
+    "ag": 6,
+    "d": "22/12/2024",
+    "h": "Tottenham Hotspur",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 3,
+    "d": "22/12/2024",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 3,
+    "d": "22/12/2024",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "21/12/2024",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 2,
+    "d": "21/12/2024",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 4,
+    "d": "21/12/2024",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "21/12/2024",
+    "h": "West Ham United",
+    "a": "Brighton",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Arsenal",
+    "ag": 5,
+    "d": "21/12/2024",
+    "h": "Crystal Palace",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "21/12/2024",
+    "h": "West Ham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "16/12/2024",
+    "h": "Bournemouth",
+    "a": "West Ham United",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "16/12/2024",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "15/12/2024",
+    "h": "Brighton",
+    "a": "Crystal Palace",
+    "hg": 1,
+    "ag": 3
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "15/12/2024",
+    "h": "Manchester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "15/12/2024",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 5,
+    "d": "15/12/2024",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 3,
+    "d": "15/12/2024",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "14/12/2024",
+    "h": "Arsenal",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "14/12/2024",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "14/12/2024",
+    "h": "Newcastle United",
+    "a": "Leicester",
+    "hg": 4,
+    "ag": 0
+  },
+  {
+    "d": "14/12/2024",
+    "h": "Wolverhampton",
+    "a": "Ipswich Town",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "14/12/2024",
+    "h": "Nottingham Forest",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 0,
+    "d": "14/12/2024",
+    "h": "Newcastle United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "14/12/2024",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "09/12/2024",
+    "h": "West Ham United",
+    "a": "Wolverhampton",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "09/12/2024",
+    "h": "West Ham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "08/12/2024",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "08/12/2024",
+    "h": "Ipswich Town",
+    "a": "Bournemouth",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "d": "08/12/2024",
+    "h": "Leicester",
+    "a": "Brighton",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "a": "Chelsea",
+    "ag": 4,
+    "d": "08/12/2024",
+    "h": "Tottenham Hotspur",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "08/12/2024",
+    "h": "Ipswich Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "08/12/2024",
+    "h": "Leicester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "07/12/2024",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 2,
+    "d": "07/12/2024",
+    "h": "Brentford",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "07/12/2024",
+    "h": "Crystal Palace",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 3,
+    "d": "07/12/2024",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "05/12/2024",
+    "h": "Fulham",
+    "a": "Brighton",
+    "hg": 3,
+    "ag": 1
+  },
+  {
+    "d": "05/12/2024",
+    "h": "Bournemouth",
+    "a": "Tottenham Hotspur",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "05/12/2024",
+    "h": "Fulham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "05/12/2024",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "04/12/2024",
+    "h": "Everton",
+    "a": "Wolverhampton",
+    "hg": 4,
+    "ag": 0
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "04/12/2024",
+    "h": "Manchester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 3,
+    "d": "04/12/2024",
+    "h": "Newcastle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 5,
+    "d": "04/12/2024",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 0,
+    "d": "04/12/2024",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "04/12/2024",
+    "h": "Aston Villa",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "04/12/2024",
+    "h": "Everton",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 1,
+    "d": "03/12/2024",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "03/12/2024",
+    "h": "Leicester",
+    "a": "West Ham United",
+    "hg": 3,
+    "ag": 1
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "03/12/2024",
+    "h": "Leicester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "01/12/2024",
+    "h": "Chelsea",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "01/12/2024",
+    "h": "Manchester United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "01/12/2024",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 0,
+    "d": "01/12/2024",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "30/11/2024",
+    "h": "Brentford",
+    "a": "Leicester",
+    "hg": 4,
+    "ag": 1
+  },
+  {
+    "d": "30/11/2024",
+    "h": "Crystal Palace",
+    "a": "Newcastle United",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "d": "30/11/2024",
+    "h": "Nottingham Forest",
+    "a": "Ipswich Town",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "d": "30/11/2024",
+    "h": "Wolverhampton",
+    "a": "Bournemouth",
+    "hg": 2,
+    "ag": 4
+  },
+  {
+    "d": "30/11/2024",
+    "h": "West Ham United",
+    "a": "Arsenal",
+    "hg": 2,
+    "ag": 5
+  },
+  {
+    "d": "29/11/2024",
+    "h": "Brighton",
+    "a": "Southampton",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "29/11/2024",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 2,
+    "d": "25/11/2024",
+    "h": "Newcastle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 3,
+    "d": "24/11/2024",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "24/11/2024",
+    "h": "Ipswich Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "23/11/2024",
+    "h": "Leicester",
+    "a": "Chelsea",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 0,
+    "d": "23/11/2024",
+    "h": "Arsenal",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 2,
+    "d": "23/11/2024",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "23/11/2024",
+    "h": "Bournemouth",
+    "a": "Brighton",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "23/11/2024",
+    "h": "Everton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "23/11/2024",
+    "h": "Fulham",
+    "a": "Wolverhampton",
+    "hg": 1,
+    "ag": 4
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 4,
+    "d": "23/11/2024",
+    "h": "Manchester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 2,
+    "d": "23/11/2024",
+    "h": "Leicester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "23/11/2024",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 4,
+    "d": "23/11/2024",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "10/11/2024",
+    "h": "Manchester United",
+    "a": "Leicester",
+    "hg": 3,
+    "ag": 0
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 3,
+    "d": "10/11/2024",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 2,
+    "d": "10/11/2024",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "10/11/2024",
+    "h": "Chelsea",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 0,
+    "d": "10/11/2024",
+    "h": "Manchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "09/11/2024",
+    "h": "Brentford",
+    "a": "Bournemouth",
+    "hg": 3,
+    "ag": 2
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "09/11/2024",
+    "h": "Crystal Palace",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "09/11/2024",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "09/11/2024",
+    "h": "Wolverhampton",
+    "a": "Southampton",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "d": "09/11/2024",
+    "h": "Brighton",
+    "a": "Manchester City",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "09/11/2024",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "09/11/2024",
+    "h": "Brentford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "09/11/2024",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "09/11/2024",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "04/11/2024",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "03/11/2024",
+    "h": "Tottenham Hotspur",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "03/11/2024",
+    "h": "Manchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 0,
+    "d": "02/11/2024",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "02/11/2024",
+    "h": "Bournemouth",
+    "a": "Manchester City",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "d": "02/11/2024",
+    "h": "Ipswich Town",
+    "a": "Leicester",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "d": "02/11/2024",
+    "h": "Liverpool",
+    "a": "Brighton",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "02/11/2024",
+    "h": "Nottingham Forest",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "02/11/2024",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "02/11/2024",
+    "h": "Wolverhampton",
+    "a": "Crystal Palace",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "02/11/2024",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "02/11/2024",
+    "h": "Ipswich Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "02/11/2024",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 2,
+    "d": "02/11/2024",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "27/10/2024",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "27/10/2024",
+    "h": "Crystal Palace",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "27/10/2024",
+    "h": "West Ham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "27/10/2024",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "26/10/2024",
+    "h": "Aston Villa",
+    "a": "Bournemouth",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 3,
+    "d": "26/10/2024",
+    "h": "Brentford",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "26/10/2024",
+    "h": "Brighton",
+    "a": "Wolverhampton",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "26/10/2024",
+    "h": "Manchester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "26/10/2024",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "26/10/2024",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 2,
+    "d": "26/10/2024",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "25/10/2024",
+    "h": "Leicester",
+    "a": "Nottingham Forest",
+    "hg": 1,
+    "ag": 3
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 3,
+    "d": "25/10/2024",
+    "h": "Leicester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 0,
+    "d": "21/10/2024",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "20/10/2024",
+    "h": "Wolverhampton",
+    "a": "Manchester City",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "20/10/2024",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "20/10/2024",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "19/10/2024",
+    "h": "Tottenham Hotspur",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 3,
+    "d": "19/10/2024",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 2,
+    "d": "19/10/2024",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "19/10/2024",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "19/10/2024",
+    "h": "Newcastle United",
+    "a": "Brighton",
+    "hg": 0,
+    "ag": 1
+  },
+  {
+    "d": "19/10/2024",
+    "h": "Southampton",
+    "a": "Leicester",
+    "hg": 2,
+    "ag": 3
+  },
+  {
+    "d": "19/10/2024",
+    "h": "Bournemouth",
+    "a": "Arsenal",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "19/10/2024",
+    "h": "Newcastle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 3,
+    "d": "19/10/2024",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 0,
+    "d": "19/10/2024",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 0,
+    "d": "06/10/2024",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "06/10/2024",
+    "h": "Chelsea",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "06/10/2024",
+    "h": "Brighton",
+    "a": "Tottenham Hotspur",
+    "hg": 3,
+    "ag": 2
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 2,
+    "d": "06/10/2024",
+    "h": "Brighton & Hove Albion",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "05/10/2024",
+    "h": "Crystal Palace",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "05/10/2024",
+    "h": "Arsenal",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "05/10/2024",
+    "h": "Brentford",
+    "a": "Wolverhampton",
+    "hg": 5,
+    "ag": 3
+  },
+  {
+    "d": "05/10/2024",
+    "h": "Leicester",
+    "a": "Bournemouth",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "05/10/2024",
+    "h": "Manchester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "05/10/2024",
+    "h": "West Ham United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "05/10/2024",
+    "h": "Everton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 3,
+    "d": "05/10/2024",
+    "h": "Brentford",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "05/10/2024",
+    "h": "Leicester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "30/09/2024",
+    "h": "Bournemouth",
+    "a": "Southampton",
+    "hg": 3,
+    "ag": 1
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 2,
+    "d": "29/09/2024",
+    "h": "Ipswich Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 3,
+    "d": "29/09/2024",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "28/09/2024",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "28/09/2024",
+    "h": "Arsenal",
+    "a": "Leicester",
+    "hg": 4,
+    "ag": 2
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "28/09/2024",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "28/09/2024",
+    "h": "Chelsea",
+    "a": "Brighton",
+    "hg": 4,
+    "ag": 2
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 1,
+    "d": "28/09/2024",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "28/09/2024",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "28/09/2024",
+    "h": "Wolverhampton",
+    "a": "Liverpool",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "a": "Leicester City",
+    "ag": 2,
+    "d": "28/09/2024",
+    "h": "Arsenal",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "28/09/2024",
+    "h": "Chelsea",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "28/09/2024",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "22/09/2024",
+    "h": "Brighton",
+    "a": "Nottingham Forest",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "22/09/2024",
+    "h": "Manchester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 2,
+    "d": "22/09/2024",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 3,
+    "d": "21/09/2024",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "21/09/2024",
+    "h": "Aston Villa",
+    "a": "Wolverhampton",
+    "hg": 3,
+    "ag": 1
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "21/09/2024",
+    "h": "Fulham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "21/09/2024",
+    "h": "Leicester",
+    "a": "Everton",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "d": "21/09/2024",
+    "h": "Liverpool",
+    "a": "Bournemouth",
+    "hg": 3,
+    "ag": 0
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "21/09/2024",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "21/09/2024",
+    "h": "Tottenham Hotspur",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 0,
+    "d": "21/09/2024",
+    "h": "Crystal Palace",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "21/09/2024",
+    "h": "Aston Villa",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "21/09/2024",
+    "h": "Leicester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "21/09/2024",
+    "h": "Liverpool",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "15/09/2024",
+    "h": "Tottenham Hotspur",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "15/09/2024",
+    "h": "Wolverhampton",
+    "a": "Newcastle United",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 2,
+    "d": "15/09/2024",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 3,
+    "d": "14/09/2024",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "14/09/2024",
+    "h": "Brighton",
+    "a": "Ipswich Town",
+    "hg": 0,
+    "ag": 0
+  },
+  {
+    "d": "14/09/2024",
+    "h": "Crystal Palace",
+    "a": "Leicester",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "14/09/2024",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "14/09/2024",
+    "h": "Liverpool",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "14/09/2024",
+    "h": "Manchester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 2,
+    "d": "14/09/2024",
+    "h": "Aston Villa",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "14/09/2024",
+    "h": "Bournemouth",
+    "a": "Chelsea",
+    "hg": 0,
+    "ag": 1
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 0,
+    "d": "14/09/2024",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 2,
+    "d": "14/09/2024",
+    "h": "Crystal Palace",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "14/09/2024",
+    "h": "AFC Bournemouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 1,
+    "d": "01/09/2024",
+    "h": "Chelsea",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "01/09/2024",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 3,
+    "d": "01/09/2024",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "31/08/2024",
+    "h": "Arsenal",
+    "a": "Brighton",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "d": "31/08/2024",
+    "h": "Brentford",
+    "a": "Southampton",
+    "hg": 3,
+    "ag": 1
+  },
+  {
+    "d": "31/08/2024",
+    "h": "Everton",
+    "a": "Bournemouth",
+    "hg": 2,
+    "ag": 3
+  },
+  {
+    "d": "31/08/2024",
+    "h": "Ipswich Town",
+    "a": "Fulham",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "d": "31/08/2024",
+    "h": "Leicester",
+    "a": "Aston Villa",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "d": "31/08/2024",
+    "h": "Nottingham Forest",
+    "a": "Wolverhampton",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "d": "31/08/2024",
+    "h": "West Ham United",
+    "a": "Manchester City",
+    "hg": 1,
+    "ag": 3
+  },
+  {
+    "d": "25/08/2024",
+    "h": "Bournemouth",
+    "a": "Newcastle United",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "d": "25/08/2024",
+    "h": "Wolverhampton",
+    "a": "Chelsea",
+    "hg": 2,
+    "ag": 6
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "25/08/2024",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "25/08/2024",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 6,
+    "d": "25/08/2024",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "24/08/2024",
+    "h": "Brighton",
+    "a": "Manchester United",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "a": "West Ham United",
+    "ag": 2,
+    "d": "24/08/2024",
+    "h": "Crystal Palace",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "24/08/2024",
+    "h": "Fulham",
+    "a": "Leicester",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "a": "Ipswich Town",
+    "ag": 1,
+    "d": "24/08/2024",
+    "h": "Manchester City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Nottingham Forest",
+    "ag": 1,
+    "d": "24/08/2024",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "24/08/2024",
+    "h": "Tottenham Hotspur",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "24/08/2024",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "24/08/2024",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "24/08/2024",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "19/08/2024",
+    "h": "Leicester",
+    "a": "Tottenham Hotspur",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "19/08/2024",
+    "h": "Leicester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 1,
+    "d": "18/08/2024",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "18/08/2024",
+    "h": "Chelsea",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "17/08/2024",
+    "h": "Ipswich Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "17/08/2024",
+    "h": "Arsenal",
+    "a": "Wolverhampton",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "d": "17/08/2024",
+    "h": "Everton",
+    "a": "Brighton",
+    "hg": 0,
+    "ag": 3
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "17/08/2024",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "17/08/2024",
+    "h": "Nottingham Forest",
+    "a": "Bournemouth",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 2,
+    "d": "17/08/2024",
+    "h": "West Ham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "17/08/2024",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 3,
+    "d": "17/08/2024",
+    "h": "Everton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "17/08/2024",
+    "h": "Nottingham Forest",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "16/08/2024",
+    "h": "Manchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
   }
 ]

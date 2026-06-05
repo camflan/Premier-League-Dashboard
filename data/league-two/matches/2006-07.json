@@ -1,0 +1,4290 @@
+[
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "26/05/2007",
+    "h": "Bristol Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 2,
+    "d": "18/05/2007",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 5,
+    "d": "17/05/2007",
+    "h": "Lincoln City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "14/05/2007",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 1,
+    "d": "12/05/2007",
+    "h": "Bristol Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "05/05/2007",
+    "h": "Barnet",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 1,
+    "d": "05/05/2007",
+    "h": "Bury",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 5,
+    "d": "05/05/2007",
+    "h": "Darlington",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 2,
+    "d": "05/05/2007",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 0,
+    "d": "05/05/2007",
+    "h": "Lincoln City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "05/05/2007",
+    "h": "Macclesfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "05/05/2007",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 3,
+    "d": "05/05/2007",
+    "h": "Peterborough United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 2,
+    "d": "05/05/2007",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "05/05/2007",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 0,
+    "d": "05/05/2007",
+    "h": "Torquay United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 1,
+    "d": "05/05/2007",
+    "h": "Wrexham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "28/04/2007",
+    "h": "Hereford United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 0,
+    "d": "28/04/2007",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 2,
+    "d": "28/04/2007",
+    "h": "Accrington Stanley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 1,
+    "d": "28/04/2007",
+    "h": "Boston Utd",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "28/04/2007",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "28/04/2007",
+    "h": "Chester FC",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 1,
+    "d": "28/04/2007",
+    "h": "Mansfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 1,
+    "d": "28/04/2007",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "28/04/2007",
+    "h": "Rochdale",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "28/04/2007",
+    "h": "Stockport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 0,
+    "d": "28/04/2007",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "28/04/2007",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "24/04/2007",
+    "h": "Macclesfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 1,
+    "d": "24/04/2007",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 0,
+    "d": "21/04/2007",
+    "h": "Boston Utd",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 0,
+    "d": "21/04/2007",
+    "h": "Bristol Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "21/04/2007",
+    "h": "Darlington",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 0,
+    "d": "21/04/2007",
+    "h": "Grimsby Town",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 0,
+    "d": "21/04/2007",
+    "h": "Peterborough United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 0,
+    "d": "21/04/2007",
+    "h": "Rochdale",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "21/04/2007",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "21/04/2007",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 0,
+    "d": "21/04/2007",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "21/04/2007",
+    "h": "Walsall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 0,
+    "d": "21/04/2007",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "20/04/2007",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "15/04/2007",
+    "h": "Chester FC",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "14/04/2007",
+    "h": "Accrington Stanley",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "14/04/2007",
+    "h": "Barnet",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "14/04/2007",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 0,
+    "d": "14/04/2007",
+    "h": "Hereford United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 3,
+    "d": "14/04/2007",
+    "h": "Lincoln City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "14/04/2007",
+    "h": "Macclesfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 2,
+    "d": "14/04/2007",
+    "h": "Mansfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 0,
+    "d": "14/04/2007",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "14/04/2007",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "14/04/2007",
+    "h": "Torquay United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "14/04/2007",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 1,
+    "d": "09/04/2007",
+    "h": "Boston Utd",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "09/04/2007",
+    "h": "Bristol Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 1,
+    "d": "09/04/2007",
+    "h": "Darlington",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "09/04/2007",
+    "h": "Grimsby Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "09/04/2007",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 0,
+    "d": "09/04/2007",
+    "h": "Peterborough United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 2,
+    "d": "09/04/2007",
+    "h": "Rochdale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "09/04/2007",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 0,
+    "d": "09/04/2007",
+    "h": "Stockport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 1,
+    "d": "09/04/2007",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 0,
+    "d": "09/04/2007",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "09/04/2007",
+    "h": "Wrexham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 2,
+    "d": "07/04/2007",
+    "h": "Accrington Stanley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "07/04/2007",
+    "h": "Barnet",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 1,
+    "d": "07/04/2007",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "07/04/2007",
+    "h": "Hereford United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "07/04/2007",
+    "h": "Lincoln City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 0,
+    "d": "07/04/2007",
+    "h": "Macclesfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "07/04/2007",
+    "h": "Mansfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 2,
+    "d": "07/04/2007",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 0,
+    "d": "07/04/2007",
+    "h": "Notts County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "07/04/2007",
+    "h": "Torquay United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "07/04/2007",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 1,
+    "d": "06/04/2007",
+    "h": "Chester FC",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "03/04/2007",
+    "h": "Rochdale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 3,
+    "d": "03/04/2007",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 0,
+    "d": "30/03/2007",
+    "h": "Hartlepool United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 0,
+    "d": "27/03/2007",
+    "h": "Shrewsbury Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "27/03/2007",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 3,
+    "d": "25/03/2007",
+    "h": "Darlington",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 3,
+    "d": "25/03/2007",
+    "h": "Lincoln City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "25/03/2007",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 0,
+    "d": "24/03/2007",
+    "h": "Accrington Stanley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 1,
+    "d": "24/03/2007",
+    "h": "Bristol Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "24/03/2007",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 0,
+    "d": "24/03/2007",
+    "h": "Chester FC",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 2,
+    "d": "24/03/2007",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 0,
+    "d": "24/03/2007",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 7,
+    "d": "24/03/2007",
+    "h": "Stockport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 2,
+    "d": "23/03/2007",
+    "h": "Mansfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 0,
+    "d": "23/03/2007",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "20/03/2007",
+    "h": "Barnet",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "20/03/2007",
+    "h": "Bristol Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 0,
+    "d": "17/03/2007",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "17/03/2007",
+    "h": "Bristol Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 1,
+    "d": "17/03/2007",
+    "h": "Bury",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 0,
+    "d": "17/03/2007",
+    "h": "Darlington",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "17/03/2007",
+    "h": "Grimsby Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 0,
+    "d": "17/03/2007",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 2,
+    "d": "17/03/2007",
+    "h": "Mansfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 1,
+    "d": "17/03/2007",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 3,
+    "d": "17/03/2007",
+    "h": "Stockport County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "17/03/2007",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 1,
+    "d": "16/03/2007",
+    "h": "Chester FC",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "16/03/2007",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 0,
+    "d": "13/03/2007",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "10/03/2007",
+    "h": "Barnet",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "10/03/2007",
+    "h": "Boston Utd",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "10/03/2007",
+    "h": "Hereford United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 2,
+    "d": "10/03/2007",
+    "h": "Macclesfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 0,
+    "d": "10/03/2007",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "10/03/2007",
+    "h": "Peterborough United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 0,
+    "d": "10/03/2007",
+    "h": "Rochdale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "10/03/2007",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "10/03/2007",
+    "h": "Torquay United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 0,
+    "d": "10/03/2007",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 1,
+    "d": "09/03/2007",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "09/03/2007",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "06/03/2007",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 1,
+    "d": "06/03/2007",
+    "h": "Mansfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 2,
+    "d": "03/03/2007",
+    "h": "Barnet",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "03/03/2007",
+    "h": "Darlington",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "03/03/2007",
+    "h": "Grimsby Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 2,
+    "d": "03/03/2007",
+    "h": "Hartlepool United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 2,
+    "d": "03/03/2007",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 2,
+    "d": "03/03/2007",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "03/03/2007",
+    "h": "Peterborough United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 2,
+    "d": "03/03/2007",
+    "h": "Rochdale",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "03/03/2007",
+    "h": "Stockport County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 0,
+    "d": "03/03/2007",
+    "h": "Wycombe Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 1,
+    "d": "02/03/2007",
+    "h": "Chester FC",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "02/03/2007",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 1,
+    "d": "27/02/2007",
+    "h": "Chester FC",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 3,
+    "d": "25/02/2007",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 2,
+    "d": "24/02/2007",
+    "h": "Accrington Stanley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "24/02/2007",
+    "h": "Boston Utd",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 3,
+    "d": "24/02/2007",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 0,
+    "d": "24/02/2007",
+    "h": "Hereford United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "24/02/2007",
+    "h": "Macclesfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "24/02/2007",
+    "h": "Mansfield Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "24/02/2007",
+    "h": "Notts County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 0,
+    "d": "24/02/2007",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 1,
+    "d": "24/02/2007",
+    "h": "Torquay United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 1,
+    "d": "24/02/2007",
+    "h": "Walsall",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "21/02/2007",
+    "h": "Chester FC",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "20/02/2007",
+    "h": "Darlington",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "20/02/2007",
+    "h": "Barnet",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 1,
+    "d": "20/02/2007",
+    "h": "Grimsby Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 2,
+    "d": "20/02/2007",
+    "h": "Hartlepool United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 4,
+    "d": "20/02/2007",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 1,
+    "d": "20/02/2007",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 1,
+    "d": "20/02/2007",
+    "h": "Peterborough United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 0,
+    "d": "20/02/2007",
+    "h": "Rochdale",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "20/02/2007",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "20/02/2007",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 0,
+    "d": "18/02/2007",
+    "h": "Wrexham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "17/02/2007",
+    "h": "Accrington Stanley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 3,
+    "d": "17/02/2007",
+    "h": "Boston Utd",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "17/02/2007",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 4,
+    "d": "17/02/2007",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 0,
+    "d": "17/02/2007",
+    "h": "Hereford United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "17/02/2007",
+    "h": "Macclesfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 2,
+    "d": "17/02/2007",
+    "h": "Mansfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 2,
+    "d": "17/02/2007",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 1,
+    "d": "17/02/2007",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "17/02/2007",
+    "h": "Torquay United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 2,
+    "d": "16/02/2007",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 2,
+    "d": "10/02/2007",
+    "h": "Barnet",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 0,
+    "d": "10/02/2007",
+    "h": "Darlington",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 3,
+    "d": "10/02/2007",
+    "h": "Grimsby Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "10/02/2007",
+    "h": "Hartlepool United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 0,
+    "d": "10/02/2007",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 0,
+    "d": "10/02/2007",
+    "h": "Peterborough United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 0,
+    "d": "10/02/2007",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "10/02/2007",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 2,
+    "d": "06/02/2007",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 1,
+    "d": "03/02/2007",
+    "h": "Accrington Stanley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 6,
+    "d": "03/02/2007",
+    "h": "Boston Utd",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 2,
+    "d": "03/02/2007",
+    "h": "Bristol Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "03/02/2007",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 2,
+    "d": "03/02/2007",
+    "h": "Hereford United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 1,
+    "d": "03/02/2007",
+    "h": "Macclesfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "03/02/2007",
+    "h": "Mansfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 1,
+    "d": "03/02/2007",
+    "h": "Notts County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "03/02/2007",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 1,
+    "d": "03/02/2007",
+    "h": "Torquay United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 1,
+    "d": "03/02/2007",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "03/02/2007",
+    "h": "Wrexham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 2,
+    "d": "30/01/2007",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "30/01/2007",
+    "h": "Macclesfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 0,
+    "d": "30/01/2007",
+    "h": "Mansfield Town",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 1,
+    "d": "30/01/2007",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "30/01/2007",
+    "h": "Peterborough United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "30/01/2007",
+    "h": "Wrexham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 1,
+    "d": "27/01/2007",
+    "h": "Chester FC",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 1,
+    "d": "27/01/2007",
+    "h": "Darlington",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "27/01/2007",
+    "h": "Hartlepool United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "27/01/2007",
+    "h": "Hereford United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 0,
+    "d": "27/01/2007",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "27/01/2007",
+    "h": "Rochdale",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "27/01/2007",
+    "h": "Stockport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 0,
+    "d": "27/01/2007",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 1,
+    "d": "27/01/2007",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "26/01/2007",
+    "h": "Torquay United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 3,
+    "d": "20/01/2007",
+    "h": "Boston Utd",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 0,
+    "d": "20/01/2007",
+    "h": "Bristol Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 2,
+    "d": "20/01/2007",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 1,
+    "d": "20/01/2007",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 0,
+    "d": "20/01/2007",
+    "h": "Macclesfield Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "20/01/2007",
+    "h": "Mansfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 1,
+    "d": "20/01/2007",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 2,
+    "d": "20/01/2007",
+    "h": "Notts County",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 3,
+    "d": "20/01/2007",
+    "h": "Peterborough United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "20/01/2007",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "20/01/2007",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 2,
+    "d": "16/01/2007",
+    "h": "Accrington Stanley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 1,
+    "d": "16/01/2007",
+    "h": "Bury",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "15/01/2007",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "13/01/2007",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 0,
+    "d": "13/01/2007",
+    "h": "Barnet",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "13/01/2007",
+    "h": "Chester FC",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "13/01/2007",
+    "h": "Darlington",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "13/01/2007",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 3,
+    "d": "13/01/2007",
+    "h": "Hereford United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "13/01/2007",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "13/01/2007",
+    "h": "Rochdale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 0,
+    "d": "13/01/2007",
+    "h": "Stockport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 1,
+    "d": "13/01/2007",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 2,
+    "d": "13/01/2007",
+    "h": "Torquay United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 2,
+    "d": "09/01/2007",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 2,
+    "d": "08/01/2007",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "06/01/2007",
+    "h": "Boston Utd",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "06/01/2007",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 1,
+    "d": "06/01/2007",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 1,
+    "d": "01/01/2007",
+    "h": "Boston Utd",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 0,
+    "d": "01/01/2007",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 4,
+    "d": "01/01/2007",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 1,
+    "d": "01/01/2007",
+    "h": "Macclesfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "01/01/2007",
+    "h": "Mansfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "01/01/2007",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 2,
+    "d": "01/01/2007",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "01/01/2007",
+    "h": "Peterborough United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 2,
+    "d": "01/01/2007",
+    "h": "Shrewsbury Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 3,
+    "d": "01/01/2007",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 0,
+    "d": "01/01/2007",
+    "h": "Wycombe Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 0,
+    "d": "30/12/2006",
+    "h": "Hereford United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "30/12/2006",
+    "h": "Barnet",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 3,
+    "d": "30/12/2006",
+    "h": "Chester FC",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 2,
+    "d": "30/12/2006",
+    "h": "Darlington",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 0,
+    "d": "30/12/2006",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "30/12/2006",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 0,
+    "d": "30/12/2006",
+    "h": "Rochdale",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "30/12/2006",
+    "h": "Stockport County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "30/12/2006",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 1,
+    "d": "30/12/2006",
+    "h": "Torquay United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 2,
+    "d": "30/12/2006",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 2,
+    "d": "26/12/2006",
+    "h": "Rochdale",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "26/12/2006",
+    "h": "Hereford United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 0,
+    "d": "26/12/2006",
+    "h": "Barnet",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "26/12/2006",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 3,
+    "d": "26/12/2006",
+    "h": "Chester FC",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 2,
+    "d": "26/12/2006",
+    "h": "Darlington",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "26/12/2006",
+    "h": "Hartlepool United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 1,
+    "d": "26/12/2006",
+    "h": "Lincoln City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "26/12/2006",
+    "h": "Stockport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "26/12/2006",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "26/12/2006",
+    "h": "Torquay United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "26/12/2006",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "23/12/2006",
+    "h": "Boston Utd",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "23/12/2006",
+    "h": "Bristol Rovers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "23/12/2006",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "23/12/2006",
+    "h": "Macclesfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 1,
+    "d": "23/12/2006",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 2,
+    "d": "23/12/2006",
+    "h": "Peterborough United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 0,
+    "d": "23/12/2006",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "23/12/2006",
+    "h": "Wycombe Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 0,
+    "d": "22/12/2006",
+    "h": "Grimsby Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 1,
+    "d": "22/12/2006",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 1,
+    "d": "22/12/2006",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 0,
+    "d": "16/12/2006",
+    "h": "Shrewsbury Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "16/12/2006",
+    "h": "Lincoln City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 1,
+    "d": "16/12/2006",
+    "h": "Barnet",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "16/12/2006",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "16/12/2006",
+    "h": "Darlington",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 3,
+    "d": "16/12/2006",
+    "h": "Macclesfield Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "16/12/2006",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 2,
+    "d": "16/12/2006",
+    "h": "Peterborough United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "16/12/2006",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 1,
+    "d": "16/12/2006",
+    "h": "Torquay United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "16/12/2006",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 0,
+    "d": "15/12/2006",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 4,
+    "d": "09/12/2006",
+    "h": "Accrington Stanley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 0,
+    "d": "09/12/2006",
+    "h": "Boston Utd",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 2,
+    "d": "09/12/2006",
+    "h": "Bristol Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 1,
+    "d": "09/12/2006",
+    "h": "Chester FC",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "09/12/2006",
+    "h": "Grimsby Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 1,
+    "d": "09/12/2006",
+    "h": "Hereford United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 2,
+    "d": "09/12/2006",
+    "h": "Mansfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 2,
+    "d": "09/12/2006",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "09/12/2006",
+    "h": "Rochdale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 2,
+    "d": "09/12/2006",
+    "h": "Stockport County",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "09/12/2006",
+    "h": "Walsall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 1,
+    "d": "09/12/2006",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "05/12/2006",
+    "h": "Barnet",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "05/12/2006",
+    "h": "Bury",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 1,
+    "d": "05/12/2006",
+    "h": "Chester FC",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 0,
+    "d": "05/12/2006",
+    "h": "Hereford United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "05/12/2006",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 0,
+    "d": "05/12/2006",
+    "h": "Macclesfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "05/12/2006",
+    "h": "Mansfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "05/12/2006",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "05/12/2006",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 1,
+    "d": "05/12/2006",
+    "h": "Torquay United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 0,
+    "d": "05/12/2006",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 3,
+    "d": "02/12/2006",
+    "h": "Accrington Stanley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 0,
+    "d": "26/11/2006",
+    "h": "Bristol Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 1,
+    "d": "25/11/2006",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 1,
+    "d": "25/11/2006",
+    "h": "Boston Utd",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "25/11/2006",
+    "h": "Darlington",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "25/11/2006",
+    "h": "Grimsby Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "25/11/2006",
+    "h": "Hartlepool United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 2,
+    "d": "25/11/2006",
+    "h": "Peterborough United",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 0,
+    "d": "25/11/2006",
+    "h": "Rochdale",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 1,
+    "d": "25/11/2006",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "25/11/2006",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "25/11/2006",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 1,
+    "d": "25/11/2006",
+    "h": "Wrexham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 2,
+    "d": "18/11/2006",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 2,
+    "d": "18/11/2006",
+    "h": "Barnet",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 2,
+    "d": "18/11/2006",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "18/11/2006",
+    "h": "Hereford United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 3,
+    "d": "18/11/2006",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 3,
+    "d": "18/11/2006",
+    "h": "Macclesfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 2,
+    "d": "18/11/2006",
+    "h": "Mansfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "18/11/2006",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 1,
+    "d": "18/11/2006",
+    "h": "Notts County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "18/11/2006",
+    "h": "Torquay United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "18/11/2006",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "17/11/2006",
+    "h": "Chester FC",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 0,
+    "d": "07/11/2006",
+    "h": "Bury",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 3,
+    "d": "04/11/2006",
+    "h": "Boston Utd",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 0,
+    "d": "04/11/2006",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 3,
+    "d": "04/11/2006",
+    "h": "Grimsby Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 1,
+    "d": "04/11/2006",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 2,
+    "d": "04/11/2006",
+    "h": "Peterborough United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 3,
+    "d": "04/11/2006",
+    "h": "Rochdale",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "04/11/2006",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 0,
+    "d": "04/11/2006",
+    "h": "Stockport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 2,
+    "d": "04/11/2006",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 0,
+    "d": "04/11/2006",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 0,
+    "d": "04/11/2006",
+    "h": "Wrexham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 0,
+    "d": "03/11/2006",
+    "h": "Darlington",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 0,
+    "d": "28/10/2006",
+    "h": "Barnet",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 1,
+    "d": "28/10/2006",
+    "h": "Boston Utd",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 0,
+    "d": "28/10/2006",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "28/10/2006",
+    "h": "Hereford United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 3,
+    "d": "28/10/2006",
+    "h": "Macclesfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "28/10/2006",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 2,
+    "d": "28/10/2006",
+    "h": "Peterborough United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 3,
+    "d": "28/10/2006",
+    "h": "Rochdale",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 1,
+    "d": "28/10/2006",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "28/10/2006",
+    "h": "Torquay United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "28/10/2006",
+    "h": "Walsall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "28/10/2006",
+    "h": "Wrexham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "21/10/2006",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 0,
+    "d": "21/10/2006",
+    "h": "Bristol Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 1,
+    "d": "21/10/2006",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 0,
+    "d": "21/10/2006",
+    "h": "Darlington",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "21/10/2006",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 1,
+    "d": "21/10/2006",
+    "h": "Lincoln City",
+    "hg": 7,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 0,
+    "d": "21/10/2006",
+    "h": "Mansfield Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 3,
+    "d": "21/10/2006",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "21/10/2006",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 0,
+    "d": "21/10/2006",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 0,
+    "d": "21/10/2006",
+    "h": "Wycombe Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "20/10/2006",
+    "h": "Chester FC",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 5,
+    "d": "14/10/2006",
+    "h": "Barnet",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 1,
+    "d": "14/10/2006",
+    "h": "Boston Utd",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "14/10/2006",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 1,
+    "d": "14/10/2006",
+    "h": "Hereford United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 3,
+    "d": "14/10/2006",
+    "h": "Macclesfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 2,
+    "d": "14/10/2006",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "14/10/2006",
+    "h": "Peterborough United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 0,
+    "d": "14/10/2006",
+    "h": "Rochdale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "14/10/2006",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 2,
+    "d": "14/10/2006",
+    "h": "Torquay United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "14/10/2006",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "14/10/2006",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 1,
+    "d": "08/10/2006",
+    "h": "Grimsby Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "07/10/2006",
+    "h": "Mansfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "07/10/2006",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 0,
+    "d": "07/10/2006",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 0,
+    "d": "07/10/2006",
+    "h": "Stockport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 5,
+    "d": "06/10/2006",
+    "h": "Darlington",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "06/10/2006",
+    "h": "Chester FC",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "06/10/2006",
+    "h": "Lincoln City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 2,
+    "d": "06/10/2006",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 1,
+    "d": "06/10/2006",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 0,
+    "d": "06/10/2006",
+    "h": "Wycombe Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 2,
+    "d": "29/09/2006",
+    "h": "Darlington",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 0,
+    "d": "27/09/2006",
+    "h": "Boston Utd",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 1,
+    "d": "27/09/2006",
+    "h": "Bristol Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 2,
+    "d": "27/09/2006",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 2,
+    "d": "26/09/2006",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 4,
+    "d": "26/09/2006",
+    "h": "Grimsby Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 1,
+    "d": "26/09/2006",
+    "h": "Macclesfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 0,
+    "d": "26/09/2006",
+    "h": "Mansfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 2,
+    "d": "26/09/2006",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "26/09/2006",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 1,
+    "d": "26/09/2006",
+    "h": "Peterborough United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "26/09/2006",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "26/09/2006",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 0,
+    "d": "24/09/2006",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 3,
+    "d": "23/09/2006",
+    "h": "Boston Utd",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "23/09/2006",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 2,
+    "d": "23/09/2006",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "23/09/2006",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 3,
+    "d": "23/09/2006",
+    "h": "Macclesfield Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 2,
+    "d": "23/09/2006",
+    "h": "Mansfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 2,
+    "d": "23/09/2006",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "23/09/2006",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 5,
+    "d": "23/09/2006",
+    "h": "Peterborough United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 2,
+    "d": "23/09/2006",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 3,
+    "d": "23/09/2006",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 1,
+    "d": "16/09/2006",
+    "h": "Accrington Stanley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 3,
+    "d": "16/09/2006",
+    "h": "Barnet",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 2,
+    "d": "16/09/2006",
+    "h": "Chester FC",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "16/09/2006",
+    "h": "Darlington",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 3,
+    "d": "16/09/2006",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "16/09/2006",
+    "h": "Hereford United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 3,
+    "d": "16/09/2006",
+    "h": "Lincoln City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "16/09/2006",
+    "h": "Rochdale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 2,
+    "d": "16/09/2006",
+    "h": "Stockport County",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "16/09/2006",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 0,
+    "d": "16/09/2006",
+    "h": "Torquay United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 0,
+    "d": "16/09/2006",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 0,
+    "d": "13/09/2006",
+    "h": "Accrington Stanley",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "13/09/2006",
+    "h": "Torquay United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "12/09/2006",
+    "h": "Darlington",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 3,
+    "d": "12/09/2006",
+    "h": "Barnet",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "12/09/2006",
+    "h": "Chester FC",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 0,
+    "d": "12/09/2006",
+    "h": "Hartlepool United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "12/09/2006",
+    "h": "Hereford United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 1,
+    "d": "12/09/2006",
+    "h": "Lincoln City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "12/09/2006",
+    "h": "Rochdale",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 3,
+    "d": "12/09/2006",
+    "h": "Stockport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "12/09/2006",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 0,
+    "d": "12/09/2006",
+    "h": "Walsall",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "09/09/2006",
+    "h": "Boston Utd",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 0,
+    "d": "09/09/2006",
+    "h": "Bristol Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 1,
+    "d": "09/09/2006",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "09/09/2006",
+    "h": "Grimsby Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 3,
+    "d": "09/09/2006",
+    "h": "Macclesfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 1,
+    "d": "09/09/2006",
+    "h": "Mansfield Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "09/09/2006",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 2,
+    "d": "09/09/2006",
+    "h": "Notts County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 3,
+    "d": "09/09/2006",
+    "h": "Peterborough United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 1,
+    "d": "09/09/2006",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "09/09/2006",
+    "h": "Wrexham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 0,
+    "d": "09/09/2006",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "03/09/2006",
+    "h": "Peterborough United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "03/09/2006",
+    "h": "Stockport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "02/09/2006",
+    "h": "Barnet",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "02/09/2006",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 1,
+    "d": "02/09/2006",
+    "h": "Rochdale",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 1,
+    "d": "01/09/2006",
+    "h": "Darlington",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "01/09/2006",
+    "h": "Chester FC",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 1,
+    "d": "01/09/2006",
+    "h": "Grimsby Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 1,
+    "d": "01/09/2006",
+    "h": "Hartlepool United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "01/09/2006",
+    "h": "Lincoln City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 0,
+    "d": "01/09/2006",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 1,
+    "d": "26/08/2006",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "26/08/2006",
+    "h": "Boston Utd",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "26/08/2006",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "26/08/2006",
+    "h": "Bury",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "26/08/2006",
+    "h": "Hereford United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "26/08/2006",
+    "h": "Macclesfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 4,
+    "d": "26/08/2006",
+    "h": "Mansfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 0,
+    "d": "26/08/2006",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "26/08/2006",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 2,
+    "d": "26/08/2006",
+    "h": "Torquay United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 0,
+    "d": "26/08/2006",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 1,
+    "d": "26/08/2006",
+    "h": "Wrexham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 2,
+    "d": "20/08/2006",
+    "h": "Chester FC",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 0,
+    "d": "19/08/2006",
+    "h": "Barnet",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "19/08/2006",
+    "h": "Darlington",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 1,
+    "d": "19/08/2006",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "19/08/2006",
+    "h": "Lincoln City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 0,
+    "d": "19/08/2006",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 1,
+    "d": "19/08/2006",
+    "h": "Peterborough United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "19/08/2006",
+    "h": "Rochdale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 0,
+    "d": "19/08/2006",
+    "h": "Shrewsbury Town",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "19/08/2006",
+    "h": "Wycombe Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 1,
+    "d": "18/08/2006",
+    "h": "Grimsby Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "18/08/2006",
+    "h": "Stockport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 1,
+    "d": "12/08/2006",
+    "h": "Accrington Stanley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 1,
+    "d": "12/08/2006",
+    "h": "Boston Utd",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "12/08/2006",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 2,
+    "d": "12/08/2006",
+    "h": "Bury",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 0,
+    "d": "12/08/2006",
+    "h": "Hereford United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "12/08/2006",
+    "h": "Macclesfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 1,
+    "d": "12/08/2006",
+    "h": "Mansfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 0,
+    "d": "12/08/2006",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 0,
+    "d": "12/08/2006",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 2,
+    "d": "12/08/2006",
+    "h": "Torquay United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "12/08/2006",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 0,
+    "d": "12/08/2006",
+    "h": "Wrexham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Peterborough United",
+    "ag": 1,
+    "d": "09/08/2006",
+    "h": "Boston Utd",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Darlington",
+    "ag": 2,
+    "d": "08/08/2006",
+    "h": "Accrington Stanley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wycombe Wanderers",
+    "ag": 2,
+    "d": "08/08/2006",
+    "h": "Bristol Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chester FC",
+    "ag": 3,
+    "d": "08/08/2006",
+    "h": "Bury",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Lincoln City",
+    "ag": 2,
+    "d": "08/08/2006",
+    "h": "Hereford United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "08/08/2006",
+    "h": "Macclesfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "08/08/2006",
+    "h": "Mansfield Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "08/08/2006",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barnet",
+    "ag": 1,
+    "d": "08/08/2006",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Rochdale",
+    "ag": 0,
+    "d": "08/08/2006",
+    "h": "Torquay United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stockport County",
+    "ag": 0,
+    "d": "08/08/2006",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "08/08/2006",
+    "h": "Wrexham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Torquay United",
+    "ag": 1,
+    "d": "05/08/2006",
+    "h": "Barnet",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "05/08/2006",
+    "h": "Chester FC",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Macclesfield Town",
+    "ag": 0,
+    "d": "05/08/2006",
+    "h": "Darlington",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Boston Utd",
+    "ag": 2,
+    "d": "05/08/2006",
+    "h": "Grimsby Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "05/08/2006",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "05/08/2006",
+    "h": "Lincoln City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "05/08/2006",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bristol Rovers",
+    "ag": 1,
+    "d": "05/08/2006",
+    "h": "Peterborough United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "05/08/2006",
+    "h": "Rochdale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Mansfield Town",
+    "ag": 2,
+    "d": "05/08/2006",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hereford United",
+    "ag": 2,
+    "d": "05/08/2006",
+    "h": "Stockport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wrexham",
+    "ag": 1,
+    "d": "05/08/2006",
+    "h": "Wycombe Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  }
+]

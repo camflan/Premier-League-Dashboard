@@ -1,0 +1,3010 @@
+[
+  {
+    "a": "Manchester City",
+    "ag": 4,
+    "d": "12/05/2019",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 3,
+    "d": "12/05/2019",
+    "h": "Burnley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 3,
+    "d": "12/05/2019",
+    "h": "Crystal Palace",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 4,
+    "d": "12/05/2019",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "12/05/2019",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "12/05/2019",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 2,
+    "d": "12/05/2019",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "12/05/2019",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 2,
+    "d": "12/05/2019",
+    "h": "Tottenham Hotspur",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 4,
+    "d": "12/05/2019",
+    "h": "Watford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 0,
+    "d": "06/05/2019",
+    "h": "Manchester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 0,
+    "d": "05/05/2019",
+    "h": "Chelsea",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "05/05/2019",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "05/05/2019",
+    "h": "Arsenal",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "04/05/2019",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "04/05/2019",
+    "h": "West Ham United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "04/05/2019",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 3,
+    "d": "04/05/2019",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 3,
+    "d": "04/05/2019",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 0,
+    "d": "03/05/2019",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 0,
+    "d": "28/04/2019",
+    "h": "Leicester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "28/04/2019",
+    "h": "Burnley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "28/04/2019",
+    "h": "Manchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "27/04/2019",
+    "h": "Tottenham Hotspur",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "27/04/2019",
+    "h": "Crystal Palace",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "27/04/2019",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 3,
+    "d": "27/04/2019",
+    "h": "Southampton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 2,
+    "d": "27/04/2019",
+    "h": "Watford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "27/04/2019",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "26/04/2019",
+    "h": "Liverpool",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "24/04/2019",
+    "h": "Wolverhampton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "24/04/2019",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 0,
+    "d": "23/04/2019",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "23/04/2019",
+    "h": "Watford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 2,
+    "d": "22/04/2019",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 0,
+    "d": "21/04/2019",
+    "h": "Everton",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 3,
+    "d": "21/04/2019",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "21/04/2019",
+    "h": "Cardiff City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "20/04/2019",
+    "h": "Manchester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "20/04/2019",
+    "h": "AFC Bournemouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 2,
+    "d": "20/04/2019",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 2,
+    "d": "20/04/2019",
+    "h": "West Ham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 0,
+    "d": "20/04/2019",
+    "h": "Wolverhampton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "20/04/2019",
+    "h": "Newcastle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 2,
+    "d": "16/04/2019",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "15/04/2019",
+    "h": "Watford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 3,
+    "d": "14/04/2019",
+    "h": "Crystal Palace",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "14/04/2019",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "13/04/2019",
+    "h": "Tottenham Hotspur",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 5,
+    "d": "13/04/2019",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "13/04/2019",
+    "h": "Burnley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "13/04/2019",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "13/04/2019",
+    "h": "Southampton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "13/04/2019",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "12/04/2019",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "08/04/2019",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 0,
+    "d": "07/04/2019",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 3,
+    "d": "06/04/2019",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 4,
+    "d": "06/04/2019",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 1,
+    "d": "06/04/2019",
+    "h": "Newcastle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 3,
+    "d": "05/04/2019",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 0,
+    "d": "03/04/2019",
+    "h": "Chelsea",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "03/04/2019",
+    "h": "Manchester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 0,
+    "d": "03/04/2019",
+    "h": "Tottenham Hotspur",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "02/04/2019",
+    "h": "Watford",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "02/04/2019",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "01/04/2019",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "30/03/2019",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "30/03/2019",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "30/03/2019",
+    "h": "Burnley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "30/03/2019",
+    "h": "Crystal Palace",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "30/03/2019",
+    "h": "Leicester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 1,
+    "d": "30/03/2019",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 2,
+    "d": "30/03/2019",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "17/03/2019",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "17/03/2019",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 2,
+    "d": "16/03/2019",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 2,
+    "d": "16/03/2019",
+    "h": "Burnley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 3,
+    "d": "16/03/2019",
+    "h": "West Ham United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 2,
+    "d": "10/03/2019",
+    "h": "Liverpool",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "10/03/2019",
+    "h": "Chelsea",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 0,
+    "d": "10/03/2019",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "09/03/2019",
+    "h": "Crystal Palace",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "09/03/2019",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "09/03/2019",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "09/03/2019",
+    "h": "Leicester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 2,
+    "d": "09/03/2019",
+    "h": "Newcastle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "09/03/2019",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 1,
+    "d": "09/03/2019",
+    "h": "Manchester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "03/03/2019",
+    "h": "Watford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 2,
+    "d": "03/03/2019",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 0,
+    "d": "03/03/2019",
+    "h": "Everton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "02/03/2019",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "02/03/2019",
+    "h": "AFC Bournemouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "02/03/2019",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 3,
+    "d": "02/03/2019",
+    "h": "Burnley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 2,
+    "d": "02/03/2019",
+    "h": "Manchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "02/03/2019",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "02/03/2019",
+    "h": "West Ham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "27/02/2019",
+    "h": "Arsenal",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "27/02/2019",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "27/02/2019",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 3,
+    "d": "27/02/2019",
+    "h": "Crystal Palace",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 0,
+    "d": "27/02/2019",
+    "h": "Liverpool",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "27/02/2019",
+    "h": "Manchester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 3,
+    "d": "26/02/2019",
+    "h": "Cardiff City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "26/02/2019",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "26/02/2019",
+    "h": "Leicester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 0,
+    "d": "26/02/2019",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "24/02/2019",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 0,
+    "d": "24/02/2019",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "23/02/2019",
+    "h": "Burnley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "23/02/2019",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "23/02/2019",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 4,
+    "d": "23/02/2019",
+    "h": "Leicester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 5,
+    "d": "22/02/2019",
+    "h": "Cardiff City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "22/02/2019",
+    "h": "West Ham United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "11/02/2019",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "10/02/2019",
+    "h": "Tottenham Hotspur",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "10/02/2019",
+    "h": "Manchester City",
+    "hg": 6,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 3,
+    "d": "09/02/2019",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "09/02/2019",
+    "h": "Crystal Palace",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "09/02/2019",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "09/02/2019",
+    "h": "Liverpool",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 2,
+    "d": "09/02/2019",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "09/02/2019",
+    "h": "Watford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 3,
+    "d": "09/02/2019",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "06/02/2019",
+    "h": "Everton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "04/02/2019",
+    "h": "West Ham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "03/02/2019",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "03/02/2019",
+    "h": "Manchester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "02/02/2019",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 0,
+    "d": "02/02/2019",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "02/02/2019",
+    "h": "Burnley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "02/02/2019",
+    "h": "Chelsea",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "02/02/2019",
+    "h": "Crystal Palace",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 3,
+    "d": "02/02/2019",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "02/02/2019",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "30/01/2019",
+    "h": "AFC Bournemouth",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 1,
+    "d": "30/01/2019",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "30/01/2019",
+    "h": "Liverpool",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 1,
+    "d": "30/01/2019",
+    "h": "Tottenham Hotspur",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "29/01/2019",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "29/01/2019",
+    "h": "Fulham",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "29/01/2019",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "29/01/2019",
+    "h": "Wolverhampton Wanderers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 2,
+    "d": "29/01/2019",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "29/01/2019",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 3,
+    "d": "20/01/2019",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 2,
+    "d": "20/01/2019",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 3,
+    "d": "19/01/2019",
+    "h": "Wolverhampton Wanderers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "19/01/2019",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 3,
+    "d": "19/01/2019",
+    "h": "Liverpool",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "19/01/2019",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "19/01/2019",
+    "h": "Newcastle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "19/01/2019",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 0,
+    "d": "19/01/2019",
+    "h": "Watford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "19/01/2019",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "14/01/2019",
+    "h": "Manchester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "13/01/2019",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "13/01/2019",
+    "h": "Tottenham Hotspur",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 0,
+    "d": "12/01/2019",
+    "h": "West Ham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "12/01/2019",
+    "h": "Brighton & Hove Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "12/01/2019",
+    "h": "Burnley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "12/01/2019",
+    "h": "Cardiff City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 2,
+    "d": "12/01/2019",
+    "h": "Crystal Palace",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 2,
+    "d": "12/01/2019",
+    "h": "Leicester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "12/01/2019",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "03/01/2019",
+    "h": "Manchester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 3,
+    "d": "02/01/2019",
+    "h": "AFC Bournemouth",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "02/01/2019",
+    "h": "Chelsea",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 2,
+    "d": "02/01/2019",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "02/01/2019",
+    "h": "West Ham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 2,
+    "d": "02/01/2019",
+    "h": "Wolverhampton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "02/01/2019",
+    "h": "Newcastle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "01/01/2019",
+    "h": "Everton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "01/01/2019",
+    "h": "Arsenal",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 3,
+    "d": "01/01/2019",
+    "h": "Cardiff City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "30/12/2018",
+    "h": "Crystal Palace",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "30/12/2018",
+    "h": "Burnley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 3,
+    "d": "30/12/2018",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "30/12/2018",
+    "h": "Manchester United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "29/12/2018",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "29/12/2018",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "29/12/2018",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 3,
+    "d": "29/12/2018",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "29/12/2018",
+    "h": "Watford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "29/12/2018",
+    "h": "Liverpool",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 2,
+    "d": "27/12/2018",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "26/12/2018",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 5,
+    "d": "26/12/2018",
+    "h": "Burnley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "26/12/2018",
+    "h": "Crystal Palace",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "26/12/2018",
+    "h": "Leicester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "26/12/2018",
+    "h": "Liverpool",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "26/12/2018",
+    "h": "Manchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "26/12/2018",
+    "h": "Tottenham Hotspur",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "26/12/2018",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 2,
+    "d": "26/12/2018",
+    "h": "Watford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 6,
+    "d": "23/12/2018",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 1,
+    "d": "22/12/2018",
+    "h": "Arsenal",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 0,
+    "d": "22/12/2018",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "22/12/2018",
+    "h": "Chelsea",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 3,
+    "d": "22/12/2018",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 3,
+    "d": "22/12/2018",
+    "h": "Manchester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "22/12/2018",
+    "h": "Newcastle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 2,
+    "d": "22/12/2018",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 5,
+    "d": "22/12/2018",
+    "h": "Cardiff City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "21/12/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 2,
+    "d": "16/12/2018",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "16/12/2018",
+    "h": "Southampton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "16/12/2018",
+    "h": "Liverpool",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "15/12/2018",
+    "h": "Manchester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 0,
+    "d": "15/12/2018",
+    "h": "Crystal Palace",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "15/12/2018",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 0,
+    "d": "15/12/2018",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 2,
+    "d": "15/12/2018",
+    "h": "Watford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "15/12/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 2,
+    "d": "15/12/2018",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 2,
+    "d": "10/12/2018",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 2,
+    "d": "09/12/2018",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 4,
+    "d": "08/12/2018",
+    "h": "AFC Bournemouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "08/12/2018",
+    "h": "Arsenal",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 0,
+    "d": "08/12/2018",
+    "h": "Burnley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "08/12/2018",
+    "h": "Cardiff City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "08/12/2018",
+    "h": "Manchester United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 2,
+    "d": "08/12/2018",
+    "h": "West Ham United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 0,
+    "d": "08/12/2018",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 2,
+    "d": "08/12/2018",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 3,
+    "d": "05/12/2018",
+    "h": "Burnley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "05/12/2018",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "05/12/2018",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "05/12/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "05/12/2018",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "05/12/2018",
+    "h": "Tottenham Hotspur",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "04/12/2018",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 1,
+    "d": "04/12/2018",
+    "h": "Brighton & Hove Albion",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "04/12/2018",
+    "h": "West Ham United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "04/12/2018",
+    "h": "Watford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "02/12/2018",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 2,
+    "d": "02/12/2018",
+    "h": "Arsenal",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "02/12/2018",
+    "h": "Liverpool",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 0,
+    "d": "01/12/2018",
+    "h": "Crystal Palace",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "01/12/2018",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 0,
+    "d": "01/12/2018",
+    "h": "Leicester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "01/12/2018",
+    "h": "Manchester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 3,
+    "d": "01/12/2018",
+    "h": "Newcastle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "01/12/2018",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 2,
+    "d": "26/11/2018",
+    "h": "Burnley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "25/11/2018",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 2,
+    "d": "25/11/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "24/11/2018",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "24/11/2018",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 2,
+    "d": "24/11/2018",
+    "h": "Fulham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 0,
+    "d": "24/11/2018",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 3,
+    "d": "24/11/2018",
+    "h": "Watford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 4,
+    "d": "24/11/2018",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "24/11/2018",
+    "h": "Tottenham Hotspur",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "11/11/2018",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "11/11/2018",
+    "h": "Chelsea",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "11/11/2018",
+    "h": "Arsenal",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "11/11/2018",
+    "h": "Manchester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "10/11/2018",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "10/11/2018",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 0,
+    "d": "10/11/2018",
+    "h": "Leicester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "10/11/2018",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 1,
+    "d": "10/11/2018",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "10/11/2018",
+    "h": "Crystal Palace",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "05/11/2018",
+    "h": "Huddersfield Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "04/11/2018",
+    "h": "Manchester City",
+    "hg": 6,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 1,
+    "d": "04/11/2018",
+    "h": "Chelsea",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "03/11/2018",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "03/11/2018",
+    "h": "Cardiff City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "03/11/2018",
+    "h": "Everton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 0,
+    "d": "03/11/2018",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 2,
+    "d": "03/11/2018",
+    "h": "West Ham United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "03/11/2018",
+    "h": "Arsenal",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 3,
+    "d": "03/11/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "29/10/2018",
+    "h": "Tottenham Hotspur",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 4,
+    "d": "28/10/2018",
+    "h": "Burnley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "28/10/2018",
+    "h": "Crystal Palace",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "28/10/2018",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "27/10/2018",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 3,
+    "d": "27/10/2018",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "27/10/2018",
+    "h": "Liverpool",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "27/10/2018",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 0,
+    "d": "27/10/2018",
+    "h": "Watford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "27/10/2018",
+    "h": "Leicester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "22/10/2018",
+    "h": "Arsenal",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 0,
+    "d": "21/10/2018",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "20/10/2018",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "20/10/2018",
+    "h": "AFC Bournemouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "20/10/2018",
+    "h": "Cardiff City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 0,
+    "d": "20/10/2018",
+    "h": "Manchester City",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 1,
+    "d": "20/10/2018",
+    "h": "Newcastle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "20/10/2018",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 2,
+    "d": "20/10/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "20/10/2018",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 5,
+    "d": "07/10/2018",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 3,
+    "d": "07/10/2018",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 0,
+    "d": "07/10/2018",
+    "h": "Liverpool",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "06/10/2018",
+    "h": "Burnley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "06/10/2018",
+    "h": "Crystal Palace",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 2,
+    "d": "06/10/2018",
+    "h": "Leicester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "06/10/2018",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 4,
+    "d": "06/10/2018",
+    "h": "Watford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 2,
+    "d": "06/10/2018",
+    "h": "Manchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "05/10/2018",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 1,
+    "d": "01/10/2018",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "29/09/2018",
+    "h": "West Ham United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 0,
+    "d": "29/09/2018",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "29/09/2018",
+    "h": "Everton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 2,
+    "d": "29/09/2018",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 0,
+    "d": "29/09/2018",
+    "h": "Manchester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 2,
+    "d": "29/09/2018",
+    "h": "Newcastle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "29/09/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "29/09/2018",
+    "h": "Chelsea",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "23/09/2018",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "23/09/2018",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 1,
+    "d": "22/09/2018",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "22/09/2018",
+    "h": "Burnley",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 5,
+    "d": "22/09/2018",
+    "h": "Cardiff City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "22/09/2018",
+    "h": "Crystal Palace",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "22/09/2018",
+    "h": "Leicester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "22/09/2018",
+    "h": "Liverpool",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "22/09/2018",
+    "h": "Manchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 2,
+    "d": "22/09/2018",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 2,
+    "d": "17/09/2018",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 0,
+    "d": "16/09/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 3,
+    "d": "16/09/2018",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "15/09/2018",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 2,
+    "d": "15/09/2018",
+    "h": "AFC Bournemouth",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 1,
+    "d": "15/09/2018",
+    "h": "Chelsea",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 1,
+    "d": "15/09/2018",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "15/09/2018",
+    "h": "Manchester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "15/09/2018",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "15/09/2018",
+    "h": "Watford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 3,
+    "d": "02/09/2018",
+    "h": "Cardiff City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "02/09/2018",
+    "h": "Burnley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "02/09/2018",
+    "h": "Watford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "01/09/2018",
+    "h": "Leicester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "01/09/2018",
+    "h": "Brighton & Hove Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "01/09/2018",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 2,
+    "d": "01/09/2018",
+    "h": "Crystal Palace",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "01/09/2018",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 1,
+    "d": "01/09/2018",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "01/09/2018",
+    "h": "Manchester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 3,
+    "d": "27/08/2018",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 1,
+    "d": "26/08/2018",
+    "h": "Watford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 2,
+    "d": "26/08/2018",
+    "h": "Fulham",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 2,
+    "d": "26/08/2018",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "25/08/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 2,
+    "d": "25/08/2018",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "25/08/2018",
+    "h": "Arsenal",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "25/08/2018",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 2,
+    "d": "25/08/2018",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 0,
+    "d": "25/08/2018",
+    "h": "Liverpool",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "20/08/2018",
+    "h": "Crystal Palace",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Watford",
+    "ag": 3,
+    "d": "19/08/2018",
+    "h": "Burnley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Huddersfield Town",
+    "ag": 1,
+    "d": "19/08/2018",
+    "h": "Manchester City",
+    "hg": 6,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "19/08/2018",
+    "h": "Brighton & Hove Albion",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "18/08/2018",
+    "h": "Cardiff City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "18/08/2018",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Wolverhampton Wanderers",
+    "ag": 0,
+    "d": "18/08/2018",
+    "h": "Leicester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "18/08/2018",
+    "h": "Tottenham Hotspur",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "18/08/2018",
+    "h": "West Ham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "18/08/2018",
+    "h": "Chelsea",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "12/08/2018",
+    "h": "Liverpool",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Burnley",
+    "ag": 0,
+    "d": "12/08/2018",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "12/08/2018",
+    "h": "Arsenal",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 2,
+    "d": "11/08/2018",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cardiff City",
+    "ag": 0,
+    "d": "11/08/2018",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 2,
+    "d": "11/08/2018",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 3,
+    "d": "11/08/2018",
+    "h": "Huddersfield Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brighton & Hove Albion",
+    "ag": 0,
+    "d": "11/08/2018",
+    "h": "Watford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 2,
+    "d": "11/08/2018",
+    "h": "Wolverhampton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leicester City",
+    "ag": 1,
+    "d": "10/08/2018",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  }
+]

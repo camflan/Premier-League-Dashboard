@@ -1,0 +1,4458 @@
+[
+  {
+    "a": "Yeovil Town",
+    "ag": 2,
+    "d": "19/05/2013",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "06/05/2013",
+    "h": "Yeovil Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 3,
+    "d": "06/05/2013",
+    "h": "Brentford",
+    "hg": 3,
+    "status": "STATUS_FINAL_PEN"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "04/05/2013",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "03/05/2013",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "27/04/2013",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 2,
+    "d": "27/04/2013",
+    "h": "Bury",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "27/04/2013",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 2,
+    "d": "27/04/2013",
+    "h": "Crawley Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "27/04/2013",
+    "h": "Crewe Alexandra",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "27/04/2013",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 2,
+    "d": "27/04/2013",
+    "h": "Notts County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "27/04/2013",
+    "h": "Scunthorpe United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "27/04/2013",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 2,
+    "d": "27/04/2013",
+    "h": "Shrewsbury Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "27/04/2013",
+    "h": "Stevenage",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "27/04/2013",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "23/04/2013",
+    "h": "Crawley Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "23/04/2013",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "23/04/2013",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "20/04/2013",
+    "h": "AFC Bournemouth",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "20/04/2013",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "20/04/2013",
+    "h": "Coventry City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "20/04/2013",
+    "h": "Doncaster Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 1,
+    "d": "20/04/2013",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 1,
+    "d": "20/04/2013",
+    "h": "Oldham Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "20/04/2013",
+    "h": "Portsmouth",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "20/04/2013",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 0,
+    "d": "20/04/2013",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "20/04/2013",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "20/04/2013",
+    "h": "Yeovil Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "20/04/2013",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 1,
+    "d": "16/04/2013",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "16/04/2013",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "16/04/2013",
+    "h": "Oldham Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "16/04/2013",
+    "h": "Sheffield United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "16/04/2013",
+    "h": "Swindon Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 2,
+    "d": "13/04/2013",
+    "h": "Brentford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "13/04/2013",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "13/04/2013",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 0,
+    "d": "13/04/2013",
+    "h": "Crawley Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "13/04/2013",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "13/04/2013",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "13/04/2013",
+    "h": "Notts County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "13/04/2013",
+    "h": "Scunthorpe United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "13/04/2013",
+    "h": "Sheffield United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 3,
+    "d": "13/04/2013",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 2,
+    "d": "13/04/2013",
+    "h": "Stevenage",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "13/04/2013",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "10/04/2013",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "09/04/2013",
+    "h": "Doncaster Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "09/04/2013",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "09/04/2013",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 2,
+    "d": "09/04/2013",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "06/04/2013",
+    "h": "AFC Bournemouth",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "06/04/2013",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "06/04/2013",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "06/04/2013",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "06/04/2013",
+    "h": "Hartlepool United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 0,
+    "d": "06/04/2013",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "06/04/2013",
+    "h": "Oldham Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 0,
+    "d": "06/04/2013",
+    "h": "Portsmouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 0,
+    "d": "06/04/2013",
+    "h": "Preston North End",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "06/04/2013",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "06/04/2013",
+    "h": "Yeovil Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "01/04/2013",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 0,
+    "d": "01/04/2013",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "01/04/2013",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "01/04/2013",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "01/04/2013",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 2,
+    "d": "01/04/2013",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "01/04/2013",
+    "h": "Oldham Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "01/04/2013",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "01/04/2013",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 0,
+    "d": "01/04/2013",
+    "h": "Shrewsbury Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "01/04/2013",
+    "h": "Stevenage",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 0,
+    "d": "01/04/2013",
+    "h": "Walsall",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "29/03/2013",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 2,
+    "d": "29/03/2013",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 2,
+    "d": "29/03/2013",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "29/03/2013",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 0,
+    "d": "29/03/2013",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 1,
+    "d": "29/03/2013",
+    "h": "Crawley Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "29/03/2013",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "29/03/2013",
+    "h": "Scunthorpe United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "29/03/2013",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "29/03/2013",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "29/03/2013",
+    "h": "Yeovil Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 1,
+    "d": "29/03/2013",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "26/03/2013",
+    "h": "Crawley Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 1,
+    "d": "24/03/2013",
+    "h": "Tranmere Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "23/03/2013",
+    "h": "AFC Bournemouth",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 3,
+    "d": "23/03/2013",
+    "h": "Carlisle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "23/03/2013",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 0,
+    "d": "23/03/2013",
+    "h": "Portsmouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "23/03/2013",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 3,
+    "d": "23/03/2013",
+    "h": "Scunthorpe United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "23/03/2013",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 0,
+    "d": "19/03/2013",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "19/03/2013",
+    "h": "Crewe Alexandra",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "19/03/2013",
+    "h": "Oldham Athletic",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "19/03/2013",
+    "h": "Yeovil Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "16/03/2013",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "16/03/2013",
+    "h": "Bury",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "16/03/2013",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "16/03/2013",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 1,
+    "d": "16/03/2013",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "16/03/2013",
+    "h": "Leyton Orient",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "16/03/2013",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 0,
+    "d": "16/03/2013",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "16/03/2013",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "16/03/2013",
+    "h": "Stevenage",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 2,
+    "d": "16/03/2013",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "12/03/2013",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "12/03/2013",
+    "h": "Coventry City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 0,
+    "d": "12/03/2013",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 3,
+    "d": "12/03/2013",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "12/03/2013",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "12/03/2013",
+    "h": "Stevenage",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "12/03/2013",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 2,
+    "d": "12/03/2013",
+    "h": "Yeovil Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "09/03/2013",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "09/03/2013",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 2,
+    "d": "09/03/2013",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "09/03/2013",
+    "h": "Crawley Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "09/03/2013",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "09/03/2013",
+    "h": "Portsmouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 0,
+    "d": "09/03/2013",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 2,
+    "d": "09/03/2013",
+    "h": "Scunthorpe United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "09/03/2013",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 2,
+    "d": "09/03/2013",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "09/03/2013",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "09/03/2013",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "06/03/2013",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "05/03/2013",
+    "h": "Crawley Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "05/03/2013",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 0,
+    "d": "05/03/2013",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "05/03/2013",
+    "h": "Stevenage",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 0,
+    "d": "02/03/2013",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 2,
+    "d": "02/03/2013",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "02/03/2013",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 2,
+    "d": "02/03/2013",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "02/03/2013",
+    "h": "Doncaster Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "02/03/2013",
+    "h": "Leyton Orient",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "02/03/2013",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "02/03/2013",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 2,
+    "d": "02/03/2013",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "02/03/2013",
+    "h": "Stevenage",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "02/03/2013",
+    "h": "Walsall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "02/03/2013",
+    "h": "Yeovil Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 2,
+    "d": "26/02/2013",
+    "h": "AFC Bournemouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 3,
+    "d": "26/02/2013",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "26/02/2013",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "26/02/2013",
+    "h": "Crawley Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "26/02/2013",
+    "h": "Hartlepool United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "26/02/2013",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 0,
+    "d": "26/02/2013",
+    "h": "Scunthorpe United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "26/02/2013",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "26/02/2013",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "26/02/2013",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "26/02/2013",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "23/02/2013",
+    "h": "AFC Bournemouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "23/02/2013",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "23/02/2013",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 5,
+    "d": "23/02/2013",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 2,
+    "d": "23/02/2013",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "23/02/2013",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 1,
+    "d": "23/02/2013",
+    "h": "Leyton Orient",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 0,
+    "d": "23/02/2013",
+    "h": "Oldham Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 2,
+    "d": "23/02/2013",
+    "h": "Scunthorpe United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 1,
+    "d": "23/02/2013",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "23/02/2013",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "22/02/2013",
+    "h": "Notts County",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 2,
+    "d": "19/02/2013",
+    "h": "Stevenage",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 3,
+    "d": "19/02/2013",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "18/02/2013",
+    "h": "Crawley Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 2,
+    "d": "16/02/2013",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "16/02/2013",
+    "h": "Hartlepool United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "16/02/2013",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "16/02/2013",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "16/02/2013",
+    "h": "Sheffield United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "16/02/2013",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 0,
+    "d": "16/02/2013",
+    "h": "Yeovil Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 2,
+    "d": "15/02/2013",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 0,
+    "d": "12/02/2013",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 2,
+    "d": "12/02/2013",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "12/02/2013",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "12/02/2013",
+    "h": "Doncaster Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 0,
+    "d": "12/02/2013",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "12/02/2013",
+    "h": "Scunthorpe United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "12/02/2013",
+    "h": "Yeovil Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 0,
+    "d": "09/02/2013",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 2,
+    "d": "09/02/2013",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 1,
+    "d": "09/02/2013",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "09/02/2013",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "09/02/2013",
+    "h": "Coventry City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "09/02/2013",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "09/02/2013",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "09/02/2013",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "09/02/2013",
+    "h": "Oldham Athletic",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 1,
+    "d": "09/02/2013",
+    "h": "Scunthorpe United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 2,
+    "d": "09/02/2013",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "09/02/2013",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "05/02/2013",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 1,
+    "d": "05/02/2013",
+    "h": "Scunthorpe United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "05/02/2013",
+    "h": "Stevenage",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 0,
+    "d": "02/02/2013",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 0,
+    "d": "02/02/2013",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "02/02/2013",
+    "h": "Hartlepool United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 3,
+    "d": "02/02/2013",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 3,
+    "d": "02/02/2013",
+    "h": "Portsmouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 2,
+    "d": "02/02/2013",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "02/02/2013",
+    "h": "Stevenage",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "02/02/2013",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "02/02/2013",
+    "h": "Walsall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "02/02/2013",
+    "h": "Yeovil Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "02/02/2013",
+    "h": "Crawley Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 2,
+    "d": "01/02/2013",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "29/01/2013",
+    "h": "Leyton Orient",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "29/01/2013",
+    "h": "Portsmouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "29/01/2013",
+    "h": "Yeovil Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "26/01/2013",
+    "h": "AFC Bournemouth",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 1,
+    "d": "26/01/2013",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "26/01/2013",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "26/01/2013",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 3,
+    "d": "26/01/2013",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 2,
+    "d": "26/01/2013",
+    "h": "Preston North End",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "26/01/2013",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 2,
+    "d": "22/01/2013",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "22/01/2013",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "22/01/2013",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 2,
+    "d": "19/01/2013",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "19/01/2013",
+    "h": "Coventry City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "19/01/2013",
+    "h": "Doncaster Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "19/01/2013",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "19/01/2013",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "19/01/2013",
+    "h": "Walsall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "16/01/2013",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 0,
+    "d": "13/01/2013",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 3,
+    "d": "13/01/2013",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "12/01/2013",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 2,
+    "d": "12/01/2013",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "12/01/2013",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "12/01/2013",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "12/01/2013",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 2,
+    "d": "12/01/2013",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "12/01/2013",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "12/01/2013",
+    "h": "Stevenage",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 0,
+    "d": "12/01/2013",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 2,
+    "d": "05/01/2013",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "05/01/2013",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "05/01/2013",
+    "h": "Scunthorpe United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "05/01/2013",
+    "h": "Swindon Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 0,
+    "d": "04/01/2013",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 0,
+    "d": "01/01/2013",
+    "h": "Swindon Town",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "01/01/2013",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "01/01/2013",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "01/01/2013",
+    "h": "Coventry City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "01/01/2013",
+    "h": "Crawley Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "01/01/2013",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 2,
+    "d": "01/01/2013",
+    "h": "Doncaster Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "01/01/2013",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "01/01/2013",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 2,
+    "d": "01/01/2013",
+    "h": "Scunthorpe United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 0,
+    "d": "01/01/2013",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "01/01/2013",
+    "h": "Yeovil Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 0,
+    "d": "29/12/2012",
+    "h": "AFC Bournemouth",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "29/12/2012",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "29/12/2012",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 3,
+    "d": "29/12/2012",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 2,
+    "d": "29/12/2012",
+    "h": "Oldham Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 2,
+    "d": "29/12/2012",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 3,
+    "d": "29/12/2012",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 3,
+    "d": "29/12/2012",
+    "h": "Sheffield United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "29/12/2012",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 0,
+    "d": "29/12/2012",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "26/12/2012",
+    "h": "AFC Bournemouth",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "26/12/2012",
+    "h": "Carlisle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 3,
+    "d": "26/12/2012",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 4,
+    "d": "26/12/2012",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "26/12/2012",
+    "h": "Oldham Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 2,
+    "d": "26/12/2012",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "26/12/2012",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 0,
+    "d": "26/12/2012",
+    "h": "Sheffield United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "26/12/2012",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 3,
+    "d": "26/12/2012",
+    "h": "Stevenage",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "26/12/2012",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "22/12/2012",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 2,
+    "d": "22/12/2012",
+    "h": "Crawley Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "22/12/2012",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "22/12/2012",
+    "h": "Yeovil Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 2,
+    "d": "21/12/2012",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "21/12/2012",
+    "h": "Swindon Town",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "15/12/2012",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "15/12/2012",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 4,
+    "d": "15/12/2012",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 3,
+    "d": "15/12/2012",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "15/12/2012",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "15/12/2012",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "15/12/2012",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "15/12/2012",
+    "h": "Portsmouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "15/12/2012",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "15/12/2012",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 2,
+    "d": "15/12/2012",
+    "h": "Stevenage",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 2,
+    "d": "15/12/2012",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "08/12/2012",
+    "h": "Brentford",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 2,
+    "d": "08/12/2012",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 3,
+    "d": "08/12/2012",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 2,
+    "d": "08/12/2012",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "08/12/2012",
+    "h": "Coventry City",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 2,
+    "d": "08/12/2012",
+    "h": "Crawley Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 2,
+    "d": "08/12/2012",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 3,
+    "d": "08/12/2012",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "08/12/2012",
+    "h": "Scunthorpe United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "08/12/2012",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 2,
+    "d": "08/12/2012",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "08/12/2012",
+    "h": "Yeovil Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "27/11/2012",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "24/11/2012",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "24/11/2012",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 1,
+    "d": "24/11/2012",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 0,
+    "d": "24/11/2012",
+    "h": "Crewe Alexandra",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 0,
+    "d": "24/11/2012",
+    "h": "Doncaster Rovers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "24/11/2012",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "24/11/2012",
+    "h": "Milton Keynes Dons",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "24/11/2012",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "24/11/2012",
+    "h": "Oldham Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "24/11/2012",
+    "h": "Stevenage",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "24/11/2012",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 3,
+    "d": "24/11/2012",
+    "h": "Yeovil Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 1,
+    "d": "20/11/2012",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 3,
+    "d": "20/11/2012",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 3,
+    "d": "20/11/2012",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "20/11/2012",
+    "h": "Crawley Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 2,
+    "d": "20/11/2012",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 3,
+    "d": "20/11/2012",
+    "h": "Portsmouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "20/11/2012",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 2,
+    "d": "20/11/2012",
+    "h": "Scunthorpe United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 3,
+    "d": "20/11/2012",
+    "h": "Sheffield United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "20/11/2012",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "20/11/2012",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "20/11/2012",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "17/11/2012",
+    "h": "AFC Bournemouth",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 4,
+    "d": "17/11/2012",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "17/11/2012",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "17/11/2012",
+    "h": "Crawley Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 5,
+    "d": "17/11/2012",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "17/11/2012",
+    "h": "Portsmouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "17/11/2012",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "17/11/2012",
+    "h": "Scunthorpe United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 1,
+    "d": "17/11/2012",
+    "h": "Sheffield United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "17/11/2012",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "17/11/2012",
+    "h": "Swindon Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "16/11/2012",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "10/11/2012",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 0,
+    "d": "10/11/2012",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 2,
+    "d": "10/11/2012",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "10/11/2012",
+    "h": "Crewe Alexandra",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "10/11/2012",
+    "h": "Doncaster Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "10/11/2012",
+    "h": "Leyton Orient",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "10/11/2012",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 1,
+    "d": "10/11/2012",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "10/11/2012",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 4,
+    "d": "10/11/2012",
+    "h": "Stevenage",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "10/11/2012",
+    "h": "Walsall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "10/11/2012",
+    "h": "Yeovil Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 2,
+    "d": "07/11/2012",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "07/11/2012",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "06/11/2012",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "06/11/2012",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 1,
+    "d": "06/11/2012",
+    "h": "Coventry City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 2,
+    "d": "06/11/2012",
+    "h": "Doncaster Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 2,
+    "d": "06/11/2012",
+    "h": "Oldham Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "06/11/2012",
+    "h": "Portsmouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "06/11/2012",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 0,
+    "d": "06/11/2012",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 4,
+    "d": "06/11/2012",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 3,
+    "d": "06/11/2012",
+    "h": "Yeovil Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 0,
+    "d": "29/10/2012",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 2,
+    "d": "27/10/2012",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "27/10/2012",
+    "h": "Bury",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 4,
+    "d": "27/10/2012",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "27/10/2012",
+    "h": "Crawley Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "27/10/2012",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 1,
+    "d": "27/10/2012",
+    "h": "Leyton Orient",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "27/10/2012",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 3,
+    "d": "27/10/2012",
+    "h": "Scunthorpe United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "27/10/2012",
+    "h": "Shrewsbury Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 4,
+    "d": "27/10/2012",
+    "h": "Stevenage",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "27/10/2012",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 1,
+    "d": "23/10/2012",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "23/10/2012",
+    "h": "Bury",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "23/10/2012",
+    "h": "Carlisle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "23/10/2012",
+    "h": "Crawley Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "23/10/2012",
+    "h": "Crewe Alexandra",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "23/10/2012",
+    "h": "Leyton Orient",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 3,
+    "d": "23/10/2012",
+    "h": "Notts County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 3,
+    "d": "23/10/2012",
+    "h": "Scunthorpe United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "23/10/2012",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 3,
+    "d": "23/10/2012",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 1,
+    "d": "23/10/2012",
+    "h": "Stevenage",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "23/10/2012",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "20/10/2012",
+    "h": "AFC Bournemouth",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "20/10/2012",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "20/10/2012",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "20/10/2012",
+    "h": "Doncaster Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 1,
+    "d": "20/10/2012",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 1,
+    "d": "20/10/2012",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "20/10/2012",
+    "h": "Oldham Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "20/10/2012",
+    "h": "Portsmouth",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "20/10/2012",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 1,
+    "d": "20/10/2012",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 2,
+    "d": "20/10/2012",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "20/10/2012",
+    "h": "Yeovil Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "16/10/2012",
+    "h": "Bury",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "16/10/2012",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "14/10/2012",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "14/10/2012",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "13/10/2012",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 4,
+    "d": "13/10/2012",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 0,
+    "d": "13/10/2012",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 2,
+    "d": "13/10/2012",
+    "h": "Crawley Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "13/10/2012",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "13/10/2012",
+    "h": "Portsmouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "13/10/2012",
+    "h": "Scunthorpe United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "13/10/2012",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 2,
+    "d": "13/10/2012",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 2,
+    "d": "13/10/2012",
+    "h": "Tranmere Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 1,
+    "d": "06/10/2012",
+    "h": "Brentford",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "06/10/2012",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "06/10/2012",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "06/10/2012",
+    "h": "Crewe Alexandra",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "06/10/2012",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "06/10/2012",
+    "h": "Leyton Orient",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 2,
+    "d": "06/10/2012",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "06/10/2012",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "06/10/2012",
+    "h": "Oldham Athletic",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 0,
+    "d": "06/10/2012",
+    "h": "Stevenage",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "06/10/2012",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "06/10/2012",
+    "h": "Yeovil Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "02/10/2012",
+    "h": "Brentford",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "02/10/2012",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "02/10/2012",
+    "h": "Crawley Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 2,
+    "d": "02/10/2012",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 3,
+    "d": "02/10/2012",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 2,
+    "d": "02/10/2012",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 2,
+    "d": "02/10/2012",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 3,
+    "d": "02/10/2012",
+    "h": "Scunthorpe United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "02/10/2012",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 2,
+    "d": "02/10/2012",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 2,
+    "d": "02/10/2012",
+    "h": "Yeovil Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "29/09/2012",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 2,
+    "d": "29/09/2012",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "29/09/2012",
+    "h": "Colchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "29/09/2012",
+    "h": "Leyton Orient",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "29/09/2012",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 1,
+    "d": "29/09/2012",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 1,
+    "d": "29/09/2012",
+    "h": "Portsmouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 2,
+    "d": "29/09/2012",
+    "h": "Preston North End",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "29/09/2012",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "29/09/2012",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 2,
+    "d": "29/09/2012",
+    "h": "Stevenage",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 1,
+    "d": "29/09/2012",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "22/09/2012",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 4,
+    "d": "22/09/2012",
+    "h": "Bury",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "22/09/2012",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 5,
+    "d": "22/09/2012",
+    "h": "Crawley Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "22/09/2012",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 1,
+    "d": "22/09/2012",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 2,
+    "d": "22/09/2012",
+    "h": "Hartlepool United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 0,
+    "d": "22/09/2012",
+    "h": "Notts County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "22/09/2012",
+    "h": "Scunthorpe United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 0,
+    "d": "22/09/2012",
+    "h": "Swindon Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "22/09/2012",
+    "h": "Walsall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "22/09/2012",
+    "h": "Yeovil Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "18/09/2012",
+    "h": "AFC Bournemouth",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "18/09/2012",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 1,
+    "d": "18/09/2012",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 1,
+    "d": "18/09/2012",
+    "h": "Leyton Orient",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "18/09/2012",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 1,
+    "d": "18/09/2012",
+    "h": "Oldham Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "18/09/2012",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "18/09/2012",
+    "h": "Preston North End",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 0,
+    "d": "18/09/2012",
+    "h": "Sheffield United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 1,
+    "d": "18/09/2012",
+    "h": "Shrewsbury Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "18/09/2012",
+    "h": "Stevenage",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 0,
+    "d": "18/09/2012",
+    "h": "Tranmere Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 1,
+    "d": "15/09/2012",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "15/09/2012",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "15/09/2012",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 0,
+    "d": "15/09/2012",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "15/09/2012",
+    "h": "Oldham Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "15/09/2012",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 2,
+    "d": "15/09/2012",
+    "h": "Preston North End",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "15/09/2012",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 1,
+    "d": "15/09/2012",
+    "h": "Shrewsbury Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 2,
+    "d": "15/09/2012",
+    "h": "Stevenage",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 0,
+    "d": "15/09/2012",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "13/09/2012",
+    "h": "Leyton Orient",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 2,
+    "d": "09/09/2012",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 3,
+    "d": "09/09/2012",
+    "h": "Crawley Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "08/09/2012",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 2,
+    "d": "08/09/2012",
+    "h": "Bury",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "08/09/2012",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "08/09/2012",
+    "h": "Hartlepool United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 2,
+    "d": "08/09/2012",
+    "h": "Notts County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "08/09/2012",
+    "h": "Scunthorpe United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "08/09/2012",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "08/09/2012",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "08/09/2012",
+    "h": "Yeovil Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "02/09/2012",
+    "h": "Preston North End",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "01/09/2012",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 0,
+    "d": "01/09/2012",
+    "h": "Crawley Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 0,
+    "d": "01/09/2012",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 0,
+    "d": "01/09/2012",
+    "h": "Hartlepool United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "01/09/2012",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 1,
+    "d": "01/09/2012",
+    "h": "Portsmouth",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 3,
+    "d": "01/09/2012",
+    "h": "Sheffield United",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 1,
+    "d": "01/09/2012",
+    "h": "Stevenage",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "01/09/2012",
+    "h": "Tranmere Rovers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 2,
+    "d": "01/09/2012",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "01/09/2012",
+    "h": "Yeovil Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 1,
+    "d": "25/08/2012",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "25/08/2012",
+    "h": "Brentford",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 2,
+    "d": "25/08/2012",
+    "h": "Carlisle United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "25/08/2012",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 2,
+    "d": "25/08/2012",
+    "h": "Coventry City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 1,
+    "d": "25/08/2012",
+    "h": "Doncaster Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "25/08/2012",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 1,
+    "d": "25/08/2012",
+    "h": "Oldham Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 4,
+    "d": "25/08/2012",
+    "h": "Scunthorpe United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "25/08/2012",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "25/08/2012",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "21/08/2012",
+    "h": "AFC Bournemouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Yeovil Town",
+    "ag": 3,
+    "d": "21/08/2012",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 3,
+    "d": "21/08/2012",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Portsmouth",
+    "ag": 2,
+    "d": "21/08/2012",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sheffield United",
+    "ag": 1,
+    "d": "21/08/2012",
+    "h": "Coventry City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bury",
+    "ag": 1,
+    "d": "21/08/2012",
+    "h": "Doncaster Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Stevenage",
+    "ag": 1,
+    "d": "21/08/2012",
+    "h": "Leyton Orient",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Hartlepool United",
+    "ag": 0,
+    "d": "21/08/2012",
+    "h": "Notts County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "21/08/2012",
+    "h": "Oldham Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 2,
+    "d": "21/08/2012",
+    "h": "Scunthorpe United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Preston North End",
+    "ag": 0,
+    "d": "21/08/2012",
+    "h": "Shrewsbury Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crawley Town",
+    "ag": 0,
+    "d": "21/08/2012",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Brentford",
+    "ag": 0,
+    "d": "18/08/2012",
+    "h": "Bury",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Scunthorpe United",
+    "ag": 0,
+    "d": "18/08/2012",
+    "h": "Crawley Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "18/08/2012",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "18/08/2012",
+    "h": "Hartlepool United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Oldham Athletic",
+    "ag": 0,
+    "d": "18/08/2012",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Bournemouth",
+    "ag": 1,
+    "d": "18/08/2012",
+    "h": "Portsmouth",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "18/08/2012",
+    "h": "Preston North End",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Shrewsbury Town",
+    "ag": 0,
+    "d": "18/08/2012",
+    "h": "Sheffield United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "18/08/2012",
+    "h": "Stevenage",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leyton Orient",
+    "ag": 1,
+    "d": "18/08/2012",
+    "h": "Tranmere Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 3,
+    "d": "18/08/2012",
+    "h": "Walsall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 1,
+    "d": "18/08/2012",
+    "h": "Yeovil Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  }
+]

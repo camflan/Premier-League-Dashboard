@@ -1,2166 +1,710 @@
 [
   {
-    "d": "17/08/2002",
-    "h": "Blackburn Rovers",
-    "a": "Sunderland",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "17/08/2002",
-    "h": "Charlton",
-    "a": "Chelsea",
-    "hg": 2,
-    "ag": 3
-  },
-  {
-    "d": "17/08/2002",
-    "h": "Everton",
-    "a": "Tottenham Hotspur",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "17/08/2002",
-    "h": "Fulham",
-    "a": "Bolton",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "17/08/2002",
-    "h": "Leeds United",
-    "a": "Manchester City",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "17/08/2002",
-    "h": "Manchester United",
-    "a": "West Brom",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "17/08/2002",
-    "h": "Southampton",
-    "a": "Middlesbrough",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "18/08/2002",
-    "h": "Arsenal",
-    "a": "Birmingham City",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "18/08/2002",
-    "h": "Aston Villa",
-    "a": "Liverpool",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "19/08/2002",
-    "h": "Newcastle United",
     "a": "West Ham United",
-    "hg": 4,
-    "ag": 0
-  },
-  {
-    "d": "23/08/2002",
-    "h": "Chelsea",
-    "a": "Manchester United",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "24/08/2002",
+    "ag": 2,
+    "d": "11/05/2003",
     "h": "Birmingham City",
-    "a": "Blackburn Rovers",
-    "hg": 0,
-    "ag": 1
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "24/08/2002",
+    "d": "11/05/2003",
     "h": "Bolton",
-    "a": "Charlton",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "24/08/2002",
-    "h": "Liverpool",
-    "a": "Southampton",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "24/08/2002",
-    "h": "Manchester City",
-    "a": "Newcastle United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "24/08/2002",
-    "h": "Middlesbrough",
-    "a": "Fulham",
+    "a": "Middlesbrough",
     "hg": 2,
-    "ag": 2
+    "ag": 1
   },
   {
-    "d": "24/08/2002",
-    "h": "Sunderland",
-    "a": "Everton",
+    "d": "11/05/2003",
+    "h": "Charlton",
+    "a": "Fulham",
     "hg": 0,
     "ag": 1
   },
   {
-    "d": "24/08/2002",
-    "h": "Tottenham Hotspur",
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "11/05/2003",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "11/05/2003",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
     "a": "Aston Villa",
-    "hg": 1,
-    "ag": 0
+    "ag": 1,
+    "d": "11/05/2003",
+    "h": "Leeds United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "24/08/2002",
-    "h": "West Brom",
-    "a": "Leeds United",
-    "hg": 1,
-    "ag": 3
+    "a": "Southampton",
+    "ag": 1,
+    "d": "11/05/2003",
+    "h": "Manchester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "24/08/2002",
-    "h": "West Ham United",
     "a": "Arsenal",
+    "ag": 4,
+    "d": "11/05/2003",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 4,
+    "d": "11/05/2003",
+    "h": "Tottenham Hotspur",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "11/05/2003",
+    "h": "West Brom",
+    "a": "Newcastle United",
     "hg": 2,
     "ag": 2
   },
   {
-    "d": "27/08/2002",
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "11/05/2003",
+    "h": "Bolton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "11/05/2003",
+    "h": "Charlton Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 2,
+    "d": "11/05/2003",
+    "h": "West Bromwich Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "07/05/2003",
     "h": "Arsenal",
+    "hg": 6,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 3,
+    "d": "04/05/2003",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "03/05/2003",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "03/05/2003",
+    "h": "Blackburn Rovers",
     "a": "West Brom",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "03/05/2003",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "03/05/2003",
+    "h": "Liverpool",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "03/05/2003",
+    "h": "Manchester United",
+    "a": "Charlton",
+    "hg": 4,
+    "ag": 1
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "03/05/2003",
+    "h": "Middlesbrough",
     "hg": 5,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "27/08/2002",
-    "h": "Charlton",
-    "a": "Tottenham Hotspur",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "28/08/2002",
-    "h": "Aston Villa",
-    "a": "Manchester City",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "28/08/2002",
-    "h": "Blackburn Rovers",
-    "a": "Liverpool",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "28/08/2002",
-    "h": "Everton",
     "a": "Birmingham City",
+    "ag": 0,
+    "d": "03/05/2003",
+    "h": "Newcastle United",
     "hg": 1,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "28/08/2002",
-    "h": "Leeds United",
-    "a": "Sunderland",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "28/08/2002",
+    "d": "03/05/2003",
     "h": "Southampton",
-    "a": "Chelsea",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "31/08/2002",
-    "h": "Birmingham City",
-    "a": "Leeds United",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "31/08/2002",
-    "h": "Manchester City",
-    "a": "Everton",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "31/08/2002",
-    "h": "Middlesbrough",
-    "a": "Blackburn Rovers",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "31/08/2002",
-    "h": "Sunderland",
-    "a": "Manchester United",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "31/08/2002",
-    "h": "Tottenham Hotspur",
-    "a": "Southampton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "31/08/2002",
-    "h": "West Brom",
-    "a": "Fulham",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "31/08/2002",
-    "h": "West Ham United",
-    "a": "Charlton",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "01/09/2002",
-    "h": "Bolton",
-    "a": "Aston Villa",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "01/09/2002",
-    "h": "Chelsea",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "02/09/2002",
-    "h": "Liverpool",
-    "a": "Newcastle United",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "03/09/2002",
-    "h": "Manchester United",
-    "a": "Middlesbrough",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "10/09/2002",
-    "h": "Arsenal",
-    "a": "Manchester City",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "10/09/2002",
-    "h": "Middlesbrough",
-    "a": "Sunderland",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "11/09/2002",
-    "h": "Aston Villa",
-    "a": "Charlton",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "11/09/2002",
-    "h": "Blackburn Rovers",
-    "a": "Chelsea",
-    "hg": 2,
-    "ag": 3
-  },
-  {
-    "d": "11/09/2002",
-    "h": "Fulham",
-    "a": "Tottenham Hotspur",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "11/09/2002",
-    "h": "Liverpool",
-    "a": "Birmingham City",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "11/09/2002",
-    "h": "Manchester United",
     "a": "Bolton",
     "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "11/09/2002",
-    "h": "Newcastle United",
-    "a": "Leeds United",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "11/09/2002",
-    "h": "Southampton",
-    "a": "Everton",
-    "hg": 1,
     "ag": 0
   },
   {
-    "d": "11/09/2002",
-    "h": "West Ham United",
-    "a": "West Brom",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "14/09/2002",
-    "h": "Bolton",
-    "a": "Liverpool",
-    "hg": 2,
-    "ag": 3
-  },
-  {
-    "d": "14/09/2002",
-    "h": "Charlton",
-    "a": "Arsenal",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "14/09/2002",
-    "h": "Chelsea",
-    "a": "Newcastle United",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "14/09/2002",
-    "h": "Everton",
-    "a": "Middlesbrough",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "14/09/2002",
-    "h": "Leeds United",
-    "a": "Manchester United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "14/09/2002",
-    "h": "Sunderland",
-    "a": "Fulham",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "14/09/2002",
-    "h": "West Brom",
-    "a": "Southampton",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "15/09/2002",
-    "h": "Manchester City",
-    "a": "Blackburn Rovers",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "15/09/2002",
-    "h": "Tottenham Hotspur",
-    "a": "West Ham United",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "16/09/2002",
-    "h": "Birmingham City",
-    "a": "Aston Villa",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "21/09/2002",
-    "h": "Arsenal",
-    "a": "Bolton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "21/09/2002",
-    "h": "Liverpool",
-    "a": "West Brom",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "21/09/2002",
-    "h": "Manchester United",
-    "a": "Tottenham Hotspur",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "21/09/2002",
-    "h": "Middlesbrough",
-    "a": "Birmingham City",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "21/09/2002",
-    "h": "Newcastle United",
-    "a": "Sunderland",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "21/09/2002",
-    "h": "Southampton",
-    "a": "Charlton",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "21/09/2002",
-    "h": "West Ham United",
-    "a": "Manchester City",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "22/09/2002",
-    "h": "Aston Villa",
-    "a": "Everton",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "22/09/2002",
-    "h": "Blackburn Rovers",
-    "a": "Leeds United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "23/09/2002",
-    "h": "Fulham",
     "a": "Chelsea",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "28/09/2002",
-    "h": "Birmingham City",
-    "a": "Newcastle United",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "28/09/2002",
-    "h": "Bolton",
-    "a": "Southampton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "28/09/2002",
-    "h": "Charlton",
-    "a": "Manchester United",
-    "hg": 1,
-    "ag": 3
-  },
-  {
-    "d": "28/09/2002",
-    "h": "Chelsea",
-    "a": "West Ham United",
-    "hg": 2,
-    "ag": 3
-  },
-  {
-    "d": "28/09/2002",
-    "h": "Everton",
-    "a": "Fulham",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "28/09/2002",
-    "h": "Leeds United",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 4
-  },
-  {
-    "d": "28/09/2002",
-    "h": "Manchester City",
-    "a": "Liverpool",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "28/09/2002",
-    "h": "Sunderland",
-    "a": "Aston Villa",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "28/09/2002",
-    "h": "Tottenham Hotspur",
-    "a": "Middlesbrough",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "30/09/2002",
-    "h": "West Brom",
-    "a": "Blackburn Rovers",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "05/10/2002",
-    "h": "Middlesbrough",
-    "a": "Bolton",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "05/10/2002",
-    "h": "Newcastle United",
-    "a": "West Brom",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "05/10/2002",
-    "h": "Southampton",
-    "a": "Manchester City",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "05/10/2002",
+    "ag": 0,
+    "d": "03/05/2003",
     "h": "West Ham United",
-    "a": "Birmingham City",
     "hg": 1,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "06/10/2002",
-    "h": "Arsenal",
-    "a": "Sunderland",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "06/10/2002",
-    "h": "Aston Villa",
-    "a": "Leeds United",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "06/10/2002",
-    "h": "Blackburn Rovers",
-    "a": "Tottenham Hotspur",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "06/10/2002",
-    "h": "Fulham",
-    "a": "Charlton",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "06/10/2002",
-    "h": "Liverpool",
-    "a": "Chelsea",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "07/10/2002",
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "03/05/2003",
     "h": "Manchester United",
-    "a": "Everton",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "19/10/2002",
-    "h": "Blackburn Rovers",
-    "a": "Newcastle United",
-    "hg": 5,
-    "ag": 2
-  },
-  {
-    "d": "19/10/2002",
-    "h": "Everton",
-    "a": "Arsenal",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "19/10/2002",
-    "h": "Fulham",
-    "a": "Manchester United",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "19/10/2002",
-    "h": "Leeds United",
-    "a": "Liverpool",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "19/10/2002",
-    "h": "Manchester City",
-    "a": "Chelsea",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "19/10/2002",
-    "h": "Sunderland",
-    "a": "West Ham United",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "19/10/2002",
-    "h": "West Brom",
-    "a": "Birmingham City",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "20/10/2002",
-    "h": "Charlton",
-    "a": "Middlesbrough",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "20/10/2002",
-    "h": "Tottenham Hotspur",
-    "a": "Bolton",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "21/10/2002",
-    "h": "Aston Villa",
-    "a": "Southampton",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "23/10/2002",
-    "h": "Fulham",
-    "a": "West Ham United",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "26/10/2002",
-    "h": "Arsenal",
-    "a": "Blackburn Rovers",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "26/10/2002",
-    "h": "Birmingham City",
-    "a": "Manchester City",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "26/10/2002",
-    "h": "Chelsea",
-    "a": "West Brom",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "26/10/2002",
-    "h": "Liverpool",
-    "a": "Tottenham Hotspur",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "26/10/2002",
-    "h": "Manchester United",
-    "a": "Aston Villa",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "26/10/2002",
-    "h": "Middlesbrough",
-    "a": "Leeds United",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "26/10/2002",
-    "h": "Newcastle United",
-    "a": "Charlton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "27/10/2002",
-    "h": "Southampton",
-    "a": "Fulham",
     "hg": 4,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "27/10/2002",
-    "h": "West Ham United",
-    "a": "Everton",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "28/10/2002",
-    "h": "Bolton",
-    "a": "Sunderland",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "02/11/2002",
-    "h": "Birmingham City",
-    "a": "Bolton",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "02/11/2002",
-    "h": "Liverpool",
-    "a": "West Ham United",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "02/11/2002",
-    "h": "Manchester United",
-    "a": "Southampton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "02/11/2002",
-    "h": "West Brom",
-    "a": "Manchester City",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "03/11/2002",
+    "a": "West Bromwich Albion",
+    "ag": 1,
+    "d": "03/05/2003",
     "h": "Blackburn Rovers",
-    "a": "Aston Villa",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "03/11/2002",
-    "h": "Charlton",
-    "a": "Sunderland",
     "hg": 1,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "03/11/2002",
-    "h": "Fulham",
-    "a": "Arsenal",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "03/11/2002",
-    "h": "Leeds United",
-    "a": "Everton",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "03/11/2002",
-    "h": "Tottenham Hotspur",
-    "a": "Chelsea",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "04/11/2002",
-    "h": "Newcastle United",
-    "a": "Middlesbrough",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "09/11/2002",
-    "h": "Arsenal",
-    "a": "Newcastle United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "09/11/2002",
-    "h": "Aston Villa",
-    "a": "Fulham",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "09/11/2002",
-    "h": "Bolton",
-    "a": "West Brom",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "09/11/2002",
-    "h": "Chelsea",
-    "a": "Birmingham City",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "09/11/2002",
-    "h": "Everton",
-    "a": "Charlton",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "09/11/2002",
-    "h": "Manchester City",
-    "a": "Manchester United",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "09/11/2002",
-    "h": "Middlesbrough",
-    "a": "Liverpool",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "09/11/2002",
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "03/05/2003",
     "h": "Southampton",
-    "a": "Blackburn Rovers",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "10/11/2002",
-    "h": "Sunderland",
-    "a": "Tottenham Hotspur",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "10/11/2002",
-    "h": "West Ham United",
-    "a": "Leeds United",
-    "hg": 3,
-    "ag": 4
-  },
-  {
-    "d": "16/11/2002",
-    "h": "Arsenal",
-    "a": "Tottenham Hotspur",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "16/11/2002",
-    "h": "Chelsea",
-    "a": "Middlesbrough",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "16/11/2002",
-    "h": "Manchester City",
-    "a": "Charlton",
     "hg": 0,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "16/11/2002",
-    "h": "Newcastle United",
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "27/04/2003",
+    "h": "Manchester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "27/04/2003",
+    "h": "Tottenham Hotspur",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "26/04/2003",
+    "h": "Birmingham City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "26/04/2003",
+    "h": "Bolton",
+    "a": "Arsenal",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "d": "26/04/2003",
+    "h": "Charlton",
     "a": "Southampton",
     "hg": 2,
     "ag": 1
   },
   {
-    "d": "16/11/2002",
-    "h": "West Brom",
-    "a": "Aston Villa",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "17/11/2002",
-    "h": "Birmingham City",
     "a": "Fulham",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "17/11/2002",
-    "h": "Blackburn Rovers",
-    "a": "Everton",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "17/11/2002",
-    "h": "Leeds United",
-    "a": "Bolton",
-    "hg": 2,
-    "ag": 4
-  },
-  {
-    "d": "17/11/2002",
-    "h": "Liverpool",
-    "a": "Sunderland",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "17/11/2002",
-    "h": "West Ham United",
-    "a": "Manchester United",
+    "ag": 1,
+    "d": "26/04/2003",
+    "h": "Chelsea",
     "hg": 1,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "23/11/2002",
-    "h": "Aston Villa",
-    "a": "West Ham United",
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "26/04/2003",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 3,
+    "d": "26/04/2003",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "26/04/2003",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "26/04/2003",
+    "h": "West Brom",
+    "a": "Liverpool",
+    "hg": 0,
+    "ag": 6
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "26/04/2003",
+    "h": "Bolton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "26/04/2003",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 6,
+    "d": "26/04/2003",
+    "h": "West Bromwich Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "22/04/2003",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 2,
+    "d": "21/04/2003",
+    "h": "Birmingham City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "21/04/2003",
+    "h": "Blackburn Rovers",
+    "a": "Bolton",
+    "hg": 0,
+    "ag": 0
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "21/04/2003",
+    "h": "Chelsea",
     "hg": 4,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "23/11/2002",
-    "h": "Bolton",
-    "a": "Chelsea",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "23/11/2002",
-    "h": "Everton",
-    "a": "West Brom",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "23/11/2002",
-    "h": "Fulham",
-    "a": "Liverpool",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "23/11/2002",
-    "h": "Manchester United",
-    "a": "Newcastle United",
-    "hg": 5,
-    "ag": 3
-  },
-  {
-    "d": "23/11/2002",
-    "h": "Middlesbrough",
-    "a": "Manchester City",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "23/11/2002",
-    "h": "Southampton",
-    "a": "Arsenal",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "23/11/2002",
-    "h": "Sunderland",
-    "a": "Birmingham City",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "24/11/2002",
-    "h": "Charlton",
-    "a": "Blackburn Rovers",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "24/11/2002",
-    "h": "Tottenham Hotspur",
-    "a": "Leeds United",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "30/11/2002",
-    "h": "Arsenal",
-    "a": "Aston Villa",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "30/11/2002",
-    "h": "Birmingham City",
-    "a": "Tottenham Hotspur",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "30/11/2002",
-    "h": "Blackburn Rovers",
-    "a": "Fulham",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "30/11/2002",
-    "h": "Chelsea",
-    "a": "Sunderland",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "30/11/2002",
-    "h": "Manchester City",
-    "a": "Bolton",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "30/11/2002",
-    "h": "West Brom",
-    "a": "Middlesbrough",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "01/12/2002",
-    "h": "Leeds United",
-    "a": "Charlton",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "01/12/2002",
+    "d": "21/04/2003",
     "h": "Liverpool",
-    "a": "Manchester United",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "01/12/2002",
-    "h": "Newcastle United",
-    "a": "Everton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "02/12/2002",
-    "h": "West Ham United",
-    "a": "Southampton",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "07/12/2002",
-    "h": "Aston Villa",
-    "a": "Newcastle United",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "07/12/2002",
-    "h": "Bolton",
-    "a": "Blackburn Rovers",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "07/12/2002",
-    "h": "Charlton",
-    "a": "Liverpool",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "07/12/2002",
-    "h": "Everton",
-    "a": "Chelsea",
-    "hg": 1,
-    "ag": 3
-  },
-  {
-    "d": "07/12/2002",
-    "h": "Fulham",
-    "a": "Leeds United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "07/12/2002",
-    "h": "Manchester United",
-    "a": "Arsenal",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "07/12/2002",
-    "h": "Middlesbrough",
-    "a": "West Ham United",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "07/12/2002",
-    "h": "Southampton",
-    "a": "Birmingham City",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "08/12/2002",
-    "h": "Tottenham Hotspur",
-    "a": "West Brom",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "09/12/2002",
-    "h": "Sunderland",
-    "a": "Manchester City",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "14/12/2002",
-    "h": "Aston Villa",
-    "a": "West Brom",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "14/12/2002",
-    "h": "Charlton",
-    "a": "Manchester City",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "14/12/2002",
-    "h": "Everton",
-    "a": "Blackburn Rovers",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "14/12/2002",
-    "h": "Manchester United",
-    "a": "West Ham United",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "14/12/2002",
-    "h": "Middlesbrough",
-    "a": "Chelsea",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "14/12/2002",
-    "h": "Southampton",
-    "a": "Newcastle United",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "15/12/2002",
-    "h": "Fulham",
-    "a": "Birmingham City",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "15/12/2002",
-    "h": "Sunderland",
-    "a": "Liverpool",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "15/12/2002",
-    "h": "Tottenham Hotspur",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "16/12/2002",
-    "h": "Bolton",
-    "a": "Leeds United",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "21/12/2002",
-    "h": "Arsenal",
-    "a": "Middlesbrough",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "21/12/2002",
-    "h": "Birmingham City",
     "a": "Charlton",
-    "hg": 1,
+    "hg": 2,
     "ag": 1
   },
   {
-    "d": "21/12/2002",
-    "h": "Chelsea",
-    "a": "Aston Villa",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "21/12/2002",
-    "h": "Leeds United",
-    "a": "Southampton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "21/12/2002",
-    "h": "Newcastle United",
-    "a": "Fulham",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "21/12/2002",
-    "h": "West Brom",
     "a": "Sunderland",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "21/12/2002",
-    "h": "West Ham United",
-    "a": "Bolton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "22/12/2002",
-    "h": "Blackburn Rovers",
-    "a": "Manchester United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "22/12/2002",
-    "h": "Liverpool",
-    "a": "Everton",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "23/12/2002",
+    "ag": 0,
+    "d": "21/04/2003",
     "h": "Manchester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "21/04/2003",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "21/04/2003",
+    "h": "West Brom",
     "a": "Tottenham Hotspur",
     "hg": 2,
     "ag": 3
   },
   {
-    "d": "26/12/2002",
-    "h": "Birmingham City",
-    "a": "Everton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "26/12/2002",
-    "h": "Bolton",
-    "a": "Newcastle United",
-    "hg": 4,
-    "ag": 3
-  },
-  {
-    "d": "26/12/2002",
-    "h": "Chelsea",
-    "a": "Southampton",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "26/12/2002",
-    "h": "Liverpool",
-    "a": "Blackburn Rovers",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "26/12/2002",
-    "h": "Manchester City",
-    "a": "Aston Villa",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "26/12/2002",
-    "h": "Middlesbrough",
-    "a": "Manchester United",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "26/12/2002",
-    "h": "Sunderland",
-    "a": "Leeds United",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "26/12/2002",
-    "h": "Tottenham Hotspur",
-    "a": "Charlton",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "26/12/2002",
-    "h": "West Brom",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "26/12/2002",
-    "h": "West Ham United",
-    "a": "Fulham",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "28/12/2002",
-    "h": "Aston Villa",
     "a": "Middlesbrough",
+    "ag": 0,
+    "d": "21/04/2003",
+    "h": "West Ham United",
     "hg": 1,
-    "ag": 0
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "28/12/2002",
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "21/04/2003",
     "h": "Blackburn Rovers",
-    "a": "West Ham United",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "28/12/2002",
-    "h": "Charlton",
-    "a": "West Brom",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "28/12/2002",
-    "h": "Everton",
-    "a": "Bolton",
     "hg": 0,
-    "ag": 0
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "28/12/2002",
-    "h": "Fulham",
-    "a": "Manchester City",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "28/12/2002",
-    "h": "Leeds United",
-    "a": "Chelsea",
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "21/04/2003",
+    "h": "Liverpool",
     "hg": 2,
-    "ag": 0
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "28/12/2002",
-    "h": "Manchester United",
-    "a": "Birmingham City",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "28/12/2002",
-    "h": "Southampton",
-    "a": "Sunderland",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "29/12/2002",
-    "h": "Arsenal",
-    "a": "Liverpool",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "29/12/2002",
-    "h": "Newcastle United",
     "a": "Tottenham Hotspur",
+    "ag": 3,
+    "d": "21/04/2003",
+    "h": "West Bromwich Albion",
     "hg": 2,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "01/01/2003",
-    "h": "Arsenal",
     "a": "Chelsea",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "01/01/2003",
+    "ag": 1,
+    "d": "19/04/2003",
     "h": "Aston Villa",
-    "a": "Bolton",
     "hg": 2,
-    "ag": 0
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "01/01/2003",
-    "h": "Blackburn Rovers",
-    "a": "Middlesbrough",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "01/01/2003",
-    "h": "Everton",
-    "a": "Manchester City",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "01/01/2003",
-    "h": "Leeds United",
-    "a": "Birmingham City",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "01/01/2003",
-    "h": "Manchester United",
-    "a": "Sunderland",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "01/01/2003",
-    "h": "Newcastle United",
-    "a": "Liverpool",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "01/01/2003",
-    "h": "Southampton",
-    "a": "Tottenham Hotspur",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "11/01/2003",
+    "d": "19/04/2003",
     "h": "Bolton",
-    "a": "Fulham",
-    "hg": 0,
+    "a": "West Ham United",
+    "hg": 1,
     "ag": 0
   },
   {
-    "d": "11/01/2003",
-    "h": "Chelsea",
-    "a": "Charlton",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "11/01/2003",
-    "h": "Liverpool",
-    "a": "Aston Villa",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "11/01/2003",
-    "h": "Manchester City",
-    "a": "Leeds United",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "11/01/2003",
-    "h": "Middlesbrough",
-    "a": "Southampton",
-    "hg": 2,
+    "d": "19/04/2003",
+    "h": "Charlton",
+    "a": "Birmingham City",
+    "hg": 0,
     "ag": 2
   },
   {
-    "d": "11/01/2003",
-    "h": "Sunderland",
-    "a": "Blackburn Rovers",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "11/01/2003",
-    "h": "West Brom",
-    "a": "Manchester United",
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "19/04/2003",
+    "h": "Everton",
     "hg": 1,
-    "ag": 3
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "11/01/2003",
-    "h": "West Ham United",
     "a": "Newcastle United",
+    "ag": 1,
+    "d": "19/04/2003",
+    "h": "Fulham",
     "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 1,
+    "d": "19/04/2003",
+    "h": "Manchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "19/04/2003",
+    "h": "Middlesbrough",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "19/04/2003",
+    "h": "Southampton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "19/04/2003",
+    "h": "Sunderland",
+    "a": "West Brom",
+    "hg": 1,
     "ag": 2
   },
   {
-    "d": "12/01/2003",
-    "h": "Birmingham City",
-    "a": "Arsenal",
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "19/04/2003",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 2,
+    "d": "19/04/2003",
+    "h": "Charlton Athletic",
     "hg": 0,
-    "ag": 4
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "12/01/2003",
+    "a": "West Bromwich Albion",
+    "ag": 2,
+    "d": "19/04/2003",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "18/04/2003",
     "h": "Tottenham Hotspur",
-    "a": "Everton",
-    "hg": 4,
-    "ag": 3
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "18/01/2003",
-    "h": "Aston Villa",
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "16/04/2003",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "12/04/2003",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "12/04/2003",
+    "h": "Blackburn Rovers",
+    "a": "Charlton",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "d": "12/04/2003",
+    "h": "Chelsea",
+    "a": "Bolton",
+    "hg": 1,
+    "ag": 0
+  },
+  {
     "a": "Tottenham Hotspur",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "18/01/2003",
-    "h": "Blackburn Rovers",
-    "a": "Birmingham City",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "18/01/2003",
-    "h": "Charlton",
-    "a": "Bolton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "18/01/2003",
-    "h": "Everton",
-    "a": "Sunderland",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "18/01/2003",
+    "ag": 2,
+    "d": "12/04/2003",
     "h": "Leeds United",
-    "a": "West Brom",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "18/01/2003",
-    "h": "Manchester United",
-    "a": "Chelsea",
     "hg": 2,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "18/01/2003",
-    "h": "Newcastle United",
-    "a": "Manchester City",
+    "a": "Fulham",
+    "ag": 0,
+    "d": "12/04/2003",
+    "h": "Liverpool",
     "hg": 2,
-    "ag": 0
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "18/01/2003",
-    "h": "Southampton",
-    "a": "Liverpool",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "19/01/2003",
-    "h": "Arsenal",
-    "a": "West Ham United",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "19/01/2003",
-    "h": "Fulham",
     "a": "Middlesbrough",
-    "hg": 1,
-    "ag": 0
+    "ag": 0,
+    "d": "12/04/2003",
+    "h": "Manchester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "22/01/2003",
-    "h": "Charlton",
-    "a": "West Ham United",
-    "hg": 4,
-    "ag": 2
-  },
-  {
-    "d": "22/01/2003",
+    "a": "Manchester United",
+    "ag": 6,
+    "d": "12/04/2003",
     "h": "Newcastle United",
-    "a": "Bolton",
-    "hg": 1,
-    "ag": 0
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "28/01/2003",
-    "h": "Bolton",
+    "d": "12/04/2003",
+    "h": "West Brom",
     "a": "Everton",
     "hg": 1,
     "ag": 2
   },
   {
-    "d": "28/01/2003",
-    "h": "Chelsea",
-    "a": "Leeds United",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "28/01/2003",
-    "h": "Middlesbrough",
     "a": "Aston Villa",
-    "hg": 2,
-    "ag": 5
-  },
-  {
-    "d": "28/01/2003",
-    "h": "Sunderland",
-    "a": "Southampton",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "29/01/2003",
-    "h": "Liverpool",
-    "a": "Arsenal",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "29/01/2003",
-    "h": "Manchester City",
-    "a": "Fulham",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "29/01/2003",
-    "h": "Tottenham Hotspur",
-    "a": "Newcastle United",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "29/01/2003",
-    "h": "West Brom",
-    "a": "Charlton",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "29/01/2003",
+    "ag": 2,
+    "d": "12/04/2003",
     "h": "West Ham United",
-    "a": "Blackburn Rovers",
     "hg": 2,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "01/02/2003",
-    "h": "Arsenal",
-    "a": "Fulham",
-    "hg": 2,
-    "ag": 1
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "12/04/2003",
+    "h": "Blackburn Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "01/02/2003",
-    "h": "Bolton",
-    "a": "Birmingham City",
-    "hg": 4,
-    "ag": 2
-  },
-  {
-    "d": "01/02/2003",
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "12/04/2003",
     "h": "Chelsea",
-    "a": "Tottenham Hotspur",
     "hg": 1,
-    "ag": 1
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "01/02/2003",
-    "h": "Everton",
-    "a": "Leeds United",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "01/02/2003",
-    "h": "Manchester City",
-    "a": "West Brom",
+    "a": "Everton",
+    "ag": 2,
+    "d": "12/04/2003",
+    "h": "West Bromwich Albion",
     "hg": 1,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "01/02/2003",
-    "h": "Southampton",
-    "a": "Manchester United",
+    "a": "Blackburn Rovers",
+    "ag": 4,
+    "d": "07/04/2003",
+    "h": "Fulham",
     "hg": 0,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "01/02/2003",
-    "h": "Sunderland",
-    "a": "Charlton",
-    "hg": 1,
-    "ag": 3
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "06/04/2003",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "02/02/2003",
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "05/04/2003",
     "h": "Aston Villa",
-    "a": "Blackburn Rovers",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "02/02/2003",
-    "h": "West Ham United",
-    "a": "Liverpool",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "04/02/2003",
-    "h": "Birmingham City",
-    "a": "Manchester United",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "08/02/2003",
-    "h": "Birmingham City",
-    "a": "Chelsea",
     "hg": 1,
-    "ag": 3
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "08/02/2003",
-    "h": "Blackburn Rovers",
-    "a": "Southampton",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "08/02/2003",
-    "h": "Charlton",
-    "a": "Everton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "08/02/2003",
-    "h": "Fulham",
-    "a": "Aston Villa",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "08/02/2003",
-    "h": "Leeds United",
-    "a": "West Ham United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "08/02/2003",
-    "h": "Liverpool",
-    "a": "Middlesbrough",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "08/02/2003",
-    "h": "Tottenham Hotspur",
-    "a": "Sunderland",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "08/02/2003",
-    "h": "West Brom",
-    "a": "Bolton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "09/02/2003",
-    "h": "Manchester United",
-    "a": "Manchester City",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "09/02/2003",
-    "h": "Newcastle United",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "19/02/2003",
-    "h": "Fulham",
-    "a": "West Brom",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "22/02/2003",
+    "d": "05/04/2003",
     "h": "Bolton",
-    "a": "Manchester United",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "22/02/2003",
-    "h": "Charlton",
-    "a": "Aston Villa",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "22/02/2003",
-    "h": "Chelsea",
-    "a": "Blackburn Rovers",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "22/02/2003",
-    "h": "Everton",
-    "a": "Southampton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "22/02/2003",
-    "h": "Leeds United",
-    "a": "Newcastle United",
-    "hg": 0,
-    "ag": 3
-  },
-  {
-    "d": "22/02/2003",
-    "h": "Manchester City",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 5
-  },
-  {
-    "d": "22/02/2003",
-    "h": "Sunderland",
-    "a": "Middlesbrough",
-    "hg": 1,
-    "ag": 3
-  },
-  {
-    "d": "23/02/2003",
-    "h": "Birmingham City",
-    "a": "Liverpool",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "23/02/2003",
-    "h": "West Brom",
-    "a": "West Ham United",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "24/02/2003",
-    "h": "Tottenham Hotspur",
-    "a": "Fulham",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "01/03/2003",
-    "h": "Blackburn Rovers",
     "a": "Manchester City",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "01/03/2003",
-    "h": "Fulham",
-    "a": "Sunderland",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "01/03/2003",
-    "h": "Middlesbrough",
-    "a": "Everton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "01/03/2003",
-    "h": "Newcastle United",
-    "a": "Chelsea",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "01/03/2003",
-    "h": "Southampton",
-    "a": "West Brom",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "01/03/2003",
-    "h": "West Ham United",
-    "a": "Tottenham Hotspur",
     "hg": 2,
     "ag": 0
   },
   {
-    "d": "02/03/2003",
-    "h": "Arsenal",
-    "a": "Charlton",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "03/03/2003",
-    "h": "Aston Villa",
-    "a": "Birmingham City",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "05/03/2003",
-    "h": "Manchester United",
-    "a": "Leeds United",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "05/03/2003",
-    "h": "Middlesbrough",
-    "a": "Newcastle United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "08/03/2003",
-    "h": "Liverpool",
-    "a": "Bolton",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "15/03/2003",
-    "h": "Aston Villa",
-    "a": "Manchester United",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "15/03/2003",
-    "h": "Blackburn Rovers",
-    "a": "Arsenal",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "15/03/2003",
+    "d": "05/04/2003",
     "h": "Charlton",
-    "a": "Newcastle United",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "15/03/2003",
-    "h": "Everton",
-    "a": "West Ham United",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "15/03/2003",
-    "h": "Fulham",
-    "a": "Southampton",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "15/03/2003",
-    "h": "Leeds United",
-    "a": "Middlesbrough",
-    "hg": 2,
-    "ag": 3
-  },
-  {
-    "d": "15/03/2003",
-    "h": "Sunderland",
-    "a": "Bolton",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "16/03/2003",
-    "h": "Manchester City",
-    "a": "Birmingham City",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "16/03/2003",
-    "h": "Tottenham Hotspur",
-    "a": "Liverpool",
-    "hg": 2,
-    "ag": 3
-  },
-  {
-    "d": "16/03/2003",
-    "h": "West Brom",
-    "a": "Chelsea",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "22/03/2003",
-    "h": "Birmingham City",
-    "a": "West Brom",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "22/03/2003",
-    "h": "Chelsea",
-    "a": "Manchester City",
-    "hg": 5,
-    "ag": 0
-  },
-  {
-    "d": "22/03/2003",
-    "h": "Manchester United",
-    "a": "Fulham",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "22/03/2003",
-    "h": "Middlesbrough",
-    "a": "Charlton",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "22/03/2003",
-    "h": "Newcastle United",
-    "a": "Blackburn Rovers",
-    "hg": 5,
-    "ag": 1
-  },
-  {
-    "d": "22/03/2003",
-    "h": "Southampton",
-    "a": "Aston Villa",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "22/03/2003",
-    "h": "West Ham United",
-    "a": "Sunderland",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "23/03/2003",
-    "h": "Arsenal",
-    "a": "Everton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "23/03/2003",
-    "h": "Liverpool",
     "a": "Leeds United",
+    "hg": 1,
+    "ag": 6
+  },
+  {
+    "a": "Liverpool",
+    "ag": 0,
+    "d": "05/04/2003",
+    "h": "Manchester United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "05/04/2003",
+    "h": "Middlesbrough",
+    "a": "West Brom",
     "hg": 3,
-    "ag": 1
+    "ag": 0
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "05/04/2003",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 2,
+    "d": "05/04/2003",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "05/04/2003",
+    "h": "Tottenham Hotspur",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 0,
+    "d": "05/04/2003",
+    "h": "Bolton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 6,
+    "d": "05/04/2003",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 0,
+    "d": "05/04/2003",
+    "h": "Middlesbrough",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
   },
   {
     "d": "24/03/2003",
@@ -2170,493 +714,3036 @@
     "ag": 0
   },
   {
-    "d": "05/04/2003",
-    "h": "Aston Villa",
-    "a": "Arsenal",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "05/04/2003",
-    "h": "Bolton",
-    "a": "Manchester City",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "05/04/2003",
-    "h": "Charlton",
-    "a": "Leeds United",
-    "hg": 1,
-    "ag": 6
-  },
-  {
-    "d": "05/04/2003",
-    "h": "Manchester United",
-    "a": "Liverpool",
-    "hg": 4,
-    "ag": 0
-  },
-  {
-    "d": "05/04/2003",
-    "h": "Middlesbrough",
-    "a": "West Brom",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "05/04/2003",
-    "h": "Southampton",
-    "a": "West Ham United",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "05/04/2003",
-    "h": "Sunderland",
-    "a": "Chelsea",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "05/04/2003",
-    "h": "Tottenham Hotspur",
-    "a": "Birmingham City",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "06/04/2003",
-    "h": "Everton",
-    "a": "Newcastle United",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "07/04/2003",
-    "h": "Fulham",
-    "a": "Blackburn Rovers",
-    "hg": 0,
-    "ag": 4
-  },
-  {
-    "d": "12/04/2003",
-    "h": "Birmingham City",
-    "a": "Sunderland",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "12/04/2003",
-    "h": "Blackburn Rovers",
-    "a": "Charlton",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "12/04/2003",
-    "h": "Chelsea",
-    "a": "Bolton",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "12/04/2003",
-    "h": "Leeds United",
     "a": "Tottenham Hotspur",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "12/04/2003",
-    "h": "Liverpool",
-    "a": "Fulham",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "12/04/2003",
-    "h": "Manchester City",
-    "a": "Middlesbrough",
-    "hg": 0,
-    "ag": 0
-  },
-  {
-    "d": "12/04/2003",
-    "h": "Newcastle United",
-    "a": "Manchester United",
-    "hg": 2,
-    "ag": 6
-  },
-  {
-    "d": "12/04/2003",
-    "h": "West Brom",
-    "a": "Everton",
+    "ag": 0,
+    "d": "24/03/2003",
+    "h": "Bolton Wanderers",
     "hg": 1,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "12/04/2003",
-    "h": "West Ham United",
-    "a": "Aston Villa",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "16/04/2003",
+    "a": "Everton",
+    "ag": 1,
+    "d": "23/03/2003",
     "h": "Arsenal",
-    "a": "Manchester United",
     "hg": 2,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "18/04/2003",
-    "h": "Tottenham Hotspur",
-    "a": "Manchester City",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "19/04/2003",
-    "h": "Aston Villa",
-    "a": "Chelsea",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "19/04/2003",
-    "h": "Bolton",
-    "a": "West Ham United",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "19/04/2003",
-    "h": "Charlton",
-    "a": "Birmingham City",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "19/04/2003",
-    "h": "Everton",
-    "a": "Liverpool",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "19/04/2003",
-    "h": "Fulham",
-    "a": "Newcastle United",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "19/04/2003",
-    "h": "Manchester United",
-    "a": "Blackburn Rovers",
-    "hg": 3,
-    "ag": 1
-  },
-  {
-    "d": "19/04/2003",
-    "h": "Middlesbrough",
-    "a": "Arsenal",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "19/04/2003",
-    "h": "Southampton",
     "a": "Leeds United",
+    "ag": 1,
+    "d": "23/03/2003",
+    "h": "Liverpool",
     "hg": 3,
-    "ag": 2
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "19/04/2003",
-    "h": "Sunderland",
+    "d": "22/03/2003",
+    "h": "Birmingham City",
     "a": "West Brom",
     "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "21/04/2003",
-    "h": "Birmingham City",
-    "a": "Southampton",
-    "hg": 3,
-    "ag": 2
-  },
-  {
-    "d": "21/04/2003",
-    "h": "Blackburn Rovers",
-    "a": "Bolton",
-    "hg": 0,
     "ag": 0
   },
   {
-    "d": "21/04/2003",
-    "h": "Chelsea",
-    "a": "Everton",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "21/04/2003",
-    "h": "Liverpool",
-    "a": "Charlton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "21/04/2003",
-    "h": "Manchester City",
-    "a": "Sunderland",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "21/04/2003",
-    "h": "Newcastle United",
-    "a": "Aston Villa",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "21/04/2003",
-    "h": "West Brom",
-    "a": "Tottenham Hotspur",
-    "hg": 2,
-    "ag": 3
-  },
-  {
-    "d": "21/04/2003",
-    "h": "West Ham United",
-    "a": "Middlesbrough",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "22/04/2003",
-    "h": "Leeds United",
-    "a": "Fulham",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "26/04/2003",
-    "h": "Birmingham City",
-    "a": "Middlesbrough",
-    "hg": 3,
-    "ag": 0
-  },
-  {
-    "d": "26/04/2003",
-    "h": "Bolton",
-    "a": "Arsenal",
-    "hg": 2,
-    "ag": 2
-  },
-  {
-    "d": "26/04/2003",
-    "h": "Charlton",
-    "a": "Southampton",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "26/04/2003",
-    "h": "Chelsea",
-    "a": "Fulham",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "26/04/2003",
-    "h": "Everton",
-    "a": "Aston Villa",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "26/04/2003",
-    "h": "Leeds United",
-    "a": "Blackburn Rovers",
-    "hg": 2,
-    "ag": 3
-  },
-  {
-    "d": "26/04/2003",
-    "h": "Sunderland",
-    "a": "Newcastle United",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "26/04/2003",
-    "h": "West Brom",
-    "a": "Liverpool",
-    "hg": 0,
-    "ag": 6
-  },
-  {
-    "d": "27/04/2003",
-    "h": "Manchester City",
-    "a": "West Ham United",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "27/04/2003",
-    "h": "Tottenham Hotspur",
-    "a": "Manchester United",
-    "hg": 0,
-    "ag": 2
-  },
-  {
-    "d": "03/05/2003",
-    "h": "Aston Villa",
-    "a": "Sunderland",
-    "hg": 1,
-    "ag": 0
-  },
-  {
-    "d": "03/05/2003",
-    "h": "Blackburn Rovers",
-    "a": "West Brom",
-    "hg": 1,
-    "ag": 1
-  },
-  {
-    "d": "03/05/2003",
-    "h": "Fulham",
-    "a": "Everton",
-    "hg": 2,
-    "ag": 0
-  },
-  {
-    "d": "03/05/2003",
-    "h": "Liverpool",
     "a": "Manchester City",
-    "hg": 1,
-    "ag": 2
-  },
-  {
-    "d": "03/05/2003",
-    "h": "Manchester United",
-    "a": "Charlton",
-    "hg": 4,
-    "ag": 1
-  },
-  {
-    "d": "03/05/2003",
-    "h": "Middlesbrough",
-    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "22/03/2003",
+    "h": "Chelsea",
     "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "22/03/2003",
+    "h": "Manchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "22/03/2003",
+    "h": "Middlesbrough",
+    "a": "Charlton",
+    "hg": 1,
     "ag": 1
   },
   {
-    "d": "03/05/2003",
+    "a": "Blackburn Rovers",
+    "ag": 1,
+    "d": "22/03/2003",
     "h": "Newcastle United",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 2,
+    "d": "22/03/2003",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "22/03/2003",
+    "h": "West Ham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 0,
+    "d": "22/03/2003",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "22/03/2003",
+    "h": "Middlesbrough",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
     "a": "Birmingham City",
+    "ag": 0,
+    "d": "16/03/2003",
+    "h": "Manchester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 3,
+    "d": "16/03/2003",
+    "h": "Tottenham Hotspur",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "16/03/2003",
+    "h": "West Brom",
+    "a": "Chelsea",
+    "hg": 0,
+    "ag": 2
+  },
+  {
+    "a": "Chelsea",
+    "ag": 2,
+    "d": "16/03/2003",
+    "h": "West Bromwich Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "15/03/2003",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 0,
+    "d": "15/03/2003",
+    "h": "Blackburn Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "15/03/2003",
+    "h": "Charlton",
+    "a": "Newcastle United",
+    "hg": 0,
+    "ag": 2
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "15/03/2003",
+    "h": "Everton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 2,
+    "d": "15/03/2003",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 3,
+    "d": "15/03/2003",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "15/03/2003",
+    "h": "Sunderland",
+    "a": "Bolton",
+    "hg": 0,
+    "ag": 2
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 2,
+    "d": "15/03/2003",
+    "h": "Charlton Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 2,
+    "d": "15/03/2003",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "08/03/2003",
+    "h": "Liverpool",
+    "a": "Bolton",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "08/03/2003",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "05/03/2003",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "05/03/2003",
+    "h": "Middlesbrough",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 2,
+    "d": "03/03/2003",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "02/03/2003",
+    "h": "Arsenal",
+    "a": "Charlton",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "02/03/2003",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 0,
+    "d": "01/03/2003",
+    "h": "Blackburn Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "01/03/2003",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "01/03/2003",
+    "h": "Middlesbrough",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "01/03/2003",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "01/03/2003",
+    "h": "Southampton",
+    "a": "West Brom",
     "hg": 1,
     "ag": 0
   },
   {
-    "d": "03/05/2003",
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "01/03/2003",
+    "h": "West Ham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 0,
+    "d": "01/03/2003",
     "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "24/02/2003",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "23/02/2003",
+    "h": "Birmingham City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "23/02/2003",
+    "h": "West Brom",
+    "a": "West Ham United",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "a": "West Ham United",
+    "ag": 2,
+    "d": "23/02/2003",
+    "h": "West Bromwich Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "22/02/2003",
+    "h": "Bolton",
+    "a": "Manchester United",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "d": "22/02/2003",
+    "h": "Charlton",
+    "a": "Aston Villa",
+    "hg": 3,
+    "ag": 0
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 2,
+    "d": "22/02/2003",
+    "h": "Chelsea",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "22/02/2003",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 3,
+    "d": "22/02/2003",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 5,
+    "d": "22/02/2003",
+    "h": "Manchester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 3,
+    "d": "22/02/2003",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "22/02/2003",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "22/02/2003",
+    "h": "Charlton Athletic",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "19/02/2003",
+    "h": "Fulham",
+    "a": "West Brom",
+    "hg": 3,
+    "ag": 0
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 0,
+    "d": "19/02/2003",
+    "h": "Fulham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "09/02/2003",
+    "h": "Manchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "09/02/2003",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 3,
+    "d": "08/02/2003",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "08/02/2003",
+    "h": "Blackburn Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "08/02/2003",
+    "h": "Charlton",
+    "a": "Everton",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "08/02/2003",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "08/02/2003",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "08/02/2003",
+    "h": "Liverpool",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "08/02/2003",
+    "h": "Tottenham Hotspur",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "08/02/2003",
+    "h": "West Brom",
+    "a": "Bolton",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "08/02/2003",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "08/02/2003",
+    "h": "West Bromwich Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "04/02/2003",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 0,
+    "d": "02/02/2003",
+    "h": "Aston Villa",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 3,
+    "d": "02/02/2003",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "01/02/2003",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "01/02/2003",
+    "h": "Bolton",
+    "a": "Birmingham City",
+    "hg": 4,
+    "ag": 2
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "01/02/2003",
+    "h": "Chelsea",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "01/02/2003",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "01/02/2003",
+    "h": "Manchester City",
+    "a": "West Brom",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "01/02/2003",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "01/02/2003",
+    "h": "Sunderland",
+    "a": "Charlton",
+    "hg": 1,
+    "ag": 3
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 2,
+    "d": "01/02/2003",
+    "h": "Bolton Wanderers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 2,
+    "d": "01/02/2003",
+    "h": "Manchester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 3,
+    "d": "01/02/2003",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "29/01/2003",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "29/01/2003",
+    "h": "Manchester City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "29/01/2003",
+    "h": "Tottenham Hotspur",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "29/01/2003",
+    "h": "West Brom",
+    "a": "Charlton",
+    "hg": 0,
+    "ag": 1
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 1,
+    "d": "29/01/2003",
+    "h": "West Ham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "29/01/2003",
+    "h": "West Bromwich Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "28/01/2003",
+    "h": "Bolton",
+    "a": "Everton",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "28/01/2003",
+    "h": "Chelsea",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 5,
+    "d": "28/01/2003",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "28/01/2003",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 2,
+    "d": "28/01/2003",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "22/01/2003",
+    "h": "Charlton",
+    "a": "West Ham United",
+    "hg": 4,
+    "ag": 2
+  },
+  {
+    "d": "22/01/2003",
+    "h": "Newcastle United",
+    "a": "Bolton",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "a": "West Ham United",
+    "ag": 2,
+    "d": "22/01/2003",
+    "h": "Charlton Athletic",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "22/01/2003",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "19/01/2003",
+    "h": "Arsenal",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "19/01/2003",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "18/01/2003",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "18/01/2003",
+    "h": "Blackburn Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "18/01/2003",
+    "h": "Charlton",
+    "a": "Bolton",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "18/01/2003",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "18/01/2003",
+    "h": "Leeds United",
+    "a": "West Brom",
+    "hg": 0,
+    "ag": 0
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "18/01/2003",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 0,
+    "d": "18/01/2003",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "18/01/2003",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "18/01/2003",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 0,
+    "d": "18/01/2003",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 4,
+    "d": "12/01/2003",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 3,
+    "d": "12/01/2003",
+    "h": "Tottenham Hotspur",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "11/01/2003",
+    "h": "Bolton",
+    "a": "Fulham",
+    "hg": 0,
+    "ag": 0
+  },
+  {
+    "d": "11/01/2003",
+    "h": "Chelsea",
+    "a": "Charlton",
+    "hg": 4,
+    "ag": 1
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "11/01/2003",
+    "h": "Liverpool",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "11/01/2003",
+    "h": "Manchester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 2,
+    "d": "11/01/2003",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 0,
+    "d": "11/01/2003",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "11/01/2003",
+    "h": "West Brom",
+    "a": "Manchester United",
+    "hg": 1,
+    "ag": 3
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 2,
+    "d": "11/01/2003",
+    "h": "West Ham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "11/01/2003",
+    "h": "Bolton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "11/01/2003",
+    "h": "Chelsea",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 3,
+    "d": "11/01/2003",
+    "h": "West Bromwich Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 2,
+    "d": "01/01/2003",
+    "h": "Arsenal",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "01/01/2003",
+    "h": "Aston Villa",
+    "a": "Bolton",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "01/01/2003",
+    "h": "Blackburn Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "01/01/2003",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "01/01/2003",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "01/01/2003",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 0,
+    "d": "01/01/2003",
+    "h": "Newcastle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "01/01/2003",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "01/01/2003",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "29/12/2002",
+    "h": "Arsenal",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "29/12/2002",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "28/12/2002",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 2,
+    "d": "28/12/2002",
+    "h": "Blackburn Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "28/12/2002",
+    "h": "Charlton",
+    "a": "West Brom",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "d": "28/12/2002",
+    "h": "Everton",
     "a": "Bolton",
     "hg": 0,
     "ag": 0
   },
   {
-    "d": "03/05/2003",
-    "h": "West Ham United",
-    "a": "Chelsea",
-    "hg": 1,
-    "ag": 0
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "28/12/2002",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "04/05/2003",
-    "h": "Arsenal",
-    "a": "Leeds United",
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "28/12/2002",
+    "h": "Leeds United",
     "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "28/12/2002",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "28/12/2002",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 0,
+    "d": "28/12/2002",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "28/12/2002",
+    "h": "Everton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "26/12/2002",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "26/12/2002",
+    "h": "Bolton",
+    "a": "Newcastle United",
+    "hg": 4,
     "ag": 3
   },
   {
-    "d": "07/05/2003",
-    "h": "Arsenal",
     "a": "Southampton",
-    "hg": 6,
-    "ag": 1
+    "ag": 0,
+    "d": "26/12/2002",
+    "h": "Chelsea",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "11/05/2003",
-    "h": "Birmingham City",
-    "a": "West Ham United",
+    "a": "Blackburn Rovers",
+    "ag": 1,
+    "d": "26/12/2002",
+    "h": "Liverpool",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "26/12/2002",
+    "h": "Manchester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "26/12/2002",
+    "h": "Middlesbrough",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "26/12/2002",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "26/12/2002",
+    "h": "Tottenham Hotspur",
+    "a": "Charlton",
     "hg": 2,
     "ag": 2
   },
   {
-    "d": "11/05/2003",
-    "h": "Bolton",
-    "a": "Middlesbrough",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "11/05/2003",
-    "h": "Charlton",
-    "a": "Fulham",
-    "hg": 0,
-    "ag": 1
-  },
-  {
-    "d": "11/05/2003",
-    "h": "Chelsea",
-    "a": "Liverpool",
-    "hg": 2,
-    "ag": 1
-  },
-  {
-    "d": "11/05/2003",
-    "h": "Everton",
-    "a": "Manchester United",
+    "d": "26/12/2002",
+    "h": "West Brom",
+    "a": "Arsenal",
     "hg": 1,
     "ag": 2
   },
   {
-    "d": "11/05/2003",
+    "a": "Fulham",
+    "ag": 1,
+    "d": "26/12/2002",
+    "h": "West Ham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 2,
+    "d": "26/12/2002",
+    "h": "Tottenham Hotspur",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 3,
+    "d": "26/12/2002",
+    "h": "Bolton Wanderers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "26/12/2002",
+    "h": "West Bromwich Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 3,
+    "d": "23/12/2002",
+    "h": "Manchester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 0,
+    "d": "22/12/2002",
+    "h": "Blackburn Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "22/12/2002",
+    "h": "Liverpool",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "21/12/2002",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "21/12/2002",
+    "h": "Birmingham City",
+    "a": "Charlton",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "21/12/2002",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "21/12/2002",
     "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "21/12/2002",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "21/12/2002",
+    "h": "West Brom",
+    "a": "Sunderland",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "d": "21/12/2002",
+    "h": "West Ham United",
+    "a": "Bolton",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "21/12/2002",
+    "h": "Birmingham City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 2,
+    "d": "21/12/2002",
+    "h": "West Bromwich Albion",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "21/12/2002",
+    "h": "West Ham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "16/12/2002",
+    "h": "Bolton",
+    "a": "Leeds United",
+    "hg": 0,
+    "ag": 3
+  },
+  {
+    "a": "Leeds United",
+    "ag": 3,
+    "d": "16/12/2002",
+    "h": "Bolton Wanderers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "15/12/2002",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "15/12/2002",
+    "h": "Sunderland",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "15/12/2002",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "14/12/2002",
+    "h": "Aston Villa",
+    "a": "West Brom",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "d": "14/12/2002",
+    "h": "Charlton",
+    "a": "Manchester City",
+    "hg": 2,
+    "ag": 2
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 1,
+    "d": "14/12/2002",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "14/12/2002",
+    "h": "Manchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "14/12/2002",
+    "h": "Middlesbrough",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "14/12/2002",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 1,
+    "d": "14/12/2002",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "14/12/2002",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 3,
+    "d": "09/12/2002",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "08/12/2002",
+    "h": "Tottenham Hotspur",
+    "a": "West Brom",
+    "hg": 3,
+    "ag": 1
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 1,
+    "d": "08/12/2002",
+    "h": "Tottenham Hotspur",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 1,
+    "d": "07/12/2002",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "07/12/2002",
+    "h": "Bolton",
+    "a": "Blackburn Rovers",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "d": "07/12/2002",
+    "h": "Charlton",
+    "a": "Liverpool",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "a": "Chelsea",
+    "ag": 3,
+    "d": "07/12/2002",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "07/12/2002",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 0,
+    "d": "07/12/2002",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 2,
+    "d": "07/12/2002",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "07/12/2002",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 1,
+    "d": "07/12/2002",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 0,
+    "d": "07/12/2002",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "02/12/2002",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "01/12/2002",
+    "h": "Leeds United",
+    "a": "Charlton",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "01/12/2002",
+    "h": "Liverpool",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "01/12/2002",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 2,
+    "d": "01/12/2002",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "30/11/2002",
+    "h": "Arsenal",
     "a": "Aston Villa",
     "hg": 3,
     "ag": 1
   },
   {
-    "d": "11/05/2003",
+    "d": "30/11/2002",
+    "h": "Birmingham City",
+    "a": "Tottenham Hotspur",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "d": "30/11/2002",
+    "h": "Blackburn Rovers",
+    "a": "Fulham",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "d": "30/11/2002",
+    "h": "Chelsea",
+    "a": "Sunderland",
+    "hg": 3,
+    "ag": 0
+  },
+  {
+    "d": "30/11/2002",
     "h": "Manchester City",
-    "a": "Southampton",
+    "a": "Bolton",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "d": "30/11/2002",
+    "h": "West Brom",
+    "a": "Middlesbrough",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "d": "24/11/2002",
+    "h": "Charlton",
+    "a": "Blackburn Rovers",
+    "hg": 3,
+    "ag": 1
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "24/11/2002",
+    "h": "Tottenham Hotspur",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 1,
+    "d": "24/11/2002",
+    "h": "Charlton Athletic",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "23/11/2002",
+    "h": "Aston Villa",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "23/11/2002",
+    "h": "Bolton",
+    "a": "Chelsea",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "d": "23/11/2002",
+    "h": "Everton",
+    "a": "West Brom",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "23/11/2002",
+    "h": "Fulham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 3,
+    "d": "23/11/2002",
+    "h": "Manchester United",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "23/11/2002",
+    "h": "Middlesbrough",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "23/11/2002",
+    "h": "Southampton",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "23/11/2002",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "23/11/2002",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 0,
+    "d": "23/11/2002",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "17/11/2002",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "17/11/2002",
+    "h": "Blackburn Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "17/11/2002",
+    "h": "Leeds United",
+    "a": "Bolton",
+    "hg": 2,
+    "ag": 4
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "17/11/2002",
+    "h": "Liverpool",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "17/11/2002",
+    "h": "West Ham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 4,
+    "d": "17/11/2002",
+    "h": "Leeds United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "16/11/2002",
+    "h": "Arsenal",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "16/11/2002",
+    "h": "Chelsea",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "16/11/2002",
+    "h": "Manchester City",
+    "a": "Charlton",
     "hg": 0,
     "ag": 1
   },
   {
-    "d": "11/05/2003",
-    "h": "Sunderland",
-    "a": "Arsenal",
-    "hg": 0,
-    "ag": 4
+    "a": "Southampton",
+    "ag": 1,
+    "d": "16/11/2002",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
   },
   {
-    "d": "11/05/2003",
+    "d": "16/11/2002",
+    "h": "West Brom",
+    "a": "Aston Villa",
+    "hg": 0,
+    "ag": 0
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "16/11/2002",
+    "h": "Manchester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "16/11/2002",
+    "h": "West Bromwich Albion",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "10/11/2002",
+    "h": "Sunderland",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 4,
+    "d": "10/11/2002",
+    "h": "West Ham United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "09/11/2002",
+    "h": "Arsenal",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 1,
+    "d": "09/11/2002",
+    "h": "Aston Villa",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "09/11/2002",
+    "h": "Bolton",
+    "a": "West Brom",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "09/11/2002",
+    "h": "Chelsea",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "09/11/2002",
+    "h": "Everton",
+    "a": "Charlton",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "09/11/2002",
+    "h": "Manchester City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 0,
+    "d": "09/11/2002",
+    "h": "Middlesbrough",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 1,
+    "d": "09/11/2002",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 1,
+    "d": "09/11/2002",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "09/11/2002",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "04/11/2002",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "03/11/2002",
+    "h": "Blackburn Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "03/11/2002",
+    "h": "Charlton",
+    "a": "Sunderland",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "03/11/2002",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "03/11/2002",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "03/11/2002",
     "h": "Tottenham Hotspur",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "03/11/2002",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "02/11/2002",
+    "h": "Birmingham City",
+    "a": "Bolton",
+    "hg": 3,
+    "ag": 1
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "02/11/2002",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "02/11/2002",
+    "h": "Manchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "02/11/2002",
+    "h": "West Brom",
+    "a": "Manchester City",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "02/11/2002",
+    "h": "Birmingham City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "02/11/2002",
+    "h": "West Bromwich Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "28/10/2002",
+    "h": "Bolton",
+    "a": "Sunderland",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "28/10/2002",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "27/10/2002",
+    "h": "Southampton",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "27/10/2002",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 2,
+    "d": "26/10/2002",
+    "h": "Arsenal",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 2,
+    "d": "26/10/2002",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "26/10/2002",
+    "h": "Chelsea",
+    "a": "West Brom",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "26/10/2002",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 1,
+    "d": "26/10/2002",
+    "h": "Manchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "26/10/2002",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "26/10/2002",
+    "h": "Newcastle United",
+    "a": "Charlton",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 0,
+    "d": "26/10/2002",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 1,
+    "d": "26/10/2002",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "23/10/2002",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "21/10/2002",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "20/10/2002",
+    "h": "Charlton",
+    "a": "Middlesbrough",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "d": "20/10/2002",
+    "h": "Tottenham Hotspur",
+    "a": "Bolton",
+    "hg": 3,
+    "ag": 1
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "20/10/2002",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "20/10/2002",
+    "h": "Tottenham Hotspur",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 2,
+    "d": "19/10/2002",
+    "h": "Blackburn Rovers",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "19/10/2002",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 1,
+    "d": "19/10/2002",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "19/10/2002",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 3,
+    "d": "19/10/2002",
+    "h": "Manchester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 1,
+    "d": "19/10/2002",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "19/10/2002",
+    "h": "West Brom",
+    "a": "Birmingham City",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "19/10/2002",
+    "h": "West Bromwich Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "07/10/2002",
+    "h": "Manchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "06/10/2002",
+    "h": "Arsenal",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "06/10/2002",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 2,
+    "d": "06/10/2002",
+    "h": "Blackburn Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "06/10/2002",
+    "h": "Fulham",
+    "a": "Charlton",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "06/10/2002",
+    "h": "Liverpool",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "06/10/2002",
+    "h": "Fulham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "05/10/2002",
+    "h": "Middlesbrough",
+    "a": "Bolton",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "d": "05/10/2002",
+    "h": "Newcastle United",
+    "a": "West Brom",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "a": "Manchester City",
+    "ag": 0,
+    "d": "05/10/2002",
+    "h": "Southampton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 2,
+    "d": "05/10/2002",
+    "h": "West Ham United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 0,
+    "d": "05/10/2002",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 1,
+    "d": "05/10/2002",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "30/09/2002",
+    "h": "West Brom",
     "a": "Blackburn Rovers",
     "hg": 0,
-    "ag": 4
+    "ag": 2
   },
   {
-    "d": "11/05/2003",
-    "h": "West Brom",
     "a": "Newcastle United",
+    "ag": 2,
+    "d": "28/09/2002",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "28/09/2002",
+    "h": "Bolton",
+    "a": "Southampton",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "d": "28/09/2002",
+    "h": "Charlton",
+    "a": "Manchester United",
+    "hg": 1,
+    "ag": 3
+  },
+  {
+    "a": "West Ham United",
+    "ag": 3,
+    "d": "28/09/2002",
+    "h": "Chelsea",
     "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 0,
+    "d": "28/09/2002",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 4,
+    "d": "28/09/2002",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 3,
+    "d": "28/09/2002",
+    "h": "Manchester City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "28/09/2002",
+    "h": "Sunderland",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 3,
+    "d": "28/09/2002",
+    "h": "Tottenham Hotspur",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 1,
+    "d": "28/09/2002",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 3,
+    "d": "28/09/2002",
+    "h": "Charlton Athletic",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 0,
+    "d": "23/09/2002",
+    "h": "Fulham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 2,
+    "d": "22/09/2002",
+    "h": "Aston Villa",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 0,
+    "d": "22/09/2002",
+    "h": "Blackburn Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "21/09/2002",
+    "h": "Arsenal",
+    "a": "Bolton",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "d": "21/09/2002",
+    "h": "Liverpool",
+    "a": "West Brom",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "21/09/2002",
+    "h": "Manchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "21/09/2002",
+    "h": "Middlesbrough",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "21/09/2002",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "21/09/2002",
+    "h": "Southampton",
+    "a": "Charlton",
+    "hg": 0,
+    "ag": 0
+  },
+  {
+    "a": "Manchester City",
+    "ag": 0,
+    "d": "21/09/2002",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "21/09/2002",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 0,
+    "d": "21/09/2002",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "21/09/2002",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "16/09/2002",
+    "h": "Birmingham City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 2,
+    "d": "15/09/2002",
+    "h": "Manchester City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 2,
+    "d": "15/09/2002",
+    "h": "Tottenham Hotspur",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "14/09/2002",
+    "h": "Bolton",
+    "a": "Liverpool",
+    "hg": 2,
+    "ag": 3
+  },
+  {
+    "d": "14/09/2002",
+    "h": "Charlton",
+    "a": "Arsenal",
+    "hg": 0,
+    "ag": 3
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "14/09/2002",
+    "h": "Chelsea",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 1,
+    "d": "14/09/2002",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 0,
+    "d": "14/09/2002",
+    "h": "Leeds United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 3,
+    "d": "14/09/2002",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "14/09/2002",
+    "h": "West Brom",
+    "a": "Southampton",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "a": "Liverpool",
+    "ag": 3,
+    "d": "14/09/2002",
+    "h": "Bolton Wanderers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Arsenal",
+    "ag": 3,
+    "d": "14/09/2002",
+    "h": "Charlton Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "14/09/2002",
+    "h": "West Bromwich Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "11/09/2002",
+    "h": "Aston Villa",
+    "a": "Charlton",
+    "hg": 2,
+    "ag": 0
+  },
+  {
+    "a": "Chelsea",
+    "ag": 3,
+    "d": "11/09/2002",
+    "h": "Blackburn Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 2,
+    "d": "11/09/2002",
+    "h": "Fulham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 2,
+    "d": "11/09/2002",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "11/09/2002",
+    "h": "Manchester United",
+    "a": "Bolton",
+    "hg": 0,
+    "ag": 1
+  },
+  {
+    "a": "Leeds United",
+    "ag": 2,
+    "d": "11/09/2002",
+    "h": "Newcastle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 0,
+    "d": "11/09/2002",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "11/09/2002",
+    "h": "West Ham United",
+    "a": "West Brom",
+    "hg": 0,
+    "ag": 1
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 0,
+    "d": "11/09/2002",
+    "h": "Aston Villa",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 1,
+    "d": "11/09/2002",
+    "h": "West Ham United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "11/09/2002",
+    "h": "Manchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester City",
+    "ag": 1,
+    "d": "10/09/2002",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "10/09/2002",
+    "h": "Middlesbrough",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "03/09/2002",
+    "h": "Manchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 2,
+    "d": "02/09/2002",
+    "h": "Liverpool",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "01/09/2002",
+    "h": "Bolton",
+    "a": "Aston Villa",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "a": "Arsenal",
+    "ag": 1,
+    "d": "01/09/2002",
+    "h": "Chelsea",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "01/09/2002",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "31/08/2002",
+    "h": "Birmingham City",
+    "a": "Leeds United",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "d": "31/08/2002",
+    "h": "Manchester City",
+    "a": "Everton",
+    "hg": 3,
+    "ag": 1
+  },
+  {
+    "d": "31/08/2002",
+    "h": "Middlesbrough",
+    "a": "Blackburn Rovers",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "d": "31/08/2002",
+    "h": "Sunderland",
+    "a": "Manchester United",
+    "hg": 1,
+    "ag": 1
+  },
+  {
+    "d": "31/08/2002",
+    "h": "Tottenham Hotspur",
+    "a": "Southampton",
+    "hg": 2,
+    "ag": 1
+  },
+  {
+    "d": "31/08/2002",
+    "h": "West Brom",
+    "a": "Fulham",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "d": "31/08/2002",
+    "h": "West Ham United",
+    "a": "Charlton",
+    "hg": 0,
     "ag": 2
+  },
+  {
+    "a": "Manchester City",
+    "ag": 0,
+    "d": "28/08/2002",
+    "h": "Aston Villa",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 2,
+    "d": "28/08/2002",
+    "h": "Blackburn Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 1,
+    "d": "28/08/2002",
+    "h": "Everton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "28/08/2002",
+    "h": "Leeds United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 1,
+    "d": "28/08/2002",
+    "h": "Southampton",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "27/08/2002",
+    "h": "Arsenal",
+    "a": "West Brom",
+    "hg": 5,
+    "ag": 2
+  },
+  {
+    "d": "27/08/2002",
+    "h": "Charlton",
+    "a": "Tottenham Hotspur",
+    "hg": 0,
+    "ag": 1
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 1,
+    "d": "27/08/2002",
+    "h": "Charlton Athletic",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 2,
+    "d": "27/08/2002",
+    "h": "Arsenal",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Blackburn Rovers",
+    "ag": 1,
+    "d": "24/08/2002",
+    "h": "Birmingham City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "24/08/2002",
+    "h": "Bolton",
+    "a": "Charlton",
+    "hg": 1,
+    "ag": 2
+  },
+  {
+    "a": "Southampton",
+    "ag": 0,
+    "d": "24/08/2002",
+    "h": "Liverpool",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newcastle United",
+    "ag": 0,
+    "d": "24/08/2002",
+    "h": "Manchester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fulham",
+    "ag": 2,
+    "d": "24/08/2002",
+    "h": "Middlesbrough",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Everton",
+    "ag": 1,
+    "d": "24/08/2002",
+    "h": "Sunderland",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "24/08/2002",
+    "h": "Tottenham Hotspur",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "24/08/2002",
+    "h": "West Brom",
+    "a": "Leeds United",
+    "hg": 1,
+    "ag": 3
+  },
+  {
+    "a": "Arsenal",
+    "ag": 2,
+    "d": "24/08/2002",
+    "h": "West Ham United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Charlton Athletic",
+    "ag": 2,
+    "d": "24/08/2002",
+    "h": "Bolton Wanderers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 3,
+    "d": "24/08/2002",
+    "h": "West Bromwich Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Manchester United",
+    "ag": 2,
+    "d": "23/08/2002",
+    "h": "Chelsea",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Ham United",
+    "ag": 0,
+    "d": "19/08/2002",
+    "h": "Newcastle United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Birmingham City",
+    "ag": 0,
+    "d": "18/08/2002",
+    "h": "Arsenal",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Liverpool",
+    "ag": 1,
+    "d": "18/08/2002",
+    "h": "Aston Villa",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 0,
+    "d": "17/08/2002",
+    "h": "Blackburn Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "17/08/2002",
+    "h": "Charlton",
+    "a": "Chelsea",
+    "hg": 2,
+    "ag": 3
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 2,
+    "d": "17/08/2002",
+    "h": "Everton",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "17/08/2002",
+    "h": "Fulham",
+    "a": "Bolton",
+    "hg": 4,
+    "ag": 1
+  },
+  {
+    "a": "Manchester City",
+    "ag": 0,
+    "d": "17/08/2002",
+    "h": "Leeds United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "d": "17/08/2002",
+    "h": "Manchester United",
+    "a": "West Brom",
+    "hg": 1,
+    "ag": 0
+  },
+  {
+    "a": "Middlesbrough",
+    "ag": 0,
+    "d": "17/08/2002",
+    "h": "Southampton",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chelsea",
+    "ag": 3,
+    "d": "17/08/2002",
+    "h": "Charlton Athletic",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bolton Wanderers",
+    "ag": 1,
+    "d": "17/08/2002",
+    "h": "Fulham",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "West Bromwich Albion",
+    "ag": 0,
+    "d": "17/08/2002",
+    "h": "Manchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
   }
 ]

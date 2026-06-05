@@ -1,0 +1,4354 @@
+[
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "26/05/2025",
+    "h": "AFC Wimbledon",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "17/05/2025",
+    "h": "AFC Wimbledon",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 1,
+    "d": "16/05/2025",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "11/05/2025",
+    "h": "Chesterfield",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 1,
+    "d": "10/05/2025",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 1,
+    "d": "03/05/2025",
+    "h": "Accrington Stanley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 0,
+    "d": "03/05/2025",
+    "h": "Bradford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "03/05/2025",
+    "h": "Bromley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 2,
+    "d": "03/05/2025",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 0,
+    "d": "03/05/2025",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "03/05/2025",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 1,
+    "d": "03/05/2025",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 2,
+    "d": "03/05/2025",
+    "h": "Morecambe",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 4,
+    "d": "03/05/2025",
+    "h": "Newport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "03/05/2025",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "03/05/2025",
+    "h": "Port Vale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "03/05/2025",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 2,
+    "d": "26/04/2025",
+    "h": "AFC Wimbledon",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 1,
+    "d": "26/04/2025",
+    "h": "Doncaster Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 3,
+    "d": "26/04/2025",
+    "h": "Harrogate Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 3,
+    "d": "26/04/2025",
+    "h": "Barrow",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "26/04/2025",
+    "h": "Cheltenham Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 1,
+    "d": "26/04/2025",
+    "h": "Chesterfield",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 0,
+    "d": "26/04/2025",
+    "h": "Fleetwood Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "26/04/2025",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "26/04/2025",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "26/04/2025",
+    "h": "Salford City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "26/04/2025",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "26/04/2025",
+    "h": "Walsall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "21/04/2025",
+    "h": "Newport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "21/04/2025",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "21/04/2025",
+    "h": "Barrow",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 3,
+    "d": "21/04/2025",
+    "h": "Chesterfield",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "21/04/2025",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "21/04/2025",
+    "h": "Doncaster Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 0,
+    "d": "21/04/2025",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 1,
+    "d": "21/04/2025",
+    "h": "Harrogate Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 3,
+    "d": "21/04/2025",
+    "h": "Morecambe",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 2,
+    "d": "21/04/2025",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 2,
+    "d": "21/04/2025",
+    "h": "Port Vale",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 1,
+    "d": "21/04/2025",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 0,
+    "d": "18/04/2025",
+    "h": "AFC Wimbledon",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "18/04/2025",
+    "h": "Bromley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 2,
+    "d": "18/04/2025",
+    "h": "Carlisle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "18/04/2025",
+    "h": "Cheltenham Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "18/04/2025",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 0,
+    "d": "18/04/2025",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 4,
+    "d": "18/04/2025",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 0,
+    "d": "18/04/2025",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 2,
+    "d": "18/04/2025",
+    "h": "Salford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 3,
+    "d": "18/04/2025",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 2,
+    "d": "18/04/2025",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "17/04/2025",
+    "h": "Bradford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "15/04/2025",
+    "h": "Salford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 1,
+    "d": "12/04/2025",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 4,
+    "d": "12/04/2025",
+    "h": "Swindon Town",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 3,
+    "d": "12/04/2025",
+    "h": "Accrington Stanley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "12/04/2025",
+    "h": "Barrow",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 0,
+    "d": "12/04/2025",
+    "h": "Chesterfield",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "12/04/2025",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 2,
+    "d": "12/04/2025",
+    "h": "Harrogate Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "12/04/2025",
+    "h": "Morecambe",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "12/04/2025",
+    "h": "Newport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 0,
+    "d": "12/04/2025",
+    "h": "Port Vale",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 3,
+    "d": "11/04/2025",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 3,
+    "d": "10/04/2025",
+    "h": "Crewe Alexandra",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "08/04/2025",
+    "h": "Chesterfield",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "05/04/2025",
+    "h": "Cheltenham Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 3,
+    "d": "05/04/2025",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 0,
+    "d": "05/04/2025",
+    "h": "Tranmere Rovers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 0,
+    "d": "05/04/2025",
+    "h": "AFC Wimbledon",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "05/04/2025",
+    "h": "Bradford City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "05/04/2025",
+    "h": "Bromley",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 2,
+    "d": "05/04/2025",
+    "h": "Carlisle United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "05/04/2025",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 4,
+    "d": "05/04/2025",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 1,
+    "d": "05/04/2025",
+    "h": "Grimsby Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 3,
+    "d": "05/04/2025",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 2,
+    "d": "05/04/2025",
+    "h": "Salford City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "02/04/2025",
+    "h": "Notts County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 4,
+    "d": "01/04/2025",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 1,
+    "d": "01/04/2025",
+    "h": "Barrow",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "01/04/2025",
+    "h": "Chesterfield",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "01/04/2025",
+    "h": "Crewe Alexandra",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "01/04/2025",
+    "h": "Doncaster Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "01/04/2025",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 2,
+    "d": "01/04/2025",
+    "h": "Harrogate Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "01/04/2025",
+    "h": "Morecambe",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 1,
+    "d": "01/04/2025",
+    "h": "Newport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 0,
+    "d": "01/04/2025",
+    "h": "Port Vale",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 1,
+    "d": "01/04/2025",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 0,
+    "d": "29/03/2025",
+    "h": "Accrington Stanley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "29/03/2025",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 1,
+    "d": "29/03/2025",
+    "h": "Barrow",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 3,
+    "d": "29/03/2025",
+    "h": "Bromley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "29/03/2025",
+    "h": "Doncaster Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "29/03/2025",
+    "h": "Harrogate Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 4,
+    "d": "29/03/2025",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "29/03/2025",
+    "h": "Morecambe",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "29/03/2025",
+    "h": "Newport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 1,
+    "d": "29/03/2025",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 2,
+    "d": "28/03/2025",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "28/03/2025",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 1,
+    "d": "25/03/2025",
+    "h": "Port Vale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "25/03/2025",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "22/03/2025",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 2,
+    "d": "22/03/2025",
+    "h": "AFC Wimbledon",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "22/03/2025",
+    "h": "Bradford City",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 1,
+    "d": "22/03/2025",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "22/03/2025",
+    "h": "Cheltenham Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 0,
+    "d": "22/03/2025",
+    "h": "Chesterfield",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "22/03/2025",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "22/03/2025",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 0,
+    "d": "22/03/2025",
+    "h": "Grimsby Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "22/03/2025",
+    "h": "Port Vale",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "22/03/2025",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "15/03/2025",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 3,
+    "d": "15/03/2025",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "15/03/2025",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "15/03/2025",
+    "h": "Bradford City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 2,
+    "d": "15/03/2025",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 0,
+    "d": "15/03/2025",
+    "h": "Colchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 1,
+    "d": "15/03/2025",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 2,
+    "d": "15/03/2025",
+    "h": "Morecambe",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 0,
+    "d": "15/03/2025",
+    "h": "Newport County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 2,
+    "d": "15/03/2025",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "15/03/2025",
+    "h": "Port Vale",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "13/03/2025",
+    "h": "Bromley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 0,
+    "d": "11/03/2025",
+    "h": "Accrington Stanley",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 2,
+    "d": "11/03/2025",
+    "h": "AFC Wimbledon",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "11/03/2025",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "11/03/2025",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 4,
+    "d": "11/03/2025",
+    "h": "Salford City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "08/03/2025",
+    "h": "AFC Wimbledon",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 3,
+    "d": "08/03/2025",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "08/03/2025",
+    "h": "Barrow",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "08/03/2025",
+    "h": "Cheltenham Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 1,
+    "d": "08/03/2025",
+    "h": "Chesterfield",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "08/03/2025",
+    "h": "Doncaster Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "08/03/2025",
+    "h": "Fleetwood Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 0,
+    "d": "08/03/2025",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "08/03/2025",
+    "h": "Harrogate Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 1,
+    "d": "08/03/2025",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "08/03/2025",
+    "h": "Salford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 1,
+    "d": "08/03/2025",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "04/03/2025",
+    "h": "Accrington Stanley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "04/03/2025",
+    "h": "Bradford City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 0,
+    "d": "04/03/2025",
+    "h": "Bromley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "04/03/2025",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 0,
+    "d": "04/03/2025",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 4,
+    "d": "04/03/2025",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "04/03/2025",
+    "h": "Grimsby Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 0,
+    "d": "04/03/2025",
+    "h": "Morecambe",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "04/03/2025",
+    "h": "Newport County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 2,
+    "d": "04/03/2025",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 0,
+    "d": "04/03/2025",
+    "h": "Port Vale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 2,
+    "d": "04/03/2025",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 2,
+    "d": "01/03/2025",
+    "h": "Salford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "01/03/2025",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 1,
+    "d": "01/03/2025",
+    "h": "AFC Wimbledon",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "01/03/2025",
+    "h": "Cheltenham Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 3,
+    "d": "01/03/2025",
+    "h": "Chesterfield",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 0,
+    "d": "01/03/2025",
+    "h": "Doncaster Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "01/03/2025",
+    "h": "Fleetwood Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "01/03/2025",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "01/03/2025",
+    "h": "Harrogate Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "01/03/2025",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "01/03/2025",
+    "h": "Walsall",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "27/02/2025",
+    "h": "Barrow",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 1,
+    "d": "25/02/2025",
+    "h": "Bromley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "25/02/2025",
+    "h": "Cheltenham Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 2,
+    "d": "25/02/2025",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "25/02/2025",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 0,
+    "d": "22/02/2025",
+    "h": "Crewe Alexandra",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "22/02/2025",
+    "h": "Morecambe",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "22/02/2025",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "22/02/2025",
+    "h": "Bradford City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 0,
+    "d": "22/02/2025",
+    "h": "Bromley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "22/02/2025",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 1,
+    "d": "22/02/2025",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 1,
+    "d": "22/02/2025",
+    "h": "Grimsby Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 3,
+    "d": "22/02/2025",
+    "h": "Newport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "22/02/2025",
+    "h": "Notts County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 1,
+    "d": "22/02/2025",
+    "h": "Port Vale",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 0,
+    "d": "22/02/2025",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 0,
+    "d": "18/02/2025",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "18/02/2025",
+    "h": "Morecambe",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "18/02/2025",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 0,
+    "d": "15/02/2025",
+    "h": "AFC Wimbledon",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 2,
+    "d": "15/02/2025",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 0,
+    "d": "15/02/2025",
+    "h": "Bromley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "15/02/2025",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 2,
+    "d": "15/02/2025",
+    "h": "Cheltenham Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "15/02/2025",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "15/02/2025",
+    "h": "Harrogate Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "15/02/2025",
+    "h": "Morecambe",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 0,
+    "d": "15/02/2025",
+    "h": "Newport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "15/02/2025",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 1,
+    "d": "15/02/2025",
+    "h": "Walsall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "13/02/2025",
+    "h": "Port Vale",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "11/02/2025",
+    "h": "AFC Wimbledon",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "11/02/2025",
+    "h": "Barrow",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "11/02/2025",
+    "h": "Bradford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "11/02/2025",
+    "h": "Newport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 0,
+    "d": "11/02/2025",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "11/02/2025",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 0,
+    "d": "08/02/2025",
+    "h": "Bradford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 3,
+    "d": "08/02/2025",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 0,
+    "d": "08/02/2025",
+    "h": "Accrington Stanley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "08/02/2025",
+    "h": "Barrow",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "08/02/2025",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 3,
+    "d": "08/02/2025",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "08/02/2025",
+    "h": "Fleetwood Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "08/02/2025",
+    "h": "Grimsby Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 1,
+    "d": "08/02/2025",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "08/02/2025",
+    "h": "Notts County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "08/02/2025",
+    "h": "Salford City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "06/02/2025",
+    "h": "Chesterfield",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 1,
+    "d": "04/02/2025",
+    "h": "Newport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 3,
+    "d": "04/02/2025",
+    "h": "Salford City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 0,
+    "d": "01/02/2025",
+    "h": "Cheltenham Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "01/02/2025",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 0,
+    "d": "01/02/2025",
+    "h": "AFC Wimbledon",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 2,
+    "d": "01/02/2025",
+    "h": "Bromley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 5,
+    "d": "01/02/2025",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "01/02/2025",
+    "h": "Doncaster Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "01/02/2025",
+    "h": "Harrogate Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 2,
+    "d": "01/02/2025",
+    "h": "Morecambe",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 0,
+    "d": "01/02/2025",
+    "h": "Newport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "01/02/2025",
+    "h": "Port Vale",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 3,
+    "d": "01/02/2025",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 2,
+    "d": "01/02/2025",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 3,
+    "d": "29/01/2025",
+    "h": "Barrow",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "28/01/2025",
+    "h": "Accrington Stanley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "28/01/2025",
+    "h": "Bradford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 0,
+    "d": "28/01/2025",
+    "h": "Chesterfield",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 1,
+    "d": "28/01/2025",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "28/01/2025",
+    "h": "Fleetwood Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "28/01/2025",
+    "h": "Grimsby Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 1,
+    "d": "28/01/2025",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "28/01/2025",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 1,
+    "d": "28/01/2025",
+    "h": "Salford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "28/01/2025",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "25/01/2025",
+    "h": "Bradford City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 0,
+    "d": "25/01/2025",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "25/01/2025",
+    "h": "Barrow",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 1,
+    "d": "25/01/2025",
+    "h": "Cheltenham Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "25/01/2025",
+    "h": "Chesterfield",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "25/01/2025",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "25/01/2025",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 0,
+    "d": "25/01/2025",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "25/01/2025",
+    "h": "Fleetwood Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 1,
+    "d": "25/01/2025",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "25/01/2025",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "24/01/2025",
+    "h": "Newport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "21/01/2025",
+    "h": "Fleetwood Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "21/01/2025",
+    "h": "Harrogate Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 1,
+    "d": "18/01/2025",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "18/01/2025",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 3,
+    "d": "18/01/2025",
+    "h": "Accrington Stanley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "18/01/2025",
+    "h": "AFC Wimbledon",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "18/01/2025",
+    "h": "Bromley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 1,
+    "d": "18/01/2025",
+    "h": "Grimsby Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "18/01/2025",
+    "h": "Morecambe",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 2,
+    "d": "18/01/2025",
+    "h": "Port Vale",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 2,
+    "d": "18/01/2025",
+    "h": "Salford City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 0,
+    "d": "18/01/2025",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "18/01/2025",
+    "h": "Walsall",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "17/01/2025",
+    "h": "Harrogate Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "11/01/2025",
+    "h": "Walsall",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "11/01/2025",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 1,
+    "d": "05/01/2025",
+    "h": "Crewe Alexandra",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "04/01/2025",
+    "h": "Notts County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "04/01/2025",
+    "h": "Bradford City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 2,
+    "d": "04/01/2025",
+    "h": "Barrow",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 2,
+    "d": "04/01/2025",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 2,
+    "d": "04/01/2025",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 1,
+    "d": "04/01/2025",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "04/01/2025",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 3,
+    "d": "02/01/2025",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 2,
+    "d": "02/01/2025",
+    "h": "Newport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 2,
+    "d": "01/01/2025",
+    "h": "Accrington Stanley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 2,
+    "d": "01/01/2025",
+    "h": "Barrow",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 2,
+    "d": "01/01/2025",
+    "h": "Chesterfield",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "01/01/2025",
+    "h": "Crewe Alexandra",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 1,
+    "d": "01/01/2025",
+    "h": "Doncaster Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 2,
+    "d": "01/01/2025",
+    "h": "Harrogate Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "01/01/2025",
+    "h": "Morecambe",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "01/01/2025",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 0,
+    "d": "01/01/2025",
+    "h": "Port Vale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "01/01/2025",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "30/12/2024",
+    "h": "AFC Wimbledon",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "29/12/2024",
+    "h": "Bromley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "29/12/2024",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 1,
+    "d": "29/12/2024",
+    "h": "Bradford City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 5,
+    "d": "29/12/2024",
+    "h": "Cheltenham Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "29/12/2024",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 1,
+    "d": "29/12/2024",
+    "h": "Fleetwood Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 0,
+    "d": "29/12/2024",
+    "h": "Grimsby Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "29/12/2024",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "29/12/2024",
+    "h": "Salford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 1,
+    "d": "29/12/2024",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 0,
+    "d": "29/12/2024",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "26/12/2024",
+    "h": "AFC Wimbledon",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "26/12/2024",
+    "h": "Bradford City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 2,
+    "d": "26/12/2024",
+    "h": "Bromley",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 1,
+    "d": "26/12/2024",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "26/12/2024",
+    "h": "Cheltenham Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "26/12/2024",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 0,
+    "d": "26/12/2024",
+    "h": "Fleetwood Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 1,
+    "d": "26/12/2024",
+    "h": "Grimsby Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "26/12/2024",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 0,
+    "d": "26/12/2024",
+    "h": "Salford City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 0,
+    "d": "26/12/2024",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 0,
+    "d": "21/12/2024",
+    "h": "Barrow",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "21/12/2024",
+    "h": "Doncaster Rovers",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 2,
+    "d": "21/12/2024",
+    "h": "Accrington Stanley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 0,
+    "d": "21/12/2024",
+    "h": "Chesterfield",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "21/12/2024",
+    "h": "Harrogate Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 2,
+    "d": "21/12/2024",
+    "h": "Morecambe",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 3,
+    "d": "21/12/2024",
+    "h": "Newport County",
+    "hg": 6,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 0,
+    "d": "21/12/2024",
+    "h": "Notts County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "21/12/2024",
+    "h": "Port Vale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "21/12/2024",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "20/12/2024",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 2,
+    "d": "20/12/2024",
+    "h": "Gillingham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "16/12/2024",
+    "h": "Fleetwood Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "14/12/2024",
+    "h": "Salford City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 1,
+    "d": "14/12/2024",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 0,
+    "d": "14/12/2024",
+    "h": "AFC Wimbledon",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "14/12/2024",
+    "h": "Bradford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 0,
+    "d": "14/12/2024",
+    "h": "Bromley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 2,
+    "d": "14/12/2024",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "14/12/2024",
+    "h": "Cheltenham Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 0,
+    "d": "14/12/2024",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 2,
+    "d": "14/12/2024",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "14/12/2024",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 0,
+    "d": "14/12/2024",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 1,
+    "d": "07/12/2024",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "07/12/2024",
+    "h": "Port Vale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 2,
+    "d": "07/12/2024",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "07/12/2024",
+    "h": "Chesterfield",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 2,
+    "d": "07/12/2024",
+    "h": "Doncaster Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 0,
+    "d": "07/12/2024",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 3,
+    "d": "07/12/2024",
+    "h": "Harrogate Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 3,
+    "d": "07/12/2024",
+    "h": "Morecambe",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 1,
+    "d": "07/12/2024",
+    "h": "Swindon Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "04/12/2024",
+    "h": "Bromley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 4,
+    "d": "04/12/2024",
+    "h": "Fleetwood Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 2,
+    "d": "03/12/2024",
+    "h": "AFC Wimbledon",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 1,
+    "d": "03/12/2024",
+    "h": "Bradford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "03/12/2024",
+    "h": "Cheltenham Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "03/12/2024",
+    "h": "Colchester United",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 2,
+    "d": "03/12/2024",
+    "h": "Grimsby Town",
+    "hg": 5,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 0,
+    "d": "03/12/2024",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 0,
+    "d": "03/12/2024",
+    "h": "Salford City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 2,
+    "d": "03/12/2024",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "03/12/2024",
+    "h": "Walsall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 2,
+    "d": "26/11/2024",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 2,
+    "d": "26/11/2024",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "25/11/2024",
+    "h": "Port Vale",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "23/11/2024",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 0,
+    "d": "23/11/2024",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 1,
+    "d": "23/11/2024",
+    "h": "AFC Wimbledon",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 0,
+    "d": "23/11/2024",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 0,
+    "d": "23/11/2024",
+    "h": "Chesterfield",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 2,
+    "d": "23/11/2024",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 3,
+    "d": "23/11/2024",
+    "h": "Swindon Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "22/11/2024",
+    "h": "Cheltenham Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 2,
+    "d": "19/11/2024",
+    "h": "AFC Wimbledon",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 2,
+    "d": "16/11/2024",
+    "h": "Accrington Stanley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 3,
+    "d": "16/11/2024",
+    "h": "Barrow",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "16/11/2024",
+    "h": "Bromley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 1,
+    "d": "16/11/2024",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "16/11/2024",
+    "h": "Crewe Alexandra",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 1,
+    "d": "16/11/2024",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 1,
+    "d": "16/11/2024",
+    "h": "Harrogate Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 2,
+    "d": "16/11/2024",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "16/11/2024",
+    "h": "Morecambe",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "16/11/2024",
+    "h": "Newport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 2,
+    "d": "09/11/2024",
+    "h": "Harrogate Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "09/11/2024",
+    "h": "Salford City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "09/11/2024",
+    "h": "AFC Wimbledon",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "09/11/2024",
+    "h": "Barrow",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 1,
+    "d": "09/11/2024",
+    "h": "Cheltenham Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 3,
+    "d": "09/11/2024",
+    "h": "Chesterfield",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "09/11/2024",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 0,
+    "d": "09/11/2024",
+    "h": "Fleetwood Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 0,
+    "d": "09/11/2024",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "09/11/2024",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 1,
+    "d": "09/11/2024",
+    "h": "Tranmere Rovers",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "09/11/2024",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 2,
+    "d": "29/10/2024",
+    "h": "Fleetwood Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 2,
+    "d": "26/10/2024",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 5,
+    "d": "26/10/2024",
+    "h": "Morecambe",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "26/10/2024",
+    "h": "Accrington Stanley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "26/10/2024",
+    "h": "Bradford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 1,
+    "d": "26/10/2024",
+    "h": "Bromley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 1,
+    "d": "26/10/2024",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "26/10/2024",
+    "h": "Crewe Alexandra",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 3,
+    "d": "26/10/2024",
+    "h": "Grimsby Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 0,
+    "d": "26/10/2024",
+    "h": "Newport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 0,
+    "d": "26/10/2024",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 2,
+    "d": "26/10/2024",
+    "h": "Port Vale",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "26/10/2024",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "22/10/2024",
+    "h": "AFC Wimbledon",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "22/10/2024",
+    "h": "Barrow",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 1,
+    "d": "22/10/2024",
+    "h": "Cheltenham Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "22/10/2024",
+    "h": "Chesterfield",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 1,
+    "d": "22/10/2024",
+    "h": "Doncaster Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "22/10/2024",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 2,
+    "d": "22/10/2024",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "22/10/2024",
+    "h": "Harrogate Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "22/10/2024",
+    "h": "Milton Keynes Dons",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "22/10/2024",
+    "h": "Salford City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "22/10/2024",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "22/10/2024",
+    "h": "Walsall",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 0,
+    "d": "19/10/2024",
+    "h": "Accrington Stanley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "19/10/2024",
+    "h": "Bradford City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 2,
+    "d": "19/10/2024",
+    "h": "Bromley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 1,
+    "d": "19/10/2024",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 2,
+    "d": "19/10/2024",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 1,
+    "d": "19/10/2024",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 4,
+    "d": "19/10/2024",
+    "h": "Grimsby Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 3,
+    "d": "19/10/2024",
+    "h": "Morecambe",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 0,
+    "d": "19/10/2024",
+    "h": "Notts County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 1,
+    "d": "19/10/2024",
+    "h": "Port Vale",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 2,
+    "d": "19/10/2024",
+    "h": "Swindon Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 3,
+    "d": "18/10/2024",
+    "h": "Newport County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "12/10/2024",
+    "h": "Chesterfield",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "12/10/2024",
+    "h": "AFC Wimbledon",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 1,
+    "d": "12/10/2024",
+    "h": "Barrow",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 3,
+    "d": "12/10/2024",
+    "h": "Cheltenham Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "12/10/2024",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 2,
+    "d": "12/10/2024",
+    "h": "Gillingham",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 0,
+    "d": "12/10/2024",
+    "h": "Harrogate Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "12/10/2024",
+    "h": "Milton Keynes Dons",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 2,
+    "d": "12/10/2024",
+    "h": "Salford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 2,
+    "d": "12/10/2024",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 1,
+    "d": "07/10/2024",
+    "h": "Bradford City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 0,
+    "d": "05/10/2024",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 3,
+    "d": "05/10/2024",
+    "h": "Grimsby Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 1,
+    "d": "05/10/2024",
+    "h": "Accrington Stanley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 1,
+    "d": "05/10/2024",
+    "h": "Barrow",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "05/10/2024",
+    "h": "Chesterfield",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "05/10/2024",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "05/10/2024",
+    "h": "Crewe Alexandra",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 1,
+    "d": "05/10/2024",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 1,
+    "d": "05/10/2024",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 0,
+    "d": "05/10/2024",
+    "h": "Salford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 0,
+    "d": "05/10/2024",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 2,
+    "d": "01/10/2024",
+    "h": "Bromley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 2,
+    "d": "01/10/2024",
+    "h": "Carlisle United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "01/10/2024",
+    "h": "Cheltenham Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 0,
+    "d": "01/10/2024",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "01/10/2024",
+    "h": "Gillingham",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 5,
+    "d": "01/10/2024",
+    "h": "Harrogate Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 1,
+    "d": "01/10/2024",
+    "h": "Morecambe",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 1,
+    "d": "01/10/2024",
+    "h": "Newport County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 1,
+    "d": "01/10/2024",
+    "h": "Port Vale",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "01/10/2024",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 6,
+    "d": "01/10/2024",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 1,
+    "d": "28/09/2024",
+    "h": "Harrogate Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 0,
+    "d": "28/09/2024",
+    "h": "Walsall",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 1,
+    "d": "28/09/2024",
+    "h": "Bromley",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 3,
+    "d": "28/09/2024",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 2,
+    "d": "28/09/2024",
+    "h": "Cheltenham Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 3,
+    "d": "28/09/2024",
+    "h": "Doncaster Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 0,
+    "d": "28/09/2024",
+    "h": "Gillingham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 1,
+    "d": "28/09/2024",
+    "h": "Morecambe",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "28/09/2024",
+    "h": "Newport County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "28/09/2024",
+    "h": "Port Vale",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 0,
+    "d": "27/09/2024",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 2,
+    "d": "23/09/2024",
+    "h": "Fleetwood Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 2,
+    "d": "21/09/2024",
+    "h": "Accrington Stanley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 1,
+    "d": "21/09/2024",
+    "h": "Chesterfield",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 0,
+    "d": "21/09/2024",
+    "h": "Barrow",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 0,
+    "d": "21/09/2024",
+    "h": "Bradford City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "21/09/2024",
+    "h": "Colchester United",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 0,
+    "d": "21/09/2024",
+    "h": "Crewe Alexandra",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 0,
+    "d": "21/09/2024",
+    "h": "Grimsby Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "21/09/2024",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "21/09/2024",
+    "h": "Notts County",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 2,
+    "d": "21/09/2024",
+    "h": "Salford City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 2,
+    "d": "21/09/2024",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "14/09/2024",
+    "h": "AFC Wimbledon",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 0,
+    "d": "14/09/2024",
+    "h": "Swindon Town",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 1,
+    "d": "14/09/2024",
+    "h": "Accrington Stanley",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 4,
+    "d": "14/09/2024",
+    "h": "Bromley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 3,
+    "d": "14/09/2024",
+    "h": "Carlisle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "14/09/2024",
+    "h": "Gillingham",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 2,
+    "d": "14/09/2024",
+    "h": "Grimsby Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 3,
+    "d": "14/09/2024",
+    "h": "Morecambe",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 0,
+    "d": "14/09/2024",
+    "h": "Port Vale",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 1,
+    "d": "14/09/2024",
+    "h": "Salford City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 1,
+    "d": "14/09/2024",
+    "h": "Walsall",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 0,
+    "d": "12/09/2024",
+    "h": "Harrogate Town",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "07/09/2024",
+    "h": "Barrow",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "07/09/2024",
+    "h": "Bradford City",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 0,
+    "d": "07/09/2024",
+    "h": "Cheltenham Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "07/09/2024",
+    "h": "Chesterfield",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 1,
+    "d": "07/09/2024",
+    "h": "Colchester United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "07/09/2024",
+    "h": "Crewe Alexandra",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "07/09/2024",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "07/09/2024",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 4,
+    "d": "07/09/2024",
+    "h": "Newport County",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 0,
+    "d": "07/09/2024",
+    "h": "Notts County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "02/09/2024",
+    "h": "Salford City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 0,
+    "d": "24/08/2024",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 0,
+    "d": "24/08/2024",
+    "h": "Tranmere Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 0,
+    "d": "24/08/2024",
+    "h": "Barrow",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 1,
+    "d": "24/08/2024",
+    "h": "Bradford City",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 1,
+    "d": "24/08/2024",
+    "h": "Cheltenham Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 1,
+    "d": "24/08/2024",
+    "h": "Chesterfield",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 1,
+    "d": "24/08/2024",
+    "h": "Colchester United",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "24/08/2024",
+    "h": "Doncaster Rovers",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 0,
+    "d": "24/08/2024",
+    "h": "Fleetwood Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 0,
+    "d": "24/08/2024",
+    "h": "Milton Keynes Dons",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "24/08/2024",
+    "h": "Newport County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 1,
+    "d": "22/08/2024",
+    "h": "Notts County",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Fleetwood Town",
+    "ag": 2,
+    "d": "18/08/2024",
+    "h": "Notts County",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "AFC Wimbledon",
+    "ag": 0,
+    "d": "17/08/2024",
+    "h": "Bromley",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Barrow",
+    "ag": 0,
+    "d": "17/08/2024",
+    "h": "Carlisle United",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Harrogate Town",
+    "ag": 3,
+    "d": "17/08/2024",
+    "h": "Accrington Stanley",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Salford City",
+    "ag": 0,
+    "d": "17/08/2024",
+    "h": "Bradford City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Milton Keynes Dons",
+    "ag": 0,
+    "d": "17/08/2024",
+    "h": "Colchester United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Chesterfield",
+    "ag": 5,
+    "d": "17/08/2024",
+    "h": "Crewe Alexandra",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Cheltenham Town",
+    "ag": 2,
+    "d": "17/08/2024",
+    "h": "Grimsby Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Gillingham",
+    "ag": 1,
+    "d": "17/08/2024",
+    "h": "Morecambe",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Doncaster Rovers",
+    "ag": 1,
+    "d": "17/08/2024",
+    "h": "Newport County",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tranmere Rovers",
+    "ag": 0,
+    "d": "17/08/2024",
+    "h": "Port Vale",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Walsall",
+    "ag": 4,
+    "d": "17/08/2024",
+    "h": "Swindon Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Colchester United",
+    "ag": 2,
+    "d": "10/08/2024",
+    "h": "AFC Wimbledon",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crewe Alexandra",
+    "ag": 0,
+    "d": "10/08/2024",
+    "h": "Barrow",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Newport County",
+    "ag": 2,
+    "d": "10/08/2024",
+    "h": "Cheltenham Town",
+    "hg": 3,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Accrington Stanley",
+    "ag": 1,
+    "d": "10/08/2024",
+    "h": "Doncaster Rovers",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Grimsby Town",
+    "ag": 0,
+    "d": "10/08/2024",
+    "h": "Fleetwood Town",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Carlisle United",
+    "ag": 1,
+    "d": "10/08/2024",
+    "h": "Gillingham",
+    "hg": 4,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bromley",
+    "ag": 2,
+    "d": "10/08/2024",
+    "h": "Harrogate Town",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Bradford City",
+    "ag": 2,
+    "d": "10/08/2024",
+    "h": "Milton Keynes Dons",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Port Vale",
+    "ag": 2,
+    "d": "10/08/2024",
+    "h": "Salford City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Notts County",
+    "ag": 0,
+    "d": "10/08/2024",
+    "h": "Tranmere Rovers",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Morecambe",
+    "ag": 0,
+    "d": "10/08/2024",
+    "h": "Walsall",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Swindon Town",
+    "ag": 1,
+    "d": "09/08/2024",
+    "h": "Chesterfield",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  }
+]

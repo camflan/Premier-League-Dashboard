@@ -7,6 +7,15 @@ async function delay(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
+// Event statuses that are not played matches. Postponed/canceled events carry
+// phantom 0-0 scores and double-count once the rescheduled match is played.
+const NON_PLAYED_STATUSES = new Set([
+  'STATUS_SCHEDULED',
+  'STATUS_POSTPONED',
+  'STATUS_CANCELED',
+  'STATUS_ABANDONED',
+]);
+
 // Get league standings for current season
 export async function getLeagueStandings(season = '2025-26', leagueEspnId = 'eng.1') {
   try {
@@ -98,7 +107,7 @@ export async function getMatchResults(team = null, limit = 100, leagueEspnId = '
 
         for (const event of events.slice(0, limit)) {
           const status = event.status?.type?.name; // e.g. STATUS_FINAL
-          if (status === 'STATUS_SCHEDULED') continue; // belongs in fixtures, not matches
+          if (!status || NON_PLAYED_STATUSES.has(status)) continue; // belongs in fixtures, not matches
           const sides = parseEvent(event);
           if (!sides) continue;
           matches.push({
@@ -161,8 +170,8 @@ async function fetchDateRangeChunk(startDate, endDate, leagueEspnId) {
 
       for (const event of events) {
         const status = event.status?.type?.name;
-        // Include only finished matches (not scheduled)
-        if (!status || status === 'STATUS_SCHEDULED') continue;
+        // Include only played matches
+        if (!status || NON_PLAYED_STATUSES.has(status)) continue;
 
         const sides = parseEvent(event);
         if (!sides) continue;
