@@ -88,6 +88,10 @@
     "MK Dons": "static/logos/milton-keynes-dons.png",
     "Wrexham": "static/logos/wrexham.png",
     "Stockport County": "static/logos/stockport-county.png",
-    "Bristol City": "static/logos/bristol-city.png"
+    "Bristol City": "static/logos/bristol-city.png",
+    "Queens Park Rangers": "static/logos/qpr.png",
+    "West Bromwich Albion": "static/logos/wba.png",
+    "Preston North End": "static/logos/preston.png",
+    "Millwall": "static/logos/millwall.png"
   }
 }

@@ -775,8 +775,13 @@ function selectLeague(leagueId) {
   // Rebuild year dropdown to show seasons for this league
   populateYearDropdown();
 
-  // Reset selected year to clear any prior selection and remove blur effect
-  handleYearChange(null);
+  // Set year to latest season of this league (no blur effect)
+  const latestSeasonForLeague = getSeasons()[0];
+  if (latestSeasonForLeague) {
+    selectedYear = latestSeasonForLeague;
+    sortMode = 'year';
+    document.getElementById('yearSelect').value = latestSeasonForLeague;
+  }
 
   // Rebuild tables
   if (viewMode === 'live') buildLiveTable();

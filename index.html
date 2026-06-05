@@ -1348,7 +1348,11 @@ window.__DATA = {
     "MK Dons": "static/logos/milton-keynes-dons.png",
     "Wrexham": "static/logos/wrexham.png",
     "Stockport County": "static/logos/stockport-county.png",
-    "Bristol City": "static/logos/bristol-city.png"
+    "Bristol City": "static/logos/bristol-city.png",
+    "Queens Park Rangers": "static/logos/qpr.png",
+    "West Bromwich Albion": "static/logos/wba.png",
+    "Preston North End": "static/logos/preston.png",
+    "Millwall": "static/logos/millwall.png"
   },
   "matches": {
     "premier-league": {
@@ -60464,8 +60468,13 @@ function selectLeague(leagueId) {
   // Rebuild year dropdown to show seasons for this league
   populateYearDropdown();
 
-  // Reset selected year to clear any prior selection and remove blur effect
-  handleYearChange(null);
+  // Set year to latest season of this league (no blur effect)
+  const latestSeasonForLeague = getSeasons()[0];
+  if (latestSeasonForLeague) {
+    selectedYear = latestSeasonForLeague;
+    sortMode = 'year';
+    document.getElementById('yearSelect').value = latestSeasonForLeague;
+  }
 
   // Rebuild tables
   if (viewMode === 'live') buildLiveTable();
