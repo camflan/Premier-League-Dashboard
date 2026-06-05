@@ -781,6 +781,9 @@ function selectLeague(leagueId) {
   if (viewMode === 'live') buildLiveTable();
   else buildTable();
 
+  // Update legend for league-specific colors
+  updateLegend();
+
   updateHeaderHeight();
 }
 
@@ -914,12 +917,34 @@ function lerpColor(c1, c2, t) {
   return `rgb(${r},${g},${b})`;
 }
 
-function positionColor(pos, maxPos) {
-  if (pos === 1) return '#c8a400';
-  if (pos <= 4) return lerpColor('#1e40af','#3b82f6',(pos-2)/2);
-  if (pos <= 7) return lerpColor('#065f46','#059669',(pos-5)/2);
-  if (pos <= 17) return lerpColor('#374151','#4b5563',(pos-8)/9);
-  return lerpColor('#7f1d1d','#dc2626',(pos-18)/2);
+function positionColor(pos, maxPos, leagueId = null) {
+  // League-specific relegation zone coloring
+  const league = leagueId || selectedLeague;
+  let relegationStart;
+
+  // Determine relegation starting position based on league size
+  if (maxPos === 20) {
+    // Premier League: top 4 UCL, 5-7 Europa, 18+ relegation (bottom 3)
+    relegationStart = 18;
+  } else if (maxPos === 24) {
+    // Championship/League One (24 teams)
+    if (league === 'championship') {
+      // Bottom 2 relegated, 3-6 play playoffs - so relegation red at 23+
+      relegationStart = 23;
+    } else {
+      // EFL League One: Bottom 4 relegated (21-24)
+      relegationStart = 21;
+    }
+  } else {
+    // Default fallback for any other size
+    relegationStart = Math.max(18, maxPos - 3);
+  }
+
+  if (pos === 1) return '#c8a400'; // Champion gold
+  if (pos <= 4) return lerpColor('#1e40af','#3b82f6',(pos-2)/2); // UCL blue
+  if (pos <= 7) return lerpColor('#065f46','#059669',(pos-5)/2); // Europa green
+  if (pos < relegationStart) return lerpColor('#374151','#4b5563',(pos-8)/(relegationStart-8)); // Mid-table gray
+  return lerpColor('#7f1d1d','#dc2626',(pos-relegationStart)/(maxPos-relegationStart)); // Relegation red
 }
 
 function goalsColor(gf) {
@@ -951,7 +976,9 @@ function cleanSheetsColor(team, season) {
 
 function getCellColor(data, team, season) {
   if (!data) return null;
-  if (colorMode === 'position') return positionColor(data.pos, 22);
+  // Determine max position based on selected league
+  const maxPos = selectedLeague === 'premier-league' ? 20 : 24;
+  if (colorMode === 'position') return positionColor(data.pos, maxPos, selectedLeague);
   if (colorMode === 'goals') return goalsColor(data.gf);
   if (colorMode === 'gd') return gdColor(data.gd);
   if (colorMode === 'pts') return ptsColor(data.pts);
@@ -2282,14 +2309,30 @@ function filterTeams(val) {
 function updateLegend() {
   const leg = document.getElementById('legend');
   if (colorMode === 'position') {
-    leg.innerHTML = `
-      <div class="legend-item"><div class="legend-swatch" style="background:#c8a400"></div>Champion</div>
+    let positionLegend = `
+      <div class="legend-item"><div class="legend-swatch" style="background:#c8a400"></div>Champion</div>`;
+
+    if (selectedLeague === 'premier-league') {
+      positionLegend += `
       <div class="legend-item"><div class="legend-swatch" style="background:#1e40af"></div>Top 4 (UCL)</div>
       <div class="legend-item"><div class="legend-swatch" style="background:#065f46"></div>5–7 (Europa)</div>
       <div class="legend-item"><div class="legend-swatch" style="background:#374151"></div>Mid-table</div>
-      <div class="legend-item"><div class="legend-swatch" style="background:#7f1d1d"></div>Relegated</div>
-      <div class="legend-item"><div class="legend-swatch" style="background:#1a1d27;border:1px solid #2e3347"></div>Not in PL</div>
-    `;
+      <div class="legend-item"><div class="legend-swatch" style="background:#7f1d1d"></div>Relegated (18–20)</div>`;
+    } else if (selectedLeague === 'championship') {
+      positionLegend += `
+      <div class="legend-item"><div class="legend-swatch" style="background:#1e40af"></div>Top 2 (Auto promote)</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#065f46"></div>3–6 (Playoff)</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#374151"></div>Mid-table</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#7f1d1d"></div>Relegated (23–24)</div>`;
+    } else if (selectedLeague === 'efl-league-one') {
+      positionLegend += `
+      <div class="legend-item"><div class="legend-swatch" style="background:#1e40af"></div>Top 2 (Auto promote)</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#065f46"></div>3–6 (Playoff)</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#374151"></div>Mid-table</div>
+      <div class="legend-item"><div class="legend-swatch" style="background:#7f1d1d"></div>Relegated (21–24)</div>`;
+    }
+
+    leg.innerHTML = positionLegend;
   } else if (colorMode === 'goals') {
     leg.innerHTML = `
       <div class="legend-item"><div class="legend-swatch" style="background:#1e3a5f"></div>Low (≤30)</div>
