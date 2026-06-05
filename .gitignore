@@ -9,3 +9,6 @@ acronym-generator/
 # Glob also catches iCloud Drive conflict copies ("index 2.html", …).
 /index*.html
 /_site/
+
+# Sync TTL/hash cache metadata — local only
+/data/.cache/

@@ -1,6 +1,3 @@
-// Import fetch for Node < 18 compatibility
-import fetch from 'node-fetch';
-
 // ESPN API URLs for football/soccer
 const _ESPN_BASE = 'https://site.api.espn.com/apis/site/v2';
 const _FOOTBALL_BASE = 'https://www.espn.com/soccer/json';

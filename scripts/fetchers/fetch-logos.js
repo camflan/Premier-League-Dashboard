@@ -1,19 +1,9 @@
-#!/usr/bin/env node
 // Download every logo URL in static/logos.json to static/logos/<slug>.png.
-// Idempotent: skips files that already exist (pass --force to re-download).
+// Idempotent: skips files that already exist (force re-downloads).
 // After downloading, rewrites static/logos.json to use the local relative path.
 
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
-
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const rootDir = path.join(__dirname, '..', '..');
-const staticDir = path.join(rootDir, 'static');
-const logosDir = path.join(staticDir, 'logos');
-const logosJsonPath = path.join(staticDir, 'logos.json');
-
-const force = process.argv.includes('--force');
 
 function slugify(name) {
   return name
@@ -35,54 +25,60 @@ async function download(url, dest) {
   return buf.length;
 }
 
-const logos = JSON.parse(fs.readFileSync(logosJsonPath, 'utf8')).logos;
-fs.mkdirSync(logosDir, { recursive: true });
+export async function syncLogos(rootDir, { force = false } = {}) {
+  const staticDir = path.join(rootDir, 'static');
+  const logosDir = path.join(staticDir, 'logos');
+  const logosJsonPath = path.join(staticDir, 'logos.json');
 
-let downloaded = 0;
-let skipped = 0;
-let failed = 0;
-const rewritten = {};
+  const logos = JSON.parse(fs.readFileSync(logosJsonPath, 'utf8')).logos;
+  fs.mkdirSync(logosDir, { recursive: true });
 
-for (const [team, value] of Object.entries(logos)) {
-  // Already a local path — keep as-is and verify file exists.
-  if (isLocalPath(value)) {
-    rewritten[team] = value;
-    const absPath = path.join(staticDir, value);
-    if (!fs.existsSync(absPath)) {
-      console.warn(`⚠️  ${team}: local path ${value} does not exist on disk`);
+  let downloaded = 0;
+  let skipped = 0;
+  let failed = 0;
+  const rewritten = {};
+
+  for (const [team, value] of Object.entries(logos)) {
+    // Already a local path — keep as-is and verify file exists.
+    if (isLocalPath(value)) {
+      rewritten[team] = value;
+      const absPath = path.join(staticDir, value);
+      if (!fs.existsSync(absPath)) {
+        console.warn(`  ⚠️  ${team}: local path ${value} does not exist on disk`);
+      }
+      skipped++;
+      continue;
     }
-    skipped++;
-    continue;
+
+    // Remote URL — download to static/logos/<slug>.<ext>.
+    const url = value;
+    const ext = path.extname(new URL(url).pathname) || '.png';
+    const slug = slugify(team);
+    const filename = `${slug}${ext}`;
+    const localRel = path.posix.join('logos', filename);
+    const localAbs = path.join(staticDir, localRel);
+
+    if (!force && fs.existsSync(localAbs)) {
+      rewritten[team] = localRel;
+      skipped++;
+      continue;
+    }
+
+    try {
+      const size = await download(url, localAbs);
+      console.log(`  ✓ ${team} → ${localRel} (${(size / 1024).toFixed(1)} KB)`);
+      rewritten[team] = localRel;
+      downloaded++;
+    } catch (e) {
+      console.error(`  ✗ ${team}: ${e.message}`);
+      // Keep the remote URL in logos.json so the dashboard still works.
+      rewritten[team] = url;
+      failed++;
+    }
   }
 
-  // Remote URL — download to static/logos/<slug>.<ext>.
-  const url = value;
-  const ext = path.extname(new URL(url).pathname) || '.png';
-  const slug = slugify(team);
-  const filename = `${slug}${ext}`;
-  const localRel = path.posix.join('logos', filename);
-  const localAbs = path.join(staticDir, localRel);
+  // Rewrite logos.json to point at the local paths.
+  fs.writeFileSync(logosJsonPath, `${JSON.stringify({ logos: rewritten }, null, 2)}\n`);
 
-  if (!force && fs.existsSync(localAbs)) {
-    rewritten[team] = localRel;
-    skipped++;
-    continue;
-  }
-
-  try {
-    const size = await download(url, localAbs);
-    console.log(`✓ ${team} → ${localRel} (${(size / 1024).toFixed(1)} KB)`);
-    rewritten[team] = localRel;
-    downloaded++;
-  } catch (e) {
-    console.error(`✗ ${team}: ${e.message}`);
-    // Keep the remote URL in logos.json so the dashboard still works.
-    rewritten[team] = url;
-    failed++;
-  }
+  console.log(`  logos: ${downloaded} downloaded, ${skipped} skipped, ${failed} failed`);
 }
-
-// Rewrite logos.json to point at the local paths.
-fs.writeFileSync(logosJsonPath, `${JSON.stringify({ logos: rewritten }, null, 2)}\n`);
-
-console.log(`\nDone: ${downloaded} downloaded, ${skipped} skipped, ${failed} failed`);
