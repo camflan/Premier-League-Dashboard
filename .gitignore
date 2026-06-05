@@ -4,7 +4,8 @@ acronym-generator/
 *.local.json
 .DS_Store
 
-# Build artifact — generated from template/index.html.template + data/*.json
-# Built and deployed to GitHub Pages by .github/workflows/deploy-pages.yml
-# /index.html  (commented out to allow persistence in iCloud Drive)
+# Build artifacts — rendered from template/index.html.template + data/*.json
+# by scripts/render.js (CI) or served in-memory by scripts/dev.js (dev).
+# Glob also catches iCloud Drive conflict copies ("index 2.html", …).
+/index*.html
 /_site/
