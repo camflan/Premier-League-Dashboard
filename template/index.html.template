@@ -775,13 +775,11 @@ function selectLeague(leagueId) {
   // Rebuild year dropdown to show seasons for this league
   populateYearDropdown();
 
-  // Set year to latest season of this league (no blur effect)
-  const latestSeasonForLeague = getSeasons()[0];
-  if (latestSeasonForLeague) {
-    selectedYear = latestSeasonForLeague;
-    sortMode = 'year';
-    document.getElementById('yearSelect').value = latestSeasonForLeague;
-  }
+  // Keep sortMode as 'current' which now uses the latest season of the league
+  // Don't set selectedYear so no column gets highlighted
+  sortMode = 'current';
+  selectedYear = '';
+  document.getElementById('yearSelect').value = '';
 
   // Rebuild tables
   if (viewMode === 'live') buildLiveTable();
@@ -1021,10 +1019,11 @@ function getSortedTeams() {
   if (sortMode === 'seasons') teams.sort((a,b) => teamSeasons(b)-teamSeasons(a) || teamAvg(a)-teamAvg(b));
   if (sortMode === 'best') teams.sort((a,b) => teamBest(a)-teamBest(b) || teamSeasons(b)-teamSeasons(a));
   if (sortMode === 'current') {
-    // Sort by 2025-26 current standings position
+    // Sort by latest season of current league (without highlighting it)
+    const latestSeason = getSeasons()[0] || ACTIVE_SEASON;
     teams.sort((a,b) => {
-      const posA = teamSeasonMap[a]?.[ACTIVE_SEASON]?.pos || 999;
-      const posB = teamSeasonMap[b]?.[ACTIVE_SEASON]?.pos || 999;
+      const posA = teamSeasonMap[a]?.[latestSeason]?.pos || 999;
+      const posB = teamSeasonMap[b]?.[latestSeason]?.pos || 999;
       return posA - posB;
     });
   }
@@ -2455,15 +2454,10 @@ function populateYearDropdown() {
 
 populateYearDropdown();
 
-// Default to latest season (first in the list since getSeasons() returns newest first)
-// Sort by latest season WITHOUT blur effect (just sort, don't "select" year)
-const latestSeason = getSeasons()[0];
-if (latestSeason && !selectedYear) {
-  selectedYear = latestSeason;
-  sortMode = 'year';
-  document.getElementById('yearSelect').value = latestSeason;
-  // Don't add 'year-selected' class to avoid blur effect - this is just default sorting
-}
+// Default sorting: sort by latest season without highlighting or blur
+// Keep sortMode as 'current' which now uses the latest season of the league
+// Don't set selectedYear so no column gets highlighted
+sortMode = 'current';
 
 // Build the appropriate table
 if (viewMode === 'live') buildLiveTable();
