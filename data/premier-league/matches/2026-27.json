@@ -1,5 +1,61 @@
 [
   {
+    "a": "AFC Bournemouth",
+    "ag": 2,
+    "d": "05/09/2026",
+    "h": "Newcastle United",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Sunderland",
+    "ag": 1,
+    "d": "05/09/2026",
+    "h": "Brentford",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Leeds United",
+    "ag": 1,
+    "d": "05/09/2026",
+    "h": "Brighton & Hove Albion",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Crystal Palace",
+    "ag": 3,
+    "d": "05/09/2026",
+    "h": "Fulham",
+    "hg": 2,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Coventry City",
+    "ag": 0,
+    "d": "05/09/2026",
+    "h": "Manchester City",
+    "hg": 1,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Tottenham Hotspur",
+    "ag": 0,
+    "d": "05/09/2026",
+    "h": "Nottingham Forest",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
+    "a": "Aston Villa",
+    "ag": 0,
+    "d": "05/09/2026",
+    "h": "Hull City",
+    "hg": 0,
+    "status": "STATUS_FULL_TIME"
+  },
+  {
     "a": "Liverpool",
     "ag": 2,
     "d": "04/09/2026",
