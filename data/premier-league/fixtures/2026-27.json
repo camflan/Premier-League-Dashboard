@@ -1,44 +1,14 @@
 [
   {
-    "a": "Fulham",
-    "d": "21/11/2026",
-    "h": "Manchester City",
-    "time": "12:30"
+    "a": "Brighton & Hove Albion",
+    "d": "22/11/2026",
+    "h": "Hull City",
+    "time": "14:00"
   },
   {
-    "a": "Nottingham Forest",
-    "d": "21/11/2026",
-    "h": "AFC Bournemouth",
-    "time": "15:00"
-  },
-  {
-    "a": "Sunderland",
-    "d": "21/11/2026",
-    "h": "Aston Villa",
-    "time": "15:00"
-  },
-  {
-    "a": "Leeds United",
-    "d": "21/11/2026",
-    "h": "Chelsea",
-    "time": "15:00"
-  },
-  {
-    "a": "Crystal Palace",
-    "d": "21/11/2026",
-    "h": "Coventry City",
-    "time": "15:00"
-  },
-  {
-    "a": "Ipswich Town",
-    "d": "21/11/2026",
-    "h": "Tottenham Hotspur",
-    "time": "15:00"
-  },
-  {
-    "a": "Arsenal",
-    "d": "21/11/2026",
-    "h": "Newcastle United",
-    "time": "17:30"
+    "a": "Manchester United",
+    "d": "22/11/2026",
+    "h": "Liverpool",
+    "time": "16:30"
   }
 ]
